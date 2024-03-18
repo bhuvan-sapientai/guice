@@ -1,0 +1,923 @@
+---
+modelFingerprint: "D6FFD4DE00A0DB7F31D97AD16768FB42"
+methods:
+- method:
+    name: "initialize"
+    returnType: "void"
+    signature: "initialize(com.google.inject.internal.Errors) : void"
+    instructionFingerprint: "2EE4B62C12FF6E32977178DB08D319CD"
+    parametersTypes:
+    - "com.google.inject.internal.Errors"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "initializeTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "96296FBBAFF8BBEC34AD5A602B11CFBE"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "C32E34834EF82EA3692EC7FAE47926D0"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.DeferredLookups"
+          parameters:
+          - name: "injector"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.InjectorImpl"
+              uuid: "<init>_injectorImpl1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.DeferredLookups"
+          parameters:
+          - name: "injector"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.InjectorImpl"
+              uuid: "<init>_injectorImpl1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.DeferredLookups"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "errors"
+      modelFingerprint: "E7097EEB42B739132A18C9A0E4D1000E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Errors"
+        uuid: "initialize_errors1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "107334B8CA961CFB820835FD022F6487"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.LookupProcessor"
+          parameters:
+          - name: "errors"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.Errors"
+              uuid: "initialize_errors1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.LookupProcessor"
+          parameters:
+          - name: "errors"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.Errors"
+              uuid: "initialize_errors1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "com.google.inject.internal.LookupProcessor"
+        uuid: "initialize_lookupProcessor1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.LookupProcessor"
+        name: "process"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "elements"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.ArrayList"
+            genericValueType: "com.google.inject.spi.Element"
+            uuid: "<init>_arrayList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "process(InjectorImpl,ArrayList): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "initialize_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6900b201-d101-33a9-a69b-7a761e98aa93"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "object of type LookupProcessor"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "new LookupProcessor(errors).process(injector, lookups);"
+      lineNumber: 46
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type LookupProcessor - Method: process"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getProvider"
+    returnType: "com.google.inject.Provider"
+    signature: "getProvider(com.google.inject.Key<java.lang.Object>) : com.google.inject.Provider<java.lang.Object>"
+    instructionFingerprint: "587BA45402E59470126676D93EF21C94"
+    parametersTypes:
+    - "com.google.inject.Key"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getProviderTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "944996EAF9C135B1A2662D9878354990"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "C32E34834EF82EA3692EC7FAE47926D0"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.DeferredLookups"
+          parameters:
+          - name: "injector"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.InjectorImpl"
+              uuid: "<init>_injectorImpl1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.DeferredLookups"
+          parameters:
+          - name: "injector"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.InjectorImpl"
+              uuid: "<init>_injectorImpl1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.DeferredLookups"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "8BD8B39056618E9480AB4A88A03B7C6B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.Key"
+        genericValueType: "java.lang.Object"
+        uuid: "getProvider_key1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "lookup"
+      modelFingerprint: "6ABA4E36F252D4A37B47A7E7A531B11A"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.spi.ProviderLookup"
+          parameters:
+          - name: "source"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "getProvider_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "getProvider_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "com.google.inject.spi.ProviderLookup"
+          parameters:
+          - name: "source"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "getProvider_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "getProvider_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "com.google.inject.spi.ProviderLookup"
+        genericValueType: "java.lang.Object"
+        uuid: "getProvider_providerLookup1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "lookup"
+        name: "getProvider"
+        parameters: []
+        signature: "getProvider(): Provider"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<method_return_from_value>
+            target: "com.google.inject.Provider"
+            localVariableValue:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "com.google.inject.spi.ProviderLookup"
+                parameters:
+                - name: "source"
+                  value:
+                    sapientType: "MOCK"
+                    valueType: "com.google.inject.Key"
+                    genericValueType: "java.lang.Object"
+                    uuid: "getProvider_key1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "key"
+                  value:
+                    sapientType: "MOCK"
+                    valueType: "com.google.inject.Key"
+                    genericValueType: "java.lang.Object"
+                    uuid: "getProvider_key1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              suggestedContent: !<new>
+                target: "com.google.inject.spi.ProviderLookup"
+                parameters:
+                - name: "source"
+                  value:
+                    sapientType: "UNKNOWN"
+                    valueType: "com.google.inject.Key"
+                    genericValueType: "java.lang.Object"
+                    uuid: "getProvider_key1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "key"
+                  value:
+                    sapientType: "UNKNOWN"
+                    valueType: "com.google.inject.Key"
+                    genericValueType: "java.lang.Object"
+                    uuid: "getProvider_key1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "com.google.inject.spi.ProviderLookup"
+              genericValueType: "java.lang.Object"
+              uuid: "getProvider_providerLookup1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters: []
+            methodName: "getProvider"
+          suggestedContent: !<method_return_from_value>
+            target: "com.google.inject.Provider"
+            localVariableValue:
+              sapientType: "OBJECT"
+              suggestedContent: !<new>
+                target: "com.google.inject.spi.ProviderLookup"
+                parameters:
+                - name: "source"
+                  value:
+                    sapientType: "UNKNOWN"
+                    valueType: "com.google.inject.Key"
+                    genericValueType: "java.lang.Object"
+                    uuid: "getProvider_key1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "key"
+                  value:
+                    sapientType: "UNKNOWN"
+                    valueType: "com.google.inject.Key"
+                    genericValueType: "java.lang.Object"
+                    uuid: "getProvider_key1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "com.google.inject.spi.ProviderLookup"
+              genericValueType: "java.lang.Object"
+              uuid: "getProvider_providerLookup1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters: []
+            methodName: "getProvider"
+          valueType: "com.google.inject.Provider"
+          uuid: "getProvider_provider1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "759444D40A7C8CA3EA05FAC6D2B1C937"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<method_return_from_value>
+          target: "com.google.inject.Provider"
+          localVariableValue:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "com.google.inject.spi.ProviderLookup"
+              parameters:
+              - name: "source"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "com.google.inject.Key"
+                  genericValueType: "java.lang.Object"
+                  uuid: "getProvider_key1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "key"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "com.google.inject.Key"
+                  genericValueType: "java.lang.Object"
+                  uuid: "getProvider_key1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "com.google.inject.spi.ProviderLookup"
+              parameters:
+              - name: "source"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "com.google.inject.Key"
+                  genericValueType: "java.lang.Object"
+                  uuid: "getProvider_key1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "key"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "com.google.inject.Key"
+                  genericValueType: "java.lang.Object"
+                  uuid: "getProvider_key1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "com.google.inject.spi.ProviderLookup"
+            genericValueType: "java.lang.Object"
+            uuid: "getProvider_providerLookup1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          methodName: "getProvider"
+        suggestedContent: !<method_return_from_value>
+          target: "com.google.inject.Provider"
+          localVariableValue:
+            sapientType: "OBJECT"
+            suggestedContent: !<new>
+              target: "com.google.inject.spi.ProviderLookup"
+              parameters:
+              - name: "source"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "com.google.inject.Key"
+                  genericValueType: "java.lang.Object"
+                  uuid: "getProvider_key1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "key"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "com.google.inject.Key"
+                  genericValueType: "java.lang.Object"
+                  uuid: "getProvider_key1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "com.google.inject.spi.ProviderLookup"
+            genericValueType: "java.lang.Object"
+            uuid: "getProvider_providerLookup1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          methodName: "getProvider"
+        valueType: "com.google.inject.Provider"
+        uuid: "getProvider_provider1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "00dff819-cb70-3ea6-9be9-223a26306dab"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "lookup"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "return lookup.getProvider();"
+      lineNumber: 53
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: lookup - Method: getProvider"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getMembersInjector"
+    returnType: "com.google.inject.MembersInjector"
+    signature: "getMembersInjector(com.google.inject.TypeLiteral<java.lang.Object>)\
+      \ : com.google.inject.MembersInjector<java.lang.Object>"
+    instructionFingerprint: "B282485D37D8400A04C279DB585E95D8"
+    parametersTypes:
+    - "com.google.inject.TypeLiteral"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getMembersInjectorTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9D8E27B397F183CD9537717C593A86C7"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "C32E34834EF82EA3692EC7FAE47926D0"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.DeferredLookups"
+          parameters:
+          - name: "injector"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.InjectorImpl"
+              uuid: "<init>_injectorImpl1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.DeferredLookups"
+          parameters:
+          - name: "injector"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.InjectorImpl"
+              uuid: "<init>_injectorImpl1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.DeferredLookups"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "E2C52357C61622F8AA7C7703D67E65DB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.TypeLiteral"
+        genericValueType: "java.lang.Object"
+        uuid: "getMembersInjector_typeLiteral1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "lookup"
+      modelFingerprint: "FF04835C68587960D3BF5B4B3981AD2C"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.spi.MembersInjectorLookup"
+          parameters:
+          - name: "source"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.TypeLiteral"
+              genericValueType: "java.lang.Object"
+              uuid: "getMembersInjector_typeLiteral1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.TypeLiteral"
+              genericValueType: "java.lang.Object"
+              uuid: "getMembersInjector_typeLiteral1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "com.google.inject.spi.MembersInjectorLookup"
+          parameters:
+          - name: "source"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.TypeLiteral"
+              genericValueType: "java.lang.Object"
+              uuid: "getMembersInjector_typeLiteral1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "type"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.TypeLiteral"
+              genericValueType: "java.lang.Object"
+              uuid: "getMembersInjector_typeLiteral1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "com.google.inject.spi.MembersInjectorLookup"
+        genericValueType: "java.lang.Object"
+        uuid: "getMembersInjector_membersInjectorLookup1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "lookup"
+        name: "getMembersInjector"
+        parameters: []
+        signature: "getMembersInjector(): MembersInjector"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<method_return_from_value>
+            target: "com.google.inject.MembersInjector"
+            localVariableValue:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "com.google.inject.spi.MembersInjectorLookup"
+                parameters:
+                - name: "source"
+                  value:
+                    sapientType: "MOCK"
+                    valueType: "com.google.inject.TypeLiteral"
+                    genericValueType: "java.lang.Object"
+                    uuid: "getMembersInjector_typeLiteral1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "type"
+                  value:
+                    sapientType: "MOCK"
+                    valueType: "com.google.inject.TypeLiteral"
+                    genericValueType: "java.lang.Object"
+                    uuid: "getMembersInjector_typeLiteral1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              suggestedContent: !<new>
+                target: "com.google.inject.spi.MembersInjectorLookup"
+                parameters:
+                - name: "source"
+                  value:
+                    sapientType: "UNKNOWN"
+                    valueType: "com.google.inject.TypeLiteral"
+                    genericValueType: "java.lang.Object"
+                    uuid: "getMembersInjector_typeLiteral1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "type"
+                  value:
+                    sapientType: "UNKNOWN"
+                    valueType: "com.google.inject.TypeLiteral"
+                    genericValueType: "java.lang.Object"
+                    uuid: "getMembersInjector_typeLiteral1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "com.google.inject.spi.MembersInjectorLookup"
+              genericValueType: "java.lang.Object"
+              uuid: "getMembersInjector_membersInjectorLookup1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters: []
+            methodName: "getMembersInjector"
+          suggestedContent: !<method_return_from_value>
+            target: "com.google.inject.MembersInjector"
+            localVariableValue:
+              sapientType: "OBJECT"
+              suggestedContent: !<new>
+                target: "com.google.inject.spi.MembersInjectorLookup"
+                parameters:
+                - name: "source"
+                  value:
+                    sapientType: "UNKNOWN"
+                    valueType: "com.google.inject.TypeLiteral"
+                    genericValueType: "java.lang.Object"
+                    uuid: "getMembersInjector_typeLiteral1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "type"
+                  value:
+                    sapientType: "UNKNOWN"
+                    valueType: "com.google.inject.TypeLiteral"
+                    genericValueType: "java.lang.Object"
+                    uuid: "getMembersInjector_typeLiteral1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "com.google.inject.spi.MembersInjectorLookup"
+              genericValueType: "java.lang.Object"
+              uuid: "getMembersInjector_membersInjectorLookup1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters: []
+            methodName: "getMembersInjector"
+          valueType: "com.google.inject.MembersInjector"
+          uuid: "getMembersInjector_membersInjector1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "4BD8BEE6BE286033E6ED18EFC6AAC855"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<method_return_from_value>
+          target: "com.google.inject.MembersInjector"
+          localVariableValue:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "com.google.inject.spi.MembersInjectorLookup"
+              parameters:
+              - name: "source"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "com.google.inject.TypeLiteral"
+                  genericValueType: "java.lang.Object"
+                  uuid: "getMembersInjector_typeLiteral1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "type"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "com.google.inject.TypeLiteral"
+                  genericValueType: "java.lang.Object"
+                  uuid: "getMembersInjector_typeLiteral1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "com.google.inject.spi.MembersInjectorLookup"
+              parameters:
+              - name: "source"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "com.google.inject.TypeLiteral"
+                  genericValueType: "java.lang.Object"
+                  uuid: "getMembersInjector_typeLiteral1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "type"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "com.google.inject.TypeLiteral"
+                  genericValueType: "java.lang.Object"
+                  uuid: "getMembersInjector_typeLiteral1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "com.google.inject.spi.MembersInjectorLookup"
+            genericValueType: "java.lang.Object"
+            uuid: "getMembersInjector_membersInjectorLookup1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          methodName: "getMembersInjector"
+        suggestedContent: !<method_return_from_value>
+          target: "com.google.inject.MembersInjector"
+          localVariableValue:
+            sapientType: "OBJECT"
+            suggestedContent: !<new>
+              target: "com.google.inject.spi.MembersInjectorLookup"
+              parameters:
+              - name: "source"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "com.google.inject.TypeLiteral"
+                  genericValueType: "java.lang.Object"
+                  uuid: "getMembersInjector_typeLiteral1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "type"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "com.google.inject.TypeLiteral"
+                  genericValueType: "java.lang.Object"
+                  uuid: "getMembersInjector_typeLiteral1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "com.google.inject.spi.MembersInjectorLookup"
+            genericValueType: "java.lang.Object"
+            uuid: "getMembersInjector_membersInjectorLookup1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          methodName: "getMembersInjector"
+        valueType: "com.google.inject.MembersInjector"
+        uuid: "getMembersInjector_membersInjector1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3219d138-fa9b-3e28-9ed3-ede6bfdd8d4c"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "lookup"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "return lookup.getMembersInjector();"
+      lineNumber: 60
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: lookup - Method: getMembersInjector"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

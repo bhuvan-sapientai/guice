@@ -1,0 +1,1036 @@
+---
+modelFingerprint: "1A7AE4FB76E7F3C5B689D29AFFBE9B35"
+methods:
+- method:
+    name: "getElements"
+    returnType: "java.util.List"
+    signature: "getElements(com.google.inject.Module[]) : java.util.List<com.google.inject.spi.Element>"
+    instructionFingerprint: "D59C9C80FB1F9B38A9FC786DE62966BD"
+    parametersTypes:
+    - "com.google.inject.Module[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getElementsTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7DCF76651040236642898967AD0108EF"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "modules"
+      modelFingerprint: "22EAFCFDF24AD28580C1491500123B3D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "com.google.inject.Module[]"
+        uuid: "getElements_module[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Elements"
+      modelFingerprint: "CDFBBC0CAEA586F84FC214DA3F349C89"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.spi.Elements"
+        uuid: "com.google.inject.spi.Elements"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.spi.Elements"
+        name: "getElements"
+        parameters:
+        - name: "stage"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "DEVELOPMENT"
+            valueType: "com.google.inject.Stage"
+            uuid: "Enum-com.google.inject.Stage-DEVELOPMENT"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "modules"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "com.google.inject.Module"
+            uuid: "getElements_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getElements(Stage,List): List"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.List"
+          genericValueType: "com.google.inject.spi.Element"
+          uuid: "getElements_list2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "C6AF713406077A92F2BF75F0BCF3483B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.List"
+        genericValueType: "com.google.inject.spi.Element"
+        uuid: "getElements_list2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6c68186f-e5a6-36f6-b857-e9f9e0e0cf94"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getElements"
+    returnType: "java.util.List"
+    signature: "getElements(com.google.inject.Stage,com.google.inject.Module[]) :\
+      \ java.util.List<com.google.inject.spi.Element>"
+    instructionFingerprint: "8CCAFFED5806D001DE09DCDB48894566"
+    parametersTypes:
+    - "com.google.inject.Stage"
+    - "com.google.inject.Module[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getElements1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E450D2B191F08550973C5C6A7BBC5FB1"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "stage"
+      modelFingerprint: "5C903A4C80DD1D47EE34738550B85AC7"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "TOOL"
+        valueType: "com.google.inject.Stage"
+        uuid: "getElements_stage1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "modules"
+      modelFingerprint: "22EAFCFDF24AD28580C1491500123B3D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "com.google.inject.Module[]"
+        uuid: "getElements_module[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Elements"
+      modelFingerprint: "F80B2788B491BCA41D8BD4EE67C20046"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.spi.Elements"
+        uuid: "com.google.inject.spi.Elements"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.spi.Elements"
+        name: "getElements"
+        parameters:
+        - name: "stage"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "TOOL"
+            valueType: "com.google.inject.Stage"
+            uuid: "getElements_stage1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "modules"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "com.google.inject.Module"
+            uuid: "getElements_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getElements(Stage,List): List"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.List"
+          genericValueType: "com.google.inject.spi.Element"
+          uuid: "getElements_list2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "C6AF713406077A92F2BF75F0BCF3483B"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.List"
+        genericValueType: "com.google.inject.spi.Element"
+        uuid: "getElements_list2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "658c0deb-a4f6-3094-8006-b74ad20e7635"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getElements"
+    returnType: "java.util.List"
+    signature: "getElements(java.lang.Iterable<? extends com.google.inject.Module>)\
+      \ : java.util.List<com.google.inject.spi.Element>"
+    instructionFingerprint: "FE251672BBE7C9FD0779BC550C6B6FE6"
+    parametersTypes:
+    - "java.lang.Iterable"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getElements2Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "67A5AF09E5B60F94A396E5085950E27F"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "modules"
+      modelFingerprint: "B19AFAADC3C6184E0828451850A004FE"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Iterable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Iterable"
+        uuid: "getElements_iterable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Elements"
+      modelFingerprint: "93660026BC1160928FD13357F18C3CC4"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.spi.Elements"
+        uuid: "com.google.inject.spi.Elements"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.spi.Elements"
+        name: "getElements"
+        parameters:
+        - name: "stage"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "DEVELOPMENT"
+            valueType: "com.google.inject.Stage"
+            uuid: "Enum-com.google.inject.Stage-DEVELOPMENT"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "modules"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.Iterable"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.Iterable"
+            uuid: "getElements_iterable1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getElements(Stage,Iterable): List"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.List"
+          genericValueType: "com.google.inject.spi.Element"
+          uuid: "getElements_list1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "C6AF713406077A92F2BF75F0BCF3483B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.List"
+        genericValueType: "com.google.inject.spi.Element"
+        uuid: "getElements_list1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "08df3e6b-96f3-307d-aa51-0703be59dc55"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getElements"
+    returnType: "java.util.List"
+    signature: "getElements(com.google.inject.Stage,java.lang.Iterable<? extends com.google.inject.Module>)\
+      \ : java.util.List<com.google.inject.spi.Element>"
+    instructionFingerprint: "6F5C462E5FE51BE33BA59BB7BAD18F1D"
+    parametersTypes:
+    - "com.google.inject.Stage"
+    - "java.lang.Iterable"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getElements3WhenBinderPrivateBindersForScanningIsNotEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "55657AE424D0D3AB39B8A1679E1AC453"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "stage"
+      modelFingerprint: "17335BC0DBD86F5BABBE7BF200011058"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "DEVELOPMENT"
+        suggestedContent: !<regular>
+          value: "DEVELOPMENT"
+        valueType: "com.google.inject.Stage"
+        uuid: "getElements_stage1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "modules"
+      modelFingerprint: "33F82EC9196D129E02CE595B52FA7C68"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Iterable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Iterable"
+        uuid: "getElements_iterable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "modules"
+      modelFingerprint: "B323BD74D46BF55B3A1468C8AE44E96D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Iterable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Iterable"
+        uuid: "getElements_iterable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "modules"
+        name: "iterator"
+        parameters: []
+        signature: "iterator(): Iterator"
+        returnValue:
+          sapientType: "ITERATOR"
+          content: !<iterator>
+            collectionValue:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          valueType: "java.util.Iterator"
+          uuid: "getElements_iterator1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "permitMapConstruction"
+      modelFingerprint: "6B37C6F168076C35B3A8A1F1B077742E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.spi.BindingSourceRestriction$PermitMapConstruction"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.spi.BindingSourceRestriction$PermitMapConstruction"
+        uuid: "getElements_bindingSourceRestriction.PermitMapConstruction1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "other.permitMapConstruction"
+        name: "finish"
+        parameters: []
+        signature: "finish(): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "getElements_void4"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "StackTraceElements"
+      modelFingerprint: "F9084B6BBA06CA210C2C991A422D233F"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "com.google.inject.internal.util.StackTraceElements"
+        uuid: "com.google.inject.internal.util.StackTraceElements"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.util.StackTraceElements"
+        name: "clearCache"
+        parameters: []
+        signature: "clearCache(): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "getElements_void5"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9443487ED0220CEEA2AE55C81AD30BFC"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.List"
+        genericValueType: "com.google.inject.spi.Element"
+        uuid: "getElements_list2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c990c499-761c-3eb2-a696-cf279b327584"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "binder"
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.Iterator.hasNext() : boolean"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "getElements3WhenBinderPrivateBindersForScanningIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C35C6B81EC660AFAB3ECD0900A751B37"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "ae62eaa2-584a-34a4-ab63-c36c6f8da094"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    variablesCouldNotBeIsolated: "binder"
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_CONSTRUCTION_UNFILLED_PARAMS"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "getElements3WhenModulesIsEmptyAndBinderPrivateBindersForScanningIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1E04FC4F60682410955FAFC658B5BA77"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "979929cc-27cb-37d5-bdd1-eb8886f84964"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    variablesCouldNotBeIsolated: "binder"
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_CONSTRUCTION_UNFILLED_PARAMS"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "withTrustedSource"
+    returnType: "com.google.inject.Binder"
+    signature: "withTrustedSource(com.google.inject.internal.GuiceInternal,com.google.inject.Binder,java.lang.Object)\
+      \ : com.google.inject.Binder"
+    instructionFingerprint: "4FC3CEA5F7F37A355285E860E239B7EA"
+    parametersTypes:
+    - "com.google.inject.internal.GuiceInternal"
+    - "com.google.inject.Binder"
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "withTrustedSourceWhenBinderInstanceOfRecordingBinder"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A8ED21A4265E152C082906DA65641D46"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "guiceInternal"
+      modelFingerprint: "BF71CD1EBE17DD2783AE15626DEB9A8A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.internal.GuiceInternal"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.internal.GuiceInternal"
+        uuid: "withTrustedSource_guiceInternal1"
+        fixed: false
+        nameForMock: "some_value"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "binder"
+      modelFingerprint: "755AC223C7931495937A5E6635E8FF7F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.spi.Elements$RecordingBinder"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.spi.Elements$RecordingBinder"
+        uuid: "withTrustedSource_binder1"
+        fixed: false
+        nameForMock: "some_value"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "source"
+      modelFingerprint: "5BCA4E93380DB683539696B06B00E247"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "withTrustedSource_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E3DA4A8C57BAE1104FBA91BB63D85327"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.spi.Elements$RecordingBinder"
+        uuid: "withTrustedSource_elements.RecordingBinder1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "48483d0e-3cb3-3271-809f-30788a5afced"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "PRIVATE_INNER_CLASS_COMMENT"
+      details: "PRIVATE_INNER_CLASS_COMMENT"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "withTrustedSourceWhenBinderNotInstanceOfRecordingBinder"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5950A56FDDCC8042199A37CE26339B74"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "guiceInternal"
+      modelFingerprint: "F2A68E893281E10EA0816438403166B6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.internal.GuiceInternal"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.internal.GuiceInternal"
+        uuid: "withTrustedSource_guiceInternal1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "binder"
+      modelFingerprint: "7BEC634C775E6887609F5D0EBA55C6D2"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Binder"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.Binder"
+        uuid: "withTrustedSource_binder1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "source"
+      modelFingerprint: "26D7543A2F4ADA30195021819A4A01D1"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "withTrustedSource_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binder"
+      modelFingerprint: "DD2D02CEF0274EC0657A55B9B6EBE15A"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Binder"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.Binder"
+        uuid: "withTrustedSource_binder1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "binder"
+        name: "withSource"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "withTrustedSource_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "withSource(Object): Binder"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.Binder"
+            onlyPojoFunctions: true
+            builderPattern: false
+          valueType: "com.google.inject.Binder"
+          uuid: "withTrustedSource_binder2"
+          fixed: false
+          nameForMock: "Binder"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9306E22D42EABE2556D4ADCDDE60FE87"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Binder"
+          onlyPojoFunctions: true
+          builderPattern: false
+        valueType: "com.google.inject.Binder"
+        uuid: "withTrustedSource_binder2"
+        fixed: false
+        nameForMock: "Binder"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6e4f2b22-175b-3401-94a6-2cffa5811b72"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.internal.GuiceInternal)\
+        \ : com.google.inject.internal.GuiceInternal"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "getModule"
+    returnType: "com.google.inject.Module"
+    signature: "getModule(java.lang.Iterable<? extends com.google.inject.spi.Element>)\
+      \ : com.google.inject.Module"
+    instructionFingerprint: "99152703D901590BAAED24A8F6809502"
+    parametersTypes:
+    - "java.lang.Iterable"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getModuleTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E8D9EDCA96B915AF91836E8CDA966966"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "elements"
+      modelFingerprint: "2349EDFB6D7AF3F68E53B7C140467724"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Iterable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Iterable"
+        uuid: "getModule_iterable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "F62D899D8A9D3516DBEB0E9C1664B672"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NOT_NULL"
+        valueType: "com.google.inject.Module"
+        uuid: "getModule_elements.ElementsAsModule1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a288d51f-b12e-3796-b615-bd43fb869077"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getInstanceVisitor"
+    returnType: "com.google.inject.spi.BindingTargetVisitor"
+    signature: "getInstanceVisitor() : com.google.inject.spi.BindingTargetVisitor<java.lang.Object,java.lang.Object>"
+    instructionFingerprint: "3C73814332EC04CEA8949B17348EB64E"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getInstanceVisitorTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F99CA118DE74207280C22B346566A178"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "CD0AD625E6338FB64719BF72478CA8F1"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "NOT_NULL"
+        valueType: "com.google.inject.spi.BindingTargetVisitor"
+        genericValueType: "java.lang.Object,java.lang.Object"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c6ca169b-0b1a-3bc6-ac23-92033bccb44d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

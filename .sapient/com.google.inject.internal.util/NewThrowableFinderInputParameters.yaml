@@ -1,0 +1,1332 @@
+---
+modelFingerprint: "ED2C412B827F21B995ACE1259CA1C3D0"
+methods:
+- method:
+    name: "findCaller"
+    returnType: "java.lang.StackTraceElement"
+    signature: "findCaller(java.util.function.Predicate<java.lang.String>) : java.lang.StackTraceElement"
+    instructionFingerprint: "B793C03DD863F3A1B99AC46F73AFDCF1"
+    parametersTypes:
+    - "java.util.function.Predicate"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "findCallerWhenShouldBeSkippedNotTestClassName"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A39C1E3709E2C3888F06CB417768954D"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.util.NewThrowableFinder"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.util.NewThrowableFinder"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.util.NewThrowableFinder"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "shouldBeSkipped"
+      modelFingerprint: "238A2EE90801540D9F5876047BFDFCA7"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        uuid: "findCaller_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "301A4FEABE992E299909575C71367498"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        uuid: "findCaller_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "jdk.internal.reflect.GeneratedConstructorAccessor643"
+            valueType: "java.lang.String"
+            uuid: "findCaller_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "test(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          suggestedContent: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "findCaller_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "08AF6D520ED7D7E57100080AA72F5C1D"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<array_return_item_reflection_call>
+          target: "java.lang.StackTraceElement"
+          arrayReturnReflectionCallContent: !<array_return_reflection_call>
+            target: "java.lang.StackTraceElement[]"
+            localVariableValue:
+              sapientType: "OBJECT"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "java.lang.Throwable"
+              uuid: "findCaller_throwable1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters: []
+            size: 23
+            baseUuid: "findCaller_stackTraceElement[]1"
+            methodName: "getStackTrace"
+          index: 0
+        valueType: "java.lang.StackTraceElement"
+        uuid: "findCaller_stackTraceElement[]1-item0"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "da12eda8-142f-3d84-bc2b-5b2c3e08fb0c"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "findCallerWhenShouldBeSkippedTestClassNameThrowsAssertionError"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "BACAFDB6938642C6666C6ABF883FD893"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.util.NewThrowableFinder"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.util.NewThrowableFinder"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.util.NewThrowableFinder"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "shouldBeSkipped"
+      modelFingerprint: "238A2EE90801540D9F5876047BFDFCA7"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        uuid: "findCaller_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "04E991C15E3B0A5F24BBAD32081523B9"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        uuid: "findCaller_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "jdk.internal.reflect.GeneratedConstructorAccessor643"
+            valueType: "java.lang.String"
+            uuid: "findCaller_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "test(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "findCaller_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "F4C54F75BEDDF893DBA32BA8D1934BD7"
+      index: 4
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        uuid: "findCaller_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "jdk.internal.reflect.DelegatingConstructorAccessorImpl"
+            valueType: "java.lang.String"
+            uuid: "findCaller_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "test(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "findCaller_boolean2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "D0FEF1C4BA24BA447BE9C80D313F701D"
+      index: 5
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        uuid: "findCaller_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.lang.reflect.Constructor"
+            valueType: "java.lang.String"
+            uuid: "findCaller_string3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "test(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "findCaller_boolean3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "D0FEF1C4BA24BA447BE9C80D313F701D"
+      index: 6
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        uuid: "findCaller_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.lang.reflect.Constructor"
+            valueType: "java.lang.String"
+            uuid: "findCaller_string4"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "test(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "findCaller_boolean4"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "0F6B32E8E4C3FAC5C66E67674857C585"
+      index: 7
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        uuid: "findCaller_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "ai.sapient.core.smt.z3.expression.RealMethodCallerUtil"
+            valueType: "java.lang.String"
+            uuid: "findCaller_string5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "test(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "findCaller_boolean5"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "0F6B32E8E4C3FAC5C66E67674857C585"
+      index: 8
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        uuid: "findCaller_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "ai.sapient.core.smt.z3.expression.RealMethodCallerUtil"
+            valueType: "java.lang.String"
+            uuid: "findCaller_string6"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "test(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "findCaller_boolean6"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "1E831C3584BF68CDB64A95A2172651C6"
+      index: 9
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        uuid: "findCaller_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "ai.sapient.core.parser.asm.instruction.handler.MethodCallInstructionConstructorHandler"
+            valueType: "java.lang.String"
+            uuid: "findCaller_string7"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "test(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "findCaller_boolean7"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "1E831C3584BF68CDB64A95A2172651C6"
+      index: 10
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        uuid: "findCaller_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "ai.sapient.core.parser.asm.instruction.handler.MethodCallInstructionConstructorHandler"
+            valueType: "java.lang.String"
+            uuid: "findCaller_string8"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "test(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "findCaller_boolean8"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "44A86AC2BC672B062F0CECAB30BF97CE"
+      index: 11
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        uuid: "findCaller_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "ai.sapient.core.parser.asm.instruction.util.InstructionHandlerFactory"
+            valueType: "java.lang.String"
+            uuid: "findCaller_string9"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "test(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "findCaller_boolean9"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "AB6E15CB046F2A00D4D9241D81743E9B"
+      index: 12
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        uuid: "findCaller_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "ai.sapient.core.parser.MethodPathBuilder"
+            valueType: "java.lang.String"
+            uuid: "findCaller_string10"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "test(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "findCaller_boolean10"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "AB6E15CB046F2A00D4D9241D81743E9B"
+      index: 13
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        uuid: "findCaller_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "ai.sapient.core.parser.MethodPathBuilder"
+            valueType: "java.lang.String"
+            uuid: "findCaller_string11"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "test(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "findCaller_boolean11"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "147E855845D4BA8D594DCA9724EED9C3"
+      index: 14
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        uuid: "findCaller_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "ai.sapient.core.parser.ClassModelCreator"
+            valueType: "java.lang.String"
+            uuid: "findCaller_string12"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "test(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "findCaller_boolean12"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "147E855845D4BA8D594DCA9724EED9C3"
+      index: 15
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        uuid: "findCaller_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "ai.sapient.core.parser.ClassModelCreator"
+            valueType: "java.lang.String"
+            uuid: "findCaller_string13"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "test(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "findCaller_boolean13"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "147E855845D4BA8D594DCA9724EED9C3"
+      index: 16
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        uuid: "findCaller_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "ai.sapient.core.parser.ClassModelCreator"
+            valueType: "java.lang.String"
+            uuid: "findCaller_string14"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "test(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "findCaller_boolean14"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "2FB687789C98980A8FE54DD5670FD0E5"
+      index: 17
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        uuid: "findCaller_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "ai.sapient.core.extractor.input.parameter.TestInputsSolver"
+            valueType: "java.lang.String"
+            uuid: "findCaller_string15"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "test(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "findCaller_boolean15"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "2FB687789C98980A8FE54DD5670FD0E5"
+      index: 18
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        uuid: "findCaller_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "ai.sapient.core.extractor.input.parameter.TestInputsSolver"
+            valueType: "java.lang.String"
+            uuid: "findCaller_string16"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "test(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "findCaller_boolean16"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "D899D3E82D18BCDC8358C40F23DC3A8E"
+      index: 19
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        uuid: "findCaller_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "ai.sapient.core.extractor.input.parameter.MultithreadTestInputSolver"
+            valueType: "java.lang.String"
+            uuid: "findCaller_string17"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "test(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "findCaller_boolean17"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "5B6A3EEA59120028A12487A5FB7583A8"
+      index: 20
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        uuid: "findCaller_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "ai.sapient.core.context.ContextAwareOperation"
+            valueType: "java.lang.String"
+            uuid: "findCaller_string18"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "test(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "findCaller_boolean18"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "D899D3E82D18BCDC8358C40F23DC3A8E"
+      index: 21
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        uuid: "findCaller_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "ai.sapient.core.extractor.input.parameter.MultithreadTestInputSolver"
+            valueType: "java.lang.String"
+            uuid: "findCaller_string19"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "test(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "findCaller_boolean19"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "0B4FC85640BFB249353015D624D60F64"
+      index: 22
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        uuid: "findCaller_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.util.concurrent.CompletableFuture$AsyncSupply"
+            valueType: "java.lang.String"
+            uuid: "findCaller_string20"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "test(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "findCaller_boolean20"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "C725A5CC67801E90A5C08828291D2465"
+      index: 23
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        uuid: "findCaller_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.util.concurrent.ThreadPoolExecutor"
+            valueType: "java.lang.String"
+            uuid: "findCaller_string21"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "test(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "findCaller_boolean21"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "9D1DAEF2EEFEF7578EF42E4FF277FD0D"
+      index: 24
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        uuid: "findCaller_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.util.concurrent.ThreadPoolExecutor$Worker"
+            valueType: "java.lang.String"
+            uuid: "findCaller_string22"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "test(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "findCaller_boolean22"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "F3AF1865305E4623E47C2B925D39882A"
+      index: 25
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Predicate"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Predicate"
+        uuid: "findCaller_predicate1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.lang.Thread"
+            valueType: "java.lang.String"
+            uuid: "findCaller_string23"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "test(String): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "findCaller_boolean23"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "99D87EA92C04D3F0C8C769F152216C7C"
+      index: 26
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.AssertionError"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.AssertionError"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.AssertionError"
+        uuid: "findCaller_assertionError1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7ca431db-573d-3ca1-badb-4e8366b29fb0"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true

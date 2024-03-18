@@ -1,0 +1,852 @@
+---
+modelFingerprint: "13B2A9A34C55DEEE6E742157C196C2A3"
+methods:
+- method:
+    name: "getSource"
+    returnType: "java.lang.String"
+    signature: "getSource() : java.lang.String"
+    instructionFingerprint: "854B79AEA08FF6F0333EA5B702756AD3"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getSourceTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Class<?>) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8F031A58D35AF2DBFB35F07D653E1CF0"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "b18e1b7c-5aa2-3b75-96ca-a0f74ce65f85"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "object of type ClassReader"
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isArray() : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getLineNumber"
+    returnType: "java.lang.Integer"
+    signature: "getLineNumber(java.lang.reflect.Member) : java.lang.Integer"
+    instructionFingerprint: "7A10C3A9AEED261EF224F284DBA1022B"
+    parametersTypes:
+    - "java.lang.reflect.Member"
+  paths:
+  - pathId: "path2"
+    pathIdForUser: "path1"
+    testPathName: "getLineNumberWhenTypeNotEqualsMemberGetDeclaringClassThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Class<?>) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "14EEF27FF05475419ED78A811A661AF8"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "C6DE9965C01A92DA3E2D0B38B2055141"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.util.LineNumbers"
+          parameters:
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              suggestedContent: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.util.LineNumbers"
+          parameters:
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              suggestedContent: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.util.LineNumbers"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "member"
+      modelFingerprint: "17CA106B08ADDC7B6EE2E9389EC9D9D8"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Member"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Member"
+        uuid: "getLineNumber_member1"
+        fixed: false
+        nameForMock: "some_value"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "3FC1D615D0411051FB20B98673A88599"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 3
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.objectweb.asm.ClassReader"
+          parameters:
+          - name: "inputStream"
+            value:
+              sapientType: "OBJECT"
+              content: !<method_return_from_value>
+                target: "java.io.InputStream"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  suggestedContent: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "<init>_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters:
+                - value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "/java/lang/Object.class"
+                    valueType: "java.lang.String"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                methodName: "getResourceAsStream"
+              suggestedContent: !<method_return_from_value>
+                target: "java.io.InputStream"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  suggestedContent: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "<init>_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters:
+                - value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "/java/lang/Object.class"
+                    valueType: "java.lang.String"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                methodName: "getResourceAsStream"
+              valueType: "java.io.InputStream"
+              uuid: "<init>_inputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          thrownExceptions:
+          - "java.io.IOException"
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.objectweb.asm.ClassReader"
+          parameters:
+          - name: "inputStream"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<method_return_from_value>
+                target: "java.io.InputStream"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  suggestedContent: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "<init>_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters:
+                - value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "/java/lang/Object.class"
+                    valueType: "java.lang.String"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                methodName: "getResourceAsStream"
+              valueType: "java.io.InputStream"
+              uuid: "<init>_inputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          thrownExceptions:
+          - "java.io.IOException"
+          createdByTargetCode: true
+        valueType: "org.objectweb.asm.ClassReader"
+        uuid: "<init>_classReader1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.objectweb.asm.ClassReader"
+        name: "accept"
+        parameters:
+        - name: "classVisitor"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "org.objectweb.asm.ClassVisitor"
+            uuid: "<init>_classVisitor1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "parsingOptions"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 4
+            valueType: "int"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "accept(ClassVisitor,int): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "member"
+      modelFingerprint: "AC7DF95C6BC2E4B7674AE54976D99BE5"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Member"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Member"
+        uuid: "getLineNumber_member1"
+        fixed: false
+        nameForMock: "some_value"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "member"
+        name: "getDeclaringClass"
+        parameters: []
+        signature: "getDeclaringClass(): Class"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "java.lang.Class"
+          genericValueType: "?"
+          uuid: "getLineNumber_class1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "member"
+      modelFingerprint: "AC7DF95C6BC2E4B7674AE54976D99BE5"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Member"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Member"
+        uuid: "getLineNumber_member1"
+        fixed: false
+        nameForMock: "some_value"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "member"
+        name: "getDeclaringClass"
+        parameters: []
+        signature: "getDeclaringClass(): Class"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "java.lang.Class"
+          genericValueType: "?"
+          uuid: "getLineNumber_class2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3E9C76AB51311DE97AE9C2294CD5E1D6"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.IllegalArgumentException"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "de2215b4-ae16-383b-a56c-ffd45ad8cbbf"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "object of type ClassReader"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "new ClassReader(in).accept(new LineNumberReader(), ClassReader.SKIP_FRAMES);"
+      lineNumber: 74
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type ClassReader - Method: accept"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path2"
+    testPathName: "getLineNumberWhenMemberNotInstanceOfConstructorThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Class<?>) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E902C500F71759BEAD084981C9E7619E"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "C6DE9965C01A92DA3E2D0B38B2055141"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.util.LineNumbers"
+          parameters:
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              suggestedContent: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.util.LineNumbers"
+          parameters:
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              suggestedContent: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.util.LineNumbers"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "member"
+      modelFingerprint: "534AC238215716FE04D3C50CF97F9770"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Member"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Member"
+        uuid: "getLineNumber_member1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "139A1915D43AB8D33A265E27636CCE2A"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 3
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.objectweb.asm.ClassReader"
+          parameters:
+          - name: "inputStream"
+            value:
+              sapientType: "INPUT_STREAM"
+              content: !<inputStream>
+                values: []
+              valueType: "java.io.InputStream"
+              uuid: "<init>_inputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          thrownExceptions:
+          - "java.io.IOException"
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.objectweb.asm.ClassReader"
+          parameters:
+          - name: "inputStream"
+            value:
+              sapientType: "INPUT_STREAM"
+              valueType: "java.io.InputStream"
+              uuid: "<init>_inputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          thrownExceptions:
+          - "java.io.IOException"
+          createdByTargetCode: true
+        valueType: "org.objectweb.asm.ClassReader"
+        uuid: "<init>_classReader1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.objectweb.asm.ClassReader"
+        name: "accept"
+        parameters:
+        - name: "classVisitor"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "org.objectweb.asm.ClassVisitor"
+            uuid: "<init>_classVisitor1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "parsingOptions"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 4
+            valueType: "int"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "accept(ClassVisitor,int): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "25E8E9BB65ACA7BA66E663D4E92A1D13"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Unsupported implementation class for Member, "
+              suggestedContent: !<regular>
+                value: "Unsupported implementation class for Member, "
+              valueType: "java.lang.String"
+              uuid: "memberKey_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "Unsupported implementation class for Member, "
+              valueType: "java.lang.String"
+              uuid: "memberKey_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalArgumentException"
+        uuid: "memberKey_illegalArgumentException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "98d839b7-379d-396a-bd5e-12636521c5a2"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "object of type ClassReader"
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isArray() : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "getFirstLine"
+    returnType: "int"
+    signature: "getFirstLine() : int"
+    instructionFingerprint: "B0E3C3CA08441FA746D936089ACCFBF3"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getFirstLineWhenFirstLineEqualsIntegerMAX_VALUE"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Class<?>) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F3BE42E9315282FE6E92E2CC0BB43AF9"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "D0B7635FE42958F6F233EA9E81F7A8AE"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.util.LineNumbers"
+          parameters:
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.String"
+              suggestedContent: !<regular>
+                value: "java.lang.String"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.util.LineNumbers"
+          parameters:
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.String"
+              suggestedContent: !<regular>
+                value: "java.lang.String"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.util.LineNumbers"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "7CACD058492F5A1F3387DBB7C362E6F7"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      idsTryCatchBlockSurrounding:
+      - 3
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "org.objectweb.asm.ClassReader"
+          parameters:
+          - name: "inputStream"
+            value:
+              sapientType: "OBJECT"
+              content: !<method_return_from_value>
+                target: "java.io.InputStream"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.String"
+                  suggestedContent: !<regular>
+                    value: "java.lang.String"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "<init>_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters:
+                - value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "/java/lang/String.class"
+                    valueType: "java.lang.String"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                methodName: "getResourceAsStream"
+              suggestedContent: !<method_return_from_value>
+                target: "java.io.InputStream"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.String"
+                  suggestedContent: !<regular>
+                    value: "java.lang.String"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "<init>_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters:
+                - value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "/java/lang/String.class"
+                    valueType: "java.lang.String"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                methodName: "getResourceAsStream"
+              valueType: "java.io.InputStream"
+              uuid: "<init>_inputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          thrownExceptions:
+          - "java.io.IOException"
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "org.objectweb.asm.ClassReader"
+          parameters:
+          - name: "inputStream"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<method_return_from_value>
+                target: "java.io.InputStream"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.String"
+                  suggestedContent: !<regular>
+                    value: "java.lang.String"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "<init>_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters:
+                - value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "/java/lang/String.class"
+                    valueType: "java.lang.String"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                methodName: "getResourceAsStream"
+              valueType: "java.io.InputStream"
+              uuid: "<init>_inputStream1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          thrownExceptions:
+          - "java.io.IOException"
+          createdByTargetCode: true
+        valueType: "org.objectweb.asm.ClassReader"
+        uuid: "<init>_classReader1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "org.objectweb.asm.ClassReader"
+        name: "accept"
+        parameters:
+        - name: "classVisitor"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "org.objectweb.asm.ClassVisitor"
+            uuid: "<init>_classVisitor1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "parsingOptions"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 4
+            valueType: "int"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "accept(ClassVisitor,int): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "<init>_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "07B9F5C7EDC82C98858A3592D8BDC804"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: 1
+        valueType: "int"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0fa5ca5d-711b-3964-bece-10b521da65b3"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "object of type ClassReader"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "new ClassReader(in).accept(new LineNumberReader(), ClassReader.SKIP_FRAMES);"
+      lineNumber: 74
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type ClassReader - Method: accept"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true

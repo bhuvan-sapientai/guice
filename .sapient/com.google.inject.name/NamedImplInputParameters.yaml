@@ -1,0 +1,413 @@
+---
+modelFingerprint: "E15643000C3C78AE7F3F232650796804"
+methods:
+- method:
+    name: "value"
+    returnType: "java.lang.String"
+    signature: "value() : java.lang.String"
+    instructionFingerprint: "D69B93278984965E086963038E04C70F"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "valueTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "09020470B73F87A3D1B0A76FD53649D8"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "0B181CA982E8890EC56D823CB250A1C5"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.name.NamedImpl"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "<value>"
+              suggestedContent: !<regular>
+                value: "<value>"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.name.NamedImpl"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "<value>"
+              suggestedContent: !<regular>
+                value: "<value>"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.name.NamedImpl"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "<init>_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "52f8c495-dd1f-3640-b180-04a7f65fff2e"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.String,java.lang.String)\
+        \ : java.lang.String"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "equals"
+    returnType: "boolean"
+    signature: "equals(java.lang.Object) : boolean"
+    instructionFingerprint: "79B2F194359D17E6375BFE012DC3B5A8"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "equalsWhenONotInstanceOfNamed"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "613FC43B832F4FCFF72E98E6230C79B8"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "2a7f844d-fd1c-31b7-b8a1-5c3b6ab6f202"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "REFLECTION_CALL_FAILURE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "equalsWhenValueEqualsOtherValue"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C655AC2D583E23D00E6C848D3B1D61BC"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "a72ea35a-cdc8-3b79-b4ef-2a2de2f81363"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "REFLECTION_CALL_FAILURE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "equalsWhenValueNotEqualsOtherValue"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "576CEE903610C727C44BF0A74E2B1268"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "a8a90d89-6057-390d-b40d-1f530ad8ab95"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "REFLECTION_CALL_FAILURE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "toString"
+    returnType: "java.lang.String"
+    signature: "toString() : java.lang.String"
+    instructionFingerprint: "CCEFEDE4C7B17111F5819CC1E84FE36A"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toStringTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2FAB54285831BDD16FD06F95B01B6FAC"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "0B181CA982E8890EC56D823CB250A1C5"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.name.NamedImpl"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "<value>"
+              suggestedContent: !<regular>
+                value: "<value>"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.name.NamedImpl"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "<value>"
+              suggestedContent: !<regular>
+                value: "<value>"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.name.NamedImpl"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Annotations"
+      modelFingerprint: "E09A53469F179CAE994B5459B3C7D6AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Annotations"
+        uuid: "com.google.inject.internal.Annotations"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Annotations"
+        name: "memberValueString"
+        parameters:
+        - name: "memberName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "value"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "value1"
+            valueType: "java.lang.String"
+            uuid: "<init>_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "memberValueString(String,String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "\\\"B\\\""
+          suggestedContent: !<regular>
+            value: "\\\"B\\\""
+          valueType: "java.lang.String"
+          uuid: "toString_string2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "9D081F5BFA28BB3DD07C3F3F2CE3645E"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "@com.google.inject.name.Named(\\\"B\\\")"
+        valueType: "java.lang.String"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "363d3698-f34c-39ad-914f-376a19498023"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.String,java.lang.String)\
+        \ : java.lang.String"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "annotationType"
+    returnType: "java.lang.Class"
+    signature: "annotationType() : java.lang.Class<? extends java.lang.annotation.Annotation>"
+    instructionFingerprint: "4D7260A2BC1D5B94D468C76FA23A890F"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "annotationTypeTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.String) : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C9EB0AE7A0B78AE3936FE80CB91E9AE1"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "0B181CA982E8890EC56D823CB250A1C5"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.name.NamedImpl"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "<value>"
+              suggestedContent: !<regular>
+                value: "<value>"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.name.NamedImpl"
+          parameters:
+          - name: "value"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "<value>"
+              suggestedContent: !<regular>
+                value: "<value>"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.name.NamedImpl"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D526445FE35E8CCEC7F65EF6BFE7BC5F"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "com.google.inject.name.Named"
+        valueType: "java.lang.Class"
+        genericValueType: "com.google.inject.name.Named"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b18e5504-3106-34bd-b29a-326bddd61945"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.String,java.lang.String)\
+        \ : java.lang.String"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

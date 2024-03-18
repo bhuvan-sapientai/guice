@@ -1,0 +1,4422 @@
+---
+modelFingerprint: "526C2007BF1ABEFC2ABBF42180C79B6F"
+methods:
+- method:
+    name: "newRealSetBinder"
+    returnType: "com.google.inject.internal.RealMultibinder"
+    signature: "newRealSetBinder(com.google.inject.Binder,com.google.inject.Key<java.lang.Object>)\
+      \ : com.google.inject.internal.RealMultibinder<java.lang.Object>"
+    instructionFingerprint: "46758606E39359866C9008CC4AC28297"
+    parametersTypes:
+    - "com.google.inject.Binder"
+    - "com.google.inject.Key"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "newRealSetBinderTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "04DE9E283750605570D6241F5026EA88"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "binder"
+      modelFingerprint: "AEFBE0E7DAD7EE5E78E687E9DED6BC7A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Binder"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.Binder"
+        uuid: "newRealSetBinder_binder1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "F59B66C04746BAE94AED352C5E64D400"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "com.google.inject.Key"
+          method: "get"
+          methodParameters:
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "newRealSetBinder_key1-type"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "com.google.inject.Key"
+          method: "get"
+          methodParameters:
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              valueType: "java.lang.Class"
+              uuid: "newRealSetBinder_key1-type"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.google.inject.Key"
+        uuid: "newRealSetBinder_key1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Errors"
+      modelFingerprint: "E44C9F15C43EDC3660FC1B27ACA96964"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Errors"
+        uuid: "com.google.inject.internal.Errors"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Errors"
+        name: "checkNotNull"
+        parameters:
+        - name: "reference"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.Binder"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.Binder"
+            uuid: "newRealSetBinder_binder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "binder"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "checkNotNull(Binder,String): Binder"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.Binder"
+            onlyPojoFunctions: true
+            builderPattern: false
+          valueType: "com.google.inject.Binder"
+          uuid: "<init>_binder1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binder"
+      modelFingerprint: "2BAE964C846AA3D65D7406A3F6CCC762"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Binder"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.Binder"
+        uuid: "newRealSetBinder_binder1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "binder"
+        name: "install"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "com.google.inject.internal.RealMultibinder"
+              parameters:
+              - name: "binder"
+                value:
+                  sapientType: "MOCK"
+                  suggestedContent: !<unknown_object>
+                    target: "com.google.inject.Binder"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "com.google.inject.Binder"
+                  uuid: "newRealSetBinder_binder1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "key"
+                value:
+                  sapientType: "OBJECT"
+                  content: !<static_method_return>
+                    target: "com.google.inject.Key"
+                    method: "get"
+                    methodParameters:
+                    - name: "type"
+                      value:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.Object"
+                        valueType: "java.lang.Class"
+                        uuid: "newRealSetBinder_key1-type"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                  suggestedContent: !<static_method_return>
+                    target: "com.google.inject.Key"
+                    method: "get"
+                    methodParameters:
+                    - name: "type"
+                      value:
+                        sapientType: "CLASS"
+                        valueType: "java.lang.Class"
+                        uuid: "newRealSetBinder_key1-type"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                  valueType: "com.google.inject.Key"
+                  uuid: "newRealSetBinder_key1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "com.google.inject.internal.RealMultibinder"
+              parameters:
+              - name: "binder"
+                value:
+                  sapientType: "MOCK"
+                  suggestedContent: !<unknown_object>
+                    target: "com.google.inject.Binder"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "com.google.inject.Binder"
+                  uuid: "newRealSetBinder_binder1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "key"
+                value:
+                  sapientType: "OBJECT"
+                  content: !<static_method_return>
+                    target: "com.google.inject.Key"
+                    method: "get"
+                    methodParameters:
+                    - name: "type"
+                      value:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.Object"
+                        valueType: "java.lang.Class"
+                        uuid: "newRealSetBinder_key1-type"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                  suggestedContent: !<static_method_return>
+                    target: "com.google.inject.Key"
+                    method: "get"
+                    methodParameters:
+                    - name: "type"
+                      value:
+                        sapientType: "CLASS"
+                        valueType: "java.lang.Class"
+                        uuid: "newRealSetBinder_key1-type"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                  valueType: "com.google.inject.Key"
+                  uuid: "newRealSetBinder_key1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "com.google.inject.internal.RealMultibinder"
+            genericValueType: "java.lang.Object"
+            uuid: "newRealSetBinder_realMultibinder1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "install(RealMultibinder): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "newRealSetBinder_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "AAA646CE3C0E41785A1E2B7E3294F066"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.RealMultibinder"
+          parameters:
+          - name: "binder"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.Binder"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.Binder"
+              uuid: "newRealSetBinder_binder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    uuid: "newRealSetBinder_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    valueType: "java.lang.Class"
+                    uuid: "newRealSetBinder_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "com.google.inject.Key"
+              uuid: "newRealSetBinder_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.RealMultibinder"
+          parameters:
+          - name: "binder"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.Binder"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.Binder"
+              uuid: "newRealSetBinder_binder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    uuid: "newRealSetBinder_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    valueType: "java.lang.Class"
+                    uuid: "newRealSetBinder_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "com.google.inject.Key"
+              uuid: "newRealSetBinder_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "com.google.inject.internal.RealMultibinder"
+        genericValueType: "java.lang.Object"
+        uuid: "newRealSetBinder_realMultibinder1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "aad37094-035e-3bb5-9198-cebee6897fcb"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "setOf"
+    returnType: "com.google.inject.TypeLiteral"
+    signature: "setOf(com.google.inject.TypeLiteral<java.lang.Object>) : com.google.inject.TypeLiteral<java.util.Set<java.lang.Object>>"
+    instructionFingerprint: "8B653A0AD722EADAA85B704781494837"
+    parametersTypes:
+    - "com.google.inject.TypeLiteral"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setOfTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "066AD60B7C7EC3AF51EB64457174A5FC"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "elementType"
+      modelFingerprint: "79479F523B168C306440455A686CA838"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.TypeLiteral"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.TypeLiteral"
+        genericValueType: "java.lang.Object"
+        uuid: "setOf_typeLiteral1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "elementType"
+      modelFingerprint: "95DC3AA689D423070A245505108BD578"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.TypeLiteral"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.TypeLiteral"
+        genericValueType: "java.lang.Object"
+        uuid: "setOf_typeLiteral1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "elementType"
+        name: "getType"
+        parameters: []
+        signature: "getType(): Type"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.reflect.Type"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.lang.reflect.Type"
+          uuid: "setOf_type1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Types"
+      modelFingerprint: "C58F924ABECCCD27DFCFC613AD16BF79"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.util.Types"
+        uuid: "com.google.inject.util.Types"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.util.Types"
+        name: "setOf"
+        parameters:
+        - name: "elementType"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Type"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Type"
+            uuid: "setOf_type1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setOf(Type): ParameterizedType"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.reflect.ParameterizedType"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.lang.reflect.ParameterizedType"
+          uuid: "setOf_parameterizedType1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "TypeLiteral"
+      modelFingerprint: "6906DBED375EB8FC7F44C575A96A2F7C"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.TypeLiteral"
+        uuid: "com.google.inject.TypeLiteral"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.TypeLiteral"
+        name: "get"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.ParameterizedType"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.ParameterizedType"
+            uuid: "setOf_parameterizedType1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(ParameterizedType): TypeLiteral"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "com.google.inject.TypeLiteral"
+          genericValueType: "java.util.Set<java.lang.Object>"
+          uuid: "setOf_typeLiteral2"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "4CCED9EC535BF2372E58D14F5C66F9D6"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.TypeLiteral"
+        genericValueType: "java.util.Set<java.lang.Object>"
+        uuid: "setOf_typeLiteral2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1a55bfd1-a800-3a32-bada-69469b6ce117"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "collectionOfProvidersOf"
+    returnType: "com.google.inject.TypeLiteral"
+    signature: "collectionOfProvidersOf(com.google.inject.TypeLiteral<java.lang.Object>)\
+      \ : com.google.inject.TypeLiteral<java.util.Collection<com.google.inject.Provider<java.lang.Object>>>"
+    instructionFingerprint: "30EC43EA5479AB21D1F9D133D076D7B6"
+    parametersTypes:
+    - "com.google.inject.TypeLiteral"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "collectionOfProvidersOfTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "420C705CAB32C4DE135967E65BD14D26"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "elementType"
+      modelFingerprint: "79479F523B168C306440455A686CA838"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.TypeLiteral"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.TypeLiteral"
+        genericValueType: "java.lang.Object"
+        uuid: "collectionOfProvidersOf_typeLiteral1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "elementType"
+      modelFingerprint: "95DC3AA689D423070A245505108BD578"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.TypeLiteral"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.TypeLiteral"
+        genericValueType: "java.lang.Object"
+        uuid: "collectionOfProvidersOf_typeLiteral1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "elementType"
+        name: "getType"
+        parameters: []
+        signature: "getType(): Type"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.reflect.Type"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.lang.reflect.Type"
+          uuid: "collectionOfProvidersOf_type1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Types"
+      modelFingerprint: "148838ADA4E37D3215524F8AF774F49C"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.util.Types"
+        uuid: "com.google.inject.util.Types"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.util.Types"
+        name: "providerOf"
+        parameters:
+        - name: "providedType"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Type"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Type"
+            uuid: "collectionOfProvidersOf_type1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "providerOf(Type): ParameterizedType"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.reflect.ParameterizedType"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.lang.reflect.ParameterizedType"
+          uuid: "collectionOfProvidersOf_parameterizedType1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Types"
+      modelFingerprint: "DCC6A47D65C46B26C72FC6A46973F4E2"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.util.Types"
+        uuid: "com.google.inject.util.Types"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.util.Types"
+        name: "collectionOf"
+        parameters:
+        - name: "elementType"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.ParameterizedType"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.ParameterizedType"
+            uuid: "collectionOfProvidersOf_parameterizedType1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "collectionOf(ParameterizedType): ParameterizedType"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.reflect.ParameterizedType"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.lang.reflect.ParameterizedType"
+          uuid: "collectionOfProvidersOf_parameterizedType2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "TypeLiteral"
+      modelFingerprint: "8DD24E33950226BEC162BBFCD02106E9"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.TypeLiteral"
+        uuid: "com.google.inject.TypeLiteral"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.TypeLiteral"
+        name: "get"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.ParameterizedType"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.ParameterizedType"
+            uuid: "collectionOfProvidersOf_parameterizedType2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(ParameterizedType): TypeLiteral"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "com.google.inject.TypeLiteral"
+          genericValueType: "java.util.Collection<com.google.inject.Provider<java.lang.Object>>"
+          uuid: "collectionOfProvidersOf_typeLiteral2"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "09A4FA6053A30A274351423EF157B957"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.TypeLiteral"
+        genericValueType: "java.util.Collection<com.google.inject.Provider<java.lang.Object>>"
+        uuid: "collectionOfProvidersOf_typeLiteral2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c06c39a0-88e5-3293-b683-63b5fbea7e49"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "collectionOfJakartaProvidersOf"
+    returnType: "com.google.inject.TypeLiteral"
+    signature: "collectionOfJakartaProvidersOf(com.google.inject.TypeLiteral<java.lang.Object>)\
+      \ : com.google.inject.TypeLiteral<java.util.Collection<jakarta.inject.Provider<java.lang.Object>>>"
+    instructionFingerprint: "A7FBFEED8E3DB1A17CEA3C02315597A9"
+    parametersTypes:
+    - "com.google.inject.TypeLiteral"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "collectionOfJakartaProvidersOfTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E5BDBC3D0A99635B4FC09324FAA37131"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "elementType"
+      modelFingerprint: "79479F523B168C306440455A686CA838"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.TypeLiteral"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.TypeLiteral"
+        genericValueType: "java.lang.Object"
+        uuid: "collectionOfJakartaProvidersOf_typeLiteral1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "elementType"
+      modelFingerprint: "95DC3AA689D423070A245505108BD578"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.TypeLiteral"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.TypeLiteral"
+        genericValueType: "java.lang.Object"
+        uuid: "collectionOfJakartaProvidersOf_typeLiteral1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "elementType"
+        name: "getType"
+        parameters: []
+        signature: "getType(): Type"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.reflect.Type"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.lang.reflect.Type"
+          uuid: "collectionOfJakartaProvidersOf_type1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Types"
+      modelFingerprint: "20B1AAF4260E266C02A58077E50FA012"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.util.Types"
+        uuid: "com.google.inject.util.Types"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.util.Types"
+        name: "newParameterizedType"
+        parameters:
+        - name: "rawType"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "jakarta.inject.Provider"
+            valueType: "java.lang.Class"
+            genericValueType: "jakarta.inject.Provider"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeArguments"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values:
+                0:
+                  sapientType: "MOCK"
+                  suggestedContent: !<unknown_object>
+                    target: "java.lang.reflect.Type"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "java.lang.reflect.Type"
+                  uuid: "collectionOfJakartaProvidersOf_type1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<array>
+              values:
+                0:
+                  sapientType: "MOCK"
+                  suggestedContent: !<unknown_object>
+                    target: "java.lang.reflect.Type"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "java.lang.reflect.Type"
+                  uuid: "collectionOfJakartaProvidersOf_type1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "java.lang.reflect.Type[]"
+            uuid: "collectionOfJakartaProvidersOf_type[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "newParameterizedType(Class,Type[]): ParameterizedType"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.reflect.ParameterizedType"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.lang.reflect.ParameterizedType"
+          uuid: "collectionOfJakartaProvidersOf_parameterizedType1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 137
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Types"
+      modelFingerprint: "DCC6A47D65C46B26C72FC6A46973F4E2"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.util.Types"
+        uuid: "com.google.inject.util.Types"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.util.Types"
+        name: "collectionOf"
+        parameters:
+        - name: "elementType"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.ParameterizedType"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.ParameterizedType"
+            uuid: "collectionOfJakartaProvidersOf_parameterizedType1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "collectionOf(ParameterizedType): ParameterizedType"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.reflect.ParameterizedType"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.lang.reflect.ParameterizedType"
+          uuid: "collectionOfJakartaProvidersOf_parameterizedType2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "TypeLiteral"
+      modelFingerprint: "75144DCB425CCB47A9FF9B1D6746DA8D"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.TypeLiteral"
+        uuid: "com.google.inject.TypeLiteral"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.TypeLiteral"
+        name: "get"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.ParameterizedType"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.ParameterizedType"
+            uuid: "collectionOfJakartaProvidersOf_parameterizedType2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(ParameterizedType): TypeLiteral"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "com.google.inject.TypeLiteral"
+          genericValueType: "java.util.Collection<jakarta.inject.Provider<java.lang.Object>>"
+          uuid: "collectionOfJakartaProvidersOf_typeLiteral2"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E2C8D40009BBDDE4F9B79DFD209DCD15"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.TypeLiteral"
+        genericValueType: "java.util.Collection<jakarta.inject.Provider<java.lang.Object>>"
+        uuid: "collectionOfJakartaProvidersOf_typeLiteral2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f0e74cb6-b55f-3b5c-9a78-79cf17a3690c"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "setOfExtendsOf"
+    returnType: "com.google.inject.TypeLiteral"
+    signature: "setOfExtendsOf(com.google.inject.TypeLiteral<java.lang.Object>) :\
+      \ com.google.inject.TypeLiteral<java.util.Set<? extends java.lang.Object>>"
+    instructionFingerprint: "A41559CFE17A08ED92A8D9C20843FC83"
+    parametersTypes:
+    - "com.google.inject.TypeLiteral"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "setOfExtendsOfTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "BC2577A2762618D61B080A1ADF32DD19"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "elementType"
+      modelFingerprint: "79479F523B168C306440455A686CA838"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.TypeLiteral"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.TypeLiteral"
+        genericValueType: "java.lang.Object"
+        uuid: "setOfExtendsOf_typeLiteral1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "elementType"
+      modelFingerprint: "95DC3AA689D423070A245505108BD578"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.TypeLiteral"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.TypeLiteral"
+        genericValueType: "java.lang.Object"
+        uuid: "setOfExtendsOf_typeLiteral1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "elementType"
+        name: "getType"
+        parameters: []
+        signature: "getType(): Type"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.reflect.Type"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.lang.reflect.Type"
+          uuid: "setOfExtendsOf_type1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Types"
+      modelFingerprint: "B7154BB5206057DD7A82BD5936C01134"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.util.Types"
+        uuid: "com.google.inject.util.Types"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.util.Types"
+        name: "subtypeOf"
+        parameters:
+        - name: "bound"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Type"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Type"
+            uuid: "setOfExtendsOf_type1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "subtypeOf(Type): WildcardType"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.reflect.WildcardType"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.lang.reflect.WildcardType"
+          uuid: "setOfExtendsOf_wildcardType1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Types"
+      modelFingerprint: "23166AC257B71D955808392F6FC55B61"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.util.Types"
+        uuid: "com.google.inject.util.Types"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.util.Types"
+        name: "setOf"
+        parameters:
+        - name: "elementType"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.WildcardType"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.WildcardType"
+            uuid: "setOfExtendsOf_wildcardType1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "setOf(WildcardType): ParameterizedType"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.reflect.ParameterizedType"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.lang.reflect.ParameterizedType"
+          uuid: "setOfExtendsOf_parameterizedType1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "TypeLiteral"
+      modelFingerprint: "2D5DCC5210AB1D10A550005EA6B796AA"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.TypeLiteral"
+        uuid: "com.google.inject.TypeLiteral"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.TypeLiteral"
+        name: "get"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.ParameterizedType"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.ParameterizedType"
+            uuid: "setOfExtendsOf_parameterizedType1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(ParameterizedType): TypeLiteral"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "com.google.inject.TypeLiteral"
+          genericValueType: "java.util.Set<? extends java.lang.Object>"
+          uuid: "setOfExtendsOf_typeLiteral2"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "BA15105A172F12D3EA4CFB2B71911C9A"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.TypeLiteral"
+        genericValueType: "java.util.Set<? extends java.lang.Object>"
+        uuid: "setOfExtendsOf_typeLiteral2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "dce9273f-224e-35b6-b539-10afb7a3e84a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "configure"
+    returnType: "void"
+    signature: "configure(com.google.inject.Binder) : void"
+    instructionFingerprint: "E3C18709BE5CBFB3422B2285D94FD2DC"
+    parametersTypes:
+    - "com.google.inject.Binder"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "configureWhenBindingSelectionNotIsInitialized"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.Binder,com.google.inject.Key<java.lang.Object>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "8945A4CE85F960116F2893F04E2B6D28"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "DB261631B7D733D1352AA07439174DEF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.RealMultibinder"
+          parameters:
+          - name: "binder"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.Binder"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.Binder"
+              uuid: "<init>_binder1"
+              fixed: false
+              nameForMock: "Binder"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "com.google.inject.Key"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.RealMultibinder"
+          parameters:
+          - name: "binder"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.Binder"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.Binder"
+              uuid: "<init>_binder1"
+              fixed: false
+              nameForMock: "Binder"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "com.google.inject.Key"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.RealMultibinder"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "binder"
+      modelFingerprint: "AEFBE0E7DAD7EE5E78E687E9DED6BC7A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Binder"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.Binder"
+        uuid: "configure_binder1"
+        fixed: false
+        nameForMock: "Binder"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Errors"
+      modelFingerprint: "E44C9F15C43EDC3660FC1B27ACA96964"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Errors"
+        uuid: "com.google.inject.internal.Errors"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Errors"
+        name: "checkNotNull"
+        parameters:
+        - name: "reference"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.Binder"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.Binder"
+            uuid: "<init>_binder1"
+            fixed: false
+            nameForMock: "Binder"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "binder"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "checkNotNull(Binder,String): Binder"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.Binder"
+            onlyPojoFunctions: true
+            builderPattern: false
+          valueType: "com.google.inject.Binder"
+          uuid: "<init>_binder2"
+          fixed: false
+          nameForMock: "void"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Errors"
+      modelFingerprint: "664858BDFAF258CB4724BC9A52BDED22"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Errors"
+        uuid: "com.google.inject.internal.Errors"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Errors"
+        name: "checkConfiguration"
+        parameters:
+        - name: "condition"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "format"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Multibinder was already initialized"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "args"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Object[]"
+            uuid: "configure_object[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "checkConfiguration(boolean,String,Object[]): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "configure_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 136
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binder"
+      modelFingerprint: "0CC652F0AD789B07AFAE4E992EE2F502"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Binder"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.Binder"
+        uuid: "configure_binder1"
+        fixed: false
+        nameForMock: "Binder"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "binder"
+        name: "bind"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Key"
+            genericValueType: "java.util.Set<java.lang.Object>"
+            uuid: "configure_key1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "bind(Key): LinkedBindingBuilder"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.binder.LinkedBindingBuilder"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "com.google.inject.binder.LinkedBindingBuilder"
+          uuid: "configure_linkedBindingBuilder1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "DE83EFFE15CB530045A8C75E81FBF229"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.binder.LinkedBindingBuilder"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.binder.LinkedBindingBuilder"
+        uuid: "configure_linkedBindingBuilder1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.binder.LinkedBindingBuilder"
+        name: "toProvider"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "com.google.inject.Provider"
+            uuid: "configure_provider1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "toProvider(Provider): ScopedBindingBuilder"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "com.google.inject.binder.ScopedBindingBuilder"
+          uuid: "configure_scopedBindingBuilder1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binder"
+      modelFingerprint: "0E4916B5B961BE55CF514FB49478E168"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Binder"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.Binder"
+        uuid: "configure_binder1"
+        fixed: false
+        nameForMock: "Binder"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "binder"
+        name: "bind"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Key"
+            genericValueType: "java.util.Set<? extends java.lang.Object>"
+            uuid: "configure_key2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "bind(Key): LinkedBindingBuilder"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.binder.LinkedBindingBuilder"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "com.google.inject.binder.LinkedBindingBuilder"
+          uuid: "configure_linkedBindingBuilder2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "1FB319FB89335BF9CE17D9A348D38C31"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.binder.LinkedBindingBuilder"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.binder.LinkedBindingBuilder"
+        uuid: "configure_linkedBindingBuilder2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.binder.LinkedBindingBuilder"
+        name: "to"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Key"
+            genericValueType: "java.util.Set<java.lang.Object>"
+            uuid: "configure_key3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "to(Key): ScopedBindingBuilder"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "com.google.inject.binder.ScopedBindingBuilder"
+          uuid: "configure_scopedBindingBuilder2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binder"
+      modelFingerprint: "1D72E75937C6E14F5C701098CF685F56"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Binder"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.Binder"
+        uuid: "configure_binder1"
+        fixed: false
+        nameForMock: "Binder"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "binder"
+        name: "bind"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Key"
+            genericValueType: "java.util.Collection<com.google.inject.Provider<java.lang.Object>>"
+            uuid: "configure_key4"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "bind(Key): LinkedBindingBuilder"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.binder.LinkedBindingBuilder"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "com.google.inject.binder.LinkedBindingBuilder"
+          uuid: "configure_linkedBindingBuilder3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "A2EE8AF4955F57DE119F6CB73F599B68"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.binder.LinkedBindingBuilder"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.binder.LinkedBindingBuilder"
+        uuid: "configure_linkedBindingBuilder3"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.binder.LinkedBindingBuilder"
+        name: "toProvider"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "com.google.inject.Provider"
+            uuid: "configure_provider2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "toProvider(Provider): ScopedBindingBuilder"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.binder.ScopedBindingBuilder"
+            onlyPojoFunctions: true
+            builderPattern: false
+          valueType: "com.google.inject.binder.ScopedBindingBuilder"
+          uuid: "configure_scopedBindingBuilder3"
+          fixed: false
+          nameForMock: "ScopedBindingBuilder"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binder"
+      modelFingerprint: "08F14C72BBDBDD2D12D82216C734EC5D"
+      index: 11
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Binder"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.Binder"
+        uuid: "configure_binder1"
+        fixed: false
+        nameForMock: "Binder"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "binder"
+        name: "bind"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Key"
+            genericValueType: "java.util.Collection<jakarta.inject.Provider<java.lang.Object>>"
+            uuid: "configure_key5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "bind(Key): LinkedBindingBuilder"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.binder.LinkedBindingBuilder"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "com.google.inject.binder.LinkedBindingBuilder"
+          uuid: "configure_linkedBindingBuilder4"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "FB800541652A2E38E480E83481311EA2"
+      index: 12
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.binder.LinkedBindingBuilder"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.binder.LinkedBindingBuilder"
+        uuid: "configure_linkedBindingBuilder4"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.binder.LinkedBindingBuilder"
+        name: "to"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Key"
+            genericValueType: "java.util.Collection<com.google.inject.Provider<java.lang.Object>>"
+            uuid: "configure_key6"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "to(Key): ScopedBindingBuilder"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.binder.ScopedBindingBuilder"
+            onlyPojoFunctions: true
+            builderPattern: false
+          valueType: "com.google.inject.binder.ScopedBindingBuilder"
+          uuid: "configure_scopedBindingBuilder4"
+          fixed: false
+          nameForMock: "ScopedBindingBuilder"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 13
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b38b3436-f7f6-31d8-b86c-04723d5c511e"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "bindingSelection"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "checkConfiguration(!bindingSelection.isInitialized(), \\\"Multibinder\
+        \ was already initialized\\\");"
+      lineNumber: 102
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: bindingSelection - Method: isInitialized"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "permitDuplicates"
+    returnType: "void"
+    signature: "permitDuplicates() : void"
+    instructionFingerprint: "C79114C1A292D1EA6BC5170CACEA57C9"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "permitDuplicatesTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.Binder,com.google.inject.Key<java.lang.Object>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9DABAEEE932FA1F1908BB0FD6D7F5996"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "DB261631B7D733D1352AA07439174DEF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.RealMultibinder"
+          parameters:
+          - name: "binder"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.Binder"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.Binder"
+              uuid: "<init>_binder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "com.google.inject.Key"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.RealMultibinder"
+          parameters:
+          - name: "binder"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.Binder"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.Binder"
+              uuid: "<init>_binder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "com.google.inject.Key"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.RealMultibinder"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Errors"
+      modelFingerprint: "A00F71DA8CE48A1D7C48F741E52D37EF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Errors"
+        uuid: "com.google.inject.internal.Errors"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Errors"
+        name: "checkNotNull"
+        parameters:
+        - name: "reference"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.Binder"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.Binder"
+            uuid: "<init>_binder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "binder"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "checkNotNull(Binder,String): Binder"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.Binder"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "com.google.inject.Binder"
+          uuid: "<init>_binder2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "binder"
+      modelFingerprint: "150121CE3473D31E638FE984EE461A30"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Binder"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.Binder"
+        uuid: "<init>_binder2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.binder"
+        name: "install"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "com.google.inject.Module"
+            uuid: "permitDuplicates_module1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "install(Module): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "permitDuplicates_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c0580e94-5ea0-3661-aaa4-0795dc7e2aef"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "bindingSelection"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "binder.install(new PermitDuplicatesModule(bindingSelection.getPermitDuplicatesKey()));"
+      lineNumber: 123
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: bindingSelection - Method: getPermitDuplicatesKey"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "getKeyForNewItem"
+    returnType: "com.google.inject.Key"
+    signature: "getKeyForNewItem() : com.google.inject.Key<java.lang.Object>"
+    instructionFingerprint: "8B5856135648103C6C0B940192E608F5"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getKeyForNewItemWhenBindingSelectionNotIsInitialized"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.Binder,com.google.inject.Key<java.lang.Object>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "66CBEE0226549559DDBCD21C9D560324"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "DB261631B7D733D1352AA07439174DEF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.RealMultibinder"
+          parameters:
+          - name: "binder"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.Binder"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.Binder"
+              uuid: "<init>_binder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "com.google.inject.Key"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.RealMultibinder"
+          parameters:
+          - name: "binder"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.Binder"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.Binder"
+              uuid: "<init>_binder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "com.google.inject.Key"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.RealMultibinder"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Errors"
+      modelFingerprint: "E44C9F15C43EDC3660FC1B27ACA96964"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Errors"
+        uuid: "com.google.inject.internal.Errors"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Errors"
+        name: "checkNotNull"
+        parameters:
+        - name: "reference"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.Binder"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.Binder"
+            uuid: "<init>_binder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "binder"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "checkNotNull(Binder,String): Binder"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.Binder"
+            onlyPojoFunctions: true
+            builderPattern: false
+          valueType: "com.google.inject.Binder"
+          uuid: "<init>_binder2"
+          fixed: false
+          nameForMock: "Binder"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Errors"
+      modelFingerprint: "664858BDFAF258CB4724BC9A52BDED22"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Errors"
+        uuid: "com.google.inject.internal.Errors"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Errors"
+        name: "checkConfiguration"
+        parameters:
+        - name: "condition"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "format"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Multibinder was already initialized"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "args"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Object[]"
+            uuid: "getKeyForNewItem_object[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "checkConfiguration(boolean,String,Object[]): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "getKeyForNewItem_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 136
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Key"
+      modelFingerprint: "3D90DA14E617C358574738E44A37E4B8"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.Key"
+        uuid: "com.google.inject.Key"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.Key"
+        name: "get"
+        parameters:
+        - name: "typeLiteral"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "getKeyForNewItem_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "annotation"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "com.google.inject.internal.RealElement"
+              parameters:
+              - name: "setName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "setName1"
+                  valueType: "java.lang.String"
+                  uuid: "getKeyForNewItem_string1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "type"
+                value:
+                  sapientType: "ENUM"
+                  content: !<regular>
+                    value: "MULTIBINDER"
+                  valueType: "com.google.inject.internal.Element$Type"
+                  uuid: "Enum-com.google.inject.internal.Element$Type-MULTIBINDER"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "keyType"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: ""
+                  valueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "com.google.inject.internal.RealElement"
+              parameters:
+              - name: "setName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "getKeyForNewItem_string1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "type"
+                value:
+                  sapientType: "ENUM"
+                  content: !<regular>
+                    value: "MULTIBINDER"
+                  valueType: "com.google.inject.internal.Element$Type"
+                  uuid: "Enum-com.google.inject.internal.Element$Type-MULTIBINDER"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "keyType"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: ""
+                  valueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "com.google.inject.internal.RealElement"
+            uuid: "getKeyForNewItem_realElement1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(TypeLiteral,RealElement): Key"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.Key"
+            onlyPojoFunctions: true
+            builderPattern: false
+          valueType: "com.google.inject.Key"
+          uuid: "getKeyForNewItem_key1"
+          fixed: false
+          nameForMock: "Key"
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8E755F7EB9C8640DD128DF73F0819657"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Key"
+          onlyPojoFunctions: true
+          builderPattern: false
+        valueType: "com.google.inject.Key"
+        uuid: "getKeyForNewItem_key1"
+        fixed: false
+        nameForMock: "Key"
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b7aac5b6-36d1-3f30-aa07-de4995c74be1"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "bindingSelection"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "checkConfiguration(!bindingSelection.isInitialized(), \\\"Multibinder\
+        \ was already initialized\\\");"
+      lineNumber: 128
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: bindingSelection - Method: isInitialized"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "addBinding"
+    returnType: "com.google.inject.binder.LinkedBindingBuilder"
+    signature: "addBinding() : com.google.inject.binder.LinkedBindingBuilder<java.lang.Object>"
+    instructionFingerprint: "F73051C72AE772A898893808C8330837"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "addBindingTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.Binder,com.google.inject.Key<java.lang.Object>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "90564C3AFCB8F2EBEF606EE1BDCF8926"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "DB261631B7D733D1352AA07439174DEF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.RealMultibinder"
+          parameters:
+          - name: "binder"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.Binder"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.Binder"
+              uuid: "<init>_binder1"
+              fixed: false
+              nameForMock: "Binder"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "com.google.inject.Key"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.RealMultibinder"
+          parameters:
+          - name: "binder"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.Binder"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.Binder"
+              uuid: "<init>_binder1"
+              fixed: false
+              nameForMock: "Binder"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "com.google.inject.Key"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.RealMultibinder"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Errors"
+      modelFingerprint: "A00F71DA8CE48A1D7C48F741E52D37EF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Errors"
+        uuid: "com.google.inject.internal.Errors"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Errors"
+        name: "checkNotNull"
+        parameters:
+        - name: "reference"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.Binder"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.Binder"
+            uuid: "<init>_binder1"
+            fixed: false
+            nameForMock: "Binder"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "binder"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "checkNotNull(Binder,String): Binder"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.Binder"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "com.google.inject.Binder"
+          uuid: "<init>_binder2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "FBA8C984309E04D98DC235553E91E1DF"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "getKeyForNewItem"
+        parameters: []
+        signature: "getKeyForNewItem(): Key"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "com.google.inject.Key"
+          uuid: "addBinding_key1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "binder"
+      modelFingerprint: "3504A6CC2171BDE77E59A021ACA66F2D"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Binder"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.Binder"
+        uuid: "<init>_binder2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.binder"
+        name: "bind"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Key"
+            uuid: "addBinding_key1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "bind(Key): LinkedBindingBuilder"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.binder.LinkedBindingBuilder"
+            onlyPojoFunctions: true
+            builderPattern: false
+          valueType: "com.google.inject.binder.LinkedBindingBuilder"
+          uuid: "addBinding_linkedBindingBuilder1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "831435DDD513402FDBFA89FCB2643268"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.binder.LinkedBindingBuilder"
+          onlyPojoFunctions: true
+          builderPattern: false
+        valueType: "com.google.inject.binder.LinkedBindingBuilder"
+        uuid: "addBinding_linkedBindingBuilder1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ec2f3da5-eede-3d4b-9493-a710102288c9"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "getSetKey"
+    returnType: "com.google.inject.Key"
+    signature: "getSetKey() : com.google.inject.Key<java.util.Set<java.lang.Object>>"
+    instructionFingerprint: "F1C77F949E15789A1D016DBF83A31A99"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getSetKeyTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.Binder,com.google.inject.Key<java.lang.Object>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A8B4F5D0168504624648E6894582E167"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "DB261631B7D733D1352AA07439174DEF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.RealMultibinder"
+          parameters:
+          - name: "binder"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.Binder"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.Binder"
+              uuid: "<init>_binder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "com.google.inject.Key"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.RealMultibinder"
+          parameters:
+          - name: "binder"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.Binder"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.Binder"
+              uuid: "<init>_binder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "com.google.inject.Key"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.RealMultibinder"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Errors"
+      modelFingerprint: "E44C9F15C43EDC3660FC1B27ACA96964"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Errors"
+        uuid: "com.google.inject.internal.Errors"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Errors"
+        name: "checkNotNull"
+        parameters:
+        - name: "reference"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.Binder"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.Binder"
+            uuid: "<init>_binder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "binder"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "checkNotNull(Binder,String): Binder"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.Binder"
+            onlyPojoFunctions: true
+            builderPattern: false
+          valueType: "com.google.inject.Binder"
+          uuid: "<init>_binder2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "56A89BC3EDA96FC227C0F64258DA7307"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.Key"
+        genericValueType: "java.util.Set<java.lang.Object>"
+        uuid: "getSetKey_key1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d5875a62-a277-31f3-9a2d-8e236da0de62"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "bindingSelection"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "return bindingSelection.getSetKey();"
+      lineNumber: 141
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: bindingSelection - Method: getSetKey"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getElementTypeLiteral"
+    returnType: "com.google.inject.TypeLiteral"
+    signature: "getElementTypeLiteral() : com.google.inject.TypeLiteral<java.lang.Object>"
+    instructionFingerprint: "44155B1C8647AA02F1652DEB1BC2D765"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getElementTypeLiteralTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.Binder,com.google.inject.Key<java.lang.Object>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4D22FFEEF7CEC42A0AC61568FDA63390"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "DB261631B7D733D1352AA07439174DEF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.RealMultibinder"
+          parameters:
+          - name: "binder"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.Binder"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.Binder"
+              uuid: "<init>_binder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "com.google.inject.Key"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.RealMultibinder"
+          parameters:
+          - name: "binder"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.Binder"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.Binder"
+              uuid: "<init>_binder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "com.google.inject.Key"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.RealMultibinder"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Errors"
+      modelFingerprint: "E44C9F15C43EDC3660FC1B27ACA96964"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Errors"
+        uuid: "com.google.inject.internal.Errors"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Errors"
+        name: "checkNotNull"
+        parameters:
+        - name: "reference"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.Binder"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.Binder"
+            uuid: "<init>_binder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "binder"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "checkNotNull(Binder,String): Binder"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.Binder"
+            onlyPojoFunctions: true
+            builderPattern: false
+          valueType: "com.google.inject.Binder"
+          uuid: "<init>_binder2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "BE031C187F94D6B7D17B4010ECFCCBC3"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.TypeLiteral"
+        uuid: "getElementTypeLiteral_typeLiteral1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f69a5a56-fd4d-3383-aa05-fee65f83b13d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "bindingSelection"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "return bindingSelection.getElementTypeLiteral();"
+      lineNumber: 145
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: bindingSelection - Method: getElementTypeLiteral"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getSetName"
+    returnType: "java.lang.String"
+    signature: "getSetName() : java.lang.String"
+    instructionFingerprint: "87C69BB09DB7090314055AEEA729AD87"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getSetNameTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.Binder,com.google.inject.Key<java.lang.Object>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7842E64FB87192999AFB9B42655DF359"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BD65333055CCAFE3CAE0A21827106851"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.RealMultibinder"
+          parameters:
+          - name: "binder"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.Binder"
+              uuid: "<init>_binder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.RealMultibinder"
+          parameters:
+          - name: "binder"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.Binder"
+              uuid: "<init>_binder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.RealMultibinder"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Errors"
+      modelFingerprint: "D59C1AFE0CD911847777B610E7F6D355"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Errors"
+        uuid: "com.google.inject.internal.Errors"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Errors"
+        name: "checkNotNull"
+        parameters:
+        - name: "reference"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Binder"
+            uuid: "<init>_binder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "binder"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "checkNotNull(Binder,String): Binder"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "com.google.inject.Binder"
+          uuid: "<init>_binder2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "getSetName_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "10a9984f-859a-356a-a178-71befe5e22d2"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "bindingSelection"
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_CONSTRUCTION_UNFILLED_PARAMS"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "permitsDuplicates"
+    returnType: "boolean"
+    signature: "permitsDuplicates(com.google.inject.Injector) : boolean"
+    instructionFingerprint: "E18C4E45DDA3E54A88ACEAE05B8D1371"
+    parametersTypes:
+    - "com.google.inject.Injector"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "permitsDuplicatesWhenBindingSelectionPermitsDuplicatesInjector"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.Binder,com.google.inject.Key<java.lang.Object>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "FB2FC8245CA0CCCA59EE4A3B33234A5A"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "DB261631B7D733D1352AA07439174DEF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.RealMultibinder"
+          parameters:
+          - name: "binder"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.Binder"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.Binder"
+              uuid: "<init>_binder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "com.google.inject.Key"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.RealMultibinder"
+          parameters:
+          - name: "binder"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.Binder"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.Binder"
+              uuid: "<init>_binder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "com.google.inject.Key"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.RealMultibinder"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "injector"
+      modelFingerprint: "3B4A8C3D456578DC574C4F361D889DEA"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Injector"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.Injector"
+        uuid: "permitsDuplicates_injector1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Errors"
+      modelFingerprint: "E44C9F15C43EDC3660FC1B27ACA96964"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Errors"
+        uuid: "com.google.inject.internal.Errors"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Errors"
+        name: "checkNotNull"
+        parameters:
+        - name: "reference"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.Binder"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.Binder"
+            uuid: "<init>_binder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "binder"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "checkNotNull(Binder,String): Binder"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.Binder"
+            onlyPojoFunctions: true
+            builderPattern: false
+          valueType: "com.google.inject.Binder"
+          uuid: "<init>_binder2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        uuid: "permitsDuplicates_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f6b75df0-a164-3ee9-a1d1-dd9ec1da1f26"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "bindingSelection"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "return bindingSelection.permitsDuplicates(injector);"
+      lineNumber: 153
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: bindingSelection - Method: permitsDuplicates"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "permitsDuplicatesWhenBindingSelectionNotPermitsDuplicatesInjector"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.Binder,com.google.inject.Key<java.lang.Object>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "09B11137598BF312CDCED63F432A9067"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "DB261631B7D733D1352AA07439174DEF"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.RealMultibinder"
+          parameters:
+          - name: "binder"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.Binder"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.Binder"
+              uuid: "<init>_binder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "com.google.inject.Key"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.RealMultibinder"
+          parameters:
+          - name: "binder"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.Binder"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.Binder"
+              uuid: "<init>_binder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "com.google.inject.Key"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.RealMultibinder"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "injector"
+      modelFingerprint: "3B4A8C3D456578DC574C4F361D889DEA"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Injector"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.Injector"
+        uuid: "permitsDuplicates_injector1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Errors"
+      modelFingerprint: "E44C9F15C43EDC3660FC1B27ACA96964"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Errors"
+        uuid: "com.google.inject.internal.Errors"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Errors"
+        name: "checkNotNull"
+        parameters:
+        - name: "reference"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.Binder"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.Binder"
+            uuid: "<init>_binder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "binder"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "checkNotNull(Binder,String): Binder"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.Binder"
+            onlyPojoFunctions: true
+            builderPattern: false
+          valueType: "com.google.inject.Binder"
+          uuid: "<init>_binder2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "permitsDuplicates_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "cc61e5e5-f913-31fe-a327-e684f7164911"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "bindingSelection"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "return bindingSelection.permitsDuplicates(injector);"
+      lineNumber: 153
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: bindingSelection - Method: permitsDuplicates"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "containsElement"
+    returnType: "boolean"
+    signature: "containsElement(com.google.inject.spi.Element) : boolean"
+    instructionFingerprint: "76F837495288D5B27E0E96E2B1A0B7DF"
+    parametersTypes:
+    - "com.google.inject.spi.Element"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "containsElementWhenBindingSelectionContainsElementElement"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.Binder,com.google.inject.Key<java.lang.Object>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1A31847105B394588CC5CF54C7B6495C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BD65333055CCAFE3CAE0A21827106851"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.RealMultibinder"
+          parameters:
+          - name: "binder"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.Binder"
+              uuid: "<init>_binder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.RealMultibinder"
+          parameters:
+          - name: "binder"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.Binder"
+              uuid: "<init>_binder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.RealMultibinder"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "element"
+      modelFingerprint: "8CD4F3EBB5152DBE3C27503A6B04C1E9"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.spi.Element"
+        uuid: "containsElement_element1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Errors"
+      modelFingerprint: "D59C1AFE0CD911847777B610E7F6D355"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Errors"
+        uuid: "com.google.inject.internal.Errors"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Errors"
+        name: "checkNotNull"
+        parameters:
+        - name: "reference"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Binder"
+            uuid: "<init>_binder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "binder"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "checkNotNull(Binder,String): Binder"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "com.google.inject.Binder"
+          uuid: "<init>_binder2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        uuid: "containsElement_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "05ba5dc7-b93e-389b-b71d-e0c4c09ef280"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "bindingSelection"
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_CONSTRUCTION_UNFILLED_PARAMS"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "containsElementWhenBindingSelectionNotContainsElementElement"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.Binder,com.google.inject.Key<java.lang.Object>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6A88F6FE182293D16C5FB789E2D0660D"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "BD65333055CCAFE3CAE0A21827106851"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.RealMultibinder"
+          parameters:
+          - name: "binder"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.Binder"
+              uuid: "<init>_binder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.RealMultibinder"
+          parameters:
+          - name: "binder"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.Binder"
+              uuid: "<init>_binder1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.RealMultibinder"
+        genericValueType: "java.lang.Object"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "element"
+      modelFingerprint: "8CD4F3EBB5152DBE3C27503A6B04C1E9"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.spi.Element"
+        uuid: "containsElement_element1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Errors"
+      modelFingerprint: "D59C1AFE0CD911847777B610E7F6D355"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Errors"
+        uuid: "com.google.inject.internal.Errors"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Errors"
+        name: "checkNotNull"
+        parameters:
+        - name: "reference"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Binder"
+            uuid: "<init>_binder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "binder"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "checkNotNull(Binder,String): Binder"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "com.google.inject.Binder"
+          uuid: "<init>_binder2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "containsElement_boolean1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "782ccd95-8d63-3961-8571-9efaa3923f3b"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "bindingSelection"
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_CONSTRUCTION_UNFILLED_PARAMS"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "equals"
+    returnType: "boolean"
+    signature: "equals(java.lang.Object) : boolean"
+    instructionFingerprint: "82E7333B868A79D61C6B5C9CE8EC0551"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "equalsWhenOInstanceOfRealMultibinderThrowsNullPointerException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.Binder,com.google.inject.Key<java.lang.Object>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1CEA4D578050A3196D550FFF09F77B4F"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "06bb019c-3bf4-3090-8049-c5eec7647611"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_CONSTRUCTION_UNFILLED_PARAMS"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "equalsWhenONotInstanceOfRealMultibinder"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.Binder,com.google.inject.Key<java.lang.Object>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "7CE422973A972CD4DB54EBA82A326A90"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "b5b4f415-7b08-3303-91fb-713b7a4aeae5"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_CONSTRUCTION_UNFILLED_PARAMS"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

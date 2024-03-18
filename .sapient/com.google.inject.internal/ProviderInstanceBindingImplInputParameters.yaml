@@ -1,0 +1,3723 @@
+---
+modelFingerprint: "1F81985CC82D0D4D40EC940FDC5EB028"
+methods:
+- method:
+    name: "acceptTargetVisitor"
+    returnType: "java.lang.Object"
+    signature: "acceptTargetVisitor(com.google.inject.spi.BindingTargetVisitor<? super\
+      \ java.lang.Object,java.lang.Object>) : java.lang.Object"
+    instructionFingerprint: "53F0D19C74DBFDA2B73FB267D874C6EA"
+    parametersTypes:
+    - "com.google.inject.spi.BindingTargetVisitor"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "acceptTargetVisitorWhenProviderInstanceInstanceOfProviderWithExtensionVisitor"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.Key<java.lang.Object>,java.lang.Object,com.google.inject.internal.InternalFactory<?\
+      \ extends java.lang.Object>,com.google.inject.internal.Scoping,jakarta.inject.Provider<?\
+      \ extends java.lang.Object>,java.util.Set<com.google.inject.spi.InjectionPoint>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "59EA2DCB0F3956E64FE12B63FDB0305F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "1F7F2FE7D5BC4958AA5ABC7970C94024"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ProviderInstanceBindingImpl"
+          parameters:
+          - name: "injector"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.InjectorImpl"
+              uuid: "<init>_injectorImpl1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "source"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "internalFactory"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.InternalFactory"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_internalFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scoping"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.Scoping"
+              uuid: "<init>_scoping1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "providerInstance"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.spi.ProviderWithExtensionVisitor"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.spi.ProviderWithExtensionVisitor"
+              uuid: "<init>_provider1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoints"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Set"
+              genericValueType: "com.google.inject.spi.InjectionPoint"
+              uuid: "<init>_set1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ProviderInstanceBindingImpl"
+          parameters:
+          - name: "injector"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.InjectorImpl"
+              uuid: "<init>_injectorImpl1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "source"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "internalFactory"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.InternalFactory"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_internalFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scoping"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.Scoping"
+              uuid: "<init>_scoping1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "providerInstance"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.spi.ProviderWithExtensionVisitor"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.spi.ProviderWithExtensionVisitor"
+              uuid: "<init>_provider1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoints"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Set"
+              genericValueType: "com.google.inject.spi.InjectionPoint"
+              uuid: "<init>_set1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.ProviderInstanceBindingImpl"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "visitor"
+      modelFingerprint: "550D9F3DD5B04F1953CC82995058D37E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.spi.BindingTargetVisitor"
+        genericValueType: "? super java.lang.Object,java.lang.Object"
+        uuid: "acceptTargetVisitor_bindingTargetVisitor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "06F08C84250BC31261C39A34E0E10903"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.spi.ProviderWithExtensionVisitor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.spi.ProviderWithExtensionVisitor"
+        uuid: "<init>_provider1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.spi.ProviderWithExtensionVisitor"
+        name: "acceptExtensionVisitor"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.BindingTargetVisitor"
+            genericValueType: "? super java.lang.Object,java.lang.Object"
+            uuid: "acceptTargetVisitor_bindingTargetVisitor1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "arg1"
+          value:
+            sapientType: "THIS"
+            content: !<new>
+              target: "com.google.inject.internal.ProviderInstanceBindingImpl"
+              parameters:
+              - name: "injector"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "com.google.inject.internal.InjectorImpl"
+                  uuid: "<init>_injectorImpl1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "key"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "com.google.inject.Key"
+                  genericValueType: "java.lang.Object"
+                  uuid: "<init>_key1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "source"
+                value:
+                  sapientType: "OBJECT"
+                  content: !<new>
+                    target: "java.lang.Object"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  suggestedContent: !<new>
+                    target: "java.lang.Object"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "java.lang.Object"
+                  uuid: "<init>_object1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "internalFactory"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "com.google.inject.internal.InternalFactory"
+                  genericValueType: "? extends java.lang.Object"
+                  uuid: "<init>_internalFactory1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "scoping"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "com.google.inject.internal.Scoping"
+                  uuid: "<init>_scoping1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "providerInstance"
+                value:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<unknown_object>
+                    target: "com.google.inject.spi.ProviderWithExtensionVisitor"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "com.google.inject.spi.ProviderWithExtensionVisitor"
+                  uuid: "<init>_provider1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "injectionPoints"
+                value:
+                  sapientType: "COLLECTION"
+                  content: !<collection>
+                    parameters: []
+                    values: []
+                  suggestedContent: !<collection>
+                    parameters: []
+                    values: []
+                  valueType: "java.util.Set"
+                  genericValueType: "com.google.inject.spi.InjectionPoint"
+                  uuid: "<init>_set1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "com.google.inject.internal.ProviderInstanceBindingImpl"
+            uuid: "targetClassObject"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "acceptExtensionVisitor(BindingTargetVisitor,ProviderInstanceBindingImpl):\
+          \ Object"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "acceptTargetVisitor_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "acceptTargetVisitor_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1fd4b126-14cf-357e-98f4-48b43a64f592"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "acceptTargetVisitorWhenProviderInstanceNotInstanceOfProviderWithExtensionVisitor"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.Key<java.lang.Object>,java.lang.Object,com.google.inject.internal.InternalFactory<?\
+      \ extends java.lang.Object>,com.google.inject.internal.Scoping,jakarta.inject.Provider<?\
+      \ extends java.lang.Object>,java.util.Set<com.google.inject.spi.InjectionPoint>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "92CF924D07EAEF7180095DAEB78B7644"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "52B4525762906FA639AFFCDC27686931"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ProviderInstanceBindingImpl"
+          parameters:
+          - name: "injector"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.InjectorImpl"
+              uuid: "<init>_injectorImpl1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "source"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "internalFactory"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.InternalFactory"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_internalFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scoping"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.Scoping"
+              uuid: "<init>_scoping1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "providerInstance"
+            value:
+              sapientType: "MOCK"
+              valueType: "jakarta.inject.Provider"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_provider1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoints"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Set"
+              genericValueType: "com.google.inject.spi.InjectionPoint"
+              uuid: "<init>_set1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ProviderInstanceBindingImpl"
+          parameters:
+          - name: "injector"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.InjectorImpl"
+              uuid: "<init>_injectorImpl1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "source"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "internalFactory"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.InternalFactory"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_internalFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scoping"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.Scoping"
+              uuid: "<init>_scoping1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "providerInstance"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "jakarta.inject.Provider"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_provider1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoints"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Set"
+              genericValueType: "com.google.inject.spi.InjectionPoint"
+              uuid: "<init>_set1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.ProviderInstanceBindingImpl"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "visitor"
+      modelFingerprint: "8EC7EDF95254AED1B4E333EF05C7EB75"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.spi.BindingTargetVisitor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.spi.BindingTargetVisitor"
+        genericValueType: "? super java.lang.Object,java.lang.Object"
+        uuid: "acceptTargetVisitor_bindingTargetVisitor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "visitor"
+      modelFingerprint: "90BC979A03CA9847875ACC78872B1BDA"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.spi.BindingTargetVisitor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.spi.BindingTargetVisitor"
+        genericValueType: "? super java.lang.Object,java.lang.Object"
+        uuid: "acceptTargetVisitor_bindingTargetVisitor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "visitor"
+        name: "visit"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "THIS"
+            content: !<new>
+              target: "com.google.inject.internal.ProviderInstanceBindingImpl"
+              parameters:
+              - name: "injector"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "com.google.inject.internal.InjectorImpl"
+                  uuid: "<init>_injectorImpl1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "key"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "com.google.inject.Key"
+                  genericValueType: "java.lang.Object"
+                  uuid: "<init>_key1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "source"
+                value:
+                  sapientType: "OBJECT"
+                  content: !<new>
+                    target: "java.lang.Object"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  suggestedContent: !<new>
+                    target: "java.lang.Object"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "java.lang.Object"
+                  uuid: "<init>_object1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "internalFactory"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "com.google.inject.internal.InternalFactory"
+                  genericValueType: "? extends java.lang.Object"
+                  uuid: "<init>_internalFactory1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "scoping"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "com.google.inject.internal.Scoping"
+                  uuid: "<init>_scoping1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "providerInstance"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "jakarta.inject.Provider"
+                  genericValueType: "? extends java.lang.Object"
+                  uuid: "<init>_provider1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "injectionPoints"
+                value:
+                  sapientType: "COLLECTION"
+                  content: !<collection>
+                    parameters: []
+                    values: []
+                  suggestedContent: !<collection>
+                    parameters: []
+                    values: []
+                  valueType: "java.util.Set"
+                  genericValueType: "com.google.inject.spi.InjectionPoint"
+                  uuid: "<init>_set1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "com.google.inject.internal.ProviderInstanceBindingImpl"
+            uuid: "targetClassObject"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "visit(ProviderInstanceBindingImpl): Object"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "acceptTargetVisitor_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "acceptTargetVisitor_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "58c59da7-f088-3d60-97d3-de61b8373362"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "getProviderInstance"
+    returnType: "com.google.inject.Provider"
+    signature: "getProviderInstance() : com.google.inject.Provider<? extends java.lang.Object>"
+    instructionFingerprint: "66158A47F3F33D3F71B9772FC30D70C2"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getProviderInstanceTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.Key<java.lang.Object>,java.lang.Object,com.google.inject.internal.InternalFactory<?\
+      \ extends java.lang.Object>,com.google.inject.internal.Scoping,jakarta.inject.Provider<?\
+      \ extends java.lang.Object>,java.util.Set<com.google.inject.spi.InjectionPoint>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "036E8EA9ED73B72D58FF2485508BA2E9"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "52B4525762906FA639AFFCDC27686931"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ProviderInstanceBindingImpl"
+          parameters:
+          - name: "injector"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.InjectorImpl"
+              uuid: "<init>_injectorImpl1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "source"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "internalFactory"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.InternalFactory"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_internalFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scoping"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.Scoping"
+              uuid: "<init>_scoping1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "providerInstance"
+            value:
+              sapientType: "MOCK"
+              valueType: "jakarta.inject.Provider"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_provider1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoints"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Set"
+              genericValueType: "com.google.inject.spi.InjectionPoint"
+              uuid: "<init>_set1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ProviderInstanceBindingImpl"
+          parameters:
+          - name: "injector"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.InjectorImpl"
+              uuid: "<init>_injectorImpl1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "source"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "internalFactory"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.InternalFactory"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_internalFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scoping"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.Scoping"
+              uuid: "<init>_scoping1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "providerInstance"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "jakarta.inject.Provider"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_provider1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoints"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Set"
+              genericValueType: "com.google.inject.spi.InjectionPoint"
+              uuid: "<init>_set1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.ProviderInstanceBindingImpl"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Providers"
+      modelFingerprint: "89DB5EBEF47A3F8FC773090156E2A2CC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.util.Providers"
+        uuid: "com.google.inject.util.Providers"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.util.Providers"
+        name: "guicify"
+        parameters:
+        - name: "dependencies"
+          value:
+            sapientType: "MOCK"
+            valueType: "jakarta.inject.Provider"
+            genericValueType: "? extends java.lang.Object"
+            uuid: "<init>_provider1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "guicify(Provider): Provider"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "com.google.inject.Provider"
+          genericValueType: "java.lang.Object"
+          uuid: "getProviderInstance_provider1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "F9434F0C062E558DA672F23CB6C86BB2"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.Provider"
+        genericValueType: "java.lang.Object"
+        uuid: "getProviderInstance_provider1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "11d8a15a-006b-3735-aa01-1bcaadc08948"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getUserSuppliedProvider"
+    returnType: "jakarta.inject.Provider"
+    signature: "getUserSuppliedProvider() : jakarta.inject.Provider<? extends java.lang.Object>"
+    instructionFingerprint: "66E7E9C6F7F229870ECA7F6ABA38DF6B"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getUserSuppliedProviderTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.Key<java.lang.Object>,java.lang.Object,com.google.inject.internal.InternalFactory<?\
+      \ extends java.lang.Object>,com.google.inject.internal.Scoping,jakarta.inject.Provider<?\
+      \ extends java.lang.Object>,java.util.Set<com.google.inject.spi.InjectionPoint>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "EC804BD76A02F2F0229865E9B8185B31"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "4af3a73d-e663-36c2-8957-99397493f5e0"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableSet.copyOf(java.util.Set<com.google.inject.spi.InjectionPoint>)\
+        \ : com.google.common.collect.ImmutableSet<com.google.inject.spi.InjectionPoint>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getInjectionPoints"
+    returnType: "java.util.Set"
+    signature: "getInjectionPoints() : java.util.Set<com.google.inject.spi.InjectionPoint>"
+    instructionFingerprint: "AF4A6EA0E9F374C1DFD485D8461422EB"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getInjectionPointsTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.Key<java.lang.Object>,java.lang.Object,com.google.inject.internal.InternalFactory<?\
+      \ extends java.lang.Object>,com.google.inject.internal.Scoping,jakarta.inject.Provider<?\
+      \ extends java.lang.Object>,java.util.Set<com.google.inject.spi.InjectionPoint>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "FD0ED35F0686854BA8BDC23517C0AC8D"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "52B4525762906FA639AFFCDC27686931"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ProviderInstanceBindingImpl"
+          parameters:
+          - name: "injector"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.InjectorImpl"
+              uuid: "<init>_injectorImpl1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "source"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "internalFactory"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.InternalFactory"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_internalFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scoping"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.Scoping"
+              uuid: "<init>_scoping1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "providerInstance"
+            value:
+              sapientType: "MOCK"
+              valueType: "jakarta.inject.Provider"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_provider1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoints"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Set"
+              genericValueType: "com.google.inject.spi.InjectionPoint"
+              uuid: "<init>_set1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ProviderInstanceBindingImpl"
+          parameters:
+          - name: "injector"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.InjectorImpl"
+              uuid: "<init>_injectorImpl1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "source"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "internalFactory"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.InternalFactory"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_internalFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scoping"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.Scoping"
+              uuid: "<init>_scoping1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "providerInstance"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "jakarta.inject.Provider"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_provider1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoints"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Set"
+              genericValueType: "com.google.inject.spi.InjectionPoint"
+              uuid: "<init>_set1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.ProviderInstanceBindingImpl"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "823DD9A55AF531B5E2AB85FBDD7E2A92"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "com.google.common.collect.ImmutableSet"
+          method: "copyOf"
+          methodParameters:
+          - value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Set"
+              genericValueType: "com.google.inject.spi.InjectionPoint"
+              uuid: "<init>_set1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "com.google.common.collect.ImmutableSet"
+          method: "copyOf"
+          methodParameters:
+          - value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Set"
+              genericValueType: "com.google.inject.spi.InjectionPoint"
+              uuid: "<init>_set1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.google.common.collect.ImmutableSet"
+        genericValueType: "com.google.inject.spi.InjectionPoint"
+        uuid: "<init>_immutableSet1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4cafec08-f58b-3940-87bc-b59f7116f3c3"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getDependencies"
+    returnType: "java.util.Set"
+    signature: "getDependencies() : java.util.Set<com.google.inject.spi.Dependency<?>>"
+    instructionFingerprint: "CB2EE9B657F039D87059E8C23C8B731B"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getDependenciesWhenProviderInstanceNotInstanceOfHasDependencies"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.Key<java.lang.Object>,java.lang.Object,com.google.inject.internal.InternalFactory<?\
+      \ extends java.lang.Object>,com.google.inject.internal.Scoping,jakarta.inject.Provider<?\
+      \ extends java.lang.Object>,java.util.Set<com.google.inject.spi.InjectionPoint>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C61D31C750DC0AFA074275038EB102A8"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "52B4525762906FA639AFFCDC27686931"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ProviderInstanceBindingImpl"
+          parameters:
+          - name: "injector"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.InjectorImpl"
+              uuid: "<init>_injectorImpl1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "source"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "internalFactory"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.InternalFactory"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_internalFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scoping"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.Scoping"
+              uuid: "<init>_scoping1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "providerInstance"
+            value:
+              sapientType: "MOCK"
+              valueType: "jakarta.inject.Provider"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_provider1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoints"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Set"
+              genericValueType: "com.google.inject.spi.InjectionPoint"
+              uuid: "<init>_set1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ProviderInstanceBindingImpl"
+          parameters:
+          - name: "injector"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.InjectorImpl"
+              uuid: "<init>_injectorImpl1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "source"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "internalFactory"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.InternalFactory"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_internalFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scoping"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.Scoping"
+              uuid: "<init>_scoping1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "providerInstance"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "jakarta.inject.Provider"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_provider1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoints"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Set"
+              genericValueType: "com.google.inject.spi.InjectionPoint"
+              uuid: "<init>_set1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.ProviderInstanceBindingImpl"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Dependency"
+      modelFingerprint: "D06585CB18E14DB07CF952A201BB676A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "com.google.inject.spi.Dependency"
+        uuid: "com.google.inject.spi.Dependency"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.spi.Dependency"
+        name: "forInjectionPoints"
+        parameters:
+        - name: "injectionPoint"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.common.collect.ImmutableSet"
+              method: "copyOf"
+              methodParameters:
+              - value:
+                  sapientType: "COLLECTION"
+                  content: !<collection>
+                    parameters: []
+                    values: []
+                  suggestedContent: !<collection>
+                    parameters: []
+                    values: []
+                  valueType: "java.util.Set"
+                  genericValueType: "com.google.inject.spi.InjectionPoint"
+                  uuid: "<init>_set1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableSet"
+              method: "copyOf"
+              methodParameters:
+              - value:
+                  sapientType: "COLLECTION"
+                  content: !<collection>
+                    parameters: []
+                    values: []
+                  suggestedContent: !<collection>
+                    parameters: []
+                    values: []
+                  valueType: "java.util.Set"
+                  genericValueType: "com.google.inject.spi.InjectionPoint"
+                  uuid: "<init>_set1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.common.collect.ImmutableSet"
+            genericValueType: "com.google.inject.spi.InjectionPoint"
+            uuid: "<init>_immutableSet1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "forInjectionPoints(ImmutableSet): Set"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.Set"
+          genericValueType: "com.google.inject.spi.Dependency<?>"
+          uuid: "getDependencies_set1"
+          fixed: false
+          equalsMethodPresent: true
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "754B4DE3B9C278B3A709F19B7AA9DB64"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.Set"
+        genericValueType: "com.google.inject.spi.Dependency<?>"
+        uuid: "getDependencies_set1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "17f9e115-013b-3389-8357-1c2f1b881593"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "withScoping"
+    returnType: "com.google.inject.internal.BindingImpl"
+    signature: "withScoping(com.google.inject.internal.Scoping) : com.google.inject.internal.BindingImpl<java.lang.Object>"
+    instructionFingerprint: "67C38C5A551314BF1134D0A70BCDBD99"
+    parametersTypes:
+    - "com.google.inject.internal.Scoping"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "withScopingTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.Key<java.lang.Object>,java.lang.Object,com.google.inject.internal.InternalFactory<?\
+      \ extends java.lang.Object>,com.google.inject.internal.Scoping,jakarta.inject.Provider<?\
+      \ extends java.lang.Object>,java.util.Set<com.google.inject.spi.InjectionPoint>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2D927C7C6B5D1ADE766854BBBA587FC9"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "52B4525762906FA639AFFCDC27686931"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ProviderInstanceBindingImpl"
+          parameters:
+          - name: "injector"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.InjectorImpl"
+              uuid: "<init>_injectorImpl1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "source"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "internalFactory"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.InternalFactory"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_internalFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scoping"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.Scoping"
+              uuid: "<init>_scoping1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "providerInstance"
+            value:
+              sapientType: "MOCK"
+              valueType: "jakarta.inject.Provider"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_provider1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoints"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Set"
+              genericValueType: "com.google.inject.spi.InjectionPoint"
+              uuid: "<init>_set1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ProviderInstanceBindingImpl"
+          parameters:
+          - name: "injector"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.InjectorImpl"
+              uuid: "<init>_injectorImpl1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "source"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "internalFactory"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.InternalFactory"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_internalFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scoping"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.Scoping"
+              uuid: "<init>_scoping1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "providerInstance"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "jakarta.inject.Provider"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_provider1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoints"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Set"
+              genericValueType: "com.google.inject.spi.InjectionPoint"
+              uuid: "<init>_set1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.ProviderInstanceBindingImpl"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "scoping"
+      modelFingerprint: "E2DD843170DEB1F32260686D35F9D6D5"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Scoping"
+        uuid: "withScoping_scoping1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "84983AD3502CA897213A7AFE5C672D12"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "getSource"
+        parameters: []
+        signature: "getSource(): Object"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "withScoping_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "57047F82572D04726CF24135D78A829C"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ProviderInstanceBindingImpl"
+          parameters:
+          - name: "source"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "withScoping_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scoping"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.Scoping"
+              uuid: "withScoping_scoping1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoints"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "com.google.common.collect.ImmutableSet"
+                method: "copyOf"
+                methodParameters:
+                - value:
+                    sapientType: "COLLECTION"
+                    content: !<collection>
+                      parameters: []
+                      values: []
+                    suggestedContent: !<collection>
+                      parameters: []
+                      values: []
+                    valueType: "java.util.Set"
+                    genericValueType: "com.google.inject.spi.InjectionPoint"
+                    uuid: "<init>_set1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "com.google.common.collect.ImmutableSet"
+                method: "copyOf"
+                methodParameters:
+                - value:
+                    sapientType: "COLLECTION"
+                    content: !<collection>
+                      parameters: []
+                      values: []
+                    suggestedContent: !<collection>
+                      parameters: []
+                      values: []
+                    valueType: "java.util.Set"
+                    genericValueType: "com.google.inject.spi.InjectionPoint"
+                    uuid: "<init>_set1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "com.google.common.collect.ImmutableSet"
+              genericValueType: "com.google.inject.spi.InjectionPoint"
+              uuid: "<init>_immutableSet1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "providerInstance"
+            value:
+              sapientType: "MOCK"
+              valueType: "jakarta.inject.Provider"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_provider1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ProviderInstanceBindingImpl"
+          parameters:
+          - name: "source"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "withScoping_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scoping"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.Scoping"
+              uuid: "withScoping_scoping1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoints"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<static_method_return>
+                target: "com.google.common.collect.ImmutableSet"
+                method: "copyOf"
+                methodParameters:
+                - value:
+                    sapientType: "COLLECTION"
+                    content: !<collection>
+                      parameters: []
+                      values: []
+                    suggestedContent: !<collection>
+                      parameters: []
+                      values: []
+                    valueType: "java.util.Set"
+                    genericValueType: "com.google.inject.spi.InjectionPoint"
+                    uuid: "<init>_set1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "com.google.common.collect.ImmutableSet"
+              genericValueType: "com.google.inject.spi.InjectionPoint"
+              uuid: "<init>_immutableSet1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "providerInstance"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "jakarta.inject.Provider"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_provider1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "com.google.inject.internal.ProviderInstanceBindingImpl"
+        uuid: "withScoping_providerInstanceBindingImpl1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "da0d3db3-e38a-36e1-8dd5-ef2abf7e3a21"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "withKey"
+    returnType: "com.google.inject.internal.BindingImpl"
+    signature: "withKey(com.google.inject.Key<java.lang.Object>) : com.google.inject.internal.BindingImpl<java.lang.Object>"
+    instructionFingerprint: "F5BE7BE9341C4082F88FF7CE507669AC"
+    parametersTypes:
+    - "com.google.inject.Key"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "withKeyTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.Key<java.lang.Object>,java.lang.Object,com.google.inject.internal.InternalFactory<?\
+      \ extends java.lang.Object>,com.google.inject.internal.Scoping,jakarta.inject.Provider<?\
+      \ extends java.lang.Object>,java.util.Set<com.google.inject.spi.InjectionPoint>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6C5AE1D06B1F89C97397644E116CB730"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "52B4525762906FA639AFFCDC27686931"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ProviderInstanceBindingImpl"
+          parameters:
+          - name: "injector"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.InjectorImpl"
+              uuid: "<init>_injectorImpl1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "source"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "internalFactory"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.InternalFactory"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_internalFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scoping"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.Scoping"
+              uuid: "<init>_scoping1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "providerInstance"
+            value:
+              sapientType: "MOCK"
+              valueType: "jakarta.inject.Provider"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_provider1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoints"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Set"
+              genericValueType: "com.google.inject.spi.InjectionPoint"
+              uuid: "<init>_set1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ProviderInstanceBindingImpl"
+          parameters:
+          - name: "injector"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.InjectorImpl"
+              uuid: "<init>_injectorImpl1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "source"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "internalFactory"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.InternalFactory"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_internalFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scoping"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.Scoping"
+              uuid: "<init>_scoping1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "providerInstance"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "jakarta.inject.Provider"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_provider1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoints"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Set"
+              genericValueType: "com.google.inject.spi.InjectionPoint"
+              uuid: "<init>_set1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.ProviderInstanceBindingImpl"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "8BD8B39056618E9480AB4A88A03B7C6B"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.Key"
+        genericValueType: "java.lang.Object"
+        uuid: "withKey_key1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "84983AD3502CA897213A7AFE5C672D12"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "getSource"
+        parameters: []
+        signature: "getSource(): Object"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "withKey_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "57047F82572D04726CF24135D78A829C"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ProviderInstanceBindingImpl"
+          parameters:
+          - name: "source"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "withKey_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "withKey_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scoping"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.Scoping"
+              uuid: "<init>_scoping1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoints"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "com.google.common.collect.ImmutableSet"
+                method: "copyOf"
+                methodParameters:
+                - value:
+                    sapientType: "COLLECTION"
+                    content: !<collection>
+                      parameters: []
+                      values: []
+                    suggestedContent: !<collection>
+                      parameters: []
+                      values: []
+                    valueType: "java.util.Set"
+                    genericValueType: "com.google.inject.spi.InjectionPoint"
+                    uuid: "<init>_set1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "com.google.common.collect.ImmutableSet"
+                method: "copyOf"
+                methodParameters:
+                - value:
+                    sapientType: "COLLECTION"
+                    content: !<collection>
+                      parameters: []
+                      values: []
+                    suggestedContent: !<collection>
+                      parameters: []
+                      values: []
+                    valueType: "java.util.Set"
+                    genericValueType: "com.google.inject.spi.InjectionPoint"
+                    uuid: "<init>_set1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "com.google.common.collect.ImmutableSet"
+              genericValueType: "com.google.inject.spi.InjectionPoint"
+              uuid: "<init>_immutableSet1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "providerInstance"
+            value:
+              sapientType: "MOCK"
+              valueType: "jakarta.inject.Provider"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_provider1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ProviderInstanceBindingImpl"
+          parameters:
+          - name: "source"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "withKey_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "withKey_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scoping"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.Scoping"
+              uuid: "<init>_scoping1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoints"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<static_method_return>
+                target: "com.google.common.collect.ImmutableSet"
+                method: "copyOf"
+                methodParameters:
+                - value:
+                    sapientType: "COLLECTION"
+                    content: !<collection>
+                      parameters: []
+                      values: []
+                    suggestedContent: !<collection>
+                      parameters: []
+                      values: []
+                    valueType: "java.util.Set"
+                    genericValueType: "com.google.inject.spi.InjectionPoint"
+                    uuid: "<init>_set1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "com.google.common.collect.ImmutableSet"
+              genericValueType: "com.google.inject.spi.InjectionPoint"
+              uuid: "<init>_immutableSet1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "providerInstance"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "jakarta.inject.Provider"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_provider1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "com.google.inject.internal.ProviderInstanceBindingImpl"
+        uuid: "withKey_providerInstanceBindingImpl1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "43ae4532-e963-39a9-b37c-2a93c33a9ff0"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "applyTo"
+    returnType: "void"
+    signature: "applyTo(com.google.inject.Binder) : void"
+    instructionFingerprint: "F5BF32A04E635246CBD3B130FE685807"
+    parametersTypes:
+    - "com.google.inject.Binder"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "applyToTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.Key<java.lang.Object>,java.lang.Object,com.google.inject.internal.InternalFactory<?\
+      \ extends java.lang.Object>,com.google.inject.internal.Scoping,jakarta.inject.Provider<?\
+      \ extends java.lang.Object>,java.util.Set<com.google.inject.spi.InjectionPoint>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "28411D5B6C7D0185EE7E480C5BFB2CCA"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "CE4FAE7525FB32C8FC580B83688FDECE"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ProviderInstanceBindingImpl"
+          parameters:
+          - name: "injector"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.InjectorImpl"
+              uuid: "<init>_injectorImpl1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "source"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "internalFactory"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.internal.InternalFactory"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_internalFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scoping"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.internal.Scoping"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.internal.Scoping"
+              uuid: "<init>_scoping1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "providerInstance"
+            value:
+              sapientType: "MOCK"
+              valueType: "jakarta.inject.Provider"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_provider1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoints"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Set"
+              genericValueType: "com.google.inject.spi.InjectionPoint"
+              uuid: "<init>_set1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ProviderInstanceBindingImpl"
+          parameters:
+          - name: "injector"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.InjectorImpl"
+              uuid: "<init>_injectorImpl1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.Key"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "source"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "internalFactory"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.internal.InternalFactory"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_internalFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scoping"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.internal.Scoping"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.internal.Scoping"
+              uuid: "<init>_scoping1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "providerInstance"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "jakarta.inject.Provider"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_provider1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoints"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Set"
+              genericValueType: "com.google.inject.spi.InjectionPoint"
+              uuid: "<init>_set1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.ProviderInstanceBindingImpl"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "binder"
+      modelFingerprint: "408D482D5102052DD899EE6725889D7E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.Binder"
+        uuid: "applyTo_binder1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "84983AD3502CA897213A7AFE5C672D12"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "getSource"
+        parameters: []
+        signature: "getSource(): Object"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "applyTo_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Elements"
+      modelFingerprint: "87415AA3BB4C776462A648F0F41B73C8"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.spi.Elements"
+        uuid: "com.google.inject.spi.Elements"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.spi.Elements"
+        name: "withTrustedSource"
+        parameters:
+        - name: "guiceInternal"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_field_return>
+              target: "com.google.inject.internal.GuiceInternal"
+              fieldName: "GUICE_INTERNAL"
+            suggestedContent: !<static_field_return>
+              target: "com.google.inject.internal.GuiceInternal"
+              fieldName: "GUICE_INTERNAL"
+            valueType: "com.google.inject.internal.GuiceInternal"
+            uuid: "applyTo_guiceInternal1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "binder"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Binder"
+            uuid: "applyTo_binder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "applyTo_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "withTrustedSource(GuiceInternal,Binder,Object): Binder"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.Binder"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "com.google.inject.Binder"
+          uuid: "applyTo_binder2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "BA3C9F7908A34673E37E953F51D1BA27"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Binder"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.Binder"
+        uuid: "applyTo_binder2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.Binder"
+        name: "bind"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Key"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_key1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "bind(Key): LinkedBindingBuilder"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.binder.LinkedBindingBuilder"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "com.google.inject.binder.LinkedBindingBuilder"
+          uuid: "applyTo_linkedBindingBuilder1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "8C464E5B9BD1AD14DA013F3C37C4A944"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.binder.LinkedBindingBuilder"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.binder.LinkedBindingBuilder"
+        uuid: "applyTo_linkedBindingBuilder1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.binder.LinkedBindingBuilder"
+        name: "toProvider"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "MOCK"
+            valueType: "jakarta.inject.Provider"
+            genericValueType: "? extends java.lang.Object"
+            uuid: "<init>_provider1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "toProvider(Provider): ScopedBindingBuilder"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "com.google.inject.binder.ScopedBindingBuilder"
+          uuid: "applyTo_scopedBindingBuilder1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "7F06B5B07555E8E5EA7C58B4275CCC0A"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.internal.Scoping"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.internal.Scoping"
+        uuid: "<init>_scoping1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Scoping"
+        name: "applyTo"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.binder.ScopedBindingBuilder"
+            uuid: "applyTo_scopedBindingBuilder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "applyTo(ScopedBindingBuilder): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "applyTo_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0f0a622f-1e3b-3dc0-a3ae-a6ceb63c4e13"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "toString"
+    returnType: "java.lang.String"
+    signature: "toString() : java.lang.String"
+    instructionFingerprint: "A3A02E6D747A7D3B3CFDBF32199F9767"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toStringTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.Key<java.lang.Object>,java.lang.Object,com.google.inject.internal.InternalFactory<?\
+      \ extends java.lang.Object>,com.google.inject.internal.Scoping,jakarta.inject.Provider<?\
+      \ extends java.lang.Object>,java.util.Set<com.google.inject.spi.InjectionPoint>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "45D15146DC9547A733CC09CED16D1127"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "46A7E6ADB74135A8AC58A9474AF2950A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ProviderInstanceBindingImpl"
+          parameters:
+          - name: "injector"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.internal.InjectorImpl"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.internal.InjectorImpl"
+              uuid: "<init>_injectorImpl1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "com.google.inject.Key"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "source"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "internalFactory"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.internal.InternalFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.internal.InternalFactory"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_internalFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scoping"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.internal.Scoping"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.internal.Scoping"
+              uuid: "<init>_scoping1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "providerInstance"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "jakarta.inject.Provider"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "jakarta.inject.Provider"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_provider1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoints"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                collectionClass: "java.util.HashSet"
+                parameters: []
+                values:
+                - sapientType: "OBJECT"
+                  content: !<static_method_return>
+                    target: "com.google.inject.spi.InjectionPoint"
+                    method: "forConstructor"
+                    methodParameters:
+                    - name: "constructor"
+                      value:
+                        sapientType: "MOCK"
+                        suggestedContent: !<unknown_object>
+                          target: "java.lang.reflect.Constructor"
+                          onlyPojoFunctions: false
+                          builderPattern: false
+                        valueType: "java.lang.reflect.Constructor"
+                        uuid: "<init>_set1-0-constructor"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "type"
+                      value:
+                        sapientType: "MOCK"
+                        valueType: "com.google.inject.TypeLiteral"
+                        uuid: "<init>_set1-0-type"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                  suggestedContent: !<static_method_return>
+                    target: "com.google.inject.spi.InjectionPoint"
+                    method: "forConstructor"
+                    methodParameters:
+                    - name: "constructor"
+                      value:
+                        sapientType: "UNKNOWN"
+                        suggestedContent: !<unknown_object>
+                          target: "java.lang.reflect.Constructor"
+                          onlyPojoFunctions: false
+                          builderPattern: false
+                        valueType: "java.lang.reflect.Constructor"
+                        uuid: "<init>_set1-0-constructor"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "type"
+                      value:
+                        sapientType: "UNKNOWN"
+                        valueType: "com.google.inject.TypeLiteral"
+                        uuid: "<init>_set1-0-type"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                  valueType: "com.google.inject.spi.InjectionPoint"
+                  uuid: "<init>_set1-0"
+                  fixed: false
+                  collectionUuid: "<init>_set1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              suggestedContent: !<collection>
+                collectionClass: "java.util.HashSet"
+                parameters: []
+                values:
+                - sapientType: "OBJECT"
+                  content: !<static_method_return>
+                    target: "com.google.inject.spi.InjectionPoint"
+                    method: "forConstructor"
+                    methodParameters:
+                    - name: "constructor"
+                      value:
+                        sapientType: "MOCK"
+                        suggestedContent: !<unknown_object>
+                          target: "java.lang.reflect.Constructor"
+                          onlyPojoFunctions: false
+                          builderPattern: false
+                        valueType: "java.lang.reflect.Constructor"
+                        uuid: "<init>_set1-0-constructor"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "type"
+                      value:
+                        sapientType: "MOCK"
+                        valueType: "com.google.inject.TypeLiteral"
+                        uuid: "<init>_set1-0-type"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                  suggestedContent: !<static_method_return>
+                    target: "com.google.inject.spi.InjectionPoint"
+                    method: "forConstructor"
+                    methodParameters:
+                    - name: "constructor"
+                      value:
+                        sapientType: "UNKNOWN"
+                        suggestedContent: !<unknown_object>
+                          target: "java.lang.reflect.Constructor"
+                          onlyPojoFunctions: false
+                          builderPattern: false
+                        valueType: "java.lang.reflect.Constructor"
+                        uuid: "<init>_set1-0-constructor"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "type"
+                      value:
+                        sapientType: "UNKNOWN"
+                        valueType: "com.google.inject.TypeLiteral"
+                        uuid: "<init>_set1-0-type"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                  valueType: "com.google.inject.spi.InjectionPoint"
+                  uuid: "<init>_set1-0"
+                  fixed: false
+                  collectionUuid: "<init>_set1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              valueType: "java.util.Set"
+              genericValueType: "com.google.inject.spi.InjectionPoint"
+              uuid: "<init>_set1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ProviderInstanceBindingImpl"
+          parameters:
+          - name: "injector"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.internal.InjectorImpl"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.internal.InjectorImpl"
+              uuid: "<init>_injectorImpl1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "key"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              suggestedContent: !<static_method_return>
+                target: "com.google.inject.Key"
+                method: "get"
+                methodParameters:
+                - name: "type"
+                  value:
+                    sapientType: "CLASS"
+                    valueType: "java.lang.Class"
+                    uuid: "<init>_key1-type"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+              valueType: "com.google.inject.Key"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "source"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "<init>_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "internalFactory"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.internal.InternalFactory"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.internal.InternalFactory"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_internalFactory1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scoping"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.internal.Scoping"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.internal.Scoping"
+              uuid: "<init>_scoping1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "providerInstance"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "jakarta.inject.Provider"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "jakarta.inject.Provider"
+              genericValueType: "? extends java.lang.Object"
+              uuid: "<init>_provider1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "injectionPoints"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                collectionClass: "java.util.HashSet"
+                parameters: []
+                values:
+                - sapientType: "OBJECT"
+                  content: !<static_method_return>
+                    target: "com.google.inject.spi.InjectionPoint"
+                    method: "forConstructor"
+                    methodParameters:
+                    - name: "constructor"
+                      value:
+                        sapientType: "UNKNOWN"
+                        suggestedContent: !<unknown_object>
+                          target: "java.lang.reflect.Constructor"
+                          onlyPojoFunctions: false
+                          builderPattern: false
+                        valueType: "java.lang.reflect.Constructor"
+                        uuid: "<init>_set1-0-constructor"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "type"
+                      value:
+                        sapientType: "UNKNOWN"
+                        valueType: "com.google.inject.TypeLiteral"
+                        uuid: "<init>_set1-0-type"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                  suggestedContent: !<static_method_return>
+                    target: "com.google.inject.spi.InjectionPoint"
+                    method: "forConstructor"
+                    methodParameters:
+                    - name: "constructor"
+                      value:
+                        sapientType: "UNKNOWN"
+                        suggestedContent: !<unknown_object>
+                          target: "java.lang.reflect.Constructor"
+                          onlyPojoFunctions: false
+                          builderPattern: false
+                        valueType: "java.lang.reflect.Constructor"
+                        uuid: "<init>_set1-0-constructor"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "type"
+                      value:
+                        sapientType: "UNKNOWN"
+                        valueType: "com.google.inject.TypeLiteral"
+                        uuid: "<init>_set1-0-type"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                  valueType: "com.google.inject.spi.InjectionPoint"
+                  uuid: "<init>_set1-0"
+                  fixed: false
+                  collectionUuid: "<init>_set1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              suggestedContent: !<collection>
+                collectionClass: "java.util.HashSet"
+                parameters: []
+                values:
+                - sapientType: "OBJECT"
+                  content: !<static_method_return>
+                    target: "com.google.inject.spi.InjectionPoint"
+                    method: "forConstructor"
+                    methodParameters:
+                    - name: "constructor"
+                      value:
+                        sapientType: "UNKNOWN"
+                        suggestedContent: !<unknown_object>
+                          target: "java.lang.reflect.Constructor"
+                          onlyPojoFunctions: false
+                          builderPattern: false
+                        valueType: "java.lang.reflect.Constructor"
+                        uuid: "<init>_set1-0-constructor"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "type"
+                      value:
+                        sapientType: "UNKNOWN"
+                        valueType: "com.google.inject.TypeLiteral"
+                        uuid: "<init>_set1-0-type"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                  suggestedContent: !<static_method_return>
+                    target: "com.google.inject.spi.InjectionPoint"
+                    method: "forConstructor"
+                    methodParameters:
+                    - name: "constructor"
+                      value:
+                        sapientType: "UNKNOWN"
+                        suggestedContent: !<unknown_object>
+                          target: "java.lang.reflect.Constructor"
+                          onlyPojoFunctions: false
+                          builderPattern: false
+                        valueType: "java.lang.reflect.Constructor"
+                        uuid: "<init>_set1-0-constructor"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "type"
+                      value:
+                        sapientType: "UNKNOWN"
+                        valueType: "com.google.inject.TypeLiteral"
+                        uuid: "<init>_set1-0-type"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                  valueType: "com.google.inject.spi.InjectionPoint"
+                  uuid: "<init>_set1-0"
+                  fixed: false
+                  collectionUuid: "<init>_set1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              valueType: "java.util.Set"
+              genericValueType: "com.google.inject.spi.InjectionPoint"
+              uuid: "<init>_set1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.ProviderInstanceBindingImpl"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "541C918A90C5F93853419EBFEAC6F944"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "getKey"
+        parameters: []
+        signature: "getKey(): Key"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "com.google.inject.Key"
+          uuid: "toString_key1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "84983AD3502CA897213A7AFE5C672D12"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "getSource"
+        parameters: []
+        signature: "getSource(): Object"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "toString_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "result1"
+        valueType: "java.lang.String"
+        uuid: "toString_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "363d3698-f34c-39ad-914f-376a19498023"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "object of type MoreObjects.ToStringHelper"
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableSet.copyOf(java.util.Set<com.google.inject.spi.InjectionPoint>)\
+        \ : com.google.common.collect.ImmutableSet<com.google.inject.spi.InjectionPoint>"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "equals"
+    returnType: "boolean"
+    signature: "equals(java.lang.Object) : boolean"
+    instructionFingerprint: "4695E7058E263EC47800E7F021D3AA2E"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path5"
+    pathIdForUser: "path1"
+    testPathName: "equalsWhenObjNotInstanceOfProviderInstanceBindingImpl"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.Key<java.lang.Object>,java.lang.Object,com.google.inject.internal.InternalFactory<?\
+      \ extends java.lang.Object>,com.google.inject.internal.Scoping,jakarta.inject.Provider<?\
+      \ extends java.lang.Object>,java.util.Set<com.google.inject.spi.InjectionPoint>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "AA7D98E8703F5C6E6C205666DDFD0A9D"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "8c542efa-b4eb-3ce9-bcc9-f79df9a09dc6"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableSet.copyOf(java.util.Set<com.google.inject.spi.InjectionPoint>)\
+        \ : com.google.common.collect.ImmutableSet<com.google.inject.spi.InjectionPoint>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path4"
+    pathIdForUser: "path2"
+    testPathName: "equalsWhenGetKeyNotEqualsOGetKey"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.Key<java.lang.Object>,java.lang.Object,com.google.inject.internal.InternalFactory<?\
+      \ extends java.lang.Object>,com.google.inject.internal.Scoping,jakarta.inject.Provider<?\
+      \ extends java.lang.Object>,java.util.Set<com.google.inject.spi.InjectionPoint>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "EC1B96A85881C34B711BF0892F030171"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "ec1ee7cd-3873-3522-a5bb-86f18c47b994"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableSet.copyOf(java.util.Set<com.google.inject.spi.InjectionPoint>)\
+        \ : com.google.common.collect.ImmutableSet<com.google.inject.spi.InjectionPoint>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "equalsWhenGetScopingNotEqualsOGetScoping"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.Key<java.lang.Object>,java.lang.Object,com.google.inject.internal.InternalFactory<?\
+      \ extends java.lang.Object>,com.google.inject.internal.Scoping,jakarta.inject.Provider<?\
+      \ extends java.lang.Object>,java.util.Set<com.google.inject.spi.InjectionPoint>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "FBCFAC8392E3E72C7190D279DE1A00CE"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "3ddb7b66-3e90-382d-8b9c-ebf409b26dbf"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableSet.copyOf(java.util.Set<com.google.inject.spi.InjectionPoint>)\
+        \ : com.google.common.collect.ImmutableSet<com.google.inject.spi.InjectionPoint>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path4"
+    testPathName: "equalsWhenObjectsEqualProviderInstanceOProviderInstance"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.Key<java.lang.Object>,java.lang.Object,com.google.inject.internal.InternalFactory<?\
+      \ extends java.lang.Object>,com.google.inject.internal.Scoping,jakarta.inject.Provider<?\
+      \ extends java.lang.Object>,java.util.Set<com.google.inject.spi.InjectionPoint>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "22F6FF80B5C0D7A379FAF7E94CF04FD8"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "b8d033d1-5a17-370b-b440-a7d708ec24fe"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableSet.copyOf(java.util.Set<com.google.inject.spi.InjectionPoint>)\
+        \ : com.google.common.collect.ImmutableSet<com.google.inject.spi.InjectionPoint>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path5"
+    testPathName: "equalsWhenObjectsNotEqualProviderInstanceOProviderInstance"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.Key<java.lang.Object>,java.lang.Object,com.google.inject.internal.InternalFactory<?\
+      \ extends java.lang.Object>,com.google.inject.internal.Scoping,jakarta.inject.Provider<?\
+      \ extends java.lang.Object>,java.util.Set<com.google.inject.spi.InjectionPoint>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "A3F39C77D7A4390F7FFBB5F798B9F8BE"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "610f18e8-5de5-36ce-844a-bf852c955438"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableSet.copyOf(java.util.Set<com.google.inject.spi.InjectionPoint>)\
+        \ : com.google.common.collect.ImmutableSet<com.google.inject.spi.InjectionPoint>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

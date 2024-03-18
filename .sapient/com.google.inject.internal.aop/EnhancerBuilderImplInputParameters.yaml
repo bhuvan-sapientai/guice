@@ -1,0 +1,401 @@
+---
+modelFingerprint: "40E55808C74A34C3F68CDF37BD9829AE"
+methods:
+- method:
+    name: "getEnhanceableMethods"
+    returnType: "java.lang.reflect.Method[]"
+    signature: "getEnhanceableMethods() : java.lang.reflect.Method[]"
+    instructionFingerprint: "FFF7289CFE674B6BB3ADF377BBA2E606"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getEnhanceableMethodsTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Class<?>,java.util.Collection<java.lang.reflect.Method>,java.util.Map<java.lang.reflect.Method,java.lang.reflect.Method>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1FDF6344C23B1FB06085F15B8F7D5AE0"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "560acabe-2732-3964-9a5d-4a57fe9e36fa"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableMap.copyOf(java.util.Map<java.lang.reflect.Method,java.lang.reflect.Method>)\
+        \ : com.google.common.collect.ImmutableMap<java.lang.reflect.Method,java.lang.reflect.Method>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "buildEnhancer"
+    returnType: "java.util.function.Function"
+    signature: "buildEnhancer(java.util.BitSet) : java.util.function.Function<java.lang.String,java.util.function.BiFunction<java.lang.Object,java.lang.Object[],java.lang.Object>>"
+    instructionFingerprint: "C1F735B2CDB65C5DC99B754042BA4301"
+    parametersTypes:
+    - "java.util.BitSet"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "buildEnhancerWhenHostClassGetModifiersAndFINALNotEquals0ThrowsIllegalArgumentException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Class<?>,java.util.Collection<java.lang.reflect.Method>,java.util.Map<java.lang.reflect.Method,java.lang.reflect.Method>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3A29A3C182160F74BEC684DDA161B0B0"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "FA2BDDB07F26D063B5D340ABFE93DFD3"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.aop.EnhancerBuilderImpl"
+          parameters:
+          - name: "hostClass"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "enhanceableMethods"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Collection"
+              genericValueType: "java.lang.reflect.Method"
+              uuid: "<init>_collection1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bridgeDelegates"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Map"
+              genericValueType: "java.lang.reflect.Method,java.lang.reflect.Method"
+              uuid: "<init>_map1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.aop.EnhancerBuilderImpl"
+          parameters:
+          - name: "hostClass"
+            value:
+              sapientType: "CLASS"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "enhanceableMethods"
+            value:
+              sapientType: "COLLECTION"
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Collection"
+              genericValueType: "java.lang.reflect.Method"
+              uuid: "<init>_collection1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bridgeDelegates"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.Map"
+              genericValueType: "java.lang.reflect.Method,java.lang.reflect.Method"
+              uuid: "<init>_map1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.aop.EnhancerBuilderImpl"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "methodIndices"
+      modelFingerprint: "A3A34DD72355EFBAF286BDBD52976FDF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.BitSet"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.BitSet"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.BitSet"
+        uuid: "buildEnhancer_bitSet1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "73F9D56FA208881A7546E2D1530C0C61"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "Cannot subclass final "
+              suggestedContent: !<regular>
+                value: "Cannot subclass final "
+              valueType: "java.lang.String"
+              uuid: "buildEnhancer_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "java.lang.IllegalArgumentException"
+          parameters:
+          - name: "s"
+            value:
+              sapientType: "BASIC"
+              suggestedContent: !<regular>
+                value: "Cannot subclass final "
+              valueType: "java.lang.String"
+              uuid: "buildEnhancer_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "java.lang.IllegalArgumentException"
+        uuid: "buildEnhancer_illegalArgumentException1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ea2d6f84-ad88-3b1f-97ed-d47344eb9a2b"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableMap.copyOf(java.util.Map<java.lang.reflect.Method,java.lang.reflect.Method>)\
+        \ : com.google.common.collect.ImmutableMap<java.lang.reflect.Method,java.lang.reflect.Method>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "buildEnhancerWhenHostClassGetModifiersAndFINALEquals0"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Class<?>,java.util.Collection<java.lang.reflect.Method>,java.util.Map<java.lang.reflect.Method,java.lang.reflect.Method>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "35F28754FDB80F15D856160D2D1B62D4"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "FA2BDDB07F26D063B5D340ABFE93DFD3"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.aop.EnhancerBuilderImpl"
+          parameters:
+          - name: "hostClass"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "enhanceableMethods"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Collection"
+              genericValueType: "java.lang.reflect.Method"
+              uuid: "<init>_collection1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bridgeDelegates"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Map"
+              genericValueType: "java.lang.reflect.Method,java.lang.reflect.Method"
+              uuid: "<init>_map1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.aop.EnhancerBuilderImpl"
+          parameters:
+          - name: "hostClass"
+            value:
+              sapientType: "CLASS"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "enhanceableMethods"
+            value:
+              sapientType: "COLLECTION"
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Collection"
+              genericValueType: "java.lang.reflect.Method"
+              uuid: "<init>_collection1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bridgeDelegates"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.Map"
+              genericValueType: "java.lang.reflect.Method,java.lang.reflect.Method"
+              uuid: "<init>_map1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.aop.EnhancerBuilderImpl"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "methodIndices"
+      modelFingerprint: "A3A34DD72355EFBAF286BDBD52976FDF"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.BitSet"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.BitSet"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.BitSet"
+        uuid: "buildEnhancer_bitSet1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "71AA5154DB4968AE4A2A1D64A4BBDD4F"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.function.Function"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.util.function.Function"
+        uuid: "buildEnhancer_object2"
+        fixed: false
+        collectionUuid: "buildEnhancer_object1"
+        equalsMethodPresent: false
+        explicitCastNeeded: true
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3e2fe79d-36f7-3c1c-8245-c66059689d65"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "ENHANCERS"
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableMap.copyOf(java.util.Map<java.lang.reflect.Method,java.lang.reflect.Method>)\
+        \ : com.google.common.collect.ImmutableMap<java.lang.reflect.Method,java.lang.reflect.Method>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true

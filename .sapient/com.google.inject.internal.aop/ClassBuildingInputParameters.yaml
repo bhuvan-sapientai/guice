@@ -1,0 +1,3556 @@
+---
+modelFingerprint: "D839D9177C440BD3D0587EF89C24583B"
+methods:
+- method:
+    name: "signature"
+    returnType: "java.lang.String"
+    signature: "signature(java.lang.reflect.Constructor<?>) : java.lang.String"
+    instructionFingerprint: "AA2C4037E597D213EFEB58477725966C"
+    parametersTypes:
+    - "java.lang.reflect.Constructor"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "signatureWhenParameterTypesIsNotEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "449D2730BECF195082B0CBCE4867FBFD"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "constructor"
+      modelFingerprint: "F6EA5397D65D024519496DFDD7F1515E"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        uuid: "signature_constructor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "constructor"
+      modelFingerprint: "E1D6C2C3C7C1AFB80E30EE2B0A10E68E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Constructor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Constructor"
+        uuid: "signature_constructor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "constructor"
+        name: "getParameterTypes"
+        parameters: []
+        signature: "getParameterTypes(): Class[]"
+        returnValue:
+          sapientType: "ARRAY"
+          content: !<array>
+            values:
+              0:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "java.lang.Object"
+                suggestedContent: !<regular>
+                  value: "java.lang.Object"
+                valueType: "java.lang.Class"
+                uuid: "signature_class1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<array>
+            values:
+              0:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "java.lang.Object"
+                suggestedContent: !<regular>
+                  value: "java.lang.Object"
+                valueType: "java.lang.Class"
+                uuid: "signature_class1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.lang.Class[]"
+          genericValueType: "?"
+          uuid: "signature_class[]1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "EAE8EEA80499AB9308927A0E752C6BDB"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "<init>;java.lang.Object"
+        suggestedContent: !<regular>
+          value: "<init>;java.lang.Object"
+        valueType: "java.lang.String"
+        uuid: "signature_string2"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f2d89d37-5c71-377f-b65f-25f5d1f6fbdb"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "signatureWhenParameterTypesIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C2191A61A28FAF1FAB31E6F1FA79678C"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "38149679-54a0-39ed-953e-79ba8c319a08"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.reflect.Constructor.getParameterTypes()\
+        \ : java.lang.Class[]<?>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "signature"
+    returnType: "java.lang.String"
+    signature: "signature(java.lang.reflect.Method) : java.lang.String"
+    instructionFingerprint: "A8FB82F691A54160551A0F331AFD0465"
+    parametersTypes:
+    - "java.lang.reflect.Method"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "signature1WhenParameterTypesIsNotEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "163FC43E83298E4968D7CDBA70723C77"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "method"
+      modelFingerprint: "B52E88BE968470EA0133B70312E933D0"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "signature_method1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "method"
+      modelFingerprint: "29CB38139B848F8A4335CB653555FEDA"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "signature_method1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "method"
+        name: "getName"
+        parameters: []
+        signature: "getName(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "A"
+          suggestedContent: !<regular>
+            value: "A"
+          valueType: "java.lang.String"
+          uuid: "signature_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "method"
+      modelFingerprint: "54A54C272F74F56A3245F550BE49E866"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Method"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Method"
+        uuid: "signature_method1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "method"
+        name: "getParameterTypes"
+        parameters: []
+        signature: "getParameterTypes(): Class[]"
+        returnValue:
+          sapientType: "ARRAY"
+          content: !<array>
+            values:
+              0:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "java.lang.Object"
+                suggestedContent: !<regular>
+                  value: "java.lang.Object"
+                valueType: "java.lang.Class"
+                uuid: "signature_class1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<array>
+            values:
+              0:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "java.lang.Object"
+                suggestedContent: !<regular>
+                  value: "java.lang.Object"
+                valueType: "java.lang.Class"
+                uuid: "signature_class1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "java.lang.Class[]"
+          genericValueType: "?"
+          uuid: "signature_class[]1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "659663006EC5AD00AF8AAD0A50CCF9B3"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "A;java.lang.Object"
+        suggestedContent: !<regular>
+          value: "A;java.lang.Object"
+        valueType: "java.lang.String"
+        uuid: "signature_string3"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6d7cef34-7215-3f80-b29f-939fa0f00df0"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "signature1WhenParameterTypesIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F9CD6E5C01E4B1A369E34F9DCD6E0563"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "ab3a1684-f39a-3dd9-9eec-35058e9ff1ca"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.reflect.Method.getName() : java.lang.String"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "canEnhance"
+    returnType: "boolean"
+    signature: "canEnhance(java.lang.reflect.Executable) : boolean"
+    instructionFingerprint: "45C4C308E349F0B23A65B3FB002173E0"
+    parametersTypes:
+    - "java.lang.reflect.Executable"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "canEnhanceWhenModifiersAndPRIVATEEquals0"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "84EB052925A2B68D26A80A1A313950F3"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "member"
+      modelFingerprint: "F49ABF8973A9B06D0F313EF6B650E0FA"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Executable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Executable"
+        uuid: "canEnhance_executable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassDefining"
+      modelFingerprint: "45631DA508C0CD6AAD1676CEDD6E7009"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.aop.ClassDefining"
+        uuid: "com.google.inject.internal.aop.ClassDefining"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.aop.ClassDefining"
+        name: "hasPackageAccess"
+        parameters: []
+        signature: "hasPackageAccess(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "canEnhance_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "member"
+      modelFingerprint: "25BD22393D798A3162AEAF2B7029FC8B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Executable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Executable"
+        uuid: "canEnhance_executable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "member"
+        name: "getModifiers"
+        parameters: []
+        signature: "getModifiers(): int"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: 0
+          valueType: "int"
+          uuid: "canAccess_int23"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "012874db-0989-3abf-909d-cec5c4e173cf"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "BITWISE_NOT_SUPPORTED"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "canEnhanceWhenModifiersAndPRIVATENotEquals0"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "01F33C1D1B5CE8C0EC6AF8D48986F1E6"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "member"
+      modelFingerprint: "F49ABF8973A9B06D0F313EF6B650E0FA"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Executable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Executable"
+        uuid: "canEnhance_executable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassDefining"
+      modelFingerprint: "45631DA508C0CD6AAD1676CEDD6E7009"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.aop.ClassDefining"
+        uuid: "com.google.inject.internal.aop.ClassDefining"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.aop.ClassDefining"
+        name: "hasPackageAccess"
+        parameters: []
+        signature: "hasPackageAccess(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "canEnhance_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "member"
+      modelFingerprint: "25BD22393D798A3162AEAF2B7029FC8B"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Executable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.reflect.Executable"
+        uuid: "canEnhance_executable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "member"
+        name: "getModifiers"
+        parameters: []
+        signature: "getModifiers(): int"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: 0
+          valueType: "int"
+          uuid: "canAccess_int23"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5430f8b2-68a1-32a9-837a-bdc57bcff9d8"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "BITWISE_NOT_SUPPORTED"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "buildEnhancerBuilder"
+    returnType: "com.google.inject.internal.BytecodeGen$EnhancerBuilder"
+    signature: "buildEnhancerBuilder(java.lang.Class<?>) : com.google.inject.internal.BytecodeGen$EnhancerBuilder"
+    instructionFingerprint: "DAA7F3E5C43FF1BFD8813792274251EF"
+    parametersTypes:
+    - "java.lang.Class"
+  paths:
+  - pathId: "path6"
+    pathIdForUser: "path1"
+    testPathName: "buildEnhancerBuilderWhenMethodPartitionsValuesIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2CFC7D095DB1DB2B1016988B5FDB1869"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "55d34d61-ad1e-3c44-bff7-01ef4a759343"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path5"
+    pathIdForUser: "path2"
+    testPathName: "buildEnhancerBuilderWhenInterfacesIsEmptyAndMethodPartitionsValuesIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "21F7E2177FA8B25424B589E9C08DCCC4"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "9b74781a-f600-3bc6-ae77-97d26d0405f7"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path4"
+    pathIdForUser: "path3"
+    testPathName: "buildEnhancerBuilderWhenInterfaceStackIsEmptyAndInterfacesIsEmptyAndMethodPartitionsValuesIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "000F0E611545CB0C1800985E26A20386"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "864bc495-313d-3a0a-9e9e-0f533b139dd3"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.getDeclaredMethods() : java.lang.reflect.Method[]"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path4"
+    testPathName: "buildEnhancerBuilderWhenOVERRIDABLE_OBJECT_METHODSIsEmptyAndInterfaceStackIsEmptyAndInterfacesIsEmptyAndMethodPartition"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "C4EDC6A2C15A3E295FDE8B2F2ED493D6"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "hostClass"
+      modelFingerprint: "F9FCCB2E884E161BD71363F5F216765C"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        suggestedContent: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "buildEnhancerBuilder_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassDefining"
+      modelFingerprint: "942128B2325C2E80BC1A5AA1685135B7"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "com.google.inject.internal.aop.ClassDefining"
+        uuid: "com.google.inject.internal.aop.ClassDefining"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.aop.ClassDefining"
+        name: "hasPackageAccess"
+        parameters: []
+        signature: "hasPackageAccess(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "visitMethodHierarchy_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassBuilding"
+      modelFingerprint: "3BB46F6F8F6A9ACA61F1BB2974FB9E49"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.aop.ClassBuilding"
+        uuid: "com.google.inject.internal.aop.ClassBuilding"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.aop.ClassBuilding"
+        name: "visitMembers"
+        parameters:
+        - name: "members"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.reflect.Method[]"
+            uuid: "visitMethodHierarchy_method[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "samePackage"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "visitMethodHierarchy_int1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "visitor"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "java.util.function.Consumer"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "visitMembers(Method[],boolean,Consumer): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "visitMethodHierarchy_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "var5"
+      modelFingerprint: "C6BEE4602BFCB7F4C0B805CB87FACDBB"
+      index: 4
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "ITERATOR"
+        content: !<iterator>
+          collectionValue:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "java.lang.Class<?>"
+            uuid: "visitMethodHierarchy_arrayList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.Iterator"
+        genericValueType: "java.lang.Class<?>"
+        uuid: "visitMethodHierarchy_iterator1"
+        fixed: false
+        collectionUuid: "visitMethodHierarchy_arrayList1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "var5"
+        name: "hasNext"
+        parameters: []
+        signature: "hasNext(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "visitMethodHierarchy_boolean4"
+          fixed: false
+          collectionUuid: "visitMethodHierarchy_arrayList1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "TypeLiteral"
+      modelFingerprint: "6E86832AA4339093F11F7C5E435C1E80"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.TypeLiteral"
+        uuid: "com.google.inject.TypeLiteral"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.TypeLiteral"
+        name: "get"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "buildEnhancerBuilder_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(Class): TypeLiteral"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "com.google.inject.TypeLiteral"
+          genericValueType: "?"
+          uuid: "buildEnhancerBuilder_typeLiteral1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "FC005828C95A0F0346124E3780132AD7"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.aop.EnhancerBuilderImpl"
+          parameters:
+          - name: "hostClass"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              suggestedContent: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "buildEnhancerBuilder_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "enhanceableMethods"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Collection"
+              genericValueType: "java.lang.reflect.Method"
+              uuid: "buildEnhancerBuilder_collection2"
+              fixed: false
+              collectionUuid: "buildEnhancerBuilder_treeMap1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bridgeDelegates"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                collectionClass: "java.util.HashMap"
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                collectionClass: "java.util.HashMap"
+                parameters: []
+                values: []
+              valueType: "java.util.Map"
+              genericValueType: "java.lang.reflect.Method,java.lang.reflect.Method"
+              uuid: "buildEnhancerBuilder_hashMap2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.aop.EnhancerBuilderImpl"
+          parameters:
+          - name: "hostClass"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              suggestedContent: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "buildEnhancerBuilder_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "enhanceableMethods"
+            value:
+              sapientType: "COLLECTION"
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Collection"
+              genericValueType: "java.lang.reflect.Method"
+              uuid: "buildEnhancerBuilder_collection2"
+              fixed: false
+              collectionUuid: "buildEnhancerBuilder_treeMap1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bridgeDelegates"
+            value:
+              sapientType: "COLLECTION"
+              suggestedContent: !<collection>
+                collectionClass: "java.util.HashMap"
+                parameters: []
+                values: []
+              valueType: "java.util.Map"
+              genericValueType: "java.lang.reflect.Method,java.lang.reflect.Method"
+              uuid: "buildEnhancerBuilder_hashMap2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "com.google.inject.internal.aop.EnhancerBuilderImpl"
+        uuid: "buildEnhancerBuilder_enhancerBuilderImpl1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b9282831-0b14-35b2-b254-d24b3ba0465a"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.getDeclaredMethods() : java.lang.reflect.Method[]"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path5"
+    testPathName: "buildEnhancerBuilderWhenInterfaceStackIsEmptyAndInterfacesIsEmptyAndMethodPartitionsValuesIsEmpty2"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "50DA1E1545856BC0C8AB1AFC7E941FDD"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "1b82b349-a931-3da7-aca7-7cc21df8ba53"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.getDeclaredMethods() : java.lang.reflect.Method[]"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path6"
+    testPathName: "buildEnhancerBuilderWhenInterfaceStackIsEmptyAndInterfacesIsEmptyAndMethodPartitionsValuesIsEmpty3"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "ED08A64CACAD40CFD5E5B1D6E62C7ACC"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "hostClass"
+      modelFingerprint: "F9FCCB2E884E161BD71363F5F216765C"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        suggestedContent: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "buildEnhancerBuilder_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassDefining"
+      modelFingerprint: "942128B2325C2E80BC1A5AA1685135B7"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "com.google.inject.internal.aop.ClassDefining"
+        uuid: "com.google.inject.internal.aop.ClassDefining"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.aop.ClassDefining"
+        name: "hasPackageAccess"
+        parameters: []
+        signature: "hasPackageAccess(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "visitMethodHierarchy_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassBuilding"
+      modelFingerprint: "9C27A13E5C14CA134CEB9018AD0476B4"
+      index: 3
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.aop.ClassBuilding"
+        uuid: "com.google.inject.internal.aop.ClassBuilding"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.aop.ClassBuilding"
+        name: "visitMembers"
+        parameters:
+        - name: "members"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.reflect.Method[]"
+            uuid: "visitMethodHierarchy_method[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "samePackage"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "visitMethodHierarchy_int1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "visitor"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "java.util.function.Consumer"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "visitMembers(Method[],boolean,Consumer): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "visitMethodHierarchy_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "var5"
+      modelFingerprint: "C6BEE4602BFCB7F4C0B805CB87FACDBB"
+      index: 4
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "ITERATOR"
+        content: !<iterator>
+          collectionValue:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "java.lang.Class<?>"
+            uuid: "visitMethodHierarchy_arrayList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.Iterator"
+        genericValueType: "java.lang.Class<?>"
+        uuid: "visitMethodHierarchy_iterator1"
+        fixed: false
+        collectionUuid: "visitMethodHierarchy_arrayList1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "var5"
+        name: "hasNext"
+        parameters: []
+        signature: "hasNext(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: false
+          valueType: "boolean"
+          uuid: "visitMethodHierarchy_boolean4"
+          fixed: false
+          collectionUuid: "visitMethodHierarchy_arrayList1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "TypeLiteral"
+      modelFingerprint: "6E86832AA4339093F11F7C5E435C1E80"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.TypeLiteral"
+        uuid: "com.google.inject.TypeLiteral"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.TypeLiteral"
+        name: "get"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "buildEnhancerBuilder_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(Class): TypeLiteral"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "com.google.inject.TypeLiteral"
+          genericValueType: "?"
+          uuid: "buildEnhancerBuilder_typeLiteral1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "FC005828C95A0F0346124E3780132AD7"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.aop.EnhancerBuilderImpl"
+          parameters:
+          - name: "hostClass"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              suggestedContent: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "buildEnhancerBuilder_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "enhanceableMethods"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Collection"
+              genericValueType: "java.lang.reflect.Method"
+              uuid: "buildEnhancerBuilder_collection2"
+              fixed: false
+              collectionUuid: "buildEnhancerBuilder_treeMap1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bridgeDelegates"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                collectionClass: "java.util.HashMap"
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                collectionClass: "java.util.HashMap"
+                parameters: []
+                values: []
+              valueType: "java.util.Map"
+              genericValueType: "java.lang.reflect.Method,java.lang.reflect.Method"
+              uuid: "buildEnhancerBuilder_hashMap2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.aop.EnhancerBuilderImpl"
+          parameters:
+          - name: "hostClass"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              suggestedContent: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "buildEnhancerBuilder_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "enhanceableMethods"
+            value:
+              sapientType: "COLLECTION"
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.Collection"
+              genericValueType: "java.lang.reflect.Method"
+              uuid: "buildEnhancerBuilder_collection2"
+              fixed: false
+              collectionUuid: "buildEnhancerBuilder_treeMap1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "bridgeDelegates"
+            value:
+              sapientType: "COLLECTION"
+              suggestedContent: !<collection>
+                collectionClass: "java.util.HashMap"
+                parameters: []
+                values: []
+              valueType: "java.util.Map"
+              genericValueType: "java.lang.reflect.Method,java.lang.reflect.Method"
+              uuid: "buildEnhancerBuilder_hashMap2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "com.google.inject.internal.aop.EnhancerBuilderImpl"
+        uuid: "buildEnhancerBuilder_enhancerBuilderImpl1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9a79696b-c008-303c-b2c0-43167fe82bd6"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.getDeclaredMethods() : java.lang.reflect.Method[]"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "canFastInvoke"
+    returnType: "boolean"
+    signature: "canFastInvoke(java.lang.reflect.Executable) : boolean"
+    instructionFingerprint: "645EA98532E194ACC839091CDFB4358A"
+    parametersTypes:
+    - "java.lang.reflect.Executable"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "canFastInvokeWhenModifiersNotEqualsPRIVATE"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "1D7A4E69E541534BCD85E6F34D02EE84"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "member"
+      modelFingerprint: "93DBA35996A566DFD9B97B27DE927672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Executable"
+          onlyPojoFunctions: true
+          builderPattern: false
+        valueType: "java.lang.reflect.Executable"
+        uuid: "canFastInvoke_executable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "member"
+      modelFingerprint: "D2EE33F9CD850AE6914D41D9AD3CB674"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Executable"
+          onlyPojoFunctions: true
+          builderPattern: false
+        valueType: "java.lang.reflect.Executable"
+        uuid: "canFastInvoke_executable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "member"
+        name: "getModifiers"
+        parameters: []
+        signature: "getModifiers(): int"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: 0
+          valueType: "int"
+          uuid: "canFastInvoke_int1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassDefining"
+      modelFingerprint: "45631DA508C0CD6AAD1676CEDD6E7009"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.aop.ClassDefining"
+        uuid: "com.google.inject.internal.aop.ClassDefining"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.aop.ClassDefining"
+        name: "hasPackageAccess"
+        parameters: []
+        signature: "hasPackageAccess(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "canFastInvoke_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "cbfe6476-2778-3510-becc-6195a77ebf9b"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "BITWISE_NOT_SUPPORTED"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "canFastInvokeWhenModifiersEqualsPRIVATE"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "82476D655F65FD2F625081EE0AC9D044"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "member"
+      modelFingerprint: "93DBA35996A566DFD9B97B27DE927672"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Executable"
+          onlyPojoFunctions: true
+          builderPattern: false
+        valueType: "java.lang.reflect.Executable"
+        uuid: "canFastInvoke_executable1"
+        fixed: false
+        nameForMock: "value"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "member"
+      modelFingerprint: "D2EE33F9CD850AE6914D41D9AD3CB674"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.reflect.Executable"
+          onlyPojoFunctions: true
+          builderPattern: false
+        valueType: "java.lang.reflect.Executable"
+        uuid: "canFastInvoke_executable1"
+        fixed: false
+        nameForMock: "value"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "member"
+        name: "getModifiers"
+        parameters: []
+        signature: "getModifiers(): int"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: 0
+          valueType: "int"
+          uuid: "canFastInvoke_int1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassDefining"
+      modelFingerprint: "45631DA508C0CD6AAD1676CEDD6E7009"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.aop.ClassDefining"
+        uuid: "com.google.inject.internal.aop.ClassDefining"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.aop.ClassDefining"
+        name: "hasPackageAccess"
+        parameters: []
+        signature: "hasPackageAccess(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          suggestedContent: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "canFastInvoke_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d357d8db-78bd-363b-b630-6211dfc2fb51"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "BITWISE_NOT_SUPPORTED"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "buildFastClass"
+    returnType: "java.util.function.Function"
+    signature: "buildFastClass(java.lang.Class<?>) : java.util.function.Function<java.lang.String,java.util.function.BiFunction<java.lang.Object,java.lang.Object[],java.lang.Object>>"
+    instructionFingerprint: "8BBD8233E3FC931F78B47B79AAFF48C4"
+    parametersTypes:
+    - "java.lang.Class"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "buildFastClassWhenHasPackageAccess"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "064F10CCAF94C931BF1D417FE47953C9"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "hostClass"
+      modelFingerprint: "F9FCCB2E884E161BD71363F5F216765C"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        suggestedContent: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "buildFastClass_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassDefining"
+      modelFingerprint: "942128B2325C2E80BC1A5AA1685135B7"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "com.google.inject.internal.aop.ClassDefining"
+        uuid: "com.google.inject.internal.aop.ClassDefining"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.aop.ClassDefining"
+        name: "hasPackageAccess"
+        parameters: []
+        signature: "hasPackageAccess(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "visitFastConstructors_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassBuilding"
+      modelFingerprint: "A3B0571F630B189D696BB9E61BA0A9E9"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.aop.ClassBuilding"
+        uuid: "com.google.inject.internal.aop.ClassBuilding"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.aop.ClassBuilding"
+        name: "visitMembers"
+        parameters:
+        - name: "members"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values:
+                0:
+                  sapientType: "OBJECT"
+                  content: !<array_return_item_reflection_call>
+                    target: "java.lang.reflect.Constructor"
+                    arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                      target: "java.lang.reflect.Constructor[]"
+                      localVariableValue:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.Object"
+                        suggestedContent: !<regular>
+                          value: "java.lang.Object"
+                        valueType: "java.lang.Class"
+                        genericValueType: "?"
+                        uuid: "buildFastClass_class1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters: []
+                      size: 1
+                      baseUuid: "visitFastConstructors_constructor[]1"
+                      methodName: "getDeclaredConstructors"
+                    index: 0
+                  valueType: "java.lang.reflect.Constructor"
+                  uuid: "visitFastConstructors_constructor[]1-item0"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Constructor[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  suggestedContent: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "buildFastClass_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 1
+                baseUuid: "visitFastConstructors_constructor[]1"
+                methodName: "getDeclaredConstructors"
+            suggestedContent: !<array>
+              values:
+                0:
+                  sapientType: "OBJECT"
+                  content: !<array_return_item_reflection_call>
+                    target: "java.lang.reflect.Constructor"
+                    arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                      target: "java.lang.reflect.Constructor[]"
+                      localVariableValue:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.Object"
+                        suggestedContent: !<regular>
+                          value: "java.lang.Object"
+                        valueType: "java.lang.Class"
+                        genericValueType: "?"
+                        uuid: "buildFastClass_class1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters: []
+                      size: 1
+                      baseUuid: "visitFastConstructors_constructor[]1"
+                      methodName: "getDeclaredConstructors"
+                    index: 0
+                  valueType: "java.lang.reflect.Constructor"
+                  uuid: "visitFastConstructors_constructor[]1-item0"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Constructor[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  suggestedContent: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "buildFastClass_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 1
+                baseUuid: "visitFastConstructors_constructor[]1"
+                methodName: "getDeclaredConstructors"
+            valueType: "java.lang.reflect.Constructor[]"
+            genericValueType: "?"
+            uuid: "visitFastConstructors_constructor[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "samePackage"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "visitor"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "java.util.function.Consumer"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "visitMembers(Constructor[],boolean,Consumer): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "visitFastConstructors_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassDefining"
+      modelFingerprint: "942128B2325C2E80BC1A5AA1685135B7"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "com.google.inject.internal.aop.ClassDefining"
+        uuid: "com.google.inject.internal.aop.ClassDefining"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.aop.ClassDefining"
+        name: "hasPackageAccess"
+        parameters: []
+        signature: "hasPackageAccess(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "visitFastMethods_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassBuilding"
+      modelFingerprint: "3938392B92D088BFB0F5489F356910E8"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.aop.ClassBuilding"
+        uuid: "com.google.inject.internal.aop.ClassBuilding"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.aop.ClassBuilding"
+        name: "visitMembers"
+        parameters:
+        - name: "members"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values:
+                0:
+                  sapientType: "OBJECT"
+                  content: !<array_return_item_reflection_call>
+                    target: "java.lang.reflect.Method"
+                    arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                      target: "java.lang.reflect.Method[]"
+                      localVariableValue:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.Object"
+                        suggestedContent: !<regular>
+                          value: "java.lang.Object"
+                        valueType: "java.lang.Class"
+                        genericValueType: "?"
+                        uuid: "buildFastClass_class1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters: []
+                      size: 11
+                      baseUuid: "visitFastMethods_method[]1"
+                      methodName: "getDeclaredMethods"
+                    index: 0
+                  valueType: "java.lang.reflect.Method"
+                  uuid: "visitFastMethods_method[]1-item0"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                1:
+                  sapientType: "OBJECT"
+                  content: !<array_return_item_reflection_call>
+                    target: "java.lang.reflect.Method"
+                    arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                      target: "java.lang.reflect.Method[]"
+                      localVariableValue:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.Object"
+                        suggestedContent: !<regular>
+                          value: "java.lang.Object"
+                        valueType: "java.lang.Class"
+                        genericValueType: "?"
+                        uuid: "buildFastClass_class1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters: []
+                      size: 11
+                      baseUuid: "visitFastMethods_method[]1"
+                      methodName: "getDeclaredMethods"
+                    index: 1
+                  valueType: "java.lang.reflect.Method"
+                  uuid: "visitFastMethods_method[]1-item1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                2:
+                  sapientType: "OBJECT"
+                  content: !<array_return_item_reflection_call>
+                    target: "java.lang.reflect.Method"
+                    arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                      target: "java.lang.reflect.Method[]"
+                      localVariableValue:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.Object"
+                        suggestedContent: !<regular>
+                          value: "java.lang.Object"
+                        valueType: "java.lang.Class"
+                        genericValueType: "?"
+                        uuid: "buildFastClass_class1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters: []
+                      size: 11
+                      baseUuid: "visitFastMethods_method[]1"
+                      methodName: "getDeclaredMethods"
+                    index: 2
+                  valueType: "java.lang.reflect.Method"
+                  uuid: "visitFastMethods_method[]1-item2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                3:
+                  sapientType: "OBJECT"
+                  content: !<array_return_item_reflection_call>
+                    target: "java.lang.reflect.Method"
+                    arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                      target: "java.lang.reflect.Method[]"
+                      localVariableValue:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.Object"
+                        suggestedContent: !<regular>
+                          value: "java.lang.Object"
+                        valueType: "java.lang.Class"
+                        genericValueType: "?"
+                        uuid: "buildFastClass_class1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters: []
+                      size: 11
+                      baseUuid: "visitFastMethods_method[]1"
+                      methodName: "getDeclaredMethods"
+                    index: 3
+                  valueType: "java.lang.reflect.Method"
+                  uuid: "visitFastMethods_method[]1-item3"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                4:
+                  sapientType: "OBJECT"
+                  content: !<array_return_item_reflection_call>
+                    target: "java.lang.reflect.Method"
+                    arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                      target: "java.lang.reflect.Method[]"
+                      localVariableValue:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.Object"
+                        suggestedContent: !<regular>
+                          value: "java.lang.Object"
+                        valueType: "java.lang.Class"
+                        genericValueType: "?"
+                        uuid: "buildFastClass_class1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters: []
+                      size: 11
+                      baseUuid: "visitFastMethods_method[]1"
+                      methodName: "getDeclaredMethods"
+                    index: 4
+                  valueType: "java.lang.reflect.Method"
+                  uuid: "visitFastMethods_method[]1-item4"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                5:
+                  sapientType: "OBJECT"
+                  content: !<array_return_item_reflection_call>
+                    target: "java.lang.reflect.Method"
+                    arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                      target: "java.lang.reflect.Method[]"
+                      localVariableValue:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.Object"
+                        suggestedContent: !<regular>
+                          value: "java.lang.Object"
+                        valueType: "java.lang.Class"
+                        genericValueType: "?"
+                        uuid: "buildFastClass_class1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters: []
+                      size: 11
+                      baseUuid: "visitFastMethods_method[]1"
+                      methodName: "getDeclaredMethods"
+                    index: 5
+                  valueType: "java.lang.reflect.Method"
+                  uuid: "visitFastMethods_method[]1-item5"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                6:
+                  sapientType: "OBJECT"
+                  content: !<array_return_item_reflection_call>
+                    target: "java.lang.reflect.Method"
+                    arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                      target: "java.lang.reflect.Method[]"
+                      localVariableValue:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.Object"
+                        suggestedContent: !<regular>
+                          value: "java.lang.Object"
+                        valueType: "java.lang.Class"
+                        genericValueType: "?"
+                        uuid: "buildFastClass_class1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters: []
+                      size: 11
+                      baseUuid: "visitFastMethods_method[]1"
+                      methodName: "getDeclaredMethods"
+                    index: 6
+                  valueType: "java.lang.reflect.Method"
+                  uuid: "visitFastMethods_method[]1-item6"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                7:
+                  sapientType: "OBJECT"
+                  content: !<array_return_item_reflection_call>
+                    target: "java.lang.reflect.Method"
+                    arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                      target: "java.lang.reflect.Method[]"
+                      localVariableValue:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.Object"
+                        suggestedContent: !<regular>
+                          value: "java.lang.Object"
+                        valueType: "java.lang.Class"
+                        genericValueType: "?"
+                        uuid: "buildFastClass_class1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters: []
+                      size: 11
+                      baseUuid: "visitFastMethods_method[]1"
+                      methodName: "getDeclaredMethods"
+                    index: 7
+                  valueType: "java.lang.reflect.Method"
+                  uuid: "visitFastMethods_method[]1-item7"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                8:
+                  sapientType: "OBJECT"
+                  content: !<array_return_item_reflection_call>
+                    target: "java.lang.reflect.Method"
+                    arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                      target: "java.lang.reflect.Method[]"
+                      localVariableValue:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.Object"
+                        suggestedContent: !<regular>
+                          value: "java.lang.Object"
+                        valueType: "java.lang.Class"
+                        genericValueType: "?"
+                        uuid: "buildFastClass_class1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters: []
+                      size: 11
+                      baseUuid: "visitFastMethods_method[]1"
+                      methodName: "getDeclaredMethods"
+                    index: 8
+                  valueType: "java.lang.reflect.Method"
+                  uuid: "visitFastMethods_method[]1-item8"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                9:
+                  sapientType: "OBJECT"
+                  content: !<array_return_item_reflection_call>
+                    target: "java.lang.reflect.Method"
+                    arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                      target: "java.lang.reflect.Method[]"
+                      localVariableValue:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.Object"
+                        suggestedContent: !<regular>
+                          value: "java.lang.Object"
+                        valueType: "java.lang.Class"
+                        genericValueType: "?"
+                        uuid: "buildFastClass_class1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters: []
+                      size: 11
+                      baseUuid: "visitFastMethods_method[]1"
+                      methodName: "getDeclaredMethods"
+                    index: 9
+                  valueType: "java.lang.reflect.Method"
+                  uuid: "visitFastMethods_method[]1-item9"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                10:
+                  sapientType: "OBJECT"
+                  content: !<array_return_item_reflection_call>
+                    target: "java.lang.reflect.Method"
+                    arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                      target: "java.lang.reflect.Method[]"
+                      localVariableValue:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.Object"
+                        suggestedContent: !<regular>
+                          value: "java.lang.Object"
+                        valueType: "java.lang.Class"
+                        genericValueType: "?"
+                        uuid: "buildFastClass_class1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters: []
+                      size: 11
+                      baseUuid: "visitFastMethods_method[]1"
+                      methodName: "getDeclaredMethods"
+                    index: 10
+                  valueType: "java.lang.reflect.Method"
+                  uuid: "visitFastMethods_method[]1-item10"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Method[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  suggestedContent: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "buildFastClass_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 11
+                baseUuid: "visitFastMethods_method[]1"
+                methodName: "getDeclaredMethods"
+            suggestedContent: !<array>
+              values:
+                0:
+                  sapientType: "OBJECT"
+                  content: !<array_return_item_reflection_call>
+                    target: "java.lang.reflect.Method"
+                    arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                      target: "java.lang.reflect.Method[]"
+                      localVariableValue:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.Object"
+                        suggestedContent: !<regular>
+                          value: "java.lang.Object"
+                        valueType: "java.lang.Class"
+                        genericValueType: "?"
+                        uuid: "buildFastClass_class1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters: []
+                      size: 11
+                      baseUuid: "visitFastMethods_method[]1"
+                      methodName: "getDeclaredMethods"
+                    index: 0
+                  valueType: "java.lang.reflect.Method"
+                  uuid: "visitFastMethods_method[]1-item0"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                1:
+                  sapientType: "OBJECT"
+                  content: !<array_return_item_reflection_call>
+                    target: "java.lang.reflect.Method"
+                    arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                      target: "java.lang.reflect.Method[]"
+                      localVariableValue:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.Object"
+                        suggestedContent: !<regular>
+                          value: "java.lang.Object"
+                        valueType: "java.lang.Class"
+                        genericValueType: "?"
+                        uuid: "buildFastClass_class1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters: []
+                      size: 11
+                      baseUuid: "visitFastMethods_method[]1"
+                      methodName: "getDeclaredMethods"
+                    index: 1
+                  valueType: "java.lang.reflect.Method"
+                  uuid: "visitFastMethods_method[]1-item1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                2:
+                  sapientType: "OBJECT"
+                  content: !<array_return_item_reflection_call>
+                    target: "java.lang.reflect.Method"
+                    arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                      target: "java.lang.reflect.Method[]"
+                      localVariableValue:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.Object"
+                        suggestedContent: !<regular>
+                          value: "java.lang.Object"
+                        valueType: "java.lang.Class"
+                        genericValueType: "?"
+                        uuid: "buildFastClass_class1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters: []
+                      size: 11
+                      baseUuid: "visitFastMethods_method[]1"
+                      methodName: "getDeclaredMethods"
+                    index: 2
+                  valueType: "java.lang.reflect.Method"
+                  uuid: "visitFastMethods_method[]1-item2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                3:
+                  sapientType: "OBJECT"
+                  content: !<array_return_item_reflection_call>
+                    target: "java.lang.reflect.Method"
+                    arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                      target: "java.lang.reflect.Method[]"
+                      localVariableValue:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.Object"
+                        suggestedContent: !<regular>
+                          value: "java.lang.Object"
+                        valueType: "java.lang.Class"
+                        genericValueType: "?"
+                        uuid: "buildFastClass_class1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters: []
+                      size: 11
+                      baseUuid: "visitFastMethods_method[]1"
+                      methodName: "getDeclaredMethods"
+                    index: 3
+                  valueType: "java.lang.reflect.Method"
+                  uuid: "visitFastMethods_method[]1-item3"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                4:
+                  sapientType: "OBJECT"
+                  content: !<array_return_item_reflection_call>
+                    target: "java.lang.reflect.Method"
+                    arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                      target: "java.lang.reflect.Method[]"
+                      localVariableValue:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.Object"
+                        suggestedContent: !<regular>
+                          value: "java.lang.Object"
+                        valueType: "java.lang.Class"
+                        genericValueType: "?"
+                        uuid: "buildFastClass_class1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters: []
+                      size: 11
+                      baseUuid: "visitFastMethods_method[]1"
+                      methodName: "getDeclaredMethods"
+                    index: 4
+                  valueType: "java.lang.reflect.Method"
+                  uuid: "visitFastMethods_method[]1-item4"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                5:
+                  sapientType: "OBJECT"
+                  content: !<array_return_item_reflection_call>
+                    target: "java.lang.reflect.Method"
+                    arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                      target: "java.lang.reflect.Method[]"
+                      localVariableValue:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.Object"
+                        suggestedContent: !<regular>
+                          value: "java.lang.Object"
+                        valueType: "java.lang.Class"
+                        genericValueType: "?"
+                        uuid: "buildFastClass_class1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters: []
+                      size: 11
+                      baseUuid: "visitFastMethods_method[]1"
+                      methodName: "getDeclaredMethods"
+                    index: 5
+                  valueType: "java.lang.reflect.Method"
+                  uuid: "visitFastMethods_method[]1-item5"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                6:
+                  sapientType: "OBJECT"
+                  content: !<array_return_item_reflection_call>
+                    target: "java.lang.reflect.Method"
+                    arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                      target: "java.lang.reflect.Method[]"
+                      localVariableValue:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.Object"
+                        suggestedContent: !<regular>
+                          value: "java.lang.Object"
+                        valueType: "java.lang.Class"
+                        genericValueType: "?"
+                        uuid: "buildFastClass_class1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters: []
+                      size: 11
+                      baseUuid: "visitFastMethods_method[]1"
+                      methodName: "getDeclaredMethods"
+                    index: 6
+                  valueType: "java.lang.reflect.Method"
+                  uuid: "visitFastMethods_method[]1-item6"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                7:
+                  sapientType: "OBJECT"
+                  content: !<array_return_item_reflection_call>
+                    target: "java.lang.reflect.Method"
+                    arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                      target: "java.lang.reflect.Method[]"
+                      localVariableValue:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.Object"
+                        suggestedContent: !<regular>
+                          value: "java.lang.Object"
+                        valueType: "java.lang.Class"
+                        genericValueType: "?"
+                        uuid: "buildFastClass_class1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters: []
+                      size: 11
+                      baseUuid: "visitFastMethods_method[]1"
+                      methodName: "getDeclaredMethods"
+                    index: 7
+                  valueType: "java.lang.reflect.Method"
+                  uuid: "visitFastMethods_method[]1-item7"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                8:
+                  sapientType: "OBJECT"
+                  content: !<array_return_item_reflection_call>
+                    target: "java.lang.reflect.Method"
+                    arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                      target: "java.lang.reflect.Method[]"
+                      localVariableValue:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.Object"
+                        suggestedContent: !<regular>
+                          value: "java.lang.Object"
+                        valueType: "java.lang.Class"
+                        genericValueType: "?"
+                        uuid: "buildFastClass_class1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters: []
+                      size: 11
+                      baseUuid: "visitFastMethods_method[]1"
+                      methodName: "getDeclaredMethods"
+                    index: 8
+                  valueType: "java.lang.reflect.Method"
+                  uuid: "visitFastMethods_method[]1-item8"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                9:
+                  sapientType: "OBJECT"
+                  content: !<array_return_item_reflection_call>
+                    target: "java.lang.reflect.Method"
+                    arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                      target: "java.lang.reflect.Method[]"
+                      localVariableValue:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.Object"
+                        suggestedContent: !<regular>
+                          value: "java.lang.Object"
+                        valueType: "java.lang.Class"
+                        genericValueType: "?"
+                        uuid: "buildFastClass_class1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters: []
+                      size: 11
+                      baseUuid: "visitFastMethods_method[]1"
+                      methodName: "getDeclaredMethods"
+                    index: 9
+                  valueType: "java.lang.reflect.Method"
+                  uuid: "visitFastMethods_method[]1-item9"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                10:
+                  sapientType: "OBJECT"
+                  content: !<array_return_item_reflection_call>
+                    target: "java.lang.reflect.Method"
+                    arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                      target: "java.lang.reflect.Method[]"
+                      localVariableValue:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "java.lang.Object"
+                        suggestedContent: !<regular>
+                          value: "java.lang.Object"
+                        valueType: "java.lang.Class"
+                        genericValueType: "?"
+                        uuid: "buildFastClass_class1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                      methodParameters: []
+                      size: 11
+                      baseUuid: "visitFastMethods_method[]1"
+                      methodName: "getDeclaredMethods"
+                    index: 10
+                  valueType: "java.lang.reflect.Method"
+                  uuid: "visitFastMethods_method[]1-item10"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Method[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  suggestedContent: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "buildFastClass_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 11
+                baseUuid: "visitFastMethods_method[]1"
+                methodName: "getDeclaredMethods"
+            valueType: "java.lang.reflect.Method[]"
+            uuid: "visitFastMethods_method[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "samePackage"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "visitor"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "java.util.function.Consumer"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "visitMembers(Method[],boolean,Consumer): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "visitFastMethods_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "B8B7E4BCA70E4810E6D979519CBCE503"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.aop.FastClass"
+          parameters:
+          - name: "hostClass"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              suggestedContent: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "buildFastClass_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.aop.FastClass"
+          parameters:
+          - name: "hostClass"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              suggestedContent: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "?"
+              uuid: "buildFastClass_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "com.google.inject.internal.aop.FastClass"
+        uuid: "buildFastClass_fastClass1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.aop.FastClass"
+        name: "glue"
+        parameters:
+        - name: "bytecode"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "java.util.NavigableMap"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.util.NavigableMap"
+            uuid: "buildFastClass_treeMap1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "glue(NavigableMap): Function"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<method_return_from_value>
+            target: "java.util.function.Function"
+            localVariableValue:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "com.google.inject.internal.aop.FastClass"
+                parameters:
+                - name: "hostClass"
+                  value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    suggestedContent: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    genericValueType: "?"
+                    uuid: "buildFastClass_class1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              suggestedContent: !<new>
+                target: "com.google.inject.internal.aop.FastClass"
+                parameters:
+                - name: "hostClass"
+                  value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    suggestedContent: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    genericValueType: "?"
+                    uuid: "buildFastClass_class1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "com.google.inject.internal.aop.FastClass"
+              uuid: "buildFastClass_fastClass1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "bytecode"
+              value:
+                sapientType: "MOCK"
+                suggestedContent: !<unknown_object>
+                  target: "java.util.NavigableMap"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "java.util.NavigableMap"
+                uuid: "buildFastClass_treeMap1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "glue"
+          suggestedContent: !<method_return_from_value>
+            target: "java.util.function.Function"
+            localVariableValue:
+              sapientType: "OBJECT"
+              suggestedContent: !<new>
+                target: "com.google.inject.internal.aop.FastClass"
+                parameters:
+                - name: "hostClass"
+                  value:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    suggestedContent: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    genericValueType: "?"
+                    uuid: "buildFastClass_class1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "com.google.inject.internal.aop.FastClass"
+              uuid: "buildFastClass_fastClass1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "bytecode"
+              value:
+                sapientType: "UNKNOWN"
+                suggestedContent: !<unknown_object>
+                  target: "java.util.NavigableMap"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "java.util.NavigableMap"
+                genericValueType: "java.lang.String,java.lang.reflect.Executable"
+                uuid: "buildFastClass_treeMap1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "glue"
+          valueType: "java.util.function.Function"
+          genericValueType: "java.lang.String,java.util.function.BiFunction<java.lang.Object,java.lang.Object[],java.lang.Object>"
+          uuid: "buildFastClass_function1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1EFC728B15F920033E6E6ECE31385D20"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<method_return_from_value>
+          target: "java.util.function.Function"
+          localVariableValue:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "com.google.inject.internal.aop.FastClass"
+              parameters:
+              - name: "hostClass"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  suggestedContent: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "buildFastClass_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "com.google.inject.internal.aop.FastClass"
+              parameters:
+              - name: "hostClass"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  suggestedContent: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "buildFastClass_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "com.google.inject.internal.aop.FastClass"
+            uuid: "buildFastClass_fastClass1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters:
+          - name: "bytecode"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "java.util.NavigableMap"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.NavigableMap"
+              uuid: "buildFastClass_treeMap1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          methodName: "glue"
+        suggestedContent: !<method_return_from_value>
+          target: "java.util.function.Function"
+          localVariableValue:
+            sapientType: "OBJECT"
+            suggestedContent: !<new>
+              target: "com.google.inject.internal.aop.FastClass"
+              parameters:
+              - name: "hostClass"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  suggestedContent: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  genericValueType: "?"
+                  uuid: "buildFastClass_class1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "com.google.inject.internal.aop.FastClass"
+            uuid: "buildFastClass_fastClass1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters:
+          - name: "bytecode"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.util.NavigableMap"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.util.NavigableMap"
+              genericValueType: "java.lang.String,java.lang.reflect.Executable"
+              uuid: "buildFastClass_treeMap1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          methodName: "glue"
+        valueType: "java.util.function.Function"
+        genericValueType: "java.lang.String,java.util.function.BiFunction<java.lang.Object,java.lang.Object[],java.lang.Object>"
+        uuid: "buildFastClass_function1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1eabd1bb-0413-3005-8eff-70e661f34cc5"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "visitMembers"
+    returnType: "void"
+    signature: "visitMembers(java.lang.reflect.Executable[],boolean,java.util.function.Consumer<java.lang.reflect.Executable>)\
+      \ : void"
+    instructionFingerprint: "07E580EAC1DD5F1B6090596A8A771366"
+    parametersTypes:
+    - "java.lang.reflect.Executable[]"
+    - "boolean"
+    - "java.util.function.Consumer"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "visitMembersWhenCanAccessMemberSamePackage"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "27BE8EDBA693C26720F5F5607C852CAC"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "members"
+      modelFingerprint: "601EB147C5FD9E99B6B38BFA96C21C21"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values:
+            0:
+              sapientType: "OBJECT"
+              content: !<array_return_item_reflection_call>
+                target: "java.lang.reflect.Method"
+                arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                  target: "java.lang.reflect.Method[]"
+                  localVariableValue:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    genericValueType: "java.lang.Object"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters: []
+                  size: 11
+                  baseUuid: "getOverridableObjectMethods_method[]1"
+                  methodName: "getDeclaredMethods"
+                index: 0
+              valueType: "java.lang.reflect.Method"
+              uuid: "getOverridableObjectMethods_method[]1-item0"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "OBJECT"
+              content: !<array_return_item_reflection_call>
+                target: "java.lang.reflect.Method"
+                arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                  target: "java.lang.reflect.Method[]"
+                  localVariableValue:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    genericValueType: "java.lang.Object"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters: []
+                  size: 11
+                  baseUuid: "getOverridableObjectMethods_method[]1"
+                  methodName: "getDeclaredMethods"
+                index: 1
+              valueType: "java.lang.reflect.Method"
+              uuid: "getOverridableObjectMethods_method[]1-item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "OBJECT"
+              content: !<array_return_item_reflection_call>
+                target: "java.lang.reflect.Method"
+                arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                  target: "java.lang.reflect.Method[]"
+                  localVariableValue:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    genericValueType: "java.lang.Object"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters: []
+                  size: 11
+                  baseUuid: "getOverridableObjectMethods_method[]1"
+                  methodName: "getDeclaredMethods"
+                index: 2
+              valueType: "java.lang.reflect.Method"
+              uuid: "getOverridableObjectMethods_method[]1-item2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            3:
+              sapientType: "OBJECT"
+              content: !<array_return_item_reflection_call>
+                target: "java.lang.reflect.Method"
+                arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                  target: "java.lang.reflect.Method[]"
+                  localVariableValue:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    genericValueType: "java.lang.Object"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters: []
+                  size: 11
+                  baseUuid: "getOverridableObjectMethods_method[]1"
+                  methodName: "getDeclaredMethods"
+                index: 3
+              valueType: "java.lang.reflect.Method"
+              uuid: "getOverridableObjectMethods_method[]1-item3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            4:
+              sapientType: "OBJECT"
+              content: !<array_return_item_reflection_call>
+                target: "java.lang.reflect.Method"
+                arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                  target: "java.lang.reflect.Method[]"
+                  localVariableValue:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    genericValueType: "java.lang.Object"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters: []
+                  size: 11
+                  baseUuid: "getOverridableObjectMethods_method[]1"
+                  methodName: "getDeclaredMethods"
+                index: 4
+              valueType: "java.lang.reflect.Method"
+              uuid: "getOverridableObjectMethods_method[]1-item4"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            5:
+              sapientType: "OBJECT"
+              content: !<array_return_item_reflection_call>
+                target: "java.lang.reflect.Method"
+                arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                  target: "java.lang.reflect.Method[]"
+                  localVariableValue:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    genericValueType: "java.lang.Object"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters: []
+                  size: 11
+                  baseUuid: "getOverridableObjectMethods_method[]1"
+                  methodName: "getDeclaredMethods"
+                index: 5
+              valueType: "java.lang.reflect.Method"
+              uuid: "getOverridableObjectMethods_method[]1-item5"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            6:
+              sapientType: "OBJECT"
+              content: !<array_return_item_reflection_call>
+                target: "java.lang.reflect.Method"
+                arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                  target: "java.lang.reflect.Method[]"
+                  localVariableValue:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    genericValueType: "java.lang.Object"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters: []
+                  size: 11
+                  baseUuid: "getOverridableObjectMethods_method[]1"
+                  methodName: "getDeclaredMethods"
+                index: 6
+              valueType: "java.lang.reflect.Method"
+              uuid: "getOverridableObjectMethods_method[]1-item6"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            7:
+              sapientType: "OBJECT"
+              content: !<array_return_item_reflection_call>
+                target: "java.lang.reflect.Method"
+                arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                  target: "java.lang.reflect.Method[]"
+                  localVariableValue:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    genericValueType: "java.lang.Object"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters: []
+                  size: 11
+                  baseUuid: "getOverridableObjectMethods_method[]1"
+                  methodName: "getDeclaredMethods"
+                index: 7
+              valueType: "java.lang.reflect.Method"
+              uuid: "getOverridableObjectMethods_method[]1-item7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            8:
+              sapientType: "OBJECT"
+              content: !<array_return_item_reflection_call>
+                target: "java.lang.reflect.Method"
+                arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                  target: "java.lang.reflect.Method[]"
+                  localVariableValue:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    genericValueType: "java.lang.Object"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters: []
+                  size: 11
+                  baseUuid: "getOverridableObjectMethods_method[]1"
+                  methodName: "getDeclaredMethods"
+                index: 8
+              valueType: "java.lang.reflect.Method"
+              uuid: "getOverridableObjectMethods_method[]1-item8"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            9:
+              sapientType: "OBJECT"
+              content: !<array_return_item_reflection_call>
+                target: "java.lang.reflect.Method"
+                arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                  target: "java.lang.reflect.Method[]"
+                  localVariableValue:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    genericValueType: "java.lang.Object"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters: []
+                  size: 11
+                  baseUuid: "getOverridableObjectMethods_method[]1"
+                  methodName: "getDeclaredMethods"
+                index: 9
+              valueType: "java.lang.reflect.Method"
+              uuid: "getOverridableObjectMethods_method[]1-item9"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            10:
+              sapientType: "OBJECT"
+              content: !<array_return_item_reflection_call>
+                target: "java.lang.reflect.Method"
+                arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                  target: "java.lang.reflect.Method[]"
+                  localVariableValue:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    genericValueType: "java.lang.Object"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters: []
+                  size: 11
+                  baseUuid: "getOverridableObjectMethods_method[]1"
+                  methodName: "getDeclaredMethods"
+                index: 10
+              valueType: "java.lang.reflect.Method"
+              uuid: "getOverridableObjectMethods_method[]1-item10"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          arrayReturnReflectionCallContent: !<array_return_reflection_call>
+            target: "java.lang.reflect.Method[]"
+            localVariableValue:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "java.lang.Object"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters: []
+            size: 11
+            baseUuid: "getOverridableObjectMethods_method[]1"
+            methodName: "getDeclaredMethods"
+        suggestedContent: !<array>
+          values:
+            0:
+              sapientType: "OBJECT"
+              content: !<array_return_item_reflection_call>
+                target: "java.lang.reflect.Method"
+                arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                  target: "java.lang.reflect.Method[]"
+                  localVariableValue:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    genericValueType: "java.lang.Object"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters: []
+                  size: 11
+                  baseUuid: "getOverridableObjectMethods_method[]1"
+                  methodName: "getDeclaredMethods"
+                index: 0
+              valueType: "java.lang.reflect.Method"
+              uuid: "getOverridableObjectMethods_method[]1-item0"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            1:
+              sapientType: "OBJECT"
+              content: !<array_return_item_reflection_call>
+                target: "java.lang.reflect.Method"
+                arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                  target: "java.lang.reflect.Method[]"
+                  localVariableValue:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    genericValueType: "java.lang.Object"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters: []
+                  size: 11
+                  baseUuid: "getOverridableObjectMethods_method[]1"
+                  methodName: "getDeclaredMethods"
+                index: 1
+              valueType: "java.lang.reflect.Method"
+              uuid: "getOverridableObjectMethods_method[]1-item1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            2:
+              sapientType: "OBJECT"
+              content: !<array_return_item_reflection_call>
+                target: "java.lang.reflect.Method"
+                arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                  target: "java.lang.reflect.Method[]"
+                  localVariableValue:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    genericValueType: "java.lang.Object"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters: []
+                  size: 11
+                  baseUuid: "getOverridableObjectMethods_method[]1"
+                  methodName: "getDeclaredMethods"
+                index: 2
+              valueType: "java.lang.reflect.Method"
+              uuid: "getOverridableObjectMethods_method[]1-item2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            3:
+              sapientType: "OBJECT"
+              content: !<array_return_item_reflection_call>
+                target: "java.lang.reflect.Method"
+                arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                  target: "java.lang.reflect.Method[]"
+                  localVariableValue:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    genericValueType: "java.lang.Object"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters: []
+                  size: 11
+                  baseUuid: "getOverridableObjectMethods_method[]1"
+                  methodName: "getDeclaredMethods"
+                index: 3
+              valueType: "java.lang.reflect.Method"
+              uuid: "getOverridableObjectMethods_method[]1-item3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            4:
+              sapientType: "OBJECT"
+              content: !<array_return_item_reflection_call>
+                target: "java.lang.reflect.Method"
+                arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                  target: "java.lang.reflect.Method[]"
+                  localVariableValue:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    genericValueType: "java.lang.Object"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters: []
+                  size: 11
+                  baseUuid: "getOverridableObjectMethods_method[]1"
+                  methodName: "getDeclaredMethods"
+                index: 4
+              valueType: "java.lang.reflect.Method"
+              uuid: "getOverridableObjectMethods_method[]1-item4"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            5:
+              sapientType: "OBJECT"
+              content: !<array_return_item_reflection_call>
+                target: "java.lang.reflect.Method"
+                arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                  target: "java.lang.reflect.Method[]"
+                  localVariableValue:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    genericValueType: "java.lang.Object"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters: []
+                  size: 11
+                  baseUuid: "getOverridableObjectMethods_method[]1"
+                  methodName: "getDeclaredMethods"
+                index: 5
+              valueType: "java.lang.reflect.Method"
+              uuid: "getOverridableObjectMethods_method[]1-item5"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            6:
+              sapientType: "OBJECT"
+              content: !<array_return_item_reflection_call>
+                target: "java.lang.reflect.Method"
+                arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                  target: "java.lang.reflect.Method[]"
+                  localVariableValue:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    genericValueType: "java.lang.Object"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters: []
+                  size: 11
+                  baseUuid: "getOverridableObjectMethods_method[]1"
+                  methodName: "getDeclaredMethods"
+                index: 6
+              valueType: "java.lang.reflect.Method"
+              uuid: "getOverridableObjectMethods_method[]1-item6"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            7:
+              sapientType: "OBJECT"
+              content: !<array_return_item_reflection_call>
+                target: "java.lang.reflect.Method"
+                arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                  target: "java.lang.reflect.Method[]"
+                  localVariableValue:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    genericValueType: "java.lang.Object"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters: []
+                  size: 11
+                  baseUuid: "getOverridableObjectMethods_method[]1"
+                  methodName: "getDeclaredMethods"
+                index: 7
+              valueType: "java.lang.reflect.Method"
+              uuid: "getOverridableObjectMethods_method[]1-item7"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            8:
+              sapientType: "OBJECT"
+              content: !<array_return_item_reflection_call>
+                target: "java.lang.reflect.Method"
+                arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                  target: "java.lang.reflect.Method[]"
+                  localVariableValue:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    genericValueType: "java.lang.Object"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters: []
+                  size: 11
+                  baseUuid: "getOverridableObjectMethods_method[]1"
+                  methodName: "getDeclaredMethods"
+                index: 8
+              valueType: "java.lang.reflect.Method"
+              uuid: "getOverridableObjectMethods_method[]1-item8"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            9:
+              sapientType: "OBJECT"
+              content: !<array_return_item_reflection_call>
+                target: "java.lang.reflect.Method"
+                arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                  target: "java.lang.reflect.Method[]"
+                  localVariableValue:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    genericValueType: "java.lang.Object"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters: []
+                  size: 11
+                  baseUuid: "getOverridableObjectMethods_method[]1"
+                  methodName: "getDeclaredMethods"
+                index: 9
+              valueType: "java.lang.reflect.Method"
+              uuid: "getOverridableObjectMethods_method[]1-item9"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            10:
+              sapientType: "OBJECT"
+              content: !<array_return_item_reflection_call>
+                target: "java.lang.reflect.Method"
+                arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                  target: "java.lang.reflect.Method[]"
+                  localVariableValue:
+                    sapientType: "CLASS"
+                    content: !<regular>
+                      value: "java.lang.Object"
+                    valueType: "java.lang.Class"
+                    genericValueType: "java.lang.Object"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters: []
+                  size: 11
+                  baseUuid: "getOverridableObjectMethods_method[]1"
+                  methodName: "getDeclaredMethods"
+                index: 10
+              valueType: "java.lang.reflect.Method"
+              uuid: "getOverridableObjectMethods_method[]1-item10"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          arrayReturnReflectionCallContent: !<array_return_reflection_call>
+            target: "java.lang.reflect.Method[]"
+            localVariableValue:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              genericValueType: "java.lang.Object"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters: []
+            size: 11
+            baseUuid: "getOverridableObjectMethods_method[]1"
+            methodName: "getDeclaredMethods"
+        valueType: "java.lang.reflect.Method[]"
+        uuid: "getOverridableObjectMethods_method[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "samePackage"
+      modelFingerprint: "B06C312271E004B0DE48AE5827E07A77"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "visitor"
+      modelFingerprint: "A2AA930CD87C8C8AC49D58D73A23459F"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+        valueType: "java.util.function.Consumer"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "50d3cdab-c947-35dd-9cd9-a10739234367"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "visitor"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "visitor.accept(member);"
+      lineNumber: 292
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: visitor - Method: accept"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true

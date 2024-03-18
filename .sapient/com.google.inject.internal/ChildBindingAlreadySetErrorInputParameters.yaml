@@ -1,0 +1,1801 @@
+---
+modelFingerprint: "6DDE4521445F71170CDD53FFD8AC1A59"
+methods:
+- method:
+    name: "isMergeable"
+    returnType: "boolean"
+    signature: "isMergeable(com.google.inject.spi.ErrorDetail<?>) : boolean"
+    instructionFingerprint: "B80FA9C7EC26FD40577FBE5C4035D224"
+    parametersTypes:
+    - "com.google.inject.spi.ErrorDetail"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isMergeableWhenOtherErrorInstanceOfChildBindingAlreadySetErrorThrowsNullPointerException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.Key<?>,java.lang.Iterable<java.lang.Object>,java.util.List<java.lang.Object>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "EB05CDAF2E5D239E8CFD99EE4AB24069"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "A4E9466B38EE99540EC5CCF9D5A9DDF1"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ChildBindingAlreadySetError"
+          parameters:
+          - name: "key"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.Key"
+              genericValueType: "?"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "existingSoruces"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "java.lang.Iterable"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.lang.Iterable"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ChildBindingAlreadySetError"
+          parameters:
+          - name: "key"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.Key"
+              genericValueType: "?"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "existingSoruces"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.lang.Iterable"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.lang.Iterable"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.ChildBindingAlreadySetError"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "otherError"
+      modelFingerprint: "2F270CF1BFD1D8D882C156BD27D14892"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.internal.ChildBindingAlreadySetError"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.internal.ChildBindingAlreadySetError"
+        uuid: "isMergeable_errorDetail1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "DB5B813557B944DA05942F802497CA2D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Messages"
+        uuid: "com.google.inject.internal.Messages"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "convert"
+        parameters:
+        - name: "o"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Key"
+            genericValueType: "?"
+            uuid: "<init>_key1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "convert(Key): Object"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "java.lang.Object"
+          uuid: "<init>_object1"
+          fixed: false
+          nameForMock: "<init>_object1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1544C3243427A58A5AE91A88CC628F77"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.NullPointerException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.NullPointerException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.NullPointerException"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "fa1e1515-ae7a-3905-bb90-8985f1efc8e6"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableList.copyOf(java.util.List<java.lang.Object>)\
+        \ : com.google.common.collect.ImmutableList<java.lang.Object>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isMergeableWhenOtherErrorNotInstanceOfChildBindingAlreadySetError"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.Key<?>,java.lang.Iterable<java.lang.Object>,java.util.List<java.lang.Object>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "26506971982EB7E44937EC88899F9EE7"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "A4E9466B38EE99540EC5CCF9D5A9DDF1"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ChildBindingAlreadySetError"
+          parameters:
+          - name: "key"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.Key"
+              genericValueType: "?"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "existingSoruces"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "java.lang.Iterable"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.lang.Iterable"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ChildBindingAlreadySetError"
+          parameters:
+          - name: "key"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.Key"
+              genericValueType: "?"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "existingSoruces"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.lang.Iterable"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.lang.Iterable"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.ChildBindingAlreadySetError"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "otherError"
+      modelFingerprint: "905C3DD8B3E17859C5A94F90DC35761C"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.spi.ErrorDetail"
+        genericValueType: "?"
+        uuid: "isMergeable_errorDetail1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "DB5B813557B944DA05942F802497CA2D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Messages"
+        uuid: "com.google.inject.internal.Messages"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "convert"
+        parameters:
+        - name: "o"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Key"
+            genericValueType: "?"
+            uuid: "<init>_key1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "convert(Key): Object"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "java.lang.Object"
+          uuid: "<init>_object1"
+          fixed: false
+          nameForMock: "<init>_object1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a8a11457-1903-3236-8982-e3b07ff27909"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableList.copyOf(java.util.List<java.lang.Object>)\
+        \ : com.google.common.collect.ImmutableList<java.lang.Object>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "formatDetail"
+    returnType: "void"
+    signature: "formatDetail(java.util.List<com.google.inject.spi.ErrorDetail<?>>,java.util.Formatter)\
+      \ : void"
+    instructionFingerprint: "C3B193FC36AE0562E756E0B9358E6D36"
+    parametersTypes:
+    - "java.util.List"
+    - "java.util.Formatter"
+  paths:
+  - pathId: "path5"
+    pathIdForUser: "path1"
+    testPathName: "formatDetailWhenFilteredSourcesIsEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.Key<?>,java.lang.Iterable<java.lang.Object>,java.util.List<java.lang.Object>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "003AFE650FAE71A42AB013CC438B7B67"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "d9210a90-61ec-3401-a2f1-ea40c84fa28f"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableList.copyOf(java.util.List<java.lang.Object>)\
+        \ : com.google.common.collect.ImmutableList<java.lang.Object>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path2"
+    testPathName: "formatDetailWhenListIsEmptyAndFilteredSourcesIsEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.Key<?>,java.lang.Iterable<java.lang.Object>,java.util.List<java.lang.Object>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "50C9830BD0A911CE200D0A70BAF10E60"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "a6a4d095-65bd-317a-8b5b-305398ed6d8d"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    variablesCouldNotBeIsolated: "object of type SourceFormatter"
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableList.copyOf(java.util.List<java.lang.Object>)\
+        \ : com.google.common.collect.ImmutableList<java.lang.Object>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path4"
+    pathIdForUser: "path3"
+    testPathName: "formatDetailWhenILessThanSourcesListSize"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.Key<?>,java.lang.Iterable<java.lang.Object>,java.util.List<java.lang.Object>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "3D2EC78B2DE7126E46894D3C25713C63"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "53783a3c-3be7-303d-886f-1236fba1ea81"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableList.copyOf(java.util.List<java.lang.Object>)\
+        \ : com.google.common.collect.ImmutableList<java.lang.Object>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path1"
+    pathIdForUser: "path4"
+    testPathName: "formatDetailWhenFilteredSourcesNotIsEmptyAndILessThanSourcesListSize"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.Key<?>,java.lang.Iterable<java.lang.Object>,java.util.List<java.lang.Object>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "5E0909EFC88CE613A023D54E4AAACEC8"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "A4E9466B38EE99540EC5CCF9D5A9DDF1"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ChildBindingAlreadySetError"
+          parameters:
+          - name: "key"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.Key"
+              genericValueType: "?"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "existingSoruces"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "java.lang.Iterable"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.lang.Iterable"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ChildBindingAlreadySetError"
+          parameters:
+          - name: "key"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.Key"
+              genericValueType: "?"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "existingSoruces"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.lang.Iterable"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.lang.Iterable"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.ChildBindingAlreadySetError"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "mergeableErrors"
+      modelFingerprint: "DFFDE4971C571436540D0B824F0D84B0"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.spi.ErrorDetail"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.spi.ErrorDetail"
+            genericValueType: "?"
+            uuid: "formatDetail_errorDetail1"
+            fixed: false
+            collectionUuid: "formatDetail_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        suggestedContent: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.spi.ErrorDetail"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.spi.ErrorDetail"
+            genericValueType: "?"
+            uuid: "formatDetail_errorDetail1"
+            fixed: false
+            collectionUuid: "formatDetail_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.List"
+        genericValueType: "com.google.inject.spi.ErrorDetail<?>"
+        uuid: "formatDetail_list1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "formatter"
+      modelFingerprint: "E8153DF29E00EF196A4FD66656909F66"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Formatter"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Formatter"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Formatter"
+        uuid: "formatDetail_formatter1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "DB5B813557B944DA05942F802497CA2D"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Messages"
+        uuid: "com.google.inject.internal.Messages"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "convert"
+        parameters:
+        - name: "o"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Key"
+            genericValueType: "?"
+            uuid: "<init>_key1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "convert(Key): Object"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "java.lang.Object"
+          uuid: "<init>_object1"
+          fixed: false
+          nameForMock: "<init>_object1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "0ECB276C5E443A41F4B5EA97232D841F"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "com.google.inject.internal.Messages"
+        uuid: "com.google.inject.internal.Messages"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "bold"
+        parameters:
+        - name: "text"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Bound at:"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "bold(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "Bound at:"
+          valueType: "java.lang.String"
+          uuid: "formatDetail_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 25
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "error"
+      modelFingerprint: "6EA405CF0B9215A84F007D2BC0133D8C"
+      index: 6
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.spi.ErrorDetail"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.spi.ErrorDetail"
+        genericValueType: "?"
+        uuid: "formatDetail_errorDetail1"
+        fixed: false
+        collectionUuid: "formatDetail_list1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "error"
+        name: "getSources"
+        parameters: []
+        signature: "getSources(): List"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "com.google.common.collect.ImmutableList"
+            method: "of"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "com.google.common.collect.ImmutableList"
+            method: "of"
+            methodParameters: []
+          valueType: "com.google.common.collect.ImmutableList"
+          genericValueType: "java.lang.Object"
+          uuid: "lambda$formatDetail$1_list1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "80D6ED737D786354AB943C435DA04A66"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "com.google.inject.internal.Messages"
+        uuid: "com.google.inject.internal.Messages"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "bold"
+        parameters:
+        - name: "text"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Requested by:"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "bold(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "Requested by:"
+          valueType: "java.lang.String"
+          uuid: "formatDetail_string2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 25
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ErrorFormatter"
+      modelFingerprint: "2EBBB5D5DD67BEB4BF397A796F9597D9"
+      index: 8
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.ErrorFormatter"
+        uuid: "com.google.inject.internal.ErrorFormatter"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.ErrorFormatter"
+        name: "formatSources"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "int"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "i"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            valueType: "com.google.common.collect.ImmutableList"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_immutableList1"
+            fixed: false
+            collectionUuid: "formatDetail_arrayList1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "index"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.Formatter"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.util.Formatter"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.util.Formatter"
+            uuid: "formatDetail_formatter1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "formatSources(int,ImmutableList,Formatter): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "formatDetail_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b35c4a31-739c-3029-acfb-d0830375107e"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableList.copyOf(java.util.List<java.lang.Object>)\
+        \ : com.google.common.collect.ImmutableList<java.lang.Object>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path5"
+    testPathName: "formatDetailWhenListIsEmptyAndFilteredSourcesNotIsEmptyAndILessThanSourcesListSize"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.Key<?>,java.lang.Iterable<java.lang.Object>,java.util.List<java.lang.Object>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "MODERATE"
+    modelFingerprint: "65A7080ADFAA22D041D19710AB861FAC"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "A4E9466B38EE99540EC5CCF9D5A9DDF1"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ChildBindingAlreadySetError"
+          parameters:
+          - name: "key"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.Key"
+              genericValueType: "?"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "existingSoruces"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "java.lang.Iterable"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.lang.Iterable"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ChildBindingAlreadySetError"
+          parameters:
+          - name: "key"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.Key"
+              genericValueType: "?"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "existingSoruces"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.lang.Iterable"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.lang.Iterable"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.ChildBindingAlreadySetError"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "mergeableErrors"
+      modelFingerprint: "DFFDE4971C571436540D0B824F0D84B0"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.spi.ErrorDetail"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.spi.ErrorDetail"
+            genericValueType: "?"
+            uuid: "formatDetail_errorDetail1"
+            fixed: false
+            collectionUuid: "formatDetail_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        suggestedContent: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.spi.ErrorDetail"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.spi.ErrorDetail"
+            genericValueType: "?"
+            uuid: "formatDetail_errorDetail1"
+            fixed: false
+            collectionUuid: "formatDetail_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.List"
+        genericValueType: "com.google.inject.spi.ErrorDetail<?>"
+        uuid: "formatDetail_list1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "formatter"
+      modelFingerprint: "E8153DF29E00EF196A4FD66656909F66"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.util.Formatter"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.util.Formatter"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.util.Formatter"
+        uuid: "formatDetail_formatter1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "DB5B813557B944DA05942F802497CA2D"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Messages"
+        uuid: "com.google.inject.internal.Messages"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "convert"
+        parameters:
+        - name: "o"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Key"
+            genericValueType: "?"
+            uuid: "<init>_key1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "convert(Key): Object"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "java.lang.Object"
+          uuid: "<init>_object1"
+          fixed: false
+          nameForMock: "<init>_object1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "0ECB276C5E443A41F4B5EA97232D841F"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "com.google.inject.internal.Messages"
+        uuid: "com.google.inject.internal.Messages"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "bold"
+        parameters:
+        - name: "text"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Bound at:"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "bold(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "Bound at:"
+          valueType: "java.lang.String"
+          uuid: "formatDetail_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 25
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "9C4F225F530E0CCD2F6ED4C8EA70DA1C"
+      index: 6
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.SourceFormatter"
+          parameters:
+          - name: "elementSource"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "formatDetail_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "source"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Formatter"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.util.Formatter"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Formatter"
+              uuid: "formatDetail_formatter1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "formatter"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.SourceFormatter"
+          parameters:
+          - name: "elementSource"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "formatDetail_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "source"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.util.Formatter"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.util.Formatter"
+              uuid: "formatDetail_formatter1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "formatter"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "com.google.inject.internal.SourceFormatter"
+        uuid: "formatDetail_sourceFormatter1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.SourceFormatter"
+        name: "format"
+        parameters: []
+        signature: "format(): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "formatDetail_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "error"
+      modelFingerprint: "6EA405CF0B9215A84F007D2BC0133D8C"
+      index: 7
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.spi.ErrorDetail"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.spi.ErrorDetail"
+        genericValueType: "?"
+        uuid: "formatDetail_errorDetail1"
+        fixed: false
+        collectionUuid: "formatDetail_list1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "error"
+        name: "getSources"
+        parameters: []
+        signature: "getSources(): List"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "com.google.common.collect.ImmutableList"
+            method: "of"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "com.google.common.collect.ImmutableList"
+            method: "of"
+            methodParameters: []
+          valueType: "com.google.common.collect.ImmutableList"
+          genericValueType: "java.lang.Object"
+          uuid: "lambda$formatDetail$1_list1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "80D6ED737D786354AB943C435DA04A66"
+      index: 8
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "com.google.inject.internal.Messages"
+        uuid: "com.google.inject.internal.Messages"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "bold"
+        parameters:
+        - name: "text"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Requested by:"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "bold(String): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "Requested by:"
+          valueType: "java.lang.String"
+          uuid: "formatDetail_string2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 25
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ErrorFormatter"
+      modelFingerprint: "2EBBB5D5DD67BEB4BF397A796F9597D9"
+      index: 9
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.ErrorFormatter"
+        uuid: "com.google.inject.internal.ErrorFormatter"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.ErrorFormatter"
+        name: "formatSources"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "int"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "i"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            valueType: "com.google.common.collect.ImmutableList"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_immutableList1"
+            fixed: false
+            collectionUuid: "formatDetail_arrayList1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "index"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.Formatter"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.util.Formatter"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.util.Formatter"
+            uuid: "formatDetail_formatter1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "formatSources(int,ImmutableList,Formatter): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "formatDetail_void3"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 10
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9c923d92-c484-3923-9e4c-4d557b2e7a3e"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "object of type SourceFormatter"
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableList.copyOf(java.util.List<java.lang.Object>)\
+        \ : com.google.common.collect.ImmutableList<java.lang.Object>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "withSources"
+    returnType: "com.google.inject.internal.ChildBindingAlreadySetError"
+    signature: "withSources(java.util.List<java.lang.Object>) : com.google.inject.internal.ChildBindingAlreadySetError"
+    instructionFingerprint: "D0A2F20F74C8236DC9074E3FEB191452"
+    parametersTypes:
+    - "java.util.List"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "withSources1Test"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.Key<?>,java.lang.Iterable<java.lang.Object>,java.util.List<java.lang.Object>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2E034A438CF6732CD2EB9A5CF05383CC"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "A4E9466B38EE99540EC5CCF9D5A9DDF1"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ChildBindingAlreadySetError"
+          parameters:
+          - name: "key"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.Key"
+              genericValueType: "?"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "existingSoruces"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "java.lang.Iterable"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.lang.Iterable"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ChildBindingAlreadySetError"
+          parameters:
+          - name: "key"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.Key"
+              genericValueType: "?"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "existingSoruces"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.lang.Iterable"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.lang.Iterable"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.ChildBindingAlreadySetError"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "newSources"
+      modelFingerprint: "727D5E79E3F76D7A41F83ECBA6E329BC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.List"
+        genericValueType: "java.lang.Object"
+        uuid: "withSources_list1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "DB5B813557B944DA05942F802497CA2D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Messages"
+        uuid: "com.google.inject.internal.Messages"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "convert"
+        parameters:
+        - name: "o"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Key"
+            genericValueType: "?"
+            uuid: "<init>_key1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "convert(Key): Object"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "java.lang.Object"
+          uuid: "<init>_object1"
+          fixed: false
+          nameForMock: "<init>_object1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "DB5B813557B944DA05942F802497CA2D"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Messages"
+        uuid: "com.google.inject.internal.Messages"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "convert"
+        parameters:
+        - name: "o"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Key"
+            genericValueType: "?"
+            uuid: "<init>_key1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "convert(Key): Object"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "java.lang.Object"
+          uuid: "<init>_object3"
+          fixed: false
+          nameForMock: "<init>_object3"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "54A4B4D4032E62870C8388821A27C33B"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ChildBindingAlreadySetError"
+          parameters:
+          - name: "key"
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.Key"
+              genericValueType: "?"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "existingSoruces"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_method_return>
+                target: "com.google.common.collect.ImmutableList"
+                method: "of"
+                methodParameters: []
+              suggestedContent: !<static_method_return>
+                target: "com.google.common.collect.ImmutableList"
+                method: "of"
+                methodParameters: []
+              valueType: "com.google.common.collect.ImmutableList"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_immutableList2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "withSources_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ChildBindingAlreadySetError"
+          parameters:
+          - name: "key"
+            value:
+              sapientType: "UNKNOWN"
+              valueType: "com.google.inject.Key"
+              genericValueType: "?"
+              uuid: "<init>_key1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "existingSoruces"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<static_method_return>
+                target: "com.google.common.collect.ImmutableList"
+                method: "of"
+                methodParameters: []
+              valueType: "com.google.common.collect.ImmutableList"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_immutableList2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "withSources_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "com.google.inject.internal.ChildBindingAlreadySetError"
+        uuid: "withSources_childBindingAlreadySetError1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "22e7c14b-c2f8-3631-b7c2-fa54895cb8e5"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableList.copyOf(java.util.List<java.lang.Object>)\
+        \ : com.google.common.collect.ImmutableList<java.lang.Object>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true

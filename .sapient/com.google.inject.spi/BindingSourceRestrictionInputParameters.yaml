@@ -1,0 +1,953 @@
+---
+modelFingerprint: "FA07E61597D836873E5BE5E8B37ECBDA"
+methods:
+- method:
+    name: "getMissingImplementationSuggestion"
+    returnType: "java.util.Optional"
+    signature: "getMissingImplementationSuggestion(com.google.inject.internal.GuiceInternal,com.google.inject.Key<?>)\
+      \ : java.util.Optional<java.lang.String>"
+    instructionFingerprint: "4094589BC64BC745239A6B0978D76FD7"
+    parametersTypes:
+    - "com.google.inject.internal.GuiceInternal"
+    - "com.google.inject.Key"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getMissingImplementationSuggestionWhenRestrictionIsNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2D158EE84BD58FE563E1563D29DCA9A2"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "guiceInternal"
+      modelFingerprint: "BF71CD1EBE17DD2783AE15626DEB9A8A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.internal.GuiceInternal"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.internal.GuiceInternal"
+        uuid: "getMissingImplementationSuggestion_guiceInternal1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "8593F64F43B421970AB96273F489D6EB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Key"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.Key"
+        genericValueType: "?"
+        uuid: "getMissingImplementationSuggestion_key1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "key"
+      modelFingerprint: "D9157DAE98198DE4CC4683E5D93D79D1"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Key"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.Key"
+        genericValueType: "?"
+        uuid: "getMissingImplementationSuggestion_key1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "key"
+        name: "getAnnotationType"
+        parameters: []
+        signature: "getAnnotationType(): Class"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "java.lang.Class"
+          genericValueType: "? extends java.lang.annotation.Annotation"
+          uuid: "getRestriction_class1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "key"
+      modelFingerprint: "19D761A42FB346D7C3D253B3CB225FF8"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Key"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.Key"
+        genericValueType: "?"
+        uuid: "getMissingImplementationSuggestion_key1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "key"
+        name: "getTypeLiteral"
+        parameters: []
+        signature: "getTypeLiteral(): TypeLiteral"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.TypeLiteral"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "com.google.inject.TypeLiteral"
+          uuid: "getRestriction_typeLiteral1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "B39150FDD4FFF58761C9FA384D49C932"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.TypeLiteral"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.TypeLiteral"
+        uuid: "getRestriction_typeLiteral1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.TypeLiteral"
+        name: "getRawType"
+        parameters: []
+        signature: "getRawType(): Class"
+        returnValue:
+          sapientType: "CLASS"
+          content: !<regular>
+            value: "? super java.lang.Object"
+          valueType: "java.lang.Class"
+          genericValueType: "? super java.lang.Object"
+          uuid: "getRestriction_class2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "C49A54080D51C5FB37A6D1F37ED92E5D"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OPTIONAL"
+        content: !<optional>
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          target: "java.util.Optional"
+        valueType: "java.util.Optional"
+        genericValueType: "java.lang.String"
+        uuid: "getMissingImplementationSuggestion_optional1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e9b74ac2-a55d-37ae-9008-2cefe5604d54"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.internal.GuiceInternal)\
+        \ : com.google.inject.internal.GuiceInternal"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "getMissingImplementationSuggestionWhenRestrictionIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "650CC3408F0A58689DDB393E9AB2E74A"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "guiceInternal"
+      modelFingerprint: "BF71CD1EBE17DD2783AE15626DEB9A8A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.internal.GuiceInternal"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.internal.GuiceInternal"
+        uuid: "getMissingImplementationSuggestion_guiceInternal1"
+        fixed: false
+        nameForMock: "some_value"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "F59B66C04746BAE94AED352C5E64D400"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "com.google.inject.Key"
+          method: "get"
+          methodParameters:
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "getMissingImplementationSuggestion_key1-type"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "com.google.inject.Key"
+          method: "get"
+          methodParameters:
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              valueType: "java.lang.Class"
+              uuid: "getMissingImplementationSuggestion_key1-type"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.google.inject.Key"
+        uuid: "getMissingImplementationSuggestion_key1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "key"
+      modelFingerprint: "6FA5BC90A6F77DF34BED65E26533F2C0"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "com.google.inject.Key"
+          method: "get"
+          methodParameters:
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "getMissingImplementationSuggestion_key1-type"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "com.google.inject.Key"
+          method: "get"
+          methodParameters:
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              valueType: "java.lang.Class"
+              uuid: "getMissingImplementationSuggestion_key1-type"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.google.inject.Key"
+        uuid: "getMissingImplementationSuggestion_key1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "key"
+        name: "getAnnotationType"
+        parameters: []
+        signature: "getAnnotationType(): Class"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "java.lang.Class"
+          genericValueType: "? extends java.lang.annotation.Annotation"
+          uuid: "getRestriction_class1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "key"
+      modelFingerprint: "4B9A57C52C1A5627FCF27958D6D288A3"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_method_return>
+          target: "com.google.inject.Key"
+          method: "get"
+          methodParameters:
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "java.lang.Object"
+              valueType: "java.lang.Class"
+              uuid: "getMissingImplementationSuggestion_key1-type"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<static_method_return>
+          target: "com.google.inject.Key"
+          method: "get"
+          methodParameters:
+          - name: "type"
+            value:
+              sapientType: "CLASS"
+              valueType: "java.lang.Class"
+              uuid: "getMissingImplementationSuggestion_key1-type"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "com.google.inject.Key"
+        uuid: "getMissingImplementationSuggestion_key1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "key"
+        name: "getTypeLiteral"
+        parameters: []
+        signature: "getTypeLiteral(): TypeLiteral"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.TypeLiteral"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "com.google.inject.TypeLiteral"
+          uuid: "getRestriction_typeLiteral1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "B39150FDD4FFF58761C9FA384D49C932"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.TypeLiteral"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.TypeLiteral"
+        uuid: "getRestriction_typeLiteral1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.TypeLiteral"
+        name: "getRawType"
+        parameters: []
+        signature: "getRawType(): Class"
+        returnValue:
+          sapientType: "CLASS"
+          content: !<regular>
+            value: "? super java.lang.Object"
+          valueType: "java.lang.Class"
+          genericValueType: "? super java.lang.Object"
+          uuid: "getRestriction_class2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "restriction"
+      modelFingerprint: "7ACEC28C05C08D8EE9CE423393400A76"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.RestrictedBindingSource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.RestrictedBindingSource"
+        uuid: "getRestriction_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: true
+      methodExercised:
+        target: "restriction"
+        name: "explanation"
+        parameters: []
+        signature: "explanation(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "String"
+          suggestedContent: !<regular>
+            value: "String"
+          valueType: "java.lang.String"
+          uuid: "getMissingImplementationSuggestion_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E7C5B497864EEBACCA7989ECF9BCBDB3"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OPTIONAL"
+        content: !<optional>
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "\\nHint: This key is restricted and cannot be bound directly.\
+                \ Restriction explanation: String"
+            valueType: "java.lang.String"
+            uuid: "getMissingImplementationSuggestion_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          target: "java.util.Optional"
+        valueType: "java.util.Optional"
+        genericValueType: "java.lang.String"
+        uuid: "getMissingImplementationSuggestion_optional1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1b573449-2425-366e-9529-8ac05da65e53"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.getAnnotation(java.lang.Class<com.google.inject.RestrictedBindingSource>)\
+        \ : java.lang.annotation.Annotation"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "getMissingImplementationSuggestionWhenKeyGetAnnotationTypeIsNotNullAndRestrictionIsNotNull"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2089825EEF612B4182F113C9F1E4DF4F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "guiceInternal"
+      modelFingerprint: "F2A68E893281E10EA0816438403166B6"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.internal.GuiceInternal"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.internal.GuiceInternal"
+        uuid: "getMissingImplementationSuggestion_guiceInternal1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "49CA2BB06CF06A44D1E8C64653B98178"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Key"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.Key"
+        genericValueType: "?"
+        uuid: "getMissingImplementationSuggestion_key1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "key"
+      modelFingerprint: "206FB1D2A5DF5C894403BFE0CD2FD19E"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Key"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.Key"
+        genericValueType: "?"
+        uuid: "getMissingImplementationSuggestion_key1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "key"
+        name: "getAnnotationType"
+        parameters: []
+        signature: "getAnnotationType(): Class"
+        returnValue:
+          sapientType: "CLASS"
+          content: !<regular>
+            value: "? extends java.lang.annotation.Annotation"
+          valueType: "java.lang.Class"
+          genericValueType: "? extends java.lang.annotation.Annotation"
+          uuid: "getRestriction_class1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "key"
+      modelFingerprint: "206FB1D2A5DF5C894403BFE0CD2FD19E"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Key"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.Key"
+        genericValueType: "?"
+        uuid: "getMissingImplementationSuggestion_key1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "key"
+        name: "getAnnotationType"
+        parameters: []
+        signature: "getAnnotationType(): Class"
+        returnValue:
+          sapientType: "CLASS"
+          content: !<regular>
+            value: "? extends java.lang.annotation.Annotation"
+          valueType: "java.lang.Class"
+          genericValueType: "? extends java.lang.annotation.Annotation"
+          uuid: "getRestriction_class2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "restriction"
+      modelFingerprint: "7019E0614CA5424487BB8D77EBE59859"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.RestrictedBindingSource"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.RestrictedBindingSource"
+        uuid: "getRestriction_annotation1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: true
+      methodExercised:
+        target: "restriction"
+        name: "explanation"
+        parameters: []
+        signature: "explanation(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "A"
+          suggestedContent: !<regular>
+            value: "A"
+          valueType: "java.lang.String"
+          uuid: "getMissingImplementationSuggestion_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7BE2160559FC5D19C1472E14E8DA27C0"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OPTIONAL"
+        content: !<optional>
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "\\nHint: This key is restricted and cannot be bound directly.\
+                \ Restriction explanation: A"
+            suggestedContent: !<regular>
+              value: "\\nHint: This key is restricted and cannot be bound directly.\
+                \ Restriction explanation: A"
+            valueType: "java.lang.String"
+            uuid: "getMissingImplementationSuggestion_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          target: "java.util.Optional"
+        valueType: "java.util.Optional"
+        genericValueType: "java.lang.String"
+        uuid: "getMissingImplementationSuggestion_optional1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6b70b6ca-00bf-38db-81a0-1a29112e7318"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.internal.GuiceInternal)\
+        \ : com.google.inject.internal.GuiceInternal"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "check"
+    returnType: "com.google.common.collect.ImmutableList"
+    signature: "check(com.google.inject.internal.GuiceInternal,java.util.List<com.google.inject.spi.Element>)\
+      \ : com.google.common.collect.ImmutableList<com.google.inject.spi.Message>"
+    instructionFingerprint: "74C1B80517FA544F44DF035010AE7644"
+    parametersTypes:
+    - "com.google.inject.internal.GuiceInternal"
+    - "java.util.List"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "checkWhenElementsIsNotEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "102C094F50F19BAC9AEB0A30A2E15F05"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "guiceInternal"
+      modelFingerprint: "BF71CD1EBE17DD2783AE15626DEB9A8A"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.internal.GuiceInternal"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.internal.GuiceInternal"
+        uuid: "check_guiceInternal1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "elements"
+      modelFingerprint: "AB74DBA2DE5D5E08C0CF31C690FE6BB6"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.spi.Element"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.spi.Element"
+            uuid: "check_list1-0"
+            fixed: false
+            collectionUuid: "check_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        suggestedContent: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.spi.Element"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.spi.Element"
+            uuid: "check_list1-0"
+            fixed: false
+            collectionUuid: "check_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.List"
+        genericValueType: "com.google.inject.spi.Element"
+        uuid: "check_list1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "element"
+      modelFingerprint: "0BF5BE0EFA0581AA22473D167DA4EFD1"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.spi.Element"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.spi.Element"
+        uuid: "check_list1-0"
+        fixed: false
+        collectionUuid: "check_list1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "element"
+        name: "acceptVisitor"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "com.google.inject.spi.ElementVisitor"
+            uuid: "check_elementVisitor1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "acceptVisitor(ElementVisitor): Object"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "com.google.common.collect.ImmutableList"
+            method: "of"
+            methodParameters: []
+          suggestedContent: !<static_method_return>
+            target: "com.google.common.collect.ImmutableList"
+            method: "of"
+            methodParameters: []
+          valueType: "com.google.common.collect.ImmutableList"
+          uuid: "check_object2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: true
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "element"
+      modelFingerprint: "88A50AC4AF8C6A4C1F2E80EEF78FEAB4"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.spi.Element"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.spi.Element"
+        uuid: "check_list1-0"
+        fixed: false
+        collectionUuid: "check_list1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "element"
+        name: "acceptVisitor"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+            valueType: "com.google.inject.spi.ElementVisitor"
+            uuid: "clear_elementVisitor1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "acceptVisitor(ElementVisitor): Object"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.Object"
+            onlyPojoFunctions: true
+            builderPattern: false
+          valueType: "java.lang.Object"
+          uuid: "clear_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "84F16E4C9B1D98EF3FE5A0B23B0E89C8"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<builder>
+          target: "com.google.common.collect.ImmutableList"
+          setterMap: {}
+        suggestedContent: !<builder>
+          target: "com.google.common.collect.ImmutableList"
+          setterMap: {}
+        valueType: "com.google.common.collect.ImmutableList"
+        genericValueType: "com.google.inject.spi.Message"
+        uuid: "check_immutableList1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ccd2586f-c8a3-3b87-a90a-87590e14fe98"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.internal.GuiceInternal)\
+        \ : com.google.inject.internal.GuiceInternal"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "checkWhenElementsIsEmpty"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "36D6EC8A1455FF6A174B09B77BD905DC"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "57f24ffd-f666-3596-a491-2ab590e13dfb"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.internal.GuiceInternal)\
+        \ : com.google.inject.internal.GuiceInternal"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

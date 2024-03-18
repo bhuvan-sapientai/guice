@@ -1,0 +1,3206 @@
+---
+modelFingerprint: "BA27A5D3A887DB2DDE0D05B7168DF0D5"
+methods:
+- method:
+    name: "getErrorDetail"
+    returnType: "com.google.inject.spi.ErrorDetail"
+    signature: "getErrorDetail() : com.google.inject.spi.ErrorDetail<?>"
+    instructionFingerprint: "5FA9624D947E525B0A6B4F7B5B147A31"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getErrorDetailTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.ErrorId,java.util.List<java.lang.Object>,java.lang.String,java.lang.Throwable)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "5129AFD1175AACF0FFFA218BE2A3E4F6"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "3b24bb71-81c0-352e-94a5-118a86bf7768"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getSource"
+    returnType: "java.lang.String"
+    signature: "getSource() : java.lang.String"
+    instructionFingerprint: "1E7B2A29DFA9D2695474951B4743BB58"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getSourceWhenSourcesIsEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.ErrorId,java.util.List<java.lang.Object>,java.lang.String,java.lang.Throwable)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6FE36CB5D3627CCC6E435942860D2A37"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "467BDC32D6043DAB01F6308508E3A7EE"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.spi.Message"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "AMBIGUOUS_TYPE_CONVERSION"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "message1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.spi.Message"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.spi.Message"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "errorDetail"
+      modelFingerprint: "BACB48CE2DFE3070F84DEDAB778CA3F4"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.GenericErrorDetail"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "AMBIGUOUS_TYPE_CONVERSION"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "message1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.GenericErrorDetail"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "com.google.inject.internal.GenericErrorDetail"
+        uuid: "<init>_genericErrorDetail1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.errorDetail"
+        name: "getSources"
+        parameters: []
+        signature: "getSources(): List"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.List"
+          genericValueType: "java.lang.Object"
+          uuid: "getSource_list1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1303C12C4C24D44DF287D6E844326121"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "[unknown source]"
+        valueType: "java.lang.String"
+        uuid: "getSource_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2449aecb-bd82-3a8e-90d9-a2d65e31ac54"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "errorDetail"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "List<Object> sources = errorDetail.getSources();"
+      lineNumber: 98
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: errorDetail - Method: getSources"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "getSourceWhenSourcesNotIsEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.ErrorId,java.util.List<java.lang.Object>,java.lang.String,java.lang.Throwable)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "07F94EC964E18550389E5A9D620424AF"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "467BDC32D6043DAB01F6308508E3A7EE"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.spi.Message"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "AMBIGUOUS_TYPE_CONVERSION"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "message1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.spi.Message"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.spi.Message"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "errorDetail"
+      modelFingerprint: "CEB9B452F8EDE9DE3631A9E109018EAC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.GenericErrorDetail"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "AMBIGUOUS_TYPE_CONVERSION"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "message1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.GenericErrorDetail"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "com.google.inject.internal.GenericErrorDetail"
+        uuid: "<init>_genericErrorDetail1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.errorDetail"
+        name: "getSources"
+        parameters: []
+        signature: "getSources(): List"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            collectionClass: "java.util.ArrayList"
+            parameters: []
+            values:
+            - sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "getSource_list1Item0"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          suggestedContent: !<collection>
+            collectionClass: "java.util.ArrayList"
+            parameters: []
+            values:
+            - sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "getSource_list1Item0"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          valueType: "java.util.List"
+          genericValueType: "java.lang.Object"
+          uuid: "getSource_list1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Errors"
+      modelFingerprint: "B0089226646B323470116DB30F6AECC9"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Errors"
+        uuid: "com.google.inject.internal.Errors"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Errors"
+        name: "convert"
+        parameters:
+        - name: "o"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "getSource_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "convert(Object): Object"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "java.lang.Object"
+          uuid: "getSource_object2"
+          fixed: false
+          nameForMock: "getSource_object2"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "64473F2FF03E5E28A338D79F49948939"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "getSource_object2"
+        suggestedContent: !<regular>
+          value: "getSource_object2"
+        valueType: "java.lang.String"
+        uuid: "getSource_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "017c2066-463d-300c-ab13-b0516dd1e05e"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "errorDetail"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "List<Object> sources = errorDetail.getSources();"
+      lineNumber: 98
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: errorDetail - Method: getSources"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "getSources"
+    returnType: "java.util.List"
+    signature: "getSources() : java.util.List<java.lang.Object>"
+    instructionFingerprint: "A2A6B2A30405B733E33110D5D08FB807"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getSourcesTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.ErrorId,java.util.List<java.lang.Object>,java.lang.String,java.lang.Throwable)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "240FAC4A2A96066BDB48C2BAC746DF51"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "467BDC32D6043DAB01F6308508E3A7EE"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.spi.Message"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "AMBIGUOUS_TYPE_CONVERSION"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "message1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.spi.Message"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.spi.Message"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "errorDetail"
+      modelFingerprint: "31969319B5E4A5A628BF7D228B89DC9E"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.GenericErrorDetail"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "AMBIGUOUS_TYPE_CONVERSION"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "message1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.GenericErrorDetail"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "com.google.inject.internal.GenericErrorDetail"
+        uuid: "<init>_genericErrorDetail1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.errorDetail"
+        name: "getSources"
+        parameters: []
+        signature: "getSources(): List"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.List"
+          genericValueType: "java.lang.Object"
+          uuid: "getSources_list1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D37FD5206EF9337B6AF560605DE5692E"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.List"
+        genericValueType: "java.lang.Object"
+        uuid: "getSources_list1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4f362284-7196-37e5-93c8-2c44cd2b99a2"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "errorDetail"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "return errorDetail.getSources();"
+      lineNumber: 106
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: errorDetail - Method: getSources"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "getMessage"
+    returnType: "java.lang.String"
+    signature: "getMessage() : java.lang.String"
+    instructionFingerprint: "8A887BB88F40CF9AE1A663FEFEB19931"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getMessageTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.ErrorId,java.util.List<java.lang.Object>,java.lang.String,java.lang.Throwable)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4E8913D56CBE163D39BF934BDCD313CE"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "467BDC32D6043DAB01F6308508E3A7EE"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.spi.Message"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "AMBIGUOUS_TYPE_CONVERSION"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "message1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.spi.Message"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.spi.Message"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "message1"
+        valueType: "java.lang.String"
+        uuid: "<init>_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a52bed3f-53de-303b-8128-55ffe95a8205"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "acceptVisitor"
+    returnType: "java.lang.Object"
+    signature: "acceptVisitor(com.google.inject.spi.ElementVisitor<java.lang.Object>)\
+      \ : java.lang.Object"
+    instructionFingerprint: "870B07E70AE4F7E1305DC0A4F968B4B8"
+    parametersTypes:
+    - "com.google.inject.spi.ElementVisitor"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "acceptVisitorTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.ErrorId,java.util.List<java.lang.Object>,java.lang.String,java.lang.Throwable)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "D666AD2E174087FBC9FC234EA6FCB782"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "467BDC32D6043DAB01F6308508E3A7EE"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.spi.Message"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "AMBIGUOUS_TYPE_CONVERSION"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "message1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.spi.Message"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.spi.Message"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "visitor"
+      modelFingerprint: "3A4768C8E9B0C65964E17AC8E681720A"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.spi.ElementVisitor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.spi.ElementVisitor"
+        genericValueType: "java.lang.Object"
+        uuid: "acceptVisitor_elementVisitor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "visitor"
+      modelFingerprint: "DAA77D8AC35DFBCB9468C29E844E92A0"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.spi.ElementVisitor"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.spi.ElementVisitor"
+        genericValueType: "java.lang.Object"
+        uuid: "acceptVisitor_elementVisitor1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "visitor"
+        name: "visit"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "THIS"
+            content: !<new>
+              target: "com.google.inject.spi.Message"
+              parameters:
+              - name: "errorId"
+                value:
+                  sapientType: "ENUM"
+                  valueType: "com.google.inject.internal.ErrorId"
+                  uuid: "<init>_errorId1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "sources"
+                value:
+                  sapientType: "COLLECTION"
+                  valueType: "java.util.List"
+                  genericValueType: "java.lang.Object"
+                  uuid: "<init>_list1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "message"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "<init>_string1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "cause"
+                value:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<new>
+                    target: "java.lang.Throwable"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "java.lang.Throwable"
+                  uuid: "<init>_throwable1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "com.google.inject.spi.Message"
+            uuid: "targetClassObject"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "visit(Message): Object"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "acceptVisitor_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "acceptVisitor_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "85010207-16d2-3170-b836-208737cec5b9"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "getCause"
+    returnType: "java.lang.Throwable"
+    signature: "getCause() : java.lang.Throwable"
+    instructionFingerprint: "DEA90A4A21C20377D69D9E547B056D5E"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "getCauseTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.ErrorId,java.util.List<java.lang.Object>,java.lang.String,java.lang.Throwable)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "81E3DEDF9FD248B86A9608440818631D"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "467BDC32D6043DAB01F6308508E3A7EE"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.spi.Message"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "AMBIGUOUS_TYPE_CONVERSION"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "message1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.spi.Message"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.spi.Message"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "51C52D6E8844B7F2891CF7334CD01BA3"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Throwable"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Throwable"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Throwable"
+        uuid: "<init>_throwable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7f28548e-8841-38ac-a747-570cc887b6f7"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "toString"
+    returnType: "java.lang.String"
+    signature: "toString() : java.lang.String"
+    instructionFingerprint: "A1151068AE1867A5149E351FCA86FB45"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "toStringTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.ErrorId,java.util.List<java.lang.Object>,java.lang.String,java.lang.Throwable)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "4E8913D56CBE163D39BF934BDCD313CE"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "467BDC32D6043DAB01F6308508E3A7EE"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.spi.Message"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "AMBIGUOUS_TYPE_CONVERSION"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "message1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.spi.Message"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.spi.Message"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: "message1"
+        valueType: "java.lang.String"
+        uuid: "<init>_string1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "363d3698-f34c-39ad-914f-376a19498023"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "equals"
+    returnType: "boolean"
+    signature: "equals(java.lang.Object) : boolean"
+    instructionFingerprint: "6777A0DBF7A471DAE966FEB7702BDCDF"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "equalsWhenONotInstanceOfMessage"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.ErrorId,java.util.List<java.lang.Object>,java.lang.String,java.lang.Throwable)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3D9A577CFF4262CC3BFDFF9C075A02AF"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "46a2b4ea-6b71-3b95-8042-f8d00644eb1b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "equalsWhenErrorDetailEqualsEErrorDetail"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.ErrorId,java.util.List<java.lang.Object>,java.lang.String,java.lang.Throwable)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "792001671BC426926473EC9CFF21D4BE"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "dbc37b55-fbcb-3ecc-86a7-dafa7fe347c8"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "errorDetail"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "return errorDetail.equals(e.errorDetail);"
+      lineNumber: 146
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: errorDetail - Method: equals"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "equalsWhenErrorDetailNotEqualsEErrorDetail"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.ErrorId,java.util.List<java.lang.Object>,java.lang.String,java.lang.Throwable)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "DCF1535C3076518802792742B17965FA"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "e977eae9-a564-3235-a76e-c94cc589dc07"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "errorDetail"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "return errorDetail.equals(e.errorDetail);"
+      lineNumber: 146
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: errorDetail - Method: equals"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "applyTo"
+    returnType: "void"
+    signature: "applyTo(com.google.inject.Binder) : void"
+    instructionFingerprint: "850E12F6A590DAE425917473D239C577"
+    parametersTypes:
+    - "com.google.inject.Binder"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "applyToTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.ErrorId,java.util.List<java.lang.Object>,java.lang.String,java.lang.Throwable)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "F771557A11646C535A25896C5AE5FE4F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "467BDC32D6043DAB01F6308508E3A7EE"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.spi.Message"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "AMBIGUOUS_TYPE_CONVERSION"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "message1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.spi.Message"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.spi.Message"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "binder"
+      modelFingerprint: "7BEC634C775E6887609F5D0EBA55C6D2"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Binder"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.Binder"
+        uuid: "applyTo_binder1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "3182E1CCABD3DAEA4F1CACEE6781592D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "getSource"
+        parameters: []
+        signature: "getSource(): String"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getSource1"
+          valueType: "java.lang.String"
+          uuid: "applyTo_string1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binder"
+      modelFingerprint: "20FD5F35A28E0AD3C5828BC367AC1316"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Binder"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.Binder"
+        uuid: "applyTo_binder1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "binder"
+        name: "withSource"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "return_of_getSource1"
+            valueType: "java.lang.String"
+            uuid: "applyTo_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "withSource(String): Binder"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.Binder"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "com.google.inject.Binder"
+          uuid: "applyTo_binder2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "8769E1D4B14AD0FAB0B188A3C555A03B"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Binder"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.Binder"
+        uuid: "applyTo_binder2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.Binder"
+        name: "addError"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "THIS"
+            content: !<new>
+              target: "com.google.inject.spi.Message"
+              parameters:
+              - name: "errorId"
+                value:
+                  sapientType: "ENUM"
+                  valueType: "com.google.inject.internal.ErrorId"
+                  uuid: "<init>_errorId1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "sources"
+                value:
+                  sapientType: "COLLECTION"
+                  valueType: "java.util.List"
+                  genericValueType: "java.lang.Object"
+                  uuid: "<init>_list1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "message"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "<init>_string1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "cause"
+                value:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<new>
+                    target: "java.lang.Throwable"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "java.lang.Throwable"
+                  uuid: "<init>_throwable1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "com.google.inject.spi.Message"
+            uuid: "targetClassObject"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "addError(Message): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "applyTo_void1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0f0a622f-1e3b-3dc0-a3ae-a6ceb63c4e13"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "withSource"
+    returnType: "com.google.inject.spi.Message"
+    signature: "withSource(java.util.List<java.lang.Object>) : com.google.inject.spi.Message"
+    instructionFingerprint: "9EE6D99A81605926E0E55506C5F525AC"
+    parametersTypes:
+    - "java.util.List"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "withSourceTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(com.google.inject.internal.ErrorId,java.util.List<java.lang.Object>,java.lang.String,java.lang.Throwable)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "2D4B87B1340375A475B3932CD95DA543"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "827B5A12B142EACC496373EB6C604A10"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.spi.Message"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "AMBIGUOUS_TYPE_CONVERSION"
+              suggestedContent: !<regular>
+                value: "AMBIGUOUS_TYPE_CONVERSION"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "message1"
+              suggestedContent: !<regular>
+                value: "message1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.spi.Message"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "AMBIGUOUS_TYPE_CONVERSION"
+              suggestedContent: !<regular>
+                value: "AMBIGUOUS_TYPE_CONVERSION"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "message1"
+              suggestedContent: !<regular>
+                value: "message1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.spi.Message"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "newSources"
+      modelFingerprint: "B6C60D0945E6966B3F7F6DBFD3A00EA8"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.List"
+        genericValueType: "java.lang.Object"
+        uuid: "withSource_list1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "errorDetail"
+      modelFingerprint: "5FB1E5AE08979D59322116E585B2E3ED"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.GenericErrorDetail"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "AMBIGUOUS_TYPE_CONVERSION"
+              suggestedContent: !<regular>
+                value: "AMBIGUOUS_TYPE_CONVERSION"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "message1"
+              suggestedContent: !<regular>
+                value: "message1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.GenericErrorDetail"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "AMBIGUOUS_TYPE_CONVERSION"
+              suggestedContent: !<regular>
+                value: "AMBIGUOUS_TYPE_CONVERSION"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "message"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "message1"
+              suggestedContent: !<regular>
+                value: "message1"
+              valueType: "java.lang.String"
+              uuid: "<init>_string1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "cause"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Throwable"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Throwable"
+              uuid: "<init>_throwable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "com.google.inject.internal.GenericErrorDetail"
+        uuid: "<init>_genericErrorDetail1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.errorDetail"
+        name: "withSources"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "java.lang.Object"
+            uuid: "withSource_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "withSources(List): ErrorDetail"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<method_return_from_value>
+            target: "com.google.inject.spi.ErrorDetail"
+            localVariableValue:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "com.google.inject.internal.GenericErrorDetail"
+                parameters:
+                - name: "errorId"
+                  value:
+                    sapientType: "ENUM"
+                    content: !<regular>
+                      value: "AMBIGUOUS_TYPE_CONVERSION"
+                    suggestedContent: !<regular>
+                      value: "AMBIGUOUS_TYPE_CONVERSION"
+                    valueType: "com.google.inject.internal.ErrorId"
+                    uuid: "<init>_errorId1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "message"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "message1"
+                    suggestedContent: !<regular>
+                      value: "message1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_string1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "sources"
+                  value:
+                    sapientType: "COLLECTION"
+                    content: !<collection>
+                      parameters: []
+                      values: []
+                    suggestedContent: !<collection>
+                      parameters: []
+                      values: []
+                    valueType: "java.util.List"
+                    genericValueType: "java.lang.Object"
+                    uuid: "<init>_list1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "cause"
+                  value:
+                    sapientType: "OBJECT"
+                    content: !<new>
+                      target: "java.lang.Throwable"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: false
+                    suggestedContent: !<new>
+                      target: "java.lang.Throwable"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: false
+                    valueType: "java.lang.Throwable"
+                    uuid: "<init>_throwable1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              suggestedContent: !<new>
+                target: "com.google.inject.internal.GenericErrorDetail"
+                parameters:
+                - name: "errorId"
+                  value:
+                    sapientType: "ENUM"
+                    content: !<regular>
+                      value: "AMBIGUOUS_TYPE_CONVERSION"
+                    suggestedContent: !<regular>
+                      value: "AMBIGUOUS_TYPE_CONVERSION"
+                    valueType: "com.google.inject.internal.ErrorId"
+                    uuid: "<init>_errorId1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "message"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "message1"
+                    suggestedContent: !<regular>
+                      value: "message1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_string1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "sources"
+                  value:
+                    sapientType: "COLLECTION"
+                    content: !<collection>
+                      parameters: []
+                      values: []
+                    suggestedContent: !<collection>
+                      parameters: []
+                      values: []
+                    valueType: "java.util.List"
+                    genericValueType: "java.lang.Object"
+                    uuid: "<init>_list1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "cause"
+                  value:
+                    sapientType: "OBJECT"
+                    content: !<new>
+                      target: "java.lang.Throwable"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: false
+                    suggestedContent: !<new>
+                      target: "java.lang.Throwable"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: false
+                    valueType: "java.lang.Throwable"
+                    uuid: "<init>_throwable1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "com.google.inject.internal.GenericErrorDetail"
+              uuid: "<init>_genericErrorDetail1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "arg0"
+              value:
+                sapientType: "COLLECTION"
+                content: !<collection>
+                  parameters: []
+                  values: []
+                suggestedContent: !<collection>
+                  parameters: []
+                  values: []
+                valueType: "java.util.List"
+                genericValueType: "java.lang.Object"
+                uuid: "withSource_list1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "withSources"
+          suggestedContent: !<method_return_from_value>
+            target: "com.google.inject.spi.ErrorDetail"
+            localVariableValue:
+              sapientType: "OBJECT"
+              suggestedContent: !<new>
+                target: "com.google.inject.internal.GenericErrorDetail"
+                parameters:
+                - name: "errorId"
+                  value:
+                    sapientType: "ENUM"
+                    content: !<regular>
+                      value: "AMBIGUOUS_TYPE_CONVERSION"
+                    suggestedContent: !<regular>
+                      value: "AMBIGUOUS_TYPE_CONVERSION"
+                    valueType: "com.google.inject.internal.ErrorId"
+                    uuid: "<init>_errorId1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "message"
+                  value:
+                    sapientType: "BASIC"
+                    content: !<regular>
+                      value: "message1"
+                    suggestedContent: !<regular>
+                      value: "message1"
+                    valueType: "java.lang.String"
+                    uuid: "<init>_string1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "sources"
+                  value:
+                    sapientType: "COLLECTION"
+                    content: !<collection>
+                      parameters: []
+                      values: []
+                    suggestedContent: !<collection>
+                      parameters: []
+                      values: []
+                    valueType: "java.util.List"
+                    genericValueType: "java.lang.Object"
+                    uuid: "<init>_list1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                - name: "cause"
+                  value:
+                    sapientType: "OBJECT"
+                    content: !<new>
+                      target: "java.lang.Throwable"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: false
+                    suggestedContent: !<new>
+                      target: "java.lang.Throwable"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: false
+                    valueType: "java.lang.Throwable"
+                    uuid: "<init>_throwable1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "com.google.inject.internal.GenericErrorDetail"
+              uuid: "<init>_genericErrorDetail1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "arg0"
+              value:
+                sapientType: "COLLECTION"
+                content: !<collection>
+                  parameters: []
+                  values: []
+                suggestedContent: !<collection>
+                  parameters: []
+                  values: []
+                valueType: "java.util.List"
+                genericValueType: "java.lang.Object"
+                uuid: "withSource_list1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "withSources"
+          valueType: "com.google.inject.spi.ErrorDetail"
+          uuid: "withSource_errorDetail1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "837B1C60BA7C9993433D4E02B8BF53D6"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.spi.Message"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "AMBIGUOUS_TYPE_CONVERSION"
+              suggestedContent: !<regular>
+                value: "AMBIGUOUS_TYPE_CONVERSION"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "errorDetail"
+            value:
+              sapientType: "OBJECT"
+              content: !<method_return_from_value>
+                target: "com.google.inject.spi.ErrorDetail"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  content: !<new>
+                    target: "com.google.inject.internal.GenericErrorDetail"
+                    parameters:
+                    - name: "errorId"
+                      value:
+                        sapientType: "ENUM"
+                        content: !<regular>
+                          value: "AMBIGUOUS_TYPE_CONVERSION"
+                        suggestedContent: !<regular>
+                          value: "AMBIGUOUS_TYPE_CONVERSION"
+                        valueType: "com.google.inject.internal.ErrorId"
+                        uuid: "<init>_errorId1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "message"
+                      value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "message1"
+                        suggestedContent: !<regular>
+                          value: "message1"
+                        valueType: "java.lang.String"
+                        uuid: "<init>_string1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "sources"
+                      value:
+                        sapientType: "COLLECTION"
+                        content: !<collection>
+                          parameters: []
+                          values: []
+                        suggestedContent: !<collection>
+                          parameters: []
+                          values: []
+                        valueType: "java.util.List"
+                        genericValueType: "java.lang.Object"
+                        uuid: "<init>_list1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "cause"
+                      value:
+                        sapientType: "OBJECT"
+                        content: !<new>
+                          target: "java.lang.Throwable"
+                          parameters: []
+                          privateConstructor: false
+                          createdByTargetCode: false
+                        suggestedContent: !<new>
+                          target: "java.lang.Throwable"
+                          parameters: []
+                          privateConstructor: false
+                          createdByTargetCode: false
+                        valueType: "java.lang.Throwable"
+                        uuid: "<init>_throwable1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: true
+                  suggestedContent: !<new>
+                    target: "com.google.inject.internal.GenericErrorDetail"
+                    parameters:
+                    - name: "errorId"
+                      value:
+                        sapientType: "ENUM"
+                        content: !<regular>
+                          value: "AMBIGUOUS_TYPE_CONVERSION"
+                        suggestedContent: !<regular>
+                          value: "AMBIGUOUS_TYPE_CONVERSION"
+                        valueType: "com.google.inject.internal.ErrorId"
+                        uuid: "<init>_errorId1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "message"
+                      value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "message1"
+                        suggestedContent: !<regular>
+                          value: "message1"
+                        valueType: "java.lang.String"
+                        uuid: "<init>_string1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "sources"
+                      value:
+                        sapientType: "COLLECTION"
+                        content: !<collection>
+                          parameters: []
+                          values: []
+                        suggestedContent: !<collection>
+                          parameters: []
+                          values: []
+                        valueType: "java.util.List"
+                        genericValueType: "java.lang.Object"
+                        uuid: "<init>_list1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "cause"
+                      value:
+                        sapientType: "OBJECT"
+                        content: !<new>
+                          target: "java.lang.Throwable"
+                          parameters: []
+                          privateConstructor: false
+                          createdByTargetCode: false
+                        suggestedContent: !<new>
+                          target: "java.lang.Throwable"
+                          parameters: []
+                          privateConstructor: false
+                          createdByTargetCode: false
+                        valueType: "java.lang.Throwable"
+                        uuid: "<init>_throwable1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: true
+                  valueType: "com.google.inject.internal.GenericErrorDetail"
+                  uuid: "<init>_genericErrorDetail1"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters:
+                - name: "arg0"
+                  value:
+                    sapientType: "COLLECTION"
+                    content: !<collection>
+                      parameters: []
+                      values: []
+                    suggestedContent: !<collection>
+                      parameters: []
+                      values: []
+                    valueType: "java.util.List"
+                    genericValueType: "java.lang.Object"
+                    uuid: "withSource_list1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                methodName: "withSources"
+              suggestedContent: !<method_return_from_value>
+                target: "com.google.inject.spi.ErrorDetail"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  suggestedContent: !<new>
+                    target: "com.google.inject.internal.GenericErrorDetail"
+                    parameters:
+                    - name: "errorId"
+                      value:
+                        sapientType: "ENUM"
+                        content: !<regular>
+                          value: "AMBIGUOUS_TYPE_CONVERSION"
+                        suggestedContent: !<regular>
+                          value: "AMBIGUOUS_TYPE_CONVERSION"
+                        valueType: "com.google.inject.internal.ErrorId"
+                        uuid: "<init>_errorId1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "message"
+                      value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "message1"
+                        suggestedContent: !<regular>
+                          value: "message1"
+                        valueType: "java.lang.String"
+                        uuid: "<init>_string1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "sources"
+                      value:
+                        sapientType: "COLLECTION"
+                        content: !<collection>
+                          parameters: []
+                          values: []
+                        suggestedContent: !<collection>
+                          parameters: []
+                          values: []
+                        valueType: "java.util.List"
+                        genericValueType: "java.lang.Object"
+                        uuid: "<init>_list1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "cause"
+                      value:
+                        sapientType: "OBJECT"
+                        content: !<new>
+                          target: "java.lang.Throwable"
+                          parameters: []
+                          privateConstructor: false
+                          createdByTargetCode: false
+                        suggestedContent: !<new>
+                          target: "java.lang.Throwable"
+                          parameters: []
+                          privateConstructor: false
+                          createdByTargetCode: false
+                        valueType: "java.lang.Throwable"
+                        uuid: "<init>_throwable1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: true
+                  valueType: "com.google.inject.internal.GenericErrorDetail"
+                  uuid: "<init>_genericErrorDetail1"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters:
+                - name: "arg0"
+                  value:
+                    sapientType: "COLLECTION"
+                    content: !<collection>
+                      parameters: []
+                      values: []
+                    suggestedContent: !<collection>
+                      parameters: []
+                      values: []
+                    valueType: "java.util.List"
+                    genericValueType: "java.lang.Object"
+                    uuid: "withSource_list1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                methodName: "withSources"
+              valueType: "com.google.inject.spi.ErrorDetail"
+              uuid: "withSource_errorDetail1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "com.google.inject.spi.Message"
+          parameters:
+          - name: "errorId"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "AMBIGUOUS_TYPE_CONVERSION"
+              suggestedContent: !<regular>
+                value: "AMBIGUOUS_TYPE_CONVERSION"
+              valueType: "com.google.inject.internal.ErrorId"
+              uuid: "<init>_errorId1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "errorDetail"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<method_return_from_value>
+                target: "com.google.inject.spi.ErrorDetail"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  suggestedContent: !<new>
+                    target: "com.google.inject.internal.GenericErrorDetail"
+                    parameters:
+                    - name: "errorId"
+                      value:
+                        sapientType: "ENUM"
+                        content: !<regular>
+                          value: "AMBIGUOUS_TYPE_CONVERSION"
+                        suggestedContent: !<regular>
+                          value: "AMBIGUOUS_TYPE_CONVERSION"
+                        valueType: "com.google.inject.internal.ErrorId"
+                        uuid: "<init>_errorId1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "message"
+                      value:
+                        sapientType: "BASIC"
+                        content: !<regular>
+                          value: "message1"
+                        suggestedContent: !<regular>
+                          value: "message1"
+                        valueType: "java.lang.String"
+                        uuid: "<init>_string1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "sources"
+                      value:
+                        sapientType: "COLLECTION"
+                        content: !<collection>
+                          parameters: []
+                          values: []
+                        suggestedContent: !<collection>
+                          parameters: []
+                          values: []
+                        valueType: "java.util.List"
+                        genericValueType: "java.lang.Object"
+                        uuid: "<init>_list1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    - name: "cause"
+                      value:
+                        sapientType: "OBJECT"
+                        content: !<new>
+                          target: "java.lang.Throwable"
+                          parameters: []
+                          privateConstructor: false
+                          createdByTargetCode: false
+                        suggestedContent: !<new>
+                          target: "java.lang.Throwable"
+                          parameters: []
+                          privateConstructor: false
+                          createdByTargetCode: false
+                        valueType: "java.lang.Throwable"
+                        uuid: "<init>_throwable1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    privateConstructor: false
+                    createdByTargetCode: true
+                  valueType: "com.google.inject.internal.GenericErrorDetail"
+                  uuid: "<init>_genericErrorDetail1"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters:
+                - name: "arg0"
+                  value:
+                    sapientType: "COLLECTION"
+                    content: !<collection>
+                      parameters: []
+                      values: []
+                    suggestedContent: !<collection>
+                      parameters: []
+                      values: []
+                    valueType: "java.util.List"
+                    genericValueType: "java.lang.Object"
+                    uuid: "withSource_list1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                methodName: "withSources"
+              valueType: "com.google.inject.spi.ErrorDetail"
+              uuid: "withSource_errorDetail1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        valueType: "com.google.inject.spi.Message"
+        uuid: "withSource_message1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "de87f11d-cec6-32fd-81fc-d4535e0a77d5"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

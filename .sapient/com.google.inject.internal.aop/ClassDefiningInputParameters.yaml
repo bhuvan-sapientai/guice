@@ -1,0 +1,443 @@
+---
+modelFingerprint: "2B2FE27F67C67B03D37F9ED6C582A70C"
+methods:
+- method:
+    name: "define"
+    returnType: "java.lang.Class"
+    signature: "define(java.lang.Class<?>,byte[]) : java.lang.Class<?>"
+    throwsExceptions:
+    - "java.lang.Exception"
+    instructionFingerprint: "63103DBCBAC45C6F75651DE51EED7332"
+    parametersTypes:
+    - "java.lang.Class"
+    - "byte[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "defineTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "E304A8915D39DFC3FD80F4BE23066542"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "hostClass"
+      modelFingerprint: "7D6AC86827D10E6BFB40505A82C8C917"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "define_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "bytecode"
+      modelFingerprint: "BB7F540A56202E8860A933F4536176EC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "byte[]"
+        uuid: "define_byte[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "INSTANCE"
+      modelFingerprint: "2CA222AA026D226555E80BDA5893BBE5"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_field_return>
+          target: "com.google.inject.internal.aop.ClassDefining$ClassDefinerHolder"
+          fieldName: "INSTANCE"
+        suggestedContent: !<static_field_return>
+          target: "com.google.inject.internal.aop.ClassDefining$ClassDefinerHolder"
+          fieldName: "INSTANCE"
+        valueType: "com.google.inject.internal.aop.ClassDefiner"
+        uuid: "define_classDefiner1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "other.INSTANCE"
+        name: "define"
+        parameters:
+        - name: "arg0"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "define_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "arg1"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "byte[]"
+            uuid: "define_byte[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        throwsExceptions:
+        - "java.lang.Exception"
+        signature: "define(Class,byte[]): Class throws java.lang.Exception"
+        returnValue:
+          sapientType: "CLASS"
+          content: !<regular>
+            value: "java.lang.Object"
+          valueType: "java.lang.Class"
+          genericValueType: "?"
+          uuid: "define_class2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "A4BDA6B2F94E11E746C09D7BFDF9AF70"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "define_class2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3d0bbb66-c655-3fc9-bcd2-e53aac08c7c7"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "INSTANCE"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "return ClassDefinerHolder.INSTANCE.define(hostClass, bytecode);"
+      lineNumber: 44
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: INSTANCE - Method: define"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "hasPackageAccess"
+    returnType: "boolean"
+    signature: "hasPackageAccess() : boolean"
+    instructionFingerprint: "0EDC3C06E761EB9E71A18912D6230975"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "hasPackageAccessTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "ED620C52C626B52383FF75037D57FEF4"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "26F354D57EDB6DE30F14FF7FA23B655D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        uuid: "boolean1"
+        fixed: false
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "574eaa68-a42e-3cd3-b082-19045cc65313"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "canLoadProxyByName"
+    returnType: "boolean"
+    signature: "canLoadProxyByName(java.lang.Class<?>) : boolean"
+    instructionFingerprint: "7D980FAD8108948BCF46A28C2121E257"
+    parametersTypes:
+    - "java.lang.Class"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "canLoadProxyByNameWhenClassDefinerHolderNotIS_UNSAFE"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "55BF39A4F909BE2199EECF52A6DDA006"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "hostClass"
+      modelFingerprint: "7D6AC86827D10E6BFB40505A82C8C917"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "canLoadProxyByName_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0831b235-7458-34b5-9a55-f4b8beff3df3"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "canDowncastToProxy"
+    returnType: "boolean"
+    signature: "canDowncastToProxy(java.lang.Class<?>) : boolean"
+    instructionFingerprint: "75FC050B4CD554D7F197BF153EF255AB"
+    parametersTypes:
+    - "java.lang.Class"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "canDowncastToProxyWhenClassDefinerHolderNotIS_UNSAFE"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "55BF39A4F909BE2199EECF52A6DDA006"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "hostClass"
+      modelFingerprint: "7D6AC86827D10E6BFB40505A82C8C917"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "canDowncastToProxy_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: true
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "69161f47-b1fc-30ba-81db-d8c2b76472d1"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "bindClassDefiner"
+    returnType: "com.google.inject.internal.aop.ClassDefiner"
+    signature: "bindClassDefiner() : com.google.inject.internal.aop.ClassDefiner"
+    instructionFingerprint: "CD3E541AD9081AD9AA46E0DE01C5A2B4"
+    parametersTypes: []
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "bindClassDefinerWhenUnsafeClassDefinerIsAccessible"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "29148328190F53CF821FE3D8B2E7C7AA"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "InternalFlags"
+      modelFingerprint: "61F6E76F8525047B8BF0151553CC8A7D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "com.google.inject.internal.InternalFlags"
+        uuid: "com.google.inject.internal.InternalFlags"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.InternalFlags"
+        name: "getCustomClassLoadingOption"
+        parameters: []
+        signature: "getCustomClassLoadingOption(): InternalFlags$CustomClassLoadingOption"
+        returnValue:
+          sapientType: "ENUM"
+          content: !<regular>
+            value: "BRIDGE"
+          valueType: "com.google.inject.internal.InternalFlags$CustomClassLoadingOption"
+          uuid: "bindClassDefiner_internalFlags.CustomClassLoadingOption1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "UnsafeClassDefiner"
+      modelFingerprint: "6C5A670A2869EF9CD4D9CB13D5CDDCFC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "REAL"
+        valueType: "com.google.inject.internal.aop.UnsafeClassDefiner"
+        uuid: "com.google.inject.internal.aop.UnsafeClassDefiner"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.aop.UnsafeClassDefiner"
+        name: "isAccessible"
+        parameters: []
+        signature: "isAccessible(): boolean"
+        returnValue:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: true
+          valueType: "boolean"
+          uuid: "bindClassDefiner_boolean1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "C87DD4F87EBC8B84696FA1D411B1EF39"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.aop.UnsafeClassDefiner"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.aop.UnsafeClassDefiner"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "com.google.inject.internal.aop.UnsafeClassDefiner"
+        uuid: "bindClassDefiner_unsafeClassDefiner1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8f84667f-f4f0-3e82-b3bf-c3b938b78d94"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

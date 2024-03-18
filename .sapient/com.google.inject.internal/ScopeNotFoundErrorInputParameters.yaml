@@ -1,0 +1,1221 @@
+---
+modelFingerprint: "DA017BC94705C0A25B738F57BA039091"
+methods:
+- method:
+    name: "isMergeable"
+    returnType: "boolean"
+    signature: "isMergeable(com.google.inject.spi.ErrorDetail<?>) : boolean"
+    instructionFingerprint: "A0FE1C3CAD4FBB786D9CADBCB79CB0C3"
+    parametersTypes:
+    - "com.google.inject.spi.ErrorDetail"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "isMergeableWhenOtherInstanceOfScopeNotFoundErrorThrowsNullPointerException"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Class<? extends java.lang.annotation.Annotation>,java.util.List<java.lang.Object>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "01D65F911CC7B8FA2C0CB21CD17DFC83"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "B7DA617E8E044772406E42E43ED8E159"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ScopeNotFoundError"
+          parameters:
+          - name: "scopeAnnotation"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "? extends java.lang.annotation.Annotation"
+              valueType: "java.lang.Class"
+              genericValueType: "? extends java.lang.annotation.Annotation"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ScopeNotFoundError"
+          parameters:
+          - name: "scopeAnnotation"
+            value:
+              sapientType: "CLASS"
+              valueType: "java.lang.Class"
+              genericValueType: "? extends java.lang.annotation.Annotation"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.ScopeNotFoundError"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "other"
+      modelFingerprint: "18036654A39645F5D59C7656166E012C"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.internal.ScopeNotFoundError"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.internal.ScopeNotFoundError"
+        uuid: "isMergeable_errorDetail1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "39ADECD889378F6B32E1C22911CE74C9"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Messages"
+        uuid: "com.google.inject.internal.Messages"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "convert"
+        parameters:
+        - name: "o"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "? extends java.lang.annotation.Annotation"
+            valueType: "java.lang.Class"
+            genericValueType: "? extends java.lang.annotation.Annotation"
+            uuid: "<init>_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "convert(Class): Object"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "java.lang.Object"
+          uuid: "<init>_object1"
+          fixed: false
+          nameForMock: "<init>_object1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1544C3243427A58A5AE91A88CC628F77"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "EXCEPTION"
+        content: !<new>
+          target: "java.lang.NullPointerException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.NullPointerException"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.NullPointerException"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "74d95059-b1ab-37f7-8e6b-dd9ca118c0fb"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableList.copyOf(java.util.List<java.lang.Object>)\
+        \ : com.google.common.collect.ImmutableList<java.lang.Object>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "isMergeableWhenOtherNotInstanceOfScopeNotFoundError"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Class<? extends java.lang.annotation.Annotation>,java.util.List<java.lang.Object>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0D4006156E23552BDE0F5F1680221DF1"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "D264F9A54BCA4064B46D736CAB07ECF9"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ScopeNotFoundError"
+          parameters:
+          - name: "scopeAnnotation"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "? extends java.lang.annotation.Annotation"
+              suggestedContent: !<regular>
+                value: "? extends java.lang.annotation.Annotation"
+              valueType: "java.lang.Class"
+              genericValueType: "? extends java.lang.annotation.Annotation"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ScopeNotFoundError"
+          parameters:
+          - name: "scopeAnnotation"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "? extends java.lang.annotation.Annotation"
+              suggestedContent: !<regular>
+                value: "? extends java.lang.annotation.Annotation"
+              valueType: "java.lang.Class"
+              genericValueType: "? extends java.lang.annotation.Annotation"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.ScopeNotFoundError"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "other"
+      modelFingerprint: "79BC94890B0F97BD0162C3D07BC54F63"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.spi.ErrorDetail"
+        genericValueType: "?"
+        uuid: "isMergeable_errorDetail1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "65B1D9707D1D5AD5A73965B15F04A732"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Messages"
+        uuid: "com.google.inject.internal.Messages"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "convert"
+        parameters:
+        - name: "o"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "? extends java.lang.annotation.Annotation"
+            suggestedContent: !<regular>
+              value: "? extends java.lang.annotation.Annotation"
+            valueType: "java.lang.Class"
+            genericValueType: "? extends java.lang.annotation.Annotation"
+            uuid: "<init>_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "convert(Class): Object"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "java.lang.Object"
+          uuid: "<init>_object1"
+          fixed: false
+          nameForMock: "<init>_object1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "BASIC"
+        content: !<regular>
+          value: false
+        valueType: "boolean"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "74779650-b10e-3436-8f78-002ca29915b9"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "formatDetail"
+    returnType: "void"
+    signature: "formatDetail(java.util.List<com.google.inject.spi.ErrorDetail<?>>,java.util.Formatter)\
+      \ : void"
+    instructionFingerprint: "E6C0ACC9022D950E900385B3FFC52460"
+    parametersTypes:
+    - "java.util.List"
+    - "java.util.Formatter"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "formatDetailWhenSourcesSetIsNotEmpty"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Class<? extends java.lang.annotation.Annotation>,java.util.List<java.lang.Object>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "CA10798342AFDAE360A9975F61353F18"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "A9FE9F851009A2C64FEC0395966995F7"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ScopeNotFoundError"
+          parameters:
+          - name: "scopeAnnotation"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "? extends java.lang.annotation.Annotation"
+              valueType: "java.lang.Class"
+              genericValueType: "? extends java.lang.annotation.Annotation"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values:
+                - sapientType: "OBJECT"
+                  content: !<new>
+                    target: "java.lang.Object"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  suggestedContent: !<new>
+                    target: "java.lang.Object"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "java.lang.Object"
+                  uuid: "<init>_list1-0"
+                  fixed: false
+                  collectionUuid: "<init>_list1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              suggestedContent: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values:
+                - sapientType: "OBJECT"
+                  content: !<new>
+                    target: "java.lang.Object"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  suggestedContent: !<new>
+                    target: "java.lang.Object"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "java.lang.Object"
+                  uuid: "<init>_list1-0"
+                  fixed: false
+                  collectionUuid: "<init>_list1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ScopeNotFoundError"
+          parameters:
+          - name: "scopeAnnotation"
+            value:
+              sapientType: "CLASS"
+              valueType: "java.lang.Class"
+              genericValueType: "? extends java.lang.annotation.Annotation"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values:
+                - sapientType: "OBJECT"
+                  content: !<new>
+                    target: "java.lang.Object"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  suggestedContent: !<new>
+                    target: "java.lang.Object"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "java.lang.Object"
+                  uuid: "<init>_list1-0"
+                  fixed: false
+                  collectionUuid: "<init>_list1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              suggestedContent: !<collection>
+                collectionClass: "java.util.ArrayList"
+                parameters: []
+                values:
+                - sapientType: "OBJECT"
+                  content: !<new>
+                    target: "java.lang.Object"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  suggestedContent: !<new>
+                    target: "java.lang.Object"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: false
+                  valueType: "java.lang.Object"
+                  uuid: "<init>_list1-0"
+                  fixed: false
+                  collectionUuid: "<init>_list1"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.ScopeNotFoundError"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "mergeableErrors"
+      modelFingerprint: "97CC79F9EE4022B59BB0F2F9CDC00CF6"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.spi.ErrorDetail"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.spi.ErrorDetail"
+            genericValueType: "?"
+            uuid: "formatDetail_list1-0"
+            fixed: false
+            collectionUuid: "formatDetail_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        suggestedContent: !<collection>
+          collectionClass: "java.util.ArrayList"
+          parameters: []
+          values:
+          - sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.spi.ErrorDetail"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.spi.ErrorDetail"
+            genericValueType: "?"
+            uuid: "formatDetail_list1-0"
+            fixed: false
+            collectionUuid: "formatDetail_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        valueType: "java.util.List"
+        genericValueType: "com.google.inject.spi.ErrorDetail<?>"
+        uuid: "formatDetail_list1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "formatter"
+      modelFingerprint: "FFAC7B70FCB7EABA837EFEFED60B282A"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.Formatter"
+          onlyPojoFunctions: true
+          builderPattern: false
+        valueType: "java.util.Formatter"
+        uuid: "formatDetail_formatter1"
+        fixed: false
+        nameForMock: "null"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "62CBDB52A35769C2D2CCAE0AD3E2AE7D"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Messages"
+        uuid: "com.google.inject.internal.Messages"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "convert"
+        parameters:
+        - name: "o"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "? extends java.lang.annotation.Annotation"
+            valueType: "java.lang.Class"
+            genericValueType: "? extends java.lang.annotation.Annotation"
+            uuid: "<init>_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "convert(Class): Object"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.Object"
+            onlyPojoFunctions: true
+            builderPattern: false
+          valueType: "java.lang.Object"
+          uuid: "<init>_object1"
+          fixed: false
+          nameForMock: "<init>_object1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "C371936E73F8AD92260B275C9B9AE2D4"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      methodExercised:
+        target: "target"
+        name: "getSources"
+        parameters: []
+        signature: "getSources(): List"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            collectionClass: "java.util.ArrayList"
+            parameters: []
+            values:
+            - sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "formatDetail_list2-0"
+              fixed: false
+              collectionUuid: "formatDetail_list2"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          suggestedContent: !<collection>
+            collectionClass: "java.util.ArrayList"
+            parameters: []
+            values:
+            - sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "formatDetail_list2-0"
+              fixed: false
+              collectionUuid: "formatDetail_list2"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          valueType: "java.util.List"
+          genericValueType: "java.lang.Object"
+          uuid: "formatDetail_list2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "D61A0894B782EBB12EBAB8E4E1BD3025"
+      index: 6
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.spi.ErrorDetail"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.spi.ErrorDetail"
+        genericValueType: "?"
+        uuid: "formatDetail_list1-0"
+        fixed: false
+        collectionUuid: "formatDetail_list1"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.spi.ErrorDetail"
+        name: "getSources"
+        parameters: []
+        signature: "getSources(): List"
+        returnValue:
+          sapientType: "COLLECTION"
+          content: !<collection>
+            parameters: []
+            values: []
+          suggestedContent: !<collection>
+            parameters: []
+            values: []
+          valueType: "java.util.List"
+          genericValueType: "java.lang.Object"
+          uuid: "formatDetail_list3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "formatter"
+      modelFingerprint: "D556B8EA84D8CDAD0949CC245B84F8F9"
+      index: 7
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.util.Formatter"
+          onlyPojoFunctions: true
+          builderPattern: false
+        valueType: "java.util.Formatter"
+        uuid: "formatDetail_formatter1"
+        fixed: false
+        nameForMock: "null"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "formatter"
+        name: "format"
+        parameters:
+        - name: "format"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "\\n%s\\n"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "args"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values:
+                0:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "Used at:"
+                  valueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<array>
+              values:
+                0:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "Used at:"
+                  valueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "java.lang.Object[]"
+            uuid: "formatDetail_object[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "format(String,Object[]): Formatter"
+        returnValue:
+          sapientType: "NULL"
+          valueType: "java.util.Formatter"
+          uuid: "formatDetail_formatter2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 129
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ErrorFormatter"
+      modelFingerprint: "ACC1EE826DF1789765BE1F3433BA1BE1"
+      index: 8
+      ignored: false
+      nestedInLoop: true
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.ErrorFormatter"
+        uuid: "com.google.inject.internal.ErrorFormatter"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.ErrorFormatter"
+        name: "formatSources"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            valueType: "int"
+            uuid: "formatDetail_int1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "i"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "java.lang.Object"
+            uuid: "formatDetail_list6"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "index"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "java.util.Formatter"
+              onlyPojoFunctions: true
+              builderPattern: false
+            valueType: "java.util.Formatter"
+            uuid: "formatDetail_formatter1"
+            fixed: false
+            nameForMock: "null"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "formatSources(int,List,Formatter): void"
+        returnValue:
+          sapientType: "VOID"
+          valueType: "void"
+          uuid: "formatDetail_void2"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 9
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "VOID"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ea72b295-ddff-3632-9f9a-1b7a1870be65"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.Lists.reverse(java.util.List<java.lang.Object>)\
+        \ : java.util.List<java.lang.Object>"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "withSources"
+    returnType: "com.google.inject.internal.ScopeNotFoundError"
+    signature: "withSources(java.util.List<java.lang.Object>) : com.google.inject.internal.ScopeNotFoundError"
+    instructionFingerprint: "B3445B5193ADA8A8F93075AA10082A09"
+    parametersTypes:
+    - "java.util.List"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "withSources1Test"
+    nameDefinedByUser: false
+    constructorSignature: "<init>(java.lang.Class<? extends java.lang.annotation.Annotation>,java.util.List<java.lang.Object>)\
+      \ : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "3FF8B10E1D6B163DD3040FDF085A5D9C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "D264F9A54BCA4064B46D736CAB07ECF9"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ScopeNotFoundError"
+          parameters:
+          - name: "scopeAnnotation"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "? extends java.lang.annotation.Annotation"
+              suggestedContent: !<regular>
+                value: "? extends java.lang.annotation.Annotation"
+              valueType: "java.lang.Class"
+              genericValueType: "? extends java.lang.annotation.Annotation"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ScopeNotFoundError"
+          parameters:
+          - name: "scopeAnnotation"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "? extends java.lang.annotation.Annotation"
+              suggestedContent: !<regular>
+                value: "? extends java.lang.annotation.Annotation"
+              valueType: "java.lang.Class"
+              genericValueType: "? extends java.lang.annotation.Annotation"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "<init>_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.ScopeNotFoundError"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "newSources"
+      modelFingerprint: "B6C60D0945E6966B3F7F6DBFD3A00EA8"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "COLLECTION"
+        content: !<collection>
+          parameters: []
+          values: []
+        suggestedContent: !<collection>
+          parameters: []
+          values: []
+        valueType: "java.util.List"
+        genericValueType: "java.lang.Object"
+        uuid: "withSources_list1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "65B1D9707D1D5AD5A73965B15F04A732"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Messages"
+        uuid: "com.google.inject.internal.Messages"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "convert"
+        parameters:
+        - name: "o"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "? extends java.lang.annotation.Annotation"
+            suggestedContent: !<regular>
+              value: "? extends java.lang.annotation.Annotation"
+            valueType: "java.lang.Class"
+            genericValueType: "? extends java.lang.annotation.Annotation"
+            uuid: "<init>_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "convert(Class): Object"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "java.lang.Object"
+          uuid: "<init>_object1"
+          fixed: false
+          nameForMock: "<init>_object1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "65B1D9707D1D5AD5A73965B15F04A732"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.Messages"
+        uuid: "com.google.inject.internal.Messages"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "convert"
+        parameters:
+        - name: "o"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "? extends java.lang.annotation.Annotation"
+            suggestedContent: !<regular>
+              value: "? extends java.lang.annotation.Annotation"
+            valueType: "java.lang.Class"
+            genericValueType: "? extends java.lang.annotation.Annotation"
+            uuid: "<init>_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "convert(Class): Object"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "java.lang.Object"
+          uuid: "<init>_object2"
+          fixed: false
+          nameForMock: "<init>_object2"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "5CD4CBB33928883BD8A25C6FF12AC842"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ScopeNotFoundError"
+          parameters:
+          - name: "scopeAnnotation"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "? extends java.lang.annotation.Annotation"
+              suggestedContent: !<regular>
+                value: "? extends java.lang.annotation.Annotation"
+              valueType: "java.lang.Class"
+              genericValueType: "? extends java.lang.annotation.Annotation"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "withSources_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ScopeNotFoundError"
+          parameters:
+          - name: "scopeAnnotation"
+            value:
+              sapientType: "CLASS"
+              content: !<regular>
+                value: "? extends java.lang.annotation.Annotation"
+              suggestedContent: !<regular>
+                value: "? extends java.lang.annotation.Annotation"
+              valueType: "java.lang.Class"
+              genericValueType: "? extends java.lang.annotation.Annotation"
+              uuid: "<init>_class1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "sources"
+            value:
+              sapientType: "COLLECTION"
+              content: !<collection>
+                parameters: []
+                values: []
+              suggestedContent: !<collection>
+                parameters: []
+                values: []
+              valueType: "java.util.List"
+              genericValueType: "java.lang.Object"
+              uuid: "withSources_list1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "com.google.inject.internal.ScopeNotFoundError"
+        uuid: "withSources_scopeNotFoundError1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "22e7c14b-c2f8-3631-b7c2-fa54895cb8e5"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

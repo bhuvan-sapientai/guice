@@ -1,0 +1,1417 @@
+---
+modelFingerprint: "5737053532032E4DD4003D15AF686305"
+methods:
+- method:
+    name: "forModule"
+    returnType: "com.google.inject.Module"
+    signature: "forModule(com.google.inject.Module) : com.google.inject.Module"
+    instructionFingerprint: "50B12440500EF51446B04BA92ECD57CE"
+    parametersTypes:
+    - "com.google.inject.Module"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "forModuleWhenObjectInstanceOfProviderMethodsModule"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C9BA140D46ED9352A9548F408DE18035"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "module"
+      modelFingerprint: "8A675AEC8548E59E37894467BF28EBBE"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.ProviderMethodsModule"
+        uuid: "forModule_module1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+        explicitCastForOverloadedMethods: "com.google.inject.Module"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "AEB7BBCFDD359BE3D904EBCF38AD65C8"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_field_return>
+          target: "com.google.inject.util.Modules"
+          fieldName: "EMPTY_MODULE"
+        suggestedContent: !<static_field_return>
+          target: "com.google.inject.util.Modules"
+          fieldName: "EMPTY_MODULE"
+        valueType: "com.google.inject.Module"
+        uuid: "forObject_module1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e784a0f6-8bb5-3548-8075-fb3176ce8a43"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "forModuleWhenIsStaticModule"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "B06930C9A449BB9B814C0D5B5E2554FC"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "module"
+      modelFingerprint: "4EB02C2310E6CE574F4D8E7062482F7D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Module"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.Module"
+        uuid: "forModule_module1"
+        fixed: false
+        nameForMock: "null"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "TypeLiteral"
+      modelFingerprint: "618FC2C606F2582335F9C64856E4E732"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.TypeLiteral"
+        uuid: "com.google.inject.TypeLiteral"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.TypeLiteral"
+        name: "get"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(Class): TypeLiteral"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.TypeLiteral"
+            onlyPojoFunctions: true
+            builderPattern: false
+          valueType: "com.google.inject.TypeLiteral"
+          genericValueType: "?"
+          uuid: "<init>_typeLiteral1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "763A485CC38E678FF318E625F8079311"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ProviderMethodsModule"
+          parameters:
+          - name: "delegate"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.Module"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.Module"
+              uuid: "forModule_module1"
+              fixed: false
+              nameForMock: "null"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "skipFastClassGeneration"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scanner"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_field_return>
+                target: "com.google.inject.internal.ProvidesMethodScanner"
+                fieldName: "INSTANCE"
+              suggestedContent: !<static_field_return>
+                target: "com.google.inject.internal.ProvidesMethodScanner"
+                fieldName: "INSTANCE"
+              valueType: "com.google.inject.internal.ProvidesMethodScanner"
+              uuid: "forModule_providesMethodScanner1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ProviderMethodsModule"
+          parameters:
+          - name: "delegate"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.Module"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.Module"
+              uuid: "forModule_module1"
+              fixed: false
+              nameForMock: "null"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "skipFastClassGeneration"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scanner"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<static_field_return>
+                target: "com.google.inject.internal.ProvidesMethodScanner"
+                fieldName: "INSTANCE"
+              valueType: "com.google.inject.internal.ProvidesMethodScanner"
+              uuid: "forModule_providesMethodScanner1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        valueType: "com.google.inject.internal.ProviderMethodsModule"
+        uuid: "forObject_providerMethodsModule1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "410c8a66-9f3c-3fe4-9c46-ec3751ea3bc2"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.Module,java.lang.String)\
+        \ : java.lang.Object"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "forModuleWhenIsStaticModuleNot"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "6DDA3EFC0A882EE40144FA772EB5BA8D"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "module"
+      modelFingerprint: "4EB02C2310E6CE574F4D8E7062482F7D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.Module"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.Module"
+        uuid: "forModule_module1"
+        fixed: false
+        nameForMock: "null"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "TypeLiteral"
+      modelFingerprint: "26D138BBE252D0B9789FA8E596B2B7B7"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.TypeLiteral"
+        uuid: "com.google.inject.TypeLiteral"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.TypeLiteral"
+        name: "get"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "getDelegateModuleClass_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(Class): TypeLiteral"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.TypeLiteral"
+            onlyPojoFunctions: true
+            builderPattern: false
+          valueType: "com.google.inject.TypeLiteral"
+          genericValueType: "?"
+          uuid: "<init>_typeLiteral1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "763A485CC38E678FF318E625F8079311"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ProviderMethodsModule"
+          parameters:
+          - name: "delegate"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.Module"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.Module"
+              uuid: "forModule_module1"
+              fixed: false
+              nameForMock: "null"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "skipFastClassGeneration"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scanner"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_field_return>
+                target: "com.google.inject.internal.ProvidesMethodScanner"
+                fieldName: "INSTANCE"
+              suggestedContent: !<static_field_return>
+                target: "com.google.inject.internal.ProvidesMethodScanner"
+                fieldName: "INSTANCE"
+              valueType: "com.google.inject.internal.ProvidesMethodScanner"
+              uuid: "forModule_providesMethodScanner1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ProviderMethodsModule"
+          parameters:
+          - name: "delegate"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.Module"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.Module"
+              uuid: "forModule_module1"
+              fixed: false
+              nameForMock: "null"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "skipFastClassGeneration"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scanner"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<static_field_return>
+                target: "com.google.inject.internal.ProvidesMethodScanner"
+                fieldName: "INSTANCE"
+              valueType: "com.google.inject.internal.ProvidesMethodScanner"
+              uuid: "forModule_providesMethodScanner1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        valueType: "com.google.inject.internal.ProviderMethodsModule"
+        uuid: "forObject_providerMethodsModule1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "603c5d03-38dc-30df-9602-cac9fcb0a6ff"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.Module,java.lang.String)\
+        \ : java.lang.Object"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+- method:
+    name: "forModule"
+    returnType: "com.google.inject.Module"
+    signature: "forModule(java.lang.Object,com.google.inject.spi.ModuleAnnotatedMethodScanner)\
+      \ : com.google.inject.Module"
+    instructionFingerprint: "D3C6FE92BC4F1068C7F0B2907D43A88E"
+    parametersTypes:
+    - "java.lang.Object"
+    - "com.google.inject.spi.ModuleAnnotatedMethodScanner"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "forModule1WhenObjectInstanceOfProviderMethodsModule"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "411DA1F455D4C8938D08E2578B692F1D"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "module"
+      modelFingerprint: "8A675AEC8548E59E37894467BF28EBBE"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.ProviderMethodsModule"
+        uuid: "forModule_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+        explicitCastForOverloadedMethods: "java.lang.Object"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "scanner"
+      modelFingerprint: "F1B45EB9876BBC4DAD5F345D305A31A2"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.spi.ModuleAnnotatedMethodScanner"
+        uuid: "forModule_moduleAnnotatedMethodScanner1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "AEB7BBCFDD359BE3D904EBCF38AD65C8"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_field_return>
+          target: "com.google.inject.util.Modules"
+          fieldName: "EMPTY_MODULE"
+        suggestedContent: !<static_field_return>
+          target: "com.google.inject.util.Modules"
+          fieldName: "EMPTY_MODULE"
+        valueType: "com.google.inject.Module"
+        uuid: "forObject_module1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "300b5605-6bd6-36f6-b820-03fbc985d765"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "forModule1WhenIsStaticModule"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9D816A55A0718EA802D727C37A6CD653"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "module"
+      modelFingerprint: "3A354C28C0F74CF5E3ABA1FAA4F1762C"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "forModule_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "scanner"
+      modelFingerprint: "5BEA8ACB570E1D6D3EBC88EEBB0F8BA8"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.spi.ModuleAnnotatedMethodScanner"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.spi.ModuleAnnotatedMethodScanner"
+        uuid: "forModule_moduleAnnotatedMethodScanner1"
+        fixed: false
+        nameForMock: "ModuleAnnotatedMethodScanner"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "TypeLiteral"
+      modelFingerprint: "618FC2C606F2582335F9C64856E4E732"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.TypeLiteral"
+        uuid: "com.google.inject.TypeLiteral"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.TypeLiteral"
+        name: "get"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(Class): TypeLiteral"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.TypeLiteral"
+            onlyPojoFunctions: true
+            builderPattern: false
+          valueType: "com.google.inject.TypeLiteral"
+          genericValueType: "?"
+          uuid: "<init>_typeLiteral1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B8372E02D911D4D94EFC18317388A46C"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ProviderMethodsModule"
+          parameters:
+          - name: "delegate"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "forModule_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "skipFastClassGeneration"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scanner"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.spi.ModuleAnnotatedMethodScanner"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.spi.ModuleAnnotatedMethodScanner"
+              uuid: "forModule_moduleAnnotatedMethodScanner1"
+              fixed: false
+              nameForMock: "ModuleAnnotatedMethodScanner"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ProviderMethodsModule"
+          parameters:
+          - name: "delegate"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "forModule_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "skipFastClassGeneration"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scanner"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.spi.ModuleAnnotatedMethodScanner"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.spi.ModuleAnnotatedMethodScanner"
+              uuid: "forModule_moduleAnnotatedMethodScanner1"
+              fixed: false
+              nameForMock: "ModuleAnnotatedMethodScanner"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        valueType: "com.google.inject.internal.ProviderMethodsModule"
+        uuid: "forObject_providerMethodsModule1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "65e55b67-4fb5-339e-a98f-7d2e34663834"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Object,java.lang.String)\
+        \ : java.lang.Object"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "forModule1WhenIsStaticModuleNot"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "34D8C006F70F9A91D5C96EC10EFA86C5"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "module"
+      modelFingerprint: "3A354C28C0F74CF5E3ABA1FAA4F1762C"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "forModule_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "scanner"
+      modelFingerprint: "5BEA8ACB570E1D6D3EBC88EEBB0F8BA8"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "com.google.inject.spi.ModuleAnnotatedMethodScanner"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "com.google.inject.spi.ModuleAnnotatedMethodScanner"
+        uuid: "forModule_moduleAnnotatedMethodScanner1"
+        fixed: false
+        nameForMock: "ModuleAnnotatedMethodScanner"
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "TypeLiteral"
+      modelFingerprint: "26D138BBE252D0B9789FA8E596B2B7B7"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.TypeLiteral"
+        uuid: "com.google.inject.TypeLiteral"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.TypeLiteral"
+        name: "get"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "getDelegateModuleClass_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(Class): TypeLiteral"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.TypeLiteral"
+            onlyPojoFunctions: true
+            builderPattern: false
+          valueType: "com.google.inject.TypeLiteral"
+          genericValueType: "?"
+          uuid: "<init>_typeLiteral1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B8372E02D911D4D94EFC18317388A46C"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ProviderMethodsModule"
+          parameters:
+          - name: "delegate"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "forModule_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "skipFastClassGeneration"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scanner"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.spi.ModuleAnnotatedMethodScanner"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.spi.ModuleAnnotatedMethodScanner"
+              uuid: "forModule_moduleAnnotatedMethodScanner1"
+              fixed: false
+              nameForMock: "ModuleAnnotatedMethodScanner"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ProviderMethodsModule"
+          parameters:
+          - name: "delegate"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "forModule_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "skipFastClassGeneration"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: false
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scanner"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "com.google.inject.spi.ModuleAnnotatedMethodScanner"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "com.google.inject.spi.ModuleAnnotatedMethodScanner"
+              uuid: "forModule_moduleAnnotatedMethodScanner1"
+              fixed: false
+              nameForMock: "ModuleAnnotatedMethodScanner"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        valueType: "com.google.inject.internal.ProviderMethodsModule"
+        uuid: "forObject_providerMethodsModule1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "eb7376f7-9632-37f8-aa26-b3d07e919dbc"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Object,java.lang.String)\
+        \ : java.lang.Object"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "forObject"
+    returnType: "com.google.inject.Module"
+    signature: "forObject(java.lang.Object) : com.google.inject.Module"
+    instructionFingerprint: "F30B0DC588C87773968471B502EAD2A8"
+    parametersTypes:
+    - "java.lang.Object"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "forObjectWhenObjectInstanceOfProviderMethodsModule"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "FA92E94162E00807C501237EC1EE268E"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      modelFingerprint: "77ECEB68BCFE1D669E7FDABAAC4E5B74"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.internal.ProviderMethodsModule"
+        uuid: "forObject_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+        explicitCastForOverloadedMethods: "java.lang.Object"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "AEB7BBCFDD359BE3D904EBCF38AD65C8"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<static_field_return>
+          target: "com.google.inject.util.Modules"
+          fieldName: "EMPTY_MODULE"
+        suggestedContent: !<static_field_return>
+          target: "com.google.inject.util.Modules"
+          fieldName: "EMPTY_MODULE"
+        valueType: "com.google.inject.Module"
+        uuid: "forObject_module1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ba4f7fab-ebcf-38dd-abe9-56bc7ed33b10"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path2"
+    pathIdForUser: "path2"
+    testPathName: "forObjectWhenIsStaticModule"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "C9D9356BCF6B134C9CF431C8A043849D"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      modelFingerprint: "43742BD04879CA816EACCA964550F9DC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "forObject_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "TypeLiteral"
+      modelFingerprint: "618FC2C606F2582335F9C64856E4E732"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.TypeLiteral"
+        uuid: "com.google.inject.TypeLiteral"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.TypeLiteral"
+        name: "get"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(Class): TypeLiteral"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "com.google.inject.TypeLiteral"
+            onlyPojoFunctions: true
+            builderPattern: false
+          valueType: "com.google.inject.TypeLiteral"
+          genericValueType: "?"
+          uuid: "<init>_typeLiteral1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8A677BA89AB94F538BFA19E5F0AFE059"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ProviderMethodsModule"
+          parameters:
+          - name: "delegate"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "forObject_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "skipFastClassGeneration"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scanner"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_field_return>
+                target: "com.google.inject.internal.ProvidesMethodScanner"
+                fieldName: "INSTANCE"
+              suggestedContent: !<static_field_return>
+                target: "com.google.inject.internal.ProvidesMethodScanner"
+                fieldName: "INSTANCE"
+              valueType: "com.google.inject.internal.ProvidesMethodScanner"
+              uuid: "forObject_providesMethodScanner1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ProviderMethodsModule"
+          parameters:
+          - name: "delegate"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "forObject_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "skipFastClassGeneration"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scanner"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<static_field_return>
+                target: "com.google.inject.internal.ProvidesMethodScanner"
+                fieldName: "INSTANCE"
+              valueType: "com.google.inject.internal.ProvidesMethodScanner"
+              uuid: "forObject_providesMethodScanner1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        valueType: "com.google.inject.internal.ProviderMethodsModule"
+        uuid: "forObject_providerMethodsModule1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d224a644-5292-3755-8d25-f1ce3ceef140"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Object,java.lang.String)\
+        \ : java.lang.Object"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+  - pathId: "path3"
+    pathIdForUser: "path3"
+    testPathName: "forObjectWhenIsStaticModuleNot"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "49E996F8DC44274ABD0B8C74918CE484"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      modelFingerprint: "43742BD04879CA816EACCA964550F9DC"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "java.lang.Object"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "java.lang.Object"
+        uuid: "forObject_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "TypeLiteral"
+      modelFingerprint: "447A91D0EFBD87A80A31302AC3E8F5D8"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.TypeLiteral"
+        uuid: "com.google.inject.TypeLiteral"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.TypeLiteral"
+        name: "get"
+        parameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "getDelegateModuleClass_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "get(Class): TypeLiteral"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "com.google.inject.TypeLiteral"
+          genericValueType: "?"
+          uuid: "<init>_typeLiteral1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8A677BA89AB94F538BFA19E5F0AFE059"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.ProviderMethodsModule"
+          parameters:
+          - name: "delegate"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "forObject_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "skipFastClassGeneration"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scanner"
+            value:
+              sapientType: "OBJECT"
+              content: !<static_field_return>
+                target: "com.google.inject.internal.ProvidesMethodScanner"
+                fieldName: "INSTANCE"
+              suggestedContent: !<static_field_return>
+                target: "com.google.inject.internal.ProvidesMethodScanner"
+                fieldName: "INSTANCE"
+              valueType: "com.google.inject.internal.ProvidesMethodScanner"
+              uuid: "forObject_providesMethodScanner1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.ProviderMethodsModule"
+          parameters:
+          - name: "delegate"
+            value:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              suggestedContent: !<new>
+                target: "java.lang.Object"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: false
+              valueType: "java.lang.Object"
+              uuid: "forObject_object1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "skipFastClassGeneration"
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: true
+              valueType: "boolean"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          - name: "scanner"
+            value:
+              sapientType: "OBJECT"
+              suggestedContent: !<static_field_return>
+                target: "com.google.inject.internal.ProvidesMethodScanner"
+                fieldName: "INSTANCE"
+              valueType: "com.google.inject.internal.ProvidesMethodScanner"
+              uuid: "forObject_providesMethodScanner1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          privateConstructor: true
+          createdByTargetCode: true
+        valueType: "com.google.inject.internal.ProviderMethodsModule"
+        uuid: "forObject_providerMethodsModule1"
+        fixed: true
+        equalsMethodPresent: true
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "38d54811-f31e-3906-aa82-55433a9a3467"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Object,java.lang.String)\
+        \ : java.lang.Object"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false

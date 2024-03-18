@@ -1,0 +1,1357 @@
+---
+modelFingerprint: "BD8718C4A6599CD8BB3A662B72C9F1ED"
+methods:
+- method:
+    name: "createInjector"
+    returnType: "com.google.inject.Injector"
+    signature: "createInjector(com.google.inject.Module[]) : com.google.inject.Injector"
+    instructionFingerprint: "1225AAABC946D0DD30D9201294287B84"
+    parametersTypes:
+    - "com.google.inject.Module[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "createInjectorTest"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "07C6C671759507BA423CB3F5C436E252"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "modules"
+      modelFingerprint: "22EAFCFDF24AD28580C1491500123B3D"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "com.google.inject.Module[]"
+        uuid: "createInjector_module[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Guice"
+      modelFingerprint: "F18C983B7D3DEB72314A6A0C6A443EBC"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.Guice"
+        uuid: "com.google.inject.Guice"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.Guice"
+        name: "createInjector"
+        parameters:
+        - name: "modules"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "com.google.inject.Module"
+            uuid: "createInjector_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "createInjector(List): Injector"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "com.google.inject.Injector"
+          uuid: "createInjector_injector1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B7FAD4CA5C582F2C9697FC128421CA9D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.Injector"
+        uuid: "createInjector_injector1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e1d092f4-c7fc-3607-8051-8007bd5d0853"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "createInjector"
+    returnType: "com.google.inject.Injector"
+    signature: "createInjector(java.lang.Iterable<? extends com.google.inject.Module>)\
+      \ : com.google.inject.Injector"
+    instructionFingerprint: "301411E9D4EF8E3561DF7F057BE4C155"
+    parametersTypes:
+    - "java.lang.Iterable"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "createInjector1Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "0D9558ECBFFEB0A4638B73B269475281"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "modules"
+      modelFingerprint: "B19AFAADC3C6184E0828451850A004FE"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Iterable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Iterable"
+        uuid: "createInjector_iterable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Guice"
+      modelFingerprint: "50A6799304C9DF75CCBF31156FA743D0"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.Guice"
+        uuid: "com.google.inject.Guice"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.Guice"
+        name: "createInjector"
+        parameters:
+        - name: "stage"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "DEVELOPMENT"
+            valueType: "com.google.inject.Stage"
+            uuid: "Enum-com.google.inject.Stage-DEVELOPMENT"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "modules"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.Iterable"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.Iterable"
+            uuid: "createInjector_iterable1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "createInjector(Stage,Iterable): Injector"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "com.google.inject.Injector"
+          uuid: "createInjector_injector1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B7FAD4CA5C582F2C9697FC128421CA9D"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.Injector"
+        uuid: "createInjector_injector1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3988c885-0081-3dc7-a203-1b929d7bdd28"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "createInjector"
+    returnType: "com.google.inject.Injector"
+    signature: "createInjector(com.google.inject.Stage,com.google.inject.Module[])\
+      \ : com.google.inject.Injector"
+    instructionFingerprint: "1083959F78362A8822D064DE054DE3DE"
+    parametersTypes:
+    - "com.google.inject.Stage"
+    - "com.google.inject.Module[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "createInjector2Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "EF6A9E427E21D65C387D14E000D247DA"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "stage"
+      modelFingerprint: "5C903A4C80DD1D47EE34738550B85AC7"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "TOOL"
+        valueType: "com.google.inject.Stage"
+        uuid: "createInjector_stage1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "modules"
+      modelFingerprint: "22EAFCFDF24AD28580C1491500123B3D"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values: {}
+        suggestedContent: !<array>
+          values: {}
+        valueType: "com.google.inject.Module[]"
+        uuid: "createInjector_module[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Guice"
+      modelFingerprint: "85F5DC0DBF8270031A66FD0CEB6AC9BA"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.Guice"
+        uuid: "com.google.inject.Guice"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.Guice"
+        name: "createInjector"
+        parameters:
+        - name: "stage"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "TOOL"
+            valueType: "com.google.inject.Stage"
+            uuid: "createInjector_stage1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "modules"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "com.google.inject.Module"
+            uuid: "createInjector_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "createInjector(Stage,List): Injector"
+        returnValue:
+          sapientType: "MOCK"
+          valueType: "com.google.inject.Injector"
+          uuid: "createInjector_injector1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B7FAD4CA5C582F2C9697FC128421CA9D"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        valueType: "com.google.inject.Injector"
+        uuid: "createInjector_injector1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e9e85f2f-08a1-3084-a0de-83f659df8b4f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+- method:
+    name: "createInjector"
+    returnType: "com.google.inject.Injector"
+    signature: "createInjector(com.google.inject.Stage,java.lang.Iterable<? extends\
+      \ com.google.inject.Module>) : com.google.inject.Injector"
+    instructionFingerprint: "82CBBF2359251DBC78BA4743AC94F62E"
+    parametersTypes:
+    - "com.google.inject.Stage"
+    - "java.lang.Iterable"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "createInjector3Test"
+    nameDefinedByUser: false
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "9C22EC6070B9853B544F7AAF3D3746C7"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "stage"
+      modelFingerprint: "7EBD597150396EAAEDC6DFFBC4C25566"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ENUM"
+        content: !<regular>
+          value: "PRODUCTION"
+        suggestedContent: !<regular>
+          value: "PRODUCTION"
+        valueType: "com.google.inject.Stage"
+        uuid: "createInjector_stage1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "modules"
+      modelFingerprint: "B19AFAADC3C6184E0828451850A004FE"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.Iterable"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "java.lang.Iterable"
+        uuid: "createInjector_iterable1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "0F3E10FB69C387DDE1BD21363780F183"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.InternalInjectorCreator"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: true
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.InternalInjectorCreator"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: true
+        valueType: "com.google.inject.internal.InternalInjectorCreator"
+        uuid: "createInjector_internalInjectorCreator1"
+        fixed: true
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.InternalInjectorCreator"
+        name: "stage"
+        parameters:
+        - name: "stage"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "PRODUCTION"
+            suggestedContent: !<regular>
+              value: "PRODUCTION"
+            valueType: "com.google.inject.Stage"
+            uuid: "createInjector_stage1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "stage(Stage): InternalInjectorCreator"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<method_return_from_value>
+            target: "com.google.inject.internal.InternalInjectorCreator"
+            localVariableValue:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "com.google.inject.internal.InternalInjectorCreator"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              suggestedContent: !<new>
+                target: "com.google.inject.internal.InternalInjectorCreator"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "com.google.inject.internal.InternalInjectorCreator"
+              uuid: "createInjector_internalInjectorCreator1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "stage"
+              value:
+                sapientType: "ENUM"
+                content: !<regular>
+                  value: "PRODUCTION"
+                suggestedContent: !<regular>
+                  value: "PRODUCTION"
+                valueType: "com.google.inject.Stage"
+                uuid: "createInjector_stage1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "stage"
+          suggestedContent: !<method_return_from_value>
+            target: "com.google.inject.internal.InternalInjectorCreator"
+            localVariableValue:
+              sapientType: "OBJECT"
+              suggestedContent: !<new>
+                target: "com.google.inject.internal.InternalInjectorCreator"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "com.google.inject.internal.InternalInjectorCreator"
+              uuid: "createInjector_internalInjectorCreator1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "stage"
+              value:
+                sapientType: "ENUM"
+                suggestedContent: !<regular>
+                  value: "PRODUCTION"
+                valueType: "com.google.inject.Stage"
+                uuid: "createInjector_stage1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "stage"
+          valueType: "com.google.inject.internal.InternalInjectorCreator"
+          uuid: "createInjector_internalInjectorCreator2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "D23250490E3543C67CA3A29CBD987400"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<method_return_from_value>
+          target: "com.google.inject.internal.InternalInjectorCreator"
+          localVariableValue:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "com.google.inject.internal.InternalInjectorCreator"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "com.google.inject.internal.InternalInjectorCreator"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "com.google.inject.internal.InternalInjectorCreator"
+            uuid: "createInjector_internalInjectorCreator1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters:
+          - name: "stage"
+            value:
+              sapientType: "ENUM"
+              content: !<regular>
+                value: "PRODUCTION"
+              suggestedContent: !<regular>
+                value: "PRODUCTION"
+              valueType: "com.google.inject.Stage"
+              uuid: "createInjector_stage1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          methodName: "stage"
+        suggestedContent: !<method_return_from_value>
+          target: "com.google.inject.internal.InternalInjectorCreator"
+          localVariableValue:
+            sapientType: "OBJECT"
+            suggestedContent: !<new>
+              target: "com.google.inject.internal.InternalInjectorCreator"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "com.google.inject.internal.InternalInjectorCreator"
+            uuid: "createInjector_internalInjectorCreator1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters:
+          - name: "stage"
+            value:
+              sapientType: "ENUM"
+              suggestedContent: !<regular>
+                value: "PRODUCTION"
+              valueType: "com.google.inject.Stage"
+              uuid: "createInjector_stage1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          methodName: "stage"
+        valueType: "com.google.inject.internal.InternalInjectorCreator"
+        uuid: "createInjector_internalInjectorCreator2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.InternalInjectorCreator"
+        name: "addModules"
+        parameters:
+        - name: "modules"
+          value:
+            sapientType: "MOCK"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.Iterable"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.Iterable"
+            uuid: "createInjector_iterable1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "addModules(Iterable): InternalInjectorCreator"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<method_return_from_value>
+            target: "com.google.inject.internal.InternalInjectorCreator"
+            localVariableValue:
+              sapientType: "OBJECT"
+              content: !<method_return_from_value>
+                target: "com.google.inject.internal.InternalInjectorCreator"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  content: !<new>
+                    target: "com.google.inject.internal.InternalInjectorCreator"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: true
+                  suggestedContent: !<new>
+                    target: "com.google.inject.internal.InternalInjectorCreator"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: true
+                  valueType: "com.google.inject.internal.InternalInjectorCreator"
+                  uuid: "createInjector_internalInjectorCreator1"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters:
+                - name: "stage"
+                  value:
+                    sapientType: "ENUM"
+                    content: !<regular>
+                      value: "PRODUCTION"
+                    suggestedContent: !<regular>
+                      value: "PRODUCTION"
+                    valueType: "com.google.inject.Stage"
+                    uuid: "createInjector_stage1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                methodName: "stage"
+              suggestedContent: !<method_return_from_value>
+                target: "com.google.inject.internal.InternalInjectorCreator"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  suggestedContent: !<new>
+                    target: "com.google.inject.internal.InternalInjectorCreator"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: true
+                  valueType: "com.google.inject.internal.InternalInjectorCreator"
+                  uuid: "createInjector_internalInjectorCreator1"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters:
+                - name: "stage"
+                  value:
+                    sapientType: "ENUM"
+                    suggestedContent: !<regular>
+                      value: "PRODUCTION"
+                    valueType: "com.google.inject.Stage"
+                    uuid: "createInjector_stage1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                methodName: "stage"
+              valueType: "com.google.inject.internal.InternalInjectorCreator"
+              uuid: "createInjector_internalInjectorCreator2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "modules"
+              value:
+                sapientType: "MOCK"
+                suggestedContent: !<unknown_object>
+                  target: "java.lang.Iterable"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "java.lang.Iterable"
+                uuid: "createInjector_iterable1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "addModules"
+          suggestedContent: !<method_return_from_value>
+            target: "com.google.inject.internal.InternalInjectorCreator"
+            localVariableValue:
+              sapientType: "OBJECT"
+              suggestedContent: !<method_return_from_value>
+                target: "com.google.inject.internal.InternalInjectorCreator"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  suggestedContent: !<new>
+                    target: "com.google.inject.internal.InternalInjectorCreator"
+                    parameters: []
+                    privateConstructor: false
+                    createdByTargetCode: true
+                  valueType: "com.google.inject.internal.InternalInjectorCreator"
+                  uuid: "createInjector_internalInjectorCreator1"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters:
+                - name: "stage"
+                  value:
+                    sapientType: "ENUM"
+                    suggestedContent: !<regular>
+                      value: "PRODUCTION"
+                    valueType: "com.google.inject.Stage"
+                    uuid: "createInjector_stage1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                methodName: "stage"
+              valueType: "com.google.inject.internal.InternalInjectorCreator"
+              uuid: "createInjector_internalInjectorCreator2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "modules"
+              value:
+                sapientType: "UNKNOWN"
+                suggestedContent: !<unknown_object>
+                  target: "java.lang.Iterable"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "java.lang.Iterable"
+                genericValueType: "? extends com.google.inject.Module"
+                uuid: "createInjector_iterable1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "addModules"
+          valueType: "com.google.inject.internal.InternalInjectorCreator"
+          uuid: "createInjector_internalInjectorCreator3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "4552651698A94755BC620A18468808CC"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<method_return_from_value>
+          target: "com.google.inject.internal.InternalInjectorCreator"
+          localVariableValue:
+            sapientType: "OBJECT"
+            content: !<method_return_from_value>
+              target: "com.google.inject.internal.InternalInjectorCreator"
+              localVariableValue:
+                sapientType: "OBJECT"
+                content: !<new>
+                  target: "com.google.inject.internal.InternalInjectorCreator"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: true
+                suggestedContent: !<new>
+                  target: "com.google.inject.internal.InternalInjectorCreator"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: true
+                valueType: "com.google.inject.internal.InternalInjectorCreator"
+                uuid: "createInjector_internalInjectorCreator1"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters:
+              - name: "stage"
+                value:
+                  sapientType: "ENUM"
+                  content: !<regular>
+                    value: "PRODUCTION"
+                  suggestedContent: !<regular>
+                    value: "PRODUCTION"
+                  valueType: "com.google.inject.Stage"
+                  uuid: "createInjector_stage1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              methodName: "stage"
+            suggestedContent: !<method_return_from_value>
+              target: "com.google.inject.internal.InternalInjectorCreator"
+              localVariableValue:
+                sapientType: "OBJECT"
+                suggestedContent: !<new>
+                  target: "com.google.inject.internal.InternalInjectorCreator"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: true
+                valueType: "com.google.inject.internal.InternalInjectorCreator"
+                uuid: "createInjector_internalInjectorCreator1"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters:
+              - name: "stage"
+                value:
+                  sapientType: "ENUM"
+                  suggestedContent: !<regular>
+                    value: "PRODUCTION"
+                  valueType: "com.google.inject.Stage"
+                  uuid: "createInjector_stage1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              methodName: "stage"
+            valueType: "com.google.inject.internal.InternalInjectorCreator"
+            uuid: "createInjector_internalInjectorCreator2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters:
+          - name: "modules"
+            value:
+              sapientType: "MOCK"
+              suggestedContent: !<unknown_object>
+                target: "java.lang.Iterable"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.lang.Iterable"
+              uuid: "createInjector_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          methodName: "addModules"
+        suggestedContent: !<method_return_from_value>
+          target: "com.google.inject.internal.InternalInjectorCreator"
+          localVariableValue:
+            sapientType: "OBJECT"
+            suggestedContent: !<method_return_from_value>
+              target: "com.google.inject.internal.InternalInjectorCreator"
+              localVariableValue:
+                sapientType: "OBJECT"
+                suggestedContent: !<new>
+                  target: "com.google.inject.internal.InternalInjectorCreator"
+                  parameters: []
+                  privateConstructor: false
+                  createdByTargetCode: true
+                valueType: "com.google.inject.internal.InternalInjectorCreator"
+                uuid: "createInjector_internalInjectorCreator1"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters:
+              - name: "stage"
+                value:
+                  sapientType: "ENUM"
+                  suggestedContent: !<regular>
+                    value: "PRODUCTION"
+                  valueType: "com.google.inject.Stage"
+                  uuid: "createInjector_stage1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              methodName: "stage"
+            valueType: "com.google.inject.internal.InternalInjectorCreator"
+            uuid: "createInjector_internalInjectorCreator2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters:
+          - name: "modules"
+            value:
+              sapientType: "UNKNOWN"
+              suggestedContent: !<unknown_object>
+                target: "java.lang.Iterable"
+                onlyPojoFunctions: false
+                builderPattern: false
+              valueType: "java.lang.Iterable"
+              genericValueType: "? extends com.google.inject.Module"
+              uuid: "createInjector_iterable1"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          methodName: "addModules"
+        valueType: "com.google.inject.internal.InternalInjectorCreator"
+        uuid: "createInjector_internalInjectorCreator3"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "com.google.inject.internal.InternalInjectorCreator"
+        name: "build"
+        parameters: []
+        signature: "build(): Injector"
+        returnValue:
+          sapientType: "OBJECT"
+          content: !<method_return_from_value>
+            target: "com.google.inject.Injector"
+            localVariableValue:
+              sapientType: "OBJECT"
+              content: !<method_return_from_value>
+                target: "com.google.inject.internal.InternalInjectorCreator"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  content: !<method_return_from_value>
+                    target: "com.google.inject.internal.InternalInjectorCreator"
+                    localVariableValue:
+                      sapientType: "OBJECT"
+                      content: !<new>
+                        target: "com.google.inject.internal.InternalInjectorCreator"
+                        parameters: []
+                        privateConstructor: false
+                        createdByTargetCode: true
+                      suggestedContent: !<new>
+                        target: "com.google.inject.internal.InternalInjectorCreator"
+                        parameters: []
+                        privateConstructor: false
+                        createdByTargetCode: true
+                      valueType: "com.google.inject.internal.InternalInjectorCreator"
+                      uuid: "createInjector_internalInjectorCreator1"
+                      fixed: true
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                    methodParameters:
+                    - name: "stage"
+                      value:
+                        sapientType: "ENUM"
+                        content: !<regular>
+                          value: "PRODUCTION"
+                        suggestedContent: !<regular>
+                          value: "PRODUCTION"
+                        valueType: "com.google.inject.Stage"
+                        uuid: "createInjector_stage1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    methodName: "stage"
+                  suggestedContent: !<method_return_from_value>
+                    target: "com.google.inject.internal.InternalInjectorCreator"
+                    localVariableValue:
+                      sapientType: "OBJECT"
+                      suggestedContent: !<new>
+                        target: "com.google.inject.internal.InternalInjectorCreator"
+                        parameters: []
+                        privateConstructor: false
+                        createdByTargetCode: true
+                      valueType: "com.google.inject.internal.InternalInjectorCreator"
+                      uuid: "createInjector_internalInjectorCreator1"
+                      fixed: true
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                    methodParameters:
+                    - name: "stage"
+                      value:
+                        sapientType: "ENUM"
+                        suggestedContent: !<regular>
+                          value: "PRODUCTION"
+                        valueType: "com.google.inject.Stage"
+                        uuid: "createInjector_stage1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    methodName: "stage"
+                  valueType: "com.google.inject.internal.InternalInjectorCreator"
+                  uuid: "createInjector_internalInjectorCreator2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters:
+                - name: "modules"
+                  value:
+                    sapientType: "MOCK"
+                    suggestedContent: !<unknown_object>
+                      target: "java.lang.Iterable"
+                      onlyPojoFunctions: false
+                      builderPattern: false
+                    valueType: "java.lang.Iterable"
+                    uuid: "createInjector_iterable1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                methodName: "addModules"
+              suggestedContent: !<method_return_from_value>
+                target: "com.google.inject.internal.InternalInjectorCreator"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  suggestedContent: !<method_return_from_value>
+                    target: "com.google.inject.internal.InternalInjectorCreator"
+                    localVariableValue:
+                      sapientType: "OBJECT"
+                      suggestedContent: !<new>
+                        target: "com.google.inject.internal.InternalInjectorCreator"
+                        parameters: []
+                        privateConstructor: false
+                        createdByTargetCode: true
+                      valueType: "com.google.inject.internal.InternalInjectorCreator"
+                      uuid: "createInjector_internalInjectorCreator1"
+                      fixed: true
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                    methodParameters:
+                    - name: "stage"
+                      value:
+                        sapientType: "ENUM"
+                        suggestedContent: !<regular>
+                          value: "PRODUCTION"
+                        valueType: "com.google.inject.Stage"
+                        uuid: "createInjector_stage1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    methodName: "stage"
+                  valueType: "com.google.inject.internal.InternalInjectorCreator"
+                  uuid: "createInjector_internalInjectorCreator2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters:
+                - name: "modules"
+                  value:
+                    sapientType: "UNKNOWN"
+                    suggestedContent: !<unknown_object>
+                      target: "java.lang.Iterable"
+                      onlyPojoFunctions: false
+                      builderPattern: false
+                    valueType: "java.lang.Iterable"
+                    genericValueType: "? extends com.google.inject.Module"
+                    uuid: "createInjector_iterable1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                methodName: "addModules"
+              valueType: "com.google.inject.internal.InternalInjectorCreator"
+              uuid: "createInjector_internalInjectorCreator3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters: []
+            methodName: "build"
+          suggestedContent: !<method_return_from_value>
+            target: "com.google.inject.Injector"
+            localVariableValue:
+              sapientType: "OBJECT"
+              suggestedContent: !<method_return_from_value>
+                target: "com.google.inject.internal.InternalInjectorCreator"
+                localVariableValue:
+                  sapientType: "OBJECT"
+                  suggestedContent: !<method_return_from_value>
+                    target: "com.google.inject.internal.InternalInjectorCreator"
+                    localVariableValue:
+                      sapientType: "OBJECT"
+                      suggestedContent: !<new>
+                        target: "com.google.inject.internal.InternalInjectorCreator"
+                        parameters: []
+                        privateConstructor: false
+                        createdByTargetCode: true
+                      valueType: "com.google.inject.internal.InternalInjectorCreator"
+                      uuid: "createInjector_internalInjectorCreator1"
+                      fixed: true
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                    methodParameters:
+                    - name: "stage"
+                      value:
+                        sapientType: "ENUM"
+                        suggestedContent: !<regular>
+                          value: "PRODUCTION"
+                        valueType: "com.google.inject.Stage"
+                        uuid: "createInjector_stage1"
+                        fixed: false
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                    methodName: "stage"
+                  valueType: "com.google.inject.internal.InternalInjectorCreator"
+                  uuid: "createInjector_internalInjectorCreator2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters:
+                - name: "modules"
+                  value:
+                    sapientType: "UNKNOWN"
+                    suggestedContent: !<unknown_object>
+                      target: "java.lang.Iterable"
+                      onlyPojoFunctions: false
+                      builderPattern: false
+                    valueType: "java.lang.Iterable"
+                    genericValueType: "? extends com.google.inject.Module"
+                    uuid: "createInjector_iterable1"
+                    fixed: false
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                methodName: "addModules"
+              valueType: "com.google.inject.internal.InternalInjectorCreator"
+              uuid: "createInjector_internalInjectorCreator3"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters: []
+            methodName: "build"
+          valueType: "com.google.inject.Injector"
+          uuid: "createInjector_injector1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "C2F0979BCA43CCF19677E5BF58C0DA3D"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<method_return_from_value>
+          target: "com.google.inject.Injector"
+          localVariableValue:
+            sapientType: "OBJECT"
+            content: !<method_return_from_value>
+              target: "com.google.inject.internal.InternalInjectorCreator"
+              localVariableValue:
+                sapientType: "OBJECT"
+                content: !<method_return_from_value>
+                  target: "com.google.inject.internal.InternalInjectorCreator"
+                  localVariableValue:
+                    sapientType: "OBJECT"
+                    content: !<new>
+                      target: "com.google.inject.internal.InternalInjectorCreator"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: true
+                    suggestedContent: !<new>
+                      target: "com.google.inject.internal.InternalInjectorCreator"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: true
+                    valueType: "com.google.inject.internal.InternalInjectorCreator"
+                    uuid: "createInjector_internalInjectorCreator1"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters:
+                  - name: "stage"
+                    value:
+                      sapientType: "ENUM"
+                      content: !<regular>
+                        value: "PRODUCTION"
+                      suggestedContent: !<regular>
+                        value: "PRODUCTION"
+                      valueType: "com.google.inject.Stage"
+                      uuid: "createInjector_stage1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  methodName: "stage"
+                suggestedContent: !<method_return_from_value>
+                  target: "com.google.inject.internal.InternalInjectorCreator"
+                  localVariableValue:
+                    sapientType: "OBJECT"
+                    suggestedContent: !<new>
+                      target: "com.google.inject.internal.InternalInjectorCreator"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: true
+                    valueType: "com.google.inject.internal.InternalInjectorCreator"
+                    uuid: "createInjector_internalInjectorCreator1"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters:
+                  - name: "stage"
+                    value:
+                      sapientType: "ENUM"
+                      suggestedContent: !<regular>
+                        value: "PRODUCTION"
+                      valueType: "com.google.inject.Stage"
+                      uuid: "createInjector_stage1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  methodName: "stage"
+                valueType: "com.google.inject.internal.InternalInjectorCreator"
+                uuid: "createInjector_internalInjectorCreator2"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters:
+              - name: "modules"
+                value:
+                  sapientType: "MOCK"
+                  suggestedContent: !<unknown_object>
+                    target: "java.lang.Iterable"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "java.lang.Iterable"
+                  uuid: "createInjector_iterable1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              methodName: "addModules"
+            suggestedContent: !<method_return_from_value>
+              target: "com.google.inject.internal.InternalInjectorCreator"
+              localVariableValue:
+                sapientType: "OBJECT"
+                suggestedContent: !<method_return_from_value>
+                  target: "com.google.inject.internal.InternalInjectorCreator"
+                  localVariableValue:
+                    sapientType: "OBJECT"
+                    suggestedContent: !<new>
+                      target: "com.google.inject.internal.InternalInjectorCreator"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: true
+                    valueType: "com.google.inject.internal.InternalInjectorCreator"
+                    uuid: "createInjector_internalInjectorCreator1"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters:
+                  - name: "stage"
+                    value:
+                      sapientType: "ENUM"
+                      suggestedContent: !<regular>
+                        value: "PRODUCTION"
+                      valueType: "com.google.inject.Stage"
+                      uuid: "createInjector_stage1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  methodName: "stage"
+                valueType: "com.google.inject.internal.InternalInjectorCreator"
+                uuid: "createInjector_internalInjectorCreator2"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters:
+              - name: "modules"
+                value:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<unknown_object>
+                    target: "java.lang.Iterable"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "java.lang.Iterable"
+                  genericValueType: "? extends com.google.inject.Module"
+                  uuid: "createInjector_iterable1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              methodName: "addModules"
+            valueType: "com.google.inject.internal.InternalInjectorCreator"
+            uuid: "createInjector_internalInjectorCreator3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          methodName: "build"
+        suggestedContent: !<method_return_from_value>
+          target: "com.google.inject.Injector"
+          localVariableValue:
+            sapientType: "OBJECT"
+            suggestedContent: !<method_return_from_value>
+              target: "com.google.inject.internal.InternalInjectorCreator"
+              localVariableValue:
+                sapientType: "OBJECT"
+                suggestedContent: !<method_return_from_value>
+                  target: "com.google.inject.internal.InternalInjectorCreator"
+                  localVariableValue:
+                    sapientType: "OBJECT"
+                    suggestedContent: !<new>
+                      target: "com.google.inject.internal.InternalInjectorCreator"
+                      parameters: []
+                      privateConstructor: false
+                      createdByTargetCode: true
+                    valueType: "com.google.inject.internal.InternalInjectorCreator"
+                    uuid: "createInjector_internalInjectorCreator1"
+                    fixed: true
+                    equalsMethodPresent: false
+                    explicitCastNeeded: false
+                  methodParameters:
+                  - name: "stage"
+                    value:
+                      sapientType: "ENUM"
+                      suggestedContent: !<regular>
+                        value: "PRODUCTION"
+                      valueType: "com.google.inject.Stage"
+                      uuid: "createInjector_stage1"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  methodName: "stage"
+                valueType: "com.google.inject.internal.InternalInjectorCreator"
+                uuid: "createInjector_internalInjectorCreator2"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters:
+              - name: "modules"
+                value:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<unknown_object>
+                    target: "java.lang.Iterable"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "java.lang.Iterable"
+                  genericValueType: "? extends com.google.inject.Module"
+                  uuid: "createInjector_iterable1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              methodName: "addModules"
+            valueType: "com.google.inject.internal.InternalInjectorCreator"
+            uuid: "createInjector_internalInjectorCreator3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          methodName: "build"
+        valueType: "com.google.inject.Injector"
+        uuid: "createInjector_injector1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b0f85e76-3e99-3dc0-a7b3-2b42c6cc3982"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "object of type InternalInjectorCreator"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "return new InternalInjectorCreator().stage(stage).addModules(modules).build();"
+      lineNumber: 87
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type InternalInjectorCreator - Method: addModules"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true

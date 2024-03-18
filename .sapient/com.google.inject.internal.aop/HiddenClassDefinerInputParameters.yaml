@@ -1,0 +1,253 @@
+---
+modelFingerprint: "477CFA98B75A673F2052D4F28771217C"
+methods:
+- method:
+    name: "define"
+    returnType: "java.lang.Class"
+    signature: "define(java.lang.Class<?>,byte[]) : java.lang.Class<?>"
+    throwsExceptions:
+    - "java.lang.Exception"
+    instructionFingerprint: "2F3E3C3743EAF0645FE12034BEAA0D5C"
+    parametersTypes:
+    - "java.lang.Class"
+    - "byte[]"
+  paths:
+  - pathId: "path1"
+    pathIdForUser: "path1"
+    testPathName: "defineTest"
+    nameDefinedByUser: false
+    constructorSignature: "<init>() : void"
+    priorityDefinedByUser: false
+    filledByUser: false
+    priority: "LOW"
+    modelFingerprint: "AB408DD1289E0CCF79057BD28D8F24B3"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "OBJECT"
+        content: !<new>
+          target: "com.google.inject.internal.aop.HiddenClassDefiner"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        suggestedContent: !<new>
+          target: "com.google.inject.internal.aop.HiddenClassDefiner"
+          parameters: []
+          privateConstructor: false
+          createdByTargetCode: false
+        valueType: "com.google.inject.internal.aop.HiddenClassDefiner"
+        uuid: "target"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "hostClass"
+      modelFingerprint: "8FF68982CF1DD0555742E7148555E018"
+      index: 2
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Class"
+        suggestedContent: !<regular>
+          value: "java.lang.Class"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "define_class1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "bytecode"
+      modelFingerprint: "C21F48F5FB80A2865FA7833012921505"
+      index: 3
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "ARRAY"
+        content: !<array>
+          values:
+            0:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "byte"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        suggestedContent: !<array>
+          values:
+            0:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: 0
+              valueType: "byte"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+        valueType: "byte[]"
+        uuid: "define_byte[]1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "THE_UNSAFE"
+      modelFingerprint: "A9CF74671850A954E58B9FCB2F9DB924"
+      index: 4
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "sun.misc.Unsafe"
+          onlyPojoFunctions: false
+          builderPattern: false
+        valueType: "sun.misc.Unsafe"
+        uuid: "<clinit>_unsafe1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      methodExercised:
+        target: "this.THE_UNSAFE"
+        name: "getObject"
+        parameters:
+        - name: "o"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<clinit>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "offset"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "long"
+            uuid: "<clinit>_long1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "getObject(Object,long): Object"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.invoke.MethodHandles$Lookup"
+            onlyPojoFunctions: true
+            builderPattern: false
+          valueType: "java.lang.invoke.MethodHandles$Lookup"
+          uuid: "define_object1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: true
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "trustedLookup"
+      modelFingerprint: "22C2B52EB49B4DA59DB35C18DAF08736"
+      index: 5
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "MOCK"
+        suggestedContent: !<unknown_object>
+          target: "java.lang.invoke.MethodHandles$Lookup"
+          onlyPojoFunctions: true
+          builderPattern: false
+        valueType: "java.lang.invoke.MethodHandles$Lookup"
+        uuid: "define_object1"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: true
+      methodExercised:
+        target: "trustedLookup"
+        name: "in"
+        parameters:
+        - name: "requestedLookupClass"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Class"
+            suggestedContent: !<regular>
+              value: "java.lang.Class"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "define_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        signature: "in(Class): MethodHandles$Lookup"
+        returnValue:
+          sapientType: "MOCK"
+          suggestedContent: !<unknown_object>
+            target: "java.lang.invoke.MethodHandles$Lookup"
+            onlyPojoFunctions: false
+            builderPattern: false
+          valueType: "java.lang.invoke.MethodHandles$Lookup"
+          uuid: "define_methodHandles.Lookup1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "A4BDA6B2F94E11E746C09D7BFDF9AF70"
+      index: 6
+      ignored: false
+      nestedInLoop: false
+      nestedInRecursion: false
+      value:
+        sapientType: "CLASS"
+        content: !<regular>
+          value: "java.lang.Object"
+        valueType: "java.lang.Class"
+        genericValueType: "?"
+        uuid: "define_class2"
+        fixed: false
+        equalsMethodPresent: false
+        explicitCastNeeded: false
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3d0bbb66-c655-3fc9-bcd2-e53aac08c7c7"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.reflect.Method.invoke(java.lang.invoke.MethodHandles$Lookup,java.lang.Object[])\
+        \ : java.lang.Object"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
