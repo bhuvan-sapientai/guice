@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-
   <parent>
     <groupId>com.google.inject</groupId>
     <artifactId>guice-parent</artifactId>
     <version>7.0.1-SNAPSHOT</version>
   </parent>
-
   <artifactId>guice</artifactId>
-
   <name>Google Guice - Core Library</name>
-
   <dependencies>
     <dependency>
       <groupId>jakarta.inject</groupId>
@@ -31,17 +27,11 @@
       <artifactId>error_prone_annotations</artifactId>
       <optional>true</optional>
     </dependency>
-    <!--
-     | ASM is embedded by default by the JarJar build profile
-    -->
     <dependency>
       <groupId>org.ow2.asm</groupId>
       <artifactId>asm</artifactId>
       <optional>true</optional>
     </dependency>
-    <!--
-     | Test dependencies
-    -->
     <dependency>
       <groupId>jakarta.inject</groupId>
       <artifactId>jakarta.inject-tck</artifactId>
@@ -74,47 +64,40 @@
       <artifactId>truth-java8-extension</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.junit.vintage</groupId>
+      <artifactId>junit-vintage-engine</artifactId>
+      <version>5.10.2</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
-
   <build>
     <plugins>
-      <!--
-       | Add standard LICENSE and NOTICE files
-      -->
       <plugin>
         <artifactId>maven-remote-resources-plugin</artifactId>
       </plugin>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
       </plugin>
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
-        <configuration>
-          <!--
-           | Temporarily excluded tests
-          -->
-          <excludes>
-            <exclude>**/*$*</exclude>
-            <exclude>**/OSGiContainerTest*</exclude>
-            <exclude>**/ScopesTest*</exclude>
-            <exclude>**/TypeConversionTest*</exclude>
-          </excludes>
-        </configuration>
         <executions>
           <execution>
             <id>anonymous-class-loading</id>
             <phase>test</phase>
-            <goals><goal>test</goal></goals>
+            <goals>
+              <goal>test</goal>
+            </goals>
             <configuration>
-              <!-- enable ShowHiddenFrames to help tests find AOP frames on Java17 -->
               <argLine>-Dguice_custom_class_loading=ANONYMOUS -XX:+UnlockDiagnosticVMOptions -XX:+ShowHiddenFrames</argLine>
             </configuration>
           </execution>
           <execution>
             <id>child-class-loading</id>
             <phase>test</phase>
-            <goals><goal>test</goal></goals>
+            <goals>
+              <goal>test</goal>
+            </goals>
             <configuration>
               <argLine>-Dguice_custom_class_loading=CHILD</argLine>
             </configuration>
@@ -122,7 +105,9 @@
           <execution>
             <id>without-bytecode-generation</id>
             <phase>test</phase>
-            <goals><goal>test</goal></goals>
+            <goals>
+              <goal>test</goal>
+            </goals>
             <configuration>
               <argLine>-Dguice_bytecode_gen_option=DISABLED</argLine>
             </configuration>
@@ -130,17 +115,23 @@
           <execution>
             <id>with-windows-line-separators</id>
             <phase>test</phase>
-            <goals><goal>test</goal></goals>
+            <goals>
+              <goal>test</goal>
+            </goals>
             <configuration>
-              <!-- enable ShowHiddenFrames to help tests find AOP frames on Java17 -->
               <argLine>-Dline.separator='\r\n' -XX:+UnlockDiagnosticVMOptions -XX:+ShowHiddenFrames</argLine>
             </configuration>
           </execution>
         </executions>
+        <configuration>
+          <excludes>
+            <exclude>**/*$*</exclude>
+            <exclude>**/OSGiContainerTest*</exclude>
+            <exclude>**/ScopesTest*</exclude>
+            <exclude>**/TypeConversionTest*</exclude>
+          </excludes>
+        </configuration>
       </plugin>
-      <!--
-       | Add OSGi manifest
-      -->
       <plugin>
         <groupId>org.apache.felix</groupId>
         <artifactId>maven-bundle-plugin</artifactId>
@@ -152,9 +143,6 @@
           </instructions>
         </configuration>
       </plugin>
-      <!--
-       | Remove duplicate jarjar'd LICENSE and NOTICE
-      -->
       <plugin>
         <artifactId>maven-jar-plugin</artifactId>
         <configuration>
@@ -169,26 +157,16 @@
           </archive>
         </configuration>
       </plugin>
-      <!--
-       | Generate sources jar
-      -->
       <plugin>
         <artifactId>maven-source-plugin</artifactId>
       </plugin>
-      <!--
-       | Generate javadoc jar
-      -->
       <plugin>
         <artifactId>maven-javadoc-plugin</artifactId>
       </plugin>
     </plugins>
   </build>
-
   <profiles>
     <profile>
-      <!--
-       | JarJar build profile: Embed ASM classes under a Guice namespace
-      -->
       <id>guice.with.jarjar</id>
       <activation>
         <property>
@@ -205,7 +183,9 @@
             <executions>
               <execution>
                 <id>jarjar</id>
-                <goals><goal>jarjar</goal></goals>
+                <goals>
+                  <goal>jarjar</goal>
+                </goals>
               </execution>
             </executions>
             <configuration>
@@ -232,9 +212,6 @@
             </configuration>
           </plugin>
           <plugin>
-            <!--
-             | Attach the original non-JarJar'd classes so extensions can compile against them
-            -->
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>build-helper-maven-plugin</artifactId>
             <version>1.8</version>
@@ -260,9 +237,6 @@
       </build>
     </profile>
     <profile>
-      <!--
-       | m2e profile - enable use of JarJar inside Eclipse
-      -->
       <id>m2e</id>
       <activation>
         <property>
@@ -284,9 +258,13 @@
                         <groupId>org.sonatype.plugins</groupId>
                         <artifactId>jarjar-maven-plugin</artifactId>
                         <versionRange>[1.4,)</versionRange>
-                        <goals><goal>jarjar</goal></goals>
+                        <goals>
+                          <goal>jarjar</goal>
+                        </goals>
                       </pluginExecutionFilter>
-                      <action><execute /></action>
+                      <action>
+                        <execute />
+                      </action>
                     </pluginExecution>
                   </pluginExecutions>
                 </lifecycleMappingMetadata>

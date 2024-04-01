@@ -1,0 +1,486 @@
+---
+modelFingerprint: "FB761DB0063575CD513D6AA755179380"
+methods:
+- method:
+    name: "isLoading"
+    signature: "isLoading(com.google.inject.spi.InjectionPoint) : boolean"
+    instructionFingerprint: "FEF893C444A85F134B6995DC92AE314B"
+  paths:
+  - pathId: "path1"
+    testPathName: "isLoadingWhenCacheIsLoadingIp"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl) : void"
+    filledByUser: false
+    modelFingerprint: "983A51C682A706E63BF41371BD186A72"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "C32E34834EF82EA3692EC7FAE47926D0"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "ip"
+      modelFingerprint: "2D8327DF1FE5790BD892BC6DF78E6EEB"
+      index: 2
+      ignored: false
+      valueUuid: "isLoading_injectionPoint1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 3
+      ignored: false
+      valueUuid: "isLoading_boolean1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9ca94860-cb5d-35f1-b8f7-ec071eda7b97"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "cache"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "return cache.isLoading(ip);"
+      lineNumber: 47
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: cache - Method: isLoading"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.ConstructorInjectorStore"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.ConstructorInjectorStore"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.ConstructorInjectorStore"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.InjectionPoint"
+      uuid: "isLoading_injectionPoint1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "isLoading_boolean1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "isLoadingWhenCacheNotIsLoadingIp"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl) : void"
+    filledByUser: false
+    modelFingerprint: "5E8D81792DE8D7F0CCAAA27C031197A5"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "C32E34834EF82EA3692EC7FAE47926D0"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "ip"
+      modelFingerprint: "2D8327DF1FE5790BD892BC6DF78E6EEB"
+      index: 2
+      ignored: false
+      valueUuid: "isLoading_injectionPoint1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      valueUuid: "isLoading_boolean1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "07406e90-65c4-3a1d-917b-6a6b045d4d2e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "cache"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "return cache.isLoading(ip);"
+      lineNumber: 47
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: cache - Method: isLoading"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.ConstructorInjectorStore"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.ConstructorInjectorStore"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.ConstructorInjectorStore"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.InjectionPoint"
+      uuid: "isLoading_injectionPoint1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "isLoading_boolean1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "get"
+    signature: "get(com.google.inject.spi.InjectionPoint,com.google.inject.internal.Errors)\
+      \ : com.google.inject.internal.ConstructorInjector<?>"
+    instructionFingerprint: "ABEE57BB87B500433A331FA013E591A6"
+  paths:
+  - pathId: "path1"
+    testPathName: "getTest"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl) : void"
+    filledByUser: false
+    modelFingerprint: "D316A41774050B31A954A59B2F28F24A"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "C32E34834EF82EA3692EC7FAE47926D0"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "constructorInjector"
+      modelFingerprint: "8BEB1FFB0B7A993CB47E955550117651"
+      index: 2
+      ignored: false
+      valueUuid: "get_injectionPoint1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "errors"
+      modelFingerprint: "E7097EEB42B739132A18C9A0E4D1000E"
+      index: 3
+      ignored: false
+      valueUuid: "get_errors1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3BCF728C97578C433969DF88453CF327"
+      index: 4
+      ignored: false
+      valueUuid: "get_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9c25887d-767d-38e9-b5ae-c2e4012c49be"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "cache"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "return cache.get(constructorInjector, errors);"
+      lineNumber: 53
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: cache - Method: get"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.ConstructorInjectorStore"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.ConstructorInjectorStore"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.ConstructorInjectorStore"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.InjectionPoint"
+      uuid: "get_injectionPoint1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Errors"
+      uuid: "get_errors1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.ConstructorInjector"
+      uuid: "get_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+- method:
+    name: "remove"
+    signature: "remove(com.google.inject.spi.InjectionPoint) : boolean"
+    instructionFingerprint: "76D3BCC6FAF3E295ABC09FCFE87952CB"
+  paths:
+  - pathId: "path1"
+    testPathName: "removeWhenCacheRemoveIp"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl) : void"
+    filledByUser: false
+    modelFingerprint: "2333AD36A99C58C5FD23B775DF3B0D93"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "C32E34834EF82EA3692EC7FAE47926D0"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "ip"
+      modelFingerprint: "2D8327DF1FE5790BD892BC6DF78E6EEB"
+      index: 2
+      ignored: false
+      valueUuid: "remove_injectionPoint1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 3
+      ignored: false
+      valueUuid: "remove_boolean1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5a679105-c4bb-350a-b405-4b8028aac823"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "cache"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "return cache.remove(ip);"
+      lineNumber: 66
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: cache - Method: remove"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.ConstructorInjectorStore"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.ConstructorInjectorStore"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.ConstructorInjectorStore"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.InjectionPoint"
+      uuid: "remove_injectionPoint1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "remove_boolean1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "removeWhenCacheNotRemoveIp"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl) : void"
+    filledByUser: false
+    modelFingerprint: "A3B2B2C626E144C047C0C1C39895EF49"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "C32E34834EF82EA3692EC7FAE47926D0"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "ip"
+      modelFingerprint: "2D8327DF1FE5790BD892BC6DF78E6EEB"
+      index: 2
+      ignored: false
+      valueUuid: "remove_injectionPoint1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      valueUuid: "remove_boolean1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "61a69fac-848e-37bc-bb7e-cf249a8b5033"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "cache"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "return cache.remove(ip);"
+      lineNumber: 66
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: cache - Method: remove"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.ConstructorInjectorStore"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.ConstructorInjectorStore"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.ConstructorInjectorStore"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.InjectionPoint"
+      uuid: "remove_injectionPoint1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "remove_boolean1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false

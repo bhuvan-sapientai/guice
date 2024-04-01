@@ -1,0 +1,947 @@
+---
+modelFingerprint: "EDFE2D81FBF72779AC316FCD164D83AF"
+methods:
+- method:
+    name: "named"
+    signature: "named(java.lang.String) : com.google.inject.name.Named"
+    instructionFingerprint: "AB13731A16097A384BD67F4E493B74D2"
+  paths:
+  - pathId: "path1"
+    testPathName: "namedTest"
+    filledByUser: false
+    modelFingerprint: "1D02CB7F72AB988192D2931C989265AD"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "name"
+      modelFingerprint: "152403AE23B874E1C4B9566F486B9148"
+      index: 1
+      ignored: false
+      valueUuid: "named_string1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E0D95D5BAF2C0E9616ED657EC67ABB07"
+      index: 2
+      ignored: false
+      valueUuid: "named_namedImpl1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "84f1ead8-3f77-3eb1-8861-fb5eeb323541"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "name1"
+      valueType: "java.lang.String"
+      uuid: "named_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.name.NamedImpl"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "name1"
+            valueType: "java.lang.String"
+            uuid: "named_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.name.NamedImpl"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            valueType: "java.lang.String"
+            uuid: "named_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.name.NamedImpl"
+      uuid: "named_namedImpl1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "bindProperties"
+    signature: "bindProperties(com.google.inject.Binder,java.util.Map<java.lang.String,java.lang.String>)\
+      \ : void"
+    instructionFingerprint: "9BC55ED0F72AD71EAA791C99877D8A34"
+  paths:
+  - pathId: "path1"
+    testPathName: "bindPropertiesWhenPropertiesEntrySetIsNotEmpty"
+    filledByUser: false
+    modelFingerprint: "DBBED98036A461C144941045F73FA353"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "binder"
+      modelFingerprint: "7BEC634C775E6887609F5D0EBA55C6D2"
+      index: 1
+      ignored: false
+      valueUuid: "bindProperties_binder1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "properties"
+      modelFingerprint: "230CE0B4E67A14BCB2CDB89F14B2ED8B"
+      index: 2
+      ignored: false
+      valueUuid: "bindProperties_map1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binder"
+      modelFingerprint: "6FC651063C83CC6A69C4CDC78631519B"
+      index: 3
+      ignored: false
+      valueUuid: "bindProperties_binder1"
+      methodExercised:
+        target: "binder"
+        name: "skipSources"
+        parameters:
+        - name: "classesToSkip"
+          valueUuid: "bindProperties_class[]1"
+        signature: "skipSources(Class[]): Binder"
+        returnValueUuid: "bindProperties_binder2"
+        access: 1153
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Key"
+      modelFingerprint: "F0CFAE940E352043A4651AC263F57226"
+      index: 4
+      ignored: false
+      valueUuid: "uuid2"
+      methodExercised:
+        target: "com.google.inject.Key"
+        name: "get"
+        parameters:
+        - name: "type"
+          valueUuid: "uuid1"
+        - name: "annotation"
+          valueUuid: "bindProperties_namedImpl1"
+        signature: "get(Class,NamedImpl): Key"
+        returnValueUuid: "bindProperties_key1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binder"
+      modelFingerprint: "64DE94A8EAE60C58DFE10A02F514EA10"
+      index: 5
+      ignored: false
+      valueUuid: "bindProperties_binder2"
+      methodExercised:
+        target: "binder"
+        name: "bind"
+        parameters:
+        - name: "key"
+          valueUuid: "bindProperties_key1"
+        signature: "bind(Key): LinkedBindingBuilder"
+        returnValueUuid: "bindProperties_linkedBindingBuilder1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "F27798FF9FE36D97850C0D93FB26342B"
+      index: 6
+      ignored: false
+      valueUuid: "bindProperties_linkedBindingBuilder1"
+      methodExercised:
+        target: "com.google.inject.binder.LinkedBindingBuilder"
+        name: "toInstance"
+        parameters:
+        - name: "instance"
+          valueUuid: "bindProperties_object4"
+        signature: "toInstance(String): void"
+        returnValueUuid: "bindProperties_void1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 7
+      ignored: false
+      valueUuid: "uuid3"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1373e4fb-39e9-3c10-a015-d49fe6a1153a"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "bindProperties_binder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.HashMap"
+        parameters: []
+        values:
+        - sapientType: "PAIR"
+          content: !<pair>
+            key:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "propertiesItem1Key1"
+              suggestedContent: !<regular>
+                value: "propertiesItem1Key1"
+              valueType: "java.lang.String"
+              uuid: "bindProperties_object2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "propertiesItem1Value1"
+              suggestedContent: !<regular>
+                value: "propertiesItem1Value1"
+              valueType: "java.lang.String"
+              uuid: "bindProperties_object1Value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          suggestedContent: !<pair>
+            key:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "propertiesItem1Key1"
+              suggestedContent: !<regular>
+                value: "propertiesItem1Key1"
+              valueType: "java.lang.String"
+              uuid: "bindProperties_object2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "propertiesItem1Value1"
+              suggestedContent: !<regular>
+                value: "propertiesItem1Value1"
+              valueType: "java.lang.String"
+              uuid: "bindProperties_object1Value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          valueType: "java.util.Map$Entry"
+          genericValueType: "java.lang.String,java.lang.String"
+          uuid: "bindProperties_object1"
+          fixed: false
+          collectionUuid: "bindProperties_set1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      suggestedContent: !<collection>
+        collectionClass: "java.util.HashMap"
+        parameters: []
+        values:
+        - sapientType: "PAIR"
+          content: !<pair>
+            key:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "propertiesItem1Key1"
+              suggestedContent: !<regular>
+                value: "propertiesItem1Key1"
+              valueType: "java.lang.String"
+              uuid: "bindProperties_object2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "propertiesItem1Value1"
+              suggestedContent: !<regular>
+                value: "propertiesItem1Value1"
+              valueType: "java.lang.String"
+              uuid: "bindProperties_object1Value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          suggestedContent: !<pair>
+            key:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "propertiesItem1Key1"
+              suggestedContent: !<regular>
+                value: "propertiesItem1Key1"
+              valueType: "java.lang.String"
+              uuid: "bindProperties_object2"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            value:
+              sapientType: "BASIC"
+              content: !<regular>
+                value: "propertiesItem1Value1"
+              suggestedContent: !<regular>
+                value: "propertiesItem1Value1"
+              valueType: "java.lang.String"
+              uuid: "bindProperties_object1Value"
+              fixed: false
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          valueType: "java.util.Map$Entry"
+          genericValueType: "java.lang.String,java.lang.String"
+          uuid: "bindProperties_object1"
+          fixed: false
+          collectionUuid: "bindProperties_set1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      valueType: "java.util.Map"
+      genericValueType: "java.lang.String,java.lang.String"
+      uuid: "bindProperties_map1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "bindProperties_binder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "bindProperties_binder2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "com.google.inject.name.Names"
+            valueType: "java.lang.Class"
+            genericValueType: "com.google.inject.name.Names"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<array>
+        values:
+          0:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "com.google.inject.name.Names"
+            valueType: "java.lang.Class"
+            genericValueType: "com.google.inject.name.Names"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "java.lang.Class[]"
+      genericValueType: "com.google.inject.name.Names"
+      uuid: "bindProperties_class[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "REAL"
+      valueType: "com.google.inject.Key"
+      uuid: "uuid2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.inject.Key"
+        method: "get"
+        methodParameters:
+        - value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.String"
+            valueType: "java.lang.Class"
+            genericValueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "com.google.inject.name.NamedImpl"
+              parameters:
+              - name: "value"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "propertiesItem1Key1"
+                  suggestedContent: !<regular>
+                    value: "propertiesItem1Key1"
+                  valueType: "java.lang.String"
+                  uuid: "bindProperties_object3"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "com.google.inject.name.NamedImpl"
+              parameters:
+              - name: "value"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "propertiesItem1Key1"
+                  suggestedContent: !<regular>
+                    value: "propertiesItem1Key1"
+                  valueType: "java.lang.String"
+                  uuid: "bindProperties_object3"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "com.google.inject.name.NamedImpl"
+            uuid: "bindProperties_namedImpl1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "com.google.inject.Key"
+        method: "get"
+        methodParameters:
+        - value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.String"
+            valueType: "java.lang.Class"
+            genericValueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - value:
+            sapientType: "OBJECT"
+            suggestedContent: !<new>
+              target: "com.google.inject.name.NamedImpl"
+              parameters:
+              - name: "value"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "propertiesItem1Key1"
+                  suggestedContent: !<regular>
+                    value: "propertiesItem1Key1"
+                  valueType: "java.lang.String"
+                  uuid: "bindProperties_object3"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "com.google.inject.name.NamedImpl"
+            uuid: "bindProperties_namedImpl1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.Key"
+      uuid: "bindProperties_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.String"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.String"
+      uuid: "uuid1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.name.NamedImpl"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "propertiesItem1Key1"
+            suggestedContent: !<regular>
+              value: "propertiesItem1Key1"
+            valueType: "java.lang.String"
+            uuid: "bindProperties_object3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.name.NamedImpl"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "propertiesItem1Key1"
+            suggestedContent: !<regular>
+              value: "propertiesItem1Key1"
+            valueType: "java.lang.String"
+            uuid: "bindProperties_object3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.name.NamedImpl"
+      uuid: "bindProperties_namedImpl1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "bindProperties_binder2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.binder.LinkedBindingBuilder"
+      uuid: "bindProperties_linkedBindingBuilder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.inject.Key"
+        method: "get"
+        methodParameters:
+        - value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.String"
+            valueType: "java.lang.Class"
+            genericValueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "com.google.inject.name.NamedImpl"
+              parameters:
+              - name: "value"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "propertiesItem1Key1"
+                  suggestedContent: !<regular>
+                    value: "propertiesItem1Key1"
+                  valueType: "java.lang.String"
+                  uuid: "bindProperties_object3"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "com.google.inject.name.NamedImpl"
+              parameters:
+              - name: "value"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "propertiesItem1Key1"
+                  suggestedContent: !<regular>
+                    value: "propertiesItem1Key1"
+                  valueType: "java.lang.String"
+                  uuid: "bindProperties_object3"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "com.google.inject.name.NamedImpl"
+            uuid: "bindProperties_namedImpl1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "com.google.inject.Key"
+        method: "get"
+        methodParameters:
+        - value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.String"
+            valueType: "java.lang.Class"
+            genericValueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - value:
+            sapientType: "OBJECT"
+            suggestedContent: !<new>
+              target: "com.google.inject.name.NamedImpl"
+              parameters:
+              - name: "value"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "propertiesItem1Key1"
+                  suggestedContent: !<regular>
+                    value: "propertiesItem1Key1"
+                  valueType: "java.lang.String"
+                  uuid: "bindProperties_object3"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "com.google.inject.name.NamedImpl"
+            uuid: "bindProperties_namedImpl1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.Key"
+      uuid: "bindProperties_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.binder.LinkedBindingBuilder"
+      uuid: "bindProperties_linkedBindingBuilder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "bindProperties_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "propertiesItem1Value1"
+      suggestedContent: !<regular>
+        value: "propertiesItem1Value1"
+      valueType: "java.lang.String"
+      uuid: "bindProperties_object4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid3"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "bindPropertiesWhenPropertiesEntrySetIsEmpty"
+    filledByUser: false
+    modelFingerprint: "6D0EE80DF3913ADBB40EBFCF1AE49611"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "5cb8c600-1b74-35da-89a4-86077bf2d1c2"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+- method:
+    name: "bindProperties"
+    signature: "bindProperties(com.google.inject.Binder,java.util.Properties) : void"
+    instructionFingerprint: "EA77A54539689190DFA7DA2EB8FD24E7"
+  paths:
+  - pathId: "path1"
+    testPathName: "bindProperties1WhenEHasMoreElements"
+    filledByUser: false
+    modelFingerprint: "72242266E6678A06549646BDA014E518"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "binder"
+      modelFingerprint: "C324ECF14902F2238945D7606C2D0F77"
+      index: 1
+      ignored: false
+      valueUuid: "bindProperties_binder1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "properties"
+      modelFingerprint: "C6C840B1DEAC03B658AD0FD0824EE76C"
+      index: 2
+      ignored: false
+      valueUuid: "bindProperties_properties1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binder"
+      modelFingerprint: "FDA275370715AE8095E2F7972C01E389"
+      index: 3
+      ignored: false
+      valueUuid: "bindProperties_binder1"
+      methodExercised:
+        target: "binder"
+        name: "skipSources"
+        parameters:
+        - name: "classesToSkip"
+          valueUuid: "bindProperties_class[]1"
+        signature: "skipSources(Class[]): Binder"
+        returnValueUuid: "bindProperties_binder2"
+        access: 1153
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Key"
+      modelFingerprint: "7181E405D926C77627043F93A15A53A3"
+      index: 4
+      ignored: false
+      valueUuid: "uuid2"
+      methodExercised:
+        target: "com.google.inject.Key"
+        name: "get"
+        parameters:
+        - name: "type"
+          valueUuid: "uuid1"
+        - name: "annotation"
+          valueUuid: "bindProperties_namedImpl1"
+        signature: "get(Class,NamedImpl): Key"
+        returnValueUuid: "bindProperties_key1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binder"
+      modelFingerprint: "DA8800B94310D664A3A1A16E15BD50C9"
+      index: 5
+      ignored: false
+      valueUuid: "bindProperties_binder2"
+      methodExercised:
+        target: "binder"
+        name: "bind"
+        parameters:
+        - name: "key"
+          valueUuid: "bindProperties_key1"
+        signature: "bind(Key): LinkedBindingBuilder"
+        returnValueUuid: "uuid3"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1544C3243427A58A5AE91A88CC628F77"
+      index: 6
+      ignored: false
+      valueUuid: "uuid4"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8f85fea1-e843-3be1-80cd-39beb8adeed3"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.Properties.propertyNames() : java.util.Enumeration<?>"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "bindProperties_binder1"
+      fixed: false
+      nameForMock: "Binder"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      suggestedContent: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Properties"
+      uuid: "bindProperties_properties1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "bindProperties_binder1"
+      fixed: false
+      nameForMock: "Binder"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      valueType: "com.google.inject.Binder"
+      uuid: "bindProperties_binder2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "com.google.inject.name.Names"
+            valueType: "java.lang.Class"
+            genericValueType: "com.google.inject.name.Names"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<array>
+        values:
+          0:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "com.google.inject.name.Names"
+            valueType: "java.lang.Class"
+            genericValueType: "com.google.inject.name.Names"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "java.lang.Class[]"
+      genericValueType: "com.google.inject.name.Names"
+      uuid: "bindProperties_class[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      uuid: "uuid2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      uuid: "bindProperties_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.String"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.String"
+      uuid: "uuid1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.name.NamedImpl"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "value1"
+            valueType: "java.lang.String"
+            uuid: "bindProperties_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: true
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.name.NamedImpl"
+        parameters:
+        - name: "value"
+          value:
+            sapientType: "BASIC"
+            valueType: "java.lang.String"
+            uuid: "bindProperties_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: true
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.name.NamedImpl"
+      uuid: "bindProperties_namedImpl1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      valueType: "com.google.inject.Binder"
+      uuid: "bindProperties_binder2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.NullPointerException"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.NullPointerException"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.NullPointerException"
+      uuid: "uuid3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      uuid: "bindProperties_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.NullPointerException"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.NullPointerException"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.NullPointerException"
+      uuid: "uuid4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "bindProperties1WhenENotHasMoreElements"
+    filledByUser: false
+    modelFingerprint: "EAC4FD453689C1590DD3C9048980597A"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "45c37d5c-4529-3e51-bf1e-0334dcc3c778"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.Properties.propertyNames() : java.util.Enumeration<?>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []

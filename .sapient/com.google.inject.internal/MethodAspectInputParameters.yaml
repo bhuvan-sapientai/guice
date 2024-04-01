@@ -1,0 +1,1150 @@
+---
+modelFingerprint: "8D603E702F6B623E7DB04E36B6B83255"
+methods:
+- method:
+    name: "fromBinding"
+    signature: "fromBinding(com.google.inject.spi.InterceptorBinding) : com.google.inject.internal.MethodAspect"
+    instructionFingerprint: "F16ADEC1DD2C65D639930453ED45C2D5"
+  paths:
+  - pathId: "path1"
+    testPathName: "fromBindingTest"
+    filledByUser: false
+    modelFingerprint: "3F0EFF55B98BFBF8C2A8F032D2EF9474"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "binding"
+      modelFingerprint: "E97EF61009538C34058C4A22C13A5BD3"
+      index: 1
+      ignored: false
+      valueUuid: "fromBinding_interceptorBinding1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binding"
+      modelFingerprint: "8E110EDB204AC76921175431E0F0943B"
+      index: 2
+      ignored: false
+      valueUuid: "fromBinding_interceptorBinding1"
+      methodExercised:
+        target: "binding"
+        name: "getClassMatcher"
+        parameters: []
+        signature: "getClassMatcher(): Matcher"
+        returnValueUuid: "fromBinding_matcher1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binding"
+      modelFingerprint: "A10858B3BBA5D7052F2A4B93CA4276CD"
+      index: 3
+      ignored: false
+      valueUuid: "fromBinding_interceptorBinding1"
+      methodExercised:
+        target: "binding"
+        name: "getMethodMatcher"
+        parameters: []
+        signature: "getMethodMatcher(): Matcher"
+        returnValueUuid: "fromBinding_matcher2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binding"
+      modelFingerprint: "DE7177807FF59FEC752B9D321756EA78"
+      index: 4
+      ignored: false
+      valueUuid: "fromBinding_interceptorBinding1"
+      methodExercised:
+        target: "binding"
+        name: "getInterceptors"
+        parameters: []
+        signature: "getInterceptors(): List"
+        returnValueUuid: "fromBinding_list1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "F19F0FAF1D021425FD29B6346ACF5F4D"
+      index: 5
+      ignored: false
+      valueUuid: "fromBinding_methodAspect1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3238e195-6847-32d6-9cec-0373d5d532f7"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.matcher.Matcher<?\
+        \ super java.lang.Class<?>>,java.lang.String) : com.google.inject.matcher.Matcher"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.InterceptorBinding"
+      uuid: "fromBinding_interceptorBinding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.InterceptorBinding"
+      uuid: "fromBinding_interceptorBinding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.matcher.Matcher"
+      genericValueType: "? super java.lang.Class<?>"
+      uuid: "fromBinding_matcher1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.InterceptorBinding"
+      uuid: "fromBinding_interceptorBinding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.matcher.Matcher"
+      genericValueType: "? super java.lang.reflect.Method"
+      uuid: "fromBinding_matcher2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.InterceptorBinding"
+      uuid: "fromBinding_interceptorBinding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      suggestedContent: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "org.aopalliance.intercept.MethodInterceptor"
+      uuid: "fromBinding_list1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MethodAspect"
+        parameters:
+        - name: "classMatcher"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super java.lang.Class<?>"
+            uuid: "fromBinding_matcher1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "methodMatcher"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super java.lang.reflect.Method"
+            uuid: "fromBinding_matcher2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "interceptors"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "org.aopalliance.intercept.MethodInterceptor"
+            uuid: "fromBinding_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MethodAspect"
+        parameters:
+        - name: "classMatcher"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.matcher.Matcher"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super java.lang.Class<?>"
+            uuid: "fromBinding_matcher1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "methodMatcher"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.matcher.Matcher"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super java.lang.reflect.Method"
+            uuid: "fromBinding_matcher2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "interceptors"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "org.aopalliance.intercept.MethodInterceptor"
+            uuid: "fromBinding_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.internal.MethodAspect"
+      uuid: "fromBinding_methodAspect1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "matches"
+    signature: "matches(java.lang.Class<?>) : boolean"
+    instructionFingerprint: "6A020E5FA2D300C8B5185A32086BF7FE"
+  paths:
+  - pathId: "path1"
+    testPathName: "matchesWhenClassMatcherMatchesClazz"
+    constructorSignature: "<init>(com.google.inject.matcher.Matcher<? super java.lang.Class<?>>,com.google.inject.matcher.Matcher<?\
+      \ super java.lang.reflect.Method>,java.util.List<org.aopalliance.intercept.MethodInterceptor>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "F70972F8B3FF0A134D49AD0A02AC1D91"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "E984AE2CF4E4477594AB55173619A181"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "clazz"
+      modelFingerprint: "9E7A2CB6015E8240A40055F307E0321C"
+      index: 2
+      ignored: false
+      valueUuid: "matches_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "classMatcher"
+      modelFingerprint: "53B331016F98B2B7FB11313A588145B3"
+      index: 3
+      ignored: false
+      valueUuid: "<init>_matcher3"
+      methodExercised:
+        target: "this.classMatcher"
+        name: "matches"
+        parameters:
+        - name: "t"
+          valueUuid: "matches_class1"
+        signature: "matches(Class): boolean"
+        returnValueUuid: "matches_boolean1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      valueUuid: "matches_boolean1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3c84ef95-107d-3afa-bc3b-457f5660da54"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.matcher.Matcher<?\
+        \ super java.lang.Class<?>>,java.lang.String) : com.google.inject.matcher.Matcher"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MethodAspect"
+        parameters:
+        - name: "classMatcher"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super java.lang.Class<?>"
+            uuid: "<init>_matcher1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "methodMatcher"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super java.lang.reflect.Method"
+            uuid: "<init>_matcher2"
+            fixed: false
+            nameForMock: "toUpperCase"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "interceptors"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "org.aopalliance.intercept.MethodInterceptor"
+            uuid: "<init>_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MethodAspect"
+        parameters:
+        - name: "classMatcher"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super java.lang.Class<?>"
+            uuid: "<init>_matcher1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "methodMatcher"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super java.lang.reflect.Method"
+            uuid: "<init>_matcher2"
+            fixed: false
+            nameForMock: "toUpperCase"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "interceptors"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "org.aopalliance.intercept.MethodInterceptor"
+            uuid: "<init>_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.MethodAspect"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.String"
+      suggestedContent: !<regular>
+        value: "java.lang.String"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "matches_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.matcher.Matcher"
+      genericValueType: "? super java.lang.Class<?>"
+      uuid: "<init>_matcher3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "matches_boolean1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.String"
+      suggestedContent: !<regular>
+        value: "java.lang.String"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "matches_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "matches_boolean1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "matchesWhenClassMatcherNotMatchesClazz"
+    constructorSignature: "<init>(com.google.inject.matcher.Matcher<? super java.lang.Class<?>>,com.google.inject.matcher.Matcher<?\
+      \ super java.lang.reflect.Method>,java.util.List<org.aopalliance.intercept.MethodInterceptor>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "2411AADD70B1BBCAB307E0E4F7233B3D"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "E984AE2CF4E4477594AB55173619A181"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "clazz"
+      modelFingerprint: "9E7A2CB6015E8240A40055F307E0321C"
+      index: 2
+      ignored: false
+      valueUuid: "matches_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "classMatcher"
+      modelFingerprint: "8CCFBFFDAA15C7B1C3AB5BA2BA26ED72"
+      index: 3
+      ignored: false
+      valueUuid: "<init>_matcher3"
+      methodExercised:
+        target: "this.classMatcher"
+        name: "matches"
+        parameters:
+        - name: "t"
+          valueUuid: "matches_class1"
+        signature: "matches(Class): boolean"
+        returnValueUuid: "matches_boolean1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      valueUuid: "matches_boolean1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "76575752-c2d9-3c20-b2d5-a5f77056ae94"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.matcher.Matcher<?\
+        \ super java.lang.Class<?>>,java.lang.String) : com.google.inject.matcher.Matcher"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MethodAspect"
+        parameters:
+        - name: "classMatcher"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super java.lang.Class<?>"
+            uuid: "<init>_matcher1"
+            fixed: false
+            nameForMock: "false"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "methodMatcher"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super java.lang.reflect.Method"
+            uuid: "<init>_matcher2"
+            fixed: false
+            nameForMock: "true"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "interceptors"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "org.aopalliance.intercept.MethodInterceptor"
+            uuid: "<init>_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MethodAspect"
+        parameters:
+        - name: "classMatcher"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super java.lang.Class<?>"
+            uuid: "<init>_matcher1"
+            fixed: false
+            nameForMock: "false"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "methodMatcher"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super java.lang.reflect.Method"
+            uuid: "<init>_matcher2"
+            fixed: false
+            nameForMock: "true"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "interceptors"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "org.aopalliance.intercept.MethodInterceptor"
+            uuid: "<init>_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.MethodAspect"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.String"
+      suggestedContent: !<regular>
+        value: "java.lang.String"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "matches_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.matcher.Matcher"
+      genericValueType: "? super java.lang.Class<?>"
+      uuid: "<init>_matcher3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "matches_boolean1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.String"
+      suggestedContent: !<regular>
+        value: "java.lang.String"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "matches_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "matches_boolean1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "matches"
+    signature: "matches(java.lang.reflect.Method) : boolean"
+    instructionFingerprint: "3BA84E197ED70241D5B4988F458175A9"
+  paths:
+  - pathId: "path1"
+    testPathName: "matches1WhenMethodMatcherMatchesMethod"
+    constructorSignature: "<init>(com.google.inject.matcher.Matcher<? super java.lang.Class<?>>,com.google.inject.matcher.Matcher<?\
+      \ super java.lang.reflect.Method>,java.util.List<org.aopalliance.intercept.MethodInterceptor>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "16FD7B29F8CF19731EB6C5F836D25B6F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "E984AE2CF4E4477594AB55173619A181"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "method"
+      modelFingerprint: "EC72CB69D7EE462C1BC46C3A2CCFE6AD"
+      index: 2
+      ignored: false
+      valueUuid: "matches_method1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "methodMatcher"
+      modelFingerprint: "6A42460B2D9C2A66D13DC214E44A50C2"
+      index: 3
+      ignored: false
+      valueUuid: "<init>_matcher4"
+      methodExercised:
+        target: "this.methodMatcher"
+        name: "matches"
+        parameters:
+        - name: "t"
+          valueUuid: "matches_method1"
+        signature: "matches(Method): boolean"
+        returnValueUuid: "matches_boolean1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 4
+      ignored: false
+      valueUuid: "matches_boolean1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3b5b03f8-5a44-3ea7-af28-d92c38752223"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.matcher.Matcher<?\
+        \ super java.lang.Class<?>>,java.lang.String) : com.google.inject.matcher.Matcher"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MethodAspect"
+        parameters:
+        - name: "classMatcher"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super java.lang.Class<?>"
+            uuid: "<init>_matcher1"
+            fixed: false
+            nameForMock: "true"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "methodMatcher"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super java.lang.reflect.Method"
+            uuid: "<init>_matcher2"
+            fixed: false
+            nameForMock: "true"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "interceptors"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "org.aopalliance.intercept.MethodInterceptor"
+            uuid: "<init>_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MethodAspect"
+        parameters:
+        - name: "classMatcher"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super java.lang.Class<?>"
+            uuid: "<init>_matcher1"
+            fixed: false
+            nameForMock: "true"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "methodMatcher"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super java.lang.reflect.Method"
+            uuid: "<init>_matcher2"
+            fixed: false
+            nameForMock: "true"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "interceptors"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "org.aopalliance.intercept.MethodInterceptor"
+            uuid: "<init>_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.MethodAspect"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "matches_method1"
+      fixed: false
+      nameForMock: "someMethod"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.matcher.Matcher"
+      genericValueType: "? super java.lang.reflect.Method"
+      uuid: "<init>_matcher4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "matches_boolean1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "matches_method1"
+      fixed: false
+      nameForMock: "someMethod"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "matches_boolean1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "matches1WhenMethodMatcherNotMatchesMethod"
+    constructorSignature: "<init>(com.google.inject.matcher.Matcher<? super java.lang.Class<?>>,com.google.inject.matcher.Matcher<?\
+      \ super java.lang.reflect.Method>,java.util.List<org.aopalliance.intercept.MethodInterceptor>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "7AB03005E4E74C4282F198AE1765D7D5"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "E984AE2CF4E4477594AB55173619A181"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "method"
+      modelFingerprint: "EC72CB69D7EE462C1BC46C3A2CCFE6AD"
+      index: 2
+      ignored: false
+      valueUuid: "matches_method1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "methodMatcher"
+      modelFingerprint: "DF204BFC80891DBFD1B671B49932AED1"
+      index: 3
+      ignored: false
+      valueUuid: "<init>_matcher4"
+      methodExercised:
+        target: "this.methodMatcher"
+        name: "matches"
+        parameters:
+        - name: "t"
+          valueUuid: "matches_method1"
+        signature: "matches(Method): boolean"
+        returnValueUuid: "matches_boolean1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 4
+      ignored: false
+      valueUuid: "matches_boolean1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c89b7c70-b21e-38be-8ec2-752de7ac6b8f"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.matcher.Matcher<?\
+        \ super java.lang.Class<?>>,java.lang.String) : com.google.inject.matcher.Matcher"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MethodAspect"
+        parameters:
+        - name: "classMatcher"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super java.lang.Class<?>"
+            uuid: "<init>_matcher1"
+            fixed: false
+            nameForMock: "true"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "methodMatcher"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super java.lang.reflect.Method"
+            uuid: "<init>_matcher2"
+            fixed: false
+            nameForMock: "false"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "interceptors"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "org.aopalliance.intercept.MethodInterceptor"
+            uuid: "<init>_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MethodAspect"
+        parameters:
+        - name: "classMatcher"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super java.lang.Class<?>"
+            uuid: "<init>_matcher1"
+            fixed: false
+            nameForMock: "true"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "methodMatcher"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super java.lang.reflect.Method"
+            uuid: "<init>_matcher2"
+            fixed: false
+            nameForMock: "false"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "interceptors"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "org.aopalliance.intercept.MethodInterceptor"
+            uuid: "<init>_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.MethodAspect"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "matches_method1"
+      fixed: false
+      nameForMock: "someMethod"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.matcher.Matcher"
+      genericValueType: "? super java.lang.reflect.Method"
+      uuid: "<init>_matcher4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "matches_boolean1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "matches_method1"
+      fixed: false
+      nameForMock: "someMethod"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "matches_boolean1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "interceptors"
+    signature: "interceptors() : java.util.List<org.aopalliance.intercept.MethodInterceptor>"
+    instructionFingerprint: "EDC5A365DF01D3D2D52F5BDEB322D6F9"
+  paths:
+  - pathId: "path1"
+    testPathName: "interceptorsTest"
+    constructorSignature: "<init>(com.google.inject.matcher.Matcher<? super java.lang.Class<?>>,com.google.inject.matcher.Matcher<?\
+      \ super java.lang.reflect.Method>,java.util.List<org.aopalliance.intercept.MethodInterceptor>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "7A77CA4A45DC259480AC25CD3E4FDC3D"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "E984AE2CF4E4477594AB55173619A181"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E7E740E2465EC5E78E9625C43B9CB637"
+      index: 2
+      ignored: false
+      valueUuid: "<init>_list2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6ffb8980-063d-3f75-9704-8dba1eced1b8"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.matcher.Matcher<?\
+        \ super java.lang.Class<?>>,java.lang.String) : com.google.inject.matcher.Matcher"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MethodAspect"
+        parameters:
+        - name: "classMatcher"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super java.lang.Class<?>"
+            uuid: "<init>_matcher1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "methodMatcher"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super java.lang.reflect.Method"
+            uuid: "<init>_matcher2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "interceptors"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "org.aopalliance.intercept.MethodInterceptor"
+            uuid: "<init>_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MethodAspect"
+        parameters:
+        - name: "classMatcher"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super java.lang.Class<?>"
+            uuid: "<init>_matcher1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "methodMatcher"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super java.lang.reflect.Method"
+            uuid: "<init>_matcher2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "interceptors"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "org.aopalliance.intercept.MethodInterceptor"
+            uuid: "<init>_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.MethodAspect"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      suggestedContent: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "org.aopalliance.intercept.MethodInterceptor"
+      uuid: "<init>_list2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false

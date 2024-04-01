@@ -1,0 +1,4086 @@
+---
+modelFingerprint: "CC9982805E1C3C7164075FC18C72A16A"
+methods:
+- method:
+    name: "getUnsafe"
+    signature: "getUnsafe() : sun.misc.Unsafe"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    instructionFingerprint: "C9352DF70B1F1F35763F694662C7FCD4"
+  paths:
+  - pathId: "path1"
+    testPathName: "getUnsafeTest"
+    filledByUser: false
+    modelFingerprint: "7B7185A06E5B88357CC5173B973311FB"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "Unsafe"
+      modelFingerprint: "1E97593DDEFBC1E6D15B722870749483"
+      index: 1
+      ignored: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "sun.misc.Unsafe"
+        name: "getUnsafe"
+        parameters: []
+        signature: "getUnsafe(): Unsafe"
+        returnValueUuid: "getUnsafe_unsafe1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1089FBBD05130A85FDF8C57A296B1BE5"
+      index: 2
+      ignored: false
+      valueUuid: "getUnsafe_unsafe1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5fd14203-863a-3e18-886d-f84c86d883d3"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "sun.misc.Unsafe"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "sun.misc.Unsafe"
+      uuid: "getUnsafe_unsafe1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "sun.misc.Unsafe"
+      uuid: "getUnsafe_unsafe1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "getUnsafeWhenKNotIsInstanceXThrowsNoSuchFieldError"
+    filledByUser: false
+    modelFingerprint: "C2AA6ADF3A865C801912DCA87909B10F"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "java.lang.SecurityException"
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "Unsafe"
+      modelFingerprint: "1E97593DDEFBC1E6D15B722870749483"
+      index: 1
+      ignored: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      valueUuid: "uuid2"
+      methodExercised:
+        target: "sun.misc.Unsafe"
+        name: "getUnsafe"
+        parameters: []
+        signature: "getUnsafe(): Unsafe"
+        returnValueUuid: "getUnsafe_unsafe1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "k"
+      modelFingerprint: "7ACD339434D1BDFC442498745C8158A1"
+      index: 2
+      ignored: false
+      valueUuid: "uuid3"
+      methodExercised:
+        target: "k"
+        name: "getDeclaredFields"
+        parameters: []
+        throwsExceptions:
+        - "java.lang.SecurityException"
+        signature: "getDeclaredFields(): Field[] throws java.lang.SecurityException"
+        returnValueUuid: "getUnsafe_field[]1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "f"
+      modelFingerprint: "68BCB005351B71189B4747C1D02EA7A9"
+      index: 3
+      ignored: false
+      valueUuid: "getUnsafe_field[]1-item0"
+      methodExercised:
+        target: "f"
+        name: "get"
+        parameters:
+        - name: "caller"
+          valueUuid: "uuid4"
+        throwsExceptions:
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.IllegalAccessException"
+        signature: "get(not-detected): Object throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException"
+        returnValueUuid: "getUnsafe_object1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "f"
+      modelFingerprint: "D3B63DA25A9A81648294E04D7537EEAC"
+      index: 4
+      ignored: false
+      valueUuid: "getUnsafe_field[]1-item1"
+      methodExercised:
+        target: "f"
+        name: "get"
+        parameters:
+        - name: "caller"
+          valueUuid: "uuid5"
+        throwsExceptions:
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.IllegalAccessException"
+        signature: "get(not-detected): Object throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException"
+        returnValueUuid: "getUnsafe_object2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "f"
+      modelFingerprint: "ABABA88902ED5D72857E3BB19D330034"
+      index: 5
+      ignored: false
+      valueUuid: "getUnsafe_field[]1-item2"
+      methodExercised:
+        target: "f"
+        name: "get"
+        parameters:
+        - name: "caller"
+          valueUuid: "uuid6"
+        throwsExceptions:
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.IllegalAccessException"
+        signature: "get(not-detected): Object throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException"
+        returnValueUuid: "getUnsafe_object3"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "f"
+      modelFingerprint: "1B3990FB3A9111FCE235E5303D3FB942"
+      index: 6
+      ignored: false
+      valueUuid: "getUnsafe_field[]1-item3"
+      methodExercised:
+        target: "f"
+        name: "get"
+        parameters:
+        - name: "caller"
+          valueUuid: "uuid7"
+        throwsExceptions:
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.IllegalAccessException"
+        signature: "get(not-detected): Object throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException"
+        returnValueUuid: "getUnsafe_object4"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "f"
+      modelFingerprint: "C7A0A9C1A78D7AB4C109A343A88926D8"
+      index: 7
+      ignored: false
+      valueUuid: "getUnsafe_field[]1-item4"
+      methodExercised:
+        target: "f"
+        name: "get"
+        parameters:
+        - name: "caller"
+          valueUuid: "uuid8"
+        throwsExceptions:
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.IllegalAccessException"
+        signature: "get(not-detected): Object throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException"
+        returnValueUuid: "getUnsafe_object5"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "f"
+      modelFingerprint: "FE1235C64ED74F41F9B568979B44B521"
+      index: 8
+      ignored: false
+      valueUuid: "getUnsafe_field[]1-item5"
+      methodExercised:
+        target: "f"
+        name: "get"
+        parameters:
+        - name: "caller"
+          valueUuid: "uuid9"
+        throwsExceptions:
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.IllegalAccessException"
+        signature: "get(not-detected): Object throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException"
+        returnValueUuid: "getUnsafe_object6"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "f"
+      modelFingerprint: "399EC0D507E8DD927440CCFC657A237C"
+      index: 9
+      ignored: false
+      valueUuid: "getUnsafe_field[]1-item6"
+      methodExercised:
+        target: "f"
+        name: "get"
+        parameters:
+        - name: "caller"
+          valueUuid: "uuid10"
+        throwsExceptions:
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.IllegalAccessException"
+        signature: "get(not-detected): Object throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException"
+        returnValueUuid: "getUnsafe_object7"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "f"
+      modelFingerprint: "C3F2D480C8E5EED2BA989D3B43CA5F63"
+      index: 10
+      ignored: false
+      valueUuid: "getUnsafe_field[]1-item7"
+      methodExercised:
+        target: "f"
+        name: "get"
+        parameters:
+        - name: "caller"
+          valueUuid: "uuid11"
+        throwsExceptions:
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.IllegalAccessException"
+        signature: "get(not-detected): Object throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException"
+        returnValueUuid: "getUnsafe_object8"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "f"
+      modelFingerprint: "CD53029792EFE9AD1E9096739357BA98"
+      index: 11
+      ignored: false
+      valueUuid: "getUnsafe_field[]1-item8"
+      methodExercised:
+        target: "f"
+        name: "get"
+        parameters:
+        - name: "caller"
+          valueUuid: "uuid12"
+        throwsExceptions:
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.IllegalAccessException"
+        signature: "get(not-detected): Object throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException"
+        returnValueUuid: "getUnsafe_object9"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "f"
+      modelFingerprint: "9D9E2E66CA21D78E9316EF70716CB3EF"
+      index: 12
+      ignored: false
+      valueUuid: "getUnsafe_field[]1-item9"
+      methodExercised:
+        target: "f"
+        name: "get"
+        parameters:
+        - name: "caller"
+          valueUuid: "uuid13"
+        throwsExceptions:
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.IllegalAccessException"
+        signature: "get(not-detected): Object throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException"
+        returnValueUuid: "getUnsafe_object10"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "f"
+      modelFingerprint: "C788A8334F1E92DF4AA53D74D9ACB92E"
+      index: 13
+      ignored: false
+      valueUuid: "getUnsafe_field[]1-item10"
+      methodExercised:
+        target: "f"
+        name: "get"
+        parameters:
+        - name: "caller"
+          valueUuid: "uuid14"
+        throwsExceptions:
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.IllegalAccessException"
+        signature: "get(not-detected): Object throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException"
+        returnValueUuid: "getUnsafe_object11"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "f"
+      modelFingerprint: "190B47EFBE11CED6A6D669B2C8E872C8"
+      index: 14
+      ignored: false
+      valueUuid: "getUnsafe_field[]1-item11"
+      methodExercised:
+        target: "f"
+        name: "get"
+        parameters:
+        - name: "caller"
+          valueUuid: "uuid15"
+        throwsExceptions:
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.IllegalAccessException"
+        signature: "get(not-detected): Object throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException"
+        returnValueUuid: "getUnsafe_object12"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "f"
+      modelFingerprint: "012D063D097842033C039A7D023738FF"
+      index: 15
+      ignored: false
+      valueUuid: "getUnsafe_field[]1-item12"
+      methodExercised:
+        target: "f"
+        name: "get"
+        parameters:
+        - name: "caller"
+          valueUuid: "uuid16"
+        throwsExceptions:
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.IllegalAccessException"
+        signature: "get(not-detected): Object throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException"
+        returnValueUuid: "getUnsafe_object13"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "f"
+      modelFingerprint: "20FF478A4D6C0A1ABA852F08E2A9EFDF"
+      index: 16
+      ignored: false
+      valueUuid: "getUnsafe_field[]1-item13"
+      methodExercised:
+        target: "f"
+        name: "get"
+        parameters:
+        - name: "caller"
+          valueUuid: "uuid17"
+        throwsExceptions:
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.IllegalAccessException"
+        signature: "get(not-detected): Object throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException"
+        returnValueUuid: "getUnsafe_object14"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "f"
+      modelFingerprint: "EE7D873F1AFF3EE5C8A9EF79E864F319"
+      index: 17
+      ignored: false
+      valueUuid: "getUnsafe_field[]1-item14"
+      methodExercised:
+        target: "f"
+        name: "get"
+        parameters:
+        - name: "caller"
+          valueUuid: "uuid18"
+        throwsExceptions:
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.IllegalAccessException"
+        signature: "get(not-detected): Object throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException"
+        returnValueUuid: "getUnsafe_object15"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "f"
+      modelFingerprint: "5728513CDF87ACC0B037A12FD6D350DC"
+      index: 18
+      ignored: false
+      valueUuid: "getUnsafe_field[]1-item15"
+      methodExercised:
+        target: "f"
+        name: "get"
+        parameters:
+        - name: "caller"
+          valueUuid: "uuid19"
+        throwsExceptions:
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.IllegalAccessException"
+        signature: "get(not-detected): Object throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException"
+        returnValueUuid: "getUnsafe_object16"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "f"
+      modelFingerprint: "CD48E11A8542F3D3011934F5C3D1ABDA"
+      index: 19
+      ignored: false
+      valueUuid: "getUnsafe_field[]1-item16"
+      methodExercised:
+        target: "f"
+        name: "get"
+        parameters:
+        - name: "caller"
+          valueUuid: "uuid20"
+        throwsExceptions:
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.IllegalAccessException"
+        signature: "get(not-detected): Object throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException"
+        returnValueUuid: "getUnsafe_object17"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "f"
+      modelFingerprint: "C878AA849D453DD5DF410783D083EADF"
+      index: 20
+      ignored: false
+      valueUuid: "getUnsafe_field[]1-item17"
+      methodExercised:
+        target: "f"
+        name: "get"
+        parameters:
+        - name: "caller"
+          valueUuid: "uuid21"
+        throwsExceptions:
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.IllegalAccessException"
+        signature: "get(not-detected): Object throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException"
+        returnValueUuid: "getUnsafe_object18"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "f"
+      modelFingerprint: "2CD5FD9CB85F20A7C1CB4CC64ACADE41"
+      index: 21
+      ignored: false
+      valueUuid: "getUnsafe_field[]1-item18"
+      methodExercised:
+        target: "f"
+        name: "get"
+        parameters:
+        - name: "caller"
+          valueUuid: "uuid22"
+        throwsExceptions:
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.IllegalAccessException"
+        signature: "get(not-detected): Object throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException"
+        returnValueUuid: "getUnsafe_object19"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "f"
+      modelFingerprint: "118607CF7BC72B9F26064C239DE50AB1"
+      index: 22
+      ignored: false
+      valueUuid: "getUnsafe_field[]1-item19"
+      methodExercised:
+        target: "f"
+        name: "get"
+        parameters:
+        - name: "caller"
+          valueUuid: "uuid23"
+        throwsExceptions:
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.IllegalAccessException"
+        signature: "get(not-detected): Object throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException"
+        returnValueUuid: "getUnsafe_object20"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "f"
+      modelFingerprint: "734D6BF09873F00407418B53FD00E988"
+      index: 23
+      ignored: false
+      valueUuid: "getUnsafe_field[]1-item20"
+      methodExercised:
+        target: "f"
+        name: "get"
+        parameters:
+        - name: "caller"
+          valueUuid: "uuid24"
+        throwsExceptions:
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.IllegalAccessException"
+        signature: "get(not-detected): Object throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException"
+        returnValueUuid: "getUnsafe_object21"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "f"
+      modelFingerprint: "39C0D425A3225E0A530823B40664B0B5"
+      index: 24
+      ignored: false
+      valueUuid: "getUnsafe_field[]1-item21"
+      methodExercised:
+        target: "f"
+        name: "get"
+        parameters:
+        - name: "caller"
+          valueUuid: "uuid25"
+        throwsExceptions:
+        - "java.lang.IllegalArgumentException"
+        - "java.lang.IllegalAccessException"
+        signature: "get(not-detected): Object throws java.lang.IllegalArgumentException,java.lang.IllegalAccessException"
+        returnValueUuid: "getUnsafe_object22"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "4CBDE92F60704C2AAD454F112A3BCB4A"
+      index: 25
+      ignored: false
+      valueUuid: "getUnsafe_noSuchFieldError1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "46db96fa-329c-3565-8218-339cc3aafec2"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "f"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "Object x = f.get(null);"
+      lineNumber: 33
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: f - Method: get"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "sun.misc.Unsafe"
+      uuid: "uuid2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "sun.misc.Unsafe"
+      uuid: "getUnsafe_unsafe1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "sun.misc.Unsafe"
+      valueType: "java.lang.Class"
+      genericValueType: "sun.misc.Unsafe"
+      uuid: "uuid3"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 0
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item0"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          1:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 1
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          2:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 2
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          3:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 3
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          4:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 4
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item4"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          5:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 5
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          6:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 6
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item6"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          7:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 7
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item7"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          8:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 8
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item8"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          9:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 9
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item9"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          10:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 10
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item10"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          11:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 11
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item11"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          12:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 12
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item12"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          13:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 13
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item13"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          14:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 14
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item14"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          15:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 15
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item15"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          16:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 16
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item16"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          17:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 17
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item17"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          18:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 18
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item18"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          19:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 19
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item19"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          20:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 20
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item20"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          21:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 21
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item21"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        arrayReturnReflectionCallContent: !<array_return_reflection_call>
+          target: "java.lang.reflect.Field[]"
+          localVariableValue:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "sun.misc.Unsafe"
+            valueType: "java.lang.Class"
+            genericValueType: "sun.misc.Unsafe"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          size: 22
+          baseUuid: "getUnsafe_field[]1"
+          methodName: "getDeclaredFields"
+      suggestedContent: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 0
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item0"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          1:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 1
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          2:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 2
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          3:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 3
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          4:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 4
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item4"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          5:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 5
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item5"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          6:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 6
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item6"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          7:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 7
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item7"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          8:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 8
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item8"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          9:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 9
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item9"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          10:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 10
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item10"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          11:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 11
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item11"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          12:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 12
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item12"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          13:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 13
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item13"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          14:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 14
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item14"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          15:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 15
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item15"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          16:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 16
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item16"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          17:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 17
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item17"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          18:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 18
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item18"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          19:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 19
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item19"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          20:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 20
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item20"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          21:
+            sapientType: "OBJECT"
+            content: !<array_return_item_reflection_call>
+              target: "java.lang.reflect.Field"
+              arrayReturnReflectionCallContent: !<array_return_reflection_call>
+                target: "java.lang.reflect.Field[]"
+                localVariableValue:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "sun.misc.Unsafe"
+                  valueType: "java.lang.Class"
+                  genericValueType: "sun.misc.Unsafe"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+                methodParameters: []
+                size: 22
+                baseUuid: "getUnsafe_field[]1"
+                methodName: "getDeclaredFields"
+              index: 21
+            valueType: "java.lang.reflect.Field"
+            uuid: "getUnsafe_field[]1-item21"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        arrayReturnReflectionCallContent: !<array_return_reflection_call>
+          target: "java.lang.reflect.Field[]"
+          localVariableValue:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "sun.misc.Unsafe"
+            valueType: "java.lang.Class"
+            genericValueType: "sun.misc.Unsafe"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          size: 22
+          baseUuid: "getUnsafe_field[]1"
+          methodName: "getDeclaredFields"
+      valueType: "java.lang.reflect.Field[]"
+      uuid: "getUnsafe_field[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<array_return_item_reflection_call>
+        target: "java.lang.reflect.Field"
+        arrayReturnReflectionCallContent: !<array_return_reflection_call>
+          target: "java.lang.reflect.Field[]"
+          localVariableValue:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "sun.misc.Unsafe"
+            valueType: "java.lang.Class"
+            genericValueType: "sun.misc.Unsafe"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          size: 22
+          baseUuid: "getUnsafe_field[]1"
+          methodName: "getDeclaredFields"
+        index: 0
+      valueType: "java.lang.reflect.Field"
+      uuid: "getUnsafe_field[]1-item0"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 0
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item0"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      suggestedContent: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 0
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item0"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      valueType: "java.lang.Object"
+      uuid: "getUnsafe_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      uuid: "uuid4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<array_return_item_reflection_call>
+        target: "java.lang.reflect.Field"
+        arrayReturnReflectionCallContent: !<array_return_reflection_call>
+          target: "java.lang.reflect.Field[]"
+          localVariableValue:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "sun.misc.Unsafe"
+            valueType: "java.lang.Class"
+            genericValueType: "sun.misc.Unsafe"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          size: 22
+          baseUuid: "getUnsafe_field[]1"
+          methodName: "getDeclaredFields"
+        index: 1
+      valueType: "java.lang.reflect.Field"
+      uuid: "getUnsafe_field[]1-item1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 1
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      suggestedContent: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 1
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      valueType: "java.lang.Object"
+      uuid: "getUnsafe_object2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      uuid: "uuid5"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<array_return_item_reflection_call>
+        target: "java.lang.reflect.Field"
+        arrayReturnReflectionCallContent: !<array_return_reflection_call>
+          target: "java.lang.reflect.Field[]"
+          localVariableValue:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "sun.misc.Unsafe"
+            valueType: "java.lang.Class"
+            genericValueType: "sun.misc.Unsafe"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          size: 22
+          baseUuid: "getUnsafe_field[]1"
+          methodName: "getDeclaredFields"
+        index: 2
+      valueType: "java.lang.reflect.Field"
+      uuid: "getUnsafe_field[]1-item2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 2
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      suggestedContent: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 2
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      valueType: "java.lang.Object"
+      uuid: "getUnsafe_object3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      uuid: "uuid6"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<array_return_item_reflection_call>
+        target: "java.lang.reflect.Field"
+        arrayReturnReflectionCallContent: !<array_return_reflection_call>
+          target: "java.lang.reflect.Field[]"
+          localVariableValue:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "sun.misc.Unsafe"
+            valueType: "java.lang.Class"
+            genericValueType: "sun.misc.Unsafe"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          size: 22
+          baseUuid: "getUnsafe_field[]1"
+          methodName: "getDeclaredFields"
+        index: 3
+      valueType: "java.lang.reflect.Field"
+      uuid: "getUnsafe_field[]1-item3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 3
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      suggestedContent: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 3
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item3"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      valueType: "java.lang.Object"
+      uuid: "getUnsafe_object4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      uuid: "uuid7"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<array_return_item_reflection_call>
+        target: "java.lang.reflect.Field"
+        arrayReturnReflectionCallContent: !<array_return_reflection_call>
+          target: "java.lang.reflect.Field[]"
+          localVariableValue:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "sun.misc.Unsafe"
+            valueType: "java.lang.Class"
+            genericValueType: "sun.misc.Unsafe"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          size: 22
+          baseUuid: "getUnsafe_field[]1"
+          methodName: "getDeclaredFields"
+        index: 4
+      valueType: "java.lang.reflect.Field"
+      uuid: "getUnsafe_field[]1-item4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 4
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item4"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      suggestedContent: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 4
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item4"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      valueType: "java.lang.Object"
+      uuid: "getUnsafe_object5"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      uuid: "uuid8"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<array_return_item_reflection_call>
+        target: "java.lang.reflect.Field"
+        arrayReturnReflectionCallContent: !<array_return_reflection_call>
+          target: "java.lang.reflect.Field[]"
+          localVariableValue:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "sun.misc.Unsafe"
+            valueType: "java.lang.Class"
+            genericValueType: "sun.misc.Unsafe"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          size: 22
+          baseUuid: "getUnsafe_field[]1"
+          methodName: "getDeclaredFields"
+        index: 5
+      valueType: "java.lang.reflect.Field"
+      uuid: "getUnsafe_field[]1-item5"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 5
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item5"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      suggestedContent: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 5
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item5"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      valueType: "java.lang.Object"
+      uuid: "getUnsafe_object6"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      uuid: "uuid9"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<array_return_item_reflection_call>
+        target: "java.lang.reflect.Field"
+        arrayReturnReflectionCallContent: !<array_return_reflection_call>
+          target: "java.lang.reflect.Field[]"
+          localVariableValue:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "sun.misc.Unsafe"
+            valueType: "java.lang.Class"
+            genericValueType: "sun.misc.Unsafe"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          size: 22
+          baseUuid: "getUnsafe_field[]1"
+          methodName: "getDeclaredFields"
+        index: 6
+      valueType: "java.lang.reflect.Field"
+      uuid: "getUnsafe_field[]1-item6"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 6
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item6"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      suggestedContent: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 6
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item6"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      valueType: "java.lang.Object"
+      uuid: "getUnsafe_object7"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      uuid: "uuid10"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<array_return_item_reflection_call>
+        target: "java.lang.reflect.Field"
+        arrayReturnReflectionCallContent: !<array_return_reflection_call>
+          target: "java.lang.reflect.Field[]"
+          localVariableValue:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "sun.misc.Unsafe"
+            valueType: "java.lang.Class"
+            genericValueType: "sun.misc.Unsafe"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          size: 22
+          baseUuid: "getUnsafe_field[]1"
+          methodName: "getDeclaredFields"
+        index: 7
+      valueType: "java.lang.reflect.Field"
+      uuid: "getUnsafe_field[]1-item7"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 7
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item7"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      suggestedContent: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 7
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item7"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      valueType: "java.lang.Object"
+      uuid: "getUnsafe_object8"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      uuid: "uuid11"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<array_return_item_reflection_call>
+        target: "java.lang.reflect.Field"
+        arrayReturnReflectionCallContent: !<array_return_reflection_call>
+          target: "java.lang.reflect.Field[]"
+          localVariableValue:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "sun.misc.Unsafe"
+            valueType: "java.lang.Class"
+            genericValueType: "sun.misc.Unsafe"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          size: 22
+          baseUuid: "getUnsafe_field[]1"
+          methodName: "getDeclaredFields"
+        index: 8
+      valueType: "java.lang.reflect.Field"
+      uuid: "getUnsafe_field[]1-item8"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 8
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item8"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      suggestedContent: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 8
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item8"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      valueType: "java.lang.Object"
+      uuid: "getUnsafe_object9"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      uuid: "uuid12"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<array_return_item_reflection_call>
+        target: "java.lang.reflect.Field"
+        arrayReturnReflectionCallContent: !<array_return_reflection_call>
+          target: "java.lang.reflect.Field[]"
+          localVariableValue:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "sun.misc.Unsafe"
+            valueType: "java.lang.Class"
+            genericValueType: "sun.misc.Unsafe"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          size: 22
+          baseUuid: "getUnsafe_field[]1"
+          methodName: "getDeclaredFields"
+        index: 9
+      valueType: "java.lang.reflect.Field"
+      uuid: "getUnsafe_field[]1-item9"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 9
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item9"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      suggestedContent: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 9
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item9"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      valueType: "java.lang.Object"
+      uuid: "getUnsafe_object10"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      uuid: "uuid13"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<array_return_item_reflection_call>
+        target: "java.lang.reflect.Field"
+        arrayReturnReflectionCallContent: !<array_return_reflection_call>
+          target: "java.lang.reflect.Field[]"
+          localVariableValue:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "sun.misc.Unsafe"
+            valueType: "java.lang.Class"
+            genericValueType: "sun.misc.Unsafe"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          size: 22
+          baseUuid: "getUnsafe_field[]1"
+          methodName: "getDeclaredFields"
+        index: 10
+      valueType: "java.lang.reflect.Field"
+      uuid: "getUnsafe_field[]1-item10"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 10
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item10"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      suggestedContent: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 10
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item10"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      valueType: "java.lang.Object"
+      uuid: "getUnsafe_object11"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      uuid: "uuid14"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<array_return_item_reflection_call>
+        target: "java.lang.reflect.Field"
+        arrayReturnReflectionCallContent: !<array_return_reflection_call>
+          target: "java.lang.reflect.Field[]"
+          localVariableValue:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "sun.misc.Unsafe"
+            valueType: "java.lang.Class"
+            genericValueType: "sun.misc.Unsafe"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          size: 22
+          baseUuid: "getUnsafe_field[]1"
+          methodName: "getDeclaredFields"
+        index: 11
+      valueType: "java.lang.reflect.Field"
+      uuid: "getUnsafe_field[]1-item11"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 11
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item11"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      suggestedContent: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 11
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item11"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      valueType: "java.lang.Object"
+      uuid: "getUnsafe_object12"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      uuid: "uuid15"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<array_return_item_reflection_call>
+        target: "java.lang.reflect.Field"
+        arrayReturnReflectionCallContent: !<array_return_reflection_call>
+          target: "java.lang.reflect.Field[]"
+          localVariableValue:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "sun.misc.Unsafe"
+            valueType: "java.lang.Class"
+            genericValueType: "sun.misc.Unsafe"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          size: 22
+          baseUuid: "getUnsafe_field[]1"
+          methodName: "getDeclaredFields"
+        index: 12
+      valueType: "java.lang.reflect.Field"
+      uuid: "getUnsafe_field[]1-item12"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 12
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item12"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      suggestedContent: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 12
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item12"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      valueType: "java.lang.Object"
+      uuid: "getUnsafe_object13"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      uuid: "uuid16"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<array_return_item_reflection_call>
+        target: "java.lang.reflect.Field"
+        arrayReturnReflectionCallContent: !<array_return_reflection_call>
+          target: "java.lang.reflect.Field[]"
+          localVariableValue:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "sun.misc.Unsafe"
+            valueType: "java.lang.Class"
+            genericValueType: "sun.misc.Unsafe"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          size: 22
+          baseUuid: "getUnsafe_field[]1"
+          methodName: "getDeclaredFields"
+        index: 13
+      valueType: "java.lang.reflect.Field"
+      uuid: "getUnsafe_field[]1-item13"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 13
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item13"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      suggestedContent: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 13
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item13"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      valueType: "java.lang.Object"
+      uuid: "getUnsafe_object14"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      uuid: "uuid17"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<array_return_item_reflection_call>
+        target: "java.lang.reflect.Field"
+        arrayReturnReflectionCallContent: !<array_return_reflection_call>
+          target: "java.lang.reflect.Field[]"
+          localVariableValue:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "sun.misc.Unsafe"
+            valueType: "java.lang.Class"
+            genericValueType: "sun.misc.Unsafe"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          size: 22
+          baseUuid: "getUnsafe_field[]1"
+          methodName: "getDeclaredFields"
+        index: 14
+      valueType: "java.lang.reflect.Field"
+      uuid: "getUnsafe_field[]1-item14"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 14
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item14"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      suggestedContent: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 14
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item14"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      valueType: "java.lang.Object"
+      uuid: "getUnsafe_object15"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      uuid: "uuid18"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<array_return_item_reflection_call>
+        target: "java.lang.reflect.Field"
+        arrayReturnReflectionCallContent: !<array_return_reflection_call>
+          target: "java.lang.reflect.Field[]"
+          localVariableValue:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "sun.misc.Unsafe"
+            valueType: "java.lang.Class"
+            genericValueType: "sun.misc.Unsafe"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          size: 22
+          baseUuid: "getUnsafe_field[]1"
+          methodName: "getDeclaredFields"
+        index: 15
+      valueType: "java.lang.reflect.Field"
+      uuid: "getUnsafe_field[]1-item15"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 15
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item15"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      suggestedContent: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 15
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item15"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      valueType: "java.lang.Object"
+      uuid: "getUnsafe_object16"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      uuid: "uuid19"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<array_return_item_reflection_call>
+        target: "java.lang.reflect.Field"
+        arrayReturnReflectionCallContent: !<array_return_reflection_call>
+          target: "java.lang.reflect.Field[]"
+          localVariableValue:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "sun.misc.Unsafe"
+            valueType: "java.lang.Class"
+            genericValueType: "sun.misc.Unsafe"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          size: 22
+          baseUuid: "getUnsafe_field[]1"
+          methodName: "getDeclaredFields"
+        index: 16
+      valueType: "java.lang.reflect.Field"
+      uuid: "getUnsafe_field[]1-item16"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 16
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item16"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      suggestedContent: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 16
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item16"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      valueType: "java.lang.Object"
+      uuid: "getUnsafe_object17"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      uuid: "uuid20"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<array_return_item_reflection_call>
+        target: "java.lang.reflect.Field"
+        arrayReturnReflectionCallContent: !<array_return_reflection_call>
+          target: "java.lang.reflect.Field[]"
+          localVariableValue:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "sun.misc.Unsafe"
+            valueType: "java.lang.Class"
+            genericValueType: "sun.misc.Unsafe"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          size: 22
+          baseUuid: "getUnsafe_field[]1"
+          methodName: "getDeclaredFields"
+        index: 17
+      valueType: "java.lang.reflect.Field"
+      uuid: "getUnsafe_field[]1-item17"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 17
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item17"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      suggestedContent: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 17
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item17"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      valueType: "java.lang.Object"
+      uuid: "getUnsafe_object18"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      uuid: "uuid21"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<array_return_item_reflection_call>
+        target: "java.lang.reflect.Field"
+        arrayReturnReflectionCallContent: !<array_return_reflection_call>
+          target: "java.lang.reflect.Field[]"
+          localVariableValue:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "sun.misc.Unsafe"
+            valueType: "java.lang.Class"
+            genericValueType: "sun.misc.Unsafe"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          size: 22
+          baseUuid: "getUnsafe_field[]1"
+          methodName: "getDeclaredFields"
+        index: 18
+      valueType: "java.lang.reflect.Field"
+      uuid: "getUnsafe_field[]1-item18"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 18
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item18"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      suggestedContent: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 18
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item18"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      valueType: "java.lang.Object"
+      uuid: "getUnsafe_object19"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      uuid: "uuid22"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<array_return_item_reflection_call>
+        target: "java.lang.reflect.Field"
+        arrayReturnReflectionCallContent: !<array_return_reflection_call>
+          target: "java.lang.reflect.Field[]"
+          localVariableValue:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "sun.misc.Unsafe"
+            valueType: "java.lang.Class"
+            genericValueType: "sun.misc.Unsafe"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          size: 22
+          baseUuid: "getUnsafe_field[]1"
+          methodName: "getDeclaredFields"
+        index: 19
+      valueType: "java.lang.reflect.Field"
+      uuid: "getUnsafe_field[]1-item19"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 19
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item19"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      suggestedContent: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 19
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item19"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      valueType: "java.lang.Object"
+      uuid: "getUnsafe_object20"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      uuid: "uuid23"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<array_return_item_reflection_call>
+        target: "java.lang.reflect.Field"
+        arrayReturnReflectionCallContent: !<array_return_reflection_call>
+          target: "java.lang.reflect.Field[]"
+          localVariableValue:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "sun.misc.Unsafe"
+            valueType: "java.lang.Class"
+            genericValueType: "sun.misc.Unsafe"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          size: 22
+          baseUuid: "getUnsafe_field[]1"
+          methodName: "getDeclaredFields"
+        index: 20
+      valueType: "java.lang.reflect.Field"
+      uuid: "getUnsafe_field[]1-item20"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 20
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item20"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      suggestedContent: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 20
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item20"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      valueType: "java.lang.Object"
+      uuid: "getUnsafe_object21"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      uuid: "uuid24"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<array_return_item_reflection_call>
+        target: "java.lang.reflect.Field"
+        arrayReturnReflectionCallContent: !<array_return_reflection_call>
+          target: "java.lang.reflect.Field[]"
+          localVariableValue:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "sun.misc.Unsafe"
+            valueType: "java.lang.Class"
+            genericValueType: "sun.misc.Unsafe"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          size: 22
+          baseUuid: "getUnsafe_field[]1"
+          methodName: "getDeclaredFields"
+        index: 21
+      valueType: "java.lang.reflect.Field"
+      uuid: "getUnsafe_field[]1-item21"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 21
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item21"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      suggestedContent: !<method_return_from_value>
+        target: "java.lang.Object"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<array_return_item_reflection_call>
+            target: "java.lang.reflect.Field"
+            arrayReturnReflectionCallContent: !<array_return_reflection_call>
+              target: "java.lang.reflect.Field[]"
+              localVariableValue:
+                sapientType: "CLASS"
+                content: !<regular>
+                  value: "sun.misc.Unsafe"
+                valueType: "java.lang.Class"
+                genericValueType: "sun.misc.Unsafe"
+                fixed: true
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              methodParameters: []
+              size: 22
+              baseUuid: "getUnsafe_field[]1"
+              methodName: "getDeclaredFields"
+            index: 21
+          valueType: "java.lang.reflect.Field"
+          uuid: "getUnsafe_field[]1-item21"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "caller"
+          value:
+            sapientType: "NULL"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "get"
+      valueType: "java.lang.Object"
+      uuid: "getUnsafe_object22"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      uuid: "uuid25"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.NoSuchFieldError"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "the Unsafe"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "java.lang.NoSuchFieldError"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "the Unsafe"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "java.lang.NoSuchFieldError"
+      uuid: "getUnsafe_noSuchFieldError1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false

@@ -1,0 +1,336 @@
+---
+modelFingerprint: "350099B5BAC7062359EC408C283384DC"
+methods:
+- method:
+    name: "define"
+    signature: "define(java.lang.Class<?>,byte[]) : java.lang.Class<?>"
+    instructionFingerprint: "33547A3E859E32D20981E9B336FB251D"
+  paths:
+  - pathId: "path1"
+    testPathName: "defineTest"
+    constructorSignature: "<init>(java.util.function.BiFunction<java.lang.ClassLoader,byte[],java.lang.Class<?>>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "B2C533E11C36ADAA4F87ED8603C3439B"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "2B0FDD57F040047846BB095811DBCCDF"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "hostClass"
+      modelFingerprint: "7D6AC86827D10E6BFB40505A82C8C917"
+      index: 2
+      ignored: false
+      valueUuid: "define_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "bytecode"
+      modelFingerprint: "ADA1719FFB79A1B217DCC6F54BBF08E4"
+      index: 3
+      ignored: false
+      valueUuid: "define_byte[]1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "defineAccess"
+      modelFingerprint: "641D1B8273F6B6F140DD39E4DE89ED0A"
+      index: 4
+      ignored: false
+      valueUuid: "<init>_biFunction1"
+      methodExercised:
+        target: "this.defineAccess"
+        name: "apply"
+        parameters:
+        - name: "arg0"
+          valueUuid: "define_classLoader1"
+        - name: "arg1"
+          valueUuid: "define_byte[]1"
+        signature: "apply(ClassLoader,byte[]): Object"
+        returnValueUuid: "define_object1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7D188077A09532046C23775A10005874"
+      index: 5
+      ignored: false
+      valueUuid: "define_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3d0bbb66-c655-3fc9-bcd2-e53aac08c7c7"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.getClassLoader() : java.lang.ClassLoader"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.aop.GeneratedClassDefiner"
+        parameters:
+        - name: "defineAccess"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.function.BiFunction"
+            uuid: "<init>_biFunction1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.aop.GeneratedClassDefiner"
+        parameters:
+        - name: "defineAccess"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.function.BiFunction"
+            genericValueType: "java.lang.ClassLoader,byte[],java.lang.Class<?>"
+            uuid: "<init>_biFunction1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.aop.GeneratedClassDefiner"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "define_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            suggestedContent: !<regular>
+              value: 1
+            valueType: "byte"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          1:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 2
+            suggestedContent: !<regular>
+              value: 2
+            valueType: "byte"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          2:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 3
+            suggestedContent: !<regular>
+              value: 3
+            valueType: "byte"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          3:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 4
+            suggestedContent: !<regular>
+              value: 4
+            valueType: "byte"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            suggestedContent: !<regular>
+              value: 1
+            valueType: "byte"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          1:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 2
+            suggestedContent: !<regular>
+              value: 2
+            valueType: "byte"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          2:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 3
+            suggestedContent: !<regular>
+              value: 3
+            valueType: "byte"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          3:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 4
+            suggestedContent: !<regular>
+              value: 4
+            valueType: "byte"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "byte[]"
+      uuid: "define_byte[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.BiFunction"
+      uuid: "<init>_biFunction1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "define_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.lang.ClassLoader"
+        method: "getPlatformClassLoader"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "java.lang.ClassLoader"
+        method: "getPlatformClassLoader"
+        methodParameters: []
+      valueType: "java.lang.ClassLoader"
+      uuid: "define_classLoader1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            suggestedContent: !<regular>
+              value: 1
+            valueType: "byte"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          1:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 2
+            suggestedContent: !<regular>
+              value: 2
+            valueType: "byte"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          2:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 3
+            suggestedContent: !<regular>
+              value: 3
+            valueType: "byte"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          3:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 4
+            suggestedContent: !<regular>
+              value: 4
+            valueType: "byte"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            suggestedContent: !<regular>
+              value: 1
+            valueType: "byte"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          1:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 2
+            suggestedContent: !<regular>
+              value: 2
+            valueType: "byte"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          2:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 3
+            suggestedContent: !<regular>
+              value: 3
+            valueType: "byte"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          3:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 4
+            suggestedContent: !<regular>
+              value: 4
+            valueType: "byte"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "byte[]"
+      uuid: "define_byte[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "define_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true

@@ -1,0 +1,1278 @@
+---
+modelFingerprint: "225AA2457BC03070AA8AC41EB9683480"
+methods:
+- method:
+    name: "getSource"
+    signature: "getSource() : java.lang.Object"
+    instructionFingerprint: "FBC509160A336084D127CBD72124ADD8"
+  paths:
+  - pathId: "path1"
+    testPathName: "getSourceTest"
+    constructorSignature: "<init>(java.lang.Object,com.google.inject.TypeLiteral<java.lang.Object>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "9FBA0393963F0C1A0856C019F2BA72E0"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "b18e1b7c-5aa2-3b75-96ca-a0f74ce65f85"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Object,java.lang.String)\
+        \ : java.lang.Object"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+- method:
+    name: "getType"
+    signature: "getType() : com.google.inject.TypeLiteral<java.lang.Object>"
+    instructionFingerprint: "7DC3B62B2BB81F54F0B9C23DC4041041"
+  paths:
+  - pathId: "path1"
+    testPathName: "getTypeTest"
+    constructorSignature: "<init>(java.lang.Object,com.google.inject.TypeLiteral<java.lang.Object>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "B7CA24B9338858E66997705EF65E95DE"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "13368fac-223f-37ba-a843-3c9b25e276be"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Object,java.lang.String)\
+        \ : java.lang.Object"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+- method:
+    name: "acceptVisitor"
+    signature: "acceptVisitor(com.google.inject.spi.ElementVisitor<java.lang.Object>)\
+      \ : java.lang.Object"
+    instructionFingerprint: "5D4E50A365C1A5D7A2AAEB4BA31C0EEE"
+  paths:
+  - pathId: "path1"
+    testPathName: "acceptVisitorTest"
+    constructorSignature: "<init>(java.lang.Object,com.google.inject.TypeLiteral<java.lang.Object>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "FCF7673C626B1A19F6D142C7BCC78CE7"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4D048C5ABA1021F4BC7417E8E5D86262"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "visitor"
+      modelFingerprint: "0E52E81CBBD90E16A6597837C87A9142"
+      index: 2
+      ignored: false
+      valueUuid: "acceptVisitor_elementVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "visitor"
+      modelFingerprint: "BA66429703E05CFB2D8BA862F374F243"
+      index: 3
+      ignored: false
+      valueUuid: "acceptVisitor_elementVisitor1"
+      methodExercised:
+        target: "visitor"
+        name: "visit"
+        parameters:
+        - name: "lookup"
+          valueUuid: "targetClassObject"
+        signature: "visit(MembersInjectorLookup): Object"
+        returnValueUuid: "acceptVisitor_object1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "EDA2651BB29D8448EA5A2C6E4F135F6E"
+      index: 4
+      ignored: false
+      valueUuid: "acceptVisitor_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "85010207-16d2-3170-b836-208737cec5b9"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Object,java.lang.String)\
+        \ : java.lang.Object"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.spi.MembersInjectorLookup"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.spi.MembersInjectorLookup"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.spi.MembersInjectorLookup"
+      genericValueType: "java.lang.Object"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ElementVisitor"
+      genericValueType: "java.lang.Object"
+      uuid: "acceptVisitor_elementVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ElementVisitor"
+      genericValueType: "java.lang.Object"
+      uuid: "acceptVisitor_elementVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "acceptVisitor_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "THIS"
+      valueType: "com.google.inject.spi.MembersInjectorLookup"
+      uuid: "targetClassObject"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "acceptVisitor_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "initializeDelegate"
+    signature: "initializeDelegate(com.google.inject.MembersInjector<java.lang.Object>)\
+      \ : void"
+    instructionFingerprint: "563860C4FEC901D75322AA4319A28131"
+  paths:
+  - pathId: "path1"
+    testPathName: "initializeDelegateWhenThisDelegateIsNull"
+    constructorSignature: "<init>(java.lang.Object,com.google.inject.TypeLiteral<java.lang.Object>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "5E2A7A87158033BB6573833DD1EECD91"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4D048C5ABA1021F4BC7417E8E5D86262"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "delegate"
+      modelFingerprint: "8AB8F7A992A686340945130A045E6D7F"
+      index: 2
+      ignored: false
+      valueUuid: "initializeDelegate_membersInjector1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 3
+      ignored: false
+      valueUuid: "uuid1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATE_VERIFICATION_FIELD"
+      name: "delegate"
+      modelFingerprint: "61422709A3479F94F67F8782E7F3B66D"
+      index: 4
+      ignored: false
+      valueUuid: "initializeDelegate_membersInjector2"
+      readMethodForField: "getDelegate"
+      staticReadMethodForField: false
+      readMethodModifier: "PUBLIC"
+      filledByUser: false
+    uuid: "a95841c5-3cf7-323e-a315-a7d63e44019c"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Object,java.lang.String)\
+        \ : java.lang.Object"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.spi.MembersInjectorLookup"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.spi.MembersInjectorLookup"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.spi.MembersInjectorLookup"
+      genericValueType: "java.lang.Object"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.MembersInjector"
+      genericValueType: "java.lang.Object"
+      uuid: "initializeDelegate_membersInjector1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.MembersInjector"
+      genericValueType: "java.lang.Object"
+      uuid: "initializeDelegate_membersInjector2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "applyTo"
+    signature: "applyTo(com.google.inject.Binder) : void"
+    instructionFingerprint: "A2CB64409228757B268654A0518FC58C"
+  paths:
+  - pathId: "path1"
+    testPathName: "applyToTest"
+    constructorSignature: "<init>(java.lang.Object,com.google.inject.TypeLiteral<java.lang.Object>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "32A71D3935F32765CBD26E16B9C45F84"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4D048C5ABA1021F4BC7417E8E5D86262"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "binder"
+      modelFingerprint: "C324ECF14902F2238945D7606C2D0F77"
+      index: 2
+      ignored: false
+      valueUuid: "applyTo_binder1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binder"
+      modelFingerprint: "408B1B2C20033D513198D543E03D9356"
+      index: 3
+      ignored: false
+      valueUuid: "applyTo_binder1"
+      methodExercised:
+        target: "binder"
+        name: "withSource"
+        parameters:
+        - name: "source"
+          valueUuid: "<init>_object2"
+        signature: "withSource(Object): Binder"
+        returnValueUuid: "applyTo_binder2"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "B3B1961AF9F6851EBA6FB5499EC54836"
+      index: 4
+      ignored: false
+      valueUuid: "applyTo_binder2"
+      methodExercised:
+        target: "com.google.inject.Binder"
+        name: "getMembersInjector"
+        parameters:
+        - name: "typeLiteral"
+          valueUuid: "<init>_typeLiteral2"
+        signature: "getMembersInjector(TypeLiteral): MembersInjector"
+        returnValueUuid: "applyTo_membersInjector1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "E36DD1B1B58A880EE187B1A793F50BDB"
+      index: 5
+      ignored: false
+      methodExercised:
+        target: "target"
+        name: "initializeDelegate"
+        parameters:
+        - name: "delegate"
+          valueUuid: "applyTo_membersInjector1"
+        signature: "initializeDelegate(MembersInjector): void"
+        returnValueUuid: "applyTo_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 6
+      ignored: false
+      valueUuid: "uuid1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0f0a622f-1e3b-3dc0-a3ae-a6ceb63c4e13"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Object,java.lang.String)\
+        \ : java.lang.Object"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.spi.MembersInjectorLookup"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.spi.MembersInjectorLookup"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.spi.MembersInjectorLookup"
+      genericValueType: "java.lang.Object"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "applyTo_binder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "applyTo_binder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "applyTo_binder2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "<init>_object2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "applyTo_binder2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.MembersInjector"
+      uuid: "applyTo_membersInjector1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_typeLiteral2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "applyTo_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.MembersInjector"
+      uuid: "applyTo_membersInjector1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "getDelegate"
+    signature: "getDelegate() : com.google.inject.MembersInjector<java.lang.Object>"
+    instructionFingerprint: "271F0B41E1F9A69677C2FCF0DAEF59D6"
+  paths:
+  - pathId: "path1"
+    testPathName: "getDelegateTest"
+    constructorSignature: "<init>(java.lang.Object,com.google.inject.TypeLiteral<java.lang.Object>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "EDAE7420921D008A42F30919D10E790E"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "e1b32246-f872-3452-92a2-c13c65a2ede0"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Object,java.lang.String)\
+        \ : java.lang.Object"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+- method:
+    name: "getInjectionPoints"
+    signature: "getInjectionPoints() : java.util.Set<com.google.inject.spi.InjectionPoint>"
+    instructionFingerprint: "E986B7E4E219D334D6781924EF6129B2"
+  paths:
+  - pathId: "path1"
+    testPathName: "getInjectionPointsTest"
+    constructorSignature: "<init>(java.lang.Object,com.google.inject.TypeLiteral<java.lang.Object>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "367E344AEA5BF111F3D3276171574A9D"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4D048C5ABA1021F4BC7417E8E5D86262"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "InjectionPoint"
+      modelFingerprint: "9C614D57756172946230CBF8CDA8606E"
+      index: 2
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.spi.InjectionPoint"
+        name: "forInstanceMethodsAndFields"
+        parameters:
+        - name: "type"
+          valueUuid: "<init>_typeLiteral2"
+        signature: "forInstanceMethodsAndFields(TypeLiteral): Set"
+        returnValueUuid: "getInjectionPoints_set1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "AD3D50C5FBAA720995E7B6BE953EAB25"
+      index: 3
+      ignored: false
+      valueUuid: "getInjectionPoints_set1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4cafec08-f58b-3940-87bc-b59f7116f3c3"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Object,java.lang.String)\
+        \ : java.lang.Object"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.spi.MembersInjectorLookup"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.spi.MembersInjectorLookup"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.spi.MembersInjectorLookup"
+      genericValueType: "java.lang.Object"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.InjectionPoint"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      suggestedContent: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Set"
+      genericValueType: "com.google.inject.spi.InjectionPoint"
+      uuid: "getInjectionPoints_set1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_typeLiteral2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      suggestedContent: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Set"
+      genericValueType: "com.google.inject.spi.InjectionPoint"
+      uuid: "getInjectionPoints_set1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "getMembersInjector"
+    signature: "getMembersInjector() : com.google.inject.MembersInjector<java.lang.Object>"
+    instructionFingerprint: "F7FC7B9770694BA78789A2CA45B6D4F2"
+  paths:
+  - pathId: "path1"
+    testPathName: "getMembersInjectorTest"
+    constructorSignature: "<init>(java.lang.Object,com.google.inject.TypeLiteral<java.lang.Object>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "8969A6D17EA992580DB2719EB86B4401"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4D048C5ABA1021F4BC7417E8E5D86262"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "600827650AB2D1D76B711488509E0AD1"
+      index: 2
+      ignored: false
+      valueUuid: "uuid1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3219d138-fa9b-3e28-9ed3-ede6bfdd8d4c"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Object,java.lang.String)\
+        \ : java.lang.Object"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.spi.MembersInjectorLookup"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.spi.MembersInjectorLookup"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.spi.MembersInjectorLookup"
+      genericValueType: "java.lang.Object"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NOT_NULL"
+      valueType: "com.google.inject.MembersInjector"
+      uuid: "uuid1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "equals"
+    signature: "equals(java.lang.Object) : boolean"
+    instructionFingerprint: "35178B63094A33E7E8C5023B86FF5597"
+  paths:
+  - pathId: "path4"
+    testPathName: "equalsWhenObjNotInstanceOfMembersInjectorLookup"
+    constructorSignature: "<init>(java.lang.Object,com.google.inject.TypeLiteral<java.lang.Object>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "6EF884C550CD8AB99EB645EBA4CC70ED"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "690669ea-42eb-3918-9191-7543b60b7154"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Object,java.lang.String)\
+        \ : java.lang.Object"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path3"
+    testPathName: "equalsWhenObjTypeNotEqualsType"
+    constructorSignature: "<init>(java.lang.Object,com.google.inject.TypeLiteral<java.lang.Object>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "01E08A4704BBFD6109E206C309D21CED"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "2d578fbe-c441-3ba0-9e20-a16cb40d5145"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Object,java.lang.String)\
+        \ : java.lang.Object"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path1"
+    testPathName: "equalsWhenObjSourceEqualsSource"
+    constructorSignature: "<init>(java.lang.Object,com.google.inject.TypeLiteral<java.lang.Object>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "70C7EFD649A949BA23360C3C8F278AF6"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "b07ceb59-34d6-30e8-9b81-f97a169b18e3"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Object,java.lang.String)\
+        \ : java.lang.Object"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path2"
+    testPathName: "equalsWhenObjSourceNotEqualsSource"
+    constructorSignature: "<init>(java.lang.Object,com.google.inject.TypeLiteral<java.lang.Object>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "8075C3FA3FE6D33A09598F339C3F85F4"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "1654808a-5743-39fd-8bd7-fd4e6eb79bb2"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Object,java.lang.String)\
+        \ : java.lang.Object"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []

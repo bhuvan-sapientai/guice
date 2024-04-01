@@ -1,0 +1,497 @@
+---
+modelFingerprint: "172590027FD4CACE77D40038645EAE2D"
+methods:
+- method:
+    name: "getModuleClassName"
+    signature: "getModuleClassName() : java.lang.String"
+    instructionFingerprint: "D2EF5C74E7DC60544AF31D98593BC1F6"
+  paths:
+  - pathId: "path1"
+    testPathName: "getModuleClassNameTest"
+    constructorSignature: "<init>(java.lang.Class<?>,com.google.inject.spi.BindingSourceRestriction$PermitMap)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "7F6153CF4AC681ECE9952A3D3E03913A"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "25c427ee-d595-33c6-b2e1-434561179dcd"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Class<?>,java.lang.String)\
+        \ : java.lang.Class"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+- method:
+    name: "createChild"
+    signature: "createChild(java.lang.Class<?>) : com.google.inject.spi.ModuleSource"
+    instructionFingerprint: "637664FE89D4B809F7438861D9D86D2B"
+  paths:
+  - pathId: "path1"
+    testPathName: "createChildTest"
+    constructorSignature: "<init>(java.lang.Class<?>,com.google.inject.spi.BindingSourceRestriction$PermitMap)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "151B539BB40EE8FD08705DF308A1D342"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "91A0D6407CD6385FC941D5FF731935E2"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "moduleClass"
+      modelFingerprint: "65C5E74951F0B0012045CA1069FDF412"
+      index: 2
+      ignored: false
+      valueUuid: "createChild_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8C2CD9979819F40896491ECC6832D908"
+      index: 3
+      ignored: false
+      valueUuid: "createChild_moduleSource1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "691cf536-b84c-3509-8612-7c4986b1c6f6"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Class<?>,java.lang.String)\
+        \ : java.lang.Class"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.spi.ModuleSource"
+        parameters:
+        - name: "moduleClass"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "<init>_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "permitMap"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.BindingSourceRestriction$PermitMap"
+            uuid: "<init>_bindingSourceRestriction.PermitMap1"
+            fixed: false
+            nameForMock: "value1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.spi.ModuleSource"
+        parameters:
+        - name: "moduleClass"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "<init>_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "permitMap"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.BindingSourceRestriction$PermitMap"
+            uuid: "<init>_bindingSourceRestriction.PermitMap1"
+            fixed: false
+            nameForMock: "value1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.spi.ModuleSource"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      suggestedContent: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "createChild_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.spi.ModuleSource"
+        parameters:
+        - name: "parent"
+          value:
+            sapientType: "THIS"
+            valueType: "com.google.inject.spi.ModuleSource"
+            uuid: "targetClassObject"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "moduleClass"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "createChild_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "permitMap"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.BindingSourceRestriction$PermitMap"
+            uuid: "<init>_bindingSourceRestriction.PermitMap1"
+            fixed: false
+            nameForMock: "value1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: true
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.spi.ModuleSource"
+        parameters:
+        - name: "parent"
+          value:
+            sapientType: "THIS"
+            valueType: "com.google.inject.spi.ModuleSource"
+            uuid: "targetClassObject"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "moduleClass"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "createChild_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "permitMap"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.BindingSourceRestriction$PermitMap"
+            uuid: "<init>_bindingSourceRestriction.PermitMap1"
+            fixed: false
+            nameForMock: "value1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: true
+        createdByTargetCode: true
+      valueType: "com.google.inject.spi.ModuleSource"
+      uuid: "createChild_moduleSource1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "getParent"
+    signature: "getParent() : com.google.inject.spi.ModuleSource"
+    instructionFingerprint: "6BE595EA220C05CAC48843816DC11AEE"
+  paths:
+  - pathId: "path1"
+    testPathName: "getParentTest"
+    constructorSignature: "<init>(java.lang.Class<?>,com.google.inject.spi.BindingSourceRestriction$PermitMap)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "970EA416527B0CB8E018C54E2D8AF0CB"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "5455f6a6-c86e-3f05-be56-c037c0b1cda5"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Class<?>,java.lang.String)\
+        \ : java.lang.Class"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+- method:
+    name: "getModuleClassNames"
+    signature: "getModuleClassNames() : java.util.List<java.lang.String>"
+    instructionFingerprint: "15B060DBCCDAC8CEBC08F1BC5890C9C2"
+  paths:
+  - pathId: "path1"
+    testPathName: "getModuleClassNamesWhenCurrentIsNotNull"
+    constructorSignature: "<init>(java.lang.Class<?>,com.google.inject.spi.BindingSourceRestriction$PermitMap)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "7F7F34CD3AC92F4A15672B277D17326C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "B4B5EBB551911F3FA3219620819EA501"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "36B4C4B79DF4DC6ACEE4D1D30828A394"
+      index: 2
+      ignored: false
+      valueUuid: "getModuleClassNames_immutableList1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d135e207-970b-38cd-a568-e565e84fe08c"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Class<?>,java.lang.String)\
+        \ : java.lang.Class"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.spi.ModuleSource"
+        parameters:
+        - name: "moduleClass"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "com.google.inject.spi.ModuleSource"
+            suggestedContent: !<regular>
+              value: "com.google.inject.spi.ModuleSource"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "<init>_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "permitMap"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.BindingSourceRestriction$PermitMap"
+            uuid: "<init>_bindingSourceRestriction.PermitMap1"
+            fixed: false
+            nameForMock: "true"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.spi.ModuleSource"
+        parameters:
+        - name: "moduleClass"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "com.google.inject.spi.ModuleSource"
+            suggestedContent: !<regular>
+              value: "com.google.inject.spi.ModuleSource"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "<init>_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "permitMap"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.BindingSourceRestriction$PermitMap"
+            uuid: "<init>_bindingSourceRestriction.PermitMap1"
+            fixed: false
+            nameForMock: "true"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.spi.ModuleSource"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<builder>
+        target: "com.google.common.collect.ImmutableList"
+        setterMap: {}
+      suggestedContent: !<builder>
+        target: "com.google.common.collect.ImmutableList"
+        setterMap: {}
+      valueType: "com.google.common.collect.ImmutableList"
+      genericValueType: "java.lang.String"
+      uuid: "getModuleClassNames_immutableList1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "size"
+    signature: "size() : int"
+    instructionFingerprint: "6E845ABFC836DEEA3952900280FEF573"
+  paths:
+  - pathId: "path1"
+    testPathName: "sizeWhenParentIsNull"
+    constructorSignature: "<init>(java.lang.Class<?>,com.google.inject.spi.BindingSourceRestriction$PermitMap)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "0841C76E1F121BDE354FB23BEF859886"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "B4B5EBB551911F3FA3219620819EA501"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "07B9F5C7EDC82C98858A3592D8BDC804"
+      index: 2
+      ignored: false
+      valueUuid: "uuid1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "46635190-ed6f-372f-8fe7-39b45c679a75"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Class<?>,java.lang.String)\
+        \ : java.lang.Class"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.spi.ModuleSource"
+        parameters:
+        - name: "moduleClass"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "com.google.inject.spi.ModuleSource"
+            suggestedContent: !<regular>
+              value: "com.google.inject.spi.ModuleSource"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "<init>_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "permitMap"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.BindingSourceRestriction$PermitMap"
+            uuid: "<init>_bindingSourceRestriction.PermitMap1"
+            fixed: false
+            nameForMock: "value1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.spi.ModuleSource"
+        parameters:
+        - name: "moduleClass"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "com.google.inject.spi.ModuleSource"
+            suggestedContent: !<regular>
+              value: "com.google.inject.spi.ModuleSource"
+            valueType: "java.lang.Class"
+            genericValueType: "?"
+            uuid: "<init>_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "permitMap"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.BindingSourceRestriction$PermitMap"
+            uuid: "<init>_bindingSourceRestriction.PermitMap1"
+            fixed: false
+            nameForMock: "value1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.spi.ModuleSource"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "uuid1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "getPermitMap"
+    signature: "getPermitMap() : com.google.inject.spi.BindingSourceRestriction$PermitMap"
+    instructionFingerprint: "4671F9FCAC75DEFA0B25F400C7EC7B28"
+  paths:
+  - pathId: "path1"
+    testPathName: "getPermitMapTest"
+    constructorSignature: "<init>(java.lang.Class<?>,com.google.inject.spi.BindingSourceRestriction$PermitMap)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "35253386EF7F851F125328A4A331E80B"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "dd742619-ffea-394b-8f2a-82fd232eac3c"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Class<?>,java.lang.String)\
+        \ : java.lang.Class"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []

@@ -1,0 +1,5256 @@
+---
+modelFingerprint: "779DB9B251BE5376983418F82B04FD23"
+methods:
+- method:
+    name: "pushInteger"
+    signature: "pushInteger(org.objectweb.asm.MethodVisitor,int) : void"
+    instructionFingerprint: "036EA26A6B56007B66A9F51FB8D938A8"
+  paths:
+  - pathId: "path1"
+    testPathName: "pushIntegerWhenValueLessThanMinus1"
+    filledByUser: false
+    modelFingerprint: "F265B28E3F43A4D259F4CD3B51317525"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "58557B846E3B5669EE7AB7F9D168BD47"
+      index: 1
+      ignored: false
+      valueUuid: "pushInteger_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "84966F80D3D858B2AB501439314CD3DC"
+      index: 2
+      ignored: false
+      valueUuid: "pushInteger_int1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "0B6069A8C5FE85174AA66F3806E24F69"
+      index: 3
+      ignored: false
+      valueUuid: "pushInteger_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitLdcInsn"
+        parameters:
+        - name: "value"
+          valueUuid: "pushInteger_integer1"
+        signature: "visitLdcInsn(Integer): void"
+        returnValueUuid: "pushInteger_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      valueUuid: "uuid1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "fb0940b7-8263-30da-9cb3-855e542abd88"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "pushInteger_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -2
+      suggestedContent: !<regular>
+        value: -2
+      valueType: "int"
+      uuid: "pushInteger_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "pushInteger_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "pushInteger_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: -2
+      suggestedContent: !<regular>
+        value: -2
+      valueType: "java.lang.Integer"
+      uuid: "pushInteger_integer1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "pushIntegerWhenValueLessThanOrEqualsTo5"
+    filledByUser: false
+    modelFingerprint: "0CDB140C94FFDFF57478917A11AF705F"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "58557B846E3B5669EE7AB7F9D168BD47"
+      index: 1
+      ignored: false
+      valueUuid: "pushInteger_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "DA72C681D163AB78543504E13C652D4B"
+      index: 2
+      ignored: false
+      valueUuid: "pushInteger_int1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "FAFC9825029B4ECFDF3DC6626E8BF17F"
+      index: 3
+      ignored: false
+      valueUuid: "pushInteger_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "pushInteger_int2"
+        signature: "visitInsn(int): void"
+        returnValueUuid: "pushInteger_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      valueUuid: "uuid2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "68904160-82e9-3058-9dfd-4b8d1a6f5d96"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "pushInteger_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      suggestedContent: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "pushInteger_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "pushInteger_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "pushInteger_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 3
+      suggestedContent: !<regular>
+        value: 3
+      valueType: "int"
+      uuid: "pushInteger_int2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path3"
+    testPathName: "pushIntegerWhenValueLessThanOrEqualsToByteMAX_VALUE"
+    filledByUser: false
+    modelFingerprint: "AE8E35CFA80BD79744A3BB3B14816DDA"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "58557B846E3B5669EE7AB7F9D168BD47"
+      index: 1
+      ignored: false
+      valueUuid: "pushInteger_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "71951F3DB289D574FB7B969C95042713"
+      index: 2
+      ignored: false
+      valueUuid: "pushInteger_int1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "AD0C901A498FF63C6AEB1B4CACCAAFDD"
+      index: 3
+      ignored: false
+      valueUuid: "pushInteger_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitIntInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid3"
+        - name: "operand"
+          valueUuid: "pushInteger_int1"
+        signature: "visitIntInsn(int,int): void"
+        returnValueUuid: "pushInteger_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      valueUuid: "uuid4"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5b31ddc8-4b47-388c-b809-f62dc4e2d4f4"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "pushInteger_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 6
+      suggestedContent: !<regular>
+        value: 6
+      valueType: "int"
+      uuid: "pushInteger_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "pushInteger_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "pushInteger_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 16
+      valueType: "int"
+      uuid: "uuid3"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 6
+      suggestedContent: !<regular>
+        value: 6
+      valueType: "int"
+      uuid: "pushInteger_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid4"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path4"
+    testPathName: "pushIntegerWhenValueLessThanOrEqualsToShortMAX_VALUE"
+    filledByUser: false
+    modelFingerprint: "8D759B8267AD4F381264C7BF2E48773E"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "58557B846E3B5669EE7AB7F9D168BD47"
+      index: 1
+      ignored: false
+      valueUuid: "pushInteger_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "92345EE8D358037EBC2CE6A7BB3AA849"
+      index: 2
+      ignored: false
+      valueUuid: "pushInteger_int1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "2A22D12ACED61E6698F976A034480348"
+      index: 3
+      ignored: false
+      valueUuid: "pushInteger_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitIntInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid5"
+        - name: "operand"
+          valueUuid: "pushInteger_int1"
+        signature: "visitIntInsn(int,int): void"
+        returnValueUuid: "pushInteger_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      valueUuid: "uuid6"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e08b73a1-0f6e-3d02-b5b5-e0f8c9b7d59b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "pushInteger_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 128
+      suggestedContent: !<regular>
+        value: 128
+      valueType: "int"
+      uuid: "pushInteger_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "pushInteger_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "pushInteger_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 17
+      valueType: "int"
+      uuid: "uuid5"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 128
+      suggestedContent: !<regular>
+        value: 128
+      valueType: "int"
+      uuid: "pushInteger_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid6"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path5"
+    testPathName: "pushIntegerWhenValueGreaterThanShortMAX_VALUE"
+    filledByUser: false
+    modelFingerprint: "C6B83781D8D085598B0944D87B20B0EF"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "58557B846E3B5669EE7AB7F9D168BD47"
+      index: 1
+      ignored: false
+      valueUuid: "pushInteger_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "52C393B9F5B64F3DA59937C4A4F10AED"
+      index: 2
+      ignored: false
+      valueUuid: "pushInteger_int1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "16BF59DDC154D701C2B27EA90AB40906"
+      index: 3
+      ignored: false
+      valueUuid: "pushInteger_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitLdcInsn"
+        parameters:
+        - name: "value"
+          valueUuid: "pushInteger_integer1"
+        signature: "visitLdcInsn(Integer): void"
+        returnValueUuid: "pushInteger_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      valueUuid: "uuid7"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5c908b2c-39bc-3aea-bcc7-e32ef605a707"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "pushInteger_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 32768
+      suggestedContent: !<regular>
+        value: 32768
+      valueType: "int"
+      uuid: "pushInteger_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "pushInteger_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "pushInteger_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 32768
+      suggestedContent: !<regular>
+        value: 32768
+      valueType: "java.lang.Integer"
+      uuid: "pushInteger_integer1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid7"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "packArguments"
+    signature: "packArguments(org.objectweb.asm.MethodVisitor,java.lang.Class<?>[])\
+      \ : void"
+    instructionFingerprint: "487C2623E22C8E20DC9FD4EFD2D3149E"
+  paths:
+  - pathId: "path3"
+    testPathName: "packArgumentsWhenParameterTypesIsEmpty"
+    filledByUser: false
+    modelFingerprint: "BAAC01297D27925DFE6A0AB5877379EC"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "9f8faf2b-3f14-3959-9b19-2bc6b1f818a5"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path1"
+    testPathName: "packArgumentsWhenParameterTypeIsPrimitive"
+    filledByUser: false
+    modelFingerprint: "1699D1026ECD826985800EE2D25265EC"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "8ABAC138E9DC936ABF9BD1C859F91A19"
+      index: 1
+      ignored: false
+      valueUuid: "packArguments_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "parameterTypes"
+      modelFingerprint: "EC2137C39CD271F1CFF7C01D0C12E6DB"
+      index: 2
+      ignored: false
+      valueUuid: "packArguments_class[]1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BytecodeTasks"
+      modelFingerprint: "B9C7613F6DD0B6FA434265C14EEBBDD6"
+      index: 3
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.aop.BytecodeTasks"
+        name: "pushInteger"
+        parameters:
+        - name: "mv"
+          valueUuid: "packArguments_methodVisitor1"
+        - name: "value"
+          valueUuid: "packArguments_int1"
+        signature: "pushInteger(MethodVisitor,int): void"
+        returnValueUuid: "packArguments_void1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "A5B04E5B036CE44428CB0FE1D00A0389"
+      index: 4
+      ignored: false
+      valueUuid: "packArguments_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitTypeInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid2"
+        - name: "type"
+          valueUuid: "uuid3"
+        signature: "visitTypeInsn(int,String): void"
+        returnValueUuid: "packArguments_void2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "A2AB41BB249AFC94E450E6DBC98C17C5"
+      index: 5
+      ignored: false
+      valueUuid: "packArguments_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid4"
+        signature: "visitInsn(int): void"
+        returnValueUuid: "packArguments_void3"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BytecodeTasks"
+      modelFingerprint: "7DCBC7CBE37788FB85805968E56899BD"
+      index: 6
+      ignored: false
+      valueUuid: "uuid5"
+      methodExercised:
+        target: "com.google.inject.internal.aop.BytecodeTasks"
+        name: "pushInteger"
+        parameters:
+        - name: "mv"
+          valueUuid: "packArguments_methodVisitor1"
+        - name: "value"
+          valueUuid: "packArguments_int2"
+        signature: "pushInteger(MethodVisitor,int): void"
+        returnValueUuid: "packArguments_void4"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BytecodeTasks"
+      modelFingerprint: "929FE7820F69327B795AEC4A4A0A5926"
+      index: 7
+      ignored: false
+      valueUuid: "uuid7"
+      methodExercised:
+        target: "com.google.inject.internal.aop.BytecodeTasks"
+        name: "loadArgument"
+        parameters:
+        - name: "mv"
+          valueUuid: "packArguments_methodVisitor1"
+        - name: "parameterType"
+          valueUuid: "uuid6"
+        - name: "slot"
+          valueUuid: "packArguments_int3"
+        signature: "loadArgument(MethodVisitor,Class,int): int"
+        returnValueUuid: "packArguments_int7"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Type"
+      modelFingerprint: "11C5FFF923390C9A995323929C5111AD"
+      index: 8
+      ignored: false
+      valueUuid: "uuid9"
+      methodExercised:
+        target: "org.objectweb.asm.Type"
+        name: "getType"
+        parameters:
+        - name: "clazz"
+          valueUuid: "uuid8"
+        signature: "getType(Class): Type"
+        returnValueUuid: "packArguments_type1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BytecodeTasks"
+      modelFingerprint: "6C671FB4A594ADE2A0C3A3916C0C0D33"
+      index: 9
+      ignored: false
+      valueUuid: "uuid10"
+      methodExercised:
+        target: "com.google.inject.internal.aop.BytecodeTasks"
+        name: "box"
+        parameters:
+        - name: "mv"
+          valueUuid: "packArguments_methodVisitor1"
+        - name: "primitiveType"
+          valueUuid: "packArguments_type1"
+        signature: "box(MethodVisitor,Type): void"
+        returnValueUuid: "packArguments_void5"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "2793F7B6B1B47A4CA01DA49F45E79344"
+      index: 10
+      ignored: false
+      valueUuid: "packArguments_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid11"
+        signature: "visitInsn(int): void"
+        returnValueUuid: "packArguments_void6"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 11
+      ignored: false
+      valueUuid: "uuid12"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "962edee3-2bed-3672-902a-888c7a11ad83"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isPrimitive() : boolean"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "packArguments_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<array>
+        values:
+          0:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "java.lang.Class[]"
+      genericValueType: "?"
+      uuid: "packArguments_class[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.aop.BytecodeTasks"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "packArguments_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "packArguments_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "packArguments_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "packArguments_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "packArguments_void2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 189
+      valueType: "int"
+      uuid: "uuid2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Object"
+      valueType: "java.lang.String"
+      uuid: "uuid3"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "packArguments_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "packArguments_void3"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 89
+      valueType: "int"
+      uuid: "uuid4"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.aop.BytecodeTasks"
+      uuid: "uuid5"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "packArguments_void4"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "packArguments_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "packArguments_int2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.aop.BytecodeTasks"
+      uuid: "uuid7"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      suggestedContent: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "packArguments_int7"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "packArguments_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "uuid6"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "packArguments_int3"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "uuid9"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "packArguments_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "uuid8"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.aop.BytecodeTasks"
+      uuid: "uuid10"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "packArguments_void5"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "packArguments_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "packArguments_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "packArguments_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "packArguments_void6"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 83
+      valueType: "int"
+      uuid: "uuid11"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid12"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "packArgumentsWhenParameterTypeNotIsPrimitive"
+    filledByUser: false
+    modelFingerprint: "986221195306EDCB6321A3C6BAB59699"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "4c8ccbfe-6cb4-3d68-8e0a-e254d2849d80"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isPrimitive() : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+- method:
+    name: "unpackArguments"
+    signature: "unpackArguments(org.objectweb.asm.MethodVisitor,java.lang.Class<?>[])\
+      \ : void"
+    instructionFingerprint: "1B7D29824BC20A0175B954E443323022"
+  paths:
+  - pathId: "path3"
+    testPathName: "unpackArgumentsWhenParameterTypesIsEmpty"
+    filledByUser: false
+    modelFingerprint: "EABE10106ECB01E5418D5A7BED2F5844"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "7f109033-a7a6-3dd3-8afd-196901266d2a"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path1"
+    testPathName: "unpackArgumentsWhenParameterTypeIsPrimitive"
+    filledByUser: false
+    modelFingerprint: "06F1A1C182D3729F6A9EE1EF6F7E403F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "8ABAC138E9DC936ABF9BD1C859F91A19"
+      index: 1
+      ignored: false
+      valueUuid: "unpackArguments_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "parameterTypes"
+      modelFingerprint: "EC2137C39CD271F1CFF7C01D0C12E6DB"
+      index: 2
+      ignored: false
+      valueUuid: "unpackArguments_class[]1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "490988BC0AA8E73F7D3DE490CAD2F8AC"
+      index: 3
+      ignored: false
+      valueUuid: "unpackArguments_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitVarInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid1"
+        - name: "varIndex"
+          valueUuid: "uuid2"
+        signature: "visitVarInsn(int,int): void"
+        returnValueUuid: "unpackArguments_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BytecodeTasks"
+      modelFingerprint: "7DCBC7CBE37788FB85805968E56899BD"
+      index: 4
+      ignored: false
+      valueUuid: "uuid3"
+      methodExercised:
+        target: "com.google.inject.internal.aop.BytecodeTasks"
+        name: "pushInteger"
+        parameters:
+        - name: "mv"
+          valueUuid: "unpackArguments_methodVisitor1"
+        - name: "value"
+          valueUuid: "unpackArguments_int1"
+        signature: "pushInteger(MethodVisitor,int): void"
+        returnValueUuid: "unpackArguments_void2"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "6CC8ADBF7E6E050C8505F5C863BA1458"
+      index: 5
+      ignored: false
+      valueUuid: "unpackArguments_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid4"
+        signature: "visitInsn(int): void"
+        returnValueUuid: "unpackArguments_void3"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Type"
+      modelFingerprint: "11C5FFF923390C9A995323929C5111AD"
+      index: 6
+      ignored: false
+      valueUuid: "uuid6"
+      methodExercised:
+        target: "org.objectweb.asm.Type"
+        name: "getType"
+        parameters:
+        - name: "clazz"
+          valueUuid: "uuid5"
+        signature: "getType(Class): Type"
+        returnValueUuid: "unpackArguments_type1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BytecodeTasks"
+      modelFingerprint: "42248B5B0F9F357D77ADEA3C58BEC25A"
+      index: 7
+      ignored: false
+      valueUuid: "uuid7"
+      methodExercised:
+        target: "com.google.inject.internal.aop.BytecodeTasks"
+        name: "unbox"
+        parameters:
+        - name: "mv"
+          valueUuid: "unpackArguments_methodVisitor1"
+        - name: "primitiveType"
+          valueUuid: "unpackArguments_type1"
+        signature: "unbox(MethodVisitor,Type): void"
+        returnValueUuid: "unpackArguments_void4"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 8
+      ignored: false
+      valueUuid: "uuid8"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e41123b1-acf3-3589-9c44-ced24f630652"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isPrimitive() : boolean"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unpackArguments_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<array>
+        values:
+          0:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "java.lang.Class[]"
+      genericValueType: "?"
+      uuid: "unpackArguments_class[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unpackArguments_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "unpackArguments_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 25
+      valueType: "int"
+      uuid: "uuid1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "int"
+      uuid: "uuid2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.aop.BytecodeTasks"
+      uuid: "uuid3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "unpackArguments_void2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unpackArguments_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "unpackArguments_int1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unpackArguments_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "unpackArguments_void3"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 50
+      valueType: "int"
+      uuid: "uuid4"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "uuid6"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "unpackArguments_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "uuid5"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.aop.BytecodeTasks"
+      uuid: "uuid7"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "unpackArguments_void4"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unpackArguments_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "unpackArguments_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid8"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "unpackArgumentsWhenParameterTypeNotIsPrimitive"
+    filledByUser: false
+    modelFingerprint: "59D9DEE3B86860AA0597A194787075FB"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "58557B846E3B5669EE7AB7F9D168BD47"
+      index: 1
+      ignored: false
+      valueUuid: "unpackArguments_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "parameterTypes"
+      modelFingerprint: "ECAEDC91C50E1B151B253509EF986703"
+      index: 2
+      ignored: false
+      valueUuid: "unpackArguments_class[]1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "931EB86924E7C07E3DB6FDC0DBFFF897"
+      index: 3
+      ignored: false
+      valueUuid: "unpackArguments_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitVarInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid1"
+        - name: "varIndex"
+          valueUuid: "uuid2"
+        signature: "visitVarInsn(int,int): void"
+        returnValueUuid: "unpackArguments_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BytecodeTasks"
+      modelFingerprint: "1D52D5C551DDF891023EE0D39B383B58"
+      index: 4
+      ignored: false
+      valueUuid: "uuid3"
+      methodExercised:
+        target: "com.google.inject.internal.aop.BytecodeTasks"
+        name: "pushInteger"
+        parameters:
+        - name: "mv"
+          valueUuid: "unpackArguments_methodVisitor1"
+        - name: "value"
+          valueUuid: "unpackArguments_int1"
+        signature: "pushInteger(MethodVisitor,int): void"
+        returnValueUuid: "unpackArguments_void2"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "10D324FDD2D611C8861C5390F938490C"
+      index: 5
+      ignored: false
+      valueUuid: "unpackArguments_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid4"
+        signature: "visitInsn(int): void"
+        returnValueUuid: "unpackArguments_void3"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Type"
+      modelFingerprint: "B193C13C74415226340E90DD1C8DC3FF"
+      index: 6
+      ignored: false
+      valueUuid: "uuid5"
+      methodExercised:
+        target: "org.objectweb.asm.Type"
+        name: "getInternalName"
+        parameters:
+        - name: "clazz"
+          valueUuid: "unpackArguments_class1"
+        signature: "getInternalName(Class): String"
+        returnValueUuid: "unpackArguments_string1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "F2459C0F09757C04D0BC7D49882656A6"
+      index: 7
+      ignored: false
+      valueUuid: "unpackArguments_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitTypeInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid6"
+        - name: "type"
+          valueUuid: "unpackArguments_string1"
+        signature: "visitTypeInsn(int,String): void"
+        returnValueUuid: "unpackArguments_void4"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 8
+      ignored: false
+      valueUuid: "uuid7"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "94be32db-a0d5-3df0-8ed5-1313d88de173"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unpackArguments_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "unpackArguments_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<array>
+        values:
+          0:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "unpackArguments_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "java.lang.Class[]"
+      genericValueType: "?"
+      uuid: "unpackArguments_class[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unpackArguments_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "unpackArguments_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 25
+      valueType: "int"
+      uuid: "uuid1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      valueType: "int"
+      uuid: "uuid2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.aop.BytecodeTasks"
+      uuid: "uuid3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "unpackArguments_void2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unpackArguments_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "unpackArguments_int1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unpackArguments_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "unpackArguments_void3"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 50
+      valueType: "int"
+      uuid: "uuid4"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "REAL"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "uuid5"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Object"
+      valueType: "java.lang.String"
+      uuid: "unpackArguments_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      suggestedContent: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "unpackArguments_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unpackArguments_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "unpackArguments_void4"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 192
+      valueType: "int"
+      uuid: "uuid6"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Object"
+      valueType: "java.lang.String"
+      uuid: "unpackArguments_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid7"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "loadArgument"
+    signature: "loadArgument(org.objectweb.asm.MethodVisitor,java.lang.Class<?>,int)\
+      \ : int"
+    instructionFingerprint: "5E152A2B54AE3D34D87C93EDCD6C4869"
+  paths:
+  - pathId: "path1"
+    testPathName: "loadArgumentWhenParameterTypeNotIsPrimitive"
+    filledByUser: false
+    modelFingerprint: "E084DAA990650AFD76EEFEAC38129F9E"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "58557B846E3B5669EE7AB7F9D168BD47"
+      index: 1
+      ignored: false
+      valueUuid: "loadArgument_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "parameterType"
+      modelFingerprint: "24640C0ADDFA6A0BA9FB9986F20BF7A2"
+      index: 2
+      ignored: false
+      valueUuid: "loadArgument_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "slot"
+      modelFingerprint: "476D3AE4A42C93DCEFB98A3561F0BA2B"
+      index: 3
+      ignored: false
+      valueUuid: "loadArgument_int1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "8BA478B68892CCA0F6B849FDC8C3F4F4"
+      index: 4
+      ignored: false
+      valueUuid: "loadArgument_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitVarInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid1"
+        - name: "varIndex"
+          valueUuid: "loadArgument_int1"
+        signature: "visitVarInsn(int,int): void"
+        returnValueUuid: "loadArgument_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "07B9F5C7EDC82C98858A3592D8BDC804"
+      index: 5
+      ignored: false
+      valueUuid: "uuid2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4df1334a-6ebe-3de9-8660-72878a889b03"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "loadArgument_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      suggestedContent: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "loadArgument_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      suggestedContent: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "loadArgument_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "loadArgument_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "loadArgument_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 25
+      valueType: "int"
+      uuid: "uuid1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      suggestedContent: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "loadArgument_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "uuid2"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "loadArgumentWhenParameterTypeIsPrimitive"
+    filledByUser: false
+    modelFingerprint: "FF84F576A42B9888600D6DD6625B1F6D"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "8ABAC138E9DC936ABF9BD1C859F91A19"
+      index: 1
+      ignored: false
+      valueUuid: "loadArgument_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "parameterType"
+      modelFingerprint: "7E858B952C2BD63CE2E90C9E15B8F7EC"
+      index: 2
+      ignored: false
+      valueUuid: "loadArgument_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "slot"
+      modelFingerprint: "E8DAC7999807604E8EB31A8BC6A18785"
+      index: 3
+      ignored: false
+      valueUuid: "loadArgument_int1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Type"
+      modelFingerprint: "F3B1611B4B16E6338D0F3ECFE592712F"
+      index: 4
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "org.objectweb.asm.Type"
+        name: "getType"
+        parameters:
+        - name: "clazz"
+          valueUuid: "loadArgument_class1"
+        signature: "getType(Class): Type"
+        returnValueUuid: "loadArgument_type1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "primitiveType"
+      modelFingerprint: "56182B9CF3A86E2F4F2FEDD518D6D9ED"
+      index: 5
+      ignored: false
+      valueUuid: "loadArgument_type1"
+      methodExercised:
+        target: "primitiveType"
+        name: "getOpcode"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid2"
+        signature: "getOpcode(int): int"
+        returnValueUuid: "loadArgument_int2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "855A57B1F16B1F3804FD2308FAEB26AA"
+      index: 6
+      ignored: false
+      valueUuid: "loadArgument_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitVarInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "loadArgument_int2"
+        - name: "varIndex"
+          valueUuid: "loadArgument_int1"
+        signature: "visitVarInsn(int,int): void"
+        returnValueUuid: "loadArgument_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "primitiveType"
+      modelFingerprint: "B8B3EBD1630CC8A31AE7FC1573E23557"
+      index: 7
+      ignored: false
+      valueUuid: "loadArgument_type1"
+      methodExercised:
+        target: "primitiveType"
+        name: "getSize"
+        parameters: []
+        signature: "getSize(): int"
+        returnValueUuid: "loadArgument_int3"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "ACBCF6744C1A4F89BFBA83521C7CE3BD"
+      index: 8
+      ignored: false
+      valueUuid: "loadArgument_int3"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9ed29df1-aaef-374b-9b4d-189335087284"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isPrimitive() : boolean"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "loadArgument_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "loadArgument_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "loadArgument_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "loadArgument_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "loadArgument_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "loadArgument_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "loadArgument_int2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 21
+      valueType: "int"
+      uuid: "uuid2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "loadArgument_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "loadArgument_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "loadArgument_int2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "loadArgument_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "loadArgument_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "loadArgument_int3"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "loadArgument_int3"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "box"
+    signature: "box(org.objectweb.asm.MethodVisitor,org.objectweb.asm.Type) : void"
+    instructionFingerprint: "B1211B413540EFE746AF78D39A7483C8"
+  paths:
+  - pathId: "path1"
+    testPathName: "boxWhenSwitchPrimitiveTypeGetSortCaseTypeBOOLEAN"
+    filledByUser: false
+    modelFingerprint: "F9071829D9D923C8AB561E653161FE86"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "58557B846E3B5669EE7AB7F9D168BD47"
+      index: 1
+      ignored: false
+      valueUuid: "box_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "primitiveType"
+      modelFingerprint: "9EEE94D2E265B98ADE918BFB9345E7F9"
+      index: 2
+      ignored: false
+      valueUuid: "box_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "primitiveType"
+      modelFingerprint: "AEA470A25953D7DBFA7F23F00A9A4199"
+      index: 3
+      ignored: false
+      valueUuid: "box_type1"
+      methodExercised:
+        target: "primitiveType"
+        name: "getSort"
+        parameters: []
+        signature: "getSort(): int"
+        returnValueUuid: "box_int1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "25025F4556F7A49319967462887C6A66"
+      index: 4
+      ignored: false
+      valueUuid: "box_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitMethodInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid49"
+        - name: "owner"
+          valueUuid: "box_string1"
+        - name: "name"
+          valueUuid: "uuid50"
+        - name: "descriptor"
+          valueUuid: "box_string2"
+        - name: "isInterface"
+          valueUuid: "uuid51"
+        signature: "visitMethodInsn(int,String,String,String,boolean): void"
+        returnValueUuid: "box_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 5
+      ignored: false
+      valueUuid: "uuid52"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "dc6b9f74-ec25-3502-9f2e-6c10504f2f13"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "box_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "box_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "box_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      suggestedContent: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "box_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "box_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "box_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 184
+      valueType: "int"
+      uuid: "uuid49"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Boolean"
+      valueType: "java.lang.String"
+      uuid: "box_string1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "valueOf"
+      valueType: "java.lang.String"
+      uuid: "uuid50"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "(Z)Ljava/lang/Boolean;"
+      valueType: "java.lang.String"
+      uuid: "box_string2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid51"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid52"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path3"
+    testPathName: "boxWhenSwitchPrimitiveTypeGetSortCaseTypeBYTE"
+    filledByUser: false
+    modelFingerprint: "0CD793069CFD1AB2132D01AA570A1361"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "58557B846E3B5669EE7AB7F9D168BD47"
+      index: 1
+      ignored: false
+      valueUuid: "box_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "primitiveType"
+      modelFingerprint: "9EEE94D2E265B98ADE918BFB9345E7F9"
+      index: 2
+      ignored: false
+      valueUuid: "box_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "primitiveType"
+      modelFingerprint: "26C6D4DAA153711E5726C6FE54436558"
+      index: 3
+      ignored: false
+      valueUuid: "box_type1"
+      methodExercised:
+        target: "primitiveType"
+        name: "getSort"
+        parameters: []
+        signature: "getSort(): int"
+        returnValueUuid: "box_int1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "096F28CE7706FCC3AB24AAAB0C21C72F"
+      index: 4
+      ignored: false
+      valueUuid: "box_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitMethodInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid53"
+        - name: "owner"
+          valueUuid: "box_string1"
+        - name: "name"
+          valueUuid: "uuid54"
+        - name: "descriptor"
+          valueUuid: "box_string2"
+        - name: "isInterface"
+          valueUuid: "uuid55"
+        signature: "visitMethodInsn(int,String,String,String,boolean): void"
+        returnValueUuid: "box_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 5
+      ignored: false
+      valueUuid: "uuid56"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c15206a3-3cbd-3e8a-8aad-758c191ebd36"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "box_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "box_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "box_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 3
+      suggestedContent: !<regular>
+        value: 3
+      valueType: "int"
+      uuid: "box_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "box_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "box_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 184
+      valueType: "int"
+      uuid: "uuid53"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Byte"
+      valueType: "java.lang.String"
+      uuid: "box_string1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "valueOf"
+      valueType: "java.lang.String"
+      uuid: "uuid54"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "(B)Ljava/lang/Byte;"
+      valueType: "java.lang.String"
+      uuid: "box_string2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid55"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid56"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "boxWhenSwitchPrimitiveTypeGetSortCaseTypeCHAR"
+    filledByUser: false
+    modelFingerprint: "C7DAC1D64179DB6142F30F737218382E"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "58557B846E3B5669EE7AB7F9D168BD47"
+      index: 1
+      ignored: false
+      valueUuid: "box_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "primitiveType"
+      modelFingerprint: "9EEE94D2E265B98ADE918BFB9345E7F9"
+      index: 2
+      ignored: false
+      valueUuid: "box_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "primitiveType"
+      modelFingerprint: "699311CE63B8194DDF3B407154848DF6"
+      index: 3
+      ignored: false
+      valueUuid: "box_type1"
+      methodExercised:
+        target: "primitiveType"
+        name: "getSort"
+        parameters: []
+        signature: "getSort(): int"
+        returnValueUuid: "box_int1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "A6E38601E2AE3172F674C8032E2F3B38"
+      index: 4
+      ignored: false
+      valueUuid: "box_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitMethodInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid57"
+        - name: "owner"
+          valueUuid: "box_string1"
+        - name: "name"
+          valueUuid: "uuid58"
+        - name: "descriptor"
+          valueUuid: "box_string2"
+        - name: "isInterface"
+          valueUuid: "uuid59"
+        signature: "visitMethodInsn(int,String,String,String,boolean): void"
+        returnValueUuid: "box_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 5
+      ignored: false
+      valueUuid: "uuid60"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3bbe0e5f-b121-3d45-ab9b-19730034cc57"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "box_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "box_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "box_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      suggestedContent: !<regular>
+        value: 2
+      valueType: "int"
+      uuid: "box_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "box_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "box_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 184
+      valueType: "int"
+      uuid: "uuid57"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Character"
+      valueType: "java.lang.String"
+      uuid: "box_string1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "valueOf"
+      valueType: "java.lang.String"
+      uuid: "uuid58"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "(C)Ljava/lang/Character;"
+      valueType: "java.lang.String"
+      uuid: "box_string2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid59"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid60"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path8"
+    testPathName: "boxWhenSwitchPrimitiveTypeGetSortCaseTypeDOUBLE"
+    filledByUser: false
+    modelFingerprint: "ED24D9C7947E3EFC4E03DBE9ABE9A45F"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "58557B846E3B5669EE7AB7F9D168BD47"
+      index: 1
+      ignored: false
+      valueUuid: "box_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "primitiveType"
+      modelFingerprint: "9EEE94D2E265B98ADE918BFB9345E7F9"
+      index: 2
+      ignored: false
+      valueUuid: "box_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "primitiveType"
+      modelFingerprint: "CE32B97BBB8B4E6ABFDDE37A915CD430"
+      index: 3
+      ignored: false
+      valueUuid: "box_type1"
+      methodExercised:
+        target: "primitiveType"
+        name: "getSort"
+        parameters: []
+        signature: "getSort(): int"
+        returnValueUuid: "box_int1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "AEE129245BFEB439E31EBD3F98DF80E4"
+      index: 4
+      ignored: false
+      valueUuid: "box_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitMethodInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid61"
+        - name: "owner"
+          valueUuid: "box_string1"
+        - name: "name"
+          valueUuid: "uuid62"
+        - name: "descriptor"
+          valueUuid: "box_string2"
+        - name: "isInterface"
+          valueUuid: "uuid63"
+        signature: "visitMethodInsn(int,String,String,String,boolean): void"
+        returnValueUuid: "box_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 5
+      ignored: false
+      valueUuid: "uuid64"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0749efe1-3768-386d-a5cd-9fd3d956bc7a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "box_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "box_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "box_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 8
+      suggestedContent: !<regular>
+        value: 8
+      valueType: "int"
+      uuid: "box_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "box_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "box_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 184
+      valueType: "int"
+      uuid: "uuid61"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Double"
+      valueType: "java.lang.String"
+      uuid: "box_string1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "valueOf"
+      valueType: "java.lang.String"
+      uuid: "uuid62"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "(D)Ljava/lang/Double;"
+      valueType: "java.lang.String"
+      uuid: "box_string2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid63"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid64"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path6"
+    testPathName: "boxWhenSwitchPrimitiveTypeGetSortCaseTypeFLOAT"
+    filledByUser: false
+    modelFingerprint: "7B70C690F64866B65E239E4C46BD9327"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "58557B846E3B5669EE7AB7F9D168BD47"
+      index: 1
+      ignored: false
+      valueUuid: "box_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "primitiveType"
+      modelFingerprint: "9EEE94D2E265B98ADE918BFB9345E7F9"
+      index: 2
+      ignored: false
+      valueUuid: "box_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "primitiveType"
+      modelFingerprint: "4CB5A993F76A3CF59467032AA8558FB8"
+      index: 3
+      ignored: false
+      valueUuid: "box_type1"
+      methodExercised:
+        target: "primitiveType"
+        name: "getSort"
+        parameters: []
+        signature: "getSort(): int"
+        returnValueUuid: "box_int1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "B981CE3223F7C3FF562BEB000FD8AB48"
+      index: 4
+      ignored: false
+      valueUuid: "box_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitMethodInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid65"
+        - name: "owner"
+          valueUuid: "box_string1"
+        - name: "name"
+          valueUuid: "uuid66"
+        - name: "descriptor"
+          valueUuid: "box_string2"
+        - name: "isInterface"
+          valueUuid: "uuid67"
+        signature: "visitMethodInsn(int,String,String,String,boolean): void"
+        returnValueUuid: "box_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 5
+      ignored: false
+      valueUuid: "uuid68"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "498a4610-2c5e-3bce-88ba-96899944c4d1"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "box_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "box_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "box_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 6
+      suggestedContent: !<regular>
+        value: 6
+      valueType: "int"
+      uuid: "box_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "box_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "box_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 184
+      valueType: "int"
+      uuid: "uuid65"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Float"
+      valueType: "java.lang.String"
+      uuid: "box_string1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "valueOf"
+      valueType: "java.lang.String"
+      uuid: "uuid66"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "(F)Ljava/lang/Float;"
+      valueType: "java.lang.String"
+      uuid: "box_string2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid67"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid68"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path5"
+    testPathName: "boxWhenSwitchPrimitiveTypeGetSortCaseTypeINT"
+    filledByUser: false
+    modelFingerprint: "CAE1CF7A0551101971974DE3DC196A96"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "58557B846E3B5669EE7AB7F9D168BD47"
+      index: 1
+      ignored: false
+      valueUuid: "box_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "primitiveType"
+      modelFingerprint: "9EEE94D2E265B98ADE918BFB9345E7F9"
+      index: 2
+      ignored: false
+      valueUuid: "box_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "primitiveType"
+      modelFingerprint: "7D7D0B7878CFF274F817D812E4554755"
+      index: 3
+      ignored: false
+      valueUuid: "box_type1"
+      methodExercised:
+        target: "primitiveType"
+        name: "getSort"
+        parameters: []
+        signature: "getSort(): int"
+        returnValueUuid: "box_int1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "B1416A0F857377EB53B7525286E4D86F"
+      index: 4
+      ignored: false
+      valueUuid: "box_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitMethodInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid69"
+        - name: "owner"
+          valueUuid: "box_string1"
+        - name: "name"
+          valueUuid: "uuid70"
+        - name: "descriptor"
+          valueUuid: "box_string2"
+        - name: "isInterface"
+          valueUuid: "uuid71"
+        signature: "visitMethodInsn(int,String,String,String,boolean): void"
+        returnValueUuid: "box_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 5
+      ignored: false
+      valueUuid: "uuid72"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5fd59d34-7268-39a7-894e-53de8360d9b1"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "box_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "box_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "box_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 5
+      suggestedContent: !<regular>
+        value: 5
+      valueType: "int"
+      uuid: "box_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "box_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "box_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 184
+      valueType: "int"
+      uuid: "uuid69"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Integer"
+      valueType: "java.lang.String"
+      uuid: "box_string1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "valueOf"
+      valueType: "java.lang.String"
+      uuid: "uuid70"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "(I)Ljava/lang/Integer;"
+      valueType: "java.lang.String"
+      uuid: "box_string2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid71"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid72"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path7"
+    testPathName: "boxWhenSwitchPrimitiveTypeGetSortCaseTypeLONG"
+    filledByUser: false
+    modelFingerprint: "12C7372C71E862D26A7218655C23ED40"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "58557B846E3B5669EE7AB7F9D168BD47"
+      index: 1
+      ignored: false
+      valueUuid: "box_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "primitiveType"
+      modelFingerprint: "9EEE94D2E265B98ADE918BFB9345E7F9"
+      index: 2
+      ignored: false
+      valueUuid: "box_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "primitiveType"
+      modelFingerprint: "3BB4CC39A5C6BCF89D73590EDDAF4EA6"
+      index: 3
+      ignored: false
+      valueUuid: "box_type1"
+      methodExercised:
+        target: "primitiveType"
+        name: "getSort"
+        parameters: []
+        signature: "getSort(): int"
+        returnValueUuid: "box_int1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "8E1244D6A660A059D523B4164E24FA44"
+      index: 4
+      ignored: false
+      valueUuid: "box_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitMethodInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid73"
+        - name: "owner"
+          valueUuid: "box_string1"
+        - name: "name"
+          valueUuid: "uuid74"
+        - name: "descriptor"
+          valueUuid: "box_string2"
+        - name: "isInterface"
+          valueUuid: "uuid75"
+        signature: "visitMethodInsn(int,String,String,String,boolean): void"
+        returnValueUuid: "box_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 5
+      ignored: false
+      valueUuid: "uuid76"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "da97808c-a654-3faa-a5bd-c7fdcf598700"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "box_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "box_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "box_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 7
+      suggestedContent: !<regular>
+        value: 7
+      valueType: "int"
+      uuid: "box_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "box_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "box_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 184
+      valueType: "int"
+      uuid: "uuid73"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Long"
+      valueType: "java.lang.String"
+      uuid: "box_string1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "valueOf"
+      valueType: "java.lang.String"
+      uuid: "uuid74"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "(J)Ljava/lang/Long;"
+      valueType: "java.lang.String"
+      uuid: "box_string2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid75"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid76"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path4"
+    testPathName: "boxWhenSwitchPrimitiveTypeGetSortCaseTypeSHORT"
+    filledByUser: false
+    modelFingerprint: "50C49067EEB15DE7B30258BA57AD9F1F"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "58557B846E3B5669EE7AB7F9D168BD47"
+      index: 1
+      ignored: false
+      valueUuid: "box_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "primitiveType"
+      modelFingerprint: "9EEE94D2E265B98ADE918BFB9345E7F9"
+      index: 2
+      ignored: false
+      valueUuid: "box_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "primitiveType"
+      modelFingerprint: "1CF2A9D5CE613EE1EBEDAA2078C36ED1"
+      index: 3
+      ignored: false
+      valueUuid: "box_type1"
+      methodExercised:
+        target: "primitiveType"
+        name: "getSort"
+        parameters: []
+        signature: "getSort(): int"
+        returnValueUuid: "box_int1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "8961AEFEE15C474ACF1215B4701A2DDC"
+      index: 4
+      ignored: false
+      valueUuid: "box_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitMethodInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid77"
+        - name: "owner"
+          valueUuid: "box_string1"
+        - name: "name"
+          valueUuid: "uuid78"
+        - name: "descriptor"
+          valueUuid: "box_string2"
+        - name: "isInterface"
+          valueUuid: "uuid79"
+        signature: "visitMethodInsn(int,String,String,String,boolean): void"
+        returnValueUuid: "box_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 5
+      ignored: false
+      valueUuid: "uuid80"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d7d9aa01-063e-3b0f-8647-30533e072a41"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "box_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "box_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "box_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 4
+      suggestedContent: !<regular>
+        value: 4
+      valueType: "int"
+      uuid: "box_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "box_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "box_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 184
+      valueType: "int"
+      uuid: "uuid77"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Short"
+      valueType: "java.lang.String"
+      uuid: "box_string1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "valueOf"
+      valueType: "java.lang.String"
+      uuid: "uuid78"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "(S)Ljava/lang/Short;"
+      valueType: "java.lang.String"
+      uuid: "box_string2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid79"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid80"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path9"
+    testPathName: "boxWhenSwitchPrimitiveTypeGetSortCaseDefault"
+    filledByUser: false
+    modelFingerprint: "2976EF7944D9E65BFCB540E552C0EF14"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "8ABAC138E9DC936ABF9BD1C859F91A19"
+      index: 1
+      ignored: false
+      valueUuid: "box_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "primitiveType"
+      modelFingerprint: "6F792BA79613D2725EAC3AEDC16A74C0"
+      index: 2
+      ignored: false
+      valueUuid: "box_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "primitiveType"
+      modelFingerprint: "E7868623EA77F63B14B6F1D0E7F996E2"
+      index: 3
+      ignored: false
+      valueUuid: "box_type1"
+      methodExercised:
+        target: "primitiveType"
+        name: "getSort"
+        parameters: []
+        signature: "getSort(): int"
+        returnValueUuid: "box_int1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      valueUuid: "uuid1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c37ada5e-f64f-35e8-a56e-1beceb20bc91"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "box_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.objectweb.asm.Type"
+        method: "getType"
+        methodParameters:
+        - name: "clazz"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "box_type1-clazz"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "org.objectweb.asm.Type"
+        method: "getType"
+        methodParameters:
+        - name: "clazz"
+          value:
+            sapientType: "CLASS"
+            valueType: "java.lang.Class"
+            uuid: "box_type1-clazz"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "org.objectweb.asm.Type"
+      uuid: "box_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.objectweb.asm.Type"
+        method: "getType"
+        methodParameters:
+        - name: "clazz"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "box_type1-clazz"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "org.objectweb.asm.Type"
+        method: "getType"
+        methodParameters:
+        - name: "clazz"
+          value:
+            sapientType: "CLASS"
+            valueType: "java.lang.Class"
+            uuid: "box_type1-clazz"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "org.objectweb.asm.Type"
+      uuid: "box_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 10
+      valueType: "int"
+      uuid: "box_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "unbox"
+    signature: "unbox(org.objectweb.asm.MethodVisitor,org.objectweb.asm.Type) : void"
+    instructionFingerprint: "857AD06B035D44D71FFBBC650A6CA8DC"
+  paths:
+  - pathId: "path1"
+    testPathName: "unboxWhenSwitchPrimitiveTypeGetSortCaseTypeBOOLEAN"
+    filledByUser: false
+    modelFingerprint: "E0981701726B719D03E87EC261FD73F5"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "58557B846E3B5669EE7AB7F9D168BD47"
+      index: 1
+      ignored: false
+      valueUuid: "unbox_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "primitiveType"
+      modelFingerprint: "9EEE94D2E265B98ADE918BFB9345E7F9"
+      index: 2
+      ignored: false
+      valueUuid: "unbox_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "primitiveType"
+      modelFingerprint: "AEA470A25953D7DBFA7F23F00A9A4199"
+      index: 3
+      ignored: false
+      valueUuid: "unbox_type1"
+      methodExercised:
+        target: "primitiveType"
+        name: "getSort"
+        parameters: []
+        signature: "getSort(): int"
+        returnValueUuid: "unbox_int1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "3E12D506D50DBA63915B2A8C9892A48D"
+      index: 4
+      ignored: false
+      valueUuid: "unbox_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitTypeInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid82"
+        - name: "type"
+          valueUuid: "unbox_string1"
+        signature: "visitTypeInsn(int,String): void"
+        returnValueUuid: "unbox_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "F5ADB21176CDC3E73E2BA443AA04739E"
+      index: 5
+      ignored: false
+      valueUuid: "unbox_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitMethodInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid83"
+        - name: "owner"
+          valueUuid: "unbox_string1"
+        - name: "name"
+          valueUuid: "unbox_string2"
+        - name: "descriptor"
+          valueUuid: "unbox_string3"
+        - name: "isInterface"
+          valueUuid: "uuid84"
+        signature: "visitMethodInsn(int,String,String,String,boolean): void"
+        returnValueUuid: "unbox_void2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 6
+      ignored: false
+      valueUuid: "uuid85"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4ce90bb2-a16a-360f-87ba-b55b4af55079"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unbox_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "unbox_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "unbox_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      suggestedContent: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "unbox_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unbox_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "unbox_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 192
+      valueType: "int"
+      uuid: "uuid82"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Boolean"
+      valueType: "java.lang.String"
+      uuid: "unbox_string1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unbox_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "unbox_void2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 182
+      valueType: "int"
+      uuid: "uuid83"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Boolean"
+      valueType: "java.lang.String"
+      uuid: "unbox_string1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "booleanValue"
+      valueType: "java.lang.String"
+      uuid: "unbox_string2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "()Z"
+      valueType: "java.lang.String"
+      uuid: "unbox_string3"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid84"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid85"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path3"
+    testPathName: "unboxWhenSwitchPrimitiveTypeGetSortCaseTypeBYTE"
+    filledByUser: false
+    modelFingerprint: "F27FA6B75D2085DECC638BBAC7205473"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "58557B846E3B5669EE7AB7F9D168BD47"
+      index: 1
+      ignored: false
+      valueUuid: "unbox_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "primitiveType"
+      modelFingerprint: "9EEE94D2E265B98ADE918BFB9345E7F9"
+      index: 2
+      ignored: false
+      valueUuid: "unbox_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "primitiveType"
+      modelFingerprint: "26C6D4DAA153711E5726C6FE54436558"
+      index: 3
+      ignored: false
+      valueUuid: "unbox_type1"
+      methodExercised:
+        target: "primitiveType"
+        name: "getSort"
+        parameters: []
+        signature: "getSort(): int"
+        returnValueUuid: "unbox_int1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "D3891BBBDBFBE3A9B4C0D96D546B1654"
+      index: 4
+      ignored: false
+      valueUuid: "unbox_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitTypeInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid86"
+        - name: "type"
+          valueUuid: "unbox_string1"
+        signature: "visitTypeInsn(int,String): void"
+        returnValueUuid: "unbox_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "D1BD48B1CB4D4065A8CAF8D3701C0D0B"
+      index: 5
+      ignored: false
+      valueUuid: "unbox_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitMethodInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid87"
+        - name: "owner"
+          valueUuid: "unbox_string1"
+        - name: "name"
+          valueUuid: "unbox_string2"
+        - name: "descriptor"
+          valueUuid: "unbox_string3"
+        - name: "isInterface"
+          valueUuid: "uuid88"
+        signature: "visitMethodInsn(int,String,String,String,boolean): void"
+        returnValueUuid: "unbox_void2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 6
+      ignored: false
+      valueUuid: "uuid89"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "bb4828da-4987-32e0-b5e4-289a8daa1fb9"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unbox_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "unbox_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "unbox_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 3
+      suggestedContent: !<regular>
+        value: 3
+      valueType: "int"
+      uuid: "unbox_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unbox_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "unbox_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 192
+      valueType: "int"
+      uuid: "uuid86"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Byte"
+      valueType: "java.lang.String"
+      uuid: "unbox_string1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unbox_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "unbox_void2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 182
+      valueType: "int"
+      uuid: "uuid87"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Byte"
+      valueType: "java.lang.String"
+      uuid: "unbox_string1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "byteValue"
+      valueType: "java.lang.String"
+      uuid: "unbox_string2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "()B"
+      valueType: "java.lang.String"
+      uuid: "unbox_string3"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid88"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid89"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "unboxWhenSwitchPrimitiveTypeGetSortCaseTypeCHAR"
+    filledByUser: false
+    modelFingerprint: "C4CBB57E8044F9E0CDAF7ADCD2978DC0"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "58557B846E3B5669EE7AB7F9D168BD47"
+      index: 1
+      ignored: false
+      valueUuid: "unbox_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "primitiveType"
+      modelFingerprint: "9EEE94D2E265B98ADE918BFB9345E7F9"
+      index: 2
+      ignored: false
+      valueUuid: "unbox_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "primitiveType"
+      modelFingerprint: "699311CE63B8194DDF3B407154848DF6"
+      index: 3
+      ignored: false
+      valueUuid: "unbox_type1"
+      methodExercised:
+        target: "primitiveType"
+        name: "getSort"
+        parameters: []
+        signature: "getSort(): int"
+        returnValueUuid: "unbox_int1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "A07D858DBDF73402F4F109870FDDBC09"
+      index: 4
+      ignored: false
+      valueUuid: "unbox_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitTypeInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid90"
+        - name: "type"
+          valueUuid: "unbox_string1"
+        signature: "visitTypeInsn(int,String): void"
+        returnValueUuid: "unbox_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "E376D26F17E57A33011FFA28EA50D0D4"
+      index: 5
+      ignored: false
+      valueUuid: "unbox_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitMethodInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid91"
+        - name: "owner"
+          valueUuid: "unbox_string1"
+        - name: "name"
+          valueUuid: "unbox_string2"
+        - name: "descriptor"
+          valueUuid: "unbox_string3"
+        - name: "isInterface"
+          valueUuid: "uuid92"
+        signature: "visitMethodInsn(int,String,String,String,boolean): void"
+        returnValueUuid: "unbox_void2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 6
+      ignored: false
+      valueUuid: "uuid93"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "aaa72a6c-1f5e-372e-aa76-9b8b8925948f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unbox_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "unbox_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "unbox_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 2
+      suggestedContent: !<regular>
+        value: 2
+      valueType: "int"
+      uuid: "unbox_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unbox_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "unbox_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 192
+      valueType: "int"
+      uuid: "uuid90"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Character"
+      valueType: "java.lang.String"
+      uuid: "unbox_string1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unbox_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "unbox_void2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 182
+      valueType: "int"
+      uuid: "uuid91"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Character"
+      valueType: "java.lang.String"
+      uuid: "unbox_string1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "charValue"
+      valueType: "java.lang.String"
+      uuid: "unbox_string2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "()C"
+      valueType: "java.lang.String"
+      uuid: "unbox_string3"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid92"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid93"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path8"
+    testPathName: "unboxWhenSwitchPrimitiveTypeGetSortCaseTypeDOUBLE"
+    filledByUser: false
+    modelFingerprint: "368BF637D85AFE72C477C8AC4387EABB"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "58557B846E3B5669EE7AB7F9D168BD47"
+      index: 1
+      ignored: false
+      valueUuid: "unbox_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "primitiveType"
+      modelFingerprint: "9EEE94D2E265B98ADE918BFB9345E7F9"
+      index: 2
+      ignored: false
+      valueUuid: "unbox_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "primitiveType"
+      modelFingerprint: "CE32B97BBB8B4E6ABFDDE37A915CD430"
+      index: 3
+      ignored: false
+      valueUuid: "unbox_type1"
+      methodExercised:
+        target: "primitiveType"
+        name: "getSort"
+        parameters: []
+        signature: "getSort(): int"
+        returnValueUuid: "unbox_int1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "91CF62E7CFC51EAFB8456F6D104B3178"
+      index: 4
+      ignored: false
+      valueUuid: "unbox_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitTypeInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid94"
+        - name: "type"
+          valueUuid: "unbox_string1"
+        signature: "visitTypeInsn(int,String): void"
+        returnValueUuid: "unbox_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "6EFD7A6E8678E6020F5FFA3924178FE3"
+      index: 5
+      ignored: false
+      valueUuid: "unbox_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitMethodInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid95"
+        - name: "owner"
+          valueUuid: "unbox_string1"
+        - name: "name"
+          valueUuid: "unbox_string2"
+        - name: "descriptor"
+          valueUuid: "unbox_string3"
+        - name: "isInterface"
+          valueUuid: "uuid96"
+        signature: "visitMethodInsn(int,String,String,String,boolean): void"
+        returnValueUuid: "unbox_void2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 6
+      ignored: false
+      valueUuid: "uuid97"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0f94dc8e-8384-3305-8531-7903b9ff7c20"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unbox_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "unbox_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "unbox_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 8
+      suggestedContent: !<regular>
+        value: 8
+      valueType: "int"
+      uuid: "unbox_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unbox_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "unbox_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 192
+      valueType: "int"
+      uuid: "uuid94"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Double"
+      valueType: "java.lang.String"
+      uuid: "unbox_string1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unbox_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "unbox_void2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 182
+      valueType: "int"
+      uuid: "uuid95"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Double"
+      valueType: "java.lang.String"
+      uuid: "unbox_string1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "doubleValue"
+      valueType: "java.lang.String"
+      uuid: "unbox_string2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "()D"
+      valueType: "java.lang.String"
+      uuid: "unbox_string3"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid96"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid97"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path6"
+    testPathName: "unboxWhenSwitchPrimitiveTypeGetSortCaseTypeFLOAT"
+    filledByUser: false
+    modelFingerprint: "C4D46DB0DBEE18CFB2000DF1DF4EFC04"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "58557B846E3B5669EE7AB7F9D168BD47"
+      index: 1
+      ignored: false
+      valueUuid: "unbox_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "primitiveType"
+      modelFingerprint: "9EEE94D2E265B98ADE918BFB9345E7F9"
+      index: 2
+      ignored: false
+      valueUuid: "unbox_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "primitiveType"
+      modelFingerprint: "4CB5A993F76A3CF59467032AA8558FB8"
+      index: 3
+      ignored: false
+      valueUuid: "unbox_type1"
+      methodExercised:
+        target: "primitiveType"
+        name: "getSort"
+        parameters: []
+        signature: "getSort(): int"
+        returnValueUuid: "unbox_int1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "EC73EF531CFA7010C046B1EBDA92477F"
+      index: 4
+      ignored: false
+      valueUuid: "unbox_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitTypeInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid98"
+        - name: "type"
+          valueUuid: "unbox_string1"
+        signature: "visitTypeInsn(int,String): void"
+        returnValueUuid: "unbox_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "972C131FCC7EF275BDE036BE3E70A4AC"
+      index: 5
+      ignored: false
+      valueUuid: "unbox_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitMethodInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid99"
+        - name: "owner"
+          valueUuid: "unbox_string1"
+        - name: "name"
+          valueUuid: "unbox_string2"
+        - name: "descriptor"
+          valueUuid: "unbox_string3"
+        - name: "isInterface"
+          valueUuid: "uuid100"
+        signature: "visitMethodInsn(int,String,String,String,boolean): void"
+        returnValueUuid: "unbox_void2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 6
+      ignored: false
+      valueUuid: "uuid101"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "faf5da33-b451-3bd9-859a-a78aba908e5b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unbox_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "unbox_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "unbox_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 6
+      suggestedContent: !<regular>
+        value: 6
+      valueType: "int"
+      uuid: "unbox_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unbox_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "unbox_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 192
+      valueType: "int"
+      uuid: "uuid98"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Float"
+      valueType: "java.lang.String"
+      uuid: "unbox_string1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unbox_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "unbox_void2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 182
+      valueType: "int"
+      uuid: "uuid99"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Float"
+      valueType: "java.lang.String"
+      uuid: "unbox_string1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "floatValue"
+      valueType: "java.lang.String"
+      uuid: "unbox_string2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "()F"
+      valueType: "java.lang.String"
+      uuid: "unbox_string3"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid100"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid101"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path5"
+    testPathName: "unboxWhenSwitchPrimitiveTypeGetSortCaseTypeINT"
+    filledByUser: false
+    modelFingerprint: "7967A9C1A245EC01662C4408095FA1E8"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "58557B846E3B5669EE7AB7F9D168BD47"
+      index: 1
+      ignored: false
+      valueUuid: "unbox_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "primitiveType"
+      modelFingerprint: "9EEE94D2E265B98ADE918BFB9345E7F9"
+      index: 2
+      ignored: false
+      valueUuid: "unbox_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "primitiveType"
+      modelFingerprint: "7D7D0B7878CFF274F817D812E4554755"
+      index: 3
+      ignored: false
+      valueUuid: "unbox_type1"
+      methodExercised:
+        target: "primitiveType"
+        name: "getSort"
+        parameters: []
+        signature: "getSort(): int"
+        returnValueUuid: "unbox_int1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "A516C61BFF29296CAF284704CDFDADA8"
+      index: 4
+      ignored: false
+      valueUuid: "unbox_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitTypeInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid102"
+        - name: "type"
+          valueUuid: "unbox_string1"
+        signature: "visitTypeInsn(int,String): void"
+        returnValueUuid: "unbox_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "A282A60DD9DDB813BA8A0B8DDEA1C08B"
+      index: 5
+      ignored: false
+      valueUuid: "unbox_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitMethodInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid103"
+        - name: "owner"
+          valueUuid: "unbox_string1"
+        - name: "name"
+          valueUuid: "unbox_string2"
+        - name: "descriptor"
+          valueUuid: "unbox_string3"
+        - name: "isInterface"
+          valueUuid: "uuid104"
+        signature: "visitMethodInsn(int,String,String,String,boolean): void"
+        returnValueUuid: "unbox_void2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 6
+      ignored: false
+      valueUuid: "uuid105"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1e0e27d1-6652-3836-8b43-844a68b0fb6d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unbox_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "unbox_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "unbox_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 5
+      suggestedContent: !<regular>
+        value: 5
+      valueType: "int"
+      uuid: "unbox_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unbox_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "unbox_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 192
+      valueType: "int"
+      uuid: "uuid102"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Integer"
+      valueType: "java.lang.String"
+      uuid: "unbox_string1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unbox_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "unbox_void2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 182
+      valueType: "int"
+      uuid: "uuid103"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Integer"
+      valueType: "java.lang.String"
+      uuid: "unbox_string1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "intValue"
+      valueType: "java.lang.String"
+      uuid: "unbox_string2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "()I"
+      valueType: "java.lang.String"
+      uuid: "unbox_string3"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid104"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid105"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path7"
+    testPathName: "unboxWhenSwitchPrimitiveTypeGetSortCaseTypeLONG"
+    filledByUser: false
+    modelFingerprint: "70C1D6351FA78BBE83DB6858553E38B1"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "58557B846E3B5669EE7AB7F9D168BD47"
+      index: 1
+      ignored: false
+      valueUuid: "unbox_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "primitiveType"
+      modelFingerprint: "9EEE94D2E265B98ADE918BFB9345E7F9"
+      index: 2
+      ignored: false
+      valueUuid: "unbox_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "primitiveType"
+      modelFingerprint: "3BB4CC39A5C6BCF89D73590EDDAF4EA6"
+      index: 3
+      ignored: false
+      valueUuid: "unbox_type1"
+      methodExercised:
+        target: "primitiveType"
+        name: "getSort"
+        parameters: []
+        signature: "getSort(): int"
+        returnValueUuid: "unbox_int1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "5E48D221D2A5A1BD7835A35AE8C0DD86"
+      index: 4
+      ignored: false
+      valueUuid: "unbox_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitTypeInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid106"
+        - name: "type"
+          valueUuid: "unbox_string1"
+        signature: "visitTypeInsn(int,String): void"
+        returnValueUuid: "unbox_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "CB82DC9E6E1288EBD4F31838CCBCFEA6"
+      index: 5
+      ignored: false
+      valueUuid: "unbox_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitMethodInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid107"
+        - name: "owner"
+          valueUuid: "unbox_string1"
+        - name: "name"
+          valueUuid: "unbox_string2"
+        - name: "descriptor"
+          valueUuid: "unbox_string3"
+        - name: "isInterface"
+          valueUuid: "uuid108"
+        signature: "visitMethodInsn(int,String,String,String,boolean): void"
+        returnValueUuid: "unbox_void2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 6
+      ignored: false
+      valueUuid: "uuid109"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4b4e5ce9-e2ca-357f-9ae5-cacfc4cf6fac"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unbox_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "unbox_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "unbox_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 7
+      suggestedContent: !<regular>
+        value: 7
+      valueType: "int"
+      uuid: "unbox_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unbox_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "unbox_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 192
+      valueType: "int"
+      uuid: "uuid106"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Long"
+      valueType: "java.lang.String"
+      uuid: "unbox_string1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unbox_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "unbox_void2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 182
+      valueType: "int"
+      uuid: "uuid107"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Long"
+      valueType: "java.lang.String"
+      uuid: "unbox_string1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "longValue"
+      valueType: "java.lang.String"
+      uuid: "unbox_string2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "()J"
+      valueType: "java.lang.String"
+      uuid: "unbox_string3"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid108"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid109"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path4"
+    testPathName: "unboxWhenSwitchPrimitiveTypeGetSortCaseTypeSHORT"
+    filledByUser: false
+    modelFingerprint: "08FA849C4E0AFF4005D6B0823468AD06"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "58557B846E3B5669EE7AB7F9D168BD47"
+      index: 1
+      ignored: false
+      valueUuid: "unbox_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "primitiveType"
+      modelFingerprint: "9EEE94D2E265B98ADE918BFB9345E7F9"
+      index: 2
+      ignored: false
+      valueUuid: "unbox_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "primitiveType"
+      modelFingerprint: "1CF2A9D5CE613EE1EBEDAA2078C36ED1"
+      index: 3
+      ignored: false
+      valueUuid: "unbox_type1"
+      methodExercised:
+        target: "primitiveType"
+        name: "getSort"
+        parameters: []
+        signature: "getSort(): int"
+        returnValueUuid: "unbox_int1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "EC0A06014ADFBF2D32F8D55A0FFB5B7F"
+      index: 4
+      ignored: false
+      valueUuid: "unbox_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitTypeInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid110"
+        - name: "type"
+          valueUuid: "unbox_string1"
+        signature: "visitTypeInsn(int,String): void"
+        returnValueUuid: "unbox_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "mv"
+      modelFingerprint: "812263CB13FAB89740AA2FCA8966BE32"
+      index: 5
+      ignored: false
+      valueUuid: "unbox_methodVisitor1"
+      methodExercised:
+        target: "mv"
+        name: "visitMethodInsn"
+        parameters:
+        - name: "opcode"
+          valueUuid: "uuid111"
+        - name: "owner"
+          valueUuid: "unbox_string1"
+        - name: "name"
+          valueUuid: "unbox_string2"
+        - name: "descriptor"
+          valueUuid: "unbox_string3"
+        - name: "isInterface"
+          valueUuid: "uuid112"
+        signature: "visitMethodInsn(int,String,String,String,boolean): void"
+        returnValueUuid: "unbox_void2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 6
+      ignored: false
+      valueUuid: "uuid113"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a2c7d2db-16f0-37b0-9e42-151f7e3dd6db"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unbox_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "unbox_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.Type"
+      uuid: "unbox_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 4
+      suggestedContent: !<regular>
+        value: 4
+      valueType: "int"
+      uuid: "unbox_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unbox_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "unbox_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 192
+      valueType: "int"
+      uuid: "uuid110"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Short"
+      valueType: "java.lang.String"
+      uuid: "unbox_string1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unbox_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "unbox_void2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 182
+      valueType: "int"
+      uuid: "uuid111"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java/lang/Short"
+      valueType: "java.lang.String"
+      uuid: "unbox_string1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "shortValue"
+      valueType: "java.lang.String"
+      uuid: "unbox_string2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "()S"
+      valueType: "java.lang.String"
+      uuid: "unbox_string3"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid112"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid113"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path9"
+    testPathName: "unboxWhenSwitchPrimitiveTypeGetSortCaseDefault"
+    filledByUser: false
+    modelFingerprint: "2976EF7944D9E65BFCB540E552C0EF14"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "mv"
+      modelFingerprint: "8ABAC138E9DC936ABF9BD1C859F91A19"
+      index: 1
+      ignored: false
+      valueUuid: "unbox_methodVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "primitiveType"
+      modelFingerprint: "6F792BA79613D2725EAC3AEDC16A74C0"
+      index: 2
+      ignored: false
+      valueUuid: "unbox_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "primitiveType"
+      modelFingerprint: "E7868623EA77F63B14B6F1D0E7F996E2"
+      index: 3
+      ignored: false
+      valueUuid: "unbox_type1"
+      methodExercised:
+        target: "primitiveType"
+        name: "getSort"
+        parameters: []
+        signature: "getSort(): int"
+        returnValueUuid: "unbox_int1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 4
+      ignored: false
+      valueUuid: "uuid1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c69ab964-bba4-31e9-b7ff-c2f9724320f7"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "org.objectweb.asm.MethodVisitor"
+      uuid: "unbox_methodVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.objectweb.asm.Type"
+        method: "getType"
+        methodParameters:
+        - name: "clazz"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "unbox_type1-clazz"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "org.objectweb.asm.Type"
+        method: "getType"
+        methodParameters:
+        - name: "clazz"
+          value:
+            sapientType: "CLASS"
+            valueType: "java.lang.Class"
+            uuid: "unbox_type1-clazz"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "org.objectweb.asm.Type"
+      uuid: "unbox_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "org.objectweb.asm.Type"
+        method: "getType"
+        methodParameters:
+        - name: "clazz"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "unbox_type1-clazz"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "org.objectweb.asm.Type"
+        method: "getType"
+        methodParameters:
+        - name: "clazz"
+          value:
+            sapientType: "CLASS"
+            valueType: "java.lang.Class"
+            uuid: "unbox_type1-clazz"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "org.objectweb.asm.Type"
+      uuid: "unbox_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 10
+      valueType: "int"
+      uuid: "unbox_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false

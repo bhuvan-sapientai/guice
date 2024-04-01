@@ -1,0 +1,1172 @@
+---
+modelFingerprint: "E61F275D4439027535775B7C855B1763"
+methods:
+- method:
+    name: "visit"
+    signature: "visit(com.google.inject.spi.ScopeBinding) : java.lang.Boolean"
+    instructionFingerprint: "9F9D772FD35A9C1369EF84E0D66AA78B"
+  paths:
+  - pathId: "path3"
+    testPathName: "visit17WhenExistingIsNull"
+    constructorSignature: "<init>(com.google.inject.internal.Errors) : void"
+    filledByUser: false
+    modelFingerprint: "7C71BCE1EC71E52425AEA8D2A7BC6C05"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "79B385591A0958E7F386DE41A58FE8E9"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "command"
+      modelFingerprint: "6FC98F933A8AA343D0E2D769615EE64C"
+      index: 2
+      ignored: false
+      valueUuid: "visit_scopeBinding1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "command"
+      modelFingerprint: "BB7898D5B933B28A76480FEB81A5FB8C"
+      index: 3
+      ignored: false
+      valueUuid: "visit_scopeBinding1"
+      methodExercised:
+        target: "command"
+        name: "getScope"
+        parameters: []
+        signature: "getScope(): Scope"
+        returnValueUuid: "visit_scope1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "command"
+      modelFingerprint: "FD9BB725E3CD1257D16BA82C300DD265"
+      index: 4
+      ignored: false
+      valueUuid: "visit_scopeBinding1"
+      methodExercised:
+        target: "command"
+        name: "getAnnotationType"
+        parameters: []
+        signature: "getAnnotationType(): Class"
+        returnValueUuid: "visit_class1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Annotations"
+      modelFingerprint: "0BE0605C3CD0CF86E5ECEF2B3D9C790A"
+      index: 5
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.Annotations"
+        name: "isScopeAnnotation"
+        parameters:
+        - name: "annotationType"
+          valueUuid: "visit_class2"
+        signature: "isScopeAnnotation(Class): boolean"
+        returnValueUuid: "visit_boolean1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "errors"
+      modelFingerprint: "B4E4635CA371843772E6BC0E9CDD757E"
+      index: 6
+      ignored: false
+      valueUuid: "<init>_errors1"
+      methodExercised:
+        target: "this.errors"
+        name: "missingScopeAnnotation"
+        parameters:
+        - name: "annotation"
+          valueUuid: "visit_class2"
+        signature: "missingScopeAnnotation(Class): Errors"
+        returnValueUuid: "visit_errors1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Annotations"
+      modelFingerprint: "E59557E08E86A333E513F17AF3FFC12B"
+      index: 7
+      ignored: false
+      valueUuid: "uuid2"
+      methodExercised:
+        target: "com.google.inject.internal.Annotations"
+        name: "isRetainedAtRuntime"
+        parameters:
+        - name: "annotationType"
+          valueUuid: "visit_class2"
+        signature: "isRetainedAtRuntime(Class): boolean"
+        returnValueUuid: "visit_boolean2"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "errors"
+      modelFingerprint: "E2CD2CB92EE3B145E0FD389F5847E2CD"
+      index: 8
+      ignored: false
+      valueUuid: "<init>_errors1"
+      methodExercised:
+        target: "this.errors"
+        name: "missingRuntimeRetention"
+        parameters:
+        - name: "annotation"
+          valueUuid: "visit_class2"
+        signature: "missingRuntimeRetention(Class): Errors"
+        returnValueUuid: "visit_errors2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "injector"
+      modelFingerprint: "EF7F796586857C494D797E41CEFB4D02"
+      index: 9
+      ignored: false
+      valueUuid: "injectorImpl1"
+      methodExercised:
+        target: "this.injector"
+        name: "getBindingData"
+        parameters: []
+        signature: "getBindingData(): InjectorBindingData"
+        returnValueUuid: "visit_injectorBindingData1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "D3ABA390049442F69FD3EE32F5F24A4B"
+      index: 10
+      ignored: false
+      valueUuid: "visit_injectorBindingData1"
+      methodExercised:
+        target: "com.google.inject.internal.InjectorBindingData"
+        name: "getScopeBinding"
+        parameters:
+        - name: "annotationType"
+          valueUuid: "visit_class2"
+        signature: "getScopeBinding(Class): ScopeBinding"
+        returnValueUuid: "visit_scopeBinding2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "injector"
+      modelFingerprint: "EF7F796586857C494D797E41CEFB4D02"
+      index: 11
+      ignored: false
+      valueUuid: "injectorImpl1"
+      methodExercised:
+        target: "this.injector"
+        name: "getBindingData"
+        parameters: []
+        signature: "getBindingData(): InjectorBindingData"
+        returnValueUuid: "visit_injectorBindingData2"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "70C8F97B9E7F4C2CF7AE5C14833A6B1C"
+      index: 12
+      ignored: false
+      valueUuid: "visit_injectorBindingData2"
+      methodExercised:
+        target: "com.google.inject.internal.InjectorBindingData"
+        name: "putScopeBinding"
+        parameters:
+        - name: "annotationType"
+          valueUuid: "visit_class2"
+        - name: "scope"
+          valueUuid: "visit_scopeBinding1"
+        signature: "putScopeBinding(Class,ScopeBinding): void"
+        returnValueUuid: "visit_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "47D8A47490D2259B302011E1A2B37B5D"
+      index: 13
+      ignored: false
+      valueUuid: "visit_boolean3"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "027b9664-04f6-31f3-9f2e-859803e1be9f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.Scope,java.lang.String)\
+        \ : com.google.inject.Scope"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.ScopeBindingProcessor"
+        parameters:
+        - name: "errors"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.Errors"
+            uuid: "<init>_errors1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+        propertiesMap:
+          injector:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.ScopeBindingProcessor"
+        parameters:
+        - name: "errors"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.internal.Errors"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.internal.Errors"
+            uuid: "<init>_errors1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+        propertiesMap:
+          injector:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.internal.InjectorImpl"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.internal.ScopeBindingProcessor"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ScopeBinding"
+      uuid: "visit_scopeBinding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ScopeBinding"
+      uuid: "visit_scopeBinding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Scope"
+      uuid: "visit_scope1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ScopeBinding"
+      uuid: "visit_scopeBinding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? extends java.lang.annotation.Annotation"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.annotation.Annotation"
+      uuid: "visit_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Annotations"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "visit_boolean1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? extends java.lang.annotation.Annotation"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.annotation.Annotation"
+      uuid: "visit_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Errors"
+      uuid: "<init>_errors1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Errors"
+      uuid: "visit_errors1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? extends java.lang.annotation.Annotation"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.annotation.Annotation"
+      uuid: "visit_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Annotations"
+      uuid: "uuid2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "visit_boolean2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? extends java.lang.annotation.Annotation"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.annotation.Annotation"
+      uuid: "visit_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Errors"
+      uuid: "<init>_errors1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Errors"
+      uuid: "visit_errors2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? extends java.lang.annotation.Annotation"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.annotation.Annotation"
+      uuid: "visit_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InjectorImpl"
+      uuid: "injectorImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InjectorBindingData"
+      uuid: "visit_injectorBindingData1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InjectorBindingData"
+      uuid: "visit_injectorBindingData1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      valueType: "com.google.inject.spi.ScopeBinding"
+      uuid: "visit_scopeBinding2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? extends java.lang.annotation.Annotation"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.annotation.Annotation"
+      uuid: "visit_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InjectorImpl"
+      uuid: "injectorImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InjectorBindingData"
+      uuid: "visit_injectorBindingData2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InjectorBindingData"
+      uuid: "visit_injectorBindingData2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "visit_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? extends java.lang.annotation.Annotation"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.annotation.Annotation"
+      uuid: "visit_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ScopeBinding"
+      uuid: "visit_scopeBinding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "visit_boolean3"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path6"
+    testPathName: "visit17WhenAnnotationsIsRetainedAtRuntimeAnnotationTypeAndExistingIsNull"
+    constructorSignature: "<init>(com.google.inject.internal.Errors) : void"
+    filledByUser: false
+    modelFingerprint: "F6EA2D6DF3ED679188F73AA18D614D36"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "8a7615c8-6bca-3152-900d-705bebd55ace"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.Scope,java.lang.String)\
+        \ : com.google.inject.Scope"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path9"
+    testPathName: "visit17WhenAnnotationsNotIsRetainedAtRuntimeAnnotationTypeAndExistingIsNull"
+    constructorSignature: "<init>(com.google.inject.internal.Errors) : void"
+    filledByUser: false
+    modelFingerprint: "0D247DAE1078C45A760D294F07B23F50"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "ee98f483-7a18-3d27-9824-e11018cc6980"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.Scope,java.lang.String)\
+        \ : com.google.inject.Scope"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path12"
+    testPathName: "visit17WhenAnnotationsIsScopeAnnotationAnnotationTypeAndAnnotationsIsRetainedAtRuntimeAnnotationTypeAndExistingIsNull"
+    constructorSignature: "<init>(com.google.inject.internal.Errors) : void"
+    filledByUser: false
+    modelFingerprint: "46CCC09E123C89313AD718D03235F60D"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "4a2c8198-0d09-3da6-b3df-65b0c6b1fd59"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.Scope,java.lang.String)\
+        \ : com.google.inject.Scope"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path1"
+    testPathName: "visit17WhenScopeNotEqualsExistingGetScope"
+    constructorSignature: "<init>(com.google.inject.internal.Errors) : void"
+    filledByUser: false
+    modelFingerprint: "0295A5ABC9BCB6C85E7549DF63BB12A2"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "0146D104D4C1468B6B0A1091C6D1D5DD"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "command"
+      modelFingerprint: "0CB5AD79B89D8161293FFAE772AC0B2E"
+      index: 2
+      ignored: false
+      valueUuid: "visit_scopeBinding1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "command"
+      modelFingerprint: "672284C0706035FCF8E4B1206D60169E"
+      index: 3
+      ignored: false
+      valueUuid: "visit_scopeBinding1"
+      methodExercised:
+        target: "command"
+        name: "getScope"
+        parameters: []
+        signature: "getScope(): Scope"
+        returnValueUuid: "visit_scope1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "command"
+      modelFingerprint: "80887D5FD317A9E125A2ABFEA6B04F9A"
+      index: 4
+      ignored: false
+      valueUuid: "visit_scopeBinding1"
+      methodExercised:
+        target: "command"
+        name: "getAnnotationType"
+        parameters: []
+        signature: "getAnnotationType(): Class"
+        returnValueUuid: "visit_class1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Annotations"
+      modelFingerprint: "2C92E0E688307012EF18BF4826D3FBEE"
+      index: 5
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.Annotations"
+        name: "isScopeAnnotation"
+        parameters:
+        - name: "annotationType"
+          valueUuid: "visit_class2"
+        signature: "isScopeAnnotation(Class): boolean"
+        returnValueUuid: "visit_boolean1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "errors"
+      modelFingerprint: "9956ECEE664EE3706B99815DC98F71D8"
+      index: 6
+      ignored: false
+      valueUuid: "<init>_errors1"
+      methodExercised:
+        target: "this.errors"
+        name: "missingScopeAnnotation"
+        parameters:
+        - name: "annotation"
+          valueUuid: "visit_class2"
+        signature: "missingScopeAnnotation(Class): Errors"
+        returnValueUuid: "visit_errors1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Annotations"
+      modelFingerprint: "99F4FE329DF32B2DB0B7B6FACF3B642F"
+      index: 7
+      ignored: false
+      valueUuid: "uuid2"
+      methodExercised:
+        target: "com.google.inject.internal.Annotations"
+        name: "isRetainedAtRuntime"
+        parameters:
+        - name: "annotationType"
+          valueUuid: "visit_class2"
+        signature: "isRetainedAtRuntime(Class): boolean"
+        returnValueUuid: "visit_boolean2"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "errors"
+      modelFingerprint: "DF1D603F9639A604AADC6FB16C47F543"
+      index: 8
+      ignored: false
+      valueUuid: "<init>_errors1"
+      methodExercised:
+        target: "this.errors"
+        name: "missingRuntimeRetention"
+        parameters:
+        - name: "annotation"
+          valueUuid: "visit_class2"
+        signature: "missingRuntimeRetention(Class): Errors"
+        returnValueUuid: "visit_errors2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "injector"
+      modelFingerprint: "68EE5D6F6C6A5C5486F9CBD493DC5629"
+      index: 9
+      ignored: false
+      valueUuid: "injectorImpl1"
+      methodExercised:
+        target: "this.injector"
+        name: "getBindingData"
+        parameters: []
+        signature: "getBindingData(): InjectorBindingData"
+        returnValueUuid: "visit_injectorBindingData1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "76F4F8BA86AA3D7D6294A443429C5855"
+      index: 10
+      ignored: false
+      valueUuid: "visit_injectorBindingData1"
+      methodExercised:
+        target: "com.google.inject.internal.InjectorBindingData"
+        name: "getScopeBinding"
+        parameters:
+        - name: "annotationType"
+          valueUuid: "visit_class2"
+        signature: "getScopeBinding(Class): ScopeBinding"
+        returnValueUuid: "visit_scopeBinding2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "existing"
+      modelFingerprint: "17A54EE79F14A6785B0F53499FC40EAD"
+      index: 11
+      ignored: false
+      valueUuid: "visit_scopeBinding2"
+      methodExercised:
+        target: "existing"
+        name: "getScope"
+        parameters: []
+        signature: "getScope(): Scope"
+        returnValueUuid: "visit_scope3"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "errors"
+      modelFingerprint: "CEFBFB30BE60AD64F3C980764653DAAB"
+      index: 12
+      ignored: false
+      valueUuid: "<init>_errors1"
+      methodExercised:
+        target: "this.errors"
+        name: "duplicateScopes"
+        parameters:
+        - name: "existing"
+          valueUuid: "visit_scopeBinding2"
+        - name: "annotationType"
+          valueUuid: "visit_class2"
+        - name: "scope"
+          valueUuid: "visit_scope2"
+        signature: "duplicateScopes(ScopeBinding,Class,Scope): Errors"
+        returnValueUuid: "visit_errors3"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "47D8A47490D2259B302011E1A2B37B5D"
+      index: 13
+      ignored: false
+      valueUuid: "visit_boolean4"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0a41c593-54d8-3d89-89da-fa435a400216"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.Scope,java.lang.String)\
+        \ : com.google.inject.Scope"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.ScopeBindingProcessor"
+        parameters:
+        - name: "errors"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.Errors"
+            uuid: "<init>_errors1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+        propertiesMap:
+          injector:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.ScopeBindingProcessor"
+        parameters:
+        - name: "errors"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.Errors"
+            uuid: "<init>_errors1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+        propertiesMap:
+          injector:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.internal.ScopeBindingProcessor"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ScopeBinding"
+      uuid: "visit_scopeBinding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ScopeBinding"
+      uuid: "visit_scopeBinding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Scope"
+      uuid: "visit_scope1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ScopeBinding"
+      uuid: "visit_scopeBinding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? extends java.lang.annotation.Annotation"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.annotation.Annotation"
+      uuid: "visit_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Annotations"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "visit_boolean1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? extends java.lang.annotation.Annotation"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.annotation.Annotation"
+      uuid: "visit_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Errors"
+      uuid: "<init>_errors1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "com.google.inject.internal.Errors"
+        localVariableValue:
+          sapientType: "MOCK"
+          valueType: "com.google.inject.internal.Errors"
+          uuid: "<init>_errors1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "annotation"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "? extends java.lang.annotation.Annotation"
+            valueType: "java.lang.Class"
+            genericValueType: "? extends java.lang.annotation.Annotation"
+            uuid: "visit_class2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "missingScopeAnnotation"
+      suggestedContent: !<method_return_from_value>
+        target: "com.google.inject.internal.Errors"
+        localVariableValue:
+          sapientType: "MOCK"
+          valueType: "com.google.inject.internal.Errors"
+          uuid: "<init>_errors1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "annotation"
+          value:
+            sapientType: "CLASS"
+            valueType: "java.lang.Class"
+            genericValueType: "? extends java.lang.annotation.Annotation"
+            uuid: "visit_class2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "missingScopeAnnotation"
+      valueType: "com.google.inject.internal.Errors"
+      uuid: "visit_errors1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? extends java.lang.annotation.Annotation"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.annotation.Annotation"
+      uuid: "visit_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Annotations"
+      uuid: "uuid2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "visit_boolean2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? extends java.lang.annotation.Annotation"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.annotation.Annotation"
+      uuid: "visit_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Errors"
+      uuid: "<init>_errors1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Errors"
+      uuid: "visit_errors2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? extends java.lang.annotation.Annotation"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.annotation.Annotation"
+      uuid: "visit_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InjectorImpl"
+      uuid: "injectorImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InjectorBindingData"
+      uuid: "visit_injectorBindingData1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InjectorBindingData"
+      uuid: "visit_injectorBindingData1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ScopeBinding"
+      uuid: "visit_scopeBinding2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? extends java.lang.annotation.Annotation"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.annotation.Annotation"
+      uuid: "visit_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ScopeBinding"
+      uuid: "visit_scopeBinding2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Scope"
+      uuid: "visit_scope3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Errors"
+      uuid: "<init>_errors1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Errors"
+      uuid: "visit_errors3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ScopeBinding"
+      uuid: "visit_scopeBinding2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? extends java.lang.annotation.Annotation"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.annotation.Annotation"
+      uuid: "visit_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Scope"
+      uuid: "visit_scope2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "visit_boolean4"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "visit17WhenScopeEqualsExistingGetScope"
+    constructorSignature: "<init>(com.google.inject.internal.Errors) : void"
+    filledByUser: false
+    modelFingerprint: "7E1F6C9145C8E218DB50323B09C686FB"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "2148b067-c45f-3267-be1a-994d5d8d80c2"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.Scope,java.lang.String)\
+        \ : com.google.inject.Scope"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path4"
+    testPathName: "visit17WhenExistingIsNotNullAndScopeNotEqualsExistingGetScope"
+    constructorSignature: "<init>(com.google.inject.internal.Errors) : void"
+    filledByUser: false
+    modelFingerprint: "84C86A1E8B7B18B4E38F6D31FE63486F"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "5a44d32c-f344-3ef3-a5a4-e47bcdb8a5c8"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.Scope,java.lang.String)\
+        \ : com.google.inject.Scope"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path5"
+    testPathName: "visit17WhenExistingIsNotNullAndScopeEqualsExistingGetScope"
+    constructorSignature: "<init>(com.google.inject.internal.Errors) : void"
+    filledByUser: false
+    modelFingerprint: "D0719A1FD2878E2F659C40763D44DBCE"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "4526209e-0991-3f5d-9a97-a8d9e6e0efbf"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.Scope,java.lang.String)\
+        \ : com.google.inject.Scope"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path7"
+    testPathName: "visit17WhenAnnotationsNotIsRetainedAtRuntimeAnnotationTypeAndExistingIsNotNullAndScopeNotEqualsExistingGetScope"
+    constructorSignature: "<init>(com.google.inject.internal.Errors) : void"
+    filledByUser: false
+    modelFingerprint: "0C4485DC804332BFC7F8FD512EE23CBB"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "58a40354-bdd9-3173-ae1e-9df6cb396eba"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.Scope,java.lang.String)\
+        \ : com.google.inject.Scope"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path8"
+    testPathName: "visit17WhenAnnotationsNotIsRetainedAtRuntimeAnnotationTypeAndExistingIsNotNullAndScopeEqualsExistingGetScope"
+    constructorSignature: "<init>(com.google.inject.internal.Errors) : void"
+    filledByUser: false
+    modelFingerprint: "2AA9C70C30B28145DD1B50EA7F2ACCD5"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "27078df6-30ff-30aa-b730-4ea8e7162758"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.Scope,java.lang.String)\
+        \ : com.google.inject.Scope"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path10"
+    testPathName: "visit17WhenAnnotationsIsRetainedAtRuntimeAnnotationTypeAndExistingIsNotNullAndScopeNotEqualsExistingGetScope"
+    constructorSignature: "<init>(com.google.inject.internal.Errors) : void"
+    filledByUser: false
+    modelFingerprint: "D0B21769C1F7F5F612C67F05EA0840DE"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "c34b1a16-ce65-3ebe-bef2-c9560c6ab679"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.Scope,java.lang.String)\
+        \ : com.google.inject.Scope"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path11"
+    testPathName: "visit17WhenAnnotationsIsRetainedAtRuntimeAnnotationTypeAndExistingIsNotNullAndScopeEqualsExistingGetScope"
+    constructorSignature: "<init>(com.google.inject.internal.Errors) : void"
+    filledByUser: false
+    modelFingerprint: "3EBBCCDA682B21FCC1E29198DB44EBFD"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "b05d3394-b88c-31ec-b133-4f68a2a5a8c6"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.Scope,java.lang.String)\
+        \ : com.google.inject.Scope"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []

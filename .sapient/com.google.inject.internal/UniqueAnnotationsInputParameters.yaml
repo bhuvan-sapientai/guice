@@ -1,0 +1,126 @@
+---
+modelFingerprint: "FE991F0C9B532C1222E06A19F7CF96A7"
+methods:
+- method:
+    name: "create"
+    signature: "create() : java.lang.annotation.Annotation"
+    instructionFingerprint: "EFA548CABDA5F7288B5962804BF50519"
+  paths:
+  - pathId: "path1"
+    testPathName: "createTest"
+    filledByUser: false
+    modelFingerprint: "65F020ED5508612648CC167BD40FFABB"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC"
+      name: "UniqueAnnotations"
+      modelFingerprint: "C7E4C3D75A3DF91B87007F703CBE41C5"
+      index: 1
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.UniqueAnnotations"
+        name: "create"
+        parameters:
+        - name: "value"
+          valueUuid: "create_int1"
+        signature: "create(int): Annotation"
+        returnValueUuid: "create_annotation1"
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A2F2286A3514CAC8AACC00DCC1F4C98"
+      index: 2
+      ignored: false
+      valueUuid: "create_annotation1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2284fc3d-473b-3992-886d-8fe431bd702d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.UniqueAnnotations"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.annotation.Annotation"
+      uuid: "create_annotation1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "create_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.annotation.Annotation"
+      uuid: "create_annotation1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "create"
+    signature: "create(int) : java.lang.annotation.Annotation"
+    instructionFingerprint: "12266EB4052511ABCEAD17D2F8EF5960"
+  paths:
+  - pathId: "path1"
+    testPathName: "create1Test"
+    filledByUser: false
+    modelFingerprint: "A71946A884F9C3A75ADAAF212DE9AA90"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "B59937C1EA123B7B624AE0B10716D827"
+      index: 1
+      ignored: false
+      valueUuid: "create_int1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "624DD3FC66BCF4CEEA08252681E10DFA"
+      index: 2
+      ignored: false
+      valueUuid: "uuid1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b0d142e8-0743-37b5-ba4a-5c4957c16e12"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      suggestedContent: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "create_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NOT_NULL"
+      valueType: "java.lang.annotation.Annotation"
+      uuid: "uuid1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false

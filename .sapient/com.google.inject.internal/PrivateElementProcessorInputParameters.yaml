@@ -1,0 +1,419 @@
+---
+modelFingerprint: "467398EA04D8FBAF16C958462CB8BADE"
+methods:
+- method:
+    name: "visit"
+    signature: "visit(com.google.inject.spi.PrivateElements) : java.lang.Boolean"
+    instructionFingerprint: "CA2B0EF520ECB528EBC2A5DAF338F613"
+  paths:
+  - pathId: "path1"
+    testPathName: "visit17Test"
+    constructorSignature: "<init>(com.google.inject.internal.Errors) : void"
+    filledByUser: false
+    modelFingerprint: "EAEEB4F962BF43063813F14E3B3D3662"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "A0A51C295EA12FD060A6DB5D91DB69CC"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "privateElements"
+      modelFingerprint: "F5318571B8F37F4955E0EF048B9D68EE"
+      index: 2
+      ignored: false
+      valueUuid: "visit_privateElements1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "134C5C5204DEB74F92BAC80F14D0131C"
+      index: 3
+      ignored: false
+      valueUuid: "visit_injectorShell.Builder1"
+      methodExercised:
+        target: "com.google.inject.internal.InjectorShell$Builder"
+        name: "parent"
+        parameters:
+        - name: "parent"
+          valueUuid: "injectorImpl1"
+        signature: "parent(InjectorImpl): InjectorShell$Builder"
+        returnValueUuid: "visit_injectorShell.Builder2"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "654DFA103F1065CEEF23D696FF177F20"
+      index: 4
+      ignored: false
+      valueUuid: "visit_injectorShell.Builder2"
+      methodExercised:
+        target: "com.google.inject.internal.InjectorShell$Builder"
+        name: "privateElements"
+        parameters:
+        - name: "privateElements"
+          valueUuid: "visit_privateElements1"
+        signature: "privateElements(PrivateElements): InjectorShell$Builder"
+        returnValueUuid: "visit_injectorShell.Builder3"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "47D8A47490D2259B302011E1A2B37B5D"
+      index: 5
+      ignored: false
+      valueUuid: "visit_boolean2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3aac8d70-6d26-35c3-a38b-c3a6cac3b6bc"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "object of type InjectorShell.Builder"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "new InjectorShell.Builder().parent(injector).privateElements(privateElements);"
+      lineNumber: 39
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type InjectorShell.Builder - Method: privateElements"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.PrivateElementProcessor"
+        parameters:
+        - name: "errors"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.Errors"
+            uuid: "<init>_errors1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.PrivateElementProcessor"
+        parameters:
+        - name: "errors"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.internal.Errors"
+            uuid: "<init>_errors1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.PrivateElementProcessor"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.PrivateElements"
+      uuid: "visit_privateElements1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.InjectorShell$Builder"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.InjectorShell$Builder"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.internal.InjectorShell$Builder"
+      uuid: "visit_injectorShell.Builder1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "com.google.inject.internal.InjectorShell$Builder"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "com.google.inject.internal.InjectorShell$Builder"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: true
+          suggestedContent: !<new>
+            target: "com.google.inject.internal.InjectorShell$Builder"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: true
+          valueType: "com.google.inject.internal.InjectorShell$Builder"
+          uuid: "visit_injectorShell.Builder1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "parent"
+          value:
+            sapientType: "NULL"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "parent"
+      suggestedContent: !<method_return_from_value>
+        target: "com.google.inject.internal.InjectorShell$Builder"
+        localVariableValue:
+          sapientType: "OBJECT"
+          suggestedContent: !<new>
+            target: "com.google.inject.internal.InjectorShell$Builder"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: true
+          valueType: "com.google.inject.internal.InjectorShell$Builder"
+          uuid: "visit_injectorShell.Builder1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "parent"
+          value:
+            sapientType: "NULL"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "parent"
+      valueType: "com.google.inject.internal.InjectorShell$Builder"
+      uuid: "visit_injectorShell.Builder2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      valueType: "com.google.inject.internal.InjectorImpl"
+      uuid: "injectorImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "com.google.inject.internal.InjectorShell$Builder"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "com.google.inject.internal.InjectorShell$Builder"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: true
+          suggestedContent: !<new>
+            target: "com.google.inject.internal.InjectorShell$Builder"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: true
+          valueType: "com.google.inject.internal.InjectorShell$Builder"
+          uuid: "visit_injectorShell.Builder1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "parent"
+          value:
+            sapientType: "NULL"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "parent"
+      suggestedContent: !<method_return_from_value>
+        target: "com.google.inject.internal.InjectorShell$Builder"
+        localVariableValue:
+          sapientType: "OBJECT"
+          suggestedContent: !<new>
+            target: "com.google.inject.internal.InjectorShell$Builder"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: true
+          valueType: "com.google.inject.internal.InjectorShell$Builder"
+          uuid: "visit_injectorShell.Builder1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "parent"
+          value:
+            sapientType: "NULL"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "parent"
+      valueType: "com.google.inject.internal.InjectorShell$Builder"
+      uuid: "visit_injectorShell.Builder2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "com.google.inject.internal.InjectorShell$Builder"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<method_return_from_value>
+            target: "com.google.inject.internal.InjectorShell$Builder"
+            localVariableValue:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "com.google.inject.internal.InjectorShell$Builder"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              suggestedContent: !<new>
+                target: "com.google.inject.internal.InjectorShell$Builder"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "com.google.inject.internal.InjectorShell$Builder"
+              uuid: "visit_injectorShell.Builder1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "parent"
+              value:
+                sapientType: "NULL"
+                valueType: "com.google.inject.internal.InjectorImpl"
+                uuid: "injectorImpl1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "parent"
+          suggestedContent: !<method_return_from_value>
+            target: "com.google.inject.internal.InjectorShell$Builder"
+            localVariableValue:
+              sapientType: "OBJECT"
+              suggestedContent: !<new>
+                target: "com.google.inject.internal.InjectorShell$Builder"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "com.google.inject.internal.InjectorShell$Builder"
+              uuid: "visit_injectorShell.Builder1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "parent"
+              value:
+                sapientType: "NULL"
+                valueType: "com.google.inject.internal.InjectorImpl"
+                uuid: "injectorImpl1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "parent"
+          valueType: "com.google.inject.internal.InjectorShell$Builder"
+          uuid: "visit_injectorShell.Builder2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "privateElements"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.PrivateElements"
+            uuid: "visit_privateElements1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "privateElements"
+      suggestedContent: !<method_return_from_value>
+        target: "com.google.inject.internal.InjectorShell$Builder"
+        localVariableValue:
+          sapientType: "OBJECT"
+          suggestedContent: !<method_return_from_value>
+            target: "com.google.inject.internal.InjectorShell$Builder"
+            localVariableValue:
+              sapientType: "OBJECT"
+              suggestedContent: !<new>
+                target: "com.google.inject.internal.InjectorShell$Builder"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "com.google.inject.internal.InjectorShell$Builder"
+              uuid: "visit_injectorShell.Builder1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "parent"
+              value:
+                sapientType: "NULL"
+                valueType: "com.google.inject.internal.InjectorImpl"
+                uuid: "injectorImpl1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "parent"
+          valueType: "com.google.inject.internal.InjectorShell$Builder"
+          uuid: "visit_injectorShell.Builder2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "privateElements"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.spi.PrivateElements"
+            uuid: "visit_privateElements1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "privateElements"
+      valueType: "com.google.inject.internal.InjectorShell$Builder"
+      uuid: "visit_injectorShell.Builder3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.PrivateElements"
+      uuid: "visit_privateElements1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "visit_boolean2"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "getInjectorShellBuilders"
+    signature: "getInjectorShellBuilders() : java.util.List<com.google.inject.internal.InjectorShell$Builder>"
+    instructionFingerprint: "888B52B5C1FCCE8F479D407DD8E7990E"
+  paths:
+  - pathId: "path1"
+    testPathName: "getInjectorShellBuildersTest"
+    constructorSignature: "<init>(com.google.inject.internal.Errors) : void"
+    filledByUser: false
+    modelFingerprint: "3B9E8B3B916B2B415AD79F04F9988908"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "727dcca4-240d-3d80-bff2-2141fe485001"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []

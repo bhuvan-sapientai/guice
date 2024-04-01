@@ -1,0 +1,381 @@
+---
+modelFingerprint: "1D8A819753D7198839569C5359E6F5CF"
+methods:
+- method:
+    name: "getSource"
+    signature: "getSource() : java.lang.Object"
+    instructionFingerprint: "248155FE419174FE37A7DDAFC34E5EFD"
+  paths:
+  - pathId: "path1"
+    testPathName: "getSourceTest"
+    constructorSignature: "<init>(java.lang.Object) : void"
+    filledByUser: false
+    modelFingerprint: "EF05C5CC164F466046187AD01F318887"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "b18e1b7c-5aa2-3b75-96ca-a0f74ce65f85"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Object,java.lang.String)\
+        \ : java.lang.Object"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+- method:
+    name: "applyTo"
+    signature: "applyTo(com.google.inject.Binder) : void"
+    instructionFingerprint: "5A32EC29B1792A8844843B7180354907"
+  paths:
+  - pathId: "path1"
+    testPathName: "applyToTest"
+    constructorSignature: "<init>(java.lang.Object) : void"
+    filledByUser: false
+    modelFingerprint: "B2BCA04AA549744A02A3952D763F3E46"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "330FBC0DE46B287355CFE2F52A4A7C19"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "binder"
+      modelFingerprint: "C324ECF14902F2238945D7606C2D0F77"
+      index: 2
+      ignored: false
+      valueUuid: "applyTo_binder1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binder"
+      modelFingerprint: "408B1B2C20033D513198D543E03D9356"
+      index: 3
+      ignored: false
+      valueUuid: "applyTo_binder1"
+      methodExercised:
+        target: "binder"
+        name: "withSource"
+        parameters:
+        - name: "source"
+          valueUuid: "<init>_object2"
+        signature: "withSource(Object): Binder"
+        returnValueUuid: "applyTo_binder2"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "B8AB6FCADD2800611E9B4E5E77022CC6"
+      index: 4
+      ignored: false
+      valueUuid: "applyTo_binder2"
+      methodExercised:
+        target: "com.google.inject.Binder"
+        name: "requireExactBindingAnnotations"
+        parameters: []
+        signature: "requireExactBindingAnnotations(): void"
+        returnValueUuid: "applyTo_void1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 5
+      ignored: false
+      valueUuid: "uuid1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0f0a622f-1e3b-3dc0-a3ae-a6ceb63c4e13"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Object,java.lang.String)\
+        \ : java.lang.Object"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.spi.RequireExactBindingAnnotationsOption"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.spi.RequireExactBindingAnnotationsOption"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.spi.RequireExactBindingAnnotationsOption"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "applyTo_binder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "applyTo_binder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "applyTo_binder2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "<init>_object2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "applyTo_binder2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "applyTo_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "acceptVisitor"
+    signature: "acceptVisitor(com.google.inject.spi.ElementVisitor<java.lang.Object>)\
+      \ : java.lang.Object"
+    instructionFingerprint: "483931EFECDDB3FE4EDFCA276B3E8035"
+  paths:
+  - pathId: "path1"
+    testPathName: "acceptVisitorTest"
+    constructorSignature: "<init>(java.lang.Object) : void"
+    filledByUser: false
+    modelFingerprint: "2DAC2F6167B3311AECEAC21173067D1E"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "330FBC0DE46B287355CFE2F52A4A7C19"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "visitor"
+      modelFingerprint: "0E52E81CBBD90E16A6597837C87A9142"
+      index: 2
+      ignored: false
+      valueUuid: "acceptVisitor_elementVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "visitor"
+      modelFingerprint: "0442E7C71ECEC7F420C09425935037CF"
+      index: 3
+      ignored: false
+      valueUuid: "acceptVisitor_elementVisitor1"
+      methodExercised:
+        target: "visitor"
+        name: "visit"
+        parameters:
+        - name: "option"
+          valueUuid: "targetClassObject"
+        signature: "visit(RequireExactBindingAnnotationsOption): Object"
+        returnValueUuid: "acceptVisitor_object1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "EDA2651BB29D8448EA5A2C6E4F135F6E"
+      index: 4
+      ignored: false
+      valueUuid: "acceptVisitor_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "85010207-16d2-3170-b836-208737cec5b9"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Object,java.lang.String)\
+        \ : java.lang.Object"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.spi.RequireExactBindingAnnotationsOption"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.spi.RequireExactBindingAnnotationsOption"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.spi.RequireExactBindingAnnotationsOption"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ElementVisitor"
+      genericValueType: "java.lang.Object"
+      uuid: "acceptVisitor_elementVisitor1"
+      fixed: false
+      nameForMock: "Object"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ElementVisitor"
+      genericValueType: "java.lang.Object"
+      uuid: "acceptVisitor_elementVisitor1"
+      fixed: false
+      nameForMock: "Object"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "acceptVisitor_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "THIS"
+      valueType: "com.google.inject.spi.RequireExactBindingAnnotationsOption"
+      uuid: "targetClassObject"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "acceptVisitor_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false

@@ -1,0 +1,465 @@
+---
+modelFingerprint: "49BD166B5EBD8FACD1DB23AD7ACF8D30"
+methods:
+- method:
+    name: "getOriginalElementSource"
+    signature: "getOriginalElementSource() : com.google.inject.spi.ElementSource"
+    instructionFingerprint: "82E9563DB63BA7FC9A4E842F66E826C7"
+  paths:
+  - pathId: "path1"
+    testPathName: "getOriginalElementSourceTest"
+    constructorSignature: "<init>(com.google.inject.spi.ElementSource,boolean,java.lang.Object,com.google.inject.spi.ModuleSource,com.google.inject.spi.ModuleAnnotatedMethodScanner)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "3B1569F0C921635585A53BAE5B05F969"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "be2bdb08-ae35-38b6-8b04-b1a1ae51a308"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Object,java.lang.String)\
+        \ : java.lang.Object"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+- method:
+    name: "getDeclaringSource"
+    signature: "getDeclaringSource() : java.lang.Object"
+    instructionFingerprint: "38E3031ACB9E24B2C092D5EB5E3E1D16"
+  paths:
+  - pathId: "path1"
+    testPathName: "getDeclaringSourceTest"
+    constructorSignature: "<init>(com.google.inject.spi.ElementSource,boolean,java.lang.Object,com.google.inject.spi.ModuleSource,com.google.inject.spi.ModuleAnnotatedMethodScanner)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "42121D60F0F8D31C3D3E2901897417FC"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "c2c5f6c7-5374-3bbc-90b2-787043ee77af"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Object,java.lang.String)\
+        \ : java.lang.Object"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+- method:
+    name: "getModuleClassNames"
+    signature: "getModuleClassNames() : java.util.List<java.lang.String>"
+    instructionFingerprint: "7EA6E43B1917B766A62558C82EBB8A92"
+  paths:
+  - pathId: "path1"
+    testPathName: "getModuleClassNamesTest"
+    constructorSignature: "<init>(com.google.inject.spi.ElementSource,boolean,java.lang.Object,com.google.inject.spi.ModuleSource,com.google.inject.spi.ModuleAnnotatedMethodScanner)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "F713467763EF195A9CAFCE4678326627"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "92A600F809431CAC4133AA03909D7B6A"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "moduleSource"
+      modelFingerprint: "F49932B3F95B70FD76E0AC38E5AC6A6A"
+      index: 2
+      ignored: false
+      valueUuid: "<init>_moduleSource1"
+      methodExercised:
+        target: "this.moduleSource"
+        name: "getModuleClassNames"
+        parameters: []
+        signature: "getModuleClassNames(): List"
+        returnValueUuid: "getModuleClassNames_list1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "DC012D3770B67365D093B9C46D328D19"
+      index: 3
+      ignored: false
+      valueUuid: "getModuleClassNames_list1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3e8e1edd-55d3-3471-83ec-0547e30ca275"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Object,java.lang.String)\
+        \ : java.lang.Object"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.spi.ElementSource"
+        parameters:
+        - name: "originalSource"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.ElementSource"
+            uuid: "<init>_elementSource1"
+            fixed: false
+            nameForMock: "example"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "trustedOriginalSource"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            suggestedContent: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "<init>_boolean1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "declaringSource"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "moduleSource"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.ModuleSource"
+            uuid: "<init>_moduleSource1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "scanner"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.ModuleAnnotatedMethodScanner"
+            uuid: "<init>_moduleAnnotatedMethodScanner1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.spi.ElementSource"
+        parameters:
+        - name: "originalSource"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.ElementSource"
+            uuid: "<init>_elementSource1"
+            fixed: false
+            nameForMock: "example"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "trustedOriginalSource"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: true
+            suggestedContent: !<regular>
+              value: true
+            valueType: "boolean"
+            uuid: "<init>_boolean1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "declaringSource"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "moduleSource"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.ModuleSource"
+            uuid: "<init>_moduleSource1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "scanner"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.ModuleAnnotatedMethodScanner"
+            uuid: "<init>_moduleAnnotatedMethodScanner1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.spi.ElementSource"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ModuleSource"
+      uuid: "<init>_moduleSource1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      suggestedContent: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "java.lang.String"
+      uuid: "getModuleClassNames_list1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      suggestedContent: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "java.lang.String"
+      uuid: "getModuleClassNames_list1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "toString"
+    signature: "toString() : java.lang.String"
+    instructionFingerprint: "4158144D339ED02C9B864D20D5D269C8"
+  paths:
+  - pathId: "path1"
+    testPathName: "toStringTest"
+    constructorSignature: "<init>(com.google.inject.spi.ElementSource,boolean,java.lang.Object,com.google.inject.spi.ModuleSource,com.google.inject.spi.ModuleAnnotatedMethodScanner)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "898B516445B179FDB500243D162B2509"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "3695F0C0DB7A51D9B9D659253959D855"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "34F8FF499C9C3A47DAFB7F94977E2738"
+      index: 2
+      ignored: false
+      methodExercised:
+        target: "target"
+        name: "getDeclaringSource"
+        parameters: []
+        signature: "getDeclaringSource(): Object"
+        returnValueUuid: "toString_object1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D4C0E0D17A204C52CB0F722C232BA523"
+      index: 3
+      ignored: false
+      valueUuid: "toString_string1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "363d3698-f34c-39ad-914f-376a19498023"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.Object,java.lang.String)\
+        \ : java.lang.Object"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.spi.ElementSource"
+        parameters:
+        - name: "originalSource"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.ElementSource"
+            uuid: "<init>_elementSource1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "trustedOriginalSource"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            suggestedContent: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "<init>_boolean1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "declaringSource"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            nameForMock: "<init>_object1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "moduleSource"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.ModuleSource"
+            uuid: "<init>_moduleSource1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "scanner"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.ModuleAnnotatedMethodScanner"
+            uuid: "<init>_moduleAnnotatedMethodScanner1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.spi.ElementSource"
+        parameters:
+        - name: "originalSource"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.ElementSource"
+            uuid: "<init>_elementSource1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "trustedOriginalSource"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            suggestedContent: !<regular>
+              value: false
+            valueType: "boolean"
+            uuid: "<init>_boolean1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "declaringSource"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            nameForMock: "<init>_object1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "moduleSource"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.ModuleSource"
+            uuid: "<init>_moduleSource1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "scanner"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.ModuleAnnotatedMethodScanner"
+            uuid: "<init>_moduleAnnotatedMethodScanner1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.spi.ElementSource"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.Object"
+      uuid: "toString_object1"
+      fixed: false
+      nameForMock: "toString_object1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "toString_object1"
+      suggestedContent: !<regular>
+        value: "toString_object1"
+      valueType: "java.lang.String"
+      uuid: "toString_string1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false

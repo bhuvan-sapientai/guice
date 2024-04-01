@@ -1,0 +1,962 @@
+---
+modelFingerprint: "B8A587568073C713C7642ECF74845CCC"
+methods:
+- method:
+    name: "newOptionalBinder"
+    signature: "newOptionalBinder(com.google.inject.Binder,java.lang.Class<java.lang.Object>)\
+      \ : com.google.inject.multibindings.OptionalBinder<java.lang.Object>"
+    instructionFingerprint: "58B48293355C3D1246C32C0CB34F7122"
+  paths:
+  - pathId: "path1"
+    testPathName: "newOptionalBinderTest"
+    filledByUser: false
+    modelFingerprint: "CEC42D3E1E625E86543D0FEEB9D158F8"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "binder"
+      modelFingerprint: "408D482D5102052DD899EE6725889D7E"
+      index: 1
+      ignored: false
+      valueUuid: "newOptionalBinder_binder1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "2DA28680ED779F34D6FA5B80564BF14C"
+      index: 2
+      ignored: false
+      valueUuid: "newOptionalBinder_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Key"
+      modelFingerprint: "7A2D0AB62CCF515B358A6F5CCCA3AFC1"
+      index: 3
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.Key"
+        name: "get"
+        parameters:
+        - name: "type"
+          valueUuid: "newOptionalBinder_class1"
+        signature: "get(Class): Key"
+        returnValueUuid: "newOptionalBinder_key1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "RealOptionalBinder"
+      modelFingerprint: "48B7B3BB1CEE673ACE1BC3AEE0F9821B"
+      index: 4
+      ignored: false
+      valueUuid: "uuid2"
+      methodExercised:
+        target: "com.google.inject.internal.RealOptionalBinder"
+        name: "newRealOptionalBinder"
+        parameters:
+        - name: "binder"
+          valueUuid: "newOptionalBinder_binder1"
+        - name: "type"
+          valueUuid: "newOptionalBinder_key1"
+        signature: "newRealOptionalBinder(Binder,Key): RealOptionalBinder"
+        returnValueUuid: "newOptionalBinder_realOptionalBinder1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E95E872236FE03CE714C78552C4F04A9"
+      index: 5
+      ignored: false
+      valueUuid: "newOptionalBinder_optionalBinder1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0fced300-317b-31e1-9be5-e46ef0fa82df"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "newOptionalBinder_binder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Object"
+      uuid: "newOptionalBinder_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "newOptionalBinder_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Object"
+      uuid: "newOptionalBinder_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.RealOptionalBinder"
+      uuid: "uuid2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.RealOptionalBinder"
+      genericValueType: "java.lang.Object"
+      uuid: "newOptionalBinder_realOptionalBinder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "newOptionalBinder_binder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "newOptionalBinder_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.multibindings.OptionalBinder"
+        parameters:
+        - name: "delegate"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.RealOptionalBinder"
+            uuid: "newOptionalBinder_realOptionalBinder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: true
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.multibindings.OptionalBinder"
+        parameters:
+        - name: "delegate"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.internal.RealOptionalBinder"
+            uuid: "newOptionalBinder_realOptionalBinder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: true
+        createdByTargetCode: true
+      valueType: "com.google.inject.multibindings.OptionalBinder"
+      uuid: "newOptionalBinder_optionalBinder1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "newOptionalBinder"
+    signature: "newOptionalBinder(com.google.inject.Binder,com.google.inject.TypeLiteral<java.lang.Object>)\
+      \ : com.google.inject.multibindings.OptionalBinder<java.lang.Object>"
+    instructionFingerprint: "83315EAE9304644A823E3EC362302911"
+  paths:
+  - pathId: "path1"
+    testPathName: "newOptionalBinder1Test"
+    filledByUser: false
+    modelFingerprint: "9B47D3F3D74B6C73819F565CEB7A0BC5"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "binder"
+      modelFingerprint: "408D482D5102052DD899EE6725889D7E"
+      index: 1
+      ignored: false
+      valueUuid: "newOptionalBinder_binder1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "E2C52357C61622F8AA7C7703D67E65DB"
+      index: 2
+      ignored: false
+      valueUuid: "newOptionalBinder_typeLiteral1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Key"
+      modelFingerprint: "E478D921BA99585C804C9827CB1763EB"
+      index: 3
+      ignored: false
+      valueUuid: "uuid3"
+      methodExercised:
+        target: "com.google.inject.Key"
+        name: "get"
+        parameters:
+        - name: "typeLiteral"
+          valueUuid: "newOptionalBinder_typeLiteral1"
+        signature: "get(TypeLiteral): Key"
+        returnValueUuid: "newOptionalBinder_key1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "RealOptionalBinder"
+      modelFingerprint: "48B7B3BB1CEE673ACE1BC3AEE0F9821B"
+      index: 4
+      ignored: false
+      valueUuid: "uuid4"
+      methodExercised:
+        target: "com.google.inject.internal.RealOptionalBinder"
+        name: "newRealOptionalBinder"
+        parameters:
+        - name: "binder"
+          valueUuid: "newOptionalBinder_binder1"
+        - name: "type"
+          valueUuid: "newOptionalBinder_key1"
+        signature: "newRealOptionalBinder(Binder,Key): RealOptionalBinder"
+        returnValueUuid: "newOptionalBinder_realOptionalBinder1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E95E872236FE03CE714C78552C4F04A9"
+      index: 5
+      ignored: false
+      valueUuid: "newOptionalBinder_optionalBinder1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d6afc647-65f1-3df7-b0ea-18d4d8cf7b09"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "newOptionalBinder_binder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "newOptionalBinder_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      uuid: "uuid3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "newOptionalBinder_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "newOptionalBinder_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.RealOptionalBinder"
+      uuid: "uuid4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.RealOptionalBinder"
+      genericValueType: "java.lang.Object"
+      uuid: "newOptionalBinder_realOptionalBinder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "newOptionalBinder_binder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "newOptionalBinder_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.multibindings.OptionalBinder"
+        parameters:
+        - name: "delegate"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.RealOptionalBinder"
+            uuid: "newOptionalBinder_realOptionalBinder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: true
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.multibindings.OptionalBinder"
+        parameters:
+        - name: "delegate"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.internal.RealOptionalBinder"
+            uuid: "newOptionalBinder_realOptionalBinder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: true
+        createdByTargetCode: true
+      valueType: "com.google.inject.multibindings.OptionalBinder"
+      uuid: "newOptionalBinder_optionalBinder1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "newOptionalBinder"
+    signature: "newOptionalBinder(com.google.inject.Binder,com.google.inject.Key<java.lang.Object>)\
+      \ : com.google.inject.multibindings.OptionalBinder<java.lang.Object>"
+    instructionFingerprint: "00749A59D7E533D83F07B9B0B4411FEA"
+  paths:
+  - pathId: "path1"
+    testPathName: "newOptionalBinder2Test"
+    filledByUser: false
+    modelFingerprint: "F3E487D020DF2A2AF46CA2447035B95A"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "binder"
+      modelFingerprint: "408D482D5102052DD899EE6725889D7E"
+      index: 1
+      ignored: false
+      valueUuid: "newOptionalBinder_binder1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "13E860B7C6FC059DDC5816F56C7FEB44"
+      index: 2
+      ignored: false
+      valueUuid: "newOptionalBinder_key1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "RealOptionalBinder"
+      modelFingerprint: "48B7B3BB1CEE673ACE1BC3AEE0F9821B"
+      index: 3
+      ignored: false
+      valueUuid: "uuid5"
+      methodExercised:
+        target: "com.google.inject.internal.RealOptionalBinder"
+        name: "newRealOptionalBinder"
+        parameters:
+        - name: "binder"
+          valueUuid: "newOptionalBinder_binder1"
+        - name: "type"
+          valueUuid: "newOptionalBinder_key1"
+        signature: "newRealOptionalBinder(Binder,Key): RealOptionalBinder"
+        returnValueUuid: "newOptionalBinder_realOptionalBinder1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "623E2B21145D6E782C33F6D22FC5994D"
+      index: 4
+      ignored: false
+      valueUuid: "newOptionalBinder_optionalBinder1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "104bb64a-d6c5-3848-b7ce-8e2713bef097"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "newOptionalBinder_binder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "newOptionalBinder_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.RealOptionalBinder"
+      uuid: "uuid5"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.RealOptionalBinder"
+      genericValueType: "java.lang.Object"
+      uuid: "newOptionalBinder_realOptionalBinder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "newOptionalBinder_binder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "newOptionalBinder_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.multibindings.OptionalBinder"
+        parameters:
+        - name: "delegate"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.RealOptionalBinder"
+            genericValueType: "java.lang.Object"
+            uuid: "newOptionalBinder_realOptionalBinder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: true
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.multibindings.OptionalBinder"
+        parameters:
+        - name: "delegate"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.internal.RealOptionalBinder"
+            genericValueType: "java.lang.Object"
+            uuid: "newOptionalBinder_realOptionalBinder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: true
+        createdByTargetCode: true
+      valueType: "com.google.inject.multibindings.OptionalBinder"
+      uuid: "newOptionalBinder_optionalBinder1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "setDefault"
+    signature: "setDefault() : com.google.inject.binder.LinkedBindingBuilder<java.lang.Object>"
+    instructionFingerprint: "0A55F3D4F1CFD6E9ECF8F87432DFAE45"
+  paths:
+  - pathId: "path1"
+    testPathName: "setDefaultTest"
+    constructorSignature: "newOptionalBinder(com.google.inject.Binder,java.lang.Class<java.lang.Object>)\
+      \ : com.google.inject.multibindings.OptionalBinder<java.lang.Object>"
+    filledByUser: false
+    modelFingerprint: "F119793137779A256EE03D4058FB543D"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC_FACTORY_METHOD"
+      modelFingerprint: "4AE16AB2BC5C5DE5CAC889F821C22E4E"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Key"
+      modelFingerprint: "7A2D0AB62CCF515B358A6F5CCCA3AFC1"
+      index: 2
+      ignored: false
+      valueUuid: "uuid6"
+      methodExercised:
+        target: "com.google.inject.Key"
+        name: "get"
+        parameters:
+        - name: "type"
+          valueUuid: "newOptionalBinder_class1"
+        signature: "get(Class): Key"
+        returnValueUuid: "newOptionalBinder_key1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "RealOptionalBinder"
+      modelFingerprint: "8BB1190F0ADCBD2975C0A25FE8C85E9B"
+      index: 3
+      ignored: false
+      valueUuid: "uuid7"
+      methodExercised:
+        target: "com.google.inject.internal.RealOptionalBinder"
+        name: "newRealOptionalBinder"
+        parameters:
+        - name: "binder"
+          valueUuid: "newOptionalBinder_binder1"
+        - name: "type"
+          valueUuid: "newOptionalBinder_key1"
+        signature: "newRealOptionalBinder(Binder,Key): RealOptionalBinder"
+        returnValueUuid: "newOptionalBinder_realOptionalBinder1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "delegate"
+      modelFingerprint: "8CE50070E3A261809788F9D681AD482A"
+      index: 4
+      ignored: false
+      valueUuid: "newOptionalBinder_realOptionalBinder1"
+      methodExercised:
+        target: "this.delegate"
+        name: "setDefault"
+        parameters: []
+        signature: "setDefault(): LinkedBindingBuilder"
+        returnValueUuid: "setDefault_linkedBindingBuilder1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "2E991A292201DEB2EB37E4EDEBAA1B26"
+      index: 5
+      ignored: false
+      valueUuid: "setDefault_linkedBindingBuilder1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4d8418b9-8e85-3fe8-9e5f-1589d6f830e9"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.inject.multibindings.OptionalBinder"
+        method: "newOptionalBinder"
+        methodParameters:
+        - name: "binder"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Binder"
+            uuid: "newOptionalBinder_binder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "java.lang.Object"
+            uuid: "newOptionalBinder_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "com.google.inject.multibindings.OptionalBinder"
+        method: "newOptionalBinder"
+        methodParameters:
+        - name: "binder"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.Binder"
+            uuid: "newOptionalBinder_binder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            valueType: "java.lang.Class"
+            genericValueType: "java.lang.Object"
+            uuid: "newOptionalBinder_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.multibindings.OptionalBinder"
+      genericValueType: "java.lang.Object"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      uuid: "uuid6"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "newOptionalBinder_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Object"
+      uuid: "newOptionalBinder_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.RealOptionalBinder"
+      uuid: "uuid7"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.RealOptionalBinder"
+      genericValueType: "java.lang.Object"
+      uuid: "newOptionalBinder_realOptionalBinder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "newOptionalBinder_binder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "newOptionalBinder_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.RealOptionalBinder"
+      genericValueType: "java.lang.Object"
+      uuid: "newOptionalBinder_realOptionalBinder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.binder.LinkedBindingBuilder"
+      uuid: "setDefault_linkedBindingBuilder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.binder.LinkedBindingBuilder"
+      uuid: "setDefault_linkedBindingBuilder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "setBinding"
+    signature: "setBinding() : com.google.inject.binder.LinkedBindingBuilder<java.lang.Object>"
+    instructionFingerprint: "1498B7C5BF9A3C6F42EF5E9990658C97"
+  paths:
+  - pathId: "path1"
+    testPathName: "setBindingTest"
+    constructorSignature: "newOptionalBinder(com.google.inject.Binder,java.lang.Class<java.lang.Object>)\
+      \ : com.google.inject.multibindings.OptionalBinder<java.lang.Object>"
+    filledByUser: false
+    modelFingerprint: "5EAACFDC96FDC17F986B2930C655E19E"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "STATIC_FACTORY_METHOD"
+      modelFingerprint: "4AE16AB2BC5C5DE5CAC889F821C22E4E"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Key"
+      modelFingerprint: "7A2D0AB62CCF515B358A6F5CCCA3AFC1"
+      index: 2
+      ignored: false
+      valueUuid: "uuid8"
+      methodExercised:
+        target: "com.google.inject.Key"
+        name: "get"
+        parameters:
+        - name: "type"
+          valueUuid: "newOptionalBinder_class1"
+        signature: "get(Class): Key"
+        returnValueUuid: "newOptionalBinder_key1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "RealOptionalBinder"
+      modelFingerprint: "8BB1190F0ADCBD2975C0A25FE8C85E9B"
+      index: 3
+      ignored: false
+      valueUuid: "uuid9"
+      methodExercised:
+        target: "com.google.inject.internal.RealOptionalBinder"
+        name: "newRealOptionalBinder"
+        parameters:
+        - name: "binder"
+          valueUuid: "newOptionalBinder_binder1"
+        - name: "type"
+          valueUuid: "newOptionalBinder_key1"
+        signature: "newRealOptionalBinder(Binder,Key): RealOptionalBinder"
+        returnValueUuid: "newOptionalBinder_realOptionalBinder1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "delegate"
+      modelFingerprint: "49ED7124099A00A45571FFCB9178C161"
+      index: 4
+      ignored: false
+      valueUuid: "newOptionalBinder_realOptionalBinder1"
+      methodExercised:
+        target: "this.delegate"
+        name: "setBinding"
+        parameters: []
+        signature: "setBinding(): LinkedBindingBuilder"
+        returnValueUuid: "setBinding_linkedBindingBuilder1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "2E991A292201DEB2EB37E4EDEBAA1B26"
+      index: 5
+      ignored: false
+      valueUuid: "setBinding_linkedBindingBuilder1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8328d3e5-807e-3d6a-a02a-2a3815a63620"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.inject.multibindings.OptionalBinder"
+        method: "newOptionalBinder"
+        methodParameters:
+        - name: "binder"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Binder"
+            uuid: "newOptionalBinder_binder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            genericValueType: "java.lang.Object"
+            uuid: "newOptionalBinder_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "com.google.inject.multibindings.OptionalBinder"
+        method: "newOptionalBinder"
+        methodParameters:
+        - name: "binder"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.Binder"
+            uuid: "newOptionalBinder_binder1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            valueType: "java.lang.Class"
+            genericValueType: "java.lang.Object"
+            uuid: "newOptionalBinder_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.multibindings.OptionalBinder"
+      genericValueType: "java.lang.Object"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      uuid: "uuid8"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "newOptionalBinder_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Object"
+      uuid: "newOptionalBinder_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.RealOptionalBinder"
+      uuid: "uuid9"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.RealOptionalBinder"
+      genericValueType: "java.lang.Object"
+      uuid: "newOptionalBinder_realOptionalBinder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "newOptionalBinder_binder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "newOptionalBinder_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.RealOptionalBinder"
+      genericValueType: "java.lang.Object"
+      uuid: "newOptionalBinder_realOptionalBinder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.binder.LinkedBindingBuilder"
+      uuid: "setBinding_linkedBindingBuilder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.binder.LinkedBindingBuilder"
+      uuid: "setBinding_linkedBindingBuilder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "equals"
+    signature: "equals(java.lang.Object) : boolean"
+    instructionFingerprint: "FAD07CC0D71F7E5393E55289BB5D5741"
+  paths:
+  - pathId: "path3"
+    testPathName: "equalsWhenObjNotInstanceOfOptionalBinder"
+    constructorSignature: "newOptionalBinder(com.google.inject.Binder,java.lang.Class<java.lang.Object>)\
+      \ : com.google.inject.multibindings.OptionalBinder<java.lang.Object>"
+    filledByUser: false
+    modelFingerprint: "958236B3804AFF89CAFE6B640C656EFA"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "3b810d65-feec-300f-8f62-7e95e6925fda"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path1"
+    testPathName: "equalsWhenDelegateEqualsObjDelegate"
+    constructorSignature: "newOptionalBinder(com.google.inject.Binder,java.lang.Class<java.lang.Object>)\
+      \ : com.google.inject.multibindings.OptionalBinder<java.lang.Object>"
+    filledByUser: false
+    modelFingerprint: "4482C4B2721EDABE5338570CBFF71136"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "063a078c-374d-34fd-99f9-a7e39498121d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.inject.internal.RealOptionalBinder.equals(com.google.inject.internal.RealOptionalBinder)\
+        \ : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path2"
+    testPathName: "equalsWhenDelegateNotEqualsObjDelegate"
+    constructorSignature: "newOptionalBinder(com.google.inject.Binder,java.lang.Class<java.lang.Object>)\
+      \ : com.google.inject.multibindings.OptionalBinder<java.lang.Object>"
+    filledByUser: false
+    modelFingerprint: "60E0352D9A41897C573BBB161D809552"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "030dae7f-a79c-3fc5-ae00-465b983b5f71"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.inject.internal.RealOptionalBinder.equals(com.google.inject.internal.RealOptionalBinder)\
+        \ : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []

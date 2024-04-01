@@ -1,0 +1,494 @@
+---
+modelFingerprint: "79853B5D6AFCD73361392F457E12401E"
+methods:
+- method:
+    name: "getListener"
+    signature: "getListener() : com.google.inject.spi.TypeListener"
+    instructionFingerprint: "07A13FFECA137E28060DCE172FDD81C2"
+  paths:
+  - pathId: "path1"
+    testPathName: "getListenerTest"
+    constructorSignature: "<init>(java.lang.Object,com.google.inject.spi.TypeListener,com.google.inject.matcher.Matcher<?\
+      \ super com.google.inject.TypeLiteral<?>>) : void"
+    filledByUser: false
+    modelFingerprint: "E35EC6AECD7F4BE4FF029FF3FDE4573B"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "2114a3ae-8280-34b2-9e53-e77a594df9a5"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+- method:
+    name: "getTypeMatcher"
+    signature: "getTypeMatcher() : com.google.inject.matcher.Matcher<? super com.google.inject.TypeLiteral<?>>"
+    instructionFingerprint: "B4DE9ABD6085FC28F9EDB46A705CD81B"
+  paths:
+  - pathId: "path1"
+    testPathName: "getTypeMatcherTest"
+    constructorSignature: "<init>(java.lang.Object,com.google.inject.spi.TypeListener,com.google.inject.matcher.Matcher<?\
+      \ super com.google.inject.TypeLiteral<?>>) : void"
+    filledByUser: false
+    modelFingerprint: "F08DD69FAEA42EA981B202AB9453A489"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "866b0954-aef5-3d76-a824-007b547314fc"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+- method:
+    name: "getSource"
+    signature: "getSource() : java.lang.Object"
+    instructionFingerprint: "248155FE419174FE37A7DDAFC34E5EFD"
+  paths:
+  - pathId: "path1"
+    testPathName: "getSourceTest"
+    constructorSignature: "<init>(java.lang.Object,com.google.inject.spi.TypeListener,com.google.inject.matcher.Matcher<?\
+      \ super com.google.inject.TypeLiteral<?>>) : void"
+    filledByUser: false
+    modelFingerprint: "C3326D043DFFB796F65B9751DFB8007F"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "b18e1b7c-5aa2-3b75-96ca-a0f74ce65f85"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+- method:
+    name: "acceptVisitor"
+    signature: "acceptVisitor(com.google.inject.spi.ElementVisitor<java.lang.Object>)\
+      \ : java.lang.Object"
+    instructionFingerprint: "336707767FD6725F77918B28F4FDA41A"
+  paths:
+  - pathId: "path1"
+    testPathName: "acceptVisitorTest"
+    constructorSignature: "<init>(java.lang.Object,com.google.inject.spi.TypeListener,com.google.inject.matcher.Matcher<?\
+      \ super com.google.inject.TypeLiteral<?>>) : void"
+    filledByUser: false
+    modelFingerprint: "0864ACC6F069105335C955AEC1FD925C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "A3A2F72EAC37D1329F6622BEA2242933"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "visitor"
+      modelFingerprint: "3A4768C8E9B0C65964E17AC8E681720A"
+      index: 2
+      ignored: false
+      valueUuid: "acceptVisitor_elementVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "visitor"
+      modelFingerprint: "BE21F833474A199B5A95551DB0C9DC4B"
+      index: 3
+      ignored: false
+      valueUuid: "acceptVisitor_elementVisitor1"
+      methodExercised:
+        target: "visitor"
+        name: "visit"
+        parameters:
+        - name: "binding"
+          valueUuid: "targetClassObject"
+        signature: "visit(TypeListenerBinding): Object"
+        returnValueUuid: "acceptVisitor_object1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 4
+      ignored: false
+      valueUuid: "acceptVisitor_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "85010207-16d2-3170-b836-208737cec5b9"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.spi.TypeListenerBinding"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "listener"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.TypeListener"
+            uuid: "<init>_typeListener1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeMatcher"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super com.google.inject.TypeLiteral<?>"
+            uuid: "<init>_matcher1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.spi.TypeListenerBinding"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "listener"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.spi.TypeListener"
+            uuid: "<init>_typeListener1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeMatcher"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super com.google.inject.TypeLiteral<?>"
+            uuid: "<init>_matcher1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.spi.TypeListenerBinding"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ElementVisitor"
+      genericValueType: "java.lang.Object"
+      uuid: "acceptVisitor_elementVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ElementVisitor"
+      genericValueType: "java.lang.Object"
+      uuid: "acceptVisitor_elementVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "acceptVisitor_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "THIS"
+      valueType: "com.google.inject.spi.TypeListenerBinding"
+      uuid: "targetClassObject"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "acceptVisitor_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "applyTo"
+    signature: "applyTo(com.google.inject.Binder) : void"
+    instructionFingerprint: "81E60F71C0E1DFF7AD8616BFBEE72DC2"
+  paths:
+  - pathId: "path1"
+    testPathName: "applyToTest"
+    constructorSignature: "<init>(java.lang.Object,com.google.inject.spi.TypeListener,com.google.inject.matcher.Matcher<?\
+      \ super com.google.inject.TypeLiteral<?>>) : void"
+    filledByUser: false
+    modelFingerprint: "472CB0F10A44BC980BA8A4798DCF0BB3"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "A3A2F72EAC37D1329F6622BEA2242933"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "binder"
+      modelFingerprint: "7BEC634C775E6887609F5D0EBA55C6D2"
+      index: 2
+      ignored: false
+      valueUuid: "applyTo_binder1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binder"
+      modelFingerprint: "B88ACA40870AF8924A7004B3E5CC4A16"
+      index: 3
+      ignored: false
+      valueUuid: "applyTo_binder1"
+      methodExercised:
+        target: "binder"
+        name: "withSource"
+        parameters:
+        - name: "source"
+          valueUuid: "<init>_object1"
+        signature: "withSource(Object): Binder"
+        returnValueUuid: "applyTo_binder2"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "0B66CE12E97FE607F2F6F48BE7A19200"
+      index: 4
+      ignored: false
+      valueUuid: "applyTo_binder2"
+      methodExercised:
+        target: "com.google.inject.Binder"
+        name: "bindListener"
+        parameters:
+        - name: "typeMatcher"
+          valueUuid: "<init>_matcher1"
+        - name: "listener"
+          valueUuid: "<init>_typeListener1"
+        signature: "bindListener(Matcher,TypeListener): void"
+        returnValueUuid: "applyTo_void1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 5
+      ignored: false
+      valueUuid: "uuid1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0f0a622f-1e3b-3dc0-a3ae-a6ceb63c4e13"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.spi.TypeListenerBinding"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "listener"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.TypeListener"
+            uuid: "<init>_typeListener1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeMatcher"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super com.google.inject.TypeLiteral<?>"
+            uuid: "<init>_matcher1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.spi.TypeListenerBinding"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "listener"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.spi.TypeListener"
+            uuid: "<init>_typeListener1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeMatcher"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.matcher.Matcher"
+            genericValueType: "? super com.google.inject.TypeLiteral<?>"
+            uuid: "<init>_matcher1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.spi.TypeListenerBinding"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "applyTo_binder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "applyTo_binder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "applyTo_binder2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "<init>_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "applyTo_binder2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "applyTo_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.matcher.Matcher"
+      genericValueType: "? super com.google.inject.TypeLiteral<?>"
+      uuid: "<init>_matcher1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.TypeListener"
+      uuid: "<init>_typeListener1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false

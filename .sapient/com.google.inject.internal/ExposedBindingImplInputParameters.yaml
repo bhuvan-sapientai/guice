@@ -1,0 +1,1075 @@
+---
+modelFingerprint: "5617F70BB691CA30886DF754C6A4A4DE"
+methods:
+- method:
+    name: "acceptTargetVisitor"
+    signature: "acceptTargetVisitor(com.google.inject.spi.BindingTargetVisitor<? super\
+      \ java.lang.Object,java.lang.Object>) : java.lang.Object"
+    instructionFingerprint: "78D9BC8EC5B8B445DB2727CABA26987F"
+  paths:
+  - pathId: "path1"
+    testPathName: "acceptTargetVisitorTest"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,java.lang.Object,com.google.inject.Key<java.lang.Object>,com.google.inject.internal.InternalFactory<java.lang.Object>,com.google.inject.spi.PrivateElements)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "5993CE5D42154A0E3DEA9CC33DC66816"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "439E17B0F1A7B7E4017C66A867ADA0ED"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "visitor"
+      modelFingerprint: "8EC7EDF95254AED1B4E333EF05C7EB75"
+      index: 2
+      ignored: false
+      valueUuid: "acceptTargetVisitor_bindingTargetVisitor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "visitor"
+      modelFingerprint: "5978956B9E22AECC3D45259FEA3BC1EB"
+      index: 3
+      ignored: false
+      valueUuid: "acceptTargetVisitor_bindingTargetVisitor1"
+      methodExercised:
+        target: "visitor"
+        name: "visit"
+        parameters:
+        - name: "binding"
+          valueUuid: "targetClassObject"
+        signature: "visit(ExposedBindingImpl): Object"
+        returnValueUuid: "acceptTargetVisitor_object1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 4
+      ignored: false
+      valueUuid: "acceptTargetVisitor_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8144240a-8b49-3cdc-8570-b3706c172a53"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.ExposedBindingImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "key"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Key"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_key1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "factory"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InternalFactory"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_internalFactory1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "privateElements"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.PrivateElements"
+            uuid: "<init>_privateElements1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.ExposedBindingImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "source"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "key"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.Key"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_key1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "factory"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.internal.InternalFactory"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_internalFactory1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "privateElements"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.spi.PrivateElements"
+            uuid: "<init>_privateElements1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.ExposedBindingImpl"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.BindingTargetVisitor"
+      genericValueType: "? super java.lang.Object,java.lang.Object"
+      uuid: "acceptTargetVisitor_bindingTargetVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.BindingTargetVisitor"
+      genericValueType: "? super java.lang.Object,java.lang.Object"
+      uuid: "acceptTargetVisitor_bindingTargetVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "acceptTargetVisitor_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "THIS"
+      valueType: "com.google.inject.internal.ExposedBindingImpl"
+      uuid: "targetClassObject"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "acceptTargetVisitor_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "getDependencies"
+    signature: "getDependencies() : java.util.Set<com.google.inject.spi.Dependency<?>>"
+    instructionFingerprint: "E58F807493022D12F7B052B563FC7363"
+  paths:
+  - pathId: "path1"
+    testPathName: "getDependenciesTest"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,java.lang.Object,com.google.inject.Key<java.lang.Object>,com.google.inject.internal.InternalFactory<java.lang.Object>,com.google.inject.spi.PrivateElements)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "D5EF32BED6BF83896A02D0ED7A9B47B0"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "439E17B0F1A7B7E4017C66A867ADA0ED"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Key"
+      modelFingerprint: "5A8A0695EC5ED80DB96C3E6FF66E31DB"
+      index: 2
+      ignored: false
+      valueUuid: "uuid2"
+      methodExercised:
+        target: "com.google.inject.Key"
+        name: "get"
+        parameters:
+        - name: "type"
+          valueUuid: "uuid1"
+        signature: "get(Class): Key"
+        returnValueUuid: "getDependencies_key1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Dependency"
+      modelFingerprint: "E46F024D8F7E27DB77C2FD73E078EF6A"
+      index: 3
+      ignored: false
+      valueUuid: "uuid3"
+      methodExercised:
+        target: "com.google.inject.spi.Dependency"
+        name: "get"
+        parameters:
+        - name: "key"
+          valueUuid: "getDependencies_key1"
+        signature: "get(Key): Dependency"
+        returnValueUuid: "getDependencies_dependency1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "4006A8B9662EC9F53C87E4F9B37D7264"
+      index: 4
+      ignored: false
+      valueUuid: "getDependencies_immutableSet1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "903fef97-987f-323e-a528-d02591a6bcb2"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.ExposedBindingImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "key"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Key"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_key1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "factory"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InternalFactory"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_internalFactory1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "privateElements"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.PrivateElements"
+            uuid: "<init>_privateElements1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.ExposedBindingImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "source"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "key"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.Key"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_key1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "factory"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.internal.InternalFactory"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_internalFactory1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "privateElements"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.spi.PrivateElements"
+            uuid: "<init>_privateElements1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.ExposedBindingImpl"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "REAL"
+      valueType: "com.google.inject.Key"
+      uuid: "uuid2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.inject.Key"
+        method: "get"
+        methodParameters:
+        - value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "com.google.inject.Injector"
+            valueType: "java.lang.Class"
+            genericValueType: "com.google.inject.Injector"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "com.google.inject.Key"
+        method: "get"
+        methodParameters:
+        - value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "com.google.inject.Injector"
+            valueType: "java.lang.Class"
+            genericValueType: "com.google.inject.Injector"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.Key"
+      uuid: "getDependencies_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "com.google.inject.Injector"
+      valueType: "java.lang.Class"
+      genericValueType: "com.google.inject.Injector"
+      uuid: "uuid1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "REAL"
+      valueType: "com.google.inject.spi.Dependency"
+      uuid: "uuid3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.inject.spi.Dependency"
+        method: "get"
+        methodParameters:
+        - value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.Key"
+              method: "get"
+              methodParameters:
+              - value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "com.google.inject.Injector"
+                  valueType: "java.lang.Class"
+                  genericValueType: "com.google.inject.Injector"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.Key"
+              method: "get"
+              methodParameters:
+              - value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "com.google.inject.Injector"
+                  valueType: "java.lang.Class"
+                  genericValueType: "com.google.inject.Injector"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.Key"
+            uuid: "getDependencies_key1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "com.google.inject.spi.Dependency"
+        method: "get"
+        methodParameters:
+        - value:
+            sapientType: "OBJECT"
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.Key"
+              method: "get"
+              methodParameters:
+              - value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "com.google.inject.Injector"
+                  valueType: "java.lang.Class"
+                  genericValueType: "com.google.inject.Injector"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.Key"
+            uuid: "getDependencies_key1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.spi.Dependency"
+      uuid: "getDependencies_dependency1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.inject.Key"
+        method: "get"
+        methodParameters:
+        - value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "com.google.inject.Injector"
+            valueType: "java.lang.Class"
+            genericValueType: "com.google.inject.Injector"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "com.google.inject.Key"
+        method: "get"
+        methodParameters:
+        - value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "com.google.inject.Injector"
+            valueType: "java.lang.Class"
+            genericValueType: "com.google.inject.Injector"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.Key"
+      uuid: "getDependencies_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters:
+        - value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.spi.Dependency"
+              method: "get"
+              methodParameters:
+              - value:
+                  sapientType: "OBJECT"
+                  content: !<static_method_return>
+                    target: "com.google.inject.Key"
+                    method: "get"
+                    methodParameters:
+                    - value:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "com.google.inject.Injector"
+                        valueType: "java.lang.Class"
+                        genericValueType: "com.google.inject.Injector"
+                        fixed: true
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                  suggestedContent: !<static_method_return>
+                    target: "com.google.inject.Key"
+                    method: "get"
+                    methodParameters:
+                    - value:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "com.google.inject.Injector"
+                        valueType: "java.lang.Class"
+                        genericValueType: "com.google.inject.Injector"
+                        fixed: true
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                  valueType: "com.google.inject.Key"
+                  uuid: "getDependencies_key1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.spi.Dependency"
+              method: "get"
+              methodParameters:
+              - value:
+                  sapientType: "OBJECT"
+                  suggestedContent: !<static_method_return>
+                    target: "com.google.inject.Key"
+                    method: "get"
+                    methodParameters:
+                    - value:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "com.google.inject.Injector"
+                        valueType: "java.lang.Class"
+                        genericValueType: "com.google.inject.Injector"
+                        fixed: true
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                  valueType: "com.google.inject.Key"
+                  uuid: "getDependencies_key1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.spi.Dependency"
+            uuid: "getDependencies_dependency1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters:
+        - value:
+            sapientType: "OBJECT"
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.spi.Dependency"
+              method: "get"
+              methodParameters:
+              - value:
+                  sapientType: "OBJECT"
+                  suggestedContent: !<static_method_return>
+                    target: "com.google.inject.Key"
+                    method: "get"
+                    methodParameters:
+                    - value:
+                        sapientType: "CLASS"
+                        content: !<regular>
+                          value: "com.google.inject.Injector"
+                        valueType: "java.lang.Class"
+                        genericValueType: "com.google.inject.Injector"
+                        fixed: true
+                        equalsMethodPresent: false
+                        explicitCastNeeded: false
+                  valueType: "com.google.inject.Key"
+                  uuid: "getDependencies_key1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.spi.Dependency"
+            uuid: "getDependencies_dependency1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.common.collect.ImmutableSet"
+      genericValueType: "com.google.inject.spi.Dependency<?>"
+      uuid: "getDependencies_immutableSet1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "getPrivateElements"
+    signature: "getPrivateElements() : com.google.inject.spi.PrivateElements"
+    instructionFingerprint: "AE670F72CE5A6103FBC6105623066C7A"
+  paths:
+  - pathId: "path1"
+    testPathName: "getPrivateElementsTest"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,java.lang.Object,com.google.inject.Key<java.lang.Object>,com.google.inject.internal.InternalFactory<java.lang.Object>,com.google.inject.spi.PrivateElements)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "0481E1699E80E406201795A1219BE06E"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "1f9fba10-2665-3980-a2c3-262997b492c5"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+- method:
+    name: "toString"
+    signature: "toString() : java.lang.String"
+    instructionFingerprint: "02A255D05131232AFC914FAF7E43043F"
+  paths:
+  - pathId: "path1"
+    testPathName: "toStringTest"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,java.lang.Object,com.google.inject.Key<java.lang.Object>,com.google.inject.internal.InternalFactory<java.lang.Object>,com.google.inject.spi.PrivateElements)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "BE2C0E41FBFFFDA5E9377B027ED0E644"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "439E17B0F1A7B7E4017C66A867ADA0ED"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 2
+      ignored: false
+      valueUuid: "toString_string1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "363d3698-f34c-39ad-914f-376a19498023"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "object of type MoreObjects.ToStringHelper"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: ".add(\\\"key\\\", getKey())"
+      lineNumber: 62
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type MoreObjects.ToStringHelper - Method: add"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.ExposedBindingImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "key"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Key"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_key1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "factory"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InternalFactory"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_internalFactory1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "privateElements"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.PrivateElements"
+            uuid: "<init>_privateElements1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.ExposedBindingImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "source"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "key"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.Key"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_key1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "factory"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.internal.InternalFactory"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_internalFactory1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "privateElements"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.spi.PrivateElements"
+            uuid: "<init>_privateElements1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.ExposedBindingImpl"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "result1"
+      valueType: "java.lang.String"
+      uuid: "toString_string1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "applyTo"
+    signature: "applyTo(com.google.inject.Binder) : void"
+    instructionFingerprint: "7F38336F02929DEE97F0F064D6D22B21"
+  paths:
+  - pathId: "path1"
+    testPathName: "applyToThrowsUnsupportedOperationException"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,java.lang.Object,com.google.inject.Key<java.lang.Object>,com.google.inject.internal.InternalFactory<java.lang.Object>,com.google.inject.spi.PrivateElements)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "9B6D365584571B0BF2CF3E3F998E7A43"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "439E17B0F1A7B7E4017C66A867ADA0ED"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "binder"
+      modelFingerprint: "408D482D5102052DD899EE6725889D7E"
+      index: 2
+      ignored: false
+      valueUuid: "applyTo_binder1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "2CEEA2B39E9D1886F34B052C6EB23477"
+      index: 3
+      ignored: false
+      valueUuid: "applyTo_unsupportedOperationException1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f7f37a4c-a7b3-393a-9cff-3d97f57aebc6"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.ExposedBindingImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "key"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Key"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_key1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "factory"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InternalFactory"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_internalFactory1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "privateElements"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.PrivateElements"
+            uuid: "<init>_privateElements1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.ExposedBindingImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "source"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "<init>_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "key"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.Key"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_key1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "factory"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.internal.InternalFactory"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_internalFactory1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "privateElements"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.spi.PrivateElements"
+            uuid: "<init>_privateElements1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.ExposedBindingImpl"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binder"
+      uuid: "applyTo_binder1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.UnsupportedOperationException"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "This element represents a synthetic binding."
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "java.lang.UnsupportedOperationException"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "This element represents a synthetic binding."
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "java.lang.UnsupportedOperationException"
+      uuid: "applyTo_unsupportedOperationException1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false

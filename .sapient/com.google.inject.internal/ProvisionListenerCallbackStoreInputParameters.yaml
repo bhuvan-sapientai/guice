@@ -1,0 +1,714 @@
+---
+modelFingerprint: "8BAD07C6429A216A8A75E091C8F0140D"
+methods:
+- method:
+    name: "get"
+    signature: "get(com.google.inject.Binding<java.lang.Object>) : com.google.inject.internal.ProvisionListenerStackCallback<java.lang.Object>"
+    instructionFingerprint: "CB346DCFB3D85C5F6DB88567CB9A3BFA"
+  paths:
+  - pathId: "path3"
+    testPathName: "getWhenINTERNAL_BINDINGSContainsBindingGetKey"
+    constructorSignature: "<init>(java.util.List<com.google.inject.spi.ProvisionListenerBinding>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "CDC9534C638F3414377052307749D51B"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "61135D8E40E1EBD6302B377FF6F5F637"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "binding"
+      modelFingerprint: "E5922AFCE296058F5F0D02ED6C0A7872"
+      index: 2
+      ignored: false
+      valueUuid: "get_binding1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binding"
+      modelFingerprint: "BD563825330706DC17952BF107F4CCCB"
+      index: 3
+      ignored: false
+      valueUuid: "get_binding1"
+      methodExercised:
+        target: "binding"
+        name: "getKey"
+        parameters: []
+        signature: "getKey(): Key"
+        returnValueUuid: "get_key1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "853CE5539E053BB176FA397A71F68A68"
+      index: 4
+      ignored: false
+      valueUuid: "get_provisionListenerStackCallback1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0f081d7b-38fd-34fe-89fd-7e9e73b7455d"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "INTERNAL_BINDINGS, object of type CacheBuilder"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: ".build("
+      lineNumber: 50
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type CacheBuilder - Method: build"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.ProvisionListenerCallbackStore"
+        parameters:
+        - name: "listenerBindings"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "com.google.inject.spi.ProvisionListenerBinding"
+            uuid: "<init>_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.ProvisionListenerCallbackStore"
+        parameters:
+        - name: "listenerBindings"
+          value:
+            sapientType: "COLLECTION"
+            valueType: "java.util.List"
+            genericValueType: "com.google.inject.spi.ProvisionListenerBinding"
+            uuid: "<init>_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.ProvisionListenerCallbackStore"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binding"
+      genericValueType: "java.lang.Object"
+      uuid: "get_binding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binding"
+      genericValueType: "java.lang.Object"
+      uuid: "get_binding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      uuid: "get_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      valueType: "com.google.inject.internal.ProvisionListenerStackCallback"
+      uuid: "get_provisionListenerStackCallback1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path1"
+    testPathName: "getWhenCallbackHasListeners"
+    constructorSignature: "<init>(java.util.List<com.google.inject.spi.ProvisionListenerBinding>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "4B83D4AB0BFDE21A750C040B080CEBF8"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "61135D8E40E1EBD6302B377FF6F5F637"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "binding"
+      modelFingerprint: "E5922AFCE296058F5F0D02ED6C0A7872"
+      index: 2
+      ignored: false
+      valueUuid: "get_binding1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binding"
+      modelFingerprint: "BD563825330706DC17952BF107F4CCCB"
+      index: 3
+      ignored: false
+      valueUuid: "get_binding1"
+      methodExercised:
+        target: "binding"
+        name: "getKey"
+        parameters: []
+        signature: "getKey(): Key"
+        returnValueUuid: "get_key1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binding"
+      modelFingerprint: "BD563825330706DC17952BF107F4CCCB"
+      index: 4
+      ignored: false
+      valueUuid: "get_binding1"
+      methodExercised:
+        target: "binding"
+        name: "getKey"
+        parameters: []
+        signature: "getKey(): Key"
+        returnValueUuid: "get_key2"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "callback"
+      modelFingerprint: "1B6692919C47BC2F5C611BCE75590058"
+      index: 5
+      ignored: false
+      valueUuid: "get_object2"
+      methodExercised:
+        target: "callback"
+        name: "hasListeners"
+        parameters: []
+        signature: "hasListeners(): boolean"
+        returnValueUuid: "get_boolean2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "0683C2C069C3C579C9EECF56829116A8"
+      index: 6
+      ignored: false
+      valueUuid: "get_object2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c531ead8-506e-32f2-897d-f94220bd5989"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "cache, INTERNAL_BINDINGS, object of type CacheBuilder"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: ".build("
+      lineNumber: 50
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type CacheBuilder - Method: build"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.ProvisionListenerCallbackStore"
+        parameters:
+        - name: "listenerBindings"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "com.google.inject.spi.ProvisionListenerBinding"
+            uuid: "<init>_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.ProvisionListenerCallbackStore"
+        parameters:
+        - name: "listenerBindings"
+          value:
+            sapientType: "COLLECTION"
+            valueType: "java.util.List"
+            genericValueType: "com.google.inject.spi.ProvisionListenerBinding"
+            uuid: "<init>_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.ProvisionListenerCallbackStore"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binding"
+      genericValueType: "java.lang.Object"
+      uuid: "get_binding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binding"
+      genericValueType: "java.lang.Object"
+      uuid: "get_binding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      uuid: "get_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binding"
+      genericValueType: "java.lang.Object"
+      uuid: "get_binding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      uuid: "get_key2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.ProvisionListenerStackCallback"
+      uuid: "get_object2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "get_boolean2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.ProvisionListenerStackCallback"
+      uuid: "get_object2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+  - pathId: "path2"
+    testPathName: "getWhenCallbackNotHasListeners"
+    constructorSignature: "<init>(java.util.List<com.google.inject.spi.ProvisionListenerBinding>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "8CE182C21E531A2743DF5A0FFCA6D077"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "61135D8E40E1EBD6302B377FF6F5F637"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "binding"
+      modelFingerprint: "E5922AFCE296058F5F0D02ED6C0A7872"
+      index: 2
+      ignored: false
+      valueUuid: "get_binding1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binding"
+      modelFingerprint: "BD563825330706DC17952BF107F4CCCB"
+      index: 3
+      ignored: false
+      valueUuid: "get_binding1"
+      methodExercised:
+        target: "binding"
+        name: "getKey"
+        parameters: []
+        signature: "getKey(): Key"
+        returnValueUuid: "get_key1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binding"
+      modelFingerprint: "BD563825330706DC17952BF107F4CCCB"
+      index: 4
+      ignored: false
+      valueUuid: "get_binding1"
+      methodExercised:
+        target: "binding"
+        name: "getKey"
+        parameters: []
+        signature: "getKey(): Key"
+        returnValueUuid: "get_key2"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "callback"
+      modelFingerprint: "6D05BB96BD2C8221238943336EF2499F"
+      index: 5
+      ignored: false
+      valueUuid: "get_object1"
+      methodExercised:
+        target: "callback"
+        name: "hasListeners"
+        parameters: []
+        signature: "hasListeners(): boolean"
+        returnValueUuid: "get_boolean2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "853CE5539E053BB176FA397A71F68A68"
+      index: 6
+      ignored: false
+      valueUuid: "get_provisionListenerStackCallback1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f8274cb8-0fa6-3ad0-8c23-442fe189b5f6"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "cache, INTERNAL_BINDINGS, object of type CacheBuilder"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: ".build("
+      lineNumber: 50
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type CacheBuilder - Method: build"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.ProvisionListenerCallbackStore"
+        parameters:
+        - name: "listenerBindings"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "com.google.inject.spi.ProvisionListenerBinding"
+            uuid: "<init>_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.ProvisionListenerCallbackStore"
+        parameters:
+        - name: "listenerBindings"
+          value:
+            sapientType: "COLLECTION"
+            valueType: "java.util.List"
+            genericValueType: "com.google.inject.spi.ProvisionListenerBinding"
+            uuid: "<init>_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.ProvisionListenerCallbackStore"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binding"
+      genericValueType: "java.lang.Object"
+      uuid: "get_binding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binding"
+      genericValueType: "java.lang.Object"
+      uuid: "get_binding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      uuid: "get_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binding"
+      genericValueType: "java.lang.Object"
+      uuid: "get_binding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      uuid: "get_key2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.ProvisionListenerStackCallback"
+      uuid: "get_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "get_boolean2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      valueType: "com.google.inject.internal.ProvisionListenerStackCallback"
+      uuid: "get_provisionListenerStackCallback1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "remove"
+    signature: "remove(com.google.inject.Binding<?>) : boolean"
+    instructionFingerprint: "64B14E4D804D5DC18C10531FBFCB0ECB"
+  paths:
+  - pathId: "path1"
+    testPathName: "removeWhenCacheAsMapRemoveTypeIsNotNull"
+    constructorSignature: "<init>(java.util.List<com.google.inject.spi.ProvisionListenerBinding>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "AAE7EF5276E0245D96297EB4D97253B9"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "61135D8E40E1EBD6302B377FF6F5F637"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "DF6713B4ED2360F8B23D31F53EC37AA9"
+      index: 2
+      ignored: false
+      valueUuid: "remove_binding1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 3
+      ignored: false
+      valueUuid: "uuid1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "08db0b87-0cd9-33db-b875-3522bd2f3b65"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "cache, object of type CacheBuilder"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: ".build("
+      lineNumber: 50
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type CacheBuilder - Method: build"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.ProvisionListenerCallbackStore"
+        parameters:
+        - name: "listenerBindings"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "com.google.inject.spi.ProvisionListenerBinding"
+            uuid: "<init>_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.ProvisionListenerCallbackStore"
+        parameters:
+        - name: "listenerBindings"
+          value:
+            sapientType: "COLLECTION"
+            valueType: "java.util.List"
+            genericValueType: "com.google.inject.spi.ProvisionListenerBinding"
+            uuid: "<init>_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.ProvisionListenerCallbackStore"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binding"
+      genericValueType: "?"
+      uuid: "remove_binding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "uuid1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "removeWhenCacheAsMapRemoveTypeIsNull"
+    constructorSignature: "<init>(java.util.List<com.google.inject.spi.ProvisionListenerBinding>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "24DFA1A8D9C4EE002644F461A50A6C4A"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "61135D8E40E1EBD6302B377FF6F5F637"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "DF6713B4ED2360F8B23D31F53EC37AA9"
+      index: 2
+      ignored: false
+      valueUuid: "remove_binding1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      valueUuid: "uuid2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ca8eea7f-76ac-3d33-96d0-6a90d47e4d00"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "cache, object of type CacheBuilder"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: ".build("
+      lineNumber: 50
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type CacheBuilder - Method: build"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.ProvisionListenerCallbackStore"
+        parameters:
+        - name: "listenerBindings"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "com.google.inject.spi.ProvisionListenerBinding"
+            uuid: "<init>_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.ProvisionListenerCallbackStore"
+        parameters:
+        - name: "listenerBindings"
+          value:
+            sapientType: "COLLECTION"
+            valueType: "java.util.List"
+            genericValueType: "com.google.inject.spi.ProvisionListenerBinding"
+            uuid: "<init>_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.ProvisionListenerCallbackStore"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binding"
+      genericValueType: "?"
+      uuid: "remove_binding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid2"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false

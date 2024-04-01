@@ -1,0 +1,1557 @@
+---
+modelFingerprint: "25C64F3C1A3DF04FB706E121A6E6DB0D"
+methods:
+- method:
+    name: "addCandidate"
+    signature: "addCandidate(java.lang.reflect.Method) : com.google.inject.internal.aop.MethodPartition"
+    instructionFingerprint: "7C217CECE6DE8262812652B7CDFB71CE"
+  paths:
+  - pathId: "path1"
+    testPathName: "addCandidateTest"
+    constructorSignature: "<init>(java.lang.reflect.Method,java.lang.reflect.Method)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "A759490A1CECCA5EE9CB413F8EC5B955"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "45C65B71DB27677E424F28C802C9B3D8"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "method"
+      modelFingerprint: "17D1981C9FDA2F5DD71BF31F647BA599"
+      index: 2
+      ignored: false
+      valueUuid: "addCandidate_method1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "5D6ACCFAF37C92D80284BAC7732AD7C2"
+      index: 3
+      ignored: false
+      valueUuid: "targetClassObject"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a91b9dc7-a3b4-328f-ae1d-f52f1b04c338"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.aop.MethodPartition"
+        parameters:
+        - name: "first"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Method"
+            uuid: "<init>_method1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "second"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Method"
+            uuid: "<init>_method2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.aop.MethodPartition"
+        parameters:
+        - name: "first"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Method"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Method"
+            uuid: "<init>_method1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "second"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Method"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Method"
+            uuid: "<init>_method2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.aop.MethodPartition"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "addCandidate_method1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "THIS"
+      valueType: "com.google.inject.internal.aop.MethodPartition"
+      uuid: "targetClassObject"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "collectEnhanceableMethods"
+    signature: "collectEnhanceableMethods(com.google.inject.TypeLiteral<?>,java.util.function.Consumer<java.lang.reflect.Method>,java.util.Map<java.lang.reflect.Method,java.lang.reflect.Method>)\
+      \ : void"
+    instructionFingerprint: "BBBA485E56BD8879F5662E389287886A"
+  paths:
+  - pathId: "path1"
+    testPathName: "collectEnhanceableMethodsWhenBridgeTargetsEntrySetIsEmpty"
+    constructorSignature: "<init>(java.lang.reflect.Method,java.lang.reflect.Method)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "A367CF8835A7DA4980AC0E1A8F716B83"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "823C25AA99E0E6F094D7D19457F756FB"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "hostType"
+      modelFingerprint: "FEB4712261B6773D52D68BD205A74C85"
+      index: 2
+      ignored: false
+      valueUuid: "collectEnhanceableMethods_typeLiteral1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "methodVisitor"
+      modelFingerprint: "DA4D1B4D6A7F781E0AD4ABBB902D7A3B"
+      index: 3
+      ignored: false
+      valueUuid: "collectEnhanceableMethods_consumer1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "bridgeDelegates"
+      modelFingerprint: "B72075CEF30220AA1B9B2DBE7ABE23EA"
+      index: 4
+      ignored: false
+      valueUuid: "collectEnhanceableMethods_map1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "candidate"
+      modelFingerprint: "02F97AD4E7457EE71CA3EDBB42B30667"
+      index: 5
+      ignored: false
+      valueUuid: "<init>_method1"
+      methodExercised:
+        target: "candidate"
+        name: "getParameterTypes"
+        parameters: []
+        signature: "getParameterTypes(): Class[]"
+        returnValueUuid: "collectEnhanceableMethods_class[]1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "candidate"
+      modelFingerprint: "0520162A391182B16E6E10F2E413FC3E"
+      index: 6
+      ignored: false
+      valueUuid: "<init>_method1"
+      methodExercised:
+        target: "candidate"
+        name: "isBridge"
+        parameters: []
+        signature: "isBridge(): boolean"
+        returnValueUuid: "collectEnhanceableMethods_boolean2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "method"
+      modelFingerprint: "159394CE9BC4690D714BD291C01732E4"
+      index: 7
+      ignored: false
+      valueUuid: "<init>_method1"
+      methodExercised:
+        target: "method"
+        name: "getModifiers"
+        parameters: []
+        signature: "getModifiers(): int"
+        returnValueUuid: "collectEnhanceableMethods_int1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 8
+      ignored: false
+      valueUuid: "uuid1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "23e3db08-859d-3e91-9e72-cf8f7be63c8b"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "BITWISE_NOT_SUPPORTED"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.aop.MethodPartition"
+        parameters:
+        - name: "first"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Method"
+            uuid: "<init>_method1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "second"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Method"
+            uuid: "<init>_method2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.aop.MethodPartition"
+        parameters:
+        - name: "first"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Method"
+            uuid: "<init>_method1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "second"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Method"
+            uuid: "<init>_method2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.aop.MethodPartition"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.inject.TypeLiteral"
+        method: "get"
+        methodParameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "collectEnhanceableMethods_typeLiteral1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "com.google.inject.TypeLiteral"
+        method: "get"
+        methodParameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            valueType: "java.lang.Class"
+            uuid: "collectEnhanceableMethods_typeLiteral1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.TypeLiteral"
+      uuid: "collectEnhanceableMethods_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Consumer"
+      uuid: "collectEnhanceableMethods_consumer1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.HashMap"
+        parameters: []
+        values:
+        - sapientType: "PAIR"
+          content: !<pair>
+            key:
+              sapientType: "MOCK"
+              valueType: "java.lang.reflect.Method"
+              uuid: "collectEnhanceableMethods_map1-key-0"
+              fixed: false
+              collectionUuid: "collectEnhanceableMethods_map1"
+              nameForMock: "value"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            value:
+              sapientType: "MOCK"
+              valueType: "java.lang.reflect.Method"
+              uuid: "collectEnhanceableMethods_map1-value-1"
+              fixed: false
+              collectionUuid: "collectEnhanceableMethods_map1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      suggestedContent: !<collection>
+        collectionClass: "java.util.HashMap"
+        parameters: []
+        values:
+        - sapientType: "PAIR"
+          content: !<pair>
+            key:
+              sapientType: "MOCK"
+              valueType: "java.lang.reflect.Method"
+              uuid: "collectEnhanceableMethods_map1-key-0"
+              fixed: false
+              collectionUuid: "collectEnhanceableMethods_map1"
+              nameForMock: "value"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            value:
+              sapientType: "MOCK"
+              valueType: "java.lang.reflect.Method"
+              uuid: "collectEnhanceableMethods_map1-value-1"
+              fixed: false
+              collectionUuid: "collectEnhanceableMethods_map1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      valueType: "java.util.Map"
+      genericValueType: "java.lang.reflect.Method,java.lang.reflect.Method"
+      uuid: "collectEnhanceableMethods_map1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "<init>_method1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "parametersKey_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<array>
+        values:
+          0:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "parametersKey_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "java.lang.Class[]"
+      genericValueType: "?"
+      uuid: "collectEnhanceableMethods_class[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "<init>_method1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "collectEnhanceableMethods_boolean2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "<init>_method1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "collectEnhanceableMethods_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path7"
+    testPathName: "collectEnhanceableMethodsWhenMethodIsBridgeAndBridgeTargetsEntrySetIsEmpty"
+    constructorSignature: "<init>(java.lang.reflect.Method,java.lang.reflect.Method)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "D2C14A97A478852511D8E0CBF3A2EBB4"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "ea2ce9a0-104c-3d66-8bf8-3d55086fc59b"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.reflect.Method.getParameterTypes() :\
+        \ java.lang.Class[]<?>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path6"
+    testPathName: "collectEnhanceableMethodsWhenMethodGetModifiersAndFINALEquals0AndMethodIsBridgeAndBridgeTargetsEntrySetIsEmpty"
+    constructorSignature: "<init>(java.lang.reflect.Method,java.lang.reflect.Method)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "9E06ED042B5FAE9FA0882132F2BBAC37"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "823C25AA99E0E6F094D7D19457F756FB"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "hostType"
+      modelFingerprint: "FEB4712261B6773D52D68BD205A74C85"
+      index: 2
+      ignored: false
+      valueUuid: "collectEnhanceableMethods_typeLiteral1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "methodVisitor"
+      modelFingerprint: "DA4D1B4D6A7F781E0AD4ABBB902D7A3B"
+      index: 3
+      ignored: false
+      valueUuid: "collectEnhanceableMethods_consumer1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "bridgeDelegates"
+      modelFingerprint: "B72075CEF30220AA1B9B2DBE7ABE23EA"
+      index: 4
+      ignored: false
+      valueUuid: "collectEnhanceableMethods_map1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "candidate"
+      modelFingerprint: "6709DAFD52778962CE96369EAA50861A"
+      index: 5
+      ignored: false
+      valueUuid: "<init>_method1"
+      methodExercised:
+        target: "candidate"
+        name: "getParameterTypes"
+        parameters: []
+        signature: "getParameterTypes(): Class[]"
+        returnValueUuid: "collectEnhanceableMethods_class[]1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "candidate"
+      modelFingerprint: "C956D9D985A94F17A23DF4A02A2F34DB"
+      index: 6
+      ignored: false
+      valueUuid: "<init>_method1"
+      methodExercised:
+        target: "candidate"
+        name: "isBridge"
+        parameters: []
+        signature: "isBridge(): boolean"
+        returnValueUuid: "collectEnhanceableMethods_boolean2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "method"
+      modelFingerprint: "159394CE9BC4690D714BD291C01732E4"
+      index: 7
+      ignored: false
+      valueUuid: "<init>_method1"
+      methodExercised:
+        target: "method"
+        name: "getModifiers"
+        parameters: []
+        signature: "getModifiers(): int"
+        returnValueUuid: "collectEnhanceableMethods_int1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "method"
+      modelFingerprint: "0520162A391182B16E6E10F2E413FC3E"
+      index: 8
+      ignored: false
+      valueUuid: "<init>_method1"
+      methodExercised:
+        target: "method"
+        name: "isBridge"
+        parameters: []
+        signature: "isBridge(): boolean"
+        returnValueUuid: "collectEnhanceableMethods_boolean5"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 9
+      ignored: false
+      valueUuid: "uuid1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "fea1f20c-dda8-35de-94bb-bcf654c56ea7"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "BITWISE_NOT_SUPPORTED"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.aop.MethodPartition"
+        parameters:
+        - name: "first"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Method"
+            uuid: "<init>_method1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "second"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Method"
+            uuid: "<init>_method2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.aop.MethodPartition"
+        parameters:
+        - name: "first"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Method"
+            uuid: "<init>_method1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "second"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Method"
+            uuid: "<init>_method2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.aop.MethodPartition"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.inject.TypeLiteral"
+        method: "get"
+        methodParameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "collectEnhanceableMethods_typeLiteral1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "com.google.inject.TypeLiteral"
+        method: "get"
+        methodParameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            valueType: "java.lang.Class"
+            uuid: "collectEnhanceableMethods_typeLiteral1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.TypeLiteral"
+      uuid: "collectEnhanceableMethods_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Consumer"
+      uuid: "collectEnhanceableMethods_consumer1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.HashMap"
+        parameters: []
+        values:
+        - sapientType: "PAIR"
+          content: !<pair>
+            key:
+              sapientType: "MOCK"
+              valueType: "java.lang.reflect.Method"
+              uuid: "collectEnhanceableMethods_map1-key-0"
+              fixed: false
+              collectionUuid: "collectEnhanceableMethods_map1"
+              nameForMock: "value"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            value:
+              sapientType: "MOCK"
+              valueType: "java.lang.reflect.Method"
+              uuid: "collectEnhanceableMethods_map1-value-1"
+              fixed: false
+              collectionUuid: "collectEnhanceableMethods_map1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      suggestedContent: !<collection>
+        collectionClass: "java.util.HashMap"
+        parameters: []
+        values:
+        - sapientType: "PAIR"
+          content: !<pair>
+            key:
+              sapientType: "MOCK"
+              valueType: "java.lang.reflect.Method"
+              uuid: "collectEnhanceableMethods_map1-key-0"
+              fixed: false
+              collectionUuid: "collectEnhanceableMethods_map1"
+              nameForMock: "value"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            value:
+              sapientType: "MOCK"
+              valueType: "java.lang.reflect.Method"
+              uuid: "collectEnhanceableMethods_map1-value-1"
+              fixed: false
+              collectionUuid: "collectEnhanceableMethods_map1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      valueType: "java.util.Map"
+      genericValueType: "java.lang.reflect.Method,java.lang.reflect.Method"
+      uuid: "collectEnhanceableMethods_map1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "<init>_method1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "parametersKey_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          1:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "parametersKey_class2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<array>
+        values:
+          0:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "parametersKey_class1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          1:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "parametersKey_class2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "java.lang.Class[]"
+      genericValueType: "?"
+      uuid: "collectEnhanceableMethods_class[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "<init>_method1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "collectEnhanceableMethods_boolean2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "<init>_method1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "collectEnhanceableMethods_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "<init>_method1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "collectEnhanceableMethods_boolean5"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "collectEnhanceableMethodsWhenSameMethodThrowsNullPointerException"
+    constructorSignature: "<init>(java.lang.reflect.Method,java.lang.reflect.Method)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "4F675B6524ACB456DB0CE284CC480ADD"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "88C74CB986064346A10CE0441A0B776A"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "hostType"
+      modelFingerprint: "447185AFD41C7B1EE5A0E625B1C88BFC"
+      index: 2
+      ignored: false
+      valueUuid: "collectEnhanceableMethods_typeLiteral1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "methodVisitor"
+      modelFingerprint: "D32614453EE107AE2AF88B1703E7444D"
+      index: 3
+      ignored: false
+      valueUuid: "collectEnhanceableMethods_consumer1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "bridgeDelegates"
+      modelFingerprint: "F3B998A49B307587C71C7A31EB4BFE2D"
+      index: 4
+      ignored: false
+      valueUuid: "collectEnhanceableMethods_map1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1544C3243427A58A5AE91A88CC628F77"
+      index: 5
+      ignored: false
+      valueUuid: "uuid4"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "70e7ee08-449c-33ef-92e7-7666235ea22c"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.reflect.Method.getParameterTypes() :\
+        \ java.lang.Class[]<?>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.aop.MethodPartition"
+        parameters:
+        - name: "first"
+          value:
+            sapientType: "NULL"
+            valueType: "java.lang.reflect.Method"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: true
+        - name: "second"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Method"
+            uuid: "<init>_method2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.aop.MethodPartition"
+        parameters:
+        - name: "first"
+          value:
+            sapientType: "NULL"
+            valueType: "java.lang.reflect.Method"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: true
+        - name: "second"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Method"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Method"
+            uuid: "<init>_method2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.aop.MethodPartition"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "?"
+      uuid: "collectEnhanceableMethods_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Consumer"
+      uuid: "collectEnhanceableMethods_consumer1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      suggestedContent: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Map"
+      genericValueType: "java.lang.reflect.Method,java.lang.reflect.Method"
+      uuid: "collectEnhanceableMethods_map1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.NullPointerException"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.NullPointerException"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.NullPointerException"
+      uuid: "uuid4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path5"
+    testPathName: "collectEnhanceableMethodsWhenEnhanceableMethodGetModifiersAndFINALNotEquals0"
+    constructorSignature: "<init>(java.lang.reflect.Method,java.lang.reflect.Method)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "1D1F190289C6EA7072E163863C334D5C"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "d80cc032-d8ae-3a8e-8212-52c89e4a9d9a"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.reflect.Method.getParameterTypes() :\
+        \ java.lang.Class[]<?>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path4"
+    testPathName: "collectEnhanceableMethodsWhenResolvedParametersMatchOriginalBridgeHostTypeCandidateAndEnhanceableMethodGetModifiersAndF"
+    constructorSignature: "<init>(java.lang.reflect.Method,java.lang.reflect.Method)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "64FC226B4EA7454DEB9C9AEC4687F360"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "45C65B71DB27677E424F28C802C9B3D8"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "hostType"
+      modelFingerprint: "402F5AF634475B8CD79EF6CE2F753DE2"
+      index: 2
+      ignored: false
+      valueUuid: "collectEnhanceableMethods_typeLiteral1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "methodVisitor"
+      modelFingerprint: "D32614453EE107AE2AF88B1703E7444D"
+      index: 3
+      ignored: false
+      valueUuid: "collectEnhanceableMethods_consumer1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "bridgeDelegates"
+      modelFingerprint: "F002A070BC7982053291D6EC36356826"
+      index: 4
+      ignored: false
+      valueUuid: "collectEnhanceableMethods_map1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "host"
+      modelFingerprint: "ABC077A7B5D6F79C4F50EB3B57573BAE"
+      index: 5
+      ignored: false
+      valueUuid: "collectEnhanceableMethods_typeLiteral1"
+      methodExercised:
+        target: "host"
+        name: "getParameterTypes"
+        parameters:
+        - name: "methodOrConstructor"
+          valueUuid: "<init>_method1"
+        signature: "getParameterTypes(Method): List"
+        returnValueUuid: "resolvedParametersMatch_list1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "48FC57A89D2C7009C6913D357DE5F8B2"
+      index: 6
+      ignored: false
+      valueUuid: "resolvedParametersMatch_typeLiteral1"
+      methodExercised:
+        target: "com.google.inject.TypeLiteral"
+        name: "getRawType"
+        parameters: []
+        signature: "getRawType(): Class"
+        returnValueUuid: "resolvedParametersMatch_class1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 7
+      ignored: false
+      valueUuid: "uuid6"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATE_VERIFICATION_PARAMETER"
+      name: "bridgeDelegates"
+      modelFingerprint: "E6C694B4929320F63C96CDB49FE7B59C"
+      index: 8
+      ignored: false
+      valueUuid: "collectEnhanceableMethods_map2"
+      originalValueUuid: "collectEnhanceableMethods_map1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "98fc2b63-afa3-343f-8d00-9712759b9c1e"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.reflect.Method.getParameterTypes() :\
+        \ java.lang.Class[]<?>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.aop.MethodPartition"
+        parameters:
+        - name: "first"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Method"
+            uuid: "<init>_method1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "second"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Method"
+            uuid: "<init>_method2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.aop.MethodPartition"
+        parameters:
+        - name: "first"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Method"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Method"
+            uuid: "<init>_method1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "second"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Method"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Method"
+            uuid: "<init>_method2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.aop.MethodPartition"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "?"
+      uuid: "collectEnhanceableMethods_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Consumer"
+      uuid: "collectEnhanceableMethods_consumer1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      suggestedContent: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Map"
+      genericValueType: "java.lang.reflect.Method,java.lang.reflect.Method"
+      uuid: "collectEnhanceableMethods_map1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "?"
+      uuid: "collectEnhanceableMethods_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "MOCK"
+          valueType: "com.google.inject.TypeLiteral"
+          genericValueType: "?"
+          uuid: "resolvedParametersMatch_typeLiteral1"
+          fixed: false
+          collectionUuid: "resolvedParametersMatch_list1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      suggestedContent: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "MOCK"
+          valueType: "com.google.inject.TypeLiteral"
+          genericValueType: "?"
+          uuid: "resolvedParametersMatch_typeLiteral1"
+          fixed: false
+          collectionUuid: "resolvedParametersMatch_list1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      valueType: "java.util.List"
+      genericValueType: "com.google.inject.TypeLiteral<?>"
+      uuid: "resolvedParametersMatch_list1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "<init>_method1"
+      fixed: false
+      collectionUuid: "<init>_arrayList1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "?"
+      uuid: "resolvedParametersMatch_typeLiteral1"
+      fixed: false
+      collectionUuid: "resolvedParametersMatch_list1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "resolvedParametersMatch_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid6"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.HashMap"
+        parameters: []
+        values:
+        - sapientType: "PAIR"
+          content: !<pair>
+            key:
+              sapientType: "MOCK"
+              valueType: "java.lang.reflect.Method"
+              uuid: "<init>_method1"
+              fixed: false
+              collectionUuid: "collectEnhanceableMethods_hashMap1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            value:
+              sapientType: "MOCK"
+              valueType: "java.lang.reflect.Method"
+              uuid: "<init>_method1"
+              fixed: false
+              collectionUuid: "<init>_arrayList1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          valueType: "java.util.Map$Entry"
+          genericValueType: "java.lang.reflect.Method,java.lang.reflect.Method"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      suggestedContent: !<collection>
+        collectionClass: "java.util.HashMap"
+        parameters: []
+        values:
+        - sapientType: "PAIR"
+          content: !<pair>
+            key:
+              sapientType: "MOCK"
+              valueType: "java.lang.reflect.Method"
+              uuid: "<init>_method1"
+              fixed: false
+              collectionUuid: "collectEnhanceableMethods_hashMap1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            value:
+              sapientType: "MOCK"
+              valueType: "java.lang.reflect.Method"
+              uuid: "<init>_method1"
+              fixed: false
+              collectionUuid: "<init>_arrayList1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          valueType: "java.util.Map$Entry"
+          genericValueType: "java.lang.reflect.Method,java.lang.reflect.Method"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      valueType: "java.util.Map"
+      genericValueType: "java.lang.reflect.Method,java.lang.reflect.Method"
+      uuid: "collectEnhanceableMethods_map2"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path3"
+    testPathName: "collectEnhanceableMethodsWhenEnhanceableMethodGetModifiersAndFINALEquals0"
+    constructorSignature: "<init>(java.lang.reflect.Method,java.lang.reflect.Method)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "974683877E8F0B57F72B9852B69D453A"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "45C65B71DB27677E424F28C802C9B3D8"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "hostType"
+      modelFingerprint: "402F5AF634475B8CD79EF6CE2F753DE2"
+      index: 2
+      ignored: false
+      valueUuid: "collectEnhanceableMethods_typeLiteral1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "methodVisitor"
+      modelFingerprint: "D32614453EE107AE2AF88B1703E7444D"
+      index: 3
+      ignored: false
+      valueUuid: "collectEnhanceableMethods_consumer1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "bridgeDelegates"
+      modelFingerprint: "F3B998A49B307587C71C7A31EB4BFE2D"
+      index: 4
+      ignored: false
+      valueUuid: "collectEnhanceableMethods_map1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "host"
+      modelFingerprint: "ABC077A7B5D6F79C4F50EB3B57573BAE"
+      index: 5
+      ignored: false
+      valueUuid: "collectEnhanceableMethods_typeLiteral1"
+      methodExercised:
+        target: "host"
+        name: "getParameterTypes"
+        parameters:
+        - name: "methodOrConstructor"
+          valueUuid: "<init>_method1"
+        signature: "getParameterTypes(Method): List"
+        returnValueUuid: "resolvedParametersMatch_list1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "E1A0423780D37B86814C787616A1BCE9"
+      index: 6
+      ignored: false
+      valueUuid: "resolvedParametersMatch_typeLiteral1"
+      methodExercised:
+        target: "com.google.inject.TypeLiteral"
+        name: "getRawType"
+        parameters: []
+        signature: "getRawType(): Class"
+        returnValueUuid: "resolvedParametersMatch_class2"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 7
+      ignored: false
+      valueUuid: "uuid7"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "cb71369c-2cf9-389d-aa67-9b6a7e64edd8"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.reflect.Method.getParameterTypes() :\
+        \ java.lang.Class[]<?>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.aop.MethodPartition"
+        parameters:
+        - name: "first"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Method"
+            uuid: "<init>_method1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "second"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Method"
+            uuid: "<init>_method2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.aop.MethodPartition"
+        parameters:
+        - name: "first"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Method"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Method"
+            uuid: "<init>_method1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "second"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Method"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Method"
+            uuid: "<init>_method2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.aop.MethodPartition"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "?"
+      uuid: "collectEnhanceableMethods_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Consumer"
+      uuid: "collectEnhanceableMethods_consumer1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      suggestedContent: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Map"
+      genericValueType: "java.lang.reflect.Method,java.lang.reflect.Method"
+      uuid: "collectEnhanceableMethods_map1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "?"
+      uuid: "collectEnhanceableMethods_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "MOCK"
+          valueType: "com.google.inject.TypeLiteral"
+          genericValueType: "?"
+          uuid: "resolvedParametersMatch_typeLiteral1"
+          fixed: false
+          collectionUuid: "resolvedParametersMatch_list1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      suggestedContent: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "MOCK"
+          valueType: "com.google.inject.TypeLiteral"
+          genericValueType: "?"
+          uuid: "resolvedParametersMatch_typeLiteral1"
+          fixed: false
+          collectionUuid: "resolvedParametersMatch_list1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      valueType: "java.util.List"
+      genericValueType: "com.google.inject.TypeLiteral<?>"
+      uuid: "resolvedParametersMatch_list1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "<init>_method1"
+      fixed: false
+      collectionUuid: "<init>_arrayList1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "?"
+      uuid: "resolvedParametersMatch_typeLiteral1"
+      fixed: false
+      collectionUuid: "resolvedParametersMatch_list1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? super java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "? super java.lang.Object"
+      uuid: "resolvedParametersMatch_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid7"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false

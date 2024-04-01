@@ -1,0 +1,1488 @@
+---
+modelFingerprint: "414E8534667BBD0F041A76019F36E7BB"
+methods:
+- method:
+    name: "formatSources"
+    signature: "formatSources(int,java.util.List<java.lang.Object>,java.util.Formatter)\
+      \ : void"
+    instructionFingerprint: "48C674B95788E557120AE6995EBE90FB"
+  paths:
+  - pathId: "path3"
+    testPathName: "formatSourcesWhenINotLessThanSourcesSize"
+    filledByUser: false
+    modelFingerprint: "FC1AC078B9453D6061FAD42B182F8D63"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "0a3a2b53-941f-3da4-92e9-9e661c617624"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path2"
+    testPathName: "formatSourcesWhenIEquals0"
+    filledByUser: false
+    modelFingerprint: "DCFDD755D816B0E9094DD3FC5D738D29"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "index"
+      modelFingerprint: "AB46221EE38C6158A433A05F2D8F5C7A"
+      index: 1
+      ignored: false
+      valueUuid: "formatSources_int1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "sources"
+      modelFingerprint: "BE21A13C0E663558C3334ECFB269B953"
+      index: 2
+      ignored: false
+      valueUuid: "formatSources_list1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "formatter"
+      modelFingerprint: "F61D08D5CCF0A16106E9C35B6FC9F9DA"
+      index: 3
+      ignored: false
+      valueUuid: "formatSources_formatter1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "9266DF748073A4ECBF1480284A920514"
+      index: 4
+      ignored: false
+      valueUuid: "formatSources_sourceFormatter1"
+      methodExercised:
+        target: "com.google.inject.internal.SourceFormatter"
+        name: "format"
+        parameters: []
+        signature: "format(): void"
+        returnValueUuid: "formatSources_void1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "9266DF748073A4ECBF1480284A920514"
+      index: 5
+      ignored: false
+      valueUuid: "formatSources_sourceFormatter2"
+      methodExercised:
+        target: "com.google.inject.internal.SourceFormatter"
+        name: "format"
+        parameters: []
+        signature: "format(): void"
+        returnValueUuid: "formatSources_void2"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "9266DF748073A4ECBF1480284A920514"
+      index: 6
+      ignored: false
+      valueUuid: "formatSources_sourceFormatter3"
+      methodExercised:
+        target: "com.google.inject.internal.SourceFormatter"
+        name: "format"
+        parameters: []
+        signature: "format(): void"
+        returnValueUuid: "formatSources_void3"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 7
+      ignored: false
+      valueUuid: "uuid1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ea5f67db-3ac3-3acb-9d17-8cebd11c270e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "object of type SourceFormatter"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "new SourceFormatter(source, formatter, i == 0).format();"
+      lineNumber: 21
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type SourceFormatter - Method: format"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      suggestedContent: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "formatSources_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "formatSources_list1-0"
+          fixed: false
+          collectionUuid: "formatSources_list1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "formatSources_list1-1"
+          fixed: false
+          collectionUuid: "formatSources_list1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "formatSources_list1-2"
+          fixed: false
+          collectionUuid: "formatSources_list1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      suggestedContent: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "formatSources_list1-0"
+          fixed: false
+          collectionUuid: "formatSources_list1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "formatSources_list1-1"
+          fixed: false
+          collectionUuid: "formatSources_list1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "formatSources_list1-2"
+          fixed: false
+          collectionUuid: "formatSources_list1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      valueType: "java.util.List"
+      genericValueType: "java.lang.Object"
+      uuid: "formatSources_list1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.util.Formatter"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.util.Formatter"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.util.Formatter"
+      uuid: "formatSources_formatter1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.SourceFormatter"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "formatSources_object1"
+            fixed: false
+            collectionUuid: "formatSources_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "formatter"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.Formatter"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.util.Formatter"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.util.Formatter"
+            uuid: "formatSources_formatter1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "omitPreposition"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.SourceFormatter"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "formatSources_object1"
+            fixed: false
+            collectionUuid: "formatSources_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "formatter"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.Formatter"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.util.Formatter"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.util.Formatter"
+            uuid: "formatSources_formatter1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "omitPreposition"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.internal.SourceFormatter"
+      uuid: "formatSources_sourceFormatter1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "formatSources_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.SourceFormatter"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "formatSources_object2"
+            fixed: false
+            collectionUuid: "formatSources_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "formatter"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.Formatter"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.util.Formatter"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.util.Formatter"
+            uuid: "formatSources_formatter1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "omitPreposition"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.SourceFormatter"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "formatSources_object2"
+            fixed: false
+            collectionUuid: "formatSources_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "formatter"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.Formatter"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.util.Formatter"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.util.Formatter"
+            uuid: "formatSources_formatter1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "omitPreposition"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.internal.SourceFormatter"
+      uuid: "formatSources_sourceFormatter2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "formatSources_void2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.SourceFormatter"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "formatSources_object3"
+            fixed: false
+            collectionUuid: "formatSources_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "formatter"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.Formatter"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.util.Formatter"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.util.Formatter"
+            uuid: "formatSources_formatter1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "omitPreposition"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.SourceFormatter"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "formatSources_object3"
+            fixed: false
+            collectionUuid: "formatSources_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "formatter"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.Formatter"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.util.Formatter"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.util.Formatter"
+            uuid: "formatSources_formatter1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "omitPreposition"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.internal.SourceFormatter"
+      uuid: "formatSources_sourceFormatter3"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "formatSources_void3"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path1"
+    testPathName: "formatSourcesWhenIEquals0AndIEquals0"
+    filledByUser: false
+    modelFingerprint: "3CAEE628579D83D897731B3C5D1B349F"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "1d96b401-9377-3339-859e-eb60b55a9e86"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    variablesCouldNotBeIsolated: "object of type SourceFormatter"
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.Formatter.format(java.lang.String,java.lang.Object[])\
+        \ : java.util.Formatter"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+- method:
+    name: "formatSources"
+    signature: "formatSources(java.util.List<java.lang.Object>,java.util.Formatter)\
+      \ : void"
+    instructionFingerprint: "63C2AD342B9EBDE3548510168F8C884D"
+  paths:
+  - pathId: "path3"
+    testPathName: "formatSources1WhenINotLessThanSourcesSize"
+    filledByUser: false
+    modelFingerprint: "D1D9053BDD39DDF1F69DAF8CCF7E654A"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "46105e36-3a9b-3208-b10a-cb911eef894a"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path2"
+    testPathName: "formatSources1WhenIEquals0"
+    filledByUser: false
+    modelFingerprint: "1D0CB61AF43DCAFD8B8366ED31293025"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "sources"
+      modelFingerprint: "BE21A13C0E663558C3334ECFB269B953"
+      index: 1
+      ignored: false
+      valueUuid: "formatSources_list1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "formatter"
+      modelFingerprint: "A5FB67A76E4293A601E10929A2E3D29F"
+      index: 2
+      ignored: false
+      valueUuid: "formatSources_formatter1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "formatter"
+      modelFingerprint: "0E419C0FFE57BE80F2FFAC6228B4A7E6"
+      index: 3
+      ignored: false
+      valueUuid: "formatSources_formatter1"
+      methodExercised:
+        target: "formatter"
+        name: "format"
+        parameters:
+        - name: "format"
+          valueUuid: "uuid1"
+        - name: "args"
+          valueUuid: "formatSources_object[]1"
+        signature: "format(String,Object[]): Formatter"
+        returnValueUuid: "formatSources_formatter2"
+        access: 129
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "F2B5EDF5218F3B0E60BD585399300A16"
+      index: 4
+      ignored: false
+      valueUuid: "formatSources_sourceFormatter1"
+      methodExercised:
+        target: "com.google.inject.internal.SourceFormatter"
+        name: "format"
+        parameters: []
+        signature: "format(): void"
+        returnValueUuid: "formatSources_void1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "formatter"
+      modelFingerprint: "0E419C0FFE57BE80F2FFAC6228B4A7E6"
+      index: 5
+      ignored: false
+      valueUuid: "formatSources_formatter1"
+      methodExercised:
+        target: "formatter"
+        name: "format"
+        parameters:
+        - name: "format"
+          valueUuid: "uuid2"
+        - name: "args"
+          valueUuid: "formatSources_object[]2"
+        signature: "format(String,Object[]): Formatter"
+        returnValueUuid: "formatSources_formatter3"
+        access: 129
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "F2B5EDF5218F3B0E60BD585399300A16"
+      index: 6
+      ignored: false
+      valueUuid: "formatSources_sourceFormatter2"
+      methodExercised:
+        target: "com.google.inject.internal.SourceFormatter"
+        name: "format"
+        parameters: []
+        signature: "format(): void"
+        returnValueUuid: "formatSources_void2"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "formatter"
+      modelFingerprint: "0E419C0FFE57BE80F2FFAC6228B4A7E6"
+      index: 7
+      ignored: false
+      valueUuid: "formatSources_formatter1"
+      methodExercised:
+        target: "formatter"
+        name: "format"
+        parameters:
+        - name: "format"
+          valueUuid: "uuid3"
+        - name: "args"
+          valueUuid: "formatSources_object[]3"
+        signature: "format(String,Object[]): Formatter"
+        returnValueUuid: "formatSources_formatter4"
+        access: 129
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "F2B5EDF5218F3B0E60BD585399300A16"
+      index: 8
+      ignored: false
+      valueUuid: "formatSources_sourceFormatter3"
+      methodExercised:
+        target: "com.google.inject.internal.SourceFormatter"
+        name: "format"
+        parameters: []
+        signature: "format(): void"
+        returnValueUuid: "formatSources_void3"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 9
+      ignored: false
+      valueUuid: "uuid4"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ec9e316b-1db0-3053-857a-1985c90da5d0"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "object of type SourceFormatter"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "new SourceFormatter(source, formatter, i == 0).format();"
+      lineNumber: 30
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type SourceFormatter - Method: format"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "formatSources_list1-0"
+          fixed: false
+          collectionUuid: "formatSources_list1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "formatSources_list1-1"
+          fixed: false
+          collectionUuid: "formatSources_list1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "formatSources_list1-2"
+          fixed: false
+          collectionUuid: "formatSources_list1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      suggestedContent: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "formatSources_list1-0"
+          fixed: false
+          collectionUuid: "formatSources_list1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "formatSources_list1-1"
+          fixed: false
+          collectionUuid: "formatSources_list1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "formatSources_list1-2"
+          fixed: false
+          collectionUuid: "formatSources_list1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      valueType: "java.util.List"
+      genericValueType: "java.lang.Object"
+      uuid: "formatSources_list1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.Formatter"
+      uuid: "formatSources_formatter1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.Formatter"
+      uuid: "formatSources_formatter1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.util.Formatter"
+        localVariableValue:
+          sapientType: "MOCK"
+          valueType: "java.util.Formatter"
+          uuid: "formatSources_formatter1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "  "
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Object[]"
+            uuid: "formatSources_object[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "format"
+      suggestedContent: !<method_return_from_value>
+        target: "java.util.Formatter"
+        localVariableValue:
+          sapientType: "MOCK"
+          valueType: "java.util.Formatter"
+          uuid: "formatSources_formatter1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "  "
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - value:
+            sapientType: "ARRAY"
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Object[]"
+            uuid: "formatSources_object[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "format"
+      valueType: "java.util.Formatter"
+      uuid: "formatSources_formatter2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "  "
+      valueType: "java.lang.String"
+      uuid: "uuid1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      suggestedContent: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "formatSources_object[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.SourceFormatter"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "formatSources_object1"
+            fixed: false
+            collectionUuid: "formatSources_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "formatter"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.Formatter"
+            uuid: "formatSources_formatter1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "omitPreposition"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.SourceFormatter"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "formatSources_object1"
+            fixed: false
+            collectionUuid: "formatSources_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "formatter"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.Formatter"
+            uuid: "formatSources_formatter1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "omitPreposition"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.internal.SourceFormatter"
+      uuid: "formatSources_sourceFormatter1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "formatSources_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.Formatter"
+      uuid: "formatSources_formatter1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.util.Formatter"
+        localVariableValue:
+          sapientType: "MOCK"
+          valueType: "java.util.Formatter"
+          uuid: "formatSources_formatter1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "  "
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Object[]"
+            uuid: "formatSources_object[]2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "format"
+      suggestedContent: !<method_return_from_value>
+        target: "java.util.Formatter"
+        localVariableValue:
+          sapientType: "MOCK"
+          valueType: "java.util.Formatter"
+          uuid: "formatSources_formatter1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "  "
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - value:
+            sapientType: "ARRAY"
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Object[]"
+            uuid: "formatSources_object[]2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "format"
+      valueType: "java.util.Formatter"
+      uuid: "formatSources_formatter3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "  "
+      valueType: "java.lang.String"
+      uuid: "uuid2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      suggestedContent: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "formatSources_object[]2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.SourceFormatter"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "formatSources_object2"
+            fixed: false
+            collectionUuid: "formatSources_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "formatter"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.Formatter"
+            uuid: "formatSources_formatter1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "omitPreposition"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.SourceFormatter"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "formatSources_object2"
+            fixed: false
+            collectionUuid: "formatSources_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "formatter"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.Formatter"
+            uuid: "formatSources_formatter1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "omitPreposition"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.internal.SourceFormatter"
+      uuid: "formatSources_sourceFormatter2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "formatSources_void2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.Formatter"
+      uuid: "formatSources_formatter1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.util.Formatter"
+        localVariableValue:
+          sapientType: "MOCK"
+          valueType: "java.util.Formatter"
+          uuid: "formatSources_formatter1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "  "
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Object[]"
+            uuid: "formatSources_object[]3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "format"
+      suggestedContent: !<method_return_from_value>
+        target: "java.util.Formatter"
+        localVariableValue:
+          sapientType: "MOCK"
+          valueType: "java.util.Formatter"
+          uuid: "formatSources_formatter1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "  "
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - value:
+            sapientType: "ARRAY"
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Object[]"
+            uuid: "formatSources_object[]3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "format"
+      valueType: "java.util.Formatter"
+      uuid: "formatSources_formatter4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "  "
+      valueType: "java.lang.String"
+      uuid: "uuid3"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      suggestedContent: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "formatSources_object[]3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.SourceFormatter"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "formatSources_object3"
+            fixed: false
+            collectionUuid: "formatSources_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "formatter"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.Formatter"
+            uuid: "formatSources_formatter1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "omitPreposition"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.SourceFormatter"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "formatSources_object3"
+            fixed: false
+            collectionUuid: "formatSources_list1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "formatter"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.Formatter"
+            uuid: "formatSources_formatter1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "omitPreposition"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.internal.SourceFormatter"
+      uuid: "formatSources_sourceFormatter3"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "formatSources_void3"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid4"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path1"
+    testPathName: "formatSources1WhenILessThanSourcesSizeAndIEquals0"
+    filledByUser: false
+    modelFingerprint: "A15E5DB1D24517F6004457023320FEE2"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "b2e1c976-7323-3bbd-9d05-d49010c0d8b3"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    variablesCouldNotBeIsolated: "object of type SourceFormatter"
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.Formatter.format(java.lang.String,java.lang.Object[])\
+        \ : java.util.Formatter"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []

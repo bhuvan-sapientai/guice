@@ -1,0 +1,176 @@
+---
+modelFingerprint: "477CFA98B75A673F2052D4F28771217C"
+methods:
+- method:
+    name: "define"
+    signature: "define(java.lang.Class<?>,byte[]) : java.lang.Class<?>"
+    instructionFingerprint: "2F3E3C3743EAF0645FE12034BEAA0D5C"
+  paths:
+  - pathId: "path1"
+    testPathName: "defineTest"
+    constructorSignature: "<init>() : void"
+    filledByUser: false
+    modelFingerprint: "9A86A067FE20892550C2C366F2DC704A"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "hostClass"
+      modelFingerprint: "8FF68982CF1DD0555742E7148555E018"
+      index: 2
+      ignored: false
+      valueUuid: "define_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "bytecode"
+      modelFingerprint: "C21F48F5FB80A2865FA7833012921505"
+      index: 3
+      ignored: false
+      valueUuid: "define_byte[]1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "THE_UNSAFE"
+      modelFingerprint: "2E1C26AB434C6EB704AD86C2CF2E3EF3"
+      index: 4
+      ignored: false
+      valueUuid: "<clinit>_unsafe1"
+      methodExercised:
+        target: "this.THE_UNSAFE"
+        name: "getObject"
+        parameters:
+        - name: "o"
+          valueUuid: "<clinit>_object1"
+        - name: "offset"
+          valueUuid: "<clinit>_long1"
+        signature: "getObject(Object,long): Object"
+        returnValueUuid: "define_object1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "A4BDA6B2F94E11E746C09D7BFDF9AF70"
+      index: 5
+      ignored: false
+      valueUuid: "define_class2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3d0bbb66-c655-3fc9-bcd2-e53aac08c7c7"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.invoke.MethodHandles$Lookup.in(java.lang.Class<?>)\
+        \ : java.lang.invoke.MethodHandles$Lookup"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.aop.HiddenClassDefiner"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.aop.HiddenClassDefiner"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.aop.HiddenClassDefiner"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Class"
+      suggestedContent: !<regular>
+        value: "java.lang.Class"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "define_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "byte"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "byte"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "byte[]"
+      uuid: "define_byte[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "sun.misc.Unsafe"
+      uuid: "<clinit>_unsafe1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.invoke.MethodHandles$Lookup"
+      uuid: "define_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "<clinit>_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "long"
+      uuid: "<clinit>_long1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "define_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false

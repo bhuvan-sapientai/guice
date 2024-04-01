@@ -1,0 +1,629 @@
+---
+modelFingerprint: "A7AA57AA6343B20ABB880037CB04A070"
+methods:
+- method:
+    name: "isSingleton"
+    signature: "isSingleton(com.google.inject.Binding<?>) : boolean"
+    instructionFingerprint: "84F1C8BC2F1B1059FFC93A0F54F940A1"
+  paths:
+  - pathId: "path1"
+    testPathName: "isSingletonWhenSingleton"
+    filledByUser: false
+    modelFingerprint: "028070B19D39465BAB3E9F94518DFA75"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "binding"
+      modelFingerprint: "557BAA5644FBCBF6D51DB228D8866975"
+      index: 1
+      ignored: false
+      valueUuid: "isSingleton_binding1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binding"
+      modelFingerprint: "FD886EA3930675E61FD64B3CB362739B"
+      index: 2
+      ignored: false
+      valueUuid: "isSingleton_binding1"
+      methodExercised:
+        target: "binding"
+        name: "acceptScopingVisitor"
+        parameters:
+        - name: "visitor"
+          valueUuid: "uuid1"
+        signature: "acceptScopingVisitor(not-detected): Object"
+        returnValueUuid: "isSingleton_object1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 3
+      ignored: false
+      valueUuid: "uuid2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4c4c82a7-2a32-3cba-b6ea-1462dcf43b99"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binding"
+      genericValueType: "?"
+      uuid: "isSingleton_binding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binding"
+      genericValueType: "?"
+      uuid: "isSingleton_binding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "isSingleton_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "uuid2"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "isSingletonWhenBindingNotInstanceOfExposedBinding"
+    filledByUser: false
+    modelFingerprint: "E186F5F72F429C35A5C1A4EAA512EF70"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "binding"
+      modelFingerprint: "557BAA5644FBCBF6D51DB228D8866975"
+      index: 1
+      ignored: false
+      valueUuid: "isSingleton_binding1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binding"
+      modelFingerprint: "CF322BE2E1C360772B6C04A15886D7B5"
+      index: 2
+      ignored: false
+      valueUuid: "isSingleton_binding1"
+      methodExercised:
+        target: "binding"
+        name: "acceptScopingVisitor"
+        parameters:
+        - name: "visitor"
+          valueUuid: "uuid3"
+        signature: "acceptScopingVisitor(not-detected): Object"
+        returnValueUuid: "isSingleton_object1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      valueUuid: "uuid4"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6cbe7765-fb5e-3f04-8db7-cc8b0fc8fb12"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binding"
+      genericValueType: "?"
+      uuid: "isSingleton_binding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binding"
+      genericValueType: "?"
+      uuid: "isSingleton_binding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "isSingleton_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+      uuid: "uuid3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid4"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "isScoped"
+    signature: "isScoped(com.google.inject.Binding<?>,com.google.inject.Scope,java.lang.Class<?\
+      \ extends java.lang.annotation.Annotation>) : boolean"
+    instructionFingerprint: "3FD26308C01E69AF3AA13F3BB871CC72"
+  paths:
+  - pathId: "path1"
+    testPathName: "isScopedWhenMatches"
+    filledByUser: false
+    modelFingerprint: "9B51BF64B055EE382256B7E58EA23158"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "binding"
+      modelFingerprint: "557BAA5644FBCBF6D51DB228D8866975"
+      index: 1
+      ignored: false
+      valueUuid: "isScoped_binding1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "scope"
+      modelFingerprint: "C6A27FFA4E417B6E680C6ACF8A290D08"
+      index: 2
+      ignored: false
+      valueUuid: "isScoped_scope1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "scopeAnnotation"
+      modelFingerprint: "EEB2BEF50C866EC117EA7CC4F3B2B4E5"
+      index: 3
+      ignored: false
+      valueUuid: "isScoped_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binding"
+      modelFingerprint: "20F28B9F73990F41EA3D2C41499CD36E"
+      index: 4
+      ignored: false
+      valueUuid: "isScoped_binding1"
+      methodExercised:
+        target: "binding"
+        name: "acceptScopingVisitor"
+        parameters:
+        - name: "visitor"
+          valueUuid: "isScoped_bindingScopingVisitor1"
+        signature: "acceptScopingVisitor(BindingScopingVisitor): Object"
+        returnValueUuid: "isScoped_object1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 5
+      ignored: false
+      valueUuid: "uuid5"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8f34c9b8-8f0d-3c2e-ba17-fe6ce1b7f86d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_CONSTRUCTION_UNFILLED_PARAMS"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binding"
+      genericValueType: "?"
+      uuid: "isScoped_binding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Scope"
+      uuid: "isScoped_scope1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? extends java.lang.annotation.Annotation"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.annotation.Annotation"
+      uuid: "isScoped_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binding"
+      genericValueType: "?"
+      uuid: "isScoped_binding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "isScoped_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+      valueType: "com.google.inject.spi.BindingScopingVisitor"
+      uuid: "isScoped_bindingScopingVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "uuid5"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "isScopedWhenBindingNotInstanceOfExposedBinding"
+    filledByUser: false
+    modelFingerprint: "F451E09C661847E997F40CFE95EC17E8"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "binding"
+      modelFingerprint: "557BAA5644FBCBF6D51DB228D8866975"
+      index: 1
+      ignored: false
+      valueUuid: "isScoped_binding1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "scope"
+      modelFingerprint: "C6A27FFA4E417B6E680C6ACF8A290D08"
+      index: 2
+      ignored: false
+      valueUuid: "isScoped_scope1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "scopeAnnotation"
+      modelFingerprint: "EEB2BEF50C866EC117EA7CC4F3B2B4E5"
+      index: 3
+      ignored: false
+      valueUuid: "isScoped_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binding"
+      modelFingerprint: "13B0A267F740A8D5DCA87C671DA7166F"
+      index: 4
+      ignored: false
+      valueUuid: "isScoped_binding1"
+      methodExercised:
+        target: "binding"
+        name: "acceptScopingVisitor"
+        parameters:
+        - name: "visitor"
+          valueUuid: "isScoped_bindingScopingVisitor1"
+        signature: "acceptScopingVisitor(BindingScopingVisitor): Object"
+        returnValueUuid: "isScoped_object1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 5
+      ignored: false
+      valueUuid: "uuid6"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "79f452c8-2922-3571-bec0-b4baf1f7717f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_CONSTRUCTION_UNFILLED_PARAMS"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binding"
+      genericValueType: "?"
+      uuid: "isScoped_binding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Scope"
+      uuid: "isScoped_scope1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? extends java.lang.annotation.Annotation"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.annotation.Annotation"
+      uuid: "isScoped_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binding"
+      genericValueType: "?"
+      uuid: "isScoped_binding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "java.lang.Boolean"
+      uuid: "isScoped_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+      valueType: "com.google.inject.spi.BindingScopingVisitor"
+      uuid: "isScoped_bindingScopingVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid6"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "isCircularProxy"
+    signature: "isCircularProxy(java.lang.Object) : boolean"
+    instructionFingerprint: "FB3751CD9355AFED46315B28C7D0E039"
+  paths:
+  - pathId: "path1"
+    testPathName: "isCircularProxyWhenBytecodeGenIsCircularProxyObject"
+    filledByUser: false
+    modelFingerprint: "5BCF4D81C4680A4E76982E680A7C1AD0"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      modelFingerprint: "F345952D6B6177C027386E75D7A62576"
+      index: 1
+      ignored: false
+      valueUuid: "isCircularProxy_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BytecodeGen"
+      modelFingerprint: "35533198C72930610A36A52ED474DF1E"
+      index: 2
+      ignored: false
+      valueUuid: "uuid7"
+      methodExercised:
+        target: "com.google.inject.internal.BytecodeGen"
+        name: "isCircularProxy"
+        parameters:
+        - name: "object"
+          valueUuid: "isCircularProxy_object1"
+        signature: "isCircularProxy(Object): boolean"
+        returnValueUuid: "isCircularProxy_boolean1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 3
+      ignored: false
+      valueUuid: "isCircularProxy_boolean1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3442d336-6dcc-3dc0-887e-5c82383c5269"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "isCircularProxy_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.BytecodeGen"
+      uuid: "uuid7"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "isCircularProxy_boolean1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "isCircularProxy_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "isCircularProxy_boolean1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "isCircularProxyWhenBytecodeGenNotIsCircularProxyObject"
+    filledByUser: false
+    modelFingerprint: "A49E1E3A2F581C1CE69E9031026CEB40"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      modelFingerprint: "F345952D6B6177C027386E75D7A62576"
+      index: 1
+      ignored: false
+      valueUuid: "isCircularProxy_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BytecodeGen"
+      modelFingerprint: "C69FAC91245B6B28A85C56CBB1FF771E"
+      index: 2
+      ignored: false
+      valueUuid: "uuid8"
+      methodExercised:
+        target: "com.google.inject.internal.BytecodeGen"
+        name: "isCircularProxy"
+        parameters:
+        - name: "object"
+          valueUuid: "isCircularProxy_object1"
+        signature: "isCircularProxy(Object): boolean"
+        returnValueUuid: "isCircularProxy_boolean1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      valueUuid: "isCircularProxy_boolean1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c6396986-1424-312f-adb8-a64d08eec91e"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "isCircularProxy_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.BytecodeGen"
+      uuid: "uuid8"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "isCircularProxy_boolean1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "isCircularProxy_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "isCircularProxy_boolean1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false

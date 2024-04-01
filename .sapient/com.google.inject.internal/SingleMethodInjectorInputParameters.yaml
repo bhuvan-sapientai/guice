@@ -1,0 +1,2489 @@
+---
+modelFingerprint: "A55FEAD2B1A8B37B56122D8E600FE1B1"
+methods:
+- method:
+    name: "getInjectionPoint"
+    signature: "getInjectionPoint() : com.google.inject.spi.InjectionPoint"
+    instructionFingerprint: "9FBAC77EFF08E2896D1E2A0E8F3F0C82"
+  paths:
+  - pathId: "path1"
+    testPathName: "getInjectionPointTest"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.spi.InjectionPoint,com.google.inject.internal.Errors)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "1BB155BA76454CCAB0E5435701901326"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "67c52e5c-d638-3136-8e31-b85740ccdfe7"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_CONSTRUCTION_UNFILLED_PARAMS"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+- method:
+    name: "inject"
+    signature: "inject(com.google.inject.internal.InternalContext,java.lang.Object)\
+      \ : void"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.IllegalAccessException"
+    - idExternalInstruction: 0
+      id: 3
+      catchExceptions:
+      - "java.lang.reflect.InvocationTargetException"
+    instructionFingerprint: "996D41E2CF5A6704FAACAE1F724D82A7"
+  paths:
+  - pathId: "path1"
+    testPathName: "injectTest"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.spi.InjectionPoint,com.google.inject.internal.Errors)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "B7E90269D4EA2F7D13FF4E7CF0D158EB"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "0238E3AA826F2D9E9B5F5B05CDD466C4"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "context"
+      modelFingerprint: "93DCD1F0E08EF69C4571B38FDCBE7631"
+      index: 2
+      ignored: false
+      valueUuid: "inject_internalContext1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "o"
+      modelFingerprint: "F7F5251B7A8A178496FE225B084BA51C"
+      index: 3
+      ignored: false
+      valueUuid: "inject_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "injectionPoint"
+      modelFingerprint: "5826D47CF7471D326036AE2AC3A047B9"
+      index: 4
+      ignored: false
+      valueUuid: "<init>_injectionPoint1"
+      methodExercised:
+        target: "injectionPoint"
+        name: "getMember"
+        parameters: []
+        signature: "getMember(): Member"
+        returnValueUuid: "<init>_member1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "InternalFlags"
+      modelFingerprint: "EB0300098FF8B55DE7E007E0CD595449"
+      index: 5
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.InternalFlags"
+        name: "isBytecodeGenEnabled"
+        parameters: []
+        signature: "isBytecodeGenEnabled(): boolean"
+        returnValueUuid: "createMethodInvoker_boolean1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "injectionPoint"
+      modelFingerprint: "FF2BE525684A73F91772034C1037F729"
+      index: 6
+      ignored: false
+      valueUuid: "<init>_injectionPoint1"
+      methodExercised:
+        target: "injectionPoint"
+        name: "getDependencies"
+        parameters: []
+        signature: "getDependencies(): List"
+        returnValueUuid: "<init>_list1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "injector"
+      modelFingerprint: "16D0EDA5E78D58424EA07DB59BC04FE4"
+      index: 7
+      ignored: false
+      valueUuid: "<init>_injectorImpl1"
+      methodExercised:
+        target: "injector"
+        name: "getParametersInjectors"
+        parameters:
+        - name: "parameters"
+          valueUuid: "<init>_list1"
+        - name: "errors"
+          valueUuid: "<init>_errors1"
+        throwsExceptions:
+        - "com.google.inject.internal.ErrorsException"
+        signature: "getParametersInjectors(List,Errors): SingleParameterInjector[]\
+          \ throws com.google.inject.internal.ErrorsException"
+        returnValueUuid: "<init>_singleParameterInjector[]1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SingleParameterInjector"
+      modelFingerprint: "6F0DBC018346A8294A3B1AFA8B0C001F"
+      index: 8
+      ignored: false
+      valueUuid: "uuid2"
+      methodExercised:
+        target: "com.google.inject.internal.SingleParameterInjector"
+        name: "getAll"
+        parameters:
+        - name: "context"
+          valueUuid: "inject_internalContext1"
+        - name: "parameterInjectors"
+          valueUuid: "<init>_singleParameterInjector[]1"
+        throwsExceptions:
+        - "com.google.inject.internal.InternalProvisionException"
+        signature: "getAll(InternalContext,SingleParameterInjector[]): Object[] throws\
+          \ com.google.inject.internal.InternalProvisionException"
+        returnValueUuid: "inject_object[]1"
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "methodInvoker"
+      modelFingerprint: "E133D34AE7C09EB2A368A28294BF80CA"
+      index: 9
+      ignored: false
+      idsTryCatchBlockSurrounding:
+      - 2
+      - 3
+      valueUuid: "uuid3"
+      methodExercised:
+        target: "this.methodInvoker"
+        name: "invoke"
+        parameters:
+        - name: "target"
+          valueUuid: "inject_object1"
+        - name: "parameters"
+          valueUuid: "inject_object[]1"
+        throwsExceptions:
+        - "java.lang.IllegalAccessException"
+        - "java.lang.reflect.InvocationTargetException"
+        signature: "invoke(Object,Object[]): Object throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException"
+        returnValueUuid: "inject_object2"
+        access: 1153
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 10
+      ignored: false
+      valueUuid: "uuid4"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1f6be77e-d6f3-3aba-ab3e-60c81abd554c"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "methodInvoker"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "int modifiers = method.getModifiers();"
+      lineNumber: 62
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: method - Method: getModifiers"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.SingleMethodInjector"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "injectionPoint"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.spi.InjectionPoint"
+              method: "forConstructor"
+              methodParameters:
+              - name: "constructor"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "java.lang.reflect.Constructor"
+                  uuid: "<init>_injectionPoint1-constructor"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "type"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "com.google.inject.TypeLiteral"
+                  uuid: "<init>_injectionPoint1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.spi.InjectionPoint"
+              method: "forConstructor"
+              methodParameters:
+              - name: "constructor"
+                value:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<unknown_object>
+                    target: "java.lang.reflect.Constructor"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "java.lang.reflect.Constructor"
+                  uuid: "<init>_injectionPoint1-constructor"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "type"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "com.google.inject.TypeLiteral"
+                  uuid: "<init>_injectionPoint1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.spi.InjectionPoint"
+            uuid: "<init>_injectionPoint1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "errors"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "com.google.inject.internal.Errors"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "com.google.inject.internal.Errors"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "com.google.inject.internal.Errors"
+            uuid: "<init>_errors1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.SingleMethodInjector"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "injectionPoint"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.spi.InjectionPoint"
+              method: "forConstructor"
+              methodParameters:
+              - name: "constructor"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "java.lang.reflect.Constructor"
+                  uuid: "<init>_injectionPoint1-constructor"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "type"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "com.google.inject.TypeLiteral"
+                  uuid: "<init>_injectionPoint1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.spi.InjectionPoint"
+              method: "forConstructor"
+              methodParameters:
+              - name: "constructor"
+                value:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<unknown_object>
+                    target: "java.lang.reflect.Constructor"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "java.lang.reflect.Constructor"
+                  uuid: "<init>_injectionPoint1-constructor"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "type"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "com.google.inject.TypeLiteral"
+                  uuid: "<init>_injectionPoint1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.spi.InjectionPoint"
+            uuid: "<init>_injectionPoint1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "errors"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "com.google.inject.internal.Errors"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "com.google.inject.internal.Errors"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "com.google.inject.internal.Errors"
+            uuid: "<init>_errors1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.SingleMethodInjector"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalContext"
+      uuid: "inject_internalContext1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "inject_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.inject.spi.InjectionPoint"
+        method: "forConstructor"
+        methodParameters:
+        - name: "constructor"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Constructor"
+            uuid: "<init>_injectionPoint1-constructor"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_injectionPoint1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "com.google.inject.spi.InjectionPoint"
+        method: "forConstructor"
+        methodParameters:
+        - name: "constructor"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Constructor"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Constructor"
+            uuid: "<init>_injectionPoint1-constructor"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_injectionPoint1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.spi.InjectionPoint"
+      uuid: "<init>_injectionPoint1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.reflect.Member"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "com.google.inject.spi.InjectionPoint"
+            method: "forConstructor"
+            methodParameters:
+            - name: "constructor"
+              value:
+                sapientType: "MOCK"
+                valueType: "java.lang.reflect.Constructor"
+                uuid: "<init>_injectionPoint1-constructor"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "type"
+              value:
+                sapientType: "MOCK"
+                valueType: "com.google.inject.TypeLiteral"
+                uuid: "<init>_injectionPoint1-type"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "com.google.inject.spi.InjectionPoint"
+            method: "forConstructor"
+            methodParameters:
+            - name: "constructor"
+              value:
+                sapientType: "UNKNOWN"
+                suggestedContent: !<unknown_object>
+                  target: "java.lang.reflect.Constructor"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "java.lang.reflect.Constructor"
+                uuid: "<init>_injectionPoint1-constructor"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "type"
+              value:
+                sapientType: "UNKNOWN"
+                valueType: "com.google.inject.TypeLiteral"
+                uuid: "<init>_injectionPoint1-type"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "com.google.inject.spi.InjectionPoint"
+          uuid: "<init>_injectionPoint1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters: []
+        methodName: "getMember"
+      suggestedContent: !<method_return_from_value>
+        target: "java.lang.reflect.Member"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "com.google.inject.spi.InjectionPoint"
+            method: "forConstructor"
+            methodParameters:
+            - name: "constructor"
+              value:
+                sapientType: "MOCK"
+                valueType: "java.lang.reflect.Constructor"
+                uuid: "<init>_injectionPoint1-constructor"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "type"
+              value:
+                sapientType: "MOCK"
+                valueType: "com.google.inject.TypeLiteral"
+                uuid: "<init>_injectionPoint1-type"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "com.google.inject.spi.InjectionPoint"
+            method: "forConstructor"
+            methodParameters:
+            - name: "constructor"
+              value:
+                sapientType: "UNKNOWN"
+                suggestedContent: !<unknown_object>
+                  target: "java.lang.reflect.Constructor"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "java.lang.reflect.Constructor"
+                uuid: "<init>_injectionPoint1-constructor"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "type"
+              value:
+                sapientType: "UNKNOWN"
+                valueType: "com.google.inject.TypeLiteral"
+                uuid: "<init>_injectionPoint1-type"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "com.google.inject.spi.InjectionPoint"
+          uuid: "<init>_injectionPoint1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters: []
+        methodName: "getMember"
+      valueType: "java.lang.reflect.Method"
+      uuid: "<init>_member1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalFlags"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "createMethodInvoker_boolean1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.inject.spi.InjectionPoint"
+        method: "forConstructor"
+        methodParameters:
+        - name: "constructor"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Constructor"
+            uuid: "<init>_injectionPoint1-constructor"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_injectionPoint1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "com.google.inject.spi.InjectionPoint"
+        method: "forConstructor"
+        methodParameters:
+        - name: "constructor"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Constructor"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Constructor"
+            uuid: "<init>_injectionPoint1-constructor"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_injectionPoint1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.spi.InjectionPoint"
+      uuid: "<init>_injectionPoint1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      suggestedContent: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "com.google.inject.spi.Dependency<?>"
+      uuid: "<init>_list1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InjectorImpl"
+      uuid: "<init>_injectorImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      suggestedContent: !<array>
+        values: {}
+      valueType: "com.google.inject.internal.SingleParameterInjector[]"
+      genericValueType: "?"
+      uuid: "<init>_singleParameterInjector[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      suggestedContent: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "com.google.inject.spi.Dependency<?>"
+      uuid: "<init>_list1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.Errors"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.Errors"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.Errors"
+      uuid: "<init>_errors1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.SingleParameterInjector"
+      uuid: "uuid2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      suggestedContent: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "inject_object[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalContext"
+      uuid: "inject_internalContext1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      suggestedContent: !<array>
+        values: {}
+      valueType: "com.google.inject.internal.SingleParameterInjector[]"
+      genericValueType: "?"
+      uuid: "<init>_singleParameterInjector[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+      valueType: "com.google.inject.internal.InjectorImpl$MethodInvoker"
+      uuid: "uuid3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "inject_object2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "inject_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      suggestedContent: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "inject_object[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid4"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "injectWhenCaughtIllegalAccessExceptionThrowsAssertionError"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.spi.InjectionPoint,com.google.inject.internal.Errors)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "DC6A8B910260AC4525AC2050FB7E8006"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.IllegalAccessException"
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "0238E3AA826F2D9E9B5F5B05CDD466C4"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "context"
+      modelFingerprint: "93DCD1F0E08EF69C4571B38FDCBE7631"
+      index: 2
+      ignored: false
+      valueUuid: "inject_internalContext1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "o"
+      modelFingerprint: "F7F5251B7A8A178496FE225B084BA51C"
+      index: 3
+      ignored: false
+      valueUuid: "inject_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "injectionPoint"
+      modelFingerprint: "5826D47CF7471D326036AE2AC3A047B9"
+      index: 4
+      ignored: false
+      valueUuid: "<init>_injectionPoint1"
+      methodExercised:
+        target: "injectionPoint"
+        name: "getMember"
+        parameters: []
+        signature: "getMember(): Member"
+        returnValueUuid: "<init>_member1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "InternalFlags"
+      modelFingerprint: "EB0300098FF8B55DE7E007E0CD595449"
+      index: 5
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.InternalFlags"
+        name: "isBytecodeGenEnabled"
+        parameters: []
+        signature: "isBytecodeGenEnabled(): boolean"
+        returnValueUuid: "createMethodInvoker_boolean1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "injectionPoint"
+      modelFingerprint: "FF2BE525684A73F91772034C1037F729"
+      index: 6
+      ignored: false
+      valueUuid: "<init>_injectionPoint1"
+      methodExercised:
+        target: "injectionPoint"
+        name: "getDependencies"
+        parameters: []
+        signature: "getDependencies(): List"
+        returnValueUuid: "<init>_list1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "injector"
+      modelFingerprint: "16D0EDA5E78D58424EA07DB59BC04FE4"
+      index: 7
+      ignored: false
+      valueUuid: "<init>_injectorImpl1"
+      methodExercised:
+        target: "injector"
+        name: "getParametersInjectors"
+        parameters:
+        - name: "parameters"
+          valueUuid: "<init>_list1"
+        - name: "errors"
+          valueUuid: "<init>_errors1"
+        throwsExceptions:
+        - "com.google.inject.internal.ErrorsException"
+        signature: "getParametersInjectors(List,Errors): SingleParameterInjector[]\
+          \ throws com.google.inject.internal.ErrorsException"
+        returnValueUuid: "<init>_singleParameterInjector[]1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SingleParameterInjector"
+      modelFingerprint: "6F0DBC018346A8294A3B1AFA8B0C001F"
+      index: 8
+      ignored: false
+      valueUuid: "uuid2"
+      methodExercised:
+        target: "com.google.inject.internal.SingleParameterInjector"
+        name: "getAll"
+        parameters:
+        - name: "context"
+          valueUuid: "inject_internalContext1"
+        - name: "parameterInjectors"
+          valueUuid: "<init>_singleParameterInjector[]1"
+        throwsExceptions:
+        - "com.google.inject.internal.InternalProvisionException"
+        signature: "getAll(InternalContext,SingleParameterInjector[]): Object[] throws\
+          \ com.google.inject.internal.InternalProvisionException"
+        returnValueUuid: "inject_object[]1"
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "methodInvoker"
+      modelFingerprint: "E133D34AE7C09EB2A368A28294BF80CA"
+      index: 9
+      ignored: false
+      idsTryCatchBlockSurrounding:
+      - 2
+      - 3
+      valueUuid: "uuid3"
+      methodExercised:
+        target: "this.methodInvoker"
+        name: "invoke"
+        parameters:
+        - name: "target"
+          valueUuid: "inject_object1"
+        - name: "parameters"
+          valueUuid: "inject_object[]1"
+        throwsExceptions:
+        - "java.lang.IllegalAccessException"
+        - "java.lang.reflect.InvocationTargetException"
+        signature: "invoke(Object,Object[]): Object throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException"
+        returnValueUuid: "inject_object2"
+        access: 1153
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "793A8819B2637D7C2F512196E59DE7FD"
+      index: 10
+      ignored: false
+      valueUuid: "inject_assertionError1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6614296c-d23c-3d02-95bd-52bb0ab1c942"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "methodInvoker"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "int modifiers = method.getModifiers();"
+      lineNumber: 62
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: method - Method: getModifiers"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.SingleMethodInjector"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "injectionPoint"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.spi.InjectionPoint"
+              method: "forConstructor"
+              methodParameters:
+              - name: "constructor"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "java.lang.reflect.Constructor"
+                  uuid: "<init>_injectionPoint1-constructor"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "type"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "com.google.inject.TypeLiteral"
+                  uuid: "<init>_injectionPoint1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.spi.InjectionPoint"
+              method: "forConstructor"
+              methodParameters:
+              - name: "constructor"
+                value:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<unknown_object>
+                    target: "java.lang.reflect.Constructor"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "java.lang.reflect.Constructor"
+                  uuid: "<init>_injectionPoint1-constructor"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "type"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "com.google.inject.TypeLiteral"
+                  uuid: "<init>_injectionPoint1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.spi.InjectionPoint"
+            uuid: "<init>_injectionPoint1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "errors"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "com.google.inject.internal.Errors"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "com.google.inject.internal.Errors"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "com.google.inject.internal.Errors"
+            uuid: "<init>_errors1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.SingleMethodInjector"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "injectionPoint"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.spi.InjectionPoint"
+              method: "forConstructor"
+              methodParameters:
+              - name: "constructor"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "java.lang.reflect.Constructor"
+                  uuid: "<init>_injectionPoint1-constructor"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "type"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "com.google.inject.TypeLiteral"
+                  uuid: "<init>_injectionPoint1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.spi.InjectionPoint"
+              method: "forConstructor"
+              methodParameters:
+              - name: "constructor"
+                value:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<unknown_object>
+                    target: "java.lang.reflect.Constructor"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "java.lang.reflect.Constructor"
+                  uuid: "<init>_injectionPoint1-constructor"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "type"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "com.google.inject.TypeLiteral"
+                  uuid: "<init>_injectionPoint1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.spi.InjectionPoint"
+            uuid: "<init>_injectionPoint1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "errors"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "com.google.inject.internal.Errors"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "com.google.inject.internal.Errors"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "com.google.inject.internal.Errors"
+            uuid: "<init>_errors1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.SingleMethodInjector"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalContext"
+      uuid: "inject_internalContext1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "inject_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.inject.spi.InjectionPoint"
+        method: "forConstructor"
+        methodParameters:
+        - name: "constructor"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Constructor"
+            uuid: "<init>_injectionPoint1-constructor"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_injectionPoint1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "com.google.inject.spi.InjectionPoint"
+        method: "forConstructor"
+        methodParameters:
+        - name: "constructor"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Constructor"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Constructor"
+            uuid: "<init>_injectionPoint1-constructor"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_injectionPoint1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.spi.InjectionPoint"
+      uuid: "<init>_injectionPoint1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.reflect.Member"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "com.google.inject.spi.InjectionPoint"
+            method: "forConstructor"
+            methodParameters:
+            - name: "constructor"
+              value:
+                sapientType: "MOCK"
+                valueType: "java.lang.reflect.Constructor"
+                uuid: "<init>_injectionPoint1-constructor"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "type"
+              value:
+                sapientType: "MOCK"
+                valueType: "com.google.inject.TypeLiteral"
+                uuid: "<init>_injectionPoint1-type"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "com.google.inject.spi.InjectionPoint"
+            method: "forConstructor"
+            methodParameters:
+            - name: "constructor"
+              value:
+                sapientType: "UNKNOWN"
+                suggestedContent: !<unknown_object>
+                  target: "java.lang.reflect.Constructor"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "java.lang.reflect.Constructor"
+                uuid: "<init>_injectionPoint1-constructor"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "type"
+              value:
+                sapientType: "UNKNOWN"
+                valueType: "com.google.inject.TypeLiteral"
+                uuid: "<init>_injectionPoint1-type"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "com.google.inject.spi.InjectionPoint"
+          uuid: "<init>_injectionPoint1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters: []
+        methodName: "getMember"
+      suggestedContent: !<method_return_from_value>
+        target: "java.lang.reflect.Member"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "com.google.inject.spi.InjectionPoint"
+            method: "forConstructor"
+            methodParameters:
+            - name: "constructor"
+              value:
+                sapientType: "MOCK"
+                valueType: "java.lang.reflect.Constructor"
+                uuid: "<init>_injectionPoint1-constructor"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "type"
+              value:
+                sapientType: "MOCK"
+                valueType: "com.google.inject.TypeLiteral"
+                uuid: "<init>_injectionPoint1-type"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "com.google.inject.spi.InjectionPoint"
+            method: "forConstructor"
+            methodParameters:
+            - name: "constructor"
+              value:
+                sapientType: "UNKNOWN"
+                suggestedContent: !<unknown_object>
+                  target: "java.lang.reflect.Constructor"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "java.lang.reflect.Constructor"
+                uuid: "<init>_injectionPoint1-constructor"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "type"
+              value:
+                sapientType: "UNKNOWN"
+                valueType: "com.google.inject.TypeLiteral"
+                uuid: "<init>_injectionPoint1-type"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "com.google.inject.spi.InjectionPoint"
+          uuid: "<init>_injectionPoint1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters: []
+        methodName: "getMember"
+      valueType: "java.lang.reflect.Method"
+      uuid: "<init>_member1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalFlags"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "createMethodInvoker_boolean1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.inject.spi.InjectionPoint"
+        method: "forConstructor"
+        methodParameters:
+        - name: "constructor"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Constructor"
+            uuid: "<init>_injectionPoint1-constructor"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_injectionPoint1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "com.google.inject.spi.InjectionPoint"
+        method: "forConstructor"
+        methodParameters:
+        - name: "constructor"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Constructor"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Constructor"
+            uuid: "<init>_injectionPoint1-constructor"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_injectionPoint1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.spi.InjectionPoint"
+      uuid: "<init>_injectionPoint1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      suggestedContent: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "com.google.inject.spi.Dependency<?>"
+      uuid: "<init>_list1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InjectorImpl"
+      uuid: "<init>_injectorImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      suggestedContent: !<array>
+        values: {}
+      valueType: "com.google.inject.internal.SingleParameterInjector[]"
+      genericValueType: "?"
+      uuid: "<init>_singleParameterInjector[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      suggestedContent: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "com.google.inject.spi.Dependency<?>"
+      uuid: "<init>_list1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.Errors"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.Errors"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.Errors"
+      uuid: "<init>_errors1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.SingleParameterInjector"
+      uuid: "uuid2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      suggestedContent: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "inject_object[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalContext"
+      uuid: "inject_internalContext1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      suggestedContent: !<array>
+        values: {}
+      valueType: "com.google.inject.internal.SingleParameterInjector[]"
+      genericValueType: "?"
+      uuid: "<init>_singleParameterInjector[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+      valueType: "com.google.inject.internal.InjectorImpl$MethodInvoker"
+      uuid: "uuid3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "inject_object2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "inject_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      suggestedContent: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "inject_object[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.AssertionError"
+        parameters:
+        - name: "detailMessage"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.IllegalAccessException"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.IllegalAccessException"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.IllegalAccessException"
+            uuid: "inject_illegalAccessException1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "java.lang.AssertionError"
+        parameters:
+        - name: "detailMessage"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<new>
+              target: "java.lang.IllegalAccessException"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.IllegalAccessException"
+            uuid: "inject_illegalAccessException1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "java.lang.AssertionError"
+      uuid: "inject_assertionError1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path3"
+    testPathName: "injectWhenUserExceptionGetCauseIsNotNullThrowsInternalProvisionException"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.spi.InjectionPoint,com.google.inject.internal.Errors)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "06A976C72CC69BBF45FCF04D868C2F1F"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 3
+      catchExceptions:
+      - "java.lang.reflect.InvocationTargetException"
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "0238E3AA826F2D9E9B5F5B05CDD466C4"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "context"
+      modelFingerprint: "93DCD1F0E08EF69C4571B38FDCBE7631"
+      index: 2
+      ignored: false
+      valueUuid: "inject_internalContext1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "o"
+      modelFingerprint: "F7F5251B7A8A178496FE225B084BA51C"
+      index: 3
+      ignored: false
+      valueUuid: "inject_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "injectionPoint"
+      modelFingerprint: "5826D47CF7471D326036AE2AC3A047B9"
+      index: 4
+      ignored: false
+      valueUuid: "<init>_injectionPoint1"
+      methodExercised:
+        target: "injectionPoint"
+        name: "getMember"
+        parameters: []
+        signature: "getMember(): Member"
+        returnValueUuid: "<init>_member1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "InternalFlags"
+      modelFingerprint: "EB0300098FF8B55DE7E007E0CD595449"
+      index: 5
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.InternalFlags"
+        name: "isBytecodeGenEnabled"
+        parameters: []
+        signature: "isBytecodeGenEnabled(): boolean"
+        returnValueUuid: "createMethodInvoker_boolean1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "injectionPoint"
+      modelFingerprint: "FF2BE525684A73F91772034C1037F729"
+      index: 6
+      ignored: false
+      valueUuid: "<init>_injectionPoint1"
+      methodExercised:
+        target: "injectionPoint"
+        name: "getDependencies"
+        parameters: []
+        signature: "getDependencies(): List"
+        returnValueUuid: "<init>_list1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "injector"
+      modelFingerprint: "16D0EDA5E78D58424EA07DB59BC04FE4"
+      index: 7
+      ignored: false
+      valueUuid: "<init>_injectorImpl1"
+      methodExercised:
+        target: "injector"
+        name: "getParametersInjectors"
+        parameters:
+        - name: "parameters"
+          valueUuid: "<init>_list1"
+        - name: "errors"
+          valueUuid: "<init>_errors1"
+        throwsExceptions:
+        - "com.google.inject.internal.ErrorsException"
+        signature: "getParametersInjectors(List,Errors): SingleParameterInjector[]\
+          \ throws com.google.inject.internal.ErrorsException"
+        returnValueUuid: "<init>_singleParameterInjector[]1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SingleParameterInjector"
+      modelFingerprint: "6F0DBC018346A8294A3B1AFA8B0C001F"
+      index: 8
+      ignored: false
+      valueUuid: "uuid2"
+      methodExercised:
+        target: "com.google.inject.internal.SingleParameterInjector"
+        name: "getAll"
+        parameters:
+        - name: "context"
+          valueUuid: "inject_internalContext1"
+        - name: "parameterInjectors"
+          valueUuid: "<init>_singleParameterInjector[]1"
+        throwsExceptions:
+        - "com.google.inject.internal.InternalProvisionException"
+        signature: "getAll(InternalContext,SingleParameterInjector[]): Object[] throws\
+          \ com.google.inject.internal.InternalProvisionException"
+        returnValueUuid: "inject_object[]1"
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "methodInvoker"
+      modelFingerprint: "E133D34AE7C09EB2A368A28294BF80CA"
+      index: 9
+      ignored: false
+      idsTryCatchBlockSurrounding:
+      - 2
+      - 3
+      valueUuid: "uuid3"
+      methodExercised:
+        target: "this.methodInvoker"
+        name: "invoke"
+        parameters:
+        - name: "target"
+          valueUuid: "inject_object1"
+        - name: "parameters"
+          valueUuid: "inject_object[]1"
+        throwsExceptions:
+        - "java.lang.IllegalAccessException"
+        - "java.lang.reflect.InvocationTargetException"
+        signature: "invoke(Object,Object[]): Object throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException"
+        returnValueUuid: "inject_object2"
+        access: 1153
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "InternalProvisionException"
+      modelFingerprint: "4BF072C10CC5E18464B1E27A795BDF43"
+      index: 10
+      ignored: false
+      valueUuid: "uuid4"
+      methodExercised:
+        target: "com.google.inject.internal.InternalProvisionException"
+        name: "errorInjectingMethod"
+        parameters:
+        - name: "cause"
+          valueUuid: "inject_throwable1"
+        signature: "errorInjectingMethod(Throwable): InternalProvisionException"
+        returnValueUuid: "inject_internalProvisionException1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "7D873A27B5DC739ABC7C5BF849C5BCA9"
+      index: 11
+      ignored: false
+      valueUuid: "inject_internalProvisionException1"
+      methodExercised:
+        target: "com.google.inject.internal.InternalProvisionException"
+        name: "addSource"
+        parameters:
+        - name: "source"
+          valueUuid: "<init>_injectionPoint1"
+        signature: "addSource(InjectionPoint): InternalProvisionException"
+        returnValueUuid: "inject_internalProvisionException2"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "22DCEC1299ED20F318BDBA9577FB3CB6"
+      index: 12
+      ignored: false
+      valueUuid: "inject_internalProvisionException2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8bc3f0c1-9dc4-3e77-9f98-bfd6f8f9ab3c"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "methodInvoker"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "int modifiers = method.getModifiers();"
+      lineNumber: 62
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: method - Method: getModifiers"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.SingleMethodInjector"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "injectionPoint"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.spi.InjectionPoint"
+              method: "forConstructor"
+              methodParameters:
+              - name: "constructor"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "java.lang.reflect.Constructor"
+                  uuid: "<init>_injectionPoint1-constructor"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "type"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "com.google.inject.TypeLiteral"
+                  uuid: "<init>_injectionPoint1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.spi.InjectionPoint"
+              method: "forConstructor"
+              methodParameters:
+              - name: "constructor"
+                value:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<unknown_object>
+                    target: "java.lang.reflect.Constructor"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "java.lang.reflect.Constructor"
+                  uuid: "<init>_injectionPoint1-constructor"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "type"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "com.google.inject.TypeLiteral"
+                  uuid: "<init>_injectionPoint1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.spi.InjectionPoint"
+            uuid: "<init>_injectionPoint1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "errors"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "com.google.inject.internal.Errors"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "com.google.inject.internal.Errors"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "com.google.inject.internal.Errors"
+            uuid: "<init>_errors1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.SingleMethodInjector"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "injectionPoint"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.spi.InjectionPoint"
+              method: "forConstructor"
+              methodParameters:
+              - name: "constructor"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "java.lang.reflect.Constructor"
+                  uuid: "<init>_injectionPoint1-constructor"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "type"
+                value:
+                  sapientType: "MOCK"
+                  valueType: "com.google.inject.TypeLiteral"
+                  uuid: "<init>_injectionPoint1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.spi.InjectionPoint"
+              method: "forConstructor"
+              methodParameters:
+              - name: "constructor"
+                value:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<unknown_object>
+                    target: "java.lang.reflect.Constructor"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "java.lang.reflect.Constructor"
+                  uuid: "<init>_injectionPoint1-constructor"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "type"
+                value:
+                  sapientType: "UNKNOWN"
+                  valueType: "com.google.inject.TypeLiteral"
+                  uuid: "<init>_injectionPoint1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.spi.InjectionPoint"
+            uuid: "<init>_injectionPoint1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "errors"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "com.google.inject.internal.Errors"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "com.google.inject.internal.Errors"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "com.google.inject.internal.Errors"
+            uuid: "<init>_errors1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.SingleMethodInjector"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalContext"
+      uuid: "inject_internalContext1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "inject_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.inject.spi.InjectionPoint"
+        method: "forConstructor"
+        methodParameters:
+        - name: "constructor"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Constructor"
+            uuid: "<init>_injectionPoint1-constructor"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_injectionPoint1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "com.google.inject.spi.InjectionPoint"
+        method: "forConstructor"
+        methodParameters:
+        - name: "constructor"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Constructor"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Constructor"
+            uuid: "<init>_injectionPoint1-constructor"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_injectionPoint1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.spi.InjectionPoint"
+      uuid: "<init>_injectionPoint1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.lang.reflect.Member"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "com.google.inject.spi.InjectionPoint"
+            method: "forConstructor"
+            methodParameters:
+            - name: "constructor"
+              value:
+                sapientType: "MOCK"
+                valueType: "java.lang.reflect.Constructor"
+                uuid: "<init>_injectionPoint1-constructor"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "type"
+              value:
+                sapientType: "MOCK"
+                valueType: "com.google.inject.TypeLiteral"
+                uuid: "<init>_injectionPoint1-type"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "com.google.inject.spi.InjectionPoint"
+            method: "forConstructor"
+            methodParameters:
+            - name: "constructor"
+              value:
+                sapientType: "UNKNOWN"
+                suggestedContent: !<unknown_object>
+                  target: "java.lang.reflect.Constructor"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "java.lang.reflect.Constructor"
+                uuid: "<init>_injectionPoint1-constructor"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "type"
+              value:
+                sapientType: "UNKNOWN"
+                valueType: "com.google.inject.TypeLiteral"
+                uuid: "<init>_injectionPoint1-type"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "com.google.inject.spi.InjectionPoint"
+          uuid: "<init>_injectionPoint1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters: []
+        methodName: "getMember"
+      suggestedContent: !<method_return_from_value>
+        target: "java.lang.reflect.Member"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<static_method_return>
+            target: "com.google.inject.spi.InjectionPoint"
+            method: "forConstructor"
+            methodParameters:
+            - name: "constructor"
+              value:
+                sapientType: "MOCK"
+                valueType: "java.lang.reflect.Constructor"
+                uuid: "<init>_injectionPoint1-constructor"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "type"
+              value:
+                sapientType: "MOCK"
+                valueType: "com.google.inject.TypeLiteral"
+                uuid: "<init>_injectionPoint1-type"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          suggestedContent: !<static_method_return>
+            target: "com.google.inject.spi.InjectionPoint"
+            method: "forConstructor"
+            methodParameters:
+            - name: "constructor"
+              value:
+                sapientType: "UNKNOWN"
+                suggestedContent: !<unknown_object>
+                  target: "java.lang.reflect.Constructor"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "java.lang.reflect.Constructor"
+                uuid: "<init>_injectionPoint1-constructor"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "type"
+              value:
+                sapientType: "UNKNOWN"
+                valueType: "com.google.inject.TypeLiteral"
+                uuid: "<init>_injectionPoint1-type"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+          valueType: "com.google.inject.spi.InjectionPoint"
+          uuid: "<init>_injectionPoint1"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters: []
+        methodName: "getMember"
+      valueType: "java.lang.reflect.Method"
+      uuid: "<init>_member1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalFlags"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "createMethodInvoker_boolean1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.inject.spi.InjectionPoint"
+        method: "forConstructor"
+        methodParameters:
+        - name: "constructor"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Constructor"
+            uuid: "<init>_injectionPoint1-constructor"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_injectionPoint1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "com.google.inject.spi.InjectionPoint"
+        method: "forConstructor"
+        methodParameters:
+        - name: "constructor"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Constructor"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Constructor"
+            uuid: "<init>_injectionPoint1-constructor"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_injectionPoint1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.spi.InjectionPoint"
+      uuid: "<init>_injectionPoint1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      suggestedContent: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "com.google.inject.spi.Dependency<?>"
+      uuid: "<init>_list1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InjectorImpl"
+      uuid: "<init>_injectorImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      suggestedContent: !<array>
+        values: {}
+      valueType: "com.google.inject.internal.SingleParameterInjector[]"
+      genericValueType: "?"
+      uuid: "<init>_singleParameterInjector[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      suggestedContent: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "com.google.inject.spi.Dependency<?>"
+      uuid: "<init>_list1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.Errors"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.Errors"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.Errors"
+      uuid: "<init>_errors1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.SingleParameterInjector"
+      uuid: "uuid2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      suggestedContent: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "inject_object[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalContext"
+      uuid: "inject_internalContext1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      suggestedContent: !<array>
+        values: {}
+      valueType: "com.google.inject.internal.SingleParameterInjector[]"
+      genericValueType: "?"
+      uuid: "<init>_singleParameterInjector[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+      valueType: "com.google.inject.internal.InjectorImpl$MethodInvoker"
+      uuid: "uuid3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "inject_object2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "inject_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      suggestedContent: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "inject_object[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalProvisionException"
+      uuid: "uuid4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalProvisionException"
+      uuid: "inject_internalProvisionException1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Throwable"
+      uuid: "inject_throwable1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalProvisionException"
+      uuid: "inject_internalProvisionException1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "EXCEPTION"
+      content: !<static_method_return>
+        target: "com.google.inject.internal.InternalProvisionException"
+        method: "circularDependenciesDisabled"
+        methodParameters:
+        - name: "expectedType"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "inject_internalProvisionException2-expectedType"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "com.google.inject.internal.InternalProvisionException"
+        method: "circularDependenciesDisabled"
+        methodParameters:
+        - name: "expectedType"
+          value:
+            sapientType: "CLASS"
+            valueType: "java.lang.Class"
+            uuid: "inject_internalProvisionException2-expectedType"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.internal.InternalProvisionException"
+      uuid: "inject_internalProvisionException2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.inject.spi.InjectionPoint"
+        method: "forConstructor"
+        methodParameters:
+        - name: "constructor"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Constructor"
+            uuid: "<init>_injectionPoint1-constructor"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_injectionPoint1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "com.google.inject.spi.InjectionPoint"
+        method: "forConstructor"
+        methodParameters:
+        - name: "constructor"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Constructor"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Constructor"
+            uuid: "<init>_injectionPoint1-constructor"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "type"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_injectionPoint1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.spi.InjectionPoint"
+      uuid: "<init>_injectionPoint1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "EXCEPTION"
+      content: !<static_method_return>
+        target: "com.google.inject.internal.InternalProvisionException"
+        method: "circularDependenciesDisabled"
+        methodParameters:
+        - name: "expectedType"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "inject_internalProvisionException2-expectedType"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "com.google.inject.internal.InternalProvisionException"
+        method: "circularDependenciesDisabled"
+        methodParameters:
+        - name: "expectedType"
+          value:
+            sapientType: "CLASS"
+            valueType: "java.lang.Class"
+            uuid: "inject_internalProvisionException2-expectedType"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.internal.InternalProvisionException"
+      uuid: "inject_internalProvisionException2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false

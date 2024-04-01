@@ -1,0 +1,5182 @@
+---
+modelFingerprint: "F89BAB3408C74488F9ABB7343E3BEFA2"
+methods:
+- method:
+    name: "getMemberInjectors"
+    signature: "getMemberInjectors() : com.google.common.collect.ImmutableList<com.google.inject.internal.SingleMemberInjector>"
+    instructionFingerprint: "4709820D9CEC7E968369D9BEF0D51255"
+  paths:
+  - pathId: "path1"
+    testPathName: "getMemberInjectorsWhenMemberInjectorsIsNull"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.TypeLiteral<java.lang.Object>,com.google.inject.internal.EncounterImpl<java.lang.Object>,com.google.common.collect.ImmutableList<com.google.inject.internal.SingleMemberInjector>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "2823CC5A3365B89233311A8C311C40FC"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "8779F8CE612416010304D3604DEF1214"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "AC9872300ED992474F749389BF2BA759"
+      index: 2
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getMembersInjectors"
+        parameters: []
+        signature: "getMembersInjectors(): ImmutableSet"
+        returnValueUuid: "<init>_immutableSet1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "01409DA045EBF6B0F3094A5EF3E9DCFE"
+      index: 3
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getInjectionListeners"
+        parameters: []
+        signature: "getInjectionListeners(): ImmutableSet"
+        returnValueUuid: "<init>_immutableSet2"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "InternalFlags"
+      modelFingerprint: "EB0300098FF8B55DE7E007E0CD595449"
+      index: 4
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.InternalFlags"
+        name: "isBytecodeGenEnabled"
+        parameters: []
+        signature: "isBytecodeGenEnabled(): boolean"
+        returnValueUuid: "<init>_boolean4"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "95884FED233A2FC0C5BDA94D152357F1"
+      index: 5
+      ignored: false
+      valueUuid: "getMemberInjectors_immutableList1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "aeb0abda-58ca-3464-8952-07907b7d318f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableSet.isEmpty()\
+        \ : boolean"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MembersInjectorImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeLiteral"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "encounter"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.EncounterImpl"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_encounterImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "memberInjectors"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            valueType: "com.google.common.collect.ImmutableList"
+            uuid: "<init>_immutableList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MembersInjectorImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeLiteral"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "encounter"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.EncounterImpl"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_encounterImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "memberInjectors"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            valueType: "com.google.common.collect.ImmutableList"
+            uuid: "<init>_immutableList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.MembersInjectorImpl"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalFlags"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "<init>_boolean4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableList"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableList"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableList"
+      genericValueType: "com.google.inject.internal.SingleMemberInjector"
+      uuid: "getMemberInjectors_immutableList1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "injectMembers"
+    signature: "injectMembers(java.lang.Object) : void"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "com.google.inject.internal.InternalProvisionException"
+    - idExternalInstruction: 0
+      id: 3
+      catchExceptions:
+      - "java.lang.RuntimeException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.RuntimeException"
+    instructionFingerprint: "DC94359A5FF565C64F68C64264DF098E"
+  paths:
+  - pathId: "path1"
+    testPathName: "injectMembersTest"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.TypeLiteral<java.lang.Object>,com.google.inject.internal.EncounterImpl<java.lang.Object>,com.google.common.collect.ImmutableList<com.google.inject.internal.SingleMemberInjector>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "699C82C74A7D64DC6C714886592265AB"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "8779F8CE612416010304D3604DEF1214"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "instance"
+      modelFingerprint: "0C68A5DE1CCEB65651993B94ED24E380"
+      index: 2
+      ignored: false
+      valueUuid: "injectMembers_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "AC9872300ED992474F749389BF2BA759"
+      index: 3
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getMembersInjectors"
+        parameters: []
+        signature: "getMembersInjectors(): ImmutableSet"
+        returnValueUuid: "<init>_immutableSet1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "01409DA045EBF6B0F3094A5EF3E9DCFE"
+      index: 4
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getInjectionListeners"
+        parameters: []
+        signature: "getInjectionListeners(): ImmutableSet"
+        returnValueUuid: "<init>_immutableSet2"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "InternalFlags"
+      modelFingerprint: "EB0300098FF8B55DE7E007E0CD595449"
+      index: 5
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.InternalFlags"
+        name: "isBytecodeGenEnabled"
+        parameters: []
+        signature: "isBytecodeGenEnabled(): boolean"
+        returnValueUuid: "<init>_boolean4"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "F37A30187BFE2A78E7FE8FF737E67825"
+      index: 6
+      ignored: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      methodExercised:
+        target: "target"
+        name: "injectAndNotify"
+        parameters:
+        - name: "instance"
+          valueUuid: "injectMembers_object1"
+        - name: "key"
+          valueUuid: "uuid2"
+        - name: "provisionCallback"
+          valueUuid: "uuid3"
+        - name: "source"
+          valueUuid: "<init>_typeLiteral1"
+        - name: "toolableOnly"
+          valueUuid: "uuid4"
+        throwsExceptions:
+        - "com.google.inject.internal.InternalProvisionException"
+        signature: "injectAndNotify(Object,Key,ProvisionListenerStackCallback,TypeLiteral,boolean):\
+          \ void throws com.google.inject.internal.InternalProvisionException"
+        returnValueUuid: "injectMembers_void1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 7
+      ignored: false
+      valueUuid: "uuid5"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9d6de1e0-5989-3bde-85bf-27f1b1047b19"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableSet.isEmpty()\
+        \ : boolean"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MembersInjectorImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeLiteral"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "encounter"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.EncounterImpl"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_encounterImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "memberInjectors"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            valueType: "com.google.common.collect.ImmutableList"
+            uuid: "<init>_immutableList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MembersInjectorImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeLiteral"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "encounter"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.EncounterImpl"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_encounterImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "memberInjectors"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            valueType: "com.google.common.collect.ImmutableList"
+            uuid: "<init>_immutableList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.MembersInjectorImpl"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "injectMembers_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalFlags"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "<init>_boolean4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "injectMembers_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "injectMembers_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      valueType: "com.google.inject.Key"
+      uuid: "uuid2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      valueType: "com.google.inject.internal.ProvisionListenerStackCallback"
+      uuid: "uuid3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.inject.TypeLiteral"
+        method: "get"
+        methodParameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "<init>_typeLiteral1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "com.google.inject.TypeLiteral"
+        method: "get"
+        methodParameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            valueType: "java.lang.Class"
+            uuid: "<init>_typeLiteral1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.TypeLiteral"
+      uuid: "<init>_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid4"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid5"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "injectMembersWhenCaughtInternalProvisionExceptionThrowsProvisionException"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.TypeLiteral<java.lang.Object>,com.google.inject.internal.EncounterImpl<java.lang.Object>,com.google.common.collect.ImmutableList<com.google.inject.internal.SingleMemberInjector>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "9F601FD3388433FF6CFE0F77F4F285EB"
+    problemWasSolvedByProver: false
+    catchBlockExercised:
+      idExternalInstruction: 0
+      id: 1
+      catchExceptions:
+      - "com.google.inject.internal.InternalProvisionException"
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "8779F8CE612416010304D3604DEF1214"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "instance"
+      modelFingerprint: "0C68A5DE1CCEB65651993B94ED24E380"
+      index: 2
+      ignored: false
+      valueUuid: "injectMembers_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "AC9872300ED992474F749389BF2BA759"
+      index: 3
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getMembersInjectors"
+        parameters: []
+        signature: "getMembersInjectors(): ImmutableSet"
+        returnValueUuid: "<init>_immutableSet1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "01409DA045EBF6B0F3094A5EF3E9DCFE"
+      index: 4
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getInjectionListeners"
+        parameters: []
+        signature: "getInjectionListeners(): ImmutableSet"
+        returnValueUuid: "<init>_immutableSet2"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "InternalFlags"
+      modelFingerprint: "EB0300098FF8B55DE7E007E0CD595449"
+      index: 5
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.InternalFlags"
+        name: "isBytecodeGenEnabled"
+        parameters: []
+        signature: "isBytecodeGenEnabled(): boolean"
+        returnValueUuid: "<init>_boolean4"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "F37A30187BFE2A78E7FE8FF737E67825"
+      index: 6
+      ignored: false
+      idsTryCatchBlockSurrounding:
+      - 1
+      methodExercised:
+        target: "target"
+        name: "injectAndNotify"
+        parameters:
+        - name: "instance"
+          valueUuid: "injectMembers_object1"
+        - name: "key"
+          valueUuid: "uuid2"
+        - name: "provisionCallback"
+          valueUuid: "uuid3"
+        - name: "source"
+          valueUuid: "<init>_typeLiteral1"
+        - name: "toolableOnly"
+          valueUuid: "uuid4"
+        throwsExceptions:
+        - "com.google.inject.internal.InternalProvisionException"
+        signature: "injectAndNotify(Object,Key,ProvisionListenerStackCallback,TypeLiteral,boolean):\
+          \ void throws com.google.inject.internal.InternalProvisionException"
+        returnValueUuid: "injectMembers_void1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "ipe"
+      modelFingerprint: "2D5DD21C930824D6724661356AEFDD7C"
+      index: 7
+      ignored: false
+      valueUuid: "injectMembers_internalProvisionException1"
+      methodExercised:
+        target: "ipe"
+        name: "addSource"
+        parameters:
+        - name: "source"
+          valueUuid: "<init>_typeLiteral1"
+        signature: "addSource(TypeLiteral): InternalProvisionException"
+        returnValueUuid: "injectMembers_internalProvisionException2"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "ABB2B0AD3CADB1F29F52A6377CFC3DD4"
+      index: 8
+      ignored: false
+      valueUuid: "injectMembers_internalProvisionException2"
+      methodExercised:
+        target: "com.google.inject.internal.InternalProvisionException"
+        name: "toProvisionException"
+        parameters: []
+        signature: "toProvisionException(): ProvisionException"
+        returnValueUuid: "injectMembers_provisionException1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "4E836A5B42F84E3A4C04F9D4ED20CF5A"
+      index: 9
+      ignored: false
+      valueUuid: "injectMembers_provisionException1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "48666504-bde4-31e5-847d-a206f777ca6f"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableSet.isEmpty()\
+        \ : boolean"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MembersInjectorImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeLiteral"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "encounter"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.EncounterImpl"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_encounterImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "memberInjectors"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            valueType: "com.google.common.collect.ImmutableList"
+            uuid: "<init>_immutableList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MembersInjectorImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeLiteral"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "encounter"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.EncounterImpl"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_encounterImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "memberInjectors"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            valueType: "com.google.common.collect.ImmutableList"
+            uuid: "<init>_immutableList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.MembersInjectorImpl"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "injectMembers_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalFlags"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "<init>_boolean4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "injectMembers_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "injectMembers_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      valueType: "com.google.inject.Key"
+      uuid: "uuid2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      valueType: "com.google.inject.internal.ProvisionListenerStackCallback"
+      uuid: "uuid3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.inject.TypeLiteral"
+        method: "get"
+        methodParameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "<init>_typeLiteral1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "com.google.inject.TypeLiteral"
+        method: "get"
+        methodParameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            valueType: "java.lang.Class"
+            uuid: "<init>_typeLiteral1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.TypeLiteral"
+      uuid: "<init>_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid4"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalProvisionException"
+      uuid: "injectMembers_internalProvisionException1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalProvisionException"
+      uuid: "injectMembers_internalProvisionException2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.inject.TypeLiteral"
+        method: "get"
+        methodParameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "<init>_typeLiteral1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "com.google.inject.TypeLiteral"
+        method: "get"
+        methodParameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            valueType: "java.lang.Class"
+            uuid: "<init>_typeLiteral1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.TypeLiteral"
+      uuid: "<init>_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalProvisionException"
+      uuid: "injectMembers_internalProvisionException2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "com.google.inject.ProvisionException"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "injectMembers_provisionException1-message"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Throwable"
+            uuid: "injectMembers_provisionException1-cause"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.ProvisionException"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            valueType: "java.lang.String"
+            uuid: "injectMembers_provisionException1-message"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "cause"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Throwable"
+            uuid: "injectMembers_provisionException1-cause"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.ProvisionException"
+      uuid: "injectMembers_provisionException1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "com.google.inject.ProvisionException"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "injectMembers_provisionException1-message"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Throwable"
+            uuid: "injectMembers_provisionException1-cause"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.ProvisionException"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            valueType: "java.lang.String"
+            uuid: "injectMembers_provisionException1-message"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "cause"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Throwable"
+            uuid: "injectMembers_provisionException1-cause"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.ProvisionException"
+      uuid: "injectMembers_provisionException1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "injectAndNotify"
+    signature: "injectAndNotify(java.lang.Object,com.google.inject.Key<java.lang.Object>,com.google.inject.internal.ProvisionListenerStackCallback<java.lang.Object>,java.lang.Object,boolean)\
+      \ : void"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 3
+      catchExceptions:
+      - "java.lang.RuntimeException"
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.RuntimeException"
+    instructionFingerprint: "B01F8B135080F93D737D9851AE91F52A"
+  paths:
+  - pathId: "path1"
+    testPathName: "injectAndNotifyWhenInstanceIsNull"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.TypeLiteral<java.lang.Object>,com.google.inject.internal.EncounterImpl<java.lang.Object>,com.google.common.collect.ImmutableList<com.google.inject.internal.SingleMemberInjector>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "90ED029697BEFB123F4F259A57F28B5C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "8779F8CE612416010304D3604DEF1214"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "instance"
+      modelFingerprint: "93BF0208F3A0613D96277F551D364EDA"
+      index: 2
+      ignored: false
+      valueUuid: "injectAndNotify_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "F59B66C04746BAE94AED352C5E64D400"
+      index: 3
+      ignored: false
+      valueUuid: "injectAndNotify_key1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "provisionCallback"
+      modelFingerprint: "7CBC21EB124D7B37479701E79C534E40"
+      index: 4
+      ignored: false
+      valueUuid: "injectAndNotify_provisionListenerStackCallback1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "source"
+      modelFingerprint: "5BCA4E93380DB683539696B06B00E247"
+      index: 5
+      ignored: false
+      valueUuid: "injectAndNotify_object2"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "toolableOnly"
+      modelFingerprint: "4678A64474C7288233AC5261FE9A5C23"
+      index: 6
+      ignored: false
+      valueUuid: "injectAndNotify_boolean1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "AC9872300ED992474F749389BF2BA759"
+      index: 7
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getMembersInjectors"
+        parameters: []
+        signature: "getMembersInjectors(): ImmutableSet"
+        returnValueUuid: "<init>_immutableSet1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "01409DA045EBF6B0F3094A5EF3E9DCFE"
+      index: 8
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getInjectionListeners"
+        parameters: []
+        signature: "getInjectionListeners(): ImmutableSet"
+        returnValueUuid: "<init>_immutableSet2"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "InternalFlags"
+      modelFingerprint: "EB0300098FF8B55DE7E007E0CD595449"
+      index: 9
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.InternalFlags"
+        name: "isBytecodeGenEnabled"
+        parameters: []
+        signature: "isBytecodeGenEnabled(): boolean"
+        returnValueUuid: "<init>_boolean4"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 10
+      ignored: false
+      valueUuid: "uuid2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "08a2dae6-9fee-3583-9cde-4e1a5482985b"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableSet.isEmpty()\
+        \ : boolean"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MembersInjectorImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeLiteral"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "encounter"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.EncounterImpl"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_encounterImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "memberInjectors"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            valueType: "com.google.common.collect.ImmutableList"
+            uuid: "<init>_immutableList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MembersInjectorImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeLiteral"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "encounter"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.EncounterImpl"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_encounterImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "memberInjectors"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            valueType: "com.google.common.collect.ImmutableList"
+            uuid: "<init>_immutableList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.MembersInjectorImpl"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      content: !<unknown_object>
+        target: "java.lang.Object"
+        onlyPojoFunctions: true
+        builderPattern: false
+      suggestedContent: !<unknown_object>
+        target: "java.lang.Object"
+        onlyPojoFunctions: true
+        builderPattern: false
+      valueType: "java.lang.Object"
+      uuid: "injectAndNotify_object1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.inject.Key"
+        method: "get"
+        methodParameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "injectAndNotify_key1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "com.google.inject.Key"
+        method: "get"
+        methodParameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            valueType: "java.lang.Class"
+            uuid: "injectAndNotify_key1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.Key"
+      uuid: "injectAndNotify_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.ProvisionListenerStackCallback"
+        parameters:
+        - name: "binding"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Binding"
+            uuid: "injectAndNotify_provisionListenerStackCallback1-binding"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "listeners"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            uuid: "injectAndNotify_provisionListenerStackCallback1-listeners"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.ProvisionListenerStackCallback"
+        parameters:
+        - name: "binding"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.Binding"
+            uuid: "injectAndNotify_provisionListenerStackCallback1-binding"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "listeners"
+          value:
+            sapientType: "COLLECTION"
+            valueType: "java.util.List"
+            uuid: "injectAndNotify_provisionListenerStackCallback1-listeners"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.ProvisionListenerStackCallback"
+      uuid: "injectAndNotify_provisionListenerStackCallback1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "injectAndNotify_object2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "injectAndNotify_boolean1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalFlags"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "<init>_boolean4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path6"
+    testPathName: "injectAndNotifyWhenNotToolableOnly"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.TypeLiteral<java.lang.Object>,com.google.inject.internal.EncounterImpl<java.lang.Object>,com.google.common.collect.ImmutableList<com.google.inject.internal.SingleMemberInjector>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "0182D879C6B792CCC01353221838928B"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "69ce804f-30f3-36fb-a285-f239eff5b434"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableList.isEmpty()\
+        \ : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path7"
+    testPathName: "injectAndNotifyWhenToolableOnly"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.TypeLiteral<java.lang.Object>,com.google.inject.internal.EncounterImpl<java.lang.Object>,com.google.common.collect.ImmutableList<com.google.inject.internal.SingleMemberInjector>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "DB8421E233C5BA461BDC0194F32C4202"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "7fedb3b7-5593-3df3-aebf-f09ed449005a"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableList.isEmpty()\
+        \ : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path2"
+    testPathName: "injectAndNotifyWhenProvisionCallbackHasListenersAndNotToolableOnly"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.TypeLiteral<java.lang.Object>,com.google.inject.internal.EncounterImpl<java.lang.Object>,com.google.common.collect.ImmutableList<com.google.inject.internal.SingleMemberInjector>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "1357A555EFA41618272B7CAEF015F711"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "224BC888B711F3400BAC990F56E56C39"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "instance"
+      modelFingerprint: "98ECE68E10F91C8C3409366A06057F4D"
+      index: 2
+      ignored: false
+      valueUuid: "injectAndNotify_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "8BD8B39056618E9480AB4A88A03B7C6B"
+      index: 3
+      ignored: false
+      valueUuid: "injectAndNotify_key1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "provisionCallback"
+      modelFingerprint: "0E1399408034EE42164845595955CCFA"
+      index: 4
+      ignored: false
+      valueUuid: "injectAndNotify_provisionListenerStackCallback1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "source"
+      modelFingerprint: "26D7543A2F4ADA30195021819A4A01D1"
+      index: 5
+      ignored: false
+      valueUuid: "injectAndNotify_object2"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "toolableOnly"
+      modelFingerprint: "E04E5BF977F9E91B017B23F9AB7433F8"
+      index: 6
+      ignored: false
+      valueUuid: "injectAndNotify_boolean1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "29AC1E19F4E8B83B4A50571435F76E98"
+      index: 7
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getMembersInjectors"
+        parameters: []
+        signature: "getMembersInjectors(): ImmutableSet"
+        returnValueUuid: "<init>_immutableSet1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "017B6459DC6E24081FB0847829E95140"
+      index: 8
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getInjectionListeners"
+        parameters: []
+        signature: "getInjectionListeners(): ImmutableSet"
+        returnValueUuid: "<init>_immutableSet2"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "InternalFlags"
+      modelFingerprint: "CCE83865A9462A8984596A239CB8D8B3"
+      index: 9
+      ignored: false
+      valueUuid: "uuid17"
+      methodExercised:
+        target: "com.google.inject.internal.InternalFlags"
+        name: "isBytecodeGenEnabled"
+        parameters: []
+        signature: "isBytecodeGenEnabled(): boolean"
+        returnValueUuid: "<init>_boolean4"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "F942AB490C6716D186562D1406347F69"
+      index: 10
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getAspects"
+        parameters: []
+        signature: "getAspects(): ImmutableList"
+        returnValueUuid: "<init>_immutableList2"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "F942AB490C6716D186562D1406347F69"
+      index: 11
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getAspects"
+        parameters: []
+        signature: "getAspects(): ImmutableList"
+        returnValueUuid: "<init>_immutableList3"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "injector"
+      modelFingerprint: "87838603E976FE12468C234FAA965AAA"
+      index: 12
+      ignored: false
+      valueUuid: "<init>_injectorImpl1"
+      methodExercised:
+        target: "this.injector"
+        name: "enterContext"
+        parameters: []
+        signature: "enterContext(): InternalContext"
+        returnValueUuid: "injectAndNotify_internalContext1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "provisionCallback"
+      modelFingerprint: "C3E08B73201D95632E69D0F9022EB419"
+      index: 13
+      ignored: false
+      valueUuid: "injectAndNotify_provisionListenerStackCallback1"
+      methodExercised:
+        target: "provisionCallback"
+        name: "hasListeners"
+        parameters: []
+        signature: "hasListeners(): boolean"
+        returnValueUuid: "injectAndNotify_boolean2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "provisionCallback"
+      modelFingerprint: "CA4CE9B6E7012183DC9AAF57C257013C"
+      index: 14
+      ignored: false
+      valueUuid: "injectAndNotify_provisionListenerStackCallback1"
+      methodExercised:
+        target: "provisionCallback"
+        name: "provision"
+        parameters:
+        - name: "context"
+          valueUuid: "injectAndNotify_internalContext1"
+        - name: "callable"
+          valueUuid: "injectAndNotify_provisionListenerStackCallback.ProvisionCallback1"
+        throwsExceptions:
+        - "com.google.inject.internal.InternalProvisionException"
+        signature: "provision(InternalContext,ProvisionListenerStackCallback$ProvisionCallback):\
+          \ Object throws com.google.inject.internal.InternalProvisionException"
+        returnValueUuid: "injectAndNotify_object3"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "context"
+      modelFingerprint: "3597873CE5B8A99B1611751CA1DC43D2"
+      index: 15
+      ignored: false
+      valueUuid: "injectAndNotify_internalContext1"
+      methodExercised:
+        target: "context"
+        name: "close"
+        parameters: []
+        signature: "close(): void"
+        returnValueUuid: "injectAndNotify_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "D69BCD27368DB9E05B49D36FFA20AF55"
+      index: 16
+      ignored: false
+      methodExercised:
+        target: "target"
+        name: "notifyListeners"
+        parameters:
+        - name: "instance"
+          valueUuid: "injectAndNotify_object1"
+        throwsExceptions:
+        - "com.google.inject.internal.InternalProvisionException"
+        signature: "notifyListeners(Object): void throws com.google.inject.internal.InternalProvisionException"
+        returnValueUuid: "injectAndNotify_void2"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 17
+      ignored: false
+      valueUuid: "uuid18"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "68c8f405-0dac-3b45-bf88-b6451bd19aa4"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableList.isEmpty()\
+        \ : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MembersInjectorImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeLiteral"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.TypeLiteral"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "encounter"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.EncounterImpl"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_encounterImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "memberInjectors"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            valueType: "com.google.common.collect.ImmutableList"
+            uuid: "<init>_immutableList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MembersInjectorImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.internal.InjectorImpl"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeLiteral"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.TypeLiteral"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "encounter"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.internal.EncounterImpl"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.internal.EncounterImpl"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_encounterImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "memberInjectors"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            valueType: "com.google.common.collect.ImmutableList"
+            uuid: "<init>_immutableList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.MembersInjectorImpl"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "injectAndNotify_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "injectAndNotify_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.ProvisionListenerStackCallback"
+      genericValueType: "java.lang.Object"
+      uuid: "injectAndNotify_provisionListenerStackCallback1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "injectAndNotify_object2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "injectAndNotify_boolean1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "REAL"
+      valueType: "com.google.inject.internal.InternalFlags"
+      uuid: "uuid17"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "<init>_boolean4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableList"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableList"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableList"
+      uuid: "<init>_immutableList2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableList"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableList"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableList"
+      uuid: "<init>_immutableList3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InjectorImpl"
+      uuid: "<init>_injectorImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalContext"
+      uuid: "injectAndNotify_internalContext1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.ProvisionListenerStackCallback"
+      genericValueType: "java.lang.Object"
+      uuid: "injectAndNotify_provisionListenerStackCallback1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "injectAndNotify_boolean2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.ProvisionListenerStackCallback"
+      genericValueType: "java.lang.Object"
+      uuid: "injectAndNotify_provisionListenerStackCallback1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "injectAndNotify_object3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalContext"
+      uuid: "injectAndNotify_internalContext1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+      valueType: "com.google.inject.internal.ProvisionListenerStackCallback$ProvisionCallback"
+      uuid: "injectAndNotify_provisionListenerStackCallback.ProvisionCallback1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalContext"
+      uuid: "injectAndNotify_internalContext1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "injectAndNotify_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "injectAndNotify_void2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "injectAndNotify_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid18"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path3"
+    testPathName: "injectAndNotifyWhenProvisionCallbackHasListenersAndToolableOnly"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.TypeLiteral<java.lang.Object>,com.google.inject.internal.EncounterImpl<java.lang.Object>,com.google.common.collect.ImmutableList<com.google.inject.internal.SingleMemberInjector>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "4E0FE39739F9C9D5D585A49A017B6580"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "2a6fcf2b-828b-3f61-9873-0fc8ba2f1128"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableList.isEmpty()\
+        \ : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path4"
+    testPathName: "injectAndNotifyWhenProvisionCallbackNotHasListenersAndNotToolableOnly"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.TypeLiteral<java.lang.Object>,com.google.inject.internal.EncounterImpl<java.lang.Object>,com.google.common.collect.ImmutableList<com.google.inject.internal.SingleMemberInjector>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "E18A2174F9FB266CCEE404575277D85E"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "8779F8CE612416010304D3604DEF1214"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "instance"
+      modelFingerprint: "0C68A5DE1CCEB65651993B94ED24E380"
+      index: 2
+      ignored: false
+      valueUuid: "injectAndNotify_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "F59B66C04746BAE94AED352C5E64D400"
+      index: 3
+      ignored: false
+      valueUuid: "injectAndNotify_key1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "provisionCallback"
+      modelFingerprint: "7CBC21EB124D7B37479701E79C534E40"
+      index: 4
+      ignored: false
+      valueUuid: "injectAndNotify_provisionListenerStackCallback1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "source"
+      modelFingerprint: "5BCA4E93380DB683539696B06B00E247"
+      index: 5
+      ignored: false
+      valueUuid: "injectAndNotify_object2"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "toolableOnly"
+      modelFingerprint: "4678A64474C7288233AC5261FE9A5C23"
+      index: 6
+      ignored: false
+      valueUuid: "injectAndNotify_boolean1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "AC9872300ED992474F749389BF2BA759"
+      index: 7
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getMembersInjectors"
+        parameters: []
+        signature: "getMembersInjectors(): ImmutableSet"
+        returnValueUuid: "<init>_immutableSet1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "01409DA045EBF6B0F3094A5EF3E9DCFE"
+      index: 8
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getInjectionListeners"
+        parameters: []
+        signature: "getInjectionListeners(): ImmutableSet"
+        returnValueUuid: "<init>_immutableSet2"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "InternalFlags"
+      modelFingerprint: "EB0300098FF8B55DE7E007E0CD595449"
+      index: 9
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.InternalFlags"
+        name: "isBytecodeGenEnabled"
+        parameters: []
+        signature: "isBytecodeGenEnabled(): boolean"
+        returnValueUuid: "<init>_boolean4"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "injector"
+      modelFingerprint: "C74CA38E198610D8AF2AF1613620B94A"
+      index: 10
+      ignored: false
+      valueUuid: "<init>_injectorImpl1"
+      methodExercised:
+        target: "this.injector"
+        name: "enterContext"
+        parameters: []
+        signature: "enterContext(): InternalContext"
+        returnValueUuid: "injectAndNotify_internalContext1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "provisionCallback"
+      modelFingerprint: "17AAD05A86673BE625DBBA6CB8160119"
+      index: 11
+      ignored: false
+      valueUuid: "injectAndNotify_provisionListenerStackCallback1"
+      methodExercised:
+        target: "provisionCallback"
+        name: "hasListeners"
+        parameters: []
+        signature: "hasListeners(): boolean"
+        returnValueUuid: "injectAndNotify_boolean2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "1A38908C42A8A9A58D88F204257CBE7B"
+      index: 12
+      ignored: false
+      methodExercised:
+        target: "target"
+        name: "injectMembers"
+        parameters:
+        - name: "t"
+          valueUuid: "injectAndNotify_object1"
+        - name: "context"
+          valueUuid: "injectAndNotify_internalContext1"
+        - name: "toolableOnly"
+          valueUuid: "injectAndNotify_boolean1"
+        throwsExceptions:
+        - "com.google.inject.internal.InternalProvisionException"
+        signature: "injectMembers(Object,InternalContext,boolean): void throws com.google.inject.internal.InternalProvisionException"
+        returnValueUuid: "injectAndNotify_void1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "context"
+      modelFingerprint: "3597873CE5B8A99B1611751CA1DC43D2"
+      index: 13
+      ignored: false
+      valueUuid: "injectAndNotify_internalContext1"
+      methodExercised:
+        target: "context"
+        name: "close"
+        parameters: []
+        signature: "close(): void"
+        returnValueUuid: "injectAndNotify_void2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INTERNAL"
+      name: "internalMethod"
+      modelFingerprint: "D64FAD6E6A65C82666A341AA53CC60D8"
+      index: 14
+      ignored: false
+      methodExercised:
+        target: "target"
+        name: "notifyListeners"
+        parameters:
+        - name: "instance"
+          valueUuid: "injectAndNotify_object1"
+        throwsExceptions:
+        - "com.google.inject.internal.InternalProvisionException"
+        signature: "notifyListeners(Object): void throws com.google.inject.internal.InternalProvisionException"
+        returnValueUuid: "injectAndNotify_void3"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 15
+      ignored: false
+      valueUuid: "uuid2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d3eeac0f-ef8c-35f8-8329-2787f02b0c85"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableSet.isEmpty()\
+        \ : boolean"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MembersInjectorImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeLiteral"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "encounter"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.EncounterImpl"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_encounterImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "memberInjectors"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            valueType: "com.google.common.collect.ImmutableList"
+            uuid: "<init>_immutableList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MembersInjectorImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeLiteral"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "encounter"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.EncounterImpl"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_encounterImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "memberInjectors"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            valueType: "com.google.common.collect.ImmutableList"
+            uuid: "<init>_immutableList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.MembersInjectorImpl"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "injectAndNotify_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.inject.Key"
+        method: "get"
+        methodParameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "injectAndNotify_key1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "com.google.inject.Key"
+        method: "get"
+        methodParameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            valueType: "java.lang.Class"
+            uuid: "injectAndNotify_key1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.Key"
+      uuid: "injectAndNotify_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.ProvisionListenerStackCallback"
+        parameters:
+        - name: "binding"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Binding"
+            uuid: "injectAndNotify_provisionListenerStackCallback1-binding"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "listeners"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            uuid: "injectAndNotify_provisionListenerStackCallback1-listeners"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.ProvisionListenerStackCallback"
+        parameters:
+        - name: "binding"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.Binding"
+            uuid: "injectAndNotify_provisionListenerStackCallback1-binding"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "listeners"
+          value:
+            sapientType: "COLLECTION"
+            valueType: "java.util.List"
+            uuid: "injectAndNotify_provisionListenerStackCallback1-listeners"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.ProvisionListenerStackCallback"
+      uuid: "injectAndNotify_provisionListenerStackCallback1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "injectAndNotify_object2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "injectAndNotify_boolean1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalFlags"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "<init>_boolean4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InjectorImpl"
+      uuid: "<init>_injectorImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalContext"
+      uuid: "injectAndNotify_internalContext1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.ProvisionListenerStackCallback"
+        parameters:
+        - name: "binding"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.Binding"
+            uuid: "injectAndNotify_provisionListenerStackCallback1-binding"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "listeners"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            uuid: "injectAndNotify_provisionListenerStackCallback1-listeners"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.ProvisionListenerStackCallback"
+        parameters:
+        - name: "binding"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.Binding"
+            uuid: "injectAndNotify_provisionListenerStackCallback1-binding"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "listeners"
+          value:
+            sapientType: "COLLECTION"
+            valueType: "java.util.List"
+            uuid: "injectAndNotify_provisionListenerStackCallback1-listeners"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.ProvisionListenerStackCallback"
+      uuid: "injectAndNotify_provisionListenerStackCallback1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "injectAndNotify_boolean2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "injectAndNotify_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "injectAndNotify_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalContext"
+      uuid: "injectAndNotify_internalContext1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "injectAndNotify_boolean1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalContext"
+      uuid: "injectAndNotify_internalContext1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "injectAndNotify_void2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "injectAndNotify_void3"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "injectAndNotify_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path5"
+    testPathName: "injectAndNotifyWhenProvisionCallbackNotHasListenersAndToolableOnly"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.TypeLiteral<java.lang.Object>,com.google.inject.internal.EncounterImpl<java.lang.Object>,com.google.common.collect.ImmutableList<com.google.inject.internal.SingleMemberInjector>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "20B68C001F6D48FDC8B4395623E95395"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "5aeb4d57-b20b-321d-a5c6-577b18353b0b"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableList.isEmpty()\
+        \ : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+- method:
+    name: "notifyListeners"
+    signature: "notifyListeners(java.lang.Object) : void"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 2
+      catchExceptions:
+      - "java.lang.RuntimeException"
+    instructionFingerprint: "46820A545EEC6C906C1C5F36B0377770"
+  paths:
+  - pathId: "path1"
+    testPathName: "notifyListenersWhenLocalInjectionListenersIsNull"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.TypeLiteral<java.lang.Object>,com.google.inject.internal.EncounterImpl<java.lang.Object>,com.google.common.collect.ImmutableList<com.google.inject.internal.SingleMemberInjector>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "000BF1023BC83F2FC5E5050A806BFE8C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "8779F8CE612416010304D3604DEF1214"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "instance"
+      modelFingerprint: "0C68A5DE1CCEB65651993B94ED24E380"
+      index: 2
+      ignored: false
+      valueUuid: "notifyListeners_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "AC9872300ED992474F749389BF2BA759"
+      index: 3
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getMembersInjectors"
+        parameters: []
+        signature: "getMembersInjectors(): ImmutableSet"
+        returnValueUuid: "<init>_immutableSet1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "01409DA045EBF6B0F3094A5EF3E9DCFE"
+      index: 4
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getInjectionListeners"
+        parameters: []
+        signature: "getInjectionListeners(): ImmutableSet"
+        returnValueUuid: "<init>_immutableSet2"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "InternalFlags"
+      modelFingerprint: "EB0300098FF8B55DE7E007E0CD595449"
+      index: 5
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.InternalFlags"
+        name: "isBytecodeGenEnabled"
+        parameters: []
+        signature: "isBytecodeGenEnabled(): boolean"
+        returnValueUuid: "<init>_boolean4"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 6
+      ignored: false
+      valueUuid: "uuid2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "fa3af382-bd24-32c5-83f0-d731e8b2cbd0"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableSet.isEmpty()\
+        \ : boolean"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MembersInjectorImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeLiteral"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "encounter"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.EncounterImpl"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_encounterImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "memberInjectors"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            valueType: "com.google.common.collect.ImmutableList"
+            uuid: "<init>_immutableList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MembersInjectorImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeLiteral"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "encounter"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.EncounterImpl"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_encounterImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "memberInjectors"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            valueType: "com.google.common.collect.ImmutableList"
+            uuid: "<init>_immutableList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.MembersInjectorImpl"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "notifyListeners_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalFlags"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "<init>_boolean4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "injectMembers"
+    signature: "injectMembers(java.lang.Object,com.google.inject.internal.InternalContext,boolean)\
+      \ : void"
+    tryCatchBlocks:
+    - idExternalInstruction: 0
+      id: 3
+      catchExceptions:
+      - "java.lang.RuntimeException"
+    instructionFingerprint: "D8D497F5E95468F60EEBBC839477C123"
+  paths:
+  - pathId: "path2"
+    testPathName: "injectMembers1WhenToolableOnly"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.TypeLiteral<java.lang.Object>,com.google.inject.internal.EncounterImpl<java.lang.Object>,com.google.common.collect.ImmutableList<com.google.inject.internal.SingleMemberInjector>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "10A366025271C880F2E87E911CA72927"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "4888614b-323e-31d6-98f1-f9920a2f434f"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableList.isEmpty()\
+        \ : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path1"
+    testPathName: "injectMembers1WhenLocalUsersMembersInjectorsIsNull"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.TypeLiteral<java.lang.Object>,com.google.inject.internal.EncounterImpl<java.lang.Object>,com.google.common.collect.ImmutableList<com.google.inject.internal.SingleMemberInjector>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "0C70A17E2B07B4C59C672046A8F847C9"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "8779F8CE612416010304D3604DEF1214"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "t"
+      modelFingerprint: "A2C5FF051CE2A1947B0055E9F13DBDD6"
+      index: 2
+      ignored: false
+      valueUuid: "injectMembers_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "context"
+      modelFingerprint: "93DCD1F0E08EF69C4571B38FDCBE7631"
+      index: 3
+      ignored: false
+      valueUuid: "injectMembers_internalContext1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "toolableOnly"
+      modelFingerprint: "4678A64474C7288233AC5261FE9A5C23"
+      index: 4
+      ignored: false
+      valueUuid: "injectMembers_boolean1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "AC9872300ED992474F749389BF2BA759"
+      index: 5
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getMembersInjectors"
+        parameters: []
+        signature: "getMembersInjectors(): ImmutableSet"
+        returnValueUuid: "<init>_immutableSet1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "01409DA045EBF6B0F3094A5EF3E9DCFE"
+      index: 6
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getInjectionListeners"
+        parameters: []
+        signature: "getInjectionListeners(): ImmutableSet"
+        returnValueUuid: "<init>_immutableSet2"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "InternalFlags"
+      modelFingerprint: "EB0300098FF8B55DE7E007E0CD595449"
+      index: 7
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.InternalFlags"
+        name: "isBytecodeGenEnabled"
+        parameters: []
+        signature: "isBytecodeGenEnabled(): boolean"
+        returnValueUuid: "<init>_boolean4"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 8
+      ignored: false
+      valueUuid: "uuid2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2526ae95-a234-3fcc-8f66-7447b0376220"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableSet.isEmpty()\
+        \ : boolean"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MembersInjectorImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeLiteral"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "encounter"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.EncounterImpl"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_encounterImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "memberInjectors"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            valueType: "com.google.common.collect.ImmutableList"
+            uuid: "<init>_immutableList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MembersInjectorImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeLiteral"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "encounter"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.EncounterImpl"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_encounterImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "memberInjectors"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            valueType: "com.google.common.collect.ImmutableList"
+            uuid: "<init>_immutableList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.MembersInjectorImpl"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "injectMembers_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalContext"
+      uuid: "injectMembers_internalContext1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "injectMembers_boolean1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalFlags"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "<init>_boolean4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      uuid: "uuid2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "toString"
+    signature: "toString() : java.lang.String"
+    instructionFingerprint: "353B73477D65798C33B3241D811EA1DD"
+  paths:
+  - pathId: "path1"
+    testPathName: "toStringTest"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.TypeLiteral<java.lang.Object>,com.google.inject.internal.EncounterImpl<java.lang.Object>,com.google.common.collect.ImmutableList<com.google.inject.internal.SingleMemberInjector>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "F3C2460145007B28838EFBB763025790"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "8779F8CE612416010304D3604DEF1214"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "AC9872300ED992474F749389BF2BA759"
+      index: 2
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getMembersInjectors"
+        parameters: []
+        signature: "getMembersInjectors(): ImmutableSet"
+        returnValueUuid: "<init>_immutableSet1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "01409DA045EBF6B0F3094A5EF3E9DCFE"
+      index: 3
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getInjectionListeners"
+        parameters: []
+        signature: "getInjectionListeners(): ImmutableSet"
+        returnValueUuid: "<init>_immutableSet2"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "InternalFlags"
+      modelFingerprint: "EB0300098FF8B55DE7E007E0CD595449"
+      index: 4
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.InternalFlags"
+        name: "isBytecodeGenEnabled"
+        parameters: []
+        signature: "isBytecodeGenEnabled(): boolean"
+        returnValueUuid: "<init>_boolean4"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "350F7EB0DF2CA1AE11F4C0328C974359"
+      index: 5
+      ignored: false
+      valueUuid: "uuid2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "363d3698-f34c-39ad-914f-376a19498023"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableSet.isEmpty()\
+        \ : boolean"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MembersInjectorImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeLiteral"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            nameForMock: "<init>_typeLiteral1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "encounter"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.EncounterImpl"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_encounterImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "memberInjectors"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            valueType: "com.google.common.collect.ImmutableList"
+            uuid: "<init>_immutableList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MembersInjectorImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeLiteral"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            nameForMock: "<init>_typeLiteral1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "encounter"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.EncounterImpl"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_encounterImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "memberInjectors"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            valueType: "com.google.common.collect.ImmutableList"
+            uuid: "<init>_immutableList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.MembersInjectorImpl"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalFlags"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "<init>_boolean4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "MembersInjector<java.lang.Object>"
+      valueType: "java.lang.String"
+      uuid: "uuid2"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "getInjectionPoints"
+    signature: "getInjectionPoints() : com.google.common.collect.ImmutableSet<com.google.inject.spi.InjectionPoint>"
+    instructionFingerprint: "2F97E3D288326D69077DECB1F3611DC3"
+  paths:
+  - pathId: "path1"
+    testPathName: "getInjectionPointsWhenLocalMemberInjectorsIsNull"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.TypeLiteral<java.lang.Object>,com.google.inject.internal.EncounterImpl<java.lang.Object>,com.google.common.collect.ImmutableList<com.google.inject.internal.SingleMemberInjector>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "4C747409E2C16193FB08150DC2C1DFFF"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "8779F8CE612416010304D3604DEF1214"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "AC9872300ED992474F749389BF2BA759"
+      index: 2
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getMembersInjectors"
+        parameters: []
+        signature: "getMembersInjectors(): ImmutableSet"
+        returnValueUuid: "<init>_immutableSet1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "01409DA045EBF6B0F3094A5EF3E9DCFE"
+      index: 3
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getInjectionListeners"
+        parameters: []
+        signature: "getInjectionListeners(): ImmutableSet"
+        returnValueUuid: "<init>_immutableSet2"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "InternalFlags"
+      modelFingerprint: "EB0300098FF8B55DE7E007E0CD595449"
+      index: 4
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.InternalFlags"
+        name: "isBytecodeGenEnabled"
+        parameters: []
+        signature: "isBytecodeGenEnabled(): boolean"
+        returnValueUuid: "<init>_boolean4"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "303971A5952B1E6204CC901E29568395"
+      index: 5
+      ignored: false
+      valueUuid: "getInjectionPoints_immutableSet1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "aee50ccf-5d5d-386c-a34e-73c77304b09a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableSet.isEmpty()\
+        \ : boolean"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MembersInjectorImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeLiteral"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "encounter"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.EncounterImpl"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_encounterImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "memberInjectors"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            valueType: "com.google.common.collect.ImmutableList"
+            uuid: "<init>_immutableList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MembersInjectorImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeLiteral"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "encounter"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.EncounterImpl"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_encounterImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "memberInjectors"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            valueType: "com.google.common.collect.ImmutableList"
+            uuid: "<init>_immutableList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.MembersInjectorImpl"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalFlags"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "<init>_boolean4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableSet"
+      genericValueType: "com.google.inject.spi.InjectionPoint"
+      uuid: "getInjectionPoints_immutableSet1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "getAddedAspects"
+    signature: "getAddedAspects() : com.google.common.collect.ImmutableList<com.google.inject.internal.MethodAspect>"
+    instructionFingerprint: "F87FCF1A6877E1C862342DF70E38DE8C"
+  paths:
+  - pathId: "path1"
+    testPathName: "getAddedAspectsWhenAddedAspectsIsNull"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.TypeLiteral<java.lang.Object>,com.google.inject.internal.EncounterImpl<java.lang.Object>,com.google.common.collect.ImmutableList<com.google.inject.internal.SingleMemberInjector>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "166BD5AC652167C03AC2BB0F3FF7771D"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "8779F8CE612416010304D3604DEF1214"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "AC9872300ED992474F749389BF2BA759"
+      index: 2
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getMembersInjectors"
+        parameters: []
+        signature: "getMembersInjectors(): ImmutableSet"
+        returnValueUuid: "<init>_immutableSet1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "01409DA045EBF6B0F3094A5EF3E9DCFE"
+      index: 3
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getInjectionListeners"
+        parameters: []
+        signature: "getInjectionListeners(): ImmutableSet"
+        returnValueUuid: "<init>_immutableSet2"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "InternalFlags"
+      modelFingerprint: "EB0300098FF8B55DE7E007E0CD595449"
+      index: 4
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.InternalFlags"
+        name: "isBytecodeGenEnabled"
+        parameters: []
+        signature: "isBytecodeGenEnabled(): boolean"
+        returnValueUuid: "<init>_boolean4"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "4FC856D1A702AD6C85DFFA63EF6FEA61"
+      index: 5
+      ignored: false
+      valueUuid: "getAddedAspects_immutableList1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1489d144-8430-3c9e-8b7b-2aa73f66ee8f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableSet.isEmpty()\
+        \ : boolean"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MembersInjectorImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeLiteral"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "encounter"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.EncounterImpl"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_encounterImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "memberInjectors"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            valueType: "com.google.common.collect.ImmutableList"
+            uuid: "<init>_immutableList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MembersInjectorImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeLiteral"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  content: !<regular>
+                    value: "java.lang.Object"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<static_method_return>
+              target: "com.google.inject.TypeLiteral"
+              method: "get"
+              methodParameters:
+              - name: "type"
+                value:
+                  sapientType: "CLASS"
+                  valueType: "java.lang.Class"
+                  uuid: "<init>_typeLiteral1-type"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "com.google.inject.TypeLiteral"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "encounter"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.EncounterImpl"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_encounterImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "memberInjectors"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            valueType: "com.google.common.collect.ImmutableList"
+            uuid: "<init>_immutableList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.MembersInjectorImpl"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InternalFlags"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "<init>_boolean4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableList"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableList"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableList"
+      genericValueType: "com.google.inject.internal.MethodAspect"
+      uuid: "getAddedAspects_immutableList1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "getAddedAspectsWhenAddedAspectsIsNotNull"
+    constructorSignature: "<init>(com.google.inject.internal.InjectorImpl,com.google.inject.TypeLiteral<java.lang.Object>,com.google.inject.internal.EncounterImpl<java.lang.Object>,com.google.common.collect.ImmutableList<com.google.inject.internal.SingleMemberInjector>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "EB7A5CD377DC39404F108CAC229C30F2"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "976CF004702F4CE4247EA040991B32F4"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "29AC1E19F4E8B83B4A50571435F76E98"
+      index: 2
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getMembersInjectors"
+        parameters: []
+        signature: "getMembersInjectors(): ImmutableSet"
+        returnValueUuid: "<init>_immutableSet1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "017B6459DC6E24081FB0847829E95140"
+      index: 3
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getInjectionListeners"
+        parameters: []
+        signature: "getInjectionListeners(): ImmutableSet"
+        returnValueUuid: "<init>_immutableSet2"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "InternalFlags"
+      modelFingerprint: "CCE83865A9462A8984596A239CB8D8B3"
+      index: 4
+      ignored: false
+      valueUuid: "uuid34"
+      methodExercised:
+        target: "com.google.inject.internal.InternalFlags"
+        name: "isBytecodeGenEnabled"
+        parameters: []
+        signature: "isBytecodeGenEnabled(): boolean"
+        returnValueUuid: "<init>_boolean4"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "F942AB490C6716D186562D1406347F69"
+      index: 5
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getAspects"
+        parameters: []
+        signature: "getAspects(): ImmutableList"
+        returnValueUuid: "<init>_immutableList2"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "encounter"
+      modelFingerprint: "3912CA6477D8C49991E9A58838A87C2F"
+      index: 6
+      ignored: false
+      valueUuid: "<init>_encounterImpl1"
+      methodExercised:
+        target: "encounter"
+        name: "getAspects"
+        parameters: []
+        signature: "getAspects(): ImmutableList"
+        returnValueUuid: "<init>_immutableList3"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "6AB11AC4F3A875C521B0AF6F03B5ACED"
+      index: 7
+      ignored: false
+      valueUuid: "<init>_immutableList3"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f8a354c5-d8ad-333c-a76e-beb8c03f29a4"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableList.isEmpty()\
+        \ : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MembersInjectorImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeLiteral"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.TypeLiteral"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "encounter"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.EncounterImpl"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_encounterImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "memberInjectors"
+          value:
+            sapientType: "OBJECT"
+            content: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            valueType: "com.google.common.collect.ImmutableList"
+            uuid: "<init>_immutableList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MembersInjectorImpl"
+        parameters:
+        - name: "injector"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "<init>_injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeLiteral"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.TypeLiteral"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "encounter"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.internal.EncounterImpl"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.internal.EncounterImpl"
+            genericValueType: "java.lang.Object"
+            uuid: "<init>_encounterImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "memberInjectors"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<static_method_return>
+              target: "com.google.common.collect.ImmutableList"
+              method: "of"
+              methodParameters: []
+            valueType: "com.google.common.collect.ImmutableList"
+            uuid: "<init>_immutableList1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.MembersInjectorImpl"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableSet"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "REAL"
+      valueType: "com.google.inject.internal.InternalFlags"
+      uuid: "uuid34"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "<init>_boolean4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableList"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableList"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableList"
+      uuid: "<init>_immutableList2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.EncounterImpl"
+      genericValueType: "java.lang.Object"
+      uuid: "<init>_encounterImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableList"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableList"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableList"
+      uuid: "<init>_immutableList3"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableList"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableList"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableList"
+      uuid: "<init>_immutableList3"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false

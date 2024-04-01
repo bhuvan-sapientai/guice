@@ -1,0 +1,203 @@
+---
+modelFingerprint: "91FECC77BE104A247DA338E222764D5B"
+methods:
+- method:
+    name: "visit"
+    signature: "visit(com.google.inject.spi.InterceptorBinding) : java.lang.Boolean"
+    instructionFingerprint: "414E9F92F7995DBBDDB22C58C6E8E547"
+  paths:
+  - pathId: "path1"
+    testPathName: "visit17WhenInternalFlagsIsBytecodeGenEnabled"
+    constructorSignature: "<init>(com.google.inject.internal.Errors) : void"
+    filledByUser: false
+    modelFingerprint: "DAE4BA36C05D639A70E2299D05967F72"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "A0A51C295EA12FD060A6DB5D91DB69CC"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "command"
+      modelFingerprint: "05D97D1EF12F33A73D8DD19BE949FD3B"
+      index: 2
+      ignored: false
+      valueUuid: "visit_interceptorBinding1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "InternalFlags"
+      modelFingerprint: "CCE83865A9462A8984596A239CB8D8B3"
+      index: 3
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.InternalFlags"
+        name: "isBytecodeGenEnabled"
+        parameters: []
+        signature: "isBytecodeGenEnabled(): boolean"
+        returnValueUuid: "visit_boolean1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "injector"
+      modelFingerprint: "EF7F796586857C494D797E41CEFB4D02"
+      index: 4
+      ignored: false
+      valueUuid: "injectorImpl1"
+      methodExercised:
+        target: "this.injector"
+        name: "getBindingData"
+        parameters: []
+        signature: "getBindingData(): InjectorBindingData"
+        returnValueUuid: "visit_injectorBindingData1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "CC4BE9465D40B5688A3239F3FCB87F20"
+      index: 5
+      ignored: false
+      valueUuid: "visit_injectorBindingData1"
+      methodExercised:
+        target: "com.google.inject.internal.InjectorBindingData"
+        name: "addInterceptorBinding"
+        parameters:
+        - name: "interceptorBinding"
+          valueUuid: "visit_interceptorBinding1"
+        signature: "addInterceptorBinding(InterceptorBinding): void"
+        returnValueUuid: "visit_void1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "47D8A47490D2259B302011E1A2B37B5D"
+      index: 6
+      ignored: false
+      valueUuid: "visit_boolean2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "cf8b4b08-b41d-3aa2-a6fd-d54030994148"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.InterceptorBindingProcessor"
+        parameters:
+        - name: "errors"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.Errors"
+            uuid: "<init>_errors1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+        propertiesMap:
+          injector:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.InterceptorBindingProcessor"
+        parameters:
+        - name: "errors"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.internal.Errors"
+            uuid: "<init>_errors1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+        propertiesMap:
+          injector:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.internal.InjectorImpl"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.internal.InjectorImpl"
+            uuid: "injectorImpl1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.internal.InterceptorBindingProcessor"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.InterceptorBinding"
+      uuid: "visit_interceptorBinding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "REAL"
+      valueType: "com.google.inject.internal.InternalFlags"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "visit_boolean1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InjectorImpl"
+      uuid: "injectorImpl1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InjectorBindingData"
+      uuid: "visit_injectorBindingData1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.InjectorBindingData"
+      uuid: "visit_injectorBindingData1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "visit_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.InterceptorBinding"
+      uuid: "visit_interceptorBinding1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "visit_boolean2"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false

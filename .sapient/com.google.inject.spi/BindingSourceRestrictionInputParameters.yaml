@@ -1,0 +1,717 @@
+---
+modelFingerprint: "930888060AE866DFCF6C203454DFA572"
+methods:
+- method:
+    name: "getMissingImplementationSuggestion"
+    signature: "getMissingImplementationSuggestion(com.google.inject.internal.GuiceInternal,com.google.inject.Key<?>)\
+      \ : java.util.Optional<java.lang.String>"
+    instructionFingerprint: "4094589BC64BC745239A6B0978D76FD7"
+  paths:
+  - pathId: "path1"
+    testPathName: "getMissingImplementationSuggestionWhenRestrictionIsNull"
+    filledByUser: false
+    modelFingerprint: "60DDC7DE61768C49282D8B57EBCDC1F6"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "guiceInternal"
+      modelFingerprint: "A1B8EB484169CC6366D28A338CD4D2D1"
+      index: 1
+      ignored: false
+      valueUuid: "getMissingImplementationSuggestion_guiceInternal1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "DB3F140133759F017E8B4EA7F61F0C7C"
+      index: 2
+      ignored: false
+      valueUuid: "getMissingImplementationSuggestion_key1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "key"
+      modelFingerprint: "5489DD3FAFFA15B97035394799A7E6E2"
+      index: 3
+      ignored: false
+      valueUuid: "getMissingImplementationSuggestion_key1"
+      methodExercised:
+        target: "key"
+        name: "getAnnotationType"
+        parameters: []
+        signature: "getAnnotationType(): Class"
+        returnValueUuid: "getRestriction_class1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "key"
+      modelFingerprint: "F69799BF3D6FAFC4CA94ADFAB9ED7A91"
+      index: 4
+      ignored: false
+      valueUuid: "getMissingImplementationSuggestion_key1"
+      methodExercised:
+        target: "key"
+        name: "getTypeLiteral"
+        parameters: []
+        signature: "getTypeLiteral(): TypeLiteral"
+        returnValueUuid: "getRestriction_typeLiteral1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "5AAF93B452A537611F61650210DA6E8E"
+      index: 5
+      ignored: false
+      valueUuid: "getRestriction_typeLiteral1"
+      methodExercised:
+        target: "com.google.inject.TypeLiteral"
+        name: "getRawType"
+        parameters: []
+        signature: "getRawType(): Class"
+        returnValueUuid: "getRestriction_class2"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "C49A54080D51C5FB37A6D1F37ED92E5D"
+      index: 6
+      ignored: false
+      valueUuid: "getMissingImplementationSuggestion_optional1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e9b74ac2-a55d-37ae-9008-2cefe5604d54"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.internal.GuiceInternal)\
+        \ : com.google.inject.internal.GuiceInternal"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.GuiceInternal"
+      uuid: "getMissingImplementationSuggestion_guiceInternal1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "?"
+      uuid: "getMissingImplementationSuggestion_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "?"
+      uuid: "getMissingImplementationSuggestion_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.annotation.Annotation"
+      uuid: "getRestriction_class1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "?"
+      uuid: "getMissingImplementationSuggestion_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      uuid: "getRestriction_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      uuid: "getRestriction_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? super java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "? super java.lang.Object"
+      uuid: "getRestriction_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OPTIONAL"
+      content: !<optional>
+        value:
+          sapientType: "NULL"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        target: "java.util.Optional"
+      valueType: "java.util.Optional"
+      genericValueType: "java.lang.String"
+      uuid: "getMissingImplementationSuggestion_optional1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "getMissingImplementationSuggestionWhenRestrictionIsNotNull"
+    filledByUser: false
+    modelFingerprint: "17FEEC267268D5FCE6881389518D0618"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "guiceInternal"
+      modelFingerprint: "F2A68E893281E10EA0816438403166B6"
+      index: 1
+      ignored: false
+      valueUuid: "getMissingImplementationSuggestion_guiceInternal1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "49CA2BB06CF06A44D1E8C64653B98178"
+      index: 2
+      ignored: false
+      valueUuid: "getMissingImplementationSuggestion_key1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "key"
+      modelFingerprint: "27FF2BC34B85DE9CA9CFC655AB31FD10"
+      index: 3
+      ignored: false
+      valueUuid: "getMissingImplementationSuggestion_key1"
+      methodExercised:
+        target: "key"
+        name: "getAnnotationType"
+        parameters: []
+        signature: "getAnnotationType(): Class"
+        returnValueUuid: "getRestriction_class1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "key"
+      modelFingerprint: "5652DF208F930B79DB0B77CC137B3D72"
+      index: 4
+      ignored: false
+      valueUuid: "getMissingImplementationSuggestion_key1"
+      methodExercised:
+        target: "key"
+        name: "getTypeLiteral"
+        parameters: []
+        signature: "getTypeLiteral(): TypeLiteral"
+        returnValueUuid: "getRestriction_typeLiteral1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "DC900DE8AA4252A5BBE131DABFA6A7F5"
+      index: 5
+      ignored: false
+      valueUuid: "getRestriction_typeLiteral1"
+      methodExercised:
+        target: "com.google.inject.TypeLiteral"
+        name: "getRawType"
+        parameters: []
+        signature: "getRawType(): Class"
+        returnValueUuid: "getRestriction_class2"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "restriction"
+      modelFingerprint: "7019E0614CA5424487BB8D77EBE59859"
+      index: 6
+      ignored: false
+      valueUuid: "getRestriction_annotation1"
+      methodExercised:
+        target: "restriction"
+        name: "explanation"
+        parameters: []
+        signature: "explanation(): String"
+        returnValueUuid: "getMissingImplementationSuggestion_string1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7BE2160559FC5D19C1472E14E8DA27C0"
+      index: 7
+      ignored: false
+      valueUuid: "getMissingImplementationSuggestion_optional1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1b573449-2425-366e-9529-8ac05da65e53"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.internal.GuiceInternal)\
+        \ : com.google.inject.internal.GuiceInternal"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.GuiceInternal"
+      uuid: "getMissingImplementationSuggestion_guiceInternal1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "?"
+      uuid: "getMissingImplementationSuggestion_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "?"
+      uuid: "getMissingImplementationSuggestion_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.annotation.Annotation"
+      uuid: "getRestriction_class1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "?"
+      uuid: "getMissingImplementationSuggestion_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      uuid: "getRestriction_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      uuid: "getRestriction_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? super java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "? super java.lang.Object"
+      uuid: "getRestriction_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.RestrictedBindingSource"
+      uuid: "getRestriction_annotation1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      suggestedContent: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "getMissingImplementationSuggestion_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OPTIONAL"
+      content: !<optional>
+        value:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "\\nHint: This key is restricted and cannot be bound directly.\
+              \ Restriction explanation: A"
+          suggestedContent: !<regular>
+            value: "\\nHint: This key is restricted and cannot be bound directly.\
+              \ Restriction explanation: A"
+          valueType: "java.lang.String"
+          uuid: "getMissingImplementationSuggestion_string2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        target: "java.util.Optional"
+      valueType: "java.util.Optional"
+      genericValueType: "java.lang.String"
+      uuid: "getMissingImplementationSuggestion_optional1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path3"
+    testPathName: "getMissingImplementationSuggestionWhenKeyGetAnnotationTypeIsNotNullAndRestrictionIsNotNull"
+    filledByUser: false
+    modelFingerprint: "2089825EEF612B4182F113C9F1E4DF4F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "guiceInternal"
+      modelFingerprint: "F2A68E893281E10EA0816438403166B6"
+      index: 1
+      ignored: false
+      valueUuid: "getMissingImplementationSuggestion_guiceInternal1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "49CA2BB06CF06A44D1E8C64653B98178"
+      index: 2
+      ignored: false
+      valueUuid: "getMissingImplementationSuggestion_key1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "key"
+      modelFingerprint: "206FB1D2A5DF5C894403BFE0CD2FD19E"
+      index: 3
+      ignored: false
+      valueUuid: "getMissingImplementationSuggestion_key1"
+      methodExercised:
+        target: "key"
+        name: "getAnnotationType"
+        parameters: []
+        signature: "getAnnotationType(): Class"
+        returnValueUuid: "getRestriction_class1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "key"
+      modelFingerprint: "206FB1D2A5DF5C894403BFE0CD2FD19E"
+      index: 4
+      ignored: false
+      valueUuid: "getMissingImplementationSuggestion_key1"
+      methodExercised:
+        target: "key"
+        name: "getAnnotationType"
+        parameters: []
+        signature: "getAnnotationType(): Class"
+        returnValueUuid: "getRestriction_class2"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "restriction"
+      modelFingerprint: "7019E0614CA5424487BB8D77EBE59859"
+      index: 5
+      ignored: false
+      valueUuid: "getRestriction_annotation1"
+      methodExercised:
+        target: "restriction"
+        name: "explanation"
+        parameters: []
+        signature: "explanation(): String"
+        returnValueUuid: "getMissingImplementationSuggestion_string1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7BE2160559FC5D19C1472E14E8DA27C0"
+      index: 6
+      ignored: false
+      valueUuid: "getMissingImplementationSuggestion_optional1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6b70b6ca-00bf-38db-81a0-1a29112e7318"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.internal.GuiceInternal)\
+        \ : com.google.inject.internal.GuiceInternal"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.GuiceInternal"
+      uuid: "getMissingImplementationSuggestion_guiceInternal1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "?"
+      uuid: "getMissingImplementationSuggestion_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "?"
+      uuid: "getMissingImplementationSuggestion_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? extends java.lang.annotation.Annotation"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.annotation.Annotation"
+      uuid: "getRestriction_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "?"
+      uuid: "getMissingImplementationSuggestion_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? extends java.lang.annotation.Annotation"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.annotation.Annotation"
+      uuid: "getRestriction_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.RestrictedBindingSource"
+      uuid: "getRestriction_annotation1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      suggestedContent: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "getMissingImplementationSuggestion_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OPTIONAL"
+      content: !<optional>
+        value:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "\\nHint: This key is restricted and cannot be bound directly.\
+              \ Restriction explanation: A"
+          suggestedContent: !<regular>
+            value: "\\nHint: This key is restricted and cannot be bound directly.\
+              \ Restriction explanation: A"
+          valueType: "java.lang.String"
+          uuid: "getMissingImplementationSuggestion_string2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        target: "java.util.Optional"
+      valueType: "java.util.Optional"
+      genericValueType: "java.lang.String"
+      uuid: "getMissingImplementationSuggestion_optional1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "check"
+    signature: "check(com.google.inject.internal.GuiceInternal,java.util.List<com.google.inject.spi.Element>)\
+      \ : com.google.common.collect.ImmutableList<com.google.inject.spi.Message>"
+    instructionFingerprint: "6229B98723AB34B8201105C80D9CC503"
+  paths:
+  - pathId: "path1"
+    testPathName: "checkWhenElementsIsNotEmpty"
+    filledByUser: false
+    modelFingerprint: "349BDB92A2C1148F60D1FC5E6D586951"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "guiceInternal"
+      modelFingerprint: "F2A68E893281E10EA0816438403166B6"
+      index: 1
+      ignored: false
+      valueUuid: "check_guiceInternal1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "elements"
+      modelFingerprint: "B655E752CB5196A37C32B62F4356AA05"
+      index: 2
+      ignored: false
+      valueUuid: "check_list1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "element"
+      modelFingerprint: "FBA215D4FA837217EBE980B91BEF8814"
+      index: 3
+      ignored: false
+      valueUuid: "check_object1"
+      methodExercised:
+        target: "element"
+        name: "acceptVisitor"
+        parameters:
+        - name: "visitor"
+          valueUuid: "check_elementVisitor1"
+        signature: "acceptVisitor(ElementVisitor): Object"
+        returnValueUuid: "check_object2"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "element"
+      modelFingerprint: "0235AA295788B6FF3BD6CAD27AE55D38"
+      index: 4
+      ignored: false
+      valueUuid: "check_element1"
+      methodExercised:
+        target: "element"
+        name: "acceptVisitor"
+        parameters:
+        - name: "visitor"
+          valueUuid: "clear_elementVisitor1"
+        signature: "acceptVisitor(ElementVisitor): Object"
+        returnValueUuid: "clear_object1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "84F16E4C9B1D98EF3FE5A0B23B0E89C8"
+      index: 5
+      ignored: false
+      valueUuid: "check_immutableList1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ccd2586f-c8a3-3b87-a90a-87590e14fe98"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.internal.GuiceInternal)\
+        \ : com.google.inject.internal.GuiceInternal"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.GuiceInternal"
+      uuid: "check_guiceInternal1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      suggestedContent: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "com.google.inject.spi.Element"
+      uuid: "check_list1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.Element"
+      uuid: "check_object1"
+      fixed: false
+      collectionUuid: "check_list1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableList"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableList"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableList"
+      uuid: "check_object2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+      valueType: "com.google.inject.spi.ElementVisitor"
+      uuid: "check_elementVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.Element"
+      uuid: "check_element1"
+      fixed: false
+      collectionUuid: "check_list1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "clear_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "PRIVATE_INNER_CLASS_OR_LAMBDA"
+      valueType: "com.google.inject.spi.ElementVisitor"
+      uuid: "clear_elementVisitor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<builder>
+        target: "com.google.common.collect.ImmutableList"
+        setterMap: {}
+      suggestedContent: !<builder>
+        target: "com.google.common.collect.ImmutableList"
+        setterMap: {}
+      valueType: "com.google.common.collect.ImmutableList"
+      genericValueType: "com.google.inject.spi.Message"
+      uuid: "check_immutableList1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "checkWhenElementsIsEmpty"
+    filledByUser: false
+    modelFingerprint: "E45B95122FB8AD924FB611FFF92065E5"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "57f24ffd-f666-3596-a491-2ab590e13dfb"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(com.google.inject.internal.GuiceInternal)\
+        \ : com.google.inject.internal.GuiceInternal"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []

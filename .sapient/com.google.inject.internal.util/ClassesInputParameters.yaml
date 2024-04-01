@@ -1,0 +1,805 @@
+---
+modelFingerprint: "C0DA4C5F43F16989CD0EAFAC76AEA957"
+methods:
+- method:
+    name: "isInnerClass"
+    signature: "isInnerClass(java.lang.Class<?>) : boolean"
+    instructionFingerprint: "A38E4B37393229EE3F4DA0C7DC559A78"
+  paths:
+  - pathId: "path1"
+    testPathName: "isInnerClassWhenClazzGetEnclosingClassIsNotNull"
+    filledByUser: false
+    modelFingerprint: "755BA833513412368DEDE4E1B125DB9B"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "clazz"
+      modelFingerprint: "2E28F765C38CC492CE505A1A967E0F85"
+      index: 1
+      ignored: false
+      valueUuid: "isInnerClass_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      valueUuid: "uuid1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e4845536-e9a6-3d4a-9480-ba73e702a544"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.getModifiers() : int"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "isInnerClass_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "uuid1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "isInnerClassWhenClazzGetEnclosingClassIsNull"
+    filledByUser: false
+    modelFingerprint: "706D295652882CD43E9E5BC7E18B1150"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "clazz"
+      modelFingerprint: "4E87284B98DBA1E0E0C584E4FA61BACE"
+      index: 1
+      ignored: false
+      valueUuid: "isInnerClass_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      valueUuid: "uuid1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "dc676e37-a1bb-356f-a53f-4abb6228cc80"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      suggestedContent: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "isInnerClass_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "isConcrete"
+    signature: "isConcrete(java.lang.Class<?>) : boolean"
+    instructionFingerprint: "014E1BEEE4EE921E90E462D84EB86F47"
+  paths:
+  - pathId: "path1"
+    testPathName: "isConcreteWhenModifierNotIsAbstractModifiers"
+    filledByUser: false
+    modelFingerprint: "E0067563C4FED2BE1421401373FC01C9"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "clazz"
+      modelFingerprint: "4E87284B98DBA1E0E0C584E4FA61BACE"
+      index: 1
+      ignored: false
+      valueUuid: "isConcrete_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      valueUuid: "uuid1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2dc798b2-96b3-3e16-8343-ec421534ff7c"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      suggestedContent: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "isConcrete_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "uuid1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "isConcreteWhenModifierIsAbstractModifiers"
+    filledByUser: false
+    modelFingerprint: "90D023C7022B75D926700AFD527DCD2E"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "clazz"
+      modelFingerprint: "2E28F765C38CC492CE505A1A967E0F85"
+      index: 1
+      ignored: false
+      valueUuid: "isConcrete_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      valueUuid: "uuid4"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3e64af40-4e55-3909-b5ba-d49b96319e23"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.getModifiers() : int"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "isConcrete_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid4"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "toString"
+    signature: "toString(java.lang.reflect.Member) : java.lang.String"
+    instructionFingerprint: "0C601E64297BBF955BB4EFF81991E004"
+  paths:
+  - pathId: "path1"
+    testPathName: "toStringWhenMemberTypeEqualsMethod"
+    filledByUser: false
+    modelFingerprint: "D1AA58532BE21DCDF9E3172222636E55"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "member"
+      modelFingerprint: "90AB8D75AB83F127CF1B907C8C177A12"
+      index: 1
+      ignored: false
+      valueUuid: "toString_member1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Classes"
+      modelFingerprint: "0B75276423EE1E768D8DF52FCB6AEF80"
+      index: 2
+      ignored: false
+      valueUuid: "uuid2"
+      methodExercised:
+        target: "com.google.inject.internal.util.Classes"
+        name: "memberType"
+        parameters:
+        - name: "member"
+          valueUuid: "toString_member1"
+        signature: "memberType(Member): Class"
+        returnValueUuid: "uuid1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "member"
+      modelFingerprint: "0422C2DD413C463F53C0A846A3A9C8EE"
+      index: 3
+      ignored: false
+      valueUuid: "toString_member1"
+      methodExercised:
+        target: "member"
+        name: "getDeclaringClass"
+        parameters: []
+        signature: "getDeclaringClass(): Class"
+        returnValueUuid: "toString_class2"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "member"
+      modelFingerprint: "2E07C141387D742243B37C61E217AD2E"
+      index: 4
+      ignored: false
+      valueUuid: "toString_member1"
+      methodExercised:
+        target: "member"
+        name: "getName"
+        parameters: []
+        signature: "getName(): String"
+        returnValueUuid: "toString_string2"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "C1039B9EE6784D31864EAD74734F3D20"
+      index: 5
+      ignored: false
+      valueUuid: "toString_string3"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "20a5ac5b-5555-3c81-9a97-80f4acc9e8f9"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Member"
+      uuid: "toString_member1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.util.Classes"
+      uuid: "uuid2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.reflect.Method"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.reflect.Method"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Member"
+      uuid: "toString_member1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Member"
+      uuid: "toString_member1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      suggestedContent: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "toString_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Member"
+      uuid: "toString_member1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      suggestedContent: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "toString_string2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.lang.Object.A()"
+      suggestedContent: !<regular>
+        value: "java.lang.Object.A()"
+      valueType: "java.lang.String"
+      uuid: "toString_string3"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "toStringWhenMemberTypeEqualsField"
+    filledByUser: false
+    modelFingerprint: "17AED4CF19E52BAB30ED2739679FED06"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "member"
+      modelFingerprint: "90AB8D75AB83F127CF1B907C8C177A12"
+      index: 1
+      ignored: false
+      valueUuid: "toString_member1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Classes"
+      modelFingerprint: "E3146FC5BAB9AB3F7148E29BEC702BDA"
+      index: 2
+      ignored: false
+      valueUuid: "uuid2"
+      methodExercised:
+        target: "com.google.inject.internal.util.Classes"
+        name: "memberType"
+        parameters:
+        - name: "member"
+          valueUuid: "toString_member1"
+        signature: "memberType(Member): Class"
+        returnValueUuid: "uuid1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "member"
+      modelFingerprint: "0422C2DD413C463F53C0A846A3A9C8EE"
+      index: 3
+      ignored: false
+      valueUuid: "toString_member1"
+      methodExercised:
+        target: "member"
+        name: "getDeclaringClass"
+        parameters: []
+        signature: "getDeclaringClass(): Class"
+        returnValueUuid: "toString_class2"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "member"
+      modelFingerprint: "2E07C141387D742243B37C61E217AD2E"
+      index: 4
+      ignored: false
+      valueUuid: "toString_member1"
+      methodExercised:
+        target: "member"
+        name: "getName"
+        parameters: []
+        signature: "getName(): String"
+        returnValueUuid: "toString_string2"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "28811EF53043B9D052028AF83284C295"
+      index: 5
+      ignored: false
+      valueUuid: "toString_string3"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ab921e6d-1594-3cb9-8ace-e81742e97110"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Member"
+      uuid: "toString_member1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.util.Classes"
+      uuid: "uuid2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.reflect.Field"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.reflect.Field"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Member"
+      uuid: "toString_member1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Member"
+      uuid: "toString_member1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      suggestedContent: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "toString_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Member"
+      uuid: "toString_member1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      suggestedContent: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "toString_string2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.lang.Object.A"
+      suggestedContent: !<regular>
+        value: "java.lang.Object.A"
+      valueType: "java.lang.String"
+      uuid: "toString_string3"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path3"
+    testPathName: "toStringWhenMemberTypeEqualsConstructor"
+    filledByUser: false
+    modelFingerprint: "48CA8ACB77912725EA2F857CC0A297A5"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "member"
+      modelFingerprint: "90AB8D75AB83F127CF1B907C8C177A12"
+      index: 1
+      ignored: false
+      valueUuid: "toString_member1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Classes"
+      modelFingerprint: "2C705897A6526E7A3D3A60B06AE4BD89"
+      index: 2
+      ignored: false
+      valueUuid: "uuid2"
+      methodExercised:
+        target: "com.google.inject.internal.util.Classes"
+        name: "memberType"
+        parameters:
+        - name: "member"
+          valueUuid: "toString_member1"
+        signature: "memberType(Member): Class"
+        returnValueUuid: "uuid1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "member"
+      modelFingerprint: "0422C2DD413C463F53C0A846A3A9C8EE"
+      index: 3
+      ignored: false
+      valueUuid: "toString_member1"
+      methodExercised:
+        target: "member"
+        name: "getDeclaringClass"
+        parameters: []
+        signature: "getDeclaringClass(): Class"
+        returnValueUuid: "toString_class2"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "DB91BCCB358DB05CB2898ECE1B0DB9A2"
+      index: 4
+      ignored: false
+      valueUuid: "toString_string2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ad90d513-5068-3d49-a3a5-26ac1083b78d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Member"
+      uuid: "toString_member1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.util.Classes"
+      uuid: "uuid2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.reflect.Constructor"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.reflect.Constructor"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Member"
+      uuid: "toString_member1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Member"
+      uuid: "toString_member1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      suggestedContent: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "toString_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.lang.Object.<init>()"
+      suggestedContent: !<regular>
+        value: "java.lang.Object.<init>()"
+      valueType: "java.lang.String"
+      uuid: "toString_string2"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path4"
+    testPathName: "toStringWhenMemberTypeNotEqualsConstructorThrowsAssertionError"
+    filledByUser: false
+    modelFingerprint: "771EA16E3309E0A068EC197DA6003AED"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "member"
+      modelFingerprint: "534AC238215716FE04D3C50CF97F9770"
+      index: 1
+      ignored: false
+      valueUuid: "toString_member1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Classes"
+      modelFingerprint: "0F8A731361A72F0F1A09B424D0FE449E"
+      index: 2
+      ignored: false
+      valueUuid: "uuid11"
+      methodExercised:
+        target: "com.google.inject.internal.util.Classes"
+        name: "memberType"
+        parameters:
+        - name: "member"
+          valueUuid: "toString_member1"
+        signature: "memberType(Member): Class"
+        returnValueUuid: "toString_class1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "99D87EA92C04D3F0C8C769F152216C7C"
+      index: 3
+      ignored: false
+      valueUuid: "toString_assertionError1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ad26e415-b1f0-3df3-8bc9-cb373428e225"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Member"
+      uuid: "toString_member1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.util.Classes"
+      uuid: "uuid11"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? extends java.lang.reflect.Member"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.reflect.Member"
+      uuid: "toString_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Member"
+      uuid: "toString_member1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.AssertionError"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "java.lang.AssertionError"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "java.lang.AssertionError"
+      uuid: "toString_assertionError1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "memberType"
+    signature: "memberType(java.lang.reflect.Member) : java.lang.Class<? extends java.lang.reflect.Member>"
+    instructionFingerprint: "E1E35D6FA856C26E8535B7547FD2E4FF"
+  paths:
+  - pathId: "path1"
+    testPathName: "memberTypeWhenMemberNotInstanceOfConstructorThrowsIllegalArgumentException"
+    filledByUser: false
+    modelFingerprint: "E0660AD0656F6B9FCCC4A427AFA1CE02"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "member"
+      modelFingerprint: "534AC238215716FE04D3C50CF97F9770"
+      index: 1
+      ignored: false
+      valueUuid: "memberType_member1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "25E8E9BB65ACA7BA66E663D4E92A1D13"
+      index: 2
+      ignored: false
+      valueUuid: "memberType_illegalArgumentException1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ecc29db4-bf9f-3556-9c53-c92ab1bb6065"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkNotNull(java.lang.reflect.Member,java.lang.String)\
+        \ : java.lang.reflect.Member"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Member"
+      uuid: "memberType_member1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Unsupported implementation class for Member, "
+            suggestedContent: !<regular>
+              value: "Unsupported implementation class for Member, "
+            valueType: "java.lang.String"
+            uuid: "memberType_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            suggestedContent: !<regular>
+              value: "Unsupported implementation class for Member, "
+            valueType: "java.lang.String"
+            uuid: "memberType_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "memberType_illegalArgumentException1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false

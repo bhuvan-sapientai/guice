@@ -1,0 +1,3005 @@
+---
+modelFingerprint: "148CE41680AA4283A089AC947E8E2AAA"
+methods:
+- method:
+    name: "getSuggestions"
+    signature: "getSuggestions(com.google.inject.Key<java.lang.Object>,com.google.inject.Injector)\
+      \ : com.google.common.collect.ImmutableList<java.lang.String>"
+    instructionFingerprint: "193B949129CF9A29E7C4ECB6EF060211"
+  paths:
+  - pathId: "path9"
+    testPathName: "getSuggestionsWhenSameTypesNotIsEmpty"
+    filledByUser: false
+    modelFingerprint: "9DE0A56F042165B37F961882FBCF426C"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "19f9d638-e6eb-3ce7-875c-da98d9b0108c"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path18"
+    testPathName: "getSuggestionsWhenRemainingNotGreaterThan0AndSameTypesNotIsEmpty"
+    filledByUser: false
+    modelFingerprint: "DDFE5317D60E918C6412F170ED10754B"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "f1043f8b-ee8e-39be-a019-7dcfc8b35434"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path28"
+    testPathName: "getSuggestionsWhenPossibleMatchesIsEmptyAndSameTypesNotIsEmpty"
+    filledByUser: false
+    modelFingerprint: "87FCCA2D451FB2EDE4F4A05A9719F69B"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "c7162a44-ec66-3c13-bd35-caca597c06a3"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path29"
+    testPathName: "getSuggestionsWhenBindingMapKeySetIsEmptyAndPossibleMatchesIsEmptyAndSameTypesNotIsEmpty"
+    filledByUser: false
+    modelFingerprint: "4E1765ED9D0EC8E4AA85E42B63E8C7D7"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "46BA4583E7CE21C5C64B3A9C358235DB"
+      index: 1
+      ignored: false
+      valueUuid: "getSuggestions_key1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "injector"
+      modelFingerprint: "0E2A369685575AD872F0E0AD10275946"
+      index: 2
+      ignored: false
+      valueUuid: "getSuggestions_injector1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "key"
+      modelFingerprint: "EB894A761877A5B9D433D6DECA0E80A3"
+      index: 3
+      ignored: false
+      valueUuid: "getSuggestions_key1"
+      methodExercised:
+        target: "key"
+        name: "getTypeLiteral"
+        parameters: []
+        signature: "getTypeLiteral(): TypeLiteral"
+        returnValueUuid: "getSuggestions_typeLiteral1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BindingSourceRestriction"
+      modelFingerprint: "C2311848A07FA967F355A71A34F242EC"
+      index: 4
+      ignored: false
+      valueUuid: "uuid7"
+      methodExercised:
+        target: "com.google.inject.spi.BindingSourceRestriction"
+        name: "getMissingImplementationSuggestion"
+        parameters:
+        - name: "guiceInternal"
+          valueUuid: "getSuggestions_guiceInternal1"
+        - name: "key"
+          valueUuid: "getSuggestions_key1"
+        signature: "getMissingImplementationSuggestion(GuiceInternal,Key): Optional"
+        returnValueUuid: "getSuggestions_optional1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "injector"
+      modelFingerprint: "EFD49F4290A6D3A7DBF60DAAC3C4042C"
+      index: 5
+      ignored: false
+      valueUuid: "getSuggestions_injector1"
+      methodExercised:
+        target: "injector"
+        name: "findBindingsByType"
+        parameters:
+        - name: "type"
+          valueUuid: "getSuggestions_typeLiteral1"
+        signature: "findBindingsByType(TypeLiteral): List"
+        returnValueUuid: "getSuggestions_list1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "injector"
+      modelFingerprint: "9BA7B9067037BCE65E5E58BA4D224078"
+      index: 6
+      ignored: false
+      valueUuid: "getSuggestions_injector1"
+      methodExercised:
+        target: "injector"
+        name: "getAllBindings"
+        parameters: []
+        signature: "getAllBindings(): Map"
+        returnValueUuid: "getSuggestions_map1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "36B4C4B79DF4DC6ACEE4D1D30828A394"
+      index: 7
+      ignored: false
+      valueUuid: "getSuggestions_immutableList1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "501fefcb-00a0-3901-b107-337ab0730877"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Injector"
+      uuid: "getSuggestions_injector1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_typeLiteral1"
+      fixed: false
+      nameForMock: "getSuggestions_typeLiteral1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.BindingSourceRestriction"
+      uuid: "uuid7"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OPTIONAL"
+      content: !<optional>
+        value:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getMissingImplementationSuggestionOptional1"
+          valueType: "java.lang.String"
+          uuid: "getSuggestions_string1"
+          fixed: false
+          collectionUuid: "getSuggestions_optional1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        target: "java.util.Optional"
+      valueType: "java.util.Optional"
+      genericValueType: "java.lang.String"
+      uuid: "getSuggestions_optional1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_field_return>
+        target: "com.google.inject.internal.GuiceInternal"
+        fieldName: "GUICE_INTERNAL"
+      suggestedContent: !<static_field_return>
+        target: "com.google.inject.internal.GuiceInternal"
+        fieldName: "GUICE_INTERNAL"
+      valueType: "com.google.inject.internal.GuiceInternal"
+      uuid: "getSuggestions_guiceInternal1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Injector"
+      uuid: "getSuggestions_injector1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "MOCK"
+          valueType: "com.google.inject.spi.UntargettedBinding"
+          uuid: "getSuggestions_binding1"
+          fixed: false
+          collectionUuid: "getSuggestions_list1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      suggestedContent: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "MOCK"
+          valueType: "com.google.inject.spi.UntargettedBinding"
+          uuid: "getSuggestions_binding1"
+          fixed: false
+          collectionUuid: "getSuggestions_list1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      valueType: "java.util.List"
+      genericValueType: "com.google.inject.Binding<java.lang.Object>"
+      uuid: "getSuggestions_list1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_typeLiteral1"
+      fixed: false
+      nameForMock: "getSuggestions_typeLiteral1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Injector"
+      uuid: "getSuggestions_injector1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      suggestedContent: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Map"
+      genericValueType: "com.google.inject.Key<?>,com.google.inject.Binding<?>"
+      uuid: "getSuggestions_map1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<builder>
+        target: "com.google.common.collect.ImmutableList"
+        setterMap: {}
+      suggestedContent: !<builder>
+        target: "com.google.common.collect.ImmutableList"
+        setterMap: {}
+      valueType: "com.google.common.collect.ImmutableList"
+      genericValueType: "java.lang.String"
+      uuid: "getSuggestions_immutableList1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path3"
+    testPathName: "getSuggestionsWhenRemainingEquals1AndSameTypesNotIsEmpty"
+    filledByUser: false
+    modelFingerprint: "340FD60BC1CB2201E75841510D5A2D39"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "9846e4c1-dfcf-3e65-947f-60986ab3b992"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path6"
+    testPathName: "getSuggestionsWhenRemainingNotEquals1AndSameTypesNotIsEmpty"
+    filledByUser: false
+    modelFingerprint: "BAA2490E1D4861493C0198AAF1900ED9"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "ce16c6ad-c8b9-3fe4-b381-94c0694415a8"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path12"
+    testPathName: "getSuggestionsWhenRemainingGreaterThan0AndRemainingEquals1AndSameTypesNotIsEmpty"
+    filledByUser: false
+    modelFingerprint: "115BA52BB7404C5294CC051FA6993A93"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "863cb519-8877-3a32-9e4c-6492bd442683"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path15"
+    testPathName: "getSuggestionsWhenRemainingGreaterThan0AndRemainingNotEquals1AndSameTypesNotIsEmpty"
+    filledByUser: false
+    modelFingerprint: "5AC4FEFFB6E6E9109FD25725010CC6F9"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "4349e2d1-8fb9-36ca-8945-cf0550b8efe3"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path21"
+    testPathName: "getSuggestionsWhenBindingInstanceOfUntargettedBindingAndPossibleMatchesIsEmptyAndSameTypesNotIsEmpty"
+    filledByUser: false
+    modelFingerprint: "A00B50627C65DBBCA85D57B644DF6508"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "09b9bc7b-b5d4-301a-9293-159091d43dd4"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path8"
+    testPathName: "getSuggestionsWhenKeyGetAnnotationTypeIsNotNull"
+    filledByUser: false
+    modelFingerprint: "703237ECC265C2E16E94198E00D1C9D2"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "d0ea0e9a-f180-3401-9137-0f0db32547d9"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path17"
+    testPathName: "getSuggestionsWhenPossibleMatchesIsEmptyAndKeyGetAnnotationTypeIsNotNull"
+    filledByUser: false
+    modelFingerprint: "90A2E68B71B1D7AE9ADD45ACBFF4361F"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "bdd2cf6b-921c-37b7-8d06-630cf14a06fb"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path27"
+    testPathName: "getSuggestionsWhenSameTypesIsEmptyAndPossibleMatchesIsEmptyAndKeyGetAnnotationTypeIsNotNull"
+    filledByUser: false
+    modelFingerprint: "07C7EB1AE628BF059DC5451E882A0E85"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "3d6ee84e-e17c-3528-897c-a15d95bd545a"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path2"
+    testPathName: "getSuggestionsWhenRemainingEquals1AndSameTypesIsEmptyAndPossibleMatchesIsEmptyAndKeyGetAnnotationTypeIsNotNull"
+    filledByUser: false
+    modelFingerprint: "3130F04ED36303A04C17ED9F47B237AF"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "a1efb72d-5a32-3488-a454-db734f256465"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path5"
+    testPathName: "getSuggestionsWhenRemainingNotEquals1AndSameTypesIsEmptyAndPossibleMatchesIsEmptyAndKeyGetAnnotationTypeIsNotNull"
+    filledByUser: false
+    modelFingerprint: "57FF0634CF2D03525E40644AB2396161"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "1d4d61f7-e632-3f27-a5ee-182133ecf742"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path7"
+    testPathName: "getSuggestionsWhenCOMMON_AMBIGUOUS_TYPESContainsKeyGetTypeLiteralGetRawType"
+    filledByUser: false
+    modelFingerprint: "FE33F2E674120EA75524CA5CD87DF71A"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "af945954-fe6d-3596-bc30-a6b60823b5df"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path11"
+    testPathName: "getSuggestionsWhenRemainingGreaterThan0AndRemainingEquals1AndSameTypesIsEmptyAndPossibleMatchesIsEmptyAndKeyGetAnnotati"
+    filledByUser: false
+    modelFingerprint: "438B88D1D21E628EF0338AF9FDF17E56"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "56c18865-414b-3b26-af10-4f74c07fccbc"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path14"
+    testPathName: "getSuggestionsWhenRemainingGreaterThan0AndRemainingNotEquals1AndSameTypesIsEmptyAndPossibleMatchesIsEmptyAndKeyGetAnnot"
+    filledByUser: false
+    modelFingerprint: "10B3999DCE78779C3A12476A0846450B"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "92979385-9498-3cb7-a576-b2ab388b974e"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path16"
+    testPathName: "getSuggestionsWhenKeyGetAnnotationTypeIsNullAndCOMMON_AMBIGUOUS_TYPESContainsKeyGetTypeLiteralGetRawType"
+    filledByUser: false
+    modelFingerprint: "B77CD7FDB9F8E69A68522F21FC285D2A"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "8cd36351-376f-38f5-83db-a940d6ce75ed"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path20"
+    testPathName: "getSuggestionsWhenPossibleMatchesIsEmptyAndSameTypesIsEmptyAndPossibleMatchesIsEmptyAndKeyGetAnnotationTypeIsNotNull"
+    filledByUser: false
+    modelFingerprint: "10E182ABDD6B9BB1C7508B842688281D"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "58cfff3b-a20f-3c85-bdd3-36c5d9cfd244"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path25"
+    testPathName: "getSuggestionsWhenWantNotContainsHaveAndPossibleMatchesIsEmptyAndSameTypesNotIsEmpty"
+    filledByUser: false
+    modelFingerprint: "15D0C8D9AFE0D4A3E4C62A443852BA83"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "126b7cd1-3105-36ae-98bd-6b206654c49c"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path26"
+    testPathName: "getSuggestionsWhenPossibleMatchesIsEmptyAndKeyGetAnnotationTypeIsNullAndCOMMON_AMBIGUOUS_TYPESContainsKeyGetTypeLiteral"
+    filledByUser: false
+    modelFingerprint: "BDB3179505E6AA399FAB86693FD725B9"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "9a1de39e-0f8c-3a6a-8ead-5558a1396519"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path1"
+    testPathName: "getSuggestionsWhenKeyGetAnnotationTypeIsNullAndCOMMON_AMBIGUOUS_TYPESContainsKeyGetTypeLiteralGetRawType2"
+    filledByUser: false
+    modelFingerprint: "09F49A13000E60AA6486E646D20F7940"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "46BA4583E7CE21C5C64B3A9C358235DB"
+      index: 1
+      ignored: false
+      valueUuid: "getSuggestions_key1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "injector"
+      modelFingerprint: "0E2A369685575AD872F0E0AD10275946"
+      index: 2
+      ignored: false
+      valueUuid: "getSuggestions_injector1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "key"
+      modelFingerprint: "9A613CCF6E81FD7F8CCE21BB2A6DD216"
+      index: 3
+      ignored: false
+      valueUuid: "getSuggestions_key1"
+      methodExercised:
+        target: "key"
+        name: "getTypeLiteral"
+        parameters: []
+        signature: "getTypeLiteral(): TypeLiteral"
+        returnValueUuid: "getSuggestions_typeLiteral1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BindingSourceRestriction"
+      modelFingerprint: "C2311848A07FA967F355A71A34F242EC"
+      index: 4
+      ignored: false
+      valueUuid: "uuid59"
+      methodExercised:
+        target: "com.google.inject.spi.BindingSourceRestriction"
+        name: "getMissingImplementationSuggestion"
+        parameters:
+        - name: "guiceInternal"
+          valueUuid: "getSuggestions_guiceInternal1"
+        - name: "key"
+          valueUuid: "getSuggestions_key1"
+        signature: "getMissingImplementationSuggestion(GuiceInternal,Key): Optional"
+        returnValueUuid: "getSuggestions_optional1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "injector"
+      modelFingerprint: "142D9BC34217DD86D92EECB920D05BB4"
+      index: 5
+      ignored: false
+      valueUuid: "getSuggestions_injector1"
+      methodExercised:
+        target: "injector"
+        name: "findBindingsByType"
+        parameters:
+        - name: "type"
+          valueUuid: "getSuggestions_typeLiteral1"
+        signature: "findBindingsByType(TypeLiteral): List"
+        returnValueUuid: "getSuggestions_list1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "6FA7FC6CBF8BA3E93E8121930F69DC38"
+      index: 6
+      ignored: false
+      valueUuid: "getSuggestions_object2"
+      methodExercised:
+        target: "com.google.inject.Binding"
+        name: "getKey"
+        parameters: []
+        signature: "getKey(): Key"
+        returnValueUuid: "getSuggestions_key2"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "injector"
+      modelFingerprint: "C47CCFAD664533718DED1CF0F9AFBED8"
+      index: 7
+      ignored: false
+      valueUuid: "getSuggestions_injector1"
+      methodExercised:
+        target: "injector"
+        name: "getExistingBinding"
+        parameters:
+        - name: "key"
+          valueUuid: "getSuggestions_key2"
+        signature: "getExistingBinding(Key): Binding"
+        returnValueUuid: "getSuggestions_binding2"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "85D39C140CABE91475DA603032A9FC64"
+      index: 8
+      ignored: false
+      valueUuid: "uuid60"
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "convert"
+        parameters:
+        - name: "o"
+          valueUuid: "getSuggestions_key2"
+        signature: "convert(Key): Object"
+        returnValueUuid: "formatSuggestion_object1"
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binding"
+      modelFingerprint: "A6B59AA887330C485A286D12BB5C33A0"
+      index: 9
+      ignored: false
+      valueUuid: "getSuggestions_binding2"
+      methodExercised:
+        target: "binding"
+        name: "getSource"
+        parameters: []
+        signature: "getSource(): Object"
+        returnValueUuid: "formatSuggestion_object2"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "21FC7836EB58959F768D23DCF9F2A662"
+      index: 10
+      ignored: false
+      valueUuid: "formatSuggestion_sourceFormatter1"
+      methodExercised:
+        target: "com.google.inject.internal.SourceFormatter"
+        name: "format"
+        parameters: []
+        signature: "format(): void"
+        returnValueUuid: "formatSuggestion_void1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "3F1AA800E635BD1EBC3B4DB9CF8186DE"
+      index: 11
+      ignored: false
+      valueUuid: "uuid62"
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "format"
+        parameters:
+        - name: "messageFormat"
+          valueUuid: "uuid61"
+        - name: "arguments"
+          valueUuid: "getSuggestions_object[]1"
+        signature: "format(String,Object[]): String"
+        returnValueUuid: "getSuggestions_string2"
+        access: 137
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "0D01A4EC377CB7D701E6A9D831C57A9C"
+      index: 12
+      ignored: false
+      valueUuid: "uuid64"
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "format"
+        parameters:
+        - name: "messageFormat"
+          valueUuid: "uuid63"
+        - name: "arguments"
+          valueUuid: "getSuggestions_object[]2"
+        signature: "format(String,Object[]): String"
+        returnValueUuid: "getSuggestions_string4"
+        access: 137
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "key"
+      modelFingerprint: "6B48096927FF72CA598909ED7CDA4CC0"
+      index: 13
+      ignored: false
+      valueUuid: "getSuggestions_key1"
+      methodExercised:
+        target: "key"
+        name: "getAnnotationType"
+        parameters: []
+        signature: "getAnnotationType(): Class"
+        returnValueUuid: "getSuggestions_class1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "key"
+      modelFingerprint: "4F2B3E4D53CEBB957AFAEFB812749EC0"
+      index: 14
+      ignored: false
+      valueUuid: "getSuggestions_key1"
+      methodExercised:
+        target: "key"
+        name: "getTypeLiteral"
+        parameters: []
+        signature: "getTypeLiteral(): TypeLiteral"
+        returnValueUuid: "getSuggestions_typeLiteral2"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "DC900DE8AA4252A5BBE131DABFA6A7F5"
+      index: 15
+      ignored: false
+      valueUuid: "getSuggestions_typeLiteral2"
+      methodExercised:
+        target: "com.google.inject.TypeLiteral"
+        name: "getRawType"
+        parameters: []
+        signature: "getRawType(): Class"
+        returnValueUuid: "getSuggestions_class2"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "36B4C4B79DF4DC6ACEE4D1D30828A394"
+      index: 16
+      ignored: false
+      valueUuid: "getSuggestions_immutableList1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "34990025-d83f-313c-ad78-80f0c9de1667"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Injector"
+      uuid: "getSuggestions_injector1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.BindingSourceRestriction"
+      uuid: "uuid59"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OPTIONAL"
+      content: !<optional>
+        value:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getMissingImplementationSuggestionOptional1"
+          valueType: "java.lang.String"
+          uuid: "getSuggestions_string1"
+          fixed: false
+          collectionUuid: "getSuggestions_optional1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        target: "java.util.Optional"
+      valueType: "java.util.Optional"
+      genericValueType: "java.lang.String"
+      uuid: "getSuggestions_optional1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_field_return>
+        target: "com.google.inject.internal.GuiceInternal"
+        fieldName: "GUICE_INTERNAL"
+      suggestedContent: !<static_field_return>
+        target: "com.google.inject.internal.GuiceInternal"
+        fieldName: "GUICE_INTERNAL"
+      valueType: "com.google.inject.internal.GuiceInternal"
+      uuid: "getSuggestions_guiceInternal1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Injector"
+      uuid: "getSuggestions_injector1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "MOCK"
+          valueType: "com.google.inject.Binding"
+          genericValueType: "java.lang.Object"
+          uuid: "getSuggestions_binding1"
+          fixed: false
+          collectionUuid: "getSuggestions_list1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      suggestedContent: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "MOCK"
+          valueType: "com.google.inject.Binding"
+          genericValueType: "java.lang.Object"
+          uuid: "getSuggestions_binding1"
+          fixed: false
+          collectionUuid: "getSuggestions_list1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      valueType: "java.util.List"
+      genericValueType: "com.google.inject.Binding<java.lang.Object>"
+      uuid: "getSuggestions_list1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binding"
+      uuid: "getSuggestions_object2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      uuid: "getSuggestions_key2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Injector"
+      uuid: "getSuggestions_injector1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binding"
+      uuid: "getSuggestions_binding2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      uuid: "getSuggestions_key2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Messages"
+      uuid: "uuid60"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "formatSuggestion_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      uuid: "getSuggestions_key2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binding"
+      uuid: "getSuggestions_binding2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "formatSuggestion_object2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.SourceFormatter"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "formatSuggestion_object2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "formatter"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.Formatter"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "java.util.Formatter"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "java.util.Formatter"
+            uuid: "formatSuggestion_formatter1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "omitPreposition"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.SourceFormatter"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "formatSuggestion_object2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "formatter"
+          value:
+            sapientType: "OBJECT"
+            suggestedContent: !<new>
+              target: "java.util.Formatter"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "java.util.Formatter"
+            uuid: "formatSuggestion_formatter1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "omitPreposition"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.internal.SourceFormatter"
+      uuid: "formatSuggestion_sourceFormatter1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "formatSuggestion_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Messages"
+      uuid: "uuid62"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n    * "
+      valueType: "java.lang.String"
+      uuid: "getSuggestions_string2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n    * %s"
+      valueType: "java.lang.String"
+      uuid: "uuid61"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ""
+            valueType: "java.lang.String"
+            uuid: "formatSuggestion_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ""
+            valueType: "java.lang.String"
+            uuid: "formatSuggestion_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "java.lang.Object[]"
+      uuid: "getSuggestions_object[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Messages"
+      uuid: "uuid64"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_format1"
+      valueType: "java.lang.String"
+      uuid: "getSuggestions_string4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n    * %d more binding%s with other annotations."
+      valueType: "java.lang.String"
+      uuid: "uuid63"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            suggestedContent: !<regular>
+              value: 1
+            valueType: "java.lang.Integer"
+            uuid: "getSuggestions_integer1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          1:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ""
+            valueType: "java.lang.String"
+            uuid: "getSuggestions_string3"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 1
+            suggestedContent: !<regular>
+              value: 1
+            valueType: "java.lang.Integer"
+            uuid: "getSuggestions_integer1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          1:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ""
+            valueType: "java.lang.String"
+            uuid: "getSuggestions_string3"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "java.lang.Object[]"
+      uuid: "getSuggestions_object[]2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.annotation.Annotation"
+      uuid: "getSuggestions_class1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      uuid: "getSuggestions_typeLiteral2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      uuid: "getSuggestions_typeLiteral2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? super java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "? super java.lang.Object"
+      uuid: "getSuggestions_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<builder>
+        target: "com.google.common.collect.ImmutableList"
+        setterMap: {}
+      suggestedContent: !<builder>
+        target: "com.google.common.collect.ImmutableList"
+        setterMap: {}
+      valueType: "com.google.common.collect.ImmutableList"
+      genericValueType: "java.lang.String"
+      uuid: "getSuggestions_immutableList1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path4"
+    testPathName: "getSuggestionsWhenKeyGetAnnotationTypeIsNullAndCOMMON_AMBIGUOUS_TYPESContainsKeyGetTypeLiteralGetRawType3"
+    filledByUser: false
+    modelFingerprint: "530F0EE5CF7DDD9DC1EF374C19014000"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "46BA4583E7CE21C5C64B3A9C358235DB"
+      index: 1
+      ignored: false
+      valueUuid: "getSuggestions_key1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "injector"
+      modelFingerprint: "0E2A369685575AD872F0E0AD10275946"
+      index: 2
+      ignored: false
+      valueUuid: "getSuggestions_injector1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "key"
+      modelFingerprint: "9A613CCF6E81FD7F8CCE21BB2A6DD216"
+      index: 3
+      ignored: false
+      valueUuid: "getSuggestions_key1"
+      methodExercised:
+        target: "key"
+        name: "getTypeLiteral"
+        parameters: []
+        signature: "getTypeLiteral(): TypeLiteral"
+        returnValueUuid: "getSuggestions_typeLiteral1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BindingSourceRestriction"
+      modelFingerprint: "C2311848A07FA967F355A71A34F242EC"
+      index: 4
+      ignored: false
+      valueUuid: "uuid65"
+      methodExercised:
+        target: "com.google.inject.spi.BindingSourceRestriction"
+        name: "getMissingImplementationSuggestion"
+        parameters:
+        - name: "guiceInternal"
+          valueUuid: "getSuggestions_guiceInternal1"
+        - name: "key"
+          valueUuid: "getSuggestions_key1"
+        signature: "getMissingImplementationSuggestion(GuiceInternal,Key): Optional"
+        returnValueUuid: "getSuggestions_optional1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "injector"
+      modelFingerprint: "142D9BC34217DD86D92EECB920D05BB4"
+      index: 5
+      ignored: false
+      valueUuid: "getSuggestions_injector1"
+      methodExercised:
+        target: "injector"
+        name: "findBindingsByType"
+        parameters:
+        - name: "type"
+          valueUuid: "getSuggestions_typeLiteral1"
+        signature: "findBindingsByType(TypeLiteral): List"
+        returnValueUuid: "getSuggestions_list1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "6FA7FC6CBF8BA3E93E8121930F69DC38"
+      index: 6
+      ignored: false
+      valueUuid: "getSuggestions_object2"
+      methodExercised:
+        target: "com.google.inject.Binding"
+        name: "getKey"
+        parameters: []
+        signature: "getKey(): Key"
+        returnValueUuid: "getSuggestions_key2"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "injector"
+      modelFingerprint: "C47CCFAD664533718DED1CF0F9AFBED8"
+      index: 7
+      ignored: false
+      valueUuid: "getSuggestions_injector1"
+      methodExercised:
+        target: "injector"
+        name: "getExistingBinding"
+        parameters:
+        - name: "key"
+          valueUuid: "getSuggestions_key2"
+        signature: "getExistingBinding(Key): Binding"
+        returnValueUuid: "getSuggestions_binding2"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "85D39C140CABE91475DA603032A9FC64"
+      index: 8
+      ignored: false
+      valueUuid: "uuid66"
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "convert"
+        parameters:
+        - name: "o"
+          valueUuid: "getSuggestions_key2"
+        signature: "convert(Key): Object"
+        returnValueUuid: "formatSuggestion_object1"
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binding"
+      modelFingerprint: "A6B59AA887330C485A286D12BB5C33A0"
+      index: 9
+      ignored: false
+      valueUuid: "getSuggestions_binding2"
+      methodExercised:
+        target: "binding"
+        name: "getSource"
+        parameters: []
+        signature: "getSource(): Object"
+        returnValueUuid: "formatSuggestion_object2"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "21FC7836EB58959F768D23DCF9F2A662"
+      index: 10
+      ignored: false
+      valueUuid: "formatSuggestion_sourceFormatter1"
+      methodExercised:
+        target: "com.google.inject.internal.SourceFormatter"
+        name: "format"
+        parameters: []
+        signature: "format(): void"
+        returnValueUuid: "formatSuggestion_void1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "3F1AA800E635BD1EBC3B4DB9CF8186DE"
+      index: 11
+      ignored: false
+      valueUuid: "uuid68"
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "format"
+        parameters:
+        - name: "messageFormat"
+          valueUuid: "uuid67"
+        - name: "arguments"
+          valueUuid: "getSuggestions_object[]1"
+        signature: "format(String,Object[]): String"
+        returnValueUuid: "getSuggestions_string2"
+        access: 137
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "EBA7D665B847E579147A0E8B7B211EC1"
+      index: 12
+      ignored: false
+      valueUuid: "uuid70"
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "format"
+        parameters:
+        - name: "messageFormat"
+          valueUuid: "uuid69"
+        - name: "arguments"
+          valueUuid: "getSuggestions_object[]2"
+        signature: "format(String,Object[]): String"
+        returnValueUuid: "getSuggestions_string4"
+        access: 137
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "key"
+      modelFingerprint: "6B48096927FF72CA598909ED7CDA4CC0"
+      index: 13
+      ignored: false
+      valueUuid: "getSuggestions_key1"
+      methodExercised:
+        target: "key"
+        name: "getAnnotationType"
+        parameters: []
+        signature: "getAnnotationType(): Class"
+        returnValueUuid: "getSuggestions_class1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "key"
+      modelFingerprint: "4F2B3E4D53CEBB957AFAEFB812749EC0"
+      index: 14
+      ignored: false
+      valueUuid: "getSuggestions_key1"
+      methodExercised:
+        target: "key"
+        name: "getTypeLiteral"
+        parameters: []
+        signature: "getTypeLiteral(): TypeLiteral"
+        returnValueUuid: "getSuggestions_typeLiteral2"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "DC900DE8AA4252A5BBE131DABFA6A7F5"
+      index: 15
+      ignored: false
+      valueUuid: "getSuggestions_typeLiteral2"
+      methodExercised:
+        target: "com.google.inject.TypeLiteral"
+        name: "getRawType"
+        parameters: []
+        signature: "getRawType(): Class"
+        returnValueUuid: "getSuggestions_class2"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "36B4C4B79DF4DC6ACEE4D1D30828A394"
+      index: 16
+      ignored: false
+      valueUuid: "getSuggestions_immutableList1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d1d73270-45c9-35d5-9a49-a90379cc18f0"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Injector"
+      uuid: "getSuggestions_injector1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.BindingSourceRestriction"
+      uuid: "uuid65"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OPTIONAL"
+      content: !<optional>
+        value:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getMissingImplementationSuggestionOptional1"
+          valueType: "java.lang.String"
+          uuid: "getSuggestions_string1"
+          fixed: false
+          collectionUuid: "getSuggestions_optional1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        target: "java.util.Optional"
+      valueType: "java.util.Optional"
+      genericValueType: "java.lang.String"
+      uuid: "getSuggestions_optional1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_field_return>
+        target: "com.google.inject.internal.GuiceInternal"
+        fieldName: "GUICE_INTERNAL"
+      suggestedContent: !<static_field_return>
+        target: "com.google.inject.internal.GuiceInternal"
+        fieldName: "GUICE_INTERNAL"
+      valueType: "com.google.inject.internal.GuiceInternal"
+      uuid: "getSuggestions_guiceInternal1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Injector"
+      uuid: "getSuggestions_injector1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "MOCK"
+          valueType: "com.google.inject.Binding"
+          genericValueType: "java.lang.Object"
+          uuid: "getSuggestions_binding1"
+          fixed: false
+          collectionUuid: "getSuggestions_list1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      suggestedContent: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "MOCK"
+          valueType: "com.google.inject.Binding"
+          genericValueType: "java.lang.Object"
+          uuid: "getSuggestions_binding1"
+          fixed: false
+          collectionUuid: "getSuggestions_list1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      valueType: "java.util.List"
+      genericValueType: "com.google.inject.Binding<java.lang.Object>"
+      uuid: "getSuggestions_list1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binding"
+      uuid: "getSuggestions_object2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      uuid: "getSuggestions_key2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Injector"
+      uuid: "getSuggestions_injector1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binding"
+      uuid: "getSuggestions_binding2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      uuid: "getSuggestions_key2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Messages"
+      uuid: "uuid66"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "formatSuggestion_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      uuid: "getSuggestions_key2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binding"
+      uuid: "getSuggestions_binding2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "formatSuggestion_object2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.SourceFormatter"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "formatSuggestion_object2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "formatter"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.Formatter"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "java.util.Formatter"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "java.util.Formatter"
+            uuid: "formatSuggestion_formatter1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "omitPreposition"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.SourceFormatter"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "formatSuggestion_object2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "formatter"
+          value:
+            sapientType: "OBJECT"
+            suggestedContent: !<new>
+              target: "java.util.Formatter"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "java.util.Formatter"
+            uuid: "formatSuggestion_formatter1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "omitPreposition"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.internal.SourceFormatter"
+      uuid: "formatSuggestion_sourceFormatter1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "formatSuggestion_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Messages"
+      uuid: "uuid68"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n    * "
+      valueType: "java.lang.String"
+      uuid: "getSuggestions_string2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n    * %s"
+      valueType: "java.lang.String"
+      uuid: "uuid67"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ""
+            valueType: "java.lang.String"
+            uuid: "formatSuggestion_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ""
+            valueType: "java.lang.String"
+            uuid: "formatSuggestion_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "java.lang.Object[]"
+      uuid: "getSuggestions_object[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Messages"
+      uuid: "uuid70"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_format1"
+      valueType: "java.lang.String"
+      uuid: "getSuggestions_string4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n    * %d more binding%s with other annotations."
+      valueType: "java.lang.String"
+      uuid: "uuid69"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 2
+            suggestedContent: !<regular>
+              value: 2
+            valueType: "java.lang.Integer"
+            uuid: "getSuggestions_integer1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          1:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "s"
+            valueType: "java.lang.String"
+            uuid: "getSuggestions_string3"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 2
+            suggestedContent: !<regular>
+              value: 2
+            valueType: "java.lang.Integer"
+            uuid: "getSuggestions_integer1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          1:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "s"
+            valueType: "java.lang.String"
+            uuid: "getSuggestions_string3"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "java.lang.Object[]"
+      uuid: "getSuggestions_object[]2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.annotation.Annotation"
+      uuid: "getSuggestions_class1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      uuid: "getSuggestions_typeLiteral2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      uuid: "getSuggestions_typeLiteral2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? super java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "? super java.lang.Object"
+      uuid: "getSuggestions_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<builder>
+        target: "com.google.common.collect.ImmutableList"
+        setterMap: {}
+      suggestedContent: !<builder>
+        target: "com.google.common.collect.ImmutableList"
+        setterMap: {}
+      valueType: "com.google.common.collect.ImmutableList"
+      genericValueType: "java.lang.String"
+      uuid: "getSuggestions_immutableList1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path10"
+    testPathName: "getSuggestionsWhenKeyGetAnnotationTypeIsNullAndCOMMON_AMBIGUOUS_TYPESContainsKeyGetTypeLiteralGetRawType4"
+    filledByUser: false
+    modelFingerprint: "F51304D3EE0B35211B3F244B0D749377"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "6e8cf40c-ef97-3f6e-ad58-b090b1268f7a"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path13"
+    testPathName: "getSuggestionsWhenKeyGetAnnotationTypeIsNullAndCOMMON_AMBIGUOUS_TYPESContainsKeyGetTypeLiteralGetRawType5"
+    filledByUser: false
+    modelFingerprint: "7F230E88B2F0126C9B28C899DB056146"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "88bba622-811e-36dc-aba7-96a783b7ebdb"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path19"
+    testPathName: "getSuggestionsWhenKeyGetAnnotationTypeIsNullAndCOMMON_AMBIGUOUS_TYPESContainsKeyGetTypeLiteralGetRawType6"
+    filledByUser: false
+    modelFingerprint: "348232059CB4FE1E2EF561387E263A3E"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "46BA4583E7CE21C5C64B3A9C358235DB"
+      index: 1
+      ignored: false
+      valueUuid: "getSuggestions_key1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "injector"
+      modelFingerprint: "0E2A369685575AD872F0E0AD10275946"
+      index: 2
+      ignored: false
+      valueUuid: "getSuggestions_injector1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "key"
+      modelFingerprint: "EB894A761877A5B9D433D6DECA0E80A3"
+      index: 3
+      ignored: false
+      valueUuid: "getSuggestions_key1"
+      methodExercised:
+        target: "key"
+        name: "getTypeLiteral"
+        parameters: []
+        signature: "getTypeLiteral(): TypeLiteral"
+        returnValueUuid: "getSuggestions_typeLiteral1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BindingSourceRestriction"
+      modelFingerprint: "C2311848A07FA967F355A71A34F242EC"
+      index: 4
+      ignored: false
+      valueUuid: "uuid77"
+      methodExercised:
+        target: "com.google.inject.spi.BindingSourceRestriction"
+        name: "getMissingImplementationSuggestion"
+        parameters:
+        - name: "guiceInternal"
+          valueUuid: "getSuggestions_guiceInternal1"
+        - name: "key"
+          valueUuid: "getSuggestions_key1"
+        signature: "getMissingImplementationSuggestion(GuiceInternal,Key): Optional"
+        returnValueUuid: "getSuggestions_optional1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "injector"
+      modelFingerprint: "A1A1B1E3DF3E45ADDCB16979B23CB677"
+      index: 5
+      ignored: false
+      valueUuid: "getSuggestions_injector1"
+      methodExercised:
+        target: "injector"
+        name: "findBindingsByType"
+        parameters:
+        - name: "type"
+          valueUuid: "getSuggestions_typeLiteral1"
+        signature: "findBindingsByType(TypeLiteral): List"
+        returnValueUuid: "getSuggestions_list1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "injector"
+      modelFingerprint: "0F37982650AD5184F429B3960A4DEC31"
+      index: 6
+      ignored: false
+      valueUuid: "getSuggestions_injector1"
+      methodExercised:
+        target: "injector"
+        name: "getAllBindings"
+        parameters: []
+        signature: "getAllBindings(): Map"
+        returnValueUuid: "getSuggestions_map1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "key"
+      modelFingerprint: "6B48096927FF72CA598909ED7CDA4CC0"
+      index: 7
+      ignored: false
+      valueUuid: "getSuggestions_key1"
+      methodExercised:
+        target: "key"
+        name: "getAnnotationType"
+        parameters: []
+        signature: "getAnnotationType(): Class"
+        returnValueUuid: "getSuggestions_class1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "key"
+      modelFingerprint: "4F2B3E4D53CEBB957AFAEFB812749EC0"
+      index: 8
+      ignored: false
+      valueUuid: "getSuggestions_key1"
+      methodExercised:
+        target: "key"
+        name: "getTypeLiteral"
+        parameters: []
+        signature: "getTypeLiteral(): TypeLiteral"
+        returnValueUuid: "getSuggestions_typeLiteral2"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "DC900DE8AA4252A5BBE131DABFA6A7F5"
+      index: 9
+      ignored: false
+      valueUuid: "getSuggestions_typeLiteral2"
+      methodExercised:
+        target: "com.google.inject.TypeLiteral"
+        name: "getRawType"
+        parameters: []
+        signature: "getRawType(): Class"
+        returnValueUuid: "getSuggestions_class2"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "36B4C4B79DF4DC6ACEE4D1D30828A394"
+      index: 10
+      ignored: false
+      valueUuid: "getSuggestions_immutableList1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0f9932ef-ab72-37c1-9212-36ec43bb646b"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Injector"
+      uuid: "getSuggestions_injector1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_typeLiteral1"
+      fixed: false
+      nameForMock: "getSuggestions_typeLiteral1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.BindingSourceRestriction"
+      uuid: "uuid77"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OPTIONAL"
+      content: !<optional>
+        value:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getMissingImplementationSuggestionOptional1"
+          valueType: "java.lang.String"
+          uuid: "getSuggestions_string1"
+          fixed: false
+          collectionUuid: "getSuggestions_optional1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        target: "java.util.Optional"
+      valueType: "java.util.Optional"
+      genericValueType: "java.lang.String"
+      uuid: "getSuggestions_optional1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_field_return>
+        target: "com.google.inject.internal.GuiceInternal"
+        fieldName: "GUICE_INTERNAL"
+      suggestedContent: !<static_field_return>
+        target: "com.google.inject.internal.GuiceInternal"
+        fieldName: "GUICE_INTERNAL"
+      valueType: "com.google.inject.internal.GuiceInternal"
+      uuid: "getSuggestions_guiceInternal1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Injector"
+      uuid: "getSuggestions_injector1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      suggestedContent: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "com.google.inject.Binding<java.lang.Object>"
+      uuid: "getSuggestions_list1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_typeLiteral1"
+      fixed: false
+      nameForMock: "getSuggestions_typeLiteral1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Injector"
+      uuid: "getSuggestions_injector1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.HashMap"
+        parameters: []
+        values:
+        - sapientType: "PAIR"
+          content: !<pair>
+            key:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.Key"
+              genericValueType: "?"
+              uuid: "getSuggestions_object2"
+              fixed: false
+              collectionUuid: "getSuggestions_set1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.spi.UntargettedBinding"
+              uuid: "getSuggestions_binding2"
+              fixed: false
+              collectionUuid: "getSuggestions_map1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          valueType: "java.util.Map$Entry"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      suggestedContent: !<collection>
+        collectionClass: "java.util.HashMap"
+        parameters: []
+        values:
+        - sapientType: "PAIR"
+          content: !<pair>
+            key:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.Key"
+              genericValueType: "?"
+              uuid: "getSuggestions_object2"
+              fixed: false
+              collectionUuid: "getSuggestions_set1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            value:
+              sapientType: "MOCK"
+              valueType: "com.google.inject.spi.UntargettedBinding"
+              uuid: "getSuggestions_binding2"
+              fixed: false
+              collectionUuid: "getSuggestions_map1"
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+          valueType: "java.util.Map$Entry"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      valueType: "java.util.Map"
+      genericValueType: "com.google.inject.Key<?>,com.google.inject.Binding<?>"
+      uuid: "getSuggestions_map1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.annotation.Annotation"
+      uuid: "getSuggestions_class1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      uuid: "getSuggestions_typeLiteral2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      uuid: "getSuggestions_typeLiteral2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? super java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "? super java.lang.Object"
+      uuid: "getSuggestions_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<builder>
+        target: "com.google.common.collect.ImmutableList"
+        setterMap: {}
+      suggestedContent: !<builder>
+        target: "com.google.common.collect.ImmutableList"
+        setterMap: {}
+      valueType: "com.google.common.collect.ImmutableList"
+      genericValueType: "java.lang.String"
+      uuid: "getSuggestions_immutableList1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path24"
+    testPathName: "getSuggestionsWhenWantNotContainsHaveAndPossibleMatchesIsEmptyAndSameTypesIsEmptyAndPossibleMatchesIsEmptyAndKeyGetAnno"
+    filledByUser: false
+    modelFingerprint: "57E449E302C54F90AC8A70D41868BDED"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "bd0ec20c-99fe-3f15-918b-1946a51e58a8"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path23"
+    testPathName: "getSuggestionsWhenKeyGetAnnotationTypeIsNullAndCOMMON_AMBIGUOUS_TYPESContainsKeyGetTypeLiteralGetRawType7"
+    filledByUser: false
+    modelFingerprint: "E7F5B45CDC549A43C9D763ADA9466518"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "67645abf-a741-3d6b-9d43-099607b13884"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path22"
+    testPathName: "getSuggestionsWhenPossibleMatchesNotIsEmpty"
+    filledByUser: false
+    modelFingerprint: "F85E506ADBC85761D4AE44849B6872D8"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "46BA4583E7CE21C5C64B3A9C358235DB"
+      index: 1
+      ignored: false
+      valueUuid: "getSuggestions_key1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "injector"
+      modelFingerprint: "0E2A369685575AD872F0E0AD10275946"
+      index: 2
+      ignored: false
+      valueUuid: "getSuggestions_injector1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "key"
+      modelFingerprint: "EB894A761877A5B9D433D6DECA0E80A3"
+      index: 3
+      ignored: false
+      valueUuid: "getSuggestions_key1"
+      methodExercised:
+        target: "key"
+        name: "getTypeLiteral"
+        parameters: []
+        signature: "getTypeLiteral(): TypeLiteral"
+        returnValueUuid: "getSuggestions_typeLiteral1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "BindingSourceRestriction"
+      modelFingerprint: "C2311848A07FA967F355A71A34F242EC"
+      index: 4
+      ignored: false
+      valueUuid: "uuid80"
+      methodExercised:
+        target: "com.google.inject.spi.BindingSourceRestriction"
+        name: "getMissingImplementationSuggestion"
+        parameters:
+        - name: "guiceInternal"
+          valueUuid: "getSuggestions_guiceInternal1"
+        - name: "key"
+          valueUuid: "getSuggestions_key1"
+        signature: "getMissingImplementationSuggestion(GuiceInternal,Key): Optional"
+        returnValueUuid: "getSuggestions_optional1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "injector"
+      modelFingerprint: "A1A1B1E3DF3E45ADDCB16979B23CB677"
+      index: 5
+      ignored: false
+      valueUuid: "getSuggestions_injector1"
+      methodExercised:
+        target: "injector"
+        name: "findBindingsByType"
+        parameters:
+        - name: "type"
+          valueUuid: "getSuggestions_typeLiteral1"
+        signature: "findBindingsByType(TypeLiteral): List"
+        returnValueUuid: "getSuggestions_list1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "injector"
+      modelFingerprint: "9AA95C712F7A90AB0CB03BF1A43F8293"
+      index: 6
+      ignored: false
+      valueUuid: "getSuggestions_injector1"
+      methodExercised:
+        target: "injector"
+        name: "getAllBindings"
+        parameters: []
+        signature: "getAllBindings(): Map"
+        returnValueUuid: "getSuggestions_map1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "bindingKey"
+      modelFingerprint: "5652DF208F930B79DB0B77CC137B3D72"
+      index: 7
+      ignored: false
+      valueUuid: "getSuggestions_object2"
+      methodExercised:
+        target: "bindingKey"
+        name: "getTypeLiteral"
+        parameters: []
+        signature: "getTypeLiteral(): TypeLiteral"
+        returnValueUuid: "getSuggestions_typeLiteral2"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "9981679DE6CB52F869B823EA0D1A4E52"
+      index: 8
+      ignored: false
+      valueUuid: "uuid81"
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "convert"
+        parameters:
+        - name: "o"
+          valueUuid: "getSuggestions_object2"
+        signature: "convert(Key): Object"
+        returnValueUuid: "formatSuggestion_object1"
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "binding"
+      modelFingerprint: "9FABFC7DCFA1FA7B075CEFC24B488688"
+      index: 9
+      ignored: false
+      valueUuid: "getSuggestions_binding2"
+      methodExercised:
+        target: "binding"
+        name: "getSource"
+        parameters: []
+        signature: "getSource(): Object"
+        returnValueUuid: "formatSuggestion_object2"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "21FC7836EB58959F768D23DCF9F2A662"
+      index: 10
+      ignored: false
+      valueUuid: "formatSuggestion_sourceFormatter1"
+      methodExercised:
+        target: "com.google.inject.internal.SourceFormatter"
+        name: "format"
+        parameters: []
+        signature: "format(): void"
+        returnValueUuid: "formatSuggestion_void1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "3F1AA800E635BD1EBC3B4DB9CF8186DE"
+      index: 11
+      ignored: false
+      valueUuid: "uuid83"
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "format"
+        parameters:
+        - name: "messageFormat"
+          valueUuid: "uuid82"
+        - name: "arguments"
+          valueUuid: "getSuggestions_object[]1"
+        signature: "format(String,Object[]): String"
+        returnValueUuid: "getSuggestions_string4"
+        access: 137
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "36B4C4B79DF4DC6ACEE4D1D30828A394"
+      index: 12
+      ignored: false
+      valueUuid: "getSuggestions_immutableList1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7a32df03-e168-3a7f-bcd8-56d7ccac11c3"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Injector"
+      uuid: "getSuggestions_injector1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_typeLiteral1"
+      fixed: false
+      nameForMock: "getSuggestions_typeLiteral1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.BindingSourceRestriction"
+      uuid: "uuid80"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OPTIONAL"
+      content: !<optional>
+        value:
+          sapientType: "BASIC"
+          content: !<regular>
+            value: "return_of_getMissingImplementationSuggestionOptional1"
+          valueType: "java.lang.String"
+          uuid: "getSuggestions_string1"
+          fixed: false
+          collectionUuid: "getSuggestions_optional1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        target: "java.util.Optional"
+      valueType: "java.util.Optional"
+      genericValueType: "java.lang.String"
+      uuid: "getSuggestions_optional1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_field_return>
+        target: "com.google.inject.internal.GuiceInternal"
+        fieldName: "GUICE_INTERNAL"
+      suggestedContent: !<static_field_return>
+        target: "com.google.inject.internal.GuiceInternal"
+        fieldName: "GUICE_INTERNAL"
+      valueType: "com.google.inject.internal.GuiceInternal"
+      uuid: "getSuggestions_guiceInternal1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Injector"
+      uuid: "getSuggestions_injector1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      suggestedContent: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "com.google.inject.Binding<java.lang.Object>"
+      uuid: "getSuggestions_list1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "getSuggestions_typeLiteral1"
+      fixed: false
+      nameForMock: "getSuggestions_typeLiteral1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Injector"
+      uuid: "getSuggestions_injector1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      suggestedContent: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.Map"
+      genericValueType: "com.google.inject.Key<?>,com.google.inject.Binding<?>"
+      uuid: "getSuggestions_map1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "?"
+      uuid: "getSuggestions_object2"
+      fixed: false
+      collectionUuid: "getSuggestions_set1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      uuid: "getSuggestions_typeLiteral2"
+      fixed: false
+      nameForMock: "getSuggestions_typeLiteral2"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Messages"
+      uuid: "uuid81"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "formatSuggestion_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "?"
+      uuid: "getSuggestions_object2"
+      fixed: false
+      collectionUuid: "getSuggestions_set1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Binding"
+      genericValueType: "?"
+      uuid: "getSuggestions_binding2"
+      fixed: false
+      collectionUuid: "getSuggestions_map1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "formatSuggestion_object2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.SourceFormatter"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "formatSuggestion_object2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "formatter"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.util.Formatter"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "java.util.Formatter"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "java.util.Formatter"
+            uuid: "formatSuggestion_formatter1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "omitPreposition"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.SourceFormatter"
+        parameters:
+        - name: "source"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "formatSuggestion_object2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "formatter"
+          value:
+            sapientType: "OBJECT"
+            suggestedContent: !<new>
+              target: "java.util.Formatter"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "java.util.Formatter"
+            uuid: "formatSuggestion_formatter1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "omitPreposition"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: false
+            valueType: "boolean"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.internal.SourceFormatter"
+      uuid: "formatSuggestion_sourceFormatter1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "formatSuggestion_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "REAL"
+      valueType: "com.google.inject.internal.Messages"
+      uuid: "uuid83"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n    * "
+      valueType: "java.lang.String"
+      uuid: "getSuggestions_string4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "\\n    * %s"
+      valueType: "java.lang.String"
+      uuid: "uuid82"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ""
+            valueType: "java.lang.String"
+            uuid: "getSuggestions_arrayList1-item0"
+            fixed: false
+            collectionUuid: "getSuggestions_arrayList1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<array>
+        values:
+          0:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ""
+            valueType: "java.lang.String"
+            uuid: "getSuggestions_arrayList1-item0"
+            fixed: false
+            collectionUuid: "getSuggestions_arrayList1"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "java.lang.Object[]"
+      uuid: "getSuggestions_object[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<builder>
+        target: "com.google.common.collect.ImmutableList"
+        setterMap: {}
+      suggestedContent: !<builder>
+        target: "com.google.common.collect.ImmutableList"
+        setterMap: {}
+      valueType: "com.google.common.collect.ImmutableList"
+      genericValueType: "java.lang.String"
+      uuid: "getSuggestions_immutableList1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false

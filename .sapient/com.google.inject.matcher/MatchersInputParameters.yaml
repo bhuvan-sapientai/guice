@@ -1,0 +1,555 @@
+---
+modelFingerprint: "F71C2BDA30B595939E209BEF13D3974D"
+methods:
+- method:
+    name: "any"
+    signature: "any() : com.google.inject.matcher.Matcher<java.lang.Object>"
+    instructionFingerprint: "DA7756E623D6596B33EC09AE1A7FC18C"
+  paths:
+  - pathId: "path1"
+    testPathName: "anyTest"
+    filledByUser: false
+    modelFingerprint: "AB505E8392D59993B49525E52A6D1505"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "A3A1499E8F6042229D04E28F25DFE66D"
+      index: 1
+      ignored: false
+      valueUuid: "<clinit>_matchers.Any1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "97620483-69e3-33de-8f8b-1beeb08ff02a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "NOT_NULL"
+      valueType: "com.google.inject.matcher.Matcher"
+      genericValueType: "java.lang.Object"
+      uuid: "<clinit>_matchers.Any1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "not"
+    signature: "not(com.google.inject.matcher.Matcher<? super java.lang.Object>) :\
+      \ com.google.inject.matcher.Matcher<java.lang.Object>"
+    instructionFingerprint: "81A5F5DCFC9BDA9CDC140CB52B98E519"
+  paths:
+  - pathId: "path1"
+    testPathName: "notTest"
+    filledByUser: false
+    modelFingerprint: "13A3CF3ED79767FD6F11E9189FBB7FCA"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "p"
+      modelFingerprint: "7ACD1904DD067DE67C4336D0E9D86D4E"
+      index: 1
+      ignored: false
+      valueUuid: "not_matcher1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "2CBAE7D1247B9270E896328340968900"
+      index: 2
+      ignored: false
+      valueUuid: "not_matchers.Not1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "def796ea-942a-3a2f-96ac-e89d10aef690"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.matcher.Matcher"
+      genericValueType: "? super java.lang.Object"
+      uuid: "not_matcher1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NOT_NULL"
+      valueType: "com.google.inject.matcher.Matcher"
+      uuid: "not_matchers.Not1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "annotatedWith"
+    signature: "annotatedWith(java.lang.Class<? extends java.lang.annotation.Annotation>)\
+      \ : com.google.inject.matcher.Matcher<java.lang.reflect.AnnotatedElement>"
+    instructionFingerprint: "45CC5BE2585580440B6D594C6E2FCFD7"
+  paths:
+  - pathId: "path1"
+    testPathName: "annotatedWithTest"
+    filledByUser: false
+    modelFingerprint: "C16F06321669EBC7CED662B082047E83"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "annotationType"
+      modelFingerprint: "375D0F1502D87093BCCBB6BEFF90A575"
+      index: 1
+      ignored: false
+      valueUuid: "annotatedWith_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B20F733D04B97AE7839A95A71949896C"
+      index: 2
+      ignored: false
+      valueUuid: "annotatedWith_matchers.AnnotatedWithType1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "fba982c0-cd9f-393d-9f7a-c290cdb8b7b3"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? extends java.lang.annotation.Annotation"
+      suggestedContent: !<regular>
+        value: "? extends java.lang.annotation.Annotation"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.annotation.Annotation"
+      uuid: "annotatedWith_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NOT_NULL"
+      valueType: "com.google.inject.matcher.Matcher"
+      genericValueType: "java.lang.reflect.AnnotatedElement"
+      uuid: "annotatedWith_matchers.AnnotatedWithType1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "annotatedWith"
+    signature: "annotatedWith(java.lang.annotation.Annotation) : com.google.inject.matcher.Matcher<java.lang.reflect.AnnotatedElement>"
+    instructionFingerprint: "53E206002EF740324ABDF8A183859EDD"
+  paths:
+  - pathId: "path1"
+    testPathName: "annotatedWith1Test"
+    filledByUser: false
+    modelFingerprint: "06A18E870259A876FCC1026314190D1F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "annotation"
+      modelFingerprint: "98EA9250A14C8793DF3DBFED07AF4522"
+      index: 1
+      ignored: false
+      valueUuid: "annotatedWith_annotation1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B20F733D04B97AE7839A95A71949896C"
+      index: 2
+      ignored: false
+      valueUuid: "annotatedWith_matchers.AnnotatedWith1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "cd6f4bf5-9179-3a0f-b567-d99c9eb94b6f"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.annotation.Annotation"
+      uuid: "annotatedWith_annotation1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NOT_NULL"
+      valueType: "com.google.inject.matcher.Matcher"
+      genericValueType: "java.lang.reflect.AnnotatedElement"
+      uuid: "annotatedWith_matchers.AnnotatedWith1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "subclassesOf"
+    signature: "subclassesOf(java.lang.Class<?>) : com.google.inject.matcher.Matcher<java.lang.Class>"
+    instructionFingerprint: "341A01928B550AEC8E9EAD8B2B2DC733"
+  paths:
+  - pathId: "path1"
+    testPathName: "subclassesOfTest"
+    filledByUser: false
+    modelFingerprint: "A6663A712825F32C1CBCE13C5F38975F"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "superclass"
+      modelFingerprint: "EC9C64AA8A670D83EBC5332E1FCF805F"
+      index: 1
+      ignored: false
+      valueUuid: "subclassesOf_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "66A48B5D7EC38F14943E066A020898A8"
+      index: 2
+      ignored: false
+      valueUuid: "subclassesOf_matchers.SubclassesOf1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8fc5a916-a27e-3a35-a532-a3093104af34"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      suggestedContent: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "subclassesOf_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NOT_NULL"
+      valueType: "com.google.inject.matcher.Matcher"
+      genericValueType: "java.lang.Class"
+      uuid: "subclassesOf_matchers.SubclassesOf1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "only"
+    signature: "only(java.lang.Object) : com.google.inject.matcher.Matcher<java.lang.Object>"
+    instructionFingerprint: "D49DC3D1AFABF87249C383AE719E8B91"
+  paths:
+  - pathId: "path1"
+    testPathName: "onlyTest"
+    filledByUser: false
+    modelFingerprint: "A67F5CF5CF55896EE024306A8CC71E83"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "E20A51C9C7E747158E6D18C62CBE5EAD"
+      index: 1
+      ignored: false
+      valueUuid: "only_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "A3A1499E8F6042229D04E28F25DFE66D"
+      index: 2
+      ignored: false
+      valueUuid: "only_matchers.Only1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "03cc9724-9604-372c-b91a-de3a0e122d0f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "only_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NOT_NULL"
+      valueType: "com.google.inject.matcher.Matcher"
+      genericValueType: "java.lang.Object"
+      uuid: "only_matchers.Only1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "identicalTo"
+    signature: "identicalTo(java.lang.Object) : com.google.inject.matcher.Matcher<java.lang.Object>"
+    instructionFingerprint: "83AD61F920954DCA145D9CE6D36827C4"
+  paths:
+  - pathId: "path1"
+    testPathName: "identicalToTest"
+    filledByUser: false
+    modelFingerprint: "A67F5CF5CF55896EE024306A8CC71E83"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "value"
+      modelFingerprint: "E20A51C9C7E747158E6D18C62CBE5EAD"
+      index: 1
+      ignored: false
+      valueUuid: "identicalTo_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "A3A1499E8F6042229D04E28F25DFE66D"
+      index: 2
+      ignored: false
+      valueUuid: "identicalTo_matchers.IdenticalTo1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b927bb65-457a-343c-ab82-9620f277bd46"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "identicalTo_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NOT_NULL"
+      valueType: "com.google.inject.matcher.Matcher"
+      genericValueType: "java.lang.Object"
+      uuid: "identicalTo_matchers.IdenticalTo1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "inPackage"
+    signature: "inPackage(java.lang.Package) : com.google.inject.matcher.Matcher<java.lang.Class>"
+    instructionFingerprint: "2710BC3B92FA0A532417BE3A270407A8"
+  paths:
+  - pathId: "path1"
+    testPathName: "inPackageTest"
+    filledByUser: false
+    modelFingerprint: "29F929044522EF0E01F4FE1983D04C95"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "targetPackage"
+      modelFingerprint: "C6023CE00D2A5005A9A9EAF20F6669E8"
+      index: 1
+      ignored: false
+      valueUuid: "inPackage_package1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "66A48B5D7EC38F14943E066A020898A8"
+      index: 2
+      ignored: false
+      valueUuid: "inPackage_matchers.InPackage1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8d3b4b09-7fd4-35f7-bf6c-381a939d3d80"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "java.lang.Package"
+        method: "getPackage"
+        methodParameters:
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "name1"
+            suggestedContent: !<regular>
+              value: "name1"
+            valueType: "java.lang.String"
+            uuid: "inPackage_package1-name"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "java.lang.Package"
+        method: "getPackage"
+        methodParameters:
+        - name: "name"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "name1"
+            suggestedContent: !<regular>
+              value: "name1"
+            valueType: "java.lang.String"
+            uuid: "inPackage_package1-name"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "java.lang.Package"
+      uuid: "inPackage_package1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NOT_NULL"
+      valueType: "com.google.inject.matcher.Matcher"
+      genericValueType: "java.lang.Class"
+      uuid: "inPackage_matchers.InPackage1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "inSubpackage"
+    signature: "inSubpackage(java.lang.String) : com.google.inject.matcher.Matcher<java.lang.Class>"
+    instructionFingerprint: "40328F3004CABE6FB56E328D9FC02862"
+  paths:
+  - pathId: "path1"
+    testPathName: "inSubpackageTest"
+    filledByUser: false
+    modelFingerprint: "E7466E08F1EBE348ACE0B3C0EEB344EA"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "targetPackageName"
+      modelFingerprint: "5D4E3BAAC69FF3322C709F933171E8FC"
+      index: 1
+      ignored: false
+      valueUuid: "inSubpackage_string1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "66A48B5D7EC38F14943E066A020898A8"
+      index: 2
+      ignored: false
+      valueUuid: "inSubpackage_matchers.InSubpackage1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "afa44f70-0745-336e-8274-eb9209072435"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "targetPackageName1"
+      suggestedContent: !<regular>
+        value: "targetPackageName1"
+      valueType: "java.lang.String"
+      uuid: "inSubpackage_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NOT_NULL"
+      valueType: "com.google.inject.matcher.Matcher"
+      genericValueType: "java.lang.Class"
+      uuid: "inSubpackage_matchers.InSubpackage1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "returns"
+    signature: "returns(com.google.inject.matcher.Matcher<? super java.lang.Class<?>>)\
+      \ : com.google.inject.matcher.Matcher<java.lang.reflect.Method>"
+    instructionFingerprint: "9862A23457C82EDD024A72C39CA2FA9C"
+  paths:
+  - pathId: "path1"
+    testPathName: "returnsTest"
+    filledByUser: false
+    modelFingerprint: "B755CA07D76C1C257B73962EA6689F33"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "returnType"
+      modelFingerprint: "BEBCFCAF96CEA5D297BA09CE3F047AC1"
+      index: 1
+      ignored: false
+      valueUuid: "returns_matcher1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "54AFCAACC549BD76AB65C953C8C45781"
+      index: 2
+      ignored: false
+      valueUuid: "returns_matchers.Returns1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "49576e2d-6e53-3167-9c1f-57f98634a467"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.matcher.Matcher"
+      genericValueType: "? super java.lang.Class<?>"
+      uuid: "returns_matcher1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NOT_NULL"
+      valueType: "com.google.inject.matcher.Matcher"
+      genericValueType: "java.lang.reflect.Method"
+      uuid: "returns_matchers.Returns1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false

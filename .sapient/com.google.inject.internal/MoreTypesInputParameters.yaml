@@ -1,0 +1,5312 @@
+---
+modelFingerprint: "6523EFA9B468CA48CB1FAF06B9C35960"
+methods:
+- method:
+    name: "canonicalizeKey"
+    signature: "canonicalizeKey(com.google.inject.Key<java.lang.Object>) : com.google.inject.Key<java.lang.Object>"
+    instructionFingerprint: "8A3A1FC2A937A7500DFF4BC2BB606658"
+  paths:
+  - pathId: "path1"
+    testPathName: "canonicalizeKeyWhenKeyGetClassEqualsKey"
+    filledByUser: false
+    modelFingerprint: "52B2AF74D4729B9A0AB4EBCDFC598E48"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "754A13D8505C22FDEC353DEA5E32508B"
+      index: 1
+      ignored: false
+      valueUuid: "canonicalizeKey_key1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "906EF2C8EC0DF61F759588A6865DD219"
+      index: 2
+      ignored: false
+      valueUuid: "canonicalizeKey_key1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "895a9f06-e2a1-3283-a50d-73b1a2018137"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeKey_key1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeKey_key1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "canonicalizeKeyWhenKeyGetClassNotEqualsKey"
+    filledByUser: false
+    modelFingerprint: "EC22621774F95EDB3D631C1F8EA36141"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "46BA4583E7CE21C5C64B3A9C358235DB"
+      index: 1
+      ignored: false
+      valueUuid: "canonicalizeKey_key1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "key"
+      modelFingerprint: "FFF21EB06FAE7E18191D8BC68D01FC30"
+      index: 2
+      ignored: false
+      valueUuid: "canonicalizeKey_key1"
+      methodExercised:
+        target: "key"
+        name: "getTypeLiteral"
+        parameters: []
+        signature: "getTypeLiteral(): TypeLiteral"
+        returnValueUuid: "canonicalizeKey_typeLiteral1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "key"
+      modelFingerprint: "0BFB4813425088849BD4399A97623D5D"
+      index: 3
+      ignored: false
+      valueUuid: "canonicalizeKey_key1"
+      methodExercised:
+        target: "key"
+        name: "ofType"
+        parameters:
+        - name: "type"
+          valueUuid: "canonicalizeKey_typeLiteral1"
+        signature: "ofType(TypeLiteral): Key"
+        returnValueUuid: "canonicalizeKey_key2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "0B359EED50334AE54B31BE59F426B687"
+      index: 4
+      ignored: false
+      valueUuid: "canonicalizeKey_key2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c4fb7458-de19-386f-a952-113cfff35be5"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeKey_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeKey_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      uuid: "canonicalizeKey_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeKey_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      uuid: "canonicalizeKey_key2"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      uuid: "canonicalizeKey_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Key"
+      uuid: "canonicalizeKey_key2"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "canonicalizeForKey"
+    signature: "canonicalizeForKey(com.google.inject.TypeLiteral<java.lang.Object>)\
+      \ : com.google.inject.TypeLiteral<java.lang.Object>"
+    instructionFingerprint: "7E11770FC8F705E0FC5FE1A9A84CDABF"
+  paths:
+  - pathId: "path1"
+    testPathName: "canonicalizeForKeyWhenPInstanceOfParameterizedTypeImpl"
+    filledByUser: false
+    modelFingerprint: "9E2658602BEEBDC44413409C062AA856"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "typeLiteral"
+      modelFingerprint: "9D776F7EB7B76CECFA0D4295C77E0873"
+      index: 1
+      ignored: false
+      valueUuid: "canonicalizeForKey_typeLiteral1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "typeLiteral"
+      modelFingerprint: "5F186E9731A8211E59E796E9285A404A"
+      index: 2
+      ignored: false
+      valueUuid: "canonicalizeForKey_typeLiteral1"
+      methodExercised:
+        target: "typeLiteral"
+        name: "getType"
+        parameters: []
+        signature: "getType(): Type"
+        returnValueUuid: "canonicalizeForKey_type1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "typeLiteral"
+      modelFingerprint: "C87518B25CF12D4B7060B9F66E41BF40"
+      index: 3
+      ignored: false
+      valueUuid: "canonicalizeForKey_typeLiteral1"
+      methodExercised:
+        target: "typeLiteral"
+        name: "getRawType"
+        parameters: []
+        signature: "getRawType(): Class"
+        returnValueUuid: "uuid1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Types"
+      modelFingerprint: "148838ADA4E37D3215524F8AF774F49C"
+      index: 4
+      ignored: false
+      valueUuid: "uuid2"
+      methodExercised:
+        target: "com.google.inject.util.Types"
+        name: "providerOf"
+        parameters:
+        - name: "providedType"
+          valueUuid: "canonicalizeForKey_type2"
+        signature: "providerOf(Type): ParameterizedType"
+        returnValueUuid: "canonicalizeForKey_parameterizedType1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "TypeLiteral"
+      modelFingerprint: "5AA44F8A32956A384FBBBB2EA9436515"
+      index: 5
+      ignored: false
+      valueUuid: "uuid3"
+      methodExercised:
+        target: "com.google.inject.TypeLiteral"
+        name: "get"
+        parameters:
+        - name: "type"
+          valueUuid: "canonicalizeForKey_parameterizedType1"
+        signature: "get(ParameterizedType): TypeLiteral"
+        returnValueUuid: "canonicalizeForKey_typeLiteral2"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7F85C2B4DDFA5EE7CEFCE1FF16BFD82C"
+      index: 6
+      ignored: false
+      valueUuid: "canonicalizeForKey_typeLiteral2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "40bb8a1d-0b07-322e-b1d5-cc98d3976e3c"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "CHECK_CAST_EXPRESSION_FAILURE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "canonicalizeForKey_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "jakarta.inject.Provider"
+      valueType: "java.lang.Class"
+      genericValueType: "jakarta.inject.Provider"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.util.Types"
+      uuid: "uuid2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.ParameterizedType"
+      uuid: "canonicalizeForKey_parameterizedType1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "canonicalizeForKey_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      uuid: "uuid3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral2"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.ParameterizedType"
+      uuid: "canonicalizeForKey_parameterizedType1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral2"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "canonicalizeForKeyWhenPNotInstanceOfParameterizedTypeImpl"
+    filledByUser: false
+    modelFingerprint: "BA3FE1FB709B15C60B2258B1C540FC54"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "typeLiteral"
+      modelFingerprint: "9D776F7EB7B76CECFA0D4295C77E0873"
+      index: 1
+      ignored: false
+      valueUuid: "canonicalizeForKey_typeLiteral1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "typeLiteral"
+      modelFingerprint: "5F186E9731A8211E59E796E9285A404A"
+      index: 2
+      ignored: false
+      valueUuid: "canonicalizeForKey_typeLiteral1"
+      methodExercised:
+        target: "typeLiteral"
+        name: "getType"
+        parameters: []
+        signature: "getType(): Type"
+        returnValueUuid: "canonicalizeForKey_type1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "typeLiteral"
+      modelFingerprint: "C87518B25CF12D4B7060B9F66E41BF40"
+      index: 3
+      ignored: false
+      valueUuid: "canonicalizeForKey_typeLiteral1"
+      methodExercised:
+        target: "typeLiteral"
+        name: "getRawType"
+        parameters: []
+        signature: "getRawType(): Class"
+        returnValueUuid: "uuid4"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Types"
+      modelFingerprint: "148838ADA4E37D3215524F8AF774F49C"
+      index: 4
+      ignored: false
+      valueUuid: "uuid5"
+      methodExercised:
+        target: "com.google.inject.util.Types"
+        name: "providerOf"
+        parameters:
+        - name: "providedType"
+          valueUuid: "canonicalizeForKey_type2"
+        signature: "providerOf(Type): ParameterizedType"
+        returnValueUuid: "canonicalizeForKey_parameterizedType1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "TypeLiteral"
+      modelFingerprint: "5AA44F8A32956A384FBBBB2EA9436515"
+      index: 5
+      ignored: false
+      valueUuid: "uuid6"
+      methodExercised:
+        target: "com.google.inject.TypeLiteral"
+        name: "get"
+        parameters:
+        - name: "type"
+          valueUuid: "canonicalizeForKey_parameterizedType1"
+        signature: "get(ParameterizedType): TypeLiteral"
+        returnValueUuid: "canonicalizeForKey_typeLiteral2"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7F85C2B4DDFA5EE7CEFCE1FF16BFD82C"
+      index: 6
+      ignored: false
+      valueUuid: "canonicalizeForKey_typeLiteral2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "aec71286-3e6f-30a2-beea-47f05721860c"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "CHECK_CAST_EXPRESSION_FAILURE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "canonicalizeForKey_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "jakarta.inject.Provider"
+      valueType: "java.lang.Class"
+      genericValueType: "jakarta.inject.Provider"
+      uuid: "uuid4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.util.Types"
+      uuid: "uuid5"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.ParameterizedType"
+      uuid: "canonicalizeForKey_parameterizedType1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "canonicalizeForKey_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      uuid: "uuid6"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral2"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.ParameterizedType"
+      uuid: "canonicalizeForKey_parameterizedType1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral2"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path3"
+    testPathName: "canonicalizeForKeyWhenWrappedPrimitivesIsNotNull"
+    filledByUser: false
+    modelFingerprint: "7526582D83AAECC34350CB4C97E1D428"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "typeLiteral"
+      modelFingerprint: "9D776F7EB7B76CECFA0D4295C77E0873"
+      index: 1
+      ignored: false
+      valueUuid: "canonicalizeForKey_typeLiteral1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "typeLiteral"
+      modelFingerprint: "5F186E9731A8211E59E796E9285A404A"
+      index: 2
+      ignored: false
+      valueUuid: "canonicalizeForKey_typeLiteral1"
+      methodExercised:
+        target: "typeLiteral"
+        name: "getType"
+        parameters: []
+        signature: "getType(): Type"
+        returnValueUuid: "canonicalizeForKey_type1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "typeLiteral"
+      modelFingerprint: "7F6EF0350AC7AABD51CEC0F2FD431765"
+      index: 3
+      ignored: false
+      valueUuid: "canonicalizeForKey_typeLiteral1"
+      methodExercised:
+        target: "typeLiteral"
+        name: "getRawType"
+        parameters: []
+        signature: "getRawType(): Class"
+        returnValueUuid: "canonicalizeForKey_class1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "14D1F60E75AD404CAF0C17CD02D9FFB8"
+      index: 4
+      ignored: false
+      valueUuid: "canonicalizeForKey_typeLiteral2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e0cff9dc-a4ac-3ea7-92bf-e5fce385ecfc"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "PRIMITIVE_TO_WRAPPER"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "TypeLiteral<T> wrappedPrimitives = (TypeLiteral<T>) PRIMITIVE_TO_WRAPPER.get(typeLiteral);"
+      lineNumber: 109
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: PRIMITIVE_TO_WRAPPER - Method: get"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "canonicalizeForKey_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? super java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "? super java.lang.Object"
+      uuid: "canonicalizeForKey_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "?"
+      uuid: "canonicalizeForKey_typeLiteral2"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path6"
+    testPathName: "canonicalizeForKeyWhenIsFullySpecifiedNotTypeThrowsConfigurationException"
+    filledByUser: false
+    modelFingerprint: "D33F8207D392D638EB5DFB1FF2E79BE8"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "typeLiteral"
+      modelFingerprint: "9D776F7EB7B76CECFA0D4295C77E0873"
+      index: 1
+      ignored: false
+      valueUuid: "canonicalizeForKey_typeLiteral1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "typeLiteral"
+      modelFingerprint: "A04198239122B3368C808058627ECA4C"
+      index: 2
+      ignored: false
+      valueUuid: "canonicalizeForKey_typeLiteral1"
+      methodExercised:
+        target: "typeLiteral"
+        name: "getType"
+        parameters: []
+        signature: "getType(): Type"
+        returnValueUuid: "canonicalizeForKey_type1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "1EFA5F2AE07840F4B90B6794086E70D5"
+      index: 3
+      ignored: false
+      valueUuid: "canonicalizeForKey_errors1"
+      methodExercised:
+        target: "com.google.inject.internal.Errors"
+        name: "keyNotFullySpecified"
+        parameters:
+        - name: "typeLiteral"
+          valueUuid: "canonicalizeForKey_typeLiteral1"
+        signature: "keyNotFullySpecified(TypeLiteral): Errors"
+        returnValueUuid: "canonicalizeForKey_errors2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "errors"
+      modelFingerprint: "20C303B0867F1002E35F2CAE952947CE"
+      index: 4
+      ignored: false
+      valueUuid: "canonicalizeForKey_errors2"
+      methodExercised:
+        target: "errors"
+        name: "getMessages"
+        parameters: []
+        signature: "getMessages(): List"
+        returnValueUuid: "canonicalizeForKey_list1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "16671F2E9509CD1A213E213B64BB2F1B"
+      index: 5
+      ignored: false
+      valueUuid: "canonicalizeForKey_configurationException1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4e080db3-0bf7-36e1-99ee-4be2c78146aa"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "object of type Errors, errors"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "Errors errors = new Errors().keyNotFullySpecified(typeLiteral);"
+      lineNumber: 91
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type Errors - Method: keyNotFullySpecified"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.TypeVariable"
+      uuid: "canonicalizeForKey_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.Errors"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.Errors"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.internal.Errors"
+      uuid: "canonicalizeForKey_errors1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "com.google.inject.internal.Errors"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "com.google.inject.internal.Errors"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: true
+          suggestedContent: !<new>
+            target: "com.google.inject.internal.Errors"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: true
+          valueType: "com.google.inject.internal.Errors"
+          uuid: "canonicalizeForKey_errors1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "typeLiteral"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.TypeLiteral"
+            genericValueType: "java.lang.Object"
+            uuid: "canonicalizeForKey_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "keyNotFullySpecified"
+      suggestedContent: !<method_return_from_value>
+        target: "com.google.inject.internal.Errors"
+        localVariableValue:
+          sapientType: "OBJECT"
+          suggestedContent: !<new>
+            target: "com.google.inject.internal.Errors"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: true
+          valueType: "com.google.inject.internal.Errors"
+          uuid: "canonicalizeForKey_errors1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "typeLiteral"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.TypeLiteral"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.TypeLiteral"
+            genericValueType: "java.lang.Object"
+            uuid: "canonicalizeForKey_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "keyNotFullySpecified"
+      valueType: "com.google.inject.internal.Errors"
+      uuid: "canonicalizeForKey_errors2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "com.google.inject.internal.Errors"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "com.google.inject.internal.Errors"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: true
+          suggestedContent: !<new>
+            target: "com.google.inject.internal.Errors"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: true
+          valueType: "com.google.inject.internal.Errors"
+          uuid: "canonicalizeForKey_errors1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "typeLiteral"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.TypeLiteral"
+            genericValueType: "java.lang.Object"
+            uuid: "canonicalizeForKey_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "keyNotFullySpecified"
+      suggestedContent: !<method_return_from_value>
+        target: "com.google.inject.internal.Errors"
+        localVariableValue:
+          sapientType: "OBJECT"
+          suggestedContent: !<new>
+            target: "com.google.inject.internal.Errors"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: true
+          valueType: "com.google.inject.internal.Errors"
+          uuid: "canonicalizeForKey_errors1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "typeLiteral"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.TypeLiteral"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.TypeLiteral"
+            genericValueType: "java.lang.Object"
+            uuid: "canonicalizeForKey_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "keyNotFullySpecified"
+      valueType: "com.google.inject.internal.Errors"
+      uuid: "canonicalizeForKey_errors2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      suggestedContent: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "com.google.inject.spi.Message"
+      uuid: "canonicalizeForKey_list1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "com.google.inject.ConfigurationException"
+        parameters:
+        - name: "messages"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "com.google.inject.spi.Message"
+            uuid: "canonicalizeForKey_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.ConfigurationException"
+        parameters:
+        - name: "messages"
+          value:
+            sapientType: "COLLECTION"
+            valueType: "java.util.List"
+            genericValueType: "com.google.inject.spi.Message"
+            uuid: "canonicalizeForKey_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.ConfigurationException"
+      uuid: "canonicalizeForKey_configurationException1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path4"
+    testPathName: "canonicalizeForKeyWhenTypeLiteralGetClassEqualsTypeLiteral"
+    filledByUser: false
+    modelFingerprint: "D621EB56AD9FE21E130DCECDC0D8A0DB"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "typeLiteral"
+      modelFingerprint: "71D6C23025FA660B7D6B1A33EB13BE74"
+      index: 1
+      ignored: false
+      valueUuid: "canonicalizeForKey_typeLiteral1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "typeLiteral"
+      modelFingerprint: "3C6A8580ED81AF4AF40B19665C949EEF"
+      index: 2
+      ignored: false
+      valueUuid: "canonicalizeForKey_typeLiteral1"
+      methodExercised:
+        target: "typeLiteral"
+        name: "getType"
+        parameters: []
+        signature: "getType(): Type"
+        returnValueUuid: "canonicalizeForKey_type1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "typeLiteral"
+      modelFingerprint: "D02968A500E62A18F6E5E57F5BE0F701"
+      index: 3
+      ignored: false
+      valueUuid: "canonicalizeForKey_typeLiteral1"
+      methodExercised:
+        target: "typeLiteral"
+        name: "getRawType"
+        parameters: []
+        signature: "getRawType(): Class"
+        returnValueUuid: "canonicalizeForKey_class1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D7CE385757706D06A7233FF66602131A"
+      index: 4
+      ignored: false
+      valueUuid: "canonicalizeForKey_typeLiteral1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "760f86bb-4402-39b6-8869-72a0a9c3c827"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "PRIMITIVE_TO_WRAPPER"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "TypeLiteral<T> wrappedPrimitives = (TypeLiteral<T>) PRIMITIVE_TO_WRAPPER.get(typeLiteral);"
+      lineNumber: 109
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: PRIMITIVE_TO_WRAPPER - Method: get"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "canonicalizeForKey_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? super java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "? super java.lang.Object"
+      uuid: "canonicalizeForKey_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path5"
+    testPathName: "canonicalizeForKeyWhenTypeLiteralGetClassNotEqualsTypeLiteral"
+    filledByUser: false
+    modelFingerprint: "6EE24E62EF4FFF1FA232B1C40548E8C0"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "822038f2-af0e-3874-a798-8a9f7ae285ee"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    variablesCouldNotBeIsolated: "PRIMITIVE_TO_WRAPPER"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "TypeLiteral<T> wrappedPrimitives = (TypeLiteral<T>) PRIMITIVE_TO_WRAPPER.get(typeLiteral);"
+      lineNumber: 109
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: PRIMITIVE_TO_WRAPPER - Method: get"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path8"
+    testPathName: "canonicalizeForKeyWhenCanonicalizeTypeNotIsFullySpecifiedAndIsFullySpecifiedNotTypeThrowsConfigurationException"
+    filledByUser: false
+    modelFingerprint: "A0095329793B5CC1E3AFC689466AC740"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "typeLiteral"
+      modelFingerprint: "9D776F7EB7B76CECFA0D4295C77E0873"
+      index: 1
+      ignored: false
+      valueUuid: "canonicalizeForKey_typeLiteral1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "typeLiteral"
+      modelFingerprint: "95DC3AA689D423070A245505108BD578"
+      index: 2
+      ignored: false
+      valueUuid: "canonicalizeForKey_typeLiteral1"
+      methodExercised:
+        target: "typeLiteral"
+        name: "getType"
+        parameters: []
+        signature: "getType(): Type"
+        returnValueUuid: "canonicalizeForKey_type1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "MoreTypes"
+      modelFingerprint: "9FD7B877CCA8A284D7E12FB17D804663"
+      index: 3
+      ignored: false
+      valueUuid: "uuid8"
+      methodExercised:
+        target: "com.google.inject.internal.MoreTypes"
+        name: "canonicalize"
+        parameters:
+        - name: "type"
+          valueUuid: "canonicalizeForKey_type1"
+        signature: "canonicalize(Type): Type"
+        returnValueUuid: "isFullySpecified_type1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "1EFA5F2AE07840F4B90B6794086E70D5"
+      index: 4
+      ignored: false
+      valueUuid: "canonicalizeForKey_errors1"
+      methodExercised:
+        target: "com.google.inject.internal.Errors"
+        name: "keyNotFullySpecified"
+        parameters:
+        - name: "typeLiteral"
+          valueUuid: "canonicalizeForKey_typeLiteral1"
+        signature: "keyNotFullySpecified(TypeLiteral): Errors"
+        returnValueUuid: "canonicalizeForKey_errors2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "errors"
+      modelFingerprint: "20C303B0867F1002E35F2CAE952947CE"
+      index: 5
+      ignored: false
+      valueUuid: "canonicalizeForKey_errors2"
+      methodExercised:
+        target: "errors"
+        name: "getMessages"
+        parameters: []
+        signature: "getMessages(): List"
+        returnValueUuid: "canonicalizeForKey_list1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "16671F2E9509CD1A213E213B64BB2F1B"
+      index: 6
+      ignored: false
+      valueUuid: "canonicalizeForKey_configurationException1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1f094994-f6d5-3191-a56b-fa91747c908b"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "object of type Errors, errors"
+    failureReason:
+      reason: "CHECK_CAST_EXPRESSION_FAILURE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "canonicalizeForKey_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.MoreTypes"
+      uuid: "uuid8"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "isFullySpecified_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "canonicalizeForKey_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.Errors"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.Errors"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.internal.Errors"
+      uuid: "canonicalizeForKey_errors1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "com.google.inject.internal.Errors"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "com.google.inject.internal.Errors"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: true
+          suggestedContent: !<new>
+            target: "com.google.inject.internal.Errors"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: true
+          valueType: "com.google.inject.internal.Errors"
+          uuid: "canonicalizeForKey_errors1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "typeLiteral"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.TypeLiteral"
+            genericValueType: "java.lang.Object"
+            uuid: "canonicalizeForKey_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "keyNotFullySpecified"
+      suggestedContent: !<method_return_from_value>
+        target: "com.google.inject.internal.Errors"
+        localVariableValue:
+          sapientType: "OBJECT"
+          suggestedContent: !<new>
+            target: "com.google.inject.internal.Errors"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: true
+          valueType: "com.google.inject.internal.Errors"
+          uuid: "canonicalizeForKey_errors1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "typeLiteral"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.TypeLiteral"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.TypeLiteral"
+            genericValueType: "java.lang.Object"
+            uuid: "canonicalizeForKey_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "keyNotFullySpecified"
+      valueType: "com.google.inject.internal.Errors"
+      uuid: "canonicalizeForKey_errors2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "com.google.inject.internal.Errors"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<new>
+            target: "com.google.inject.internal.Errors"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: true
+          suggestedContent: !<new>
+            target: "com.google.inject.internal.Errors"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: true
+          valueType: "com.google.inject.internal.Errors"
+          uuid: "canonicalizeForKey_errors1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "typeLiteral"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.TypeLiteral"
+            genericValueType: "java.lang.Object"
+            uuid: "canonicalizeForKey_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "keyNotFullySpecified"
+      suggestedContent: !<method_return_from_value>
+        target: "com.google.inject.internal.Errors"
+        localVariableValue:
+          sapientType: "OBJECT"
+          suggestedContent: !<new>
+            target: "com.google.inject.internal.Errors"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: true
+          valueType: "com.google.inject.internal.Errors"
+          uuid: "canonicalizeForKey_errors1"
+          fixed: true
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "typeLiteral"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.TypeLiteral"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.TypeLiteral"
+            genericValueType: "java.lang.Object"
+            uuid: "canonicalizeForKey_typeLiteral1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "keyNotFullySpecified"
+      valueType: "com.google.inject.internal.Errors"
+      uuid: "canonicalizeForKey_errors2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      suggestedContent: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "com.google.inject.spi.Message"
+      uuid: "canonicalizeForKey_list1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "com.google.inject.ConfigurationException"
+        parameters:
+        - name: "messages"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "com.google.inject.spi.Message"
+            uuid: "canonicalizeForKey_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.ConfigurationException"
+        parameters:
+        - name: "messages"
+          value:
+            sapientType: "COLLECTION"
+            valueType: "java.util.List"
+            genericValueType: "com.google.inject.spi.Message"
+            uuid: "canonicalizeForKey_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.ConfigurationException"
+      uuid: "canonicalizeForKey_configurationException1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path7"
+    testPathName: "canonicalizeForKeyWhenWrappedPrimitivesIsNullAndTypeLiteralGetClassNotEqualsTypeLiteral"
+    filledByUser: false
+    modelFingerprint: "AA78BFFEA40AFCA224170F61933571E8"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "typeLiteral"
+      modelFingerprint: "9D776F7EB7B76CECFA0D4295C77E0873"
+      index: 1
+      ignored: false
+      valueUuid: "canonicalizeForKey_typeLiteral1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "typeLiteral"
+      modelFingerprint: "95DC3AA689D423070A245505108BD578"
+      index: 2
+      ignored: false
+      valueUuid: "canonicalizeForKey_typeLiteral1"
+      methodExercised:
+        target: "typeLiteral"
+        name: "getType"
+        parameters: []
+        signature: "getType(): Type"
+        returnValueUuid: "canonicalizeForKey_type1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "MoreTypes"
+      modelFingerprint: "9FD7B877CCA8A284D7E12FB17D804663"
+      index: 3
+      ignored: false
+      valueUuid: "uuid9"
+      methodExercised:
+        target: "com.google.inject.internal.MoreTypes"
+        name: "canonicalize"
+        parameters:
+        - name: "type"
+          valueUuid: "canonicalizeForKey_type1"
+        signature: "canonicalize(Type): Type"
+        returnValueUuid: "isFullySpecified_type1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "typeLiteral"
+      modelFingerprint: "7F6EF0350AC7AABD51CEC0F2FD431765"
+      index: 4
+      ignored: false
+      valueUuid: "canonicalizeForKey_typeLiteral1"
+      methodExercised:
+        target: "typeLiteral"
+        name: "getRawType"
+        parameters: []
+        signature: "getRawType(): Class"
+        returnValueUuid: "canonicalizeForKey_class1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "typeLiteral"
+      modelFingerprint: "95DC3AA689D423070A245505108BD578"
+      index: 5
+      ignored: false
+      valueUuid: "canonicalizeForKey_typeLiteral1"
+      methodExercised:
+        target: "typeLiteral"
+        name: "getType"
+        parameters: []
+        signature: "getType(): Type"
+        returnValueUuid: "canonicalizeForKey_type2"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "TypeLiteral"
+      modelFingerprint: "8025469BFB7C47C832E25AF48BE06A38"
+      index: 6
+      ignored: false
+      valueUuid: "uuid10"
+      methodExercised:
+        target: "com.google.inject.TypeLiteral"
+        name: "get"
+        parameters:
+        - name: "type"
+          valueUuid: "canonicalizeForKey_type2"
+        signature: "get(Type): TypeLiteral"
+        returnValueUuid: "canonicalizeForKey_typeLiteral3"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7F85C2B4DDFA5EE7CEFCE1FF16BFD82C"
+      index: 7
+      ignored: false
+      valueUuid: "canonicalizeForKey_typeLiteral3"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "92e0bb61-ddc2-3006-9ed2-4e616ecd0867"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "PRIMITIVE_TO_WRAPPER"
+    failureReason:
+      reason: "CHECK_CAST_EXPRESSION_FAILURE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "canonicalizeForKey_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.MoreTypes"
+      uuid: "uuid9"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "isFullySpecified_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "canonicalizeForKey_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? super java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "? super java.lang.Object"
+      uuid: "canonicalizeForKey_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "canonicalizeForKey_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      uuid: "uuid10"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral3"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "canonicalizeForKey_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.TypeLiteral"
+      genericValueType: "java.lang.Object"
+      uuid: "canonicalizeForKey_typeLiteral3"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "canonicalize"
+    signature: "canonicalize(java.lang.reflect.Type) : java.lang.reflect.Type"
+    instructionFingerprint: "807F5C9198978F15432AC46D9B2BB560"
+  paths:
+  - pathId: "path1"
+    testPathName: "canonicalizeWhenCIsArray"
+    filledByUser: false
+    modelFingerprint: "16B262642B85D28BD4B42479A933D193"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "362B5FBFCF422887AD6113F2FD563BE4"
+      index: 1
+      ignored: false
+      valueUuid: "canonicalize_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B9BE53F0E16A159D2CB4C78D7DE80F8C"
+      index: 2
+      ignored: false
+      valueUuid: "canonicalize_moreTypes.GenericArrayTypeImpl1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "afdaa15b-5888-33ab-a077-b1238b1b5e0c"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isArray() : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "canonicalize_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MoreTypes$GenericArrayTypeImpl"
+        parameters:
+        - name: "componentType"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Type"
+            uuid: "canonicalize_type2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MoreTypes$GenericArrayTypeImpl"
+        parameters:
+        - name: "componentType"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Type"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Type"
+            uuid: "canonicalize_type2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.internal.MoreTypes$GenericArrayTypeImpl"
+      uuid: "canonicalize_moreTypes.GenericArrayTypeImpl1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "canonicalizeWhenCNotIsArray"
+    filledByUser: false
+    modelFingerprint: "9C377BF7E743573DBE39607D241AD8B9"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "A096ECFBA382F0B51622E3EAF5CEC48D"
+      index: 1
+      ignored: false
+      valueUuid: "canonicalize_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "21EE642431E2167BF05BB0DC596BF33D"
+      index: 2
+      ignored: false
+      valueUuid: "canonicalize_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ee671726-f708-380c-b282-e93a6543ba7a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      suggestedContent: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "canonicalize_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      suggestedContent: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "canonicalize_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path3"
+    testPathName: "canonicalizeWhenPInstanceOfParameterizedTypeImpl"
+    filledByUser: false
+    modelFingerprint: "4161A365B6C320EA12FA20D92E6B5690"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "971CA24D8191E9E38344C56AB74D25A4"
+      index: 1
+      ignored: false
+      valueUuid: "canonicalize_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C0E3FECFEF8DF02D6DB65442CE2C2D0"
+      index: 2
+      ignored: false
+      valueUuid: "canonicalize_moreTypes.ParameterizedTypeImpl1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "88aaaf44-0039-3860-818f-c82d034a5483"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.reflect.ParameterizedType.getOwnerType()\
+        \ : java.lang.reflect.Type"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MoreTypes$ParameterizedTypeImpl"
+        parameters:
+        - name: "ownerType"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Type"
+            uuid: "canonicalize_type1-ownerType"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "rawType"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Type"
+            uuid: "canonicalize_type1-rawType"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeArguments"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.reflect.Type[]"
+            uuid: "getSharedTypeArguments_type[]2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MoreTypes$ParameterizedTypeImpl"
+        parameters:
+        - name: "ownerType"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Type"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Type"
+            uuid: "canonicalize_type1-ownerType"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "rawType"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Type"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Type"
+            uuid: "canonicalize_type1-rawType"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeArguments"
+          value:
+            sapientType: "ARRAY"
+            valueType: "java.lang.reflect.Type[]"
+            uuid: "getSharedTypeArguments_type[]2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.MoreTypes$ParameterizedTypeImpl"
+      uuid: "canonicalize_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MoreTypes$ParameterizedTypeImpl"
+        parameters:
+        - name: "ownerType"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Type"
+            uuid: "canonicalize_type2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "rawType"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Type"
+            uuid: "canonicalize_type3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeArguments"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.reflect.Type[]"
+            uuid: "getSharedTypeArguments_type[]2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MoreTypes$ParameterizedTypeImpl"
+        parameters:
+        - name: "ownerType"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Type"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Type"
+            uuid: "canonicalize_type2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "rawType"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Type"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Type"
+            uuid: "canonicalize_type3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeArguments"
+          value:
+            sapientType: "ARRAY"
+            valueType: "java.lang.reflect.Type[]"
+            uuid: "getSharedTypeArguments_type[]2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.internal.MoreTypes$ParameterizedTypeImpl"
+      uuid: "canonicalize_moreTypes.ParameterizedTypeImpl1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path4"
+    testPathName: "canonicalizeWhenPNotInstanceOfParameterizedTypeImpl"
+    filledByUser: false
+    modelFingerprint: "4653D60B1C6D5E0DE712FC0A07C0658E"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "2F92ACA0AE0B817E9A2E0C4D5F2EE8E4"
+      index: 1
+      ignored: false
+      valueUuid: "canonicalize_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "p"
+      modelFingerprint: "72C3A4D8504B5C741005FC1B1F6A55AB"
+      index: 2
+      ignored: false
+      valueUuid: "canonicalize_type1"
+      methodExercised:
+        target: "p"
+        name: "getOwnerType"
+        parameters: []
+        signature: "getOwnerType(): Type"
+        returnValueUuid: "canonicalize_type2"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "p"
+      modelFingerprint: "91B1CFEEADA4B1D5108E2363EB14B35C"
+      index: 3
+      ignored: false
+      valueUuid: "canonicalize_type1"
+      methodExercised:
+        target: "p"
+        name: "getRawType"
+        parameters: []
+        signature: "getRawType(): Type"
+        returnValueUuid: "canonicalize_type3"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "p"
+      modelFingerprint: "DB3340D7856CA1BCF3A3D5F51C6356B6"
+      index: 4
+      ignored: false
+      valueUuid: "canonicalize_type1"
+      methodExercised:
+        target: "p"
+        name: "getActualTypeArguments"
+        parameters: []
+        signature: "getActualTypeArguments(): Type[]"
+        returnValueUuid: "getSharedTypeArguments_type[]1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C0E3FECFEF8DF02D6DB65442CE2C2D0"
+      index: 5
+      ignored: false
+      valueUuid: "canonicalize_moreTypes.ParameterizedTypeImpl1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "118d1dc9-2f5b-3232-8085-8470720c3125"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.ParameterizedType"
+      uuid: "canonicalize_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.ParameterizedType"
+      uuid: "canonicalize_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "canonicalize_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.ParameterizedType"
+      uuid: "canonicalize_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "canonicalize_type3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.ParameterizedType"
+      uuid: "canonicalize_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      suggestedContent: !<array>
+        values: {}
+      valueType: "java.lang.reflect.Type[]"
+      uuid: "getSharedTypeArguments_type[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MoreTypes$ParameterizedTypeImpl"
+        parameters:
+        - name: "ownerType"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Type"
+            uuid: "canonicalize_type2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "rawType"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Type"
+            uuid: "canonicalize_type3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeArguments"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.reflect.Type[]"
+            uuid: "getSharedTypeArguments_type[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MoreTypes$ParameterizedTypeImpl"
+        parameters:
+        - name: "ownerType"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Type"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Type"
+            uuid: "canonicalize_type2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "rawType"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Type"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Type"
+            uuid: "canonicalize_type3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeArguments"
+          value:
+            sapientType: "ARRAY"
+            valueType: "java.lang.reflect.Type[]"
+            uuid: "getSharedTypeArguments_type[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.internal.MoreTypes$ParameterizedTypeImpl"
+      uuid: "canonicalize_moreTypes.ParameterizedTypeImpl1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path5"
+    testPathName: "canonicalizeWhenTypeInstanceOfGenericArrayType"
+    filledByUser: false
+    modelFingerprint: "B2CF9A9AAAFAA29A3538DFE4E25F8D29"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "0AF996041824F8A485F46ABF74C7F820"
+      index: 1
+      ignored: false
+      valueUuid: "canonicalize_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "g"
+      modelFingerprint: "C0CD4FCC452AE0DA3721736B4065DAB8"
+      index: 2
+      ignored: false
+      valueUuid: "canonicalize_type1"
+      methodExercised:
+        target: "g"
+        name: "getGenericComponentType"
+        parameters: []
+        signature: "getGenericComponentType(): Type"
+        returnValueUuid: "canonicalize_type2"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B9BE53F0E16A159D2CB4C78D7DE80F8C"
+      index: 3
+      ignored: false
+      valueUuid: "canonicalize_moreTypes.GenericArrayTypeImpl1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "40142f12-b2d2-37c0-b6eb-e91debefb359"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.GenericArrayType"
+      uuid: "canonicalize_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.GenericArrayType"
+      uuid: "canonicalize_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "canonicalize_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MoreTypes$GenericArrayTypeImpl"
+        parameters:
+        - name: "componentType"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Type"
+            uuid: "canonicalize_type2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MoreTypes$GenericArrayTypeImpl"
+        parameters:
+        - name: "componentType"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Type"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Type"
+            uuid: "canonicalize_type2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.internal.MoreTypes$GenericArrayTypeImpl"
+      uuid: "canonicalize_moreTypes.GenericArrayTypeImpl1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path6"
+    testPathName: "canonicalizeWhenTypeInstanceOfWildcardType"
+    filledByUser: false
+    modelFingerprint: "56E25B543BB49AC3408EE4374509813C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "F71CD7CC7B0F6D06AB2F0D08D81E83A1"
+      index: 1
+      ignored: false
+      valueUuid: "canonicalize_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "w"
+      modelFingerprint: "8438357A4C6E5858199BB043612EDD28"
+      index: 2
+      ignored: false
+      valueUuid: "canonicalize_type1"
+      methodExercised:
+        target: "w"
+        name: "getUpperBounds"
+        parameters: []
+        signature: "getUpperBounds(): Type[]"
+        returnValueUuid: "canonicalize_type[]1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "w"
+      modelFingerprint: "F98E3E39148F41F4E2A15A8F6CA5C47D"
+      index: 3
+      ignored: false
+      valueUuid: "canonicalize_type1"
+      methodExercised:
+        target: "w"
+        name: "getLowerBounds"
+        parameters: []
+        signature: "getLowerBounds(): Type[]"
+        returnValueUuid: "canonicalize_type[]2"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "6F11E052F088F19B3A96B09B686D7E92"
+      index: 4
+      ignored: false
+      valueUuid: "canonicalize_moreTypes.WildcardTypeImpl1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d2a198e5-3d91-3cf6-9d9b-b73ded0e3885"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.WildcardType"
+      uuid: "canonicalize_type1"
+      fixed: false
+      nameForMock: "WildcardType"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.WildcardType"
+      uuid: "canonicalize_type1"
+      fixed: false
+      nameForMock: "WildcardType"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      valueType: "java.lang.reflect.Type[]"
+      uuid: "canonicalize_type[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.WildcardType"
+      uuid: "canonicalize_type1"
+      fixed: false
+      nameForMock: "WildcardType"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      valueType: "java.lang.reflect.Type[]"
+      uuid: "canonicalize_type[]2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MoreTypes$WildcardTypeImpl"
+        parameters:
+        - name: "upperBounds"
+          value:
+            sapientType: "NULL"
+            valueType: "java.lang.reflect.Type[]"
+            uuid: "canonicalize_type[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "lowerBounds"
+          value:
+            sapientType: "NULL"
+            valueType: "java.lang.reflect.Type[]"
+            uuid: "canonicalize_type[]2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MoreTypes$WildcardTypeImpl"
+        parameters:
+        - name: "upperBounds"
+          value:
+            sapientType: "NULL"
+            valueType: "java.lang.reflect.Type[]"
+            uuid: "canonicalize_type[]1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "lowerBounds"
+          value:
+            sapientType: "NULL"
+            valueType: "java.lang.reflect.Type[]"
+            uuid: "canonicalize_type[]2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.internal.MoreTypes$WildcardTypeImpl"
+      uuid: "canonicalize_moreTypes.WildcardTypeImpl1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path7"
+    testPathName: "canonicalizeWhenTypeNotInstanceOfWildcardType"
+    filledByUser: false
+    modelFingerprint: "E82BAABF0408E7AF057DACCDBE0201E4"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "120DB7B58A1A0E859D8B7B54A221A17F"
+      index: 1
+      ignored: false
+      valueUuid: "canonicalize_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "AE1808C135ABB498DB6E561835D786BE"
+      index: 2
+      ignored: false
+      valueUuid: "canonicalize_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "704cb858-48df-3aab-aa21-30583d6a39d2"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "canonicalize_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "canonicalize_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "getRawType"
+    signature: "getRawType(java.lang.reflect.Type) : java.lang.Class<?>"
+    instructionFingerprint: "F808E334547B4CAD1DE057A256B1A843"
+  paths:
+  - pathId: "path1"
+    testPathName: "getRawTypeWhenTypeInstanceOfClass_"
+    filledByUser: false
+    modelFingerprint: "AC5EC055F8CCB91D50FC08EC9E642B6C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "362B5FBFCF422887AD6113F2FD563BE4"
+      index: 1
+      ignored: false
+      valueUuid: "getRawType_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7D188077A09532046C23775A10005874"
+      index: 2
+      ignored: false
+      valueUuid: "getRawType_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5f2cb5c8-aa82-386d-8daf-f2165e713e4d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "getRawType_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "getRawType_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "getRawTypeWhenTypeInstanceOfParameterizedType"
+    filledByUser: false
+    modelFingerprint: "42A110E8BEE4635C2AC8D8EB0A5224C0"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "2F92ACA0AE0B817E9A2E0C4D5F2EE8E4"
+      index: 1
+      ignored: false
+      valueUuid: "getRawType_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "parameterizedType"
+      modelFingerprint: "0C8F96665AA8BE33C6F0A7A390F54133"
+      index: 2
+      ignored: false
+      valueUuid: "getRawType_type1"
+      methodExercised:
+        target: "parameterizedType"
+        name: "getRawType"
+        parameters: []
+        signature: "getRawType(): Type"
+        returnValueUuid: "getRawType_type2"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7D188077A09532046C23775A10005874"
+      index: 3
+      ignored: false
+      valueUuid: "getRawType_type2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f1e32f7d-473a-3ff8-a0ed-dadd62ef24b4"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Preconditions.checkArgument(boolean,java.lang.String,java.lang.reflect.ParameterizedType,java.lang.String)\
+        \ : void"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.ParameterizedType"
+      uuid: "getRawType_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.ParameterizedType"
+      uuid: "getRawType_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "getRawType_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "getRawType_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+  - pathId: "path3"
+    testPathName: "getRawTypeWhenTypeInstanceOfGenericArrayType"
+    filledByUser: false
+    modelFingerprint: "F836E1BAA474A26D540A69AB2DD5DFB7"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "0AF996041824F8A485F46ABF74C7F820"
+      index: 1
+      ignored: false
+      valueUuid: "getRawType_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "C0CD4FCC452AE0DA3721736B4065DAB8"
+      index: 2
+      ignored: false
+      valueUuid: "getRawType_type1"
+      methodExercised:
+        target: "java.lang.reflect.GenericArrayType"
+        name: "getGenericComponentType"
+        parameters: []
+        signature: "getGenericComponentType(): Type"
+        returnValueUuid: "getRawType_type2"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7FABEA7E65CF2D7F23F716BFD2C31EAF"
+      index: 3
+      ignored: false
+      valueUuid: "getRawType_class2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e3bff9fb-e243-318f-94b2-d9c79129bda1"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_INTERNAL_METHOD_RECURSIVE_CALL"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.GenericArrayType"
+      uuid: "getRawType_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.GenericArrayType"
+      uuid: "getRawType_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "getRawType_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      suggestedContent: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "getRawType_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path6"
+    testPathName: "getRawTypeWhenTypeInstanceOfTypeVariable"
+    filledByUser: false
+    modelFingerprint: "8D1F80E63B6C9EC2081328208EEA40FB"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "9d6af621-7c94-39ea-95d1-6e78a7faba4d"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path4"
+    testPathName: "getRawTypeWhenTypeInstanceOfWildcardType"
+    filledByUser: false
+    modelFingerprint: "18B2FE50E6A1767E849DE8AB814A892C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "32209DFD135C0C383756D54E34663E40"
+      index: 1
+      ignored: false
+      valueUuid: "getRawType_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B4C975B2C63ED5EBDCB80862895CA650"
+      index: 2
+      ignored: false
+      valueUuid: "uuid12"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "78416f03-00b2-30cd-ba19-7375c31e92ae"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.WildcardType"
+      uuid: "getRawType_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Object"
+      uuid: "uuid12"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path5"
+    testPathName: "getRawTypeWhenTypeNotInstanceOfWildcardTypeThrowsIllegalArgumentException"
+    filledByUser: false
+    modelFingerprint: "C6F0D74264459400049DDA55D58CAB51"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "F6833A715BE6915002114E2CFC7122B1"
+      index: 1
+      ignored: false
+      valueUuid: "getRawType_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "80F5CB4D3C84FEC0413A34532A903A1A"
+      index: 2
+      ignored: false
+      valueUuid: "getRawType_illegalArgumentException1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b4379aed-1a8c-39bb-b2b8-87bd12339a1a"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "getRawType_type1"
+      fixed: false
+      nameForMock: "getRawType_type1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "Expected a Class, ParameterizedType, or GenericArrayType, but\
+                \ <getRawType_type1> is of type java.lang.reflect.Type"
+            suggestedContent: !<regular>
+              value: "Expected a Class, ParameterizedType, or GenericArrayType, but\
+                \ <getRawType_type1> is of type java.lang.reflect.Type"
+            valueType: "java.lang.String"
+            uuid: "getRawType_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "java.lang.IllegalArgumentException"
+        parameters:
+        - name: "s"
+          value:
+            sapientType: "BASIC"
+            suggestedContent: !<regular>
+              value: "Expected a Class, ParameterizedType, or GenericArrayType, but\
+                \ <getRawType_type1> is of type java.lang.reflect.Type"
+            valueType: "java.lang.String"
+            uuid: "getRawType_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "java.lang.IllegalArgumentException"
+      uuid: "getRawType_illegalArgumentException1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "equals"
+    signature: "equals(java.lang.reflect.Type,java.lang.reflect.Type) : boolean"
+    instructionFingerprint: "0CC413C98E194F3E8F05B4BE6A1614C4"
+  paths:
+  - pathId: "path1"
+    testPathName: "equalsWhenAEqualsB"
+    filledByUser: false
+    modelFingerprint: "9312659E8D1E0C6A9D699B462D4E691F"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "56E7C26BABDB7BF8484816F21F22FC0F"
+      index: 1
+      ignored: false
+      valueUuid: "equals_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "b"
+      modelFingerprint: "0420E387EBF2794E71673FADF33DA4BC"
+      index: 2
+      ignored: false
+      valueUuid: "equals_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 3
+      ignored: false
+      valueUuid: "uuid13"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9f2e86ee-506c-3cf7-94b9-05bc33f8d9c5"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "equals_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "equals_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "uuid13"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "equalsWhenAInstanceOfClassAndAEqualsB"
+    filledByUser: false
+    modelFingerprint: "88F522AD88C7A33FC15C4EABB4438B99"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "603169947AC95879AB3A437383BD4925"
+      index: 1
+      ignored: false
+      valueUuid: "equals_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "b"
+      modelFingerprint: "7A0C89535A2AFA2CEB6D8EE92E295991"
+      index: 2
+      ignored: false
+      valueUuid: "equals_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7153138E93283A9BCEC4D09F0F5CF1C3"
+      index: 3
+      ignored: false
+      valueUuid: "equals_boolean2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "909d89d7-0b62-38ac-b38e-43293f3273bc"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "equals_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "equals_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "equals_boolean2"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path3"
+    testPathName: "equalsWhenANotEqualsB"
+    filledByUser: false
+    modelFingerprint: "999E49ADA28F90B631349CEC0440D569"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "603169947AC95879AB3A437383BD4925"
+      index: 1
+      ignored: false
+      valueUuid: "equals_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "b"
+      modelFingerprint: "0420E387EBF2794E71673FADF33DA4BC"
+      index: 2
+      ignored: false
+      valueUuid: "equals_type2"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "4372D606E42017F615E0087C598EFD72"
+      index: 3
+      ignored: false
+      valueUuid: "equals_boolean2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "507549dc-abfb-31c6-a1f4-693809abaf19"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "equals_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "equals_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "equals_boolean2"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path4"
+    testPathName: "equalsWhenBNotInstanceOfParameterizedType"
+    filledByUser: false
+    modelFingerprint: "5EC2E49E0C03B6611E640E3653BC90BC"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "01219C673A7F64F5420DDFE49CF52603"
+      index: 1
+      ignored: false
+      valueUuid: "equals_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "b"
+      modelFingerprint: "0420E387EBF2794E71673FADF33DA4BC"
+      index: 2
+      ignored: false
+      valueUuid: "equals_type2"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      valueUuid: "uuid14"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "04d9018c-8285-3e9f-a13a-7e7d589b65cb"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.ParameterizedType"
+      uuid: "equals_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "equals_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid14"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path10"
+    testPathName: "equalsWhenBNotInstanceOfGenericArrayType"
+    filledByUser: false
+    modelFingerprint: "E140CB5FDC5E93FD317D02E295460E0E"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "1C873D511D5FFBEC2C262B7D0DDB5C10"
+      index: 1
+      ignored: false
+      valueUuid: "equals_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "b"
+      modelFingerprint: "0420E387EBF2794E71673FADF33DA4BC"
+      index: 2
+      ignored: false
+      valueUuid: "equals_type2"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      valueUuid: "uuid15"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4e32643e-838d-38f5-abeb-89d6ef0127d8"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.GenericArrayType"
+      uuid: "equals_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "equals_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid15"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path11"
+    testPathName: "equalsWhenBInstanceOfGenericArrayType"
+    filledByUser: false
+    modelFingerprint: "EC3AC617B7B9E17EB2F9404AA1D458F9"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "1C873D511D5FFBEC2C262B7D0DDB5C10"
+      index: 1
+      ignored: false
+      valueUuid: "equals_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "b"
+      modelFingerprint: "FA824756C74975349B9263A82B58B78E"
+      index: 2
+      ignored: false
+      valueUuid: "equals_type2"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "898AD20321B49E7B1F36A229EC2FBE66"
+      index: 3
+      ignored: false
+      valueUuid: "equals_boolean5"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "73a96bdc-1330-3d85-b6ef-924eae8b43de"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.reflect.GenericArrayType.getGenericComponentType()\
+        \ : java.lang.reflect.Type"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.GenericArrayType"
+      uuid: "equals_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.GenericArrayType"
+      uuid: "equals_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "equals_boolean5"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path9"
+    testPathName: "equalsWhenPaGetRawTypeNotEqualsPbGetRawType"
+    filledByUser: false
+    modelFingerprint: "BF7DCE1085A1240AC0CD25A485FFED4A"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "8093930c-e50f-37f3-9f51-4f9418efe4fd"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.reflect.ParameterizedType.getOwnerType()\
+        \ : java.lang.reflect.Type"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path12"
+    testPathName: "equalsWhenBNotInstanceOfWildcardType"
+    filledByUser: false
+    modelFingerprint: "504FBF6E7649F640C7CB62C19DBBBDA7"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "BBD357D69E71A840EB06573E2F444456"
+      index: 1
+      ignored: false
+      valueUuid: "equals_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "b"
+      modelFingerprint: "0420E387EBF2794E71673FADF33DA4BC"
+      index: 2
+      ignored: false
+      valueUuid: "equals_type2"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      valueUuid: "uuid17"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "89f65493-1152-324f-9e88-2f84d9eaf228"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.WildcardType"
+      uuid: "equals_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "equals_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid17"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path18"
+    testPathName: "equalsWhenANotInstanceOfTypeVariable"
+    filledByUser: false
+    modelFingerprint: "7849D54F2C676725CE32385F1DD2F622"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "56E7C26BABDB7BF8484816F21F22FC0F"
+      index: 1
+      ignored: false
+      valueUuid: "equals_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "b"
+      modelFingerprint: "0420E387EBF2794E71673FADF33DA4BC"
+      index: 2
+      ignored: false
+      valueUuid: "equals_type2"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      valueUuid: "uuid18"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4a484956-1020-3c98-b0c3-735978e7bded"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "equals_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "equals_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid18"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path15"
+    testPathName: "equalsWhenBNotInstanceOfTypeVariable"
+    filledByUser: false
+    modelFingerprint: "DEAB5C8BE84FC6FFE503D62CB8ABDCBD"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "F4CC2B6D713F673D0D0B7A885295607D"
+      index: 1
+      ignored: false
+      valueUuid: "equals_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "b"
+      modelFingerprint: "0420E387EBF2794E71673FADF33DA4BC"
+      index: 2
+      ignored: false
+      valueUuid: "equals_type2"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      valueUuid: "uuid19"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a5b59391-e6d1-3286-87c9-0343e2b9b0e1"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.TypeVariable"
+      uuid: "equals_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "equals_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid19"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path5"
+    testPathName: "equalsWhenArraysEqualsGetSharedTypeArgumentsPaGetSharedTypeArgumentsPb"
+    filledByUser: false
+    modelFingerprint: "B93176E42447FF21A3F325F12E984458"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "7BE8B59659E2934E6DE030FB28788B1A"
+      index: 1
+      ignored: false
+      valueUuid: "equals_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "b"
+      modelFingerprint: "266FE7DC73D2307E637AA81DA0346E3E"
+      index: 2
+      ignored: false
+      valueUuid: "equals_type2"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 3
+      ignored: false
+      valueUuid: "uuid1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ab750419-a6b7-36c5-a05c-10e82e78b360"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Objects.equal(java.lang.reflect.Type,java.lang.reflect.Type)\
+        \ : boolean"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MoreTypes$ParameterizedTypeImpl"
+        parameters:
+        - name: "ownerType"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Type"
+            uuid: "equals_type1-ownerType"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "rawType"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Type"
+            uuid: "equals_type1-rawType"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeArguments"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.reflect.Type[]"
+            uuid: "equals_type1-typeArguments"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MoreTypes$ParameterizedTypeImpl"
+        parameters:
+        - name: "ownerType"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Type"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Type"
+            uuid: "equals_type1-ownerType"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "rawType"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Type"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Type"
+            uuid: "equals_type1-rawType"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeArguments"
+          value:
+            sapientType: "ARRAY"
+            valueType: "java.lang.reflect.Type[]"
+            uuid: "equals_type1-typeArguments"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.MoreTypes$ParameterizedTypeImpl"
+      uuid: "equals_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MoreTypes$ParameterizedTypeImpl"
+        parameters:
+        - name: "ownerType"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Type"
+            uuid: "equals_type2-ownerType"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "rawType"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Type"
+            uuid: "equals_type1-rawType"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeArguments"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.reflect.Type[]"
+            uuid: "equals_type2-typeArguments"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MoreTypes$ParameterizedTypeImpl"
+        parameters:
+        - name: "ownerType"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Type"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Type"
+            uuid: "equals_type2-ownerType"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "rawType"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Type"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Type"
+            uuid: "equals_type1-rawType"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeArguments"
+          value:
+            sapientType: "ARRAY"
+            valueType: "java.lang.reflect.Type[]"
+            uuid: "equals_type2-typeArguments"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.MoreTypes$ParameterizedTypeImpl"
+      uuid: "equals_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "uuid1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path6"
+    testPathName: "equalsWhenArraysNotEqualsGetSharedTypeArgumentsPaGetSharedTypeArgumentsPb"
+    filledByUser: false
+    modelFingerprint: "356F44FED941051C7637A791CFD9A510"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "40879fb3-2b04-3b04-b0be-f6d4b309c833"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.reflect.ParameterizedType.getOwnerType()\
+        \ : java.lang.reflect.Type"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path7"
+    testPathName: "equalsWhenPInstanceOfParameterizedTypeImplAndArraysNotEqualsGetSharedTypeArgumentsPaGetSharedTypeArgumentsPb"
+    filledByUser: false
+    modelFingerprint: "F8E7C76B69463DC7046841493BAD9FE2"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "7cab3d42-a643-37f5-afbd-4f00395670bb"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.reflect.ParameterizedType.getOwnerType()\
+        \ : java.lang.reflect.Type"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path8"
+    testPathName: "equalsWhenPNotInstanceOfParameterizedTypeImplAndArraysNotEqualsGetSharedTypeArgumentsPaGetSharedTypeArgumentsPb"
+    filledByUser: false
+    modelFingerprint: "B22FC710007E030A765BBE519496BEFF"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "01219C673A7F64F5420DDFE49CF52603"
+      index: 1
+      ignored: false
+      valueUuid: "equals_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "b"
+      modelFingerprint: "E6DD7E2FB95494FA0F5243A624AA1E74"
+      index: 2
+      ignored: false
+      valueUuid: "equals_type2"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      valueUuid: "uuid23"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b969e69d-c955-3181-8a07-ba73d204e611"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.reflect.ParameterizedType.getOwnerType()\
+        \ : java.lang.reflect.Type"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.ParameterizedType"
+      uuid: "equals_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.ParameterizedType"
+      uuid: "equals_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid23"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path13"
+    testPathName: "equalsWhenArraysEqualsWaGetLowerBoundsWbGetLowerBounds"
+    filledByUser: false
+    modelFingerprint: "E5C97EE230358C7C239AF9334812923A"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "BBD357D69E71A840EB06573E2F444456"
+      index: 1
+      ignored: false
+      valueUuid: "equals_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "b"
+      modelFingerprint: "6932A646D468E25DBCEB7CA725C0F031"
+      index: 2
+      ignored: false
+      valueUuid: "equals_type2"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 3
+      ignored: false
+      valueUuid: "uuid24"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b3576554-0b50-3e3b-b762-f734c627bb61"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.reflect.WildcardType.getUpperBounds()\
+        \ : java.lang.reflect.Type[]"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.WildcardType"
+      uuid: "equals_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.WildcardType"
+      uuid: "equals_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "uuid24"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path14"
+    testPathName: "equalsWhenArraysNotEqualsWaGetLowerBoundsWbGetLowerBounds"
+    filledByUser: false
+    modelFingerprint: "0188FFC1C7475DFC1CD60E547DF3C32D"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "BBD357D69E71A840EB06573E2F444456"
+      index: 1
+      ignored: false
+      valueUuid: "equals_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "b"
+      modelFingerprint: "6932A646D468E25DBCEB7CA725C0F031"
+      index: 2
+      ignored: false
+      valueUuid: "equals_type2"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      valueUuid: "uuid25"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d84e06fe-5824-3199-b21c-5521925f86ab"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.reflect.WildcardType.getUpperBounds()\
+        \ : java.lang.reflect.Type[]"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.WildcardType"
+      uuid: "equals_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.WildcardType"
+      uuid: "equals_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid25"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path16"
+    testPathName: "equalsWhenVaGetNameEqualsVbGetName"
+    filledByUser: false
+    modelFingerprint: "C6A5FABCEF78168481F03695682E9275"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "F4CC2B6D713F673D0D0B7A885295607D"
+      index: 1
+      ignored: false
+      valueUuid: "equals_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "b"
+      modelFingerprint: "3A728AF2FB18E8D236128D32A06B40FF"
+      index: 2
+      ignored: false
+      valueUuid: "equals_type2"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 3
+      ignored: false
+      valueUuid: "uuid26"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4782268d-7320-3b50-b10c-048acea0af37"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.reflect.TypeVariable.getGenericDeclaration()\
+        \ : java.lang.reflect.GenericDeclaration"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.TypeVariable"
+      uuid: "equals_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.TypeVariable"
+      uuid: "equals_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "uuid26"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path17"
+    testPathName: "equalsWhenVaGetNameNotEqualsVbGetName"
+    filledByUser: false
+    modelFingerprint: "54D800AC693056C57464B5F577DDFE80"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "a"
+      modelFingerprint: "F4CC2B6D713F673D0D0B7A885295607D"
+      index: 1
+      ignored: false
+      valueUuid: "equals_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "b"
+      modelFingerprint: "3A728AF2FB18E8D236128D32A06B40FF"
+      index: 2
+      ignored: false
+      valueUuid: "equals_type2"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 3
+      ignored: false
+      valueUuid: "uuid27"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e0cc2bbb-94ea-3e09-93ce-f87bc66b6944"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.reflect.TypeVariable.getGenericDeclaration()\
+        \ : java.lang.reflect.GenericDeclaration"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.TypeVariable"
+      uuid: "equals_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.TypeVariable"
+      uuid: "equals_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid27"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "typeToString"
+    signature: "typeToString(java.lang.reflect.Type) : java.lang.String"
+    instructionFingerprint: "57DAA0949B1A1394B2B77839570EE909"
+  paths:
+  - pathId: "path1"
+    testPathName: "typeToStringWhenTypeInstanceOfClass"
+    filledByUser: false
+    modelFingerprint: "F78B1140B1CF979BAF3F3302D5EE525C"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "A096ECFBA382F0B51622E3EAF5CEC48D"
+      index: 1
+      ignored: false
+      valueUuid: "typeToString_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "48D9CDFFA9228204E62E481CFDFA2E5D"
+      index: 2
+      ignored: false
+      valueUuid: "typeToString_string1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "8dd0d4eb-e3b4-3526-9723-2936f369e4f0"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      suggestedContent: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "typeToString_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.lang.Object"
+      suggestedContent: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.String"
+      uuid: "typeToString_string1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "typeToStringWhenTypeNotInstanceOfClass"
+    filledByUser: false
+    modelFingerprint: "8730826BD79A78821A1245ABA2C2F727"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "F6833A715BE6915002114E2CFC7122B1"
+      index: 1
+      ignored: false
+      valueUuid: "typeToString_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "BB65A89C4C614F4F6AD65A22F8889E68"
+      index: 2
+      ignored: false
+      valueUuid: "typeToString_string1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "ec4f6d89-3723-3057-bd23-52fa4313fb81"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "typeToString_type1"
+      fixed: false
+      nameForMock: "typeToString_type1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "typeToString_type1"
+      suggestedContent: !<regular>
+        value: "typeToString_type1"
+      valueType: "java.lang.String"
+      uuid: "typeToString_string1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "getGenericSupertype"
+    signature: "getGenericSupertype(java.lang.reflect.Type,java.lang.Class<?>,java.lang.Class<?>)\
+      \ : java.lang.reflect.Type"
+    instructionFingerprint: "D125FB44DCB4542028C83B4D882986F1"
+  paths:
+  - pathId: "path1"
+    testPathName: "getGenericSupertypeWhenToResolveEqualsRawType"
+    filledByUser: false
+    modelFingerprint: "291694C5740E794786B97F3C98B6912E"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "120DB7B58A1A0E859D8B7B54A221A17F"
+      index: 1
+      ignored: false
+      valueUuid: "getGenericSupertype_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "rawType"
+      modelFingerprint: "2144E6E1FA23B72B7E37E302CC290DE8"
+      index: 2
+      ignored: false
+      valueUuid: "getGenericSupertype_class2"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "toResolve"
+      modelFingerprint: "60FB6E99C52374EB5519C8D112BD5D4D"
+      index: 3
+      ignored: false
+      valueUuid: "getGenericSupertype_class2"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "AE1808C135ABB498DB6E561835D786BE"
+      index: 4
+      ignored: false
+      valueUuid: "getGenericSupertype_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0536290a-15de-3178-94c9-2a17debd8295"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "getGenericSupertype_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "getGenericSupertype_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "getGenericSupertype_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "getGenericSupertype_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "getGenericSupertypeWhenIIndexOfInterfacesEqualsToResolve"
+    filledByUser: false
+    modelFingerprint: "263A2BC8052AADA673508D6D099FAD6C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "F6833A715BE6915002114E2CFC7122B1"
+      index: 1
+      ignored: false
+      valueUuid: "getGenericSupertype_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "rawType"
+      modelFingerprint: "2144E6E1FA23B72B7E37E302CC290DE8"
+      index: 2
+      ignored: false
+      valueUuid: "getGenericSupertype_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "toResolve"
+      modelFingerprint: "C292790EAA8046C5BC604887787F847E"
+      index: 3
+      ignored: false
+      valueUuid: "getGenericSupertype_class3"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "AE1808C135ABB498DB6E561835D786BE"
+      index: 4
+      ignored: false
+      valueUuid: "getGenericSupertype_type2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "fbf35bcb-4216-37d0-9c14-f92e8aee7007"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isInterface() : boolean"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "getGenericSupertype_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "getGenericSupertype_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "getGenericSupertype_class3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "getGenericSupertype_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path3"
+    testPathName: "getGenericSupertypeWhenToResolveIsAssignableFromIIndexOfInterfaces"
+    filledByUser: false
+    modelFingerprint: "3E35DD580E36283711AA993ABAEA78C5"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "F6833A715BE6915002114E2CFC7122B1"
+      index: 1
+      ignored: false
+      valueUuid: "getGenericSupertype_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "rawType"
+      modelFingerprint: "2144E6E1FA23B72B7E37E302CC290DE8"
+      index: 2
+      ignored: false
+      valueUuid: "getGenericSupertype_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "toResolve"
+      modelFingerprint: "60FB6E99C52374EB5519C8D112BD5D4D"
+      index: 3
+      ignored: false
+      valueUuid: "getGenericSupertype_class2"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "AE1808C135ABB498DB6E561835D786BE"
+      index: 4
+      ignored: false
+      valueUuid: "getGenericSupertype_type3"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "9097c156-a369-38a1-bef1-87e7b11f8e6f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isInterface() : boolean"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "getGenericSupertype_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "getGenericSupertype_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "getGenericSupertype_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "getGenericSupertype_type3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path7"
+    testPathName: "getGenericSupertypeWhenRawSupertypeEqualsToResolve"
+    filledByUser: false
+    modelFingerprint: "E67BD47C795F52416BCD7F6E2E1D00A5"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "2b168fd4-0aff-32e5-910c-73612a3700f8"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isInterface() : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path6"
+    testPathName: "getGenericSupertypeWhenRawTypeEqualsObject"
+    filledByUser: false
+    modelFingerprint: "9925AA6BCA9F02B6206FCD9CA11A2268"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "c9ecfc31-bb03-3a25-8440-6e7a8f1ab473"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isInterface() : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path4"
+    testPathName: "getGenericSupertypeWhenRawTypeNotEqualsObjectAndRawSupertypeEqualsToResolve"
+    filledByUser: false
+    modelFingerprint: "64285988144871C6FD80543472F76F61"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "F6833A715BE6915002114E2CFC7122B1"
+      index: 1
+      ignored: false
+      valueUuid: "getGenericSupertype_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "rawType"
+      modelFingerprint: "2144E6E1FA23B72B7E37E302CC290DE8"
+      index: 2
+      ignored: false
+      valueUuid: "getGenericSupertype_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "toResolve"
+      modelFingerprint: "CB6510D884A0642AE7688168F0943714"
+      index: 3
+      ignored: false
+      valueUuid: "getGenericSupertype_class5"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "AE1808C135ABB498DB6E561835D786BE"
+      index: 4
+      ignored: false
+      valueUuid: "getGenericSupertype_type2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4c8bbeb7-8280-3435-bc1c-5f1e78c9e6f5"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isInterface() : boolean"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "getGenericSupertype_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "getGenericSupertype_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? super java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "? super java.lang.Object"
+      uuid: "getGenericSupertype_class5"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "getGenericSupertype_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path5"
+    testPathName: "getGenericSupertypeWhenToResolveNotIsAssignableFromRawSupertype"
+    filledByUser: false
+    modelFingerprint: "97DC79E70EAAD5F48D418F1FC6C3EA88"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "F6833A715BE6915002114E2CFC7122B1"
+      index: 1
+      ignored: false
+      valueUuid: "getGenericSupertype_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "rawType"
+      modelFingerprint: "2144E6E1FA23B72B7E37E302CC290DE8"
+      index: 2
+      ignored: false
+      valueUuid: "getGenericSupertype_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "toResolve"
+      modelFingerprint: "60FB6E99C52374EB5519C8D112BD5D4D"
+      index: 3
+      ignored: false
+      valueUuid: "getGenericSupertype_class2"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "A4BDA6B2F94E11E746C09D7BFDF9AF70"
+      index: 4
+      ignored: false
+      valueUuid: "getGenericSupertype_class2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "697e0b97-c680-3926-91cb-154c7314a729"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.isInterface() : boolean"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "getGenericSupertype_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "getGenericSupertype_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "getGenericSupertype_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "getGenericSupertype_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "resolveTypeVariable"
+    signature: "resolveTypeVariable(java.lang.reflect.Type,java.lang.Class<?>,java.lang.reflect.TypeVariable<?>)\
+      \ : java.lang.reflect.Type"
+    instructionFingerprint: "373AD3DC5CEE70FCF3A047C1AE784A93"
+  paths:
+  - pathId: "path1"
+    testPathName: "resolveTypeVariableWhenDeclaredByRawIsNull"
+    filledByUser: false
+    modelFingerprint: "3F235690BBA186E7BBDCC89323EE3131"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "63992497-dac8-32b6-a8be-64df583f376f"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.reflect.TypeVariable.getGenericDeclaration()\
+        \ : java.lang.reflect.GenericDeclaration"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path7"
+    testPathName: "resolveTypeVariableWhenGenericDeclarationNotInstanceOfClassAndDeclaredByRawIsNull"
+    filledByUser: false
+    modelFingerprint: "AD386F695BB81177EE70DFF7CD0786AD"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "F6833A715BE6915002114E2CFC7122B1"
+      index: 1
+      ignored: false
+      valueUuid: "resolveTypeVariable_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "rawType"
+      modelFingerprint: "2144E6E1FA23B72B7E37E302CC290DE8"
+      index: 2
+      ignored: false
+      valueUuid: "resolveTypeVariable_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "unknown"
+      modelFingerprint: "5A3290E3B09B2D9BC07748C8CF49D700"
+      index: 3
+      ignored: false
+      valueUuid: "resolveTypeVariable_typeVariable1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "typeVariable"
+      modelFingerprint: "CEE790E3DDB0700B22E8046486017D6D"
+      index: 4
+      ignored: false
+      valueUuid: "resolveTypeVariable_typeVariable1"
+      methodExercised:
+        target: "typeVariable"
+        name: "getGenericDeclaration"
+        parameters: []
+        signature: "getGenericDeclaration(): GenericDeclaration"
+        returnValueUuid: "declaringClassOf_genericDeclaration1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "95A86AF19A3E74709CBD314983C94AA7"
+      index: 5
+      ignored: false
+      valueUuid: "resolveTypeVariable_typeVariable1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b8717013-08a3-3939-ac7f-2553ca9b0dbd"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "resolveTypeVariable_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "resolveTypeVariable_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.TypeVariable"
+      uuid: "resolveTypeVariable_typeVariable1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.TypeVariable"
+      uuid: "resolveTypeVariable_typeVariable1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.GenericDeclaration"
+      uuid: "declaringClassOf_genericDeclaration1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.TypeVariable"
+      uuid: "resolveTypeVariable_typeVariable1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path6"
+    testPathName: "resolveTypeVariableWhenDeclaredByNotInstanceOfParameterizedType"
+    filledByUser: false
+    modelFingerprint: "89B72D95AD9F3D3BA9725386A218DD5C"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "120DB7B58A1A0E859D8B7B54A221A17F"
+      index: 1
+      ignored: false
+      valueUuid: "resolveTypeVariable_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "rawType"
+      modelFingerprint: "2144E6E1FA23B72B7E37E302CC290DE8"
+      index: 2
+      ignored: false
+      valueUuid: "resolveTypeVariable_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "unknown"
+      modelFingerprint: "1EC29A588A1DF067A0DDEF6DE9F509D5"
+      index: 3
+      ignored: false
+      valueUuid: "resolveTypeVariable_typeVariable1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "MoreTypes"
+      modelFingerprint: "A27E7164BB02B179BA48570E06E83461"
+      index: 4
+      ignored: false
+      valueUuid: "uuid29"
+      methodExercised:
+        target: "com.google.inject.internal.MoreTypes"
+        name: "getGenericSupertype"
+        parameters:
+        - name: "type"
+          valueUuid: "resolveTypeVariable_type1"
+        - name: "rawType"
+          valueUuid: "resolveTypeVariable_class1"
+        - name: "toResolve"
+          valueUuid: "declaringClassOf_genericDeclaration1"
+        signature: "getGenericSupertype(Type,Class,Class): Type"
+        returnValueUuid: "resolveTypeVariable_type2"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B230984905E6541C9FB4D8F714ADAA8D"
+      index: 5
+      ignored: false
+      valueUuid: "resolveTypeVariable_typeVariable1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f9d68972-b726-33c0-be41-0201f46d4de8"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.reflect.TypeVariable.getGenericDeclaration()\
+        \ : java.lang.reflect.GenericDeclaration"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "resolveTypeVariable_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "resolveTypeVariable_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.TypeVariable"
+      uuid: "resolveTypeVariable_typeVariable1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.MoreTypes"
+      uuid: "uuid29"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "resolveTypeVariable_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "resolveTypeVariable_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "resolveTypeVariable_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "declaringClassOf_genericDeclaration1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.TypeVariable"
+      uuid: "resolveTypeVariable_typeVariable1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path5"
+    testPathName: "resolveTypeVariableWhenINotLessThanArrayLengthThrowsNoSuchElementException"
+    filledByUser: false
+    modelFingerprint: "C552C6F60010821D79F860C3C8D29337"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "71976cb5-38b7-3edb-a540-bad76cb3294e"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.reflect.TypeVariable.getGenericDeclaration()\
+        \ : java.lang.reflect.GenericDeclaration"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path4"
+    testPathName: "resolveTypeVariableWhenToFindNotEqualsIIndexOfArrayThrowsNoSuchElementException"
+    filledByUser: false
+    modelFingerprint: "5582FAA32EE14C6F12BE2FD91D81395A"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "F6833A715BE6915002114E2CFC7122B1"
+      index: 1
+      ignored: false
+      valueUuid: "resolveTypeVariable_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "rawType"
+      modelFingerprint: "C7E3759604A1F6B33BBE475C8F686615"
+      index: 2
+      ignored: false
+      valueUuid: "resolveTypeVariable_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "unknown"
+      modelFingerprint: "5A3290E3B09B2D9BC07748C8CF49D700"
+      index: 3
+      ignored: false
+      valueUuid: "resolveTypeVariable_typeVariable1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "typeVariable"
+      modelFingerprint: "203A968513F7AE8773875122E0894A4E"
+      index: 4
+      ignored: false
+      valueUuid: "resolveTypeVariable_typeVariable1"
+      methodExercised:
+        target: "typeVariable"
+        name: "getGenericDeclaration"
+        parameters: []
+        signature: "getGenericDeclaration(): GenericDeclaration"
+        returnValueUuid: "declaringClassOf_genericDeclaration1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "MoreTypes"
+      modelFingerprint: "2A83FB6E8248AA243A98B9FF1C000987"
+      index: 5
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.MoreTypes"
+        name: "getGenericSupertype"
+        parameters:
+        - name: "type"
+          valueUuid: "resolveTypeVariable_type1"
+        - name: "rawType"
+          valueUuid: "resolveTypeVariable_class1"
+        - name: "toResolve"
+          valueUuid: "declaringClassOf_genericDeclaration1"
+        signature: "getGenericSupertype(Type,Class,Class): Type"
+        returnValueUuid: "resolveTypeVariable_type2"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E23759B0C26F00DB1708D1CC608ED132"
+      index: 6
+      ignored: false
+      valueUuid: "indexOf_noSuchElementException1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0c2eb1c0-f108-3e22-8cb2-9710c7e4f654"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.getTypeParameters() : java.lang.reflect.TypeVariable[]<java.lang.Class<java.lang.Object>>"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "resolveTypeVariable_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Class"
+      suggestedContent: !<regular>
+        value: "java.lang.Class"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "resolveTypeVariable_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.TypeVariable"
+      uuid: "resolveTypeVariable_typeVariable1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.TypeVariable"
+      uuid: "resolveTypeVariable_typeVariable1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "declaringClassOf_genericDeclaration1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.MoreTypes"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.ParameterizedType"
+      uuid: "resolveTypeVariable_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "resolveTypeVariable_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Class"
+      suggestedContent: !<regular>
+        value: "java.lang.Class"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "resolveTypeVariable_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "declaringClassOf_genericDeclaration1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.util.NoSuchElementException"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "java.util.NoSuchElementException"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "java.util.NoSuchElementException"
+      uuid: "indexOf_noSuchElementException1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "resolveTypeVariableWhenPInstanceOfParameterizedTypeImpl"
+    filledByUser: false
+    modelFingerprint: "5022553B7C65DCF4AFDB8EA037BAB8B1"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "F6833A715BE6915002114E2CFC7122B1"
+      index: 1
+      ignored: false
+      valueUuid: "resolveTypeVariable_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "rawType"
+      modelFingerprint: "2144E6E1FA23B72B7E37E302CC290DE8"
+      index: 2
+      ignored: false
+      valueUuid: "resolveTypeVariable_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "unknown"
+      modelFingerprint: "5A3290E3B09B2D9BC07748C8CF49D700"
+      index: 3
+      ignored: false
+      valueUuid: "resolveTypeVariable_typeVariable1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "typeVariable"
+      modelFingerprint: "203A968513F7AE8773875122E0894A4E"
+      index: 4
+      ignored: false
+      valueUuid: "resolveTypeVariable_typeVariable1"
+      methodExercised:
+        target: "typeVariable"
+        name: "getGenericDeclaration"
+        parameters: []
+        signature: "getGenericDeclaration(): GenericDeclaration"
+        returnValueUuid: "declaringClassOf_genericDeclaration1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "MoreTypes"
+      modelFingerprint: "9D071D08265317261EE888E8E62A48AF"
+      index: 5
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.MoreTypes"
+        name: "getGenericSupertype"
+        parameters:
+        - name: "type"
+          valueUuid: "resolveTypeVariable_type1"
+        - name: "rawType"
+          valueUuid: "resolveTypeVariable_class1"
+        - name: "toResolve"
+          valueUuid: "declaringClassOf_genericDeclaration1"
+        signature: "getGenericSupertype(Type,Class,Class): Type"
+        returnValueUuid: "resolveTypeVariable_type2"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "AE1808C135ABB498DB6E561835D786BE"
+      index: 6
+      ignored: false
+      valueUuid: "resolveTypeVariable_type3"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b0da1cc4-aa69-302b-acd8-32905eda57f5"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.getTypeParameters() : java.lang.reflect.TypeVariable[]<java.lang.Class<java.lang.Object>>"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "resolveTypeVariable_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "resolveTypeVariable_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.TypeVariable"
+      uuid: "resolveTypeVariable_typeVariable1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.TypeVariable"
+      uuid: "resolveTypeVariable_typeVariable1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "declaringClassOf_genericDeclaration1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.MoreTypes"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MoreTypes$ParameterizedTypeImpl"
+        parameters:
+        - name: "ownerType"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Type"
+            uuid: "resolveTypeVariable_type2-ownerType"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "rawType"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Type"
+            uuid: "resolveTypeVariable_type2-rawType"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeArguments"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values:
+                0:
+                  sapientType: "MOCK"
+                  valueType: "java.lang.reflect.Type"
+                  uuid: "resolveTypeVariable_type3"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            suggestedContent: !<array>
+              values:
+                0:
+                  sapientType: "MOCK"
+                  valueType: "java.lang.reflect.Type"
+                  uuid: "resolveTypeVariable_type3"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "java.lang.reflect.Type[]"
+            uuid: "getSharedTypeArguments_type[]2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MoreTypes$ParameterizedTypeImpl"
+        parameters:
+        - name: "ownerType"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Type"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Type"
+            uuid: "resolveTypeVariable_type2-ownerType"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "rawType"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "java.lang.reflect.Type"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "java.lang.reflect.Type"
+            uuid: "resolveTypeVariable_type2-rawType"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "typeArguments"
+          value:
+            sapientType: "ARRAY"
+            suggestedContent: !<array>
+              values:
+                0:
+                  sapientType: "UNKNOWN"
+                  suggestedContent: !<unknown_object>
+                    target: "java.lang.reflect.Type"
+                    onlyPojoFunctions: false
+                    builderPattern: false
+                  valueType: "java.lang.reflect.Type"
+                  uuid: "resolveTypeVariable_type3"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+            valueType: "java.lang.reflect.Type[]"
+            uuid: "getSharedTypeArguments_type[]2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.MoreTypes$ParameterizedTypeImpl"
+      uuid: "resolveTypeVariable_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "resolveTypeVariable_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "resolveTypeVariable_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "declaringClassOf_genericDeclaration1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "resolveTypeVariable_type3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path3"
+    testPathName: "resolveTypeVariableWhenPNotInstanceOfParameterizedTypeImpl"
+    filledByUser: false
+    modelFingerprint: "A44FD3E1B83C1441AB11FE2FC0293488"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "F6833A715BE6915002114E2CFC7122B1"
+      index: 1
+      ignored: false
+      valueUuid: "resolveTypeVariable_type1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "rawType"
+      modelFingerprint: "2144E6E1FA23B72B7E37E302CC290DE8"
+      index: 2
+      ignored: false
+      valueUuid: "resolveTypeVariable_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "unknown"
+      modelFingerprint: "5A3290E3B09B2D9BC07748C8CF49D700"
+      index: 3
+      ignored: false
+      valueUuid: "resolveTypeVariable_typeVariable1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "typeVariable"
+      modelFingerprint: "203A968513F7AE8773875122E0894A4E"
+      index: 4
+      ignored: false
+      valueUuid: "resolveTypeVariable_typeVariable1"
+      methodExercised:
+        target: "typeVariable"
+        name: "getGenericDeclaration"
+        parameters: []
+        signature: "getGenericDeclaration(): GenericDeclaration"
+        returnValueUuid: "declaringClassOf_genericDeclaration1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "MoreTypes"
+      modelFingerprint: "A299A4196DABA9C7F8123527F8A79DA4"
+      index: 5
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.MoreTypes"
+        name: "getGenericSupertype"
+        parameters:
+        - name: "type"
+          valueUuid: "resolveTypeVariable_type1"
+        - name: "rawType"
+          valueUuid: "resolveTypeVariable_class1"
+        - name: "toResolve"
+          valueUuid: "declaringClassOf_genericDeclaration1"
+        signature: "getGenericSupertype(Type,Class,Class): Type"
+        returnValueUuid: "resolveTypeVariable_type2"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "AE1808C135ABB498DB6E561835D786BE"
+      index: 6
+      ignored: false
+      valueUuid: "resolveTypeVariable_type3"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0c6547be-f516-3062-b42e-4d9aed879900"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.getTypeParameters() : java.lang.reflect.TypeVariable[]<java.lang.Class<java.lang.Object>>"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "resolveTypeVariable_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "resolveTypeVariable_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.TypeVariable"
+      uuid: "resolveTypeVariable_typeVariable1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.TypeVariable"
+      uuid: "resolveTypeVariable_typeVariable1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "declaringClassOf_genericDeclaration1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.MoreTypes"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.ParameterizedType"
+      uuid: "resolveTypeVariable_type2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "resolveTypeVariable_type1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "resolveTypeVariable_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      uuid: "declaringClassOf_genericDeclaration1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Type"
+      uuid: "resolveTypeVariable_type3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false

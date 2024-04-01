@@ -1,0 +1,177 @@
+---
+modelFingerprint: "B5DBBCCB322112D2B0B374C33B21D97A"
+methods:
+- method:
+    name: "scope"
+    signature: "scope(com.google.inject.Key<java.lang.Object>,com.google.inject.Provider<java.lang.Object>)\
+      \ : com.google.inject.Provider<java.lang.Object>"
+    instructionFingerprint: "C07021B6EE4EA7430D1C01B315B00F06"
+  paths:
+  - pathId: "path1"
+    testPathName: "scopeTest"
+    constructorSignature: "<init>() : void"
+    filledByUser: false
+    modelFingerprint: "D3BF7666AE71298263A51245E779457B"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "key"
+      modelFingerprint: "F59B66C04746BAE94AED352C5E64D400"
+      index: 2
+      ignored: false
+      valueUuid: "scope_key1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "creator"
+      modelFingerprint: "7D2ABEF62FD9B8391D34FA3CED17A4EC"
+      index: 3
+      ignored: false
+      valueUuid: "scope_provider1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "CB6430A9F7738AA3BC2F211E7602A5AA"
+      index: 4
+      ignored: false
+      valueUuid: "uuid1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4cca813d-2b33-3e30-846b-7bf082a41614"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.SingletonScope"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.SingletonScope"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.SingletonScope"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.inject.Key"
+        method: "get"
+        methodParameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            content: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.Class"
+            uuid: "scope_key1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<static_method_return>
+        target: "com.google.inject.Key"
+        method: "get"
+        methodParameters:
+        - name: "type"
+          value:
+            sapientType: "CLASS"
+            valueType: "java.lang.Class"
+            uuid: "scope_key1-type"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.Key"
+      uuid: "scope_key1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.Provider"
+      genericValueType: "java.lang.Object"
+      uuid: "scope_provider1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NOT_NULL"
+      valueType: "com.google.inject.Provider"
+      uuid: "uuid1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "toString"
+    signature: "toString() : java.lang.String"
+    instructionFingerprint: "E1CDF53348E080A807C187343F1E0F89"
+  paths:
+  - pathId: "path1"
+    testPathName: "toStringTest"
+    constructorSignature: "<init>() : void"
+    filledByUser: false
+    modelFingerprint: "FA9680D437C2D59260F23B2C33AF0C85"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "216863D16C2DB3217903766EECFFCFA5"
+      index: 2
+      ignored: false
+      valueUuid: "uuid2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "363d3698-f34c-39ad-914f-376a19498023"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.SingletonScope"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.SingletonScope"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.SingletonScope"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "Scopes.SINGLETON"
+      valueType: "java.lang.String"
+      uuid: "uuid2"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false

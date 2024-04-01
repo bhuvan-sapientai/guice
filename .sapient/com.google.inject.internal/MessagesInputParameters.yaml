@@ -1,0 +1,4086 @@
+---
+modelFingerprint: "3A80F6129C1844B5CABCBCFA4683BFBE"
+methods:
+- method:
+    name: "mergeSources"
+    signature: "mergeSources(java.util.List<java.lang.Object>,com.google.inject.spi.Message)\
+      \ : com.google.inject.spi.Message"
+    instructionFingerprint: "63E083E9E9BAA1930FC7CEA2F0EBC6BF"
+  paths:
+  - pathId: "path3"
+    testPathName: "mergeSourcesWhenSourcesIsEmpty"
+    filledByUser: false
+    modelFingerprint: "EBD9DEBC0ED0179D4AFB946364EE4104"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "e28d6974-28a0-3575-8899-938ba1712fc6"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path2"
+    testPathName: "mergeSourcesWhenMessageSourcesIsEmpty"
+    filledByUser: false
+    modelFingerprint: "168A6D2935178ADC3A748CA0FE55D4A2"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "15006b13-9b02-3dab-bdc0-42eed5520011"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "METHOD_CALL_BUILDER_FUNCTION_NOT_ATTRIBUTE"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path1"
+    testPathName: "mergeSourcesWhenObjectsEqualMessageSourcesGet0SourcesGetSourcesSizeMinus1"
+    filledByUser: false
+    modelFingerprint: "032EBE0ED442F15C595DD54F3B8BFA6E"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "sources"
+      modelFingerprint: "4AB4EECE2B94FF4187269898CB0173EF"
+      index: 1
+      ignored: false
+      valueUuid: "mergeSources_list1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "message"
+      modelFingerprint: "670D4C355BBC54F8D03F3075292D7922"
+      index: 2
+      ignored: false
+      valueUuid: "mergeSources_message1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "message"
+      modelFingerprint: "3020907B02B1ECDE973E2EEBD50AFD5D"
+      index: 3
+      ignored: false
+      valueUuid: "mergeSources_message1"
+      methodExercised:
+        target: "message"
+        name: "getSources"
+        parameters: []
+        signature: "getSources(): List"
+        returnValueUuid: "mergeSources_list2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "message"
+      modelFingerprint: "A1B7B2286E4F65206B980E40CA4D772E"
+      index: 4
+      ignored: false
+      valueUuid: "mergeSources_message1"
+      methodExercised:
+        target: "message"
+        name: "withSource"
+        parameters:
+        - name: "newSources"
+          valueUuid: "mergeSources_immutableList1"
+        signature: "withSource(ImmutableList): Message"
+        returnValueUuid: "mergeSources_message2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "2378BD8CC7D2447F8330BC4E29505FAC"
+      index: 5
+      ignored: false
+      valueUuid: "mergeSources_message2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "16c06d5e-d1bb-3be0-91b1-25b2ee6f55bc"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.base.Objects.equal(java.lang.Object,java.lang.Object)\
+        \ : boolean"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "mergeSources_object2"
+          fixed: false
+          collectionUuid: "mergeSources_list1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      suggestedContent: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "mergeSources_object2"
+          fixed: false
+          collectionUuid: "mergeSources_list1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      valueType: "java.util.List"
+      genericValueType: "java.lang.Object"
+      uuid: "mergeSources_list1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.Message"
+      uuid: "mergeSources_message1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.Message"
+      uuid: "mergeSources_message1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "mergeSources_object1"
+          fixed: false
+          collectionUuid: "mergeSources_list2"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      suggestedContent: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "java.lang.Object"
+            parameters: []
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "java.lang.Object"
+          uuid: "mergeSources_object1"
+          fixed: false
+          collectionUuid: "mergeSources_list2"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      valueType: "java.util.List"
+      genericValueType: "java.lang.Object"
+      uuid: "mergeSources_list2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.Message"
+      uuid: "mergeSources_message1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.Message"
+      uuid: "mergeSources_message2"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableList"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableList"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableList"
+      uuid: "mergeSources_immutableList1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.Message"
+      uuid: "mergeSources_message2"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "format"
+    signature: "format(java.lang.String,java.lang.Object[]) : java.lang.String"
+    instructionFingerprint: "36301FEF9768E86A5386219D95FCAD6B"
+  paths:
+  - pathId: "path1"
+    testPathName: "formatWhenILessThanArgumentsLength"
+    filledByUser: false
+    modelFingerprint: "4C895123CF5901ECBED9CD949D583017"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "messageFormat"
+      modelFingerprint: "F8363AE3556CF5F98AF158380E66132A"
+      index: 1
+      ignored: false
+      valueUuid: "format_string1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "arguments"
+      modelFingerprint: "05A841AF571926D80E9046A1E908357B"
+      index: 2
+      ignored: false
+      valueUuid: "format_object[]1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "7BE90A2B4B562F36556BD6865F591DBC"
+      index: 3
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "convert"
+        parameters:
+        - name: "o"
+          valueUuid: "format_object1"
+        signature: "convert(Object): Object"
+        returnValueUuid: "format_object3"
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "BCAF1333B8FD89D2E42C34124911ED44"
+      index: 4
+      ignored: false
+      valueUuid: "format_string2"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATE_VERIFICATION_PARAMETER"
+      name: "arguments"
+      modelFingerprint: "2A8D38E26776F228DAA6F002934FF16B"
+      index: 5
+      ignored: false
+      valueUuid: "format_object[]2"
+      originalValueUuid: "format_object[]1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b6418280-9fa0-3445-8a11-07407bc38ff1"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      suggestedContent: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "format_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "format_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            uuid: "format_object1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "java.lang.Object[]"
+      uuid: "format_object[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Messages"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.Object"
+      uuid: "format_object3"
+      fixed: false
+      nameForMock: "format_object3"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "format_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      suggestedContent: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "format_string2"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "MOCK"
+            valueType: "java.lang.Object"
+            uuid: "format_object3"
+            fixed: false
+            nameForMock: "format_object3"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<array>
+        values:
+          0:
+            sapientType: "MOCK"
+            valueType: "java.lang.Object"
+            uuid: "format_object3"
+            fixed: false
+            nameForMock: "format_object3"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "java.lang.Object[]"
+      uuid: "format_object[]2"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "formatWhenINotLessThanArgumentsLength"
+    filledByUser: false
+    modelFingerprint: "6396D49957FF9B5F8A43B0ED5D1A9A1E"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "51a4e028-66af-3a6e-a256-6c7a0716834f"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+- method:
+    name: "formatMessages"
+    signature: "formatMessages(java.lang.String,java.util.Collection<com.google.inject.spi.Message>)\
+      \ : java.lang.String"
+    instructionFingerprint: "2D0A53BE22448DAB7115CEA2CD817714"
+  paths:
+  - pathId: "path3"
+    testPathName: "formatMessagesWhenIndexEquals2"
+    filledByUser: false
+    modelFingerprint: "CC4DD98EE59773CFF59C554D26BD571A"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "heading"
+      modelFingerprint: "52AA4D0C024A1BB7A43ACE13A18AD269"
+      index: 1
+      ignored: false
+      valueUuid: "formatMessages_string1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "errorMessages"
+      modelFingerprint: "F2746CA59766EA0BB503FF22BF8648C0"
+      index: 2
+      ignored: false
+      valueUuid: "formatMessages_collection1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "EBFCD47BF2061E4A681152790E63988E"
+      index: 3
+      ignored: false
+      valueUuid: "uuid2"
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "getOnlyCause"
+        parameters:
+        - name: "messages"
+          valueUuid: "formatMessages_collection1"
+        signature: "getOnlyCause(Collection): Throwable"
+        returnValueUuid: "formatMessages_throwable1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "C9A112F134971314CF87138CD1E0B441"
+      index: 4
+      ignored: false
+      valueUuid: "formatMessages_message1"
+      methodExercised:
+        target: "com.google.inject.spi.Message"
+        name: "getErrorDetail"
+        parameters: []
+        signature: "getErrorDetail(): ErrorDetail"
+        returnValueUuid: "formatMessages_errorDetail1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "currentError"
+      modelFingerprint: "6A1EDD60BA719FC031CD712E7172BF70"
+      index: 5
+      ignored: false
+      valueUuid: "formatMessages_errorDetail1"
+      methodExercised:
+        target: "currentError"
+        name: "isMergeable"
+        parameters:
+        - valueUuid: "formatMessages_errorDetail4"
+        signature: "isMergeable(ErrorDetail): boolean"
+        returnValueUuid: "formatMessages_boolean2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "currentError"
+      modelFingerprint: "1136B8106037F7A69F08EFE26ED9AE2E"
+      index: 6
+      ignored: false
+      valueUuid: "formatMessages_errorDetail1"
+      methodExercised:
+        target: "currentError"
+        name: "format"
+        parameters:
+        - name: "index"
+          valueUuid: "formatMessages_int1"
+        - name: "mergeableErrors"
+          valueUuid: "formatMessages_object4"
+        - name: "formatter"
+          valueUuid: "formatMessages_formatter3"
+        signature: "format(int,List,Formatter): void"
+        returnValueUuid: "formatMessages_void1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "currentError"
+      modelFingerprint: "4B77A1E2D00DE3D43CA3DEF2CD225B4A"
+      index: 7
+      ignored: false
+      valueUuid: "formatMessages_errorDetail1"
+      methodExercised:
+        target: "currentError"
+        name: "getCause"
+        parameters: []
+        signature: "getCause(): Throwable"
+        returnValueUuid: "formatMessages_throwable2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "PackageNameCompressor"
+      modelFingerprint: "C2116513C53AE453714C92EBF3DC69F1"
+      index: 8
+      ignored: false
+      valueUuid: "uuid3"
+      methodExercised:
+        target: "com.google.inject.internal.PackageNameCompressor"
+        name: "compressPackagesInMessage"
+        parameters:
+        - name: "input"
+          valueUuid: "formatMessages_string2"
+        signature: "compressPackagesInMessage(String): String"
+        returnValueUuid: "formatMessages_string3"
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 9
+      ignored: false
+      valueUuid: "formatMessages_string3"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "340298ed-c395-325d-bb6a-224acc75c753"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "object of type Formatter, fmt"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "Formatter fmt = new Formatter().format(heading).format(\\\":\\\\n\\\
+        \\n\\\");"
+      lineNumber: 72
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type Formatter - Method: format"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "heading1"
+      valueType: "java.lang.String"
+      uuid: "formatMessages_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "com.google.inject.spi.Message"
+            parameters:
+            - name: "internalOnly"
+              value:
+                sapientType: "MOCK"
+                valueType: "com.google.inject.internal.GuiceInternal"
+                uuid: "formatMessages_message1-internalOnly"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorId"
+              value:
+                sapientType: "ENUM"
+                content: !<regular>
+                  value: "AMBIGUOUS_TYPE_CONVERSION"
+                valueType: "com.google.inject.internal.ErrorId"
+                uuid: "formatMessages_message1-errorId"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorDetail"
+              value:
+                sapientType: "MOCK"
+                valueType: "com.google.inject.spi.ErrorDetail"
+                genericValueType: "?"
+                uuid: "formatMessages_errorDetail1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "com.google.inject.spi.Message"
+            parameters:
+            - name: "internalOnly"
+              value:
+                sapientType: "UNKNOWN"
+                valueType: "com.google.inject.internal.GuiceInternal"
+                uuid: "formatMessages_message1-internalOnly"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorId"
+              value:
+                sapientType: "ENUM"
+                valueType: "com.google.inject.internal.ErrorId"
+                uuid: "formatMessages_message1-errorId"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorDetail"
+              value:
+                sapientType: "UNKNOWN"
+                suggestedContent: !<unknown_object>
+                  target: "com.google.inject.spi.ErrorDetail"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "com.google.inject.spi.ErrorDetail"
+                genericValueType: "?"
+                uuid: "formatMessages_errorDetail1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "com.google.inject.spi.Message"
+          uuid: "formatMessages_message1"
+          fixed: false
+          collectionUuid: "formatMessages_collection1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      suggestedContent: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "com.google.inject.spi.Message"
+            parameters:
+            - name: "internalOnly"
+              value:
+                sapientType: "MOCK"
+                valueType: "com.google.inject.internal.GuiceInternal"
+                uuid: "formatMessages_message1-internalOnly"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorId"
+              value:
+                sapientType: "ENUM"
+                content: !<regular>
+                  value: "AMBIGUOUS_TYPE_CONVERSION"
+                valueType: "com.google.inject.internal.ErrorId"
+                uuid: "formatMessages_message1-errorId"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorDetail"
+              value:
+                sapientType: "MOCK"
+                valueType: "com.google.inject.spi.ErrorDetail"
+                genericValueType: "?"
+                uuid: "formatMessages_errorDetail1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "com.google.inject.spi.Message"
+            parameters:
+            - name: "internalOnly"
+              value:
+                sapientType: "UNKNOWN"
+                valueType: "com.google.inject.internal.GuiceInternal"
+                uuid: "formatMessages_message1-internalOnly"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorId"
+              value:
+                sapientType: "ENUM"
+                valueType: "com.google.inject.internal.ErrorId"
+                uuid: "formatMessages_message1-errorId"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorDetail"
+              value:
+                sapientType: "UNKNOWN"
+                suggestedContent: !<unknown_object>
+                  target: "com.google.inject.spi.ErrorDetail"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "com.google.inject.spi.ErrorDetail"
+                genericValueType: "?"
+                uuid: "formatMessages_errorDetail1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "com.google.inject.spi.Message"
+          uuid: "formatMessages_message1"
+          fixed: false
+          collectionUuid: "formatMessages_collection1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      valueType: "java.util.Collection"
+      genericValueType: "com.google.inject.spi.Message"
+      uuid: "formatMessages_collection1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Messages"
+      uuid: "uuid2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Throwable"
+      uuid: "formatMessages_throwable1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "com.google.inject.spi.Message"
+            parameters:
+            - name: "internalOnly"
+              value:
+                sapientType: "MOCK"
+                valueType: "com.google.inject.internal.GuiceInternal"
+                uuid: "formatMessages_message1-internalOnly"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorId"
+              value:
+                sapientType: "ENUM"
+                content: !<regular>
+                  value: "AMBIGUOUS_TYPE_CONVERSION"
+                valueType: "com.google.inject.internal.ErrorId"
+                uuid: "formatMessages_message1-errorId"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorDetail"
+              value:
+                sapientType: "MOCK"
+                valueType: "com.google.inject.spi.ErrorDetail"
+                genericValueType: "?"
+                uuid: "formatMessages_errorDetail1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "com.google.inject.spi.Message"
+            parameters:
+            - name: "internalOnly"
+              value:
+                sapientType: "UNKNOWN"
+                valueType: "com.google.inject.internal.GuiceInternal"
+                uuid: "formatMessages_message1-internalOnly"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorId"
+              value:
+                sapientType: "ENUM"
+                valueType: "com.google.inject.internal.ErrorId"
+                uuid: "formatMessages_message1-errorId"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorDetail"
+              value:
+                sapientType: "UNKNOWN"
+                suggestedContent: !<unknown_object>
+                  target: "com.google.inject.spi.ErrorDetail"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "com.google.inject.spi.ErrorDetail"
+                genericValueType: "?"
+                uuid: "formatMessages_errorDetail1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "com.google.inject.spi.Message"
+          uuid: "formatMessages_message1"
+          fixed: false
+          collectionUuid: "formatMessages_collection1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      suggestedContent: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "com.google.inject.spi.Message"
+            parameters:
+            - name: "internalOnly"
+              value:
+                sapientType: "MOCK"
+                valueType: "com.google.inject.internal.GuiceInternal"
+                uuid: "formatMessages_message1-internalOnly"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorId"
+              value:
+                sapientType: "ENUM"
+                content: !<regular>
+                  value: "AMBIGUOUS_TYPE_CONVERSION"
+                valueType: "com.google.inject.internal.ErrorId"
+                uuid: "formatMessages_message1-errorId"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorDetail"
+              value:
+                sapientType: "MOCK"
+                valueType: "com.google.inject.spi.ErrorDetail"
+                genericValueType: "?"
+                uuid: "formatMessages_errorDetail1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "com.google.inject.spi.Message"
+            parameters:
+            - name: "internalOnly"
+              value:
+                sapientType: "UNKNOWN"
+                valueType: "com.google.inject.internal.GuiceInternal"
+                uuid: "formatMessages_message1-internalOnly"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorId"
+              value:
+                sapientType: "ENUM"
+                valueType: "com.google.inject.internal.ErrorId"
+                uuid: "formatMessages_message1-errorId"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorDetail"
+              value:
+                sapientType: "UNKNOWN"
+                suggestedContent: !<unknown_object>
+                  target: "com.google.inject.spi.ErrorDetail"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "com.google.inject.spi.ErrorDetail"
+                genericValueType: "?"
+                uuid: "formatMessages_errorDetail1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "com.google.inject.spi.Message"
+          uuid: "formatMessages_message1"
+          fixed: false
+          collectionUuid: "formatMessages_collection1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      valueType: "java.util.Collection"
+      genericValueType: "com.google.inject.spi.Message"
+      uuid: "formatMessages_collection1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.spi.Message"
+        parameters:
+        - name: "internalOnly"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.GuiceInternal"
+            uuid: "formatMessages_message1-internalOnly"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "errorId"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "AMBIGUOUS_TYPE_CONVERSION"
+            valueType: "com.google.inject.internal.ErrorId"
+            uuid: "formatMessages_message1-errorId"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "errorDetail"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.ErrorDetail"
+            genericValueType: "?"
+            uuid: "formatMessages_errorDetail1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.spi.Message"
+        parameters:
+        - name: "internalOnly"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.internal.GuiceInternal"
+            uuid: "formatMessages_message1-internalOnly"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "errorId"
+          value:
+            sapientType: "ENUM"
+            valueType: "com.google.inject.internal.ErrorId"
+            uuid: "formatMessages_message1-errorId"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "errorDetail"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.spi.ErrorDetail"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.spi.ErrorDetail"
+            genericValueType: "?"
+            uuid: "formatMessages_errorDetail1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.spi.Message"
+      uuid: "formatMessages_message1"
+      fixed: false
+      collectionUuid: "formatMessages_collection1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ErrorDetail"
+      genericValueType: "?"
+      uuid: "formatMessages_errorDetail1"
+      fixed: false
+      collectionUuid: "formatMessages_object1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ErrorDetail"
+      genericValueType: "?"
+      uuid: "formatMessages_errorDetail1"
+      fixed: false
+      collectionUuid: "formatMessages_object1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "formatMessages_boolean2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ErrorDetail"
+      uuid: "formatMessages_errorDetail4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ErrorDetail"
+      genericValueType: "?"
+      uuid: "formatMessages_errorDetail1"
+      fixed: false
+      collectionUuid: "formatMessages_object1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "formatMessages_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "formatMessages_int1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      suggestedContent: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      uuid: "formatMessages_object4"
+      fixed: false
+      collectionUuid: "formatMessages_object2"
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.util.Formatter"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<method_return_from_value>
+            target: "java.util.Formatter"
+            localVariableValue:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Formatter"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              suggestedContent: !<new>
+                target: "java.util.Formatter"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "java.util.Formatter"
+              uuid: "formatMessages_formatter1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "format"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "heading1"
+                valueType: "java.lang.String"
+                uuid: "formatMessages_string1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "args"
+              value:
+                sapientType: "ARRAY"
+                content: !<array>
+                  values: {}
+                suggestedContent: !<array>
+                  values: {}
+                valueType: "java.lang.Object[]"
+                uuid: "formatMessages_object[]1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "format"
+          suggestedContent: !<method_return_from_value>
+            target: "java.util.Formatter"
+            localVariableValue:
+              sapientType: "OBJECT"
+              suggestedContent: !<new>
+                target: "java.util.Formatter"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "java.util.Formatter"
+              uuid: "formatMessages_formatter1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "format"
+              value:
+                sapientType: "BASIC"
+                valueType: "java.lang.String"
+                uuid: "formatMessages_string1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "args"
+              value:
+                sapientType: "ARRAY"
+                suggestedContent: !<array>
+                  values: {}
+                valueType: "java.lang.Object[]"
+                uuid: "formatMessages_object[]1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "format"
+          valueType: "java.util.Formatter"
+          uuid: "formatMessages_formatter2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "format"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ":\\n\\n"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "args"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Object[]"
+            uuid: "formatMessages_object[]2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "format"
+      suggestedContent: !<method_return_from_value>
+        target: "java.util.Formatter"
+        localVariableValue:
+          sapientType: "OBJECT"
+          suggestedContent: !<method_return_from_value>
+            target: "java.util.Formatter"
+            localVariableValue:
+              sapientType: "OBJECT"
+              suggestedContent: !<new>
+                target: "java.util.Formatter"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "java.util.Formatter"
+              uuid: "formatMessages_formatter1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "format"
+              value:
+                sapientType: "BASIC"
+                valueType: "java.lang.String"
+                uuid: "formatMessages_string1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "args"
+              value:
+                sapientType: "ARRAY"
+                suggestedContent: !<array>
+                  values: {}
+                valueType: "java.lang.Object[]"
+                uuid: "formatMessages_object[]1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "format"
+          valueType: "java.util.Formatter"
+          uuid: "formatMessages_formatter2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "format"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ":\\n\\n"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "args"
+          value:
+            sapientType: "ARRAY"
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Object[]"
+            uuid: "formatMessages_object[]2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "format"
+      valueType: "java.util.Formatter"
+      uuid: "formatMessages_formatter3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ErrorDetail"
+      genericValueType: "?"
+      uuid: "formatMessages_errorDetail1"
+      fixed: false
+      collectionUuid: "formatMessages_object1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Throwable"
+      uuid: "formatMessages_throwable2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.PackageNameCompressor"
+      uuid: "uuid3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_compressPackagesInMessage1"
+      valueType: "java.lang.String"
+      uuid: "formatMessages_string3"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ""
+      suggestedContent: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "formatMessages_string2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_compressPackagesInMessage1"
+      valueType: "java.lang.String"
+      uuid: "formatMessages_string3"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "formatMessagesWhenCauseIsNullAndIndexEquals2"
+    filledByUser: false
+    modelFingerprint: "FBFDE66750C31F9DE0263B8C38208A2F"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "54a16bc2-398e-33b3-a22c-72a27e8d3919"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    variablesCouldNotBeIsolated: "object of type Formatter, fmt"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "Formatter fmt = new Formatter().format(heading).format(\\\":\\\\n\\\
+        \\n\\\");"
+      lineNumber: 72
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type Formatter - Method: format"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path1"
+    testPathName: "formatMessagesWhenCausesNotContainsKeyCauseEquivalenceAndIndexEquals2"
+    filledByUser: false
+    modelFingerprint: "6C6D777CCC4C1CF046090B49DF349DFA"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "heading"
+      modelFingerprint: "52AA4D0C024A1BB7A43ACE13A18AD269"
+      index: 1
+      ignored: false
+      valueUuid: "formatMessages_string1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "errorMessages"
+      modelFingerprint: "F2746CA59766EA0BB503FF22BF8648C0"
+      index: 2
+      ignored: false
+      valueUuid: "formatMessages_collection1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "35DA1A1BA1F9041B4735117FF330B330"
+      index: 3
+      ignored: false
+      valueUuid: "uuid6"
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "getOnlyCause"
+        parameters:
+        - name: "messages"
+          valueUuid: "formatMessages_collection1"
+        signature: "getOnlyCause(Collection): Throwable"
+        returnValueUuid: "formatMessages_throwable1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "C9A112F134971314CF87138CD1E0B441"
+      index: 4
+      ignored: false
+      valueUuid: "formatMessages_message1"
+      methodExercised:
+        target: "com.google.inject.spi.Message"
+        name: "getErrorDetail"
+        parameters: []
+        signature: "getErrorDetail(): ErrorDetail"
+        returnValueUuid: "formatMessages_errorDetail1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "currentError"
+      modelFingerprint: "6A1EDD60BA719FC031CD712E7172BF70"
+      index: 5
+      ignored: false
+      valueUuid: "formatMessages_errorDetail1"
+      methodExercised:
+        target: "currentError"
+        name: "isMergeable"
+        parameters:
+        - valueUuid: "formatMessages_errorDetail4"
+        signature: "isMergeable(ErrorDetail): boolean"
+        returnValueUuid: "formatMessages_boolean2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "currentError"
+      modelFingerprint: "1136B8106037F7A69F08EFE26ED9AE2E"
+      index: 6
+      ignored: false
+      valueUuid: "formatMessages_errorDetail1"
+      methodExercised:
+        target: "currentError"
+        name: "format"
+        parameters:
+        - name: "index"
+          valueUuid: "formatMessages_int1"
+        - name: "mergeableErrors"
+          valueUuid: "formatMessages_object4"
+        - name: "formatter"
+          valueUuid: "formatMessages_formatter3"
+        signature: "format(int,List,Formatter): void"
+        returnValueUuid: "formatMessages_void1"
+        access: 17
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "currentError"
+      modelFingerprint: "4B77A1E2D00DE3D43CA3DEF2CD225B4A"
+      index: 7
+      ignored: false
+      valueUuid: "formatMessages_errorDetail1"
+      methodExercised:
+        target: "currentError"
+        name: "getCause"
+        parameters: []
+        signature: "getCause(): Throwable"
+        returnValueUuid: "formatMessages_throwable2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "PackageNameCompressor"
+      modelFingerprint: "C2116513C53AE453714C92EBF3DC69F1"
+      index: 8
+      ignored: false
+      valueUuid: "uuid7"
+      methodExercised:
+        target: "com.google.inject.internal.PackageNameCompressor"
+        name: "compressPackagesInMessage"
+        parameters:
+        - name: "input"
+          valueUuid: "formatMessages_string3"
+        signature: "compressPackagesInMessage(String): String"
+        returnValueUuid: "formatMessages_string4"
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 9
+      ignored: false
+      valueUuid: "formatMessages_string4"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "145a0c56-82c7-37f8-a2c8-fcbb91db0e4d"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "INSTANCE, object of type Formatter, fmt"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "Formatter fmt = new Formatter().format(heading).format(\\\":\\\\n\\\
+        \\n\\\");"
+      lineNumber: 72
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: object of type Formatter - Method: format"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "heading1"
+      valueType: "java.lang.String"
+      uuid: "formatMessages_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "com.google.inject.spi.Message"
+            parameters:
+            - name: "internalOnly"
+              value:
+                sapientType: "MOCK"
+                valueType: "com.google.inject.internal.GuiceInternal"
+                uuid: "formatMessages_message1-internalOnly"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorId"
+              value:
+                sapientType: "ENUM"
+                content: !<regular>
+                  value: "AMBIGUOUS_TYPE_CONVERSION"
+                valueType: "com.google.inject.internal.ErrorId"
+                uuid: "formatMessages_message1-errorId"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorDetail"
+              value:
+                sapientType: "MOCK"
+                valueType: "com.google.inject.spi.ErrorDetail"
+                genericValueType: "?"
+                uuid: "formatMessages_errorDetail1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "com.google.inject.spi.Message"
+            parameters:
+            - name: "internalOnly"
+              value:
+                sapientType: "UNKNOWN"
+                valueType: "com.google.inject.internal.GuiceInternal"
+                uuid: "formatMessages_message1-internalOnly"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorId"
+              value:
+                sapientType: "ENUM"
+                valueType: "com.google.inject.internal.ErrorId"
+                uuid: "formatMessages_message1-errorId"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorDetail"
+              value:
+                sapientType: "UNKNOWN"
+                suggestedContent: !<unknown_object>
+                  target: "com.google.inject.spi.ErrorDetail"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "com.google.inject.spi.ErrorDetail"
+                genericValueType: "?"
+                uuid: "formatMessages_errorDetail1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "com.google.inject.spi.Message"
+          uuid: "formatMessages_message1"
+          fixed: false
+          collectionUuid: "formatMessages_collection1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      suggestedContent: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "com.google.inject.spi.Message"
+            parameters:
+            - name: "internalOnly"
+              value:
+                sapientType: "MOCK"
+                valueType: "com.google.inject.internal.GuiceInternal"
+                uuid: "formatMessages_message1-internalOnly"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorId"
+              value:
+                sapientType: "ENUM"
+                content: !<regular>
+                  value: "AMBIGUOUS_TYPE_CONVERSION"
+                valueType: "com.google.inject.internal.ErrorId"
+                uuid: "formatMessages_message1-errorId"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorDetail"
+              value:
+                sapientType: "MOCK"
+                valueType: "com.google.inject.spi.ErrorDetail"
+                genericValueType: "?"
+                uuid: "formatMessages_errorDetail1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "com.google.inject.spi.Message"
+            parameters:
+            - name: "internalOnly"
+              value:
+                sapientType: "UNKNOWN"
+                valueType: "com.google.inject.internal.GuiceInternal"
+                uuid: "formatMessages_message1-internalOnly"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorId"
+              value:
+                sapientType: "ENUM"
+                valueType: "com.google.inject.internal.ErrorId"
+                uuid: "formatMessages_message1-errorId"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorDetail"
+              value:
+                sapientType: "UNKNOWN"
+                suggestedContent: !<unknown_object>
+                  target: "com.google.inject.spi.ErrorDetail"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "com.google.inject.spi.ErrorDetail"
+                genericValueType: "?"
+                uuid: "formatMessages_errorDetail1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "com.google.inject.spi.Message"
+          uuid: "formatMessages_message1"
+          fixed: false
+          collectionUuid: "formatMessages_collection1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      valueType: "java.util.Collection"
+      genericValueType: "com.google.inject.spi.Message"
+      uuid: "formatMessages_collection1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Messages"
+      uuid: "uuid6"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      valueType: "java.lang.Throwable"
+      uuid: "formatMessages_throwable1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "com.google.inject.spi.Message"
+            parameters:
+            - name: "internalOnly"
+              value:
+                sapientType: "MOCK"
+                valueType: "com.google.inject.internal.GuiceInternal"
+                uuid: "formatMessages_message1-internalOnly"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorId"
+              value:
+                sapientType: "ENUM"
+                content: !<regular>
+                  value: "AMBIGUOUS_TYPE_CONVERSION"
+                valueType: "com.google.inject.internal.ErrorId"
+                uuid: "formatMessages_message1-errorId"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorDetail"
+              value:
+                sapientType: "MOCK"
+                valueType: "com.google.inject.spi.ErrorDetail"
+                genericValueType: "?"
+                uuid: "formatMessages_errorDetail1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "com.google.inject.spi.Message"
+            parameters:
+            - name: "internalOnly"
+              value:
+                sapientType: "UNKNOWN"
+                valueType: "com.google.inject.internal.GuiceInternal"
+                uuid: "formatMessages_message1-internalOnly"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorId"
+              value:
+                sapientType: "ENUM"
+                valueType: "com.google.inject.internal.ErrorId"
+                uuid: "formatMessages_message1-errorId"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorDetail"
+              value:
+                sapientType: "UNKNOWN"
+                suggestedContent: !<unknown_object>
+                  target: "com.google.inject.spi.ErrorDetail"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "com.google.inject.spi.ErrorDetail"
+                genericValueType: "?"
+                uuid: "formatMessages_errorDetail1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "com.google.inject.spi.Message"
+          uuid: "formatMessages_message1"
+          fixed: false
+          collectionUuid: "formatMessages_collection1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      suggestedContent: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "OBJECT"
+          content: !<new>
+            target: "com.google.inject.spi.Message"
+            parameters:
+            - name: "internalOnly"
+              value:
+                sapientType: "MOCK"
+                valueType: "com.google.inject.internal.GuiceInternal"
+                uuid: "formatMessages_message1-internalOnly"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorId"
+              value:
+                sapientType: "ENUM"
+                content: !<regular>
+                  value: "AMBIGUOUS_TYPE_CONVERSION"
+                valueType: "com.google.inject.internal.ErrorId"
+                uuid: "formatMessages_message1-errorId"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorDetail"
+              value:
+                sapientType: "MOCK"
+                valueType: "com.google.inject.spi.ErrorDetail"
+                genericValueType: "?"
+                uuid: "formatMessages_errorDetail1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          suggestedContent: !<new>
+            target: "com.google.inject.spi.Message"
+            parameters:
+            - name: "internalOnly"
+              value:
+                sapientType: "UNKNOWN"
+                valueType: "com.google.inject.internal.GuiceInternal"
+                uuid: "formatMessages_message1-internalOnly"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorId"
+              value:
+                sapientType: "ENUM"
+                valueType: "com.google.inject.internal.ErrorId"
+                uuid: "formatMessages_message1-errorId"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "errorDetail"
+              value:
+                sapientType: "UNKNOWN"
+                suggestedContent: !<unknown_object>
+                  target: "com.google.inject.spi.ErrorDetail"
+                  onlyPojoFunctions: false
+                  builderPattern: false
+                valueType: "com.google.inject.spi.ErrorDetail"
+                genericValueType: "?"
+                uuid: "formatMessages_errorDetail1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            privateConstructor: false
+            createdByTargetCode: false
+          valueType: "com.google.inject.spi.Message"
+          uuid: "formatMessages_message1"
+          fixed: false
+          collectionUuid: "formatMessages_collection1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      valueType: "java.util.Collection"
+      genericValueType: "com.google.inject.spi.Message"
+      uuid: "formatMessages_collection1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.spi.Message"
+        parameters:
+        - name: "internalOnly"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.GuiceInternal"
+            uuid: "formatMessages_message1-internalOnly"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "errorId"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "AMBIGUOUS_TYPE_CONVERSION"
+            valueType: "com.google.inject.internal.ErrorId"
+            uuid: "formatMessages_message1-errorId"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "errorDetail"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.spi.ErrorDetail"
+            genericValueType: "?"
+            uuid: "formatMessages_errorDetail1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.spi.Message"
+        parameters:
+        - name: "internalOnly"
+          value:
+            sapientType: "UNKNOWN"
+            valueType: "com.google.inject.internal.GuiceInternal"
+            uuid: "formatMessages_message1-internalOnly"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "errorId"
+          value:
+            sapientType: "ENUM"
+            valueType: "com.google.inject.internal.ErrorId"
+            uuid: "formatMessages_message1-errorId"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "errorDetail"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.spi.ErrorDetail"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.spi.ErrorDetail"
+            genericValueType: "?"
+            uuid: "formatMessages_errorDetail1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.spi.Message"
+      uuid: "formatMessages_message1"
+      fixed: false
+      collectionUuid: "formatMessages_collection1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ErrorDetail"
+      genericValueType: "?"
+      uuid: "formatMessages_errorDetail1"
+      fixed: false
+      collectionUuid: "formatMessages_object1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ErrorDetail"
+      genericValueType: "?"
+      uuid: "formatMessages_errorDetail1"
+      fixed: false
+      collectionUuid: "formatMessages_object1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "formatMessages_boolean2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ErrorDetail"
+      uuid: "formatMessages_errorDetail4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ErrorDetail"
+      genericValueType: "?"
+      uuid: "formatMessages_errorDetail1"
+      fixed: false
+      collectionUuid: "formatMessages_object1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "VOID"
+      valueType: "void"
+      uuid: "formatMessages_void1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      valueType: "int"
+      uuid: "formatMessages_int1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      suggestedContent: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      uuid: "formatMessages_object4"
+      fixed: false
+      collectionUuid: "formatMessages_object2"
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "OBJECT"
+      content: !<method_return_from_value>
+        target: "java.util.Formatter"
+        localVariableValue:
+          sapientType: "OBJECT"
+          content: !<method_return_from_value>
+            target: "java.util.Formatter"
+            localVariableValue:
+              sapientType: "OBJECT"
+              content: !<new>
+                target: "java.util.Formatter"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              suggestedContent: !<new>
+                target: "java.util.Formatter"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "java.util.Formatter"
+              uuid: "formatMessages_formatter1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "format"
+              value:
+                sapientType: "BASIC"
+                content: !<regular>
+                  value: "heading1"
+                valueType: "java.lang.String"
+                uuid: "formatMessages_string1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "args"
+              value:
+                sapientType: "ARRAY"
+                content: !<array>
+                  values: {}
+                suggestedContent: !<array>
+                  values: {}
+                valueType: "java.lang.Object[]"
+                uuid: "formatMessages_object[]1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "format"
+          suggestedContent: !<method_return_from_value>
+            target: "java.util.Formatter"
+            localVariableValue:
+              sapientType: "OBJECT"
+              suggestedContent: !<new>
+                target: "java.util.Formatter"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "java.util.Formatter"
+              uuid: "formatMessages_formatter1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "format"
+              value:
+                sapientType: "BASIC"
+                valueType: "java.lang.String"
+                uuid: "formatMessages_string1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "args"
+              value:
+                sapientType: "ARRAY"
+                suggestedContent: !<array>
+                  values: {}
+                valueType: "java.lang.Object[]"
+                uuid: "formatMessages_object[]1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "format"
+          valueType: "java.util.Formatter"
+          uuid: "formatMessages_formatter2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "format"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ":\\n\\n"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "args"
+          value:
+            sapientType: "ARRAY"
+            content: !<array>
+              values: {}
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Object[]"
+            uuid: "formatMessages_object[]2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "format"
+      suggestedContent: !<method_return_from_value>
+        target: "java.util.Formatter"
+        localVariableValue:
+          sapientType: "OBJECT"
+          suggestedContent: !<method_return_from_value>
+            target: "java.util.Formatter"
+            localVariableValue:
+              sapientType: "OBJECT"
+              suggestedContent: !<new>
+                target: "java.util.Formatter"
+                parameters: []
+                privateConstructor: false
+                createdByTargetCode: true
+              valueType: "java.util.Formatter"
+              uuid: "formatMessages_formatter1"
+              fixed: true
+              equalsMethodPresent: false
+              explicitCastNeeded: false
+            methodParameters:
+            - name: "format"
+              value:
+                sapientType: "BASIC"
+                valueType: "java.lang.String"
+                uuid: "formatMessages_string1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            - name: "args"
+              value:
+                sapientType: "ARRAY"
+                suggestedContent: !<array>
+                  values: {}
+                valueType: "java.lang.Object[]"
+                uuid: "formatMessages_object[]1"
+                fixed: false
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            methodName: "format"
+          valueType: "java.util.Formatter"
+          uuid: "formatMessages_formatter2"
+          fixed: false
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+        methodParameters:
+        - name: "format"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: ":\\n\\n"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "args"
+          value:
+            sapientType: "ARRAY"
+            suggestedContent: !<array>
+              values: {}
+            valueType: "java.lang.Object[]"
+            uuid: "formatMessages_object[]2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        methodName: "format"
+      valueType: "java.util.Formatter"
+      uuid: "formatMessages_formatter3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ErrorDetail"
+      genericValueType: "?"
+      uuid: "formatMessages_errorDetail1"
+      fixed: false
+      collectionUuid: "formatMessages_object1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Throwable"
+      uuid: "formatMessages_throwable2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.PackageNameCompressor"
+      uuid: "uuid7"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_compressPackagesInMessage1"
+      valueType: "java.lang.String"
+      uuid: "formatMessages_string4"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ""
+      suggestedContent: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "formatMessages_string3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_compressPackagesInMessage1"
+      valueType: "java.lang.String"
+      uuid: "formatMessages_string4"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "create"
+    signature: "create(com.google.inject.internal.ErrorId,java.lang.String,java.lang.Object[])\
+      \ : com.google.inject.spi.Message"
+    instructionFingerprint: "371DECE8EDAFDDCAED7DEA5C840FD664"
+  paths:
+  - pathId: "path1"
+    testPathName: "createTest"
+    filledByUser: false
+    modelFingerprint: "F60AF870B5EC6552B0DDFFBD0B0FFC30"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "errorId"
+      modelFingerprint: "2D20BC2016EFD90C75878DF462DC35F1"
+      index: 1
+      ignored: false
+      valueUuid: "create_errorId1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "messageFormat"
+      modelFingerprint: "11FA485331CC5AF6BF8A9235CE5AF6CC"
+      index: 2
+      ignored: false
+      valueUuid: "create_string1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "arguments"
+      modelFingerprint: "6841738649457B83CC1BBEFC00F3CD1A"
+      index: 3
+      ignored: false
+      valueUuid: "create_object[]1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "73D8E8BD034353B83328CA0B4107A3CA"
+      index: 4
+      ignored: false
+      valueUuid: "uuid9"
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "create"
+        parameters:
+        - name: "errorId"
+          valueUuid: "create_errorId1"
+        - name: "cause"
+          valueUuid: "uuid8"
+        - name: "messageFormat"
+          valueUuid: "create_string1"
+        - name: "arguments"
+          valueUuid: "create_object[]1"
+        signature: "create(ErrorId,Throwable,String,Object[]): Message"
+        returnValueUuid: "create_message1"
+        access: 137
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "2378BD8CC7D2447F8330BC4E29505FAC"
+      index: 5
+      ignored: false
+      valueUuid: "create_message1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "2284fc3d-473b-3992-886d-8fe431bd702d"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "AMBIGUOUS_TYPE_CONVERSION"
+      valueType: "com.google.inject.internal.ErrorId"
+      uuid: "create_errorId1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "messageFormat1"
+      valueType: "java.lang.String"
+      uuid: "create_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      suggestedContent: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "create_object[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Messages"
+      uuid: "uuid9"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.Message"
+      uuid: "create_message1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "AMBIGUOUS_TYPE_CONVERSION"
+      valueType: "com.google.inject.internal.ErrorId"
+      uuid: "create_errorId1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      valueType: "java.lang.Throwable"
+      uuid: "uuid8"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "messageFormat1"
+      valueType: "java.lang.String"
+      uuid: "create_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      suggestedContent: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "create_object[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.Message"
+      uuid: "create_message1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "create"
+    signature: "create(com.google.inject.internal.ErrorId,java.lang.Throwable,java.lang.String,java.lang.Object[])\
+      \ : com.google.inject.spi.Message"
+    instructionFingerprint: "3F53A367E14BC9EBEC73EC587AC356CB"
+  paths:
+  - pathId: "path1"
+    testPathName: "create1Test"
+    filledByUser: false
+    modelFingerprint: "3ABBB883B67573A125324265178CEE4F"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "errorId"
+      modelFingerprint: "2D20BC2016EFD90C75878DF462DC35F1"
+      index: 1
+      ignored: false
+      valueUuid: "create_errorId1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "cause"
+      modelFingerprint: "60B3D53B30ACAF358D8CBB6B67AE624D"
+      index: 2
+      ignored: false
+      valueUuid: "create_throwable1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "messageFormat"
+      modelFingerprint: "11FA485331CC5AF6BF8A9235CE5AF6CC"
+      index: 3
+      ignored: false
+      valueUuid: "create_string1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "arguments"
+      modelFingerprint: "6841738649457B83CC1BBEFC00F3CD1A"
+      index: 4
+      ignored: false
+      valueUuid: "create_object[]1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "95B1B9B15DF50F9C3DE524F7FD23EA4E"
+      index: 5
+      ignored: false
+      valueUuid: "uuid10"
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "create"
+        parameters:
+        - name: "errorId"
+          valueUuid: "create_errorId1"
+        - name: "cause"
+          valueUuid: "create_throwable1"
+        - name: "sources"
+          valueUuid: "create_immutableList1"
+        - name: "messageFormat"
+          valueUuid: "create_string1"
+        - name: "arguments"
+          valueUuid: "create_object[]1"
+        signature: "create(ErrorId,Throwable,ImmutableList,String,Object[]): Message"
+        returnValueUuid: "create_message1"
+        access: 137
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "2378BD8CC7D2447F8330BC4E29505FAC"
+      index: 6
+      ignored: false
+      valueUuid: "create_message1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "b0d142e8-0743-37b5-ba4a-5c4957c16e12"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "AMBIGUOUS_TYPE_CONVERSION"
+      valueType: "com.google.inject.internal.ErrorId"
+      uuid: "create_errorId1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Throwable"
+      uuid: "create_throwable1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "messageFormat1"
+      valueType: "java.lang.String"
+      uuid: "create_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      suggestedContent: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "create_object[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Messages"
+      uuid: "uuid10"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.Message"
+      uuid: "create_message1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "AMBIGUOUS_TYPE_CONVERSION"
+      valueType: "com.google.inject.internal.ErrorId"
+      uuid: "create_errorId1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Throwable"
+      uuid: "create_throwable1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<static_method_return>
+        target: "com.google.common.collect.ImmutableList"
+        method: "of"
+        methodParameters: []
+      suggestedContent: !<static_method_return>
+        target: "com.google.common.collect.ImmutableList"
+        method: "of"
+        methodParameters: []
+      valueType: "com.google.common.collect.ImmutableList"
+      uuid: "create_immutableList1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "messageFormat1"
+      valueType: "java.lang.String"
+      uuid: "create_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      suggestedContent: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "create_object[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.Message"
+      uuid: "create_message1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "create"
+    signature: "create(com.google.inject.internal.ErrorId,java.lang.Throwable,java.util.List<java.lang.Object>,java.lang.String,java.lang.Object[])\
+      \ : com.google.inject.spi.Message"
+    instructionFingerprint: "9CF662F0BC46FAAA5611C5649BA54381"
+  paths:
+  - pathId: "path1"
+    testPathName: "create2Test"
+    filledByUser: false
+    modelFingerprint: "A02B45F8668DB33504B4E1B37E414753"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "errorId"
+      modelFingerprint: "2D20BC2016EFD90C75878DF462DC35F1"
+      index: 1
+      ignored: false
+      valueUuid: "create_errorId1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "cause"
+      modelFingerprint: "60B3D53B30ACAF358D8CBB6B67AE624D"
+      index: 2
+      ignored: false
+      valueUuid: "create_throwable1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "sources"
+      modelFingerprint: "176EC35103295B7F4D68D50FF7F4A833"
+      index: 3
+      ignored: false
+      valueUuid: "create_list1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "messageFormat"
+      modelFingerprint: "11FA485331CC5AF6BF8A9235CE5AF6CC"
+      index: 4
+      ignored: false
+      valueUuid: "create_string1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "arguments"
+      modelFingerprint: "6841738649457B83CC1BBEFC00F3CD1A"
+      index: 5
+      ignored: false
+      valueUuid: "create_object[]1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "A862C6040DCB249E4D3BA83D12841CD2"
+      index: 6
+      ignored: false
+      valueUuid: "uuid11"
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "format"
+        parameters:
+        - name: "messageFormat"
+          valueUuid: "create_string1"
+        - name: "arguments"
+          valueUuid: "create_object[]1"
+        signature: "format(String,Object[]): String"
+        returnValueUuid: "create_string2"
+        access: 137
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3F717333344CADC9D4CD1B0079C23721"
+      index: 7
+      ignored: false
+      valueUuid: "create_message1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a82a2dfb-40b5-3d2a-a2e2-c72726240f48"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "ENUM"
+      content: !<regular>
+        value: "AMBIGUOUS_TYPE_CONVERSION"
+      valueType: "com.google.inject.internal.ErrorId"
+      uuid: "create_errorId1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Throwable"
+      uuid: "create_throwable1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        parameters: []
+        values: []
+      suggestedContent: !<collection>
+        parameters: []
+        values: []
+      valueType: "java.util.List"
+      genericValueType: "java.lang.Object"
+      uuid: "create_list1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "messageFormat1"
+      valueType: "java.lang.String"
+      uuid: "create_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      suggestedContent: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "create_object[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Messages"
+      uuid: "uuid11"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_format1"
+      valueType: "java.lang.String"
+      uuid: "create_string2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "messageFormat1"
+      valueType: "java.lang.String"
+      uuid: "create_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      suggestedContent: !<array>
+        values: {}
+      valueType: "java.lang.Object[]"
+      uuid: "create_object[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.spi.Message"
+        parameters:
+        - name: "errorId"
+          value:
+            sapientType: "ENUM"
+            content: !<regular>
+              value: "AMBIGUOUS_TYPE_CONVERSION"
+            valueType: "com.google.inject.internal.ErrorId"
+            uuid: "create_errorId1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "sources"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "java.lang.Object"
+            uuid: "create_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "return_of_format1"
+            valueType: "java.lang.String"
+            uuid: "create_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Throwable"
+            uuid: "create_throwable1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.spi.Message"
+        parameters:
+        - name: "errorId"
+          value:
+            sapientType: "ENUM"
+            valueType: "com.google.inject.internal.ErrorId"
+            uuid: "create_errorId1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "sources"
+          value:
+            sapientType: "COLLECTION"
+            valueType: "java.util.List"
+            genericValueType: "java.lang.Object"
+            uuid: "create_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            valueType: "java.lang.String"
+            uuid: "create_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "cause"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Throwable"
+            uuid: "create_throwable1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.spi.Message"
+      uuid: "create_message1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "convert"
+    signature: "convert(java.lang.Object) : java.lang.Object"
+    instructionFingerprint: "FE26876062A998E0EFCCAD6981F6ADB3"
+  paths:
+  - pathId: "path1"
+    testPathName: "convertWhenOInstanceOfElementSource"
+    filledByUser: false
+    modelFingerprint: "6BF39AE04A6CC59B78A002FEFA2E54EC"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "o"
+      modelFingerprint: "BD1E5205FCFF25510F639C80270F87AE"
+      index: 1
+      ignored: false
+      valueUuid: "convert_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "source"
+      modelFingerprint: "D464924DED1F9F6E5E13A50B0525FA53"
+      index: 2
+      ignored: false
+      valueUuid: "convert_object1"
+      methodExercised:
+        target: "source"
+        name: "getDeclaringSource"
+        parameters: []
+        signature: "getDeclaringSource(): Object"
+        returnValueUuid: "convert_object2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "96FA35BB68015F0591DABC2CA5224195"
+      index: 3
+      ignored: false
+      valueUuid: "uuid12"
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "convert"
+        parameters:
+        - name: "o"
+          valueUuid: "convert_object2"
+        - name: "source"
+          valueUuid: "convert_object1"
+        signature: "convert(Object,ElementSource): Object"
+        returnValueUuid: "convert_object3"
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 4
+      ignored: false
+      valueUuid: "convert_object3"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "575405f3-4bea-3bcc-9860-1ec3f6dade49"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ElementSource"
+      uuid: "convert_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+      explicitCastForOverloadedMethods: "java.lang.Object"
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ElementSource"
+      uuid: "convert_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+      explicitCastForOverloadedMethods: "java.lang.Object"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "convert_object2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Messages"
+      uuid: "uuid12"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "convert_object3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "convert_object2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ElementSource"
+      uuid: "convert_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+      explicitCastForOverloadedMethods: "java.lang.Object"
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "convert_object3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "convertWhenONotInstanceOfElementSource"
+    filledByUser: false
+    modelFingerprint: "E15B2EEE93E16170022B16DF9A3EE422"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "c609eb98-4809-3978-a3ed-1e91532e1035"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+- method:
+    name: "convert"
+    signature: "convert(java.lang.Object,com.google.inject.spi.ElementSource) : java.lang.Object"
+    instructionFingerprint: "CEA9315C3F58132BE629F93779D5F8D6"
+  paths:
+  - pathId: "path1"
+    testPathName: "convert1WhenModulesLengthEquals0"
+    filledByUser: false
+    modelFingerprint: "E684EFB3A320E52AA5C32356AD6B2B57"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "o"
+      modelFingerprint: "F7F5251B7A8A178496FE225B084BA51C"
+      index: 1
+      ignored: false
+      valueUuid: "convert_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "source"
+      modelFingerprint: "F1DA4158EA222DE35126B7972A39F1F0"
+      index: 2
+      ignored: false
+      valueUuid: "convert_elementSource1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SourceFormatter"
+      modelFingerprint: "71FC0CFE8E170989B66ED677A585CF0C"
+      index: 3
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.SourceFormatter"
+        name: "getModuleStack"
+        parameters:
+        - name: "elementSource"
+          valueUuid: "convert_elementSource1"
+        signature: "getModuleStack(ElementSource): String"
+        returnValueUuid: "appendModules_string1"
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 4
+      ignored: false
+      valueUuid: "convert_string1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "342b75f0-90d2-35be-bcf0-716dd893d452"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.Collection.iterator() : java.util.Iterator<com.google.inject.internal.Messages$Converter<?>>"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "convert_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ElementSource"
+      uuid: "convert_elementSource1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.SourceFormatter"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ""
+      suggestedContent: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "appendModules_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ElementSource"
+      uuid: "convert_elementSource1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "result1"
+      valueType: "java.lang.String"
+      uuid: "convert_string1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "convert1WhenModulesLengthNotEquals0"
+    filledByUser: false
+    modelFingerprint: "1017E6150DBD438B416E8F5C95759991"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "o"
+      modelFingerprint: "F7F5251B7A8A178496FE225B084BA51C"
+      index: 1
+      ignored: false
+      valueUuid: "convert_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "source"
+      modelFingerprint: "F1DA4158EA222DE35126B7972A39F1F0"
+      index: 2
+      ignored: false
+      valueUuid: "convert_elementSource1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SourceFormatter"
+      modelFingerprint: "7836F08A4FB611DC8805B7E01720A11C"
+      index: 3
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.SourceFormatter"
+        name: "getModuleStack"
+        parameters:
+        - name: "elementSource"
+          valueUuid: "convert_elementSource1"
+        signature: "getModuleStack(ElementSource): String"
+        returnValueUuid: "appendModules_string1"
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "583C311B13B574C3981DC157A1087A2B"
+      index: 4
+      ignored: false
+      valueUuid: "appendModules_string2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "0821dc53-cc86-3924-b4be-9f53efb5a59e"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.Collection.iterator() : java.util.Iterator<com.google.inject.internal.Messages$Converter<?>>"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "convert_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ElementSource"
+      uuid: "convert_elementSource1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.SourceFormatter"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "some module stack"
+      suggestedContent: !<regular>
+        value: "some module stack"
+      valueType: "java.lang.String"
+      uuid: "appendModules_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ElementSource"
+      uuid: "convert_elementSource1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A (installed by: some module stack)"
+      suggestedContent: !<regular>
+        value: "A (installed by: some module stack)"
+      valueType: "java.lang.String"
+      uuid: "appendModules_string2"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path3"
+    testPathName: "convert1WhenConverterNotAppliesToOAndModulesLengthEquals0"
+    filledByUser: false
+    modelFingerprint: "7F6909E57F78909AC51636EA44F46251"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "o"
+      modelFingerprint: "F7F5251B7A8A178496FE225B084BA51C"
+      index: 1
+      ignored: false
+      valueUuid: "convert_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "source"
+      modelFingerprint: "F1DA4158EA222DE35126B7972A39F1F0"
+      index: 2
+      ignored: false
+      valueUuid: "convert_elementSource1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SourceFormatter"
+      modelFingerprint: "71FC0CFE8E170989B66ED677A585CF0C"
+      index: 3
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.SourceFormatter"
+        name: "getModuleStack"
+        parameters:
+        - name: "elementSource"
+          valueUuid: "convert_elementSource1"
+        signature: "getModuleStack(ElementSource): String"
+        returnValueUuid: "appendModules_string1"
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "EDA2651BB29D8448EA5A2C6E4F135F6E"
+      index: 4
+      ignored: false
+      valueUuid: "convert_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "c9b7809c-51f1-37f5-94e5-be6b89698090"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.Collection.iterator() : java.util.Iterator<com.google.inject.internal.Messages$Converter<?>>"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "convert_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ElementSource"
+      uuid: "convert_elementSource1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.SourceFormatter"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ""
+      suggestedContent: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "appendModules_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ElementSource"
+      uuid: "convert_elementSource1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "convert_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+  - pathId: "path4"
+    testPathName: "convert1WhenConverterNotAppliesToOAndModulesLengthNotEquals0"
+    filledByUser: false
+    modelFingerprint: "A81A03D7D3F7A7DD431229987EA33A5E"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "o"
+      modelFingerprint: "F7F5251B7A8A178496FE225B084BA51C"
+      index: 1
+      ignored: false
+      valueUuid: "convert_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "source"
+      modelFingerprint: "F1DA4158EA222DE35126B7972A39F1F0"
+      index: 2
+      ignored: false
+      valueUuid: "convert_elementSource1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "SourceFormatter"
+      modelFingerprint: "7836F08A4FB611DC8805B7E01720A11C"
+      index: 3
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.SourceFormatter"
+        name: "getModuleStack"
+        parameters:
+        - name: "elementSource"
+          valueUuid: "convert_elementSource1"
+        signature: "getModuleStack(ElementSource): String"
+        returnValueUuid: "appendModules_string1"
+        access: 8
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B636D20D9D2FE4FCF76ABF5A5B1FC5A8"
+      index: 4
+      ignored: false
+      valueUuid: "uuid2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "d1fb4633-72f3-3ac5-8e8d-7d4ddcec1711"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.util.Collection.iterator() : java.util.Iterator<com.google.inject.internal.Messages$Converter<?>>"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "convert_object1"
+      fixed: false
+      nameForMock: "convert_object1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ElementSource"
+      uuid: "convert_elementSource1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.SourceFormatter"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "some module stack"
+      suggestedContent: !<regular>
+        value: "some module stack"
+      valueType: "java.lang.String"
+      uuid: "appendModules_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.ElementSource"
+      uuid: "convert_elementSource1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.lang.Object@4f093395 (installed by: some module stack)"
+      valueType: "java.lang.String"
+      uuid: "uuid2"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "getOnlyCause"
+    signature: "getOnlyCause(java.util.Collection<com.google.inject.spi.Message>)\
+      \ : java.lang.Throwable"
+    instructionFingerprint: "87F852A872DC7A005D2011A5E34339A1"
+  paths:
+  - pathId: "path3"
+    testPathName: "getOnlyCauseWhenMessagesIsEmpty"
+    filledByUser: false
+    modelFingerprint: "B66365DA50C74007F28A5AB346354560"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "53f52fa6-be7b-3a81-a8db-30d98444c504"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path1"
+    testPathName: "getOnlyCauseWhenMessageCauseIsNull"
+    filledByUser: false
+    modelFingerprint: "60C769618F4B3C3AA3248E21CEA49FE9"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "messages"
+      modelFingerprint: "FC3395BBB7B317367169605C4A3AB26A"
+      index: 1
+      ignored: false
+      valueUuid: "getOnlyCause_collection1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "message"
+      modelFingerprint: "E285DFD915E4A94988AB4CB8C0C0EC8D"
+      index: 2
+      ignored: false
+      valueUuid: "getOnlyCause_object1"
+      methodExercised:
+        target: "message"
+        name: "getCause"
+        parameters: []
+        signature: "getCause(): Throwable"
+        returnValueUuid: "getOnlyCause_throwable1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "AAD222C49ED4ABB49121AB96AB0266DB"
+      index: 3
+      ignored: false
+      valueUuid: "getOnlyCause_throwable2"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATE_VERIFICATION_PARAMETER"
+      name: "messages"
+      modelFingerprint: "EF05DD687603AFD906271DC1B6CA7184"
+      index: 4
+      ignored: false
+      valueUuid: "getOnlyCause_collection2"
+      originalValueUuid: "getOnlyCause_collection1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "29ea3efb-bf69-33e4-9b36-5ca1dff8fecc"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "MOCK"
+          valueType: "com.google.inject.spi.Message"
+          uuid: "getOnlyCause_object1"
+          fixed: false
+          collectionUuid: "getOnlyCause_collection1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      suggestedContent: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "MOCK"
+          valueType: "com.google.inject.spi.Message"
+          uuid: "getOnlyCause_object1"
+          fixed: false
+          collectionUuid: "getOnlyCause_collection1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      valueType: "java.util.Collection"
+      genericValueType: "com.google.inject.spi.Message"
+      uuid: "getOnlyCause_collection1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.Message"
+      uuid: "getOnlyCause_object1"
+      fixed: false
+      collectionUuid: "getOnlyCause_collection1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      valueType: "java.lang.Throwable"
+      uuid: "getOnlyCause_throwable1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      valueType: "java.lang.Throwable"
+      uuid: "getOnlyCause_throwable2"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "MOCK"
+          valueType: "com.google.inject.spi.Message"
+          uuid: "getOnlyCause_object1"
+          fixed: false
+          collectionUuid: "getOnlyCause_collection1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      suggestedContent: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "MOCK"
+          valueType: "com.google.inject.spi.Message"
+          uuid: "getOnlyCause_object1"
+          fixed: false
+          collectionUuid: "getOnlyCause_collection1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      valueType: "java.util.Collection"
+      genericValueType: "com.google.inject.spi.Message"
+      uuid: "getOnlyCause_collection2"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "getOnlyCauseWhenOnlyCauseIsNull"
+    filledByUser: false
+    modelFingerprint: "7A7590872AC570E320631BABD0FF74C4"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "messages"
+      modelFingerprint: "D25891BD168D8BE3464A45B8CF6D715A"
+      index: 1
+      ignored: false
+      valueUuid: "getOnlyCause_collection1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "message"
+      modelFingerprint: "37F3642A64345B1B5EA20D1C8F8E84A4"
+      index: 2
+      ignored: false
+      valueUuid: "getOnlyCause_object1"
+      methodExercised:
+        target: "message"
+        name: "getCause"
+        parameters: []
+        signature: "getCause(): Throwable"
+        returnValueUuid: "getOnlyCause_throwable1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "51C52D6E8844B7F2891CF7334CD01BA3"
+      index: 3
+      ignored: false
+      valueUuid: "getOnlyCause_throwable1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "abd775dc-7396-3e82-888e-c65ca5f23185"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    failureReason:
+      reason: "ERROR_RECALCULATING_SUGGESTED_VALUES"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "COLLECTION"
+      content: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "MOCK"
+          valueType: "com.google.inject.spi.Message"
+          uuid: "getOnlyCause_object1"
+          fixed: false
+          collectionUuid: "getOnlyCause_collection1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      suggestedContent: !<collection>
+        collectionClass: "java.util.ArrayList"
+        parameters: []
+        values:
+        - sapientType: "MOCK"
+          valueType: "com.google.inject.spi.Message"
+          uuid: "getOnlyCause_object1"
+          fixed: false
+          collectionUuid: "getOnlyCause_collection1"
+          equalsMethodPresent: false
+          explicitCastNeeded: false
+      valueType: "java.util.Collection"
+      genericValueType: "com.google.inject.spi.Message"
+      uuid: "getOnlyCause_collection1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.Message"
+      uuid: "getOnlyCause_object1"
+      fixed: false
+      collectionUuid: "getOnlyCause_collection1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Throwable"
+      uuid: "getOnlyCause_throwable1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Throwable"
+      uuid: "getOnlyCause_throwable1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "bold"
+    signature: "bold(java.lang.String) : java.lang.String"
+    instructionFingerprint: "616E2EDB56F66FA1FD55F8F017DD7F6D"
+  paths:
+  - pathId: "path1"
+    testPathName: "boldWhenInternalFlagsNotEnableColorizeErrorMessages"
+    filledByUser: false
+    modelFingerprint: "B9C3CF31AB55BE3AB2992596BC2AA0F7"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      modelFingerprint: "E893B48AB8469E5137A3456D99204137"
+      index: 1
+      ignored: false
+      valueUuid: "bold_string1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "InternalFlags"
+      modelFingerprint: "99DE248067DCB5B0FF8EA41CE2A6836D"
+      index: 2
+      ignored: false
+      valueUuid: "uuid19"
+      methodExercised:
+        target: "com.google.inject.internal.InternalFlags"
+        name: "enableColorizeErrorMessages"
+        parameters: []
+        signature: "enableColorizeErrorMessages(): boolean"
+        returnValueUuid: "formatText_boolean1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 3
+      ignored: false
+      valueUuid: "bold_string1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "49d2cfef-ade2-3de7-8134-7811f3b466fb"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "text1"
+      valueType: "java.lang.String"
+      uuid: "bold_string1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "REAL"
+      valueType: "com.google.inject.internal.InternalFlags"
+      uuid: "uuid19"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "formatText_boolean1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "text1"
+      valueType: "java.lang.String"
+      uuid: "bold_string1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "redBold"
+    signature: "redBold(java.lang.String) : java.lang.String"
+    instructionFingerprint: "75C0FEB46B5EC4570183064526951E2F"
+  paths:
+  - pathId: "path1"
+    testPathName: "redBoldWhenInternalFlagsNotEnableColorizeErrorMessages"
+    filledByUser: false
+    modelFingerprint: "A89FDDBB09EB6340B166B273B75C663B"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      modelFingerprint: "E893B48AB8469E5137A3456D99204137"
+      index: 1
+      ignored: false
+      valueUuid: "redBold_string1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "InternalFlags"
+      modelFingerprint: "99DE248067DCB5B0FF8EA41CE2A6836D"
+      index: 2
+      ignored: false
+      valueUuid: "uuid20"
+      methodExercised:
+        target: "com.google.inject.internal.InternalFlags"
+        name: "enableColorizeErrorMessages"
+        parameters: []
+        signature: "enableColorizeErrorMessages(): boolean"
+        returnValueUuid: "formatText_boolean1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 3
+      ignored: false
+      valueUuid: "redBold_string1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "66a2d314-cdab-36de-ab0e-37e9b305ff65"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "text1"
+      valueType: "java.lang.String"
+      uuid: "redBold_string1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "REAL"
+      valueType: "com.google.inject.internal.InternalFlags"
+      uuid: "uuid20"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "formatText_boolean1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "text1"
+      valueType: "java.lang.String"
+      uuid: "redBold_string1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "underline"
+    signature: "underline(java.lang.String) : java.lang.String"
+    instructionFingerprint: "3AAEE11A9441E91D0F54961D9E10783D"
+  paths:
+  - pathId: "path1"
+    testPathName: "underlineWhenInternalFlagsNotEnableColorizeErrorMessages"
+    filledByUser: false
+    modelFingerprint: "9FF9EA8867E13787D26C1500959C90F1"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      modelFingerprint: "E893B48AB8469E5137A3456D99204137"
+      index: 1
+      ignored: false
+      valueUuid: "underline_string1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "InternalFlags"
+      modelFingerprint: "99DE248067DCB5B0FF8EA41CE2A6836D"
+      index: 2
+      ignored: false
+      valueUuid: "uuid21"
+      methodExercised:
+        target: "com.google.inject.internal.InternalFlags"
+        name: "enableColorizeErrorMessages"
+        parameters: []
+        signature: "enableColorizeErrorMessages(): boolean"
+        returnValueUuid: "formatText_boolean1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 3
+      ignored: false
+      valueUuid: "underline_string1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "854bc9d2-fc78-3539-8728-0b8cbfba4520"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "text1"
+      valueType: "java.lang.String"
+      uuid: "underline_string1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "REAL"
+      valueType: "com.google.inject.internal.InternalFlags"
+      uuid: "uuid21"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "formatText_boolean1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "text1"
+      valueType: "java.lang.String"
+      uuid: "underline_string1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "faint"
+    signature: "faint(java.lang.String) : java.lang.String"
+    instructionFingerprint: "F8193E2872ECE202ED7EADFE115A5429"
+  paths:
+  - pathId: "path1"
+    testPathName: "faintWhenInternalFlagsNotEnableColorizeErrorMessages"
+    filledByUser: false
+    modelFingerprint: "5244D647E01D0F5C9CA4B161AC24773B"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "text"
+      modelFingerprint: "E893B48AB8469E5137A3456D99204137"
+      index: 1
+      ignored: false
+      valueUuid: "faint_string1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "InternalFlags"
+      modelFingerprint: "99DE248067DCB5B0FF8EA41CE2A6836D"
+      index: 2
+      ignored: false
+      valueUuid: "uuid22"
+      methodExercised:
+        target: "com.google.inject.internal.InternalFlags"
+        name: "enableColorizeErrorMessages"
+        parameters: []
+        signature: "enableColorizeErrorMessages(): boolean"
+        returnValueUuid: "formatText_boolean1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D1F433D4EB9F8805FF391E82DAB508AB"
+      index: 3
+      ignored: false
+      valueUuid: "faint_string1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "718fe57b-661a-3c57-8031-cd76158520f6"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "text1"
+      valueType: "java.lang.String"
+      uuid: "faint_string1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "REAL"
+      valueType: "com.google.inject.internal.InternalFlags"
+      uuid: "uuid22"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "formatText_boolean1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "text1"
+      valueType: "java.lang.String"
+      uuid: "faint_string1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false

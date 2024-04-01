@@ -1,0 +1,1090 @@
+---
+modelFingerprint: "A6DFDD272268E4989E5B6E2C94D9C8A1"
+methods:
+- method:
+    name: "isCircularProxy"
+    signature: "isCircularProxy(java.lang.Object) : boolean"
+    instructionFingerprint: "B9CBBC46E61DE815E31ADF3CCD7E5BF8"
+  paths:
+  - pathId: "path3"
+    testPathName: "isCircularProxyWhenObjectIsNull"
+    filledByUser: false
+    modelFingerprint: "BAE2D0C1E97878A4697A4A296282EFA6"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "1e4c5645-4ac7-3a27-ae0e-08c52db9b4d5"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path1"
+    testPathName: "isCircularProxyWhenCircularProxyTypeCacheContainsKeyObjectGetClass"
+    filledByUser: false
+    modelFingerprint: "B49C01301E882B46CE1A7CF2DB3243E3"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      modelFingerprint: "F345952D6B6177C027386E75D7A62576"
+      index: 1
+      ignored: false
+      valueUuid: "isCircularProxy_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "753659628F1B3F179A2EF0629F555437"
+      index: 2
+      ignored: false
+      valueUuid: "uuid2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "e1df64ca-a36d-3e1f-a192-75c39d1b1fbd"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "isCircularProxy_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "uuid2"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "isCircularProxyWhenCircularProxyTypeCacheNotContainsKeyObjectGetClass"
+    filledByUser: false
+    modelFingerprint: "35B2023B82C4DFCA4F33B3B8FAFC7BA2"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "object"
+      modelFingerprint: "F345952D6B6177C027386E75D7A62576"
+      index: 1
+      ignored: false
+      valueUuid: "isCircularProxy_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3A21543F56248AC92654D6E439128AED"
+      index: 2
+      ignored: false
+      valueUuid: "uuid3"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "44a25a05-01ef-3064-83f5-58a1c8e7f3ea"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "isCircularProxy_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "uuid3"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "newCircularProxy"
+    signature: "newCircularProxy(java.lang.Class<java.lang.Object>,java.lang.reflect.InvocationHandler)\
+      \ : java.lang.Object"
+    instructionFingerprint: "4847CE86D645D1CB5A9A25AB3E4C0D4B"
+  paths:
+  - pathId: "path1"
+    testPathName: "newCircularProxyTest"
+    filledByUser: false
+    modelFingerprint: "E354619A124DCC34925D4E0F2F84329A"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "type"
+      modelFingerprint: "2DA28680ED779F34D6FA5B80564BF14C"
+      index: 1
+      ignored: false
+      valueUuid: "newCircularProxy_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "handler"
+      modelFingerprint: "BC031C7A1D764B08E8E21E58E34CC7E6"
+      index: 2
+      ignored: false
+      valueUuid: "newCircularProxy_invocationHandler1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 3
+      ignored: false
+      valueUuid: "newCircularProxy_object2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "bb4c2023-7389-3754-93ca-0584fd34ad08"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.Class.getClassLoader() : java.lang.ClassLoader"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.Object"
+      uuid: "newCircularProxy_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.InvocationHandler"
+      uuid: "newCircularProxy_invocationHandler1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "newCircularProxy_object2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "enhancerBuilder"
+    signature: "enhancerBuilder(java.lang.Class<?>) : com.google.inject.internal.BytecodeGen$EnhancerBuilder"
+    instructionFingerprint: "1549596CCBB82113E2EFC1F92F30CFA9"
+  paths:
+  - pathId: "path1"
+    testPathName: "enhancerBuilderTest"
+    filledByUser: false
+    modelFingerprint: "F8B17F80138FC2F177AA5BFD08CA20D9"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "hostClass"
+      modelFingerprint: "7D6AC86827D10E6BFB40505A82C8C917"
+      index: 1
+      ignored: false
+      valueUuid: "enhancerBuilder_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "986BF1D638D5C4CF80607C90D57EBD5F"
+      index: 2
+      ignored: false
+      valueUuid: "enhancerBuilder_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6922b4ac-1218-3a9e-88b1-444bc99ed30a"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "ENHANCER_BUILDERS"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "return ENHANCER_BUILDERS.getUnchecked(hostClass);"
+      lineNumber: 104
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: ENHANCER_BUILDERS - Method: getUnchecked"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "enhancerBuilder_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.BytecodeGen$EnhancerBuilder"
+      uuid: "enhancerBuilder_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+- method:
+    name: "enhancedConstructor"
+    signature: "enhancedConstructor(java.util.function.Function<java.lang.String,java.util.function.BiFunction<java.lang.Object,java.lang.Object[],java.lang.Object>>,java.lang.reflect.Constructor<?>)\
+      \ : java.util.function.BiFunction<java.lang.Object,java.lang.Object[],java.lang.Object>"
+    instructionFingerprint: "97E427C78A5C45E2F9AFEAA5A4E19797"
+  paths:
+  - pathId: "path1"
+    testPathName: "enhancedConstructorTest"
+    filledByUser: false
+    modelFingerprint: "10E29A801826D0AFF395D0EFCEB7BEF1"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enhancer"
+      modelFingerprint: "62549FFE8E23BCECF39CBE8492C34895"
+      index: 1
+      ignored: false
+      valueUuid: "enhancedConstructor_function1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "constructor"
+      modelFingerprint: "14DF5E7BF1B4F24F7D467D4200995987"
+      index: 2
+      ignored: false
+      valueUuid: "enhancedConstructor_constructor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassBuilding"
+      modelFingerprint: "C4D1A144D5F943E27A8D08229194AE52"
+      index: 3
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.aop.ClassBuilding"
+        name: "canEnhance"
+        parameters:
+        - name: "member"
+          valueUuid: "enhancedConstructor_constructor1"
+        signature: "canEnhance(Constructor): boolean"
+        returnValueUuid: "enhancedConstructor_boolean1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassBuilding"
+      modelFingerprint: "2E15C41E7DD8270D70DC2A64E7E76958"
+      index: 4
+      ignored: false
+      valueUuid: "uuid2"
+      methodExercised:
+        target: "com.google.inject.internal.aop.ClassBuilding"
+        name: "signature"
+        parameters:
+        - name: "constructor"
+          valueUuid: "enhancedConstructor_constructor1"
+        signature: "signature(Constructor): String"
+        returnValueUuid: "enhancedConstructor_string1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "enhancer"
+      modelFingerprint: "CE146CE1AA8323FD56ADF5482A01A19B"
+      index: 5
+      ignored: false
+      valueUuid: "enhancedConstructor_function1"
+      methodExercised:
+        target: "enhancer"
+        name: "apply"
+        parameters:
+        - name: "arg0"
+          valueUuid: "enhancedConstructor_string1"
+        signature: "apply(String): Object"
+        returnValueUuid: "enhancedConstructor_object1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B1C26423F2656134985E779BFF0700C1"
+      index: 6
+      ignored: false
+      valueUuid: "enhancedConstructor_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "dbb24628-7ae2-32cb-81d0-022c97c14313"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Function"
+      uuid: "enhancedConstructor_function1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Constructor"
+      uuid: "enhancedConstructor_constructor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.aop.ClassBuilding"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "enhancedConstructor_boolean1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Constructor"
+      uuid: "enhancedConstructor_constructor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.aop.ClassBuilding"
+      uuid: "uuid2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "String"
+      suggestedContent: !<regular>
+        value: "String"
+      valueType: "java.lang.String"
+      uuid: "enhancedConstructor_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Constructor"
+      uuid: "enhancedConstructor_constructor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Function"
+      uuid: "enhancedConstructor_function1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.BiFunction"
+      uuid: "enhancedConstructor_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "String"
+      suggestedContent: !<regular>
+        value: "String"
+      valueType: "java.lang.String"
+      uuid: "enhancedConstructor_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.BiFunction"
+      uuid: "enhancedConstructor_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+- method:
+    name: "superMethod"
+    signature: "superMethod(java.util.function.Function<java.lang.String,java.util.function.BiFunction<java.lang.Object,java.lang.Object[],java.lang.Object>>,java.lang.reflect.Method)\
+      \ : java.util.function.BiFunction<java.lang.Object,java.lang.Object[],java.lang.Object>"
+    instructionFingerprint: "A14C13F44B307F91142418F3DB085E57"
+  paths:
+  - pathId: "path1"
+    testPathName: "superMethodTest"
+    filledByUser: false
+    modelFingerprint: "1A6BB7D8C26B6D598C094D51A2AED249"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "enhancer"
+      modelFingerprint: "62549FFE8E23BCECF39CBE8492C34895"
+      index: 1
+      ignored: false
+      valueUuid: "superMethod_function1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "method"
+      modelFingerprint: "EC72CB69D7EE462C1BC46C3A2CCFE6AD"
+      index: 2
+      ignored: false
+      valueUuid: "superMethod_method1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassBuilding"
+      modelFingerprint: "58109A1A1E2924A3AD01D209BC25F3FF"
+      index: 3
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.aop.ClassBuilding"
+        name: "signature"
+        parameters:
+        - name: "method"
+          valueUuid: "superMethod_method1"
+        signature: "signature(Method): String"
+        returnValueUuid: "superMethod_string1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "enhancer"
+      modelFingerprint: "CE146CE1AA8323FD56ADF5482A01A19B"
+      index: 4
+      ignored: false
+      valueUuid: "superMethod_function1"
+      methodExercised:
+        target: "enhancer"
+        name: "apply"
+        parameters:
+        - name: "arg0"
+          valueUuid: "superMethod_string1"
+        signature: "apply(String): Object"
+        returnValueUuid: "superMethod_object1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B1C26423F2656134985E779BFF0700C1"
+      index: 5
+      ignored: false
+      valueUuid: "superMethod_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1f06b569-9b8a-36f8-a602-2346ea755eec"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Function"
+      uuid: "superMethod_function1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "superMethod_method1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.aop.ClassBuilding"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "String"
+      suggestedContent: !<regular>
+        value: "String"
+      valueType: "java.lang.String"
+      uuid: "superMethod_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "superMethod_method1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Function"
+      uuid: "superMethod_function1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.BiFunction"
+      uuid: "superMethod_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "String"
+      suggestedContent: !<regular>
+        value: "String"
+      valueType: "java.lang.String"
+      uuid: "superMethod_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.BiFunction"
+      uuid: "superMethod_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+- method:
+    name: "fastConstructor"
+    signature: "fastConstructor(java.lang.reflect.Constructor<?>) : java.util.function.BiFunction<java.lang.Object,java.lang.Object[],java.lang.Object>"
+    instructionFingerprint: "0294853353F990CFBF685CBB31E26CBE"
+  paths:
+  - pathId: "path1"
+    testPathName: "fastConstructorWhenCanFastInvokeConstructor"
+    filledByUser: false
+    modelFingerprint: "2E81D9A84E0DB49AEF86A0B75BC4D245"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "constructor"
+      modelFingerprint: "14DF5E7BF1B4F24F7D467D4200995987"
+      index: 1
+      ignored: false
+      valueUuid: "fastConstructor_constructor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassBuilding"
+      modelFingerprint: "C3B73997FD0161B4775770C92752B514"
+      index: 2
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.aop.ClassBuilding"
+        name: "canFastInvoke"
+        parameters:
+        - name: "member"
+          valueUuid: "fastConstructor_constructor1"
+        signature: "canFastInvoke(Constructor): boolean"
+        returnValueUuid: "fastConstructor_boolean1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "member"
+      modelFingerprint: "E2B53C1023DB60219D1E29AAF1D539FB"
+      index: 3
+      ignored: false
+      valueUuid: "fastConstructor_constructor1"
+      methodExercised:
+        target: "member"
+        name: "getDeclaringClass"
+        parameters: []
+        signature: "getDeclaringClass(): Class"
+        returnValueUuid: "fastClass_class1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassBuilding"
+      modelFingerprint: "2E15C41E7DD8270D70DC2A64E7E76958"
+      index: 4
+      ignored: false
+      valueUuid: "uuid2"
+      methodExercised:
+        target: "com.google.inject.internal.aop.ClassBuilding"
+        name: "signature"
+        parameters:
+        - name: "constructor"
+          valueUuid: "fastConstructor_constructor1"
+        signature: "signature(Constructor): String"
+        returnValueUuid: "fastConstructor_string1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B1C26423F2656134985E779BFF0700C1"
+      index: 5
+      ignored: false
+      valueUuid: "fastConstructor_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "1032a1a6-3169-3046-a7dd-cbcd6ce927c6"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "return FAST_CLASSES.get(member.getDeclaringClass());"
+      lineNumber: 157
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: FAST_CLASSES - Method: get"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Constructor"
+      uuid: "fastConstructor_constructor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.aop.ClassBuilding"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "fastConstructor_boolean1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Constructor"
+      uuid: "fastConstructor_constructor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Constructor"
+      uuid: "fastConstructor_constructor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "fastClass_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.aop.ClassBuilding"
+      uuid: "uuid2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "String"
+      suggestedContent: !<regular>
+        value: "String"
+      valueType: "java.lang.String"
+      uuid: "fastConstructor_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Constructor"
+      uuid: "fastConstructor_constructor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.BiFunction"
+      uuid: "fastConstructor_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+  - pathId: "path2"
+    testPathName: "fastConstructorWhenCanFastInvokeNotConstructor"
+    filledByUser: false
+    modelFingerprint: "B28DBCE4EFFBB5FEB1DEAFBAAEED4B6B"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "constructor"
+      modelFingerprint: "B2F7B2C0BA131660A6B0C100D4C7D4E7"
+      index: 1
+      ignored: false
+      valueUuid: "fastConstructor_constructor1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassBuilding"
+      modelFingerprint: "AEC4422B943A8A1F3BD30DC90B42171B"
+      index: 2
+      ignored: false
+      valueUuid: "uuid9"
+      methodExercised:
+        target: "com.google.inject.internal.aop.ClassBuilding"
+        name: "canFastInvoke"
+        parameters:
+        - name: "member"
+          valueUuid: "fastConstructor_constructor1"
+        signature: "canFastInvoke(Constructor): boolean"
+        returnValueUuid: "fastConstructor_boolean1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "22ADBC3CE52251089B0AF6A0E781841E"
+      index: 3
+      ignored: false
+      valueUuid: "fastConstructor_biFunction1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "90372059-d87c-378f-9a8b-6a9f60f8bece"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Constructor"
+      uuid: "fastConstructor_constructor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.aop.ClassBuilding"
+      uuid: "uuid9"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "fastConstructor_boolean1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Constructor"
+      uuid: "fastConstructor_constructor1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      valueType: "java.util.function.BiFunction"
+      genericValueType: "java.lang.Object,java.lang.Object[],java.lang.Object"
+      uuid: "fastConstructor_biFunction1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "fastMethod"
+    signature: "fastMethod(java.lang.reflect.Method) : java.util.function.BiFunction<java.lang.Object,java.lang.Object[],java.lang.Object>"
+    instructionFingerprint: "5CBC60929795A340A11936D97D1FD37D"
+  paths:
+  - pathId: "path1"
+    testPathName: "fastMethodWhenCanFastInvokeMethod"
+    filledByUser: false
+    modelFingerprint: "5183784DFCF278CCADF4762F6885CEB1"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "method"
+      modelFingerprint: "EC72CB69D7EE462C1BC46C3A2CCFE6AD"
+      index: 1
+      ignored: false
+      valueUuid: "fastMethod_method1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassBuilding"
+      modelFingerprint: "9954C84314DF44E48E8C014F29A66861"
+      index: 2
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.aop.ClassBuilding"
+        name: "canFastInvoke"
+        parameters:
+        - name: "member"
+          valueUuid: "fastMethod_method1"
+        signature: "canFastInvoke(Method): boolean"
+        returnValueUuid: "fastMethod_boolean1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "member"
+      modelFingerprint: "5389AED10D045C28284CC2691B470A96"
+      index: 3
+      ignored: false
+      valueUuid: "fastMethod_method1"
+      methodExercised:
+        target: "member"
+        name: "getDeclaringClass"
+        parameters: []
+        signature: "getDeclaringClass(): Class"
+        returnValueUuid: "fastClass_class1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassBuilding"
+      modelFingerprint: "C3909885ED966F28DC86C72190810440"
+      index: 4
+      ignored: false
+      valueUuid: "uuid2"
+      methodExercised:
+        target: "com.google.inject.internal.aop.ClassBuilding"
+        name: "signature"
+        parameters:
+        - name: "method"
+          valueUuid: "fastMethod_method1"
+        signature: "signature(Method): String"
+        returnValueUuid: "fastMethod_string1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B1C26423F2656134985E779BFF0700C1"
+      index: 5
+      ignored: false
+      valueUuid: "fastMethod_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "68604c4f-22dd-329d-acc6-ad06a14a3a84"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "return FAST_CLASSES.get(member.getDeclaringClass());"
+      lineNumber: 157
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: FAST_CLASSES - Method: get"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "fastMethod_method1"
+      fixed: false
+      nameForMock: "fastMethod"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.aop.ClassBuilding"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "fastMethod_boolean1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "fastMethod_method1"
+      fixed: false
+      nameForMock: "fastMethod"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "fastMethod_method1"
+      fixed: false
+      nameForMock: "fastMethod"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "fastClass_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.aop.ClassBuilding"
+      uuid: "uuid2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.util.function.BiFunction<java.lang.Object, java.lang.Object[],\
+          \ java.lang.Object>"
+      suggestedContent: !<regular>
+        value: "java.util.function.BiFunction<java.lang.Object, java.lang.Object[],\
+          \ java.lang.Object>"
+      valueType: "java.lang.String"
+      uuid: "fastMethod_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "fastMethod_method1"
+      fixed: false
+      nameForMock: "fastMethod"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.BiFunction"
+      uuid: "fastMethod_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+  - pathId: "path2"
+    testPathName: "fastMethodWhenCanFastInvokeNotMethod"
+    filledByUser: false
+    modelFingerprint: "76FE63374F6BE8922F312030DE187E22"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "method"
+      modelFingerprint: "17D1981C9FDA2F5DD71BF31F647BA599"
+      index: 1
+      ignored: false
+      valueUuid: "fastMethod_method1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "ClassBuilding"
+      modelFingerprint: "33F0E726E6DE7CE00C13254153C0E569"
+      index: 2
+      ignored: false
+      valueUuid: "uuid12"
+      methodExercised:
+        target: "com.google.inject.internal.aop.ClassBuilding"
+        name: "canFastInvoke"
+        parameters:
+        - name: "member"
+          valueUuid: "fastMethod_method1"
+        signature: "canFastInvoke(Method): boolean"
+        returnValueUuid: "fastMethod_boolean1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "22ADBC3CE52251089B0AF6A0E781841E"
+      index: 3
+      ignored: false
+      valueUuid: "fastMethod_biFunction1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5a10a0fc-1dd7-3f67-ac31-0b738fff1ec4"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "fastMethod_method1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.aop.ClassBuilding"
+      uuid: "uuid12"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "fastMethod_boolean1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "fastMethod_method1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      valueType: "java.util.function.BiFunction"
+      genericValueType: "java.lang.Object,java.lang.Object[],java.lang.Object"
+      uuid: "fastMethod_biFunction1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false

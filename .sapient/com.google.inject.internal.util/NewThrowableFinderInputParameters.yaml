@@ -1,0 +1,1159 @@
+---
+modelFingerprint: "CF09D98335648A5CCA901AF1E3F7E167"
+methods:
+- method:
+    name: "findCaller"
+    signature: "findCaller(java.util.function.Predicate<java.lang.String>) : java.lang.StackTraceElement"
+    instructionFingerprint: "B793C03DD863F3A1B99AC46F73AFDCF1"
+  paths:
+  - pathId: "path1"
+    testPathName: "findCallerWhenShouldBeSkippedNotTestClassName"
+    constructorSignature: "<init>() : void"
+    filledByUser: false
+    modelFingerprint: "44AF494BA15CA2208E53FBF7E17DCD94"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "shouldBeSkipped"
+      modelFingerprint: "50DC5FA61DA0DA06FA145D299E84A11F"
+      index: 2
+      ignored: false
+      valueUuid: "findCaller_predicate1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "57F0C697C6D88B5EA81B0736A4F2E19C"
+      index: 3
+      ignored: false
+      valueUuid: "findCaller_predicate1"
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          valueUuid: "findCaller_string1"
+        signature: "test(String): boolean"
+        returnValueUuid: "findCaller_boolean1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "08AF6D520ED7D7E57100080AA72F5C1D"
+      index: 4
+      ignored: false
+      valueUuid: "findCaller_stackTraceElement[]1-item0"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "da12eda8-142f-3d84-bc2b-5b2c3e08fb0c"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.util.NewThrowableFinder"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.util.NewThrowableFinder"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.util.NewThrowableFinder"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "findCaller_predicate1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "findCaller_predicate1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "findCaller_boolean1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "jdk.internal.reflect.GeneratedConstructorAccessor2106"
+      valueType: "java.lang.String"
+      uuid: "findCaller_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<array_return_item_reflection_call>
+        target: "java.lang.StackTraceElement"
+        arrayReturnReflectionCallContent: !<array_return_reflection_call>
+          target: "java.lang.StackTraceElement[]"
+          localVariableValue:
+            sapientType: "OBJECT"
+            suggestedContent: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "java.lang.Throwable"
+            uuid: "findCaller_throwable1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+          methodParameters: []
+          size: 23
+          baseUuid: "findCaller_stackTraceElement[]1"
+          methodName: "getStackTrace"
+        index: 0
+      valueType: "java.lang.StackTraceElement"
+      uuid: "findCaller_stackTraceElement[]1-item0"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "findCallerWhenShouldBeSkippedTestClassNameThrowsAssertionError"
+    constructorSignature: "<init>() : void"
+    filledByUser: false
+    modelFingerprint: "CAFFA268F44F93C125597E8A8DFA384F"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "4DB0F57EEFC6BBF1691C61D6F11B96D4"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "shouldBeSkipped"
+      modelFingerprint: "50DC5FA61DA0DA06FA145D299E84A11F"
+      index: 2
+      ignored: false
+      valueUuid: "findCaller_predicate1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "DA3D001E8C5BBB7FEADCD63898D5D95D"
+      index: 3
+      ignored: false
+      valueUuid: "findCaller_predicate1"
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          valueUuid: "findCaller_string1"
+        signature: "test(String): boolean"
+        returnValueUuid: "findCaller_boolean1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "A03AF8028F45DFF53E9CDF1F37C8CDB5"
+      index: 4
+      ignored: false
+      valueUuid: "findCaller_predicate1"
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          valueUuid: "findCaller_string2"
+        signature: "test(String): boolean"
+        returnValueUuid: "findCaller_boolean2"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "D6CDE1D26B86738692AEA087910A8FE6"
+      index: 5
+      ignored: false
+      valueUuid: "findCaller_predicate1"
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          valueUuid: "findCaller_string3"
+        signature: "test(String): boolean"
+        returnValueUuid: "findCaller_boolean3"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "D6CDE1D26B86738692AEA087910A8FE6"
+      index: 6
+      ignored: false
+      valueUuid: "findCaller_predicate1"
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          valueUuid: "findCaller_string4"
+        signature: "test(String): boolean"
+        returnValueUuid: "findCaller_boolean4"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "FFE8E1D7493648AE61DD74FA05253504"
+      index: 7
+      ignored: false
+      valueUuid: "findCaller_predicate1"
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          valueUuid: "findCaller_string5"
+        signature: "test(String): boolean"
+        returnValueUuid: "findCaller_boolean5"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "FFE8E1D7493648AE61DD74FA05253504"
+      index: 8
+      ignored: false
+      valueUuid: "findCaller_predicate1"
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          valueUuid: "findCaller_string6"
+        signature: "test(String): boolean"
+        returnValueUuid: "findCaller_boolean6"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "5DBB7946C12E0B1B456CD4BAF8066DDD"
+      index: 9
+      ignored: false
+      valueUuid: "findCaller_predicate1"
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          valueUuid: "findCaller_string7"
+        signature: "test(String): boolean"
+        returnValueUuid: "findCaller_boolean7"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "5DBB7946C12E0B1B456CD4BAF8066DDD"
+      index: 10
+      ignored: false
+      valueUuid: "findCaller_predicate1"
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          valueUuid: "findCaller_string8"
+        signature: "test(String): boolean"
+        returnValueUuid: "findCaller_boolean8"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "171CA0B59B15F7502A539D3E9A1B3440"
+      index: 11
+      ignored: false
+      valueUuid: "findCaller_predicate1"
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          valueUuid: "findCaller_string9"
+        signature: "test(String): boolean"
+        returnValueUuid: "findCaller_boolean9"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "E5F2111A1CCE4BBB74F27FC186EFB826"
+      index: 12
+      ignored: false
+      valueUuid: "findCaller_predicate1"
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          valueUuid: "findCaller_string10"
+        signature: "test(String): boolean"
+        returnValueUuid: "findCaller_boolean10"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "E5F2111A1CCE4BBB74F27FC186EFB826"
+      index: 13
+      ignored: false
+      valueUuid: "findCaller_predicate1"
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          valueUuid: "findCaller_string11"
+        signature: "test(String): boolean"
+        returnValueUuid: "findCaller_boolean11"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "DF250338FEE63B5BD9293D55BA3ACE44"
+      index: 14
+      ignored: false
+      valueUuid: "findCaller_predicate1"
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          valueUuid: "findCaller_string12"
+        signature: "test(String): boolean"
+        returnValueUuid: "findCaller_boolean12"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "DF250338FEE63B5BD9293D55BA3ACE44"
+      index: 15
+      ignored: false
+      valueUuid: "findCaller_predicate1"
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          valueUuid: "findCaller_string13"
+        signature: "test(String): boolean"
+        returnValueUuid: "findCaller_boolean13"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "DF250338FEE63B5BD9293D55BA3ACE44"
+      index: 16
+      ignored: false
+      valueUuid: "findCaller_predicate1"
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          valueUuid: "findCaller_string14"
+        signature: "test(String): boolean"
+        returnValueUuid: "findCaller_boolean14"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "78CE7461E681F0FB53C0FD8DCE83E3AB"
+      index: 17
+      ignored: false
+      valueUuid: "findCaller_predicate1"
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          valueUuid: "findCaller_string15"
+        signature: "test(String): boolean"
+        returnValueUuid: "findCaller_boolean15"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "78CE7461E681F0FB53C0FD8DCE83E3AB"
+      index: 18
+      ignored: false
+      valueUuid: "findCaller_predicate1"
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          valueUuid: "findCaller_string16"
+        signature: "test(String): boolean"
+        returnValueUuid: "findCaller_boolean16"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "51D5BB17963444D397C2DD07E748632C"
+      index: 19
+      ignored: false
+      valueUuid: "findCaller_predicate1"
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          valueUuid: "findCaller_string17"
+        signature: "test(String): boolean"
+        returnValueUuid: "findCaller_boolean17"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "A4B127EF3E85273B7F56B227129727A4"
+      index: 20
+      ignored: false
+      valueUuid: "findCaller_predicate1"
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          valueUuid: "findCaller_string18"
+        signature: "test(String): boolean"
+        returnValueUuid: "findCaller_boolean18"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "51D5BB17963444D397C2DD07E748632C"
+      index: 21
+      ignored: false
+      valueUuid: "findCaller_predicate1"
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          valueUuid: "findCaller_string19"
+        signature: "test(String): boolean"
+        returnValueUuid: "findCaller_boolean19"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "D2F6B1A3ADC0F43254463506DE9E24C2"
+      index: 22
+      ignored: false
+      valueUuid: "findCaller_predicate1"
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          valueUuid: "findCaller_string20"
+        signature: "test(String): boolean"
+        returnValueUuid: "findCaller_boolean20"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "EAEC578848F7E2369FB951200ABB3C38"
+      index: 23
+      ignored: false
+      valueUuid: "findCaller_predicate1"
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          valueUuid: "findCaller_string21"
+        signature: "test(String): boolean"
+        returnValueUuid: "findCaller_boolean21"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "668C1632694431C3C726A84DB8620C7B"
+      index: 24
+      ignored: false
+      valueUuid: "findCaller_predicate1"
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          valueUuid: "findCaller_string22"
+        signature: "test(String): boolean"
+        returnValueUuid: "findCaller_boolean22"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "shouldBeSkipped"
+      modelFingerprint: "51CD6F227B84453A6FC852C2274997A4"
+      index: 25
+      ignored: false
+      valueUuid: "findCaller_predicate1"
+      methodExercised:
+        target: "shouldBeSkipped"
+        name: "test"
+        parameters:
+        - name: "arg0"
+          valueUuid: "findCaller_string23"
+        signature: "test(String): boolean"
+        returnValueUuid: "findCaller_boolean23"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "99D87EA92C04D3F0C8C769F152216C7C"
+      index: 26
+      ignored: false
+      valueUuid: "findCaller_assertionError1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7ca431db-573d-3ca1-badb-4e8366b29fb0"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "UNKNOWN_REASON"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.util.NewThrowableFinder"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.util.NewThrowableFinder"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.util.NewThrowableFinder"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "findCaller_predicate1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "findCaller_predicate1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "findCaller_boolean1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "jdk.internal.reflect.GeneratedConstructorAccessor2106"
+      valueType: "java.lang.String"
+      uuid: "findCaller_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "findCaller_predicate1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "findCaller_boolean2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "jdk.internal.reflect.DelegatingConstructorAccessorImpl"
+      valueType: "java.lang.String"
+      uuid: "findCaller_string2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "findCaller_predicate1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "findCaller_boolean3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.lang.reflect.Constructor"
+      valueType: "java.lang.String"
+      uuid: "findCaller_string3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "findCaller_predicate1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "findCaller_boolean4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.lang.reflect.Constructor"
+      valueType: "java.lang.String"
+      uuid: "findCaller_string4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "findCaller_predicate1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "findCaller_boolean5"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "ai.sapient.core.smt.z3.expression.RealMethodCallerUtil"
+      valueType: "java.lang.String"
+      uuid: "findCaller_string5"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "findCaller_predicate1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "findCaller_boolean6"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "ai.sapient.core.smt.z3.expression.RealMethodCallerUtil"
+      valueType: "java.lang.String"
+      uuid: "findCaller_string6"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "findCaller_predicate1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "findCaller_boolean7"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "ai.sapient.core.parser.asm.instruction.handler.MethodCallInstructionConstructorHandler"
+      valueType: "java.lang.String"
+      uuid: "findCaller_string7"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "findCaller_predicate1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "findCaller_boolean8"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "ai.sapient.core.parser.asm.instruction.handler.MethodCallInstructionConstructorHandler"
+      valueType: "java.lang.String"
+      uuid: "findCaller_string8"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "findCaller_predicate1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "findCaller_boolean9"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "ai.sapient.core.parser.asm.instruction.util.InstructionHandlerFactory"
+      valueType: "java.lang.String"
+      uuid: "findCaller_string9"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "findCaller_predicate1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "findCaller_boolean10"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "ai.sapient.core.parser.MethodPathBuilder"
+      valueType: "java.lang.String"
+      uuid: "findCaller_string10"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "findCaller_predicate1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "findCaller_boolean11"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "ai.sapient.core.parser.MethodPathBuilder"
+      valueType: "java.lang.String"
+      uuid: "findCaller_string11"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "findCaller_predicate1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "findCaller_boolean12"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "ai.sapient.core.parser.ClassModelCreator"
+      valueType: "java.lang.String"
+      uuid: "findCaller_string12"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "findCaller_predicate1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "findCaller_boolean13"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "ai.sapient.core.parser.ClassModelCreator"
+      valueType: "java.lang.String"
+      uuid: "findCaller_string13"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "findCaller_predicate1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "findCaller_boolean14"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "ai.sapient.core.parser.ClassModelCreator"
+      valueType: "java.lang.String"
+      uuid: "findCaller_string14"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "findCaller_predicate1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "findCaller_boolean15"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "ai.sapient.core.extractor.input.parameter.TestInputsSolver"
+      valueType: "java.lang.String"
+      uuid: "findCaller_string15"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "findCaller_predicate1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "findCaller_boolean16"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "ai.sapient.core.extractor.input.parameter.TestInputsSolver"
+      valueType: "java.lang.String"
+      uuid: "findCaller_string16"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "findCaller_predicate1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "findCaller_boolean17"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "ai.sapient.core.extractor.input.parameter.MultithreadTestInputSolver"
+      valueType: "java.lang.String"
+      uuid: "findCaller_string17"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "findCaller_predicate1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "findCaller_boolean18"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "ai.sapient.core.context.ContextAwareOperation"
+      valueType: "java.lang.String"
+      uuid: "findCaller_string18"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "findCaller_predicate1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "findCaller_boolean19"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "ai.sapient.core.extractor.input.parameter.MultithreadTestInputSolver"
+      valueType: "java.lang.String"
+      uuid: "findCaller_string19"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "findCaller_predicate1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "findCaller_boolean20"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.util.concurrent.CompletableFuture$AsyncSupply"
+      valueType: "java.lang.String"
+      uuid: "findCaller_string20"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "findCaller_predicate1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "findCaller_boolean21"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.util.concurrent.ThreadPoolExecutor"
+      valueType: "java.lang.String"
+      uuid: "findCaller_string21"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "findCaller_predicate1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "findCaller_boolean22"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.util.concurrent.ThreadPoolExecutor$Worker"
+      valueType: "java.lang.String"
+      uuid: "findCaller_string22"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.util.function.Predicate"
+      uuid: "findCaller_predicate1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      suggestedContent: !<regular>
+        value: true
+      valueType: "boolean"
+      uuid: "findCaller_boolean23"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.lang.Thread"
+      valueType: "java.lang.String"
+      uuid: "findCaller_string23"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.AssertionError"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "java.lang.AssertionError"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "java.lang.AssertionError"
+      uuid: "findCaller_assertionError1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false

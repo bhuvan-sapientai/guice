@@ -1,0 +1,1454 @@
+---
+modelFingerprint: "253E2E76355D92E90710B1F075ACCEBB"
+methods:
+- method:
+    name: "getErrorMessages"
+    signature: "getErrorMessages() : java.util.Collection<com.google.inject.spi.Message>"
+    instructionFingerprint: "063EB1F84951CA784D54F435BD08D642"
+  paths:
+  - pathId: "path1"
+    testPathName: "getErrorMessagesTest"
+    constructorSignature: "<init>(java.util.Collection<com.google.inject.spi.Message>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "04709634FCB3C54059B1B22195D98236"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "69B862CBA697A9A2F4EDC2128FC9DCD6"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "messages"
+      modelFingerprint: "BBE39B3307298E774FE2DE4E485040C1"
+      index: 2
+      ignored: false
+      valueUuid: "<init>_immutableSet1"
+      methodExercised:
+        target: "this.messages"
+        name: "isEmpty"
+        parameters: []
+        signature: "isEmpty(): boolean"
+        returnValueUuid: "<init>_boolean1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "F495DA5CE7190A648E4B65E98F71F4B2"
+      index: 3
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "getOnlyCause"
+        parameters:
+        - name: "messages"
+          valueUuid: "<init>_immutableSet1"
+        signature: "getOnlyCause(ImmutableSet): Throwable"
+        returnValueUuid: "<init>_throwable1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "8021F5C32A9B6C64C6984F8BB1A25C28"
+      index: 4
+      ignored: false
+      valueUuid: "<init>_immutableSet1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a2f9e3d2-57eb-3629-ac39-5d095de7811e"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableSet.copyOf(java.util.Collection<com.google.inject.spi.Message>)\
+        \ : com.google.common.collect.ImmutableSet<com.google.inject.spi.Message>"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.CreationException"
+        parameters:
+        - name: "messages"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values:
+              - sapientType: "OBJECT"
+                content: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "MOCK"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-0-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      content: !<regular>
+                        value: "AMBIGUOUS_TYPE_CONVERSION"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-0-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "MOCK"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-0-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-0-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-0-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-0-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "com.google.inject.spi.Message"
+                uuid: "<init>_collection1-0"
+                fixed: false
+                collectionUuid: "<init>_collection1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              - sapientType: "OBJECT"
+                content: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "MOCK"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-1-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      content: !<regular>
+                        value: "AMBIGUOUS_TYPE_CONVERSION"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-1-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "MOCK"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-1-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-1-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-1-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-1-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "com.google.inject.spi.Message"
+                uuid: "<init>_collection1-1"
+                fixed: false
+                collectionUuid: "<init>_collection1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            suggestedContent: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values:
+              - sapientType: "OBJECT"
+                content: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "MOCK"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-0-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      content: !<regular>
+                        value: "AMBIGUOUS_TYPE_CONVERSION"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-0-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "MOCK"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-0-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-0-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-0-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-0-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "com.google.inject.spi.Message"
+                uuid: "<init>_collection1-0"
+                fixed: false
+                collectionUuid: "<init>_collection1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              - sapientType: "OBJECT"
+                content: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "MOCK"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-1-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      content: !<regular>
+                        value: "AMBIGUOUS_TYPE_CONVERSION"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-1-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "MOCK"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-1-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-1-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-1-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-1-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "com.google.inject.spi.Message"
+                uuid: "<init>_collection1-1"
+                fixed: false
+                collectionUuid: "<init>_collection1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            valueType: "java.util.Collection"
+            genericValueType: "com.google.inject.spi.Message"
+            uuid: "<init>_collection1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.CreationException"
+        parameters:
+        - name: "messages"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values:
+              - sapientType: "OBJECT"
+                content: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-0-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-0-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-0-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-0-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-0-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-0-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "com.google.inject.spi.Message"
+                uuid: "<init>_collection1-0"
+                fixed: false
+                collectionUuid: "<init>_collection1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              - sapientType: "OBJECT"
+                content: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-1-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-1-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-1-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-1-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-1-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-1-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "com.google.inject.spi.Message"
+                uuid: "<init>_collection1-1"
+                fixed: false
+                collectionUuid: "<init>_collection1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            suggestedContent: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values:
+              - sapientType: "OBJECT"
+                content: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-0-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-0-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-0-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-0-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-0-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-0-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "com.google.inject.spi.Message"
+                uuid: "<init>_collection1-0"
+                fixed: false
+                collectionUuid: "<init>_collection1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              - sapientType: "OBJECT"
+                content: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-1-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-1-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-1-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-1-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-1-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-1-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "com.google.inject.spi.Message"
+                uuid: "<init>_collection1-1"
+                fixed: false
+                collectionUuid: "<init>_collection1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            valueType: "java.util.Collection"
+            genericValueType: "com.google.inject.spi.Message"
+            uuid: "<init>_collection1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.CreationException"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "<init>_boolean1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Messages"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Throwable"
+      uuid: "<init>_throwable1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "getMessage"
+    signature: "getMessage() : java.lang.String"
+    instructionFingerprint: "58DC2F4F627695FA2BA23CF2A9BB3C99"
+  paths:
+  - pathId: "path1"
+    testPathName: "getMessageTest"
+    constructorSignature: "<init>(java.util.Collection<com.google.inject.spi.Message>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "2211254F07179133012A0CB0D1622902"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "69B862CBA697A9A2F4EDC2128FC9DCD6"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "messages"
+      modelFingerprint: "EEB5E964A154BB981FEC8908D4204F99"
+      index: 2
+      ignored: false
+      valueUuid: "<init>_immutableSet1"
+      methodExercised:
+        target: "this.messages"
+        name: "isEmpty"
+        parameters: []
+        signature: "isEmpty(): boolean"
+        returnValueUuid: "<init>_boolean1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "F495DA5CE7190A648E4B65E98F71F4B2"
+      index: 3
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "getOnlyCause"
+        parameters:
+        - name: "messages"
+          valueUuid: "<init>_immutableSet1"
+        signature: "getOnlyCause(ImmutableSet): Throwable"
+        returnValueUuid: "<init>_throwable1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Messages"
+      modelFingerprint: "FF4C710A7D4599EF6BF541E3B680AAC8"
+      index: 4
+      ignored: false
+      valueUuid: "uuid3"
+      methodExercised:
+        target: "com.google.inject.internal.Messages"
+        name: "formatMessages"
+        parameters:
+        - name: "heading"
+          valueUuid: "uuid2"
+        - name: "errorMessages"
+          valueUuid: "<init>_immutableSet1"
+        signature: "formatMessages(String,ImmutableSet): String"
+        returnValueUuid: "getMessage_string1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "CE2B4E62BEF66183D8616224907438AA"
+      index: 5
+      ignored: false
+      valueUuid: "getMessage_string1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a52bed3f-53de-303b-8128-55ffe95a8205"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: com.google.common.collect.ImmutableSet.copyOf(java.util.Collection<com.google.inject.spi.Message>)\
+        \ : com.google.common.collect.ImmutableSet<com.google.inject.spi.Message>"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.CreationException"
+        parameters:
+        - name: "messages"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values:
+              - sapientType: "OBJECT"
+                content: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "MOCK"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-0-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      content: !<regular>
+                        value: "AMBIGUOUS_TYPE_CONVERSION"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-0-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "MOCK"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-0-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-0-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-0-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-0-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "com.google.inject.spi.Message"
+                uuid: "<init>_collection1-0"
+                fixed: false
+                collectionUuid: "<init>_collection1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              - sapientType: "OBJECT"
+                content: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "MOCK"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-1-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      content: !<regular>
+                        value: "AMBIGUOUS_TYPE_CONVERSION"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-1-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "MOCK"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-1-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-1-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-1-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-1-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "com.google.inject.spi.Message"
+                uuid: "<init>_collection1-1"
+                fixed: false
+                collectionUuid: "<init>_collection1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            suggestedContent: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values:
+              - sapientType: "OBJECT"
+                content: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "MOCK"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-0-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      content: !<regular>
+                        value: "AMBIGUOUS_TYPE_CONVERSION"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-0-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "MOCK"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-0-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-0-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-0-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-0-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "com.google.inject.spi.Message"
+                uuid: "<init>_collection1-0"
+                fixed: false
+                collectionUuid: "<init>_collection1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              - sapientType: "OBJECT"
+                content: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "MOCK"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-1-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      content: !<regular>
+                        value: "AMBIGUOUS_TYPE_CONVERSION"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-1-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "MOCK"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-1-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-1-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-1-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-1-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "com.google.inject.spi.Message"
+                uuid: "<init>_collection1-1"
+                fixed: false
+                collectionUuid: "<init>_collection1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            valueType: "java.util.Collection"
+            genericValueType: "com.google.inject.spi.Message"
+            uuid: "<init>_collection1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.CreationException"
+        parameters:
+        - name: "messages"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values:
+              - sapientType: "OBJECT"
+                content: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-0-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-0-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-0-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-0-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-0-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-0-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "com.google.inject.spi.Message"
+                uuid: "<init>_collection1-0"
+                fixed: false
+                collectionUuid: "<init>_collection1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              - sapientType: "OBJECT"
+                content: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-1-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-1-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-1-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-1-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-1-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-1-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "com.google.inject.spi.Message"
+                uuid: "<init>_collection1-1"
+                fixed: false
+                collectionUuid: "<init>_collection1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            suggestedContent: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values:
+              - sapientType: "OBJECT"
+                content: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-0-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-0-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-0-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-0-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-0-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-0-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "com.google.inject.spi.Message"
+                uuid: "<init>_collection1-0"
+                fixed: false
+                collectionUuid: "<init>_collection1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+              - sapientType: "OBJECT"
+                content: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-1-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-1-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-1-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                suggestedContent: !<new>
+                  target: "com.google.inject.spi.Message"
+                  parameters:
+                  - name: "internalOnly"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.internal.GuiceInternal"
+                      uuid: "<init>_collection1-1-internalOnly"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorId"
+                    value:
+                      sapientType: "ENUM"
+                      valueType: "com.google.inject.internal.ErrorId"
+                      uuid: "<init>_collection1-1-errorId"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  - name: "errorDetail"
+                    value:
+                      sapientType: "UNKNOWN"
+                      valueType: "com.google.inject.spi.ErrorDetail"
+                      uuid: "<init>_collection1-1-errorDetail"
+                      fixed: false
+                      equalsMethodPresent: false
+                      explicitCastNeeded: false
+                  privateConstructor: false
+                  createdByTargetCode: false
+                valueType: "com.google.inject.spi.Message"
+                uuid: "<init>_collection1-1"
+                fixed: false
+                collectionUuid: "<init>_collection1"
+                equalsMethodPresent: false
+                explicitCastNeeded: false
+            valueType: "java.util.Collection"
+            genericValueType: "com.google.inject.spi.Message"
+            uuid: "<init>_collection1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.CreationException"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: false
+      suggestedContent: !<regular>
+        value: false
+      valueType: "boolean"
+      uuid: "<init>_boolean1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Messages"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Throwable"
+      uuid: "<init>_throwable1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Messages"
+      uuid: "uuid3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_formatMessages1"
+      valueType: "java.lang.String"
+      uuid: "getMessage_string1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "Unable to create injector, see the following errors"
+      valueType: "java.lang.String"
+      uuid: "uuid2"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.common.collect.ImmutableSet"
+      uuid: "<init>_immutableSet1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_formatMessages1"
+      valueType: "java.lang.String"
+      uuid: "getMessage_string1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false

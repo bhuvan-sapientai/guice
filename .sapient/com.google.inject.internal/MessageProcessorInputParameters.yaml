@@ -1,0 +1,476 @@
+---
+modelFingerprint: "813AED946F292BA0A228197CDFF7FEB5"
+methods:
+- method:
+    name: "visit"
+    signature: "visit(com.google.inject.spi.Message) : java.lang.Boolean"
+    instructionFingerprint: "5FA60D1A9D8D9C2E462A200EC4F2A99B"
+  paths:
+  - pathId: "path1"
+    testPathName: "visit17WhenMessageGetCauseIsNotNull"
+    constructorSignature: "<init>(com.google.inject.internal.Errors) : void"
+    filledByUser: false
+    modelFingerprint: "D691AB6F3999C47264F7C4789B2690E3"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "79B385591A0958E7F386DE41A58FE8E9"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "message"
+      modelFingerprint: "670D4C355BBC54F8D03F3075292D7922"
+      index: 2
+      ignored: false
+      valueUuid: "visit_message1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "message"
+      modelFingerprint: "37F3642A64345B1B5EA20D1C8F8E84A4"
+      index: 3
+      ignored: false
+      valueUuid: "visit_message1"
+      methodExercised:
+        target: "message"
+        name: "getCause"
+        parameters: []
+        signature: "getCause(): Throwable"
+        returnValueUuid: "visit_throwable1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "message"
+      modelFingerprint: "37F3642A64345B1B5EA20D1C8F8E84A4"
+      index: 4
+      ignored: false
+      valueUuid: "visit_message1"
+      methodExercised:
+        target: "message"
+        name: "getCause"
+        parameters: []
+        signature: "getCause(): Throwable"
+        returnValueUuid: "visit_throwable2"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "MessageProcessor"
+      modelFingerprint: "0B1B2C46A89072FE1D27844CDFE9F2B4"
+      index: 5
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.MessageProcessor"
+        name: "getRootMessage"
+        parameters:
+        - name: "t"
+          valueUuid: "visit_throwable2"
+        signature: "getRootMessage(Throwable): String"
+        returnValueUuid: "visit_string1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "message"
+      modelFingerprint: "37F3642A64345B1B5EA20D1C8F8E84A4"
+      index: 6
+      ignored: false
+      valueUuid: "visit_message1"
+      methodExercised:
+        target: "message"
+        name: "getCause"
+        parameters: []
+        signature: "getCause(): Throwable"
+        returnValueUuid: "visit_throwable3"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "FIELD"
+      name: "errors"
+      modelFingerprint: "9D98DD40913C6171824F1914227A8CB7"
+      index: 7
+      ignored: false
+      valueUuid: "<init>_errors1"
+      methodExercised:
+        target: "this.errors"
+        name: "addMessage"
+        parameters:
+        - name: "message"
+          valueUuid: "visit_message1"
+        signature: "addMessage(Message): Errors"
+        returnValueUuid: "visit_errors1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "47D8A47490D2259B302011E1A2B37B5D"
+      index: 8
+      ignored: false
+      valueUuid: "visit_boolean1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "7a2bb94e-a121-3c86-801b-625491822e52"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.MessageProcessor"
+        parameters:
+        - name: "errors"
+          value:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.Errors"
+            uuid: "<init>_errors1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.MessageProcessor"
+        parameters:
+        - name: "errors"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<unknown_object>
+              target: "com.google.inject.internal.Errors"
+              onlyPojoFunctions: false
+              builderPattern: false
+            valueType: "com.google.inject.internal.Errors"
+            uuid: "<init>_errors1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.MessageProcessor"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.Message"
+      uuid: "visit_message1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.Message"
+      uuid: "visit_message1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Throwable"
+      uuid: "visit_throwable1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.Message"
+      uuid: "visit_message1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Throwable"
+      uuid: "visit_throwable2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.MessageProcessor"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "A"
+      suggestedContent: !<regular>
+        value: "A"
+      valueType: "java.lang.String"
+      uuid: "visit_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Throwable"
+      uuid: "visit_throwable2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.Message"
+      uuid: "visit_message1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Throwable"
+      uuid: "visit_throwable3"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Errors"
+      uuid: "<init>_errors1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.Errors"
+      uuid: "visit_errors1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.spi.Message"
+      uuid: "visit_message1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: true
+      valueType: "java.lang.Boolean"
+      uuid: "visit_boolean1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "visit17WhenMessageGetCauseIsNull"
+    constructorSignature: "<init>(com.google.inject.internal.Errors) : void"
+    filledByUser: false
+    modelFingerprint: "7276B1718FF8821FC84B013BC44FA27C"
+    problemWasSolvedByProver: true
+    truncated: true
+    inputParameters: []
+    uuid: "1bd9949b-037c-3826-a5dd-7ccdbbfb4b2e"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+- method:
+    name: "getRootMessage"
+    signature: "getRootMessage(java.lang.Throwable) : java.lang.String"
+    instructionFingerprint: "38F2324B1B8CB981F7A8D1EE55F84B24"
+  paths:
+  - pathId: "path1"
+    testPathName: "getRootMessageWhenCauseIsNull"
+    filledByUser: false
+    modelFingerprint: "52EC9D2ADCBF5D311EF0ED0F6A24BA56"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "t"
+      modelFingerprint: "31F1CC4C2EEDF390642BCB6EA8C1913C"
+      index: 1
+      ignored: false
+      valueUuid: "getRootMessage_throwable1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E1C1E6C1E9CFD0D84E382F05EFBFFB96"
+      index: 2
+      ignored: false
+      valueUuid: "getRootMessage_string1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4ec8e772-6567-3601-bc3f-b442b3ce6dde"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Throwable"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Throwable"
+      uuid: "getRootMessage_throwable1"
+      fixed: false
+      nameForMock: "getRootMessage_throwable1"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "java.lang.Throwable"
+      valueType: "java.lang.String"
+      uuid: "getRootMessage_string1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "getRootMessageWhenCauseIsNotNull"
+    filledByUser: false
+    modelFingerprint: "5F3814C4E87BC2E042F867A61B5F48FC"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "t"
+      modelFingerprint: "60D67B2AB02BBF6FE1246A6A93479182"
+      index: 1
+      ignored: false
+      valueUuid: "getRootMessage_throwable1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "E5671A452C0E0DE468F1F54B90CF4F0A"
+      index: 2
+      ignored: false
+      valueUuid: "getRootMessage_string1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "056f9c6e-d154-3561-8e34-7b365da86a6d"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_INTERNAL_METHOD_RECURSIVE_CALL"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Throwable"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "message1"
+            valueType: "java.lang.String"
+            uuid: "getRootMessage_throwable1-message"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "cause"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Throwable"
+            uuid: "getRootMessage_throwable2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Throwable"
+        parameters:
+        - name: "message"
+          value:
+            sapientType: "BASIC"
+            valueType: "java.lang.String"
+            uuid: "getRootMessage_throwable1-message"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "cause"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<new>
+              target: "java.lang.Throwable"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Throwable"
+            uuid: "getRootMessage_throwable2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Throwable"
+      uuid: "getRootMessage_throwable1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "getRootMessage_throwable1"
+      suggestedContent: !<regular>
+        value: "getRootMessage_throwable1"
+      valueType: "java.lang.String"
+      uuid: "getRootMessage_string1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false

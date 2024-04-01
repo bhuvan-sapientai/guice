@@ -1,0 +1,236 @@
+---
+modelFingerprint: "EE83D35E6EABDEAD71D2880649BC27A5"
+methods:
+- method:
+    name: "invoke"
+    signature: "invoke(java.lang.Object,java.lang.reflect.Method,java.lang.Object[])\
+      \ : java.lang.Object"
+    instructionFingerprint: "27B229FDDD38D756D12FF1E23123B8F2"
+  paths:
+  - pathId: "path1"
+    testPathName: "invokeTest"
+    constructorSignature: "<init>(java.lang.reflect.Method,java.util.List<org.aopalliance.intercept.MethodInterceptor>,java.util.function.BiFunction<java.lang.Object,java.lang.Object[],java.lang.Object>)\
+      \ : void"
+    filledByUser: false
+    modelFingerprint: "1A1B4836F843A70BC4EB8D06323CEA77"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "CONSTRUCTOR"
+      modelFingerprint: "20EE1DC1295B1B46E26CFF99750F4A84"
+      index: 1
+      ignored: false
+      valueUuid: "target"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "proxy"
+      modelFingerprint: "AD668A589E95E3D11287FA9353753233"
+      index: 2
+      ignored: false
+      valueUuid: "invoke_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "unused"
+      modelFingerprint: "17A7752035D27F91F984D4F9F4616C49"
+      index: 3
+      ignored: false
+      valueUuid: "invoke_method1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "INPUT"
+      name: "arguments"
+      modelFingerprint: "16832A685A7190662414E1AB929A926D"
+      index: 4
+      ignored: false
+      valueUuid: "invoke_object[]1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "7C973EAEEC332BFEC09E51528D07A6CE"
+      index: 5
+      ignored: false
+      valueUuid: "invoke_object2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "93eb0251-18f6-3880-853a-57868a8572c5"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "object of type InterceptorStackCallback.InterceptedMethodInvocation"
+    failureReason:
+      reason: "METHOD_CALL_INSTRUCTION_CONSTRUCTION_UNFILLED_PARAMS"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.InterceptorStackCallback"
+        parameters:
+        - name: "method"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Method"
+            uuid: "<init>_method1"
+            fixed: false
+            nameForMock: "someMethod"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "interceptors"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "org.aopalliance.intercept.MethodInterceptor"
+            uuid: "<init>_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "superInvoker"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.function.BiFunction"
+            uuid: "<init>_biFunction1"
+            fixed: false
+            nameForMock: "null"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.InterceptorStackCallback"
+        parameters:
+        - name: "method"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.lang.reflect.Method"
+            uuid: "<init>_method1"
+            fixed: false
+            nameForMock: "someMethod"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "interceptors"
+          value:
+            sapientType: "COLLECTION"
+            content: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            suggestedContent: !<collection>
+              collectionClass: "java.util.ArrayList"
+              parameters: []
+              values: []
+            valueType: "java.util.List"
+            genericValueType: "org.aopalliance.intercept.MethodInterceptor"
+            uuid: "<init>_list1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "superInvoker"
+          value:
+            sapientType: "MOCK"
+            valueType: "java.util.function.BiFunction"
+            genericValueType: "java.lang.Object,java.lang.Object[],java.lang.Object"
+            uuid: "<init>_biFunction1"
+            fixed: false
+            nameForMock: "null"
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "com.google.inject.internal.InterceptorStackCallback"
+      uuid: "target"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "invoke_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Method"
+      uuid: "invoke_method1"
+      fixed: false
+      nameForMock: "null"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.Object"
+              parameters: []
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.Object"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "java.lang.Object[]"
+      uuid: "invoke_object[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.Object"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.Object"
+      uuid: "invoke_object2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false

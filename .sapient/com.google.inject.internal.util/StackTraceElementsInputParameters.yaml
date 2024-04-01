@@ -1,0 +1,3206 @@
+---
+modelFingerprint: "3A663AF7400FC2A10D4E0102B203DF52"
+methods:
+- method:
+    name: "forMember"
+    signature: "forMember(java.lang.reflect.Member) : java.lang.Object"
+    instructionFingerprint: "4873D967F76AB87BB2D6A2022FFA79D3"
+  paths:
+  - pathId: "path1"
+    testPathName: "forMemberWhenMemberIsNull"
+    filledByUser: false
+    modelFingerprint: "10B98BDA25A66E422377A917A03BD8F9"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "member"
+      modelFingerprint: "0B4DE2D9B80F81430F45FF4480EE5232"
+      index: 1
+      ignored: false
+      valueUuid: "forMember_member1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1303C12C4C24D44DF287D6E844326121"
+      index: 2
+      ignored: false
+      valueUuid: "forMember_object1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "f83bf260-c94d-3632-9156-ede1f8f02d1f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "NULL"
+      valueType: "java.lang.reflect.Member"
+      uuid: "forMember_member1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "[unknown source]"
+      valueType: "java.lang.String"
+      uuid: "forMember_object1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "forMemberWhenMemberTypeEqualsConstructor"
+    filledByUser: false
+    modelFingerprint: "BFD03F40039F508867729D5DD04A0B06"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "member"
+      modelFingerprint: "90AB8D75AB83F127CF1B907C8C177A12"
+      index: 1
+      ignored: false
+      valueUuid: "forMember_member1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "member"
+      modelFingerprint: "0422C2DD413C463F53C0A846A3A9C8EE"
+      index: 2
+      ignored: false
+      valueUuid: "forMember_member1"
+      methodExercised:
+        target: "member"
+        name: "getDeclaringClass"
+        parameters: []
+        signature: "getDeclaringClass(): Class"
+        returnValueUuid: "forMember_class1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "lineNumbers"
+      modelFingerprint: "C2A0F77F56E7499E24C171DBF8A11A0D"
+      index: 3
+      ignored: false
+      valueUuid: "forMember_object1"
+      methodExercised:
+        target: "lineNumbers"
+        name: "getSource"
+        parameters: []
+        signature: "getSource(): String"
+        returnValueUuid: "forMember_string1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "lineNumbers"
+      modelFingerprint: "4F953535E76DB712F1BEBED85AFD7CBD"
+      index: 4
+      ignored: false
+      valueUuid: "forMember_object1"
+      methodExercised:
+        target: "lineNumbers"
+        name: "getLineNumber"
+        parameters:
+        - name: "member"
+          valueUuid: "forMember_member1"
+        signature: "getLineNumber(Member): Integer"
+        returnValueUuid: "forMember_integer1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "lineNumbers"
+      modelFingerprint: "1B63408550D8F14D50B17D2CADEFA98A"
+      index: 5
+      ignored: false
+      valueUuid: "forMember_object1"
+      methodExercised:
+        target: "lineNumbers"
+        name: "getFirstLine"
+        parameters: []
+        signature: "getFirstLine(): int"
+        returnValueUuid: "forMember_int1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Classes"
+      modelFingerprint: "2C705897A6526E7A3D3A60B06AE4BD89"
+      index: 6
+      ignored: false
+      valueUuid: "uuid2"
+      methodExercised:
+        target: "com.google.inject.internal.util.Classes"
+        name: "memberType"
+        parameters:
+        - name: "member"
+          valueUuid: "forMember_member1"
+        signature: "memberType(Member): Class"
+        returnValueUuid: "uuid1"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "3BDB2C377F94A2AF8500DBA6A140739F"
+      index: 7
+      ignored: false
+      valueUuid: "forMember_stackTraceElement1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "6806c3d7-2e17-352b-94a1-a352f1d93303"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "lineNumbersCache"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "LineNumbers lineNumbers = lineNumbersCache.getUnchecked(declaringClass);"
+      lineNumber: 67
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: lineNumbersCache - Method: getUnchecked"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Member"
+      uuid: "forMember_member1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Member"
+      uuid: "forMember_member1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      suggestedContent: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "forMember_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.util.LineNumbers"
+      uuid: "forMember_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getSource1"
+      valueType: "java.lang.String"
+      uuid: "forMember_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.util.LineNumbers"
+      uuid: "forMember_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "NULL"
+      valueType: "java.lang.Integer"
+      uuid: "forMember_integer1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Member"
+      uuid: "forMember_member1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.util.LineNumbers"
+      uuid: "forMember_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "forMember_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.util.Classes"
+      uuid: "uuid2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.reflect.Constructor"
+      valueType: "java.lang.Class"
+      genericValueType: "java.lang.reflect.Constructor"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Member"
+      uuid: "forMember_member1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StackTraceElement"
+        parameters:
+        - name: "declaringClass"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.String"
+            uuid: "forMember_string3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "methodName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "<init>"
+            valueType: "java.lang.String"
+            uuid: "forMember_string2"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "fileName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "return_of_getSource1"
+            valueType: "java.lang.String"
+            uuid: "forMember_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "lineNumber"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "forMember_int1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "java.lang.StackTraceElement"
+        parameters:
+        - name: "declaringClass"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.String"
+            uuid: "forMember_string3"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "methodName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "<init>"
+            valueType: "java.lang.String"
+            uuid: "forMember_string2"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "fileName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "return_of_getSource1"
+            valueType: "java.lang.String"
+            uuid: "forMember_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "lineNumber"
+          value:
+            sapientType: "BASIC"
+            valueType: "int"
+            uuid: "forMember_int1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "java.lang.StackTraceElement"
+      uuid: "forMember_stackTraceElement1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path3"
+    testPathName: "forMemberWhenMemberTypeNotEqualsConstructor"
+    filledByUser: false
+    modelFingerprint: "A5AC6B3861EBA826E7B42847A00ABDC8"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "37645b47-7c64-3bad-ab6b-97eb6b840b5d"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    variablesCouldNotBeIsolated: "lineNumbersCache"
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.reflect.Member.getDeclaringClass() :\
+        \ java.lang.Class<?>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path4"
+    testPathName: "forMemberWhenLineNumberOrNullIsNotNullAndMemberTypeEqualsConstructor"
+    filledByUser: false
+    modelFingerprint: "F7FD68D02CDBAC6E58AA9D6E8C555614"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "403f2ca2-11e4-358c-9fa4-c0906cf25a41"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    variablesCouldNotBeIsolated: "lineNumbersCache"
+    failureReason:
+      reason: "METHOD_WITHOUT_EXPRESSION_SUPPORT"
+      details: "Expression missing: java.lang.reflect.Member.getDeclaringClass() :\
+        \ java.lang.Class<?>"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path5"
+    testPathName: "forMemberWhenLineNumberOrNullIsNotNullAndMemberTypeNotEqualsConstructor"
+    filledByUser: false
+    modelFingerprint: "2A6E5160C9A84C71531183EE05D965C3"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "member"
+      modelFingerprint: "90AB8D75AB83F127CF1B907C8C177A12"
+      index: 1
+      ignored: false
+      valueUuid: "forMember_member1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "member"
+      modelFingerprint: "40F3D41D463D3BA759AB081FC42AEA9B"
+      index: 2
+      ignored: false
+      valueUuid: "forMember_member1"
+      methodExercised:
+        target: "member"
+        name: "getDeclaringClass"
+        parameters: []
+        signature: "getDeclaringClass(): Class"
+        returnValueUuid: "forMember_class1"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "lineNumbers"
+      modelFingerprint: "C2A0F77F56E7499E24C171DBF8A11A0D"
+      index: 3
+      ignored: false
+      valueUuid: "forMember_object1"
+      methodExercised:
+        target: "lineNumbers"
+        name: "getSource"
+        parameters: []
+        signature: "getSource(): String"
+        returnValueUuid: "forMember_string1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "lineNumbers"
+      modelFingerprint: "C9D00705F6930AC9AEFF7360AF8427E4"
+      index: 4
+      ignored: false
+      valueUuid: "forMember_object1"
+      methodExercised:
+        target: "lineNumbers"
+        name: "getLineNumber"
+        parameters:
+        - name: "member"
+          valueUuid: "forMember_member1"
+        signature: "getLineNumber(Member): Integer"
+        returnValueUuid: "forMember_integer1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATIC"
+      name: "Classes"
+      modelFingerprint: "1886EEAB2DFE5E1C0092E0EF7248967E"
+      index: 5
+      ignored: false
+      valueUuid: "uuid1"
+      methodExercised:
+        target: "com.google.inject.internal.util.Classes"
+        name: "memberType"
+        parameters:
+        - name: "member"
+          valueUuid: "forMember_member1"
+        signature: "memberType(Member): Class"
+        returnValueUuid: "forMember_class2"
+        access: 9
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "member"
+      modelFingerprint: "D0B32BB3FF7A537A6C2EFB1687746F29"
+      index: 6
+      ignored: false
+      valueUuid: "forMember_member1"
+      methodExercised:
+        target: "member"
+        name: "getName"
+        parameters: []
+        signature: "getName(): String"
+        returnValueUuid: "forMember_string2"
+        access: 1025
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1544C3243427A58A5AE91A88CC628F77"
+      index: 7
+      ignored: false
+      valueUuid: "uuid2"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "968ae35e-186f-3688-a415-18f6e66da848"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "lineNumbersCache"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "LineNumbers lineNumbers = lineNumbersCache.getUnchecked(declaringClass);"
+      lineNumber: 67
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: lineNumbersCache - Method: getUnchecked"
+    prover: "LLM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Member"
+      uuid: "forMember_member1"
+      fixed: false
+      nameForMock: "Integer"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Member"
+      uuid: "forMember_member1"
+      fixed: false
+      nameForMock: "Integer"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "forMember_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.util.LineNumbers"
+      uuid: "forMember_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getSource1"
+      valueType: "java.lang.String"
+      uuid: "forMember_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.util.LineNumbers"
+      uuid: "forMember_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 1
+      suggestedContent: !<regular>
+        value: 1
+      valueType: "java.lang.Integer"
+      uuid: "forMember_integer1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Member"
+      uuid: "forMember_member1"
+      fixed: false
+      nameForMock: "Integer"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.util.Classes"
+      uuid: "uuid1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "? extends java.lang.reflect.Member"
+      valueType: "java.lang.Class"
+      genericValueType: "? extends java.lang.reflect.Member"
+      uuid: "forMember_class2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Member"
+      uuid: "forMember_member1"
+      fixed: false
+      nameForMock: "Integer"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "java.lang.reflect.Member"
+      uuid: "forMember_member1"
+      fixed: false
+      nameForMock: "Integer"
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      valueType: "java.lang.String"
+      uuid: "forMember_string2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "EXCEPTION"
+      content: !<new>
+        target: "java.lang.NullPointerException"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      suggestedContent: !<new>
+        target: "java.lang.NullPointerException"
+        parameters: []
+        privateConstructor: false
+        createdByTargetCode: false
+      valueType: "java.lang.NullPointerException"
+      uuid: "uuid2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "forType"
+    signature: "forType(java.lang.Class<?>) : java.lang.Object"
+    instructionFingerprint: "3355EAB9EA7CC241E01BA80AD9681B15"
+  paths:
+  - pathId: "path1"
+    testPathName: "forTypeTest"
+    filledByUser: false
+    modelFingerprint: "F86973F74667D0E57CEABA31768C5B5E"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "implementation"
+      modelFingerprint: "CA72FC1256372E7641864D9CB4E1CE90"
+      index: 1
+      ignored: false
+      valueUuid: "forType_class1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "lineNumbers"
+      modelFingerprint: "1B63408550D8F14D50B17D2CADEFA98A"
+      index: 2
+      ignored: false
+      valueUuid: "forType_object1"
+      methodExercised:
+        target: "lineNumbers"
+        name: "getFirstLine"
+        parameters: []
+        signature: "getFirstLine(): int"
+        returnValueUuid: "forType_int1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "lineNumbers"
+      modelFingerprint: "8E95BCE6402508F88DF6E92D1ACDF7BA"
+      index: 3
+      ignored: false
+      valueUuid: "forType_object1"
+      methodExercised:
+        target: "lineNumbers"
+        name: "getSource"
+        parameters: []
+        signature: "getSource(): String"
+        returnValueUuid: "forType_string1"
+        access: 1
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "B9061866FA0B1DDE312EE212EA0B90EC"
+      index: 4
+      ignored: false
+      valueUuid: "forType_stackTraceElement1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "3bf454f7-de85-3395-9868-dfec671e8f1f"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    variablesCouldNotBeIsolated: "lineNumbersCache"
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "LineNumbers lineNumbers = lineNumbersCache.getUnchecked(implementation);"
+      lineNumber: 77
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: lineNumbersCache - Method: getUnchecked"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "CLASS"
+      content: !<regular>
+        value: "java.lang.Object"
+      suggestedContent: !<regular>
+        value: "java.lang.Object"
+      valueType: "java.lang.Class"
+      genericValueType: "?"
+      uuid: "forType_class1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.util.LineNumbers"
+      uuid: "forType_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "forType_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.util.LineNumbers"
+      uuid: "forType_object1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: true
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getSource1"
+      valueType: "java.lang.String"
+      uuid: "forType_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "java.lang.StackTraceElement"
+        parameters:
+        - name: "declaringClass"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.String"
+            uuid: "forType_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "methodName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "class"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "fileName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "return_of_getSource1"
+            valueType: "java.lang.String"
+            uuid: "forType_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "lineNumber"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: 0
+            valueType: "int"
+            uuid: "forType_int1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "java.lang.StackTraceElement"
+        parameters:
+        - name: "declaringClass"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "java.lang.Object"
+            suggestedContent: !<regular>
+              value: "java.lang.Object"
+            valueType: "java.lang.String"
+            uuid: "forType_string2"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "methodName"
+          value:
+            sapientType: "BASIC"
+            content: !<regular>
+              value: "class"
+            valueType: "java.lang.String"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "fileName"
+          value:
+            sapientType: "BASIC"
+            valueType: "java.lang.String"
+            uuid: "forType_string1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        - name: "lineNumber"
+          value:
+            sapientType: "BASIC"
+            valueType: "int"
+            uuid: "forType_int1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "java.lang.StackTraceElement"
+      uuid: "forType_stackTraceElement1"
+      fixed: true
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "clearCache"
+    signature: "clearCache() : void"
+    instructionFingerprint: "2CBA13E1347673D2F808E431F7302546"
+  paths:
+  - pathId: "path1"
+    testPathName: "clearCacheTest"
+    filledByUser: false
+    modelFingerprint: "6E13917948F4503330A129503ABFC98B"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "68041019986276EDF5D420282D883A57"
+      index: 1
+      ignored: false
+      valueUuid: "uuid7"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "a19bb477-d7a7-3e52-afe2-4f0348585562"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "VOID"
+      uuid: "uuid7"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+- method:
+    name: "convertToInMemoryStackTraceElement"
+    signature: "convertToInMemoryStackTraceElement(java.lang.StackTraceElement[])\
+      \ : com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement[]"
+    instructionFingerprint: "AE4EB2876FCE7327E805A480D07D7758"
+  paths:
+  - pathId: "path1"
+    testPathName: "convertToInMemoryStackTraceElementWhenStackTraceElementsLengthEquals0"
+    filledByUser: false
+    modelFingerprint: "71030C346772406984D5AE7BE6AA8053"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "stackTraceElements"
+      modelFingerprint: "47FF9A773428A3EBA2A21F574FE5E3AE"
+      index: 1
+      ignored: false
+      valueUuid: "convertToInMemoryStackTraceElement_stackTraceElement[]1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1A2DDA2DA12FCAB60C43FE0FFD3C7066"
+      index: 2
+      ignored: false
+      valueUuid: "<clinit>_stackTraceElements.InMemoryStackTraceElement[]1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "5a5ae1db-90c2-3301-b0c0-49b4b547fd05"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      suggestedContent: !<array>
+        values: {}
+      valueType: "java.lang.StackTraceElement[]"
+      uuid: "convertToInMemoryStackTraceElement_stackTraceElement[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      suggestedContent: !<array>
+        values: {}
+      valueType: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement[]"
+      uuid: "<clinit>_stackTraceElements.InMemoryStackTraceElement[]1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path4"
+    testPathName: "convertToInMemoryStackTraceElementWhenINotLessThanStackTraceElementsLength"
+    filledByUser: false
+    modelFingerprint: "2A9EC4FDE082FBA0A342CB3C344E7192"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "8f6f5106-d0c0-324d-b505-6bd79012c28d"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
+  - pathId: "path3"
+    testPathName: "convertToInMemoryStackTraceElementWhenCachedIsNull"
+    filledByUser: false
+    modelFingerprint: "CA5C7718040FB1186C2175A02B376B07"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "stackTraceElements"
+      modelFingerprint: "3BAD6DD55EE60E1460BB2CAEA98D5161"
+      index: 1
+      ignored: false
+      valueUuid: "convertToInMemoryStackTraceElement_stackTraceElement[]1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "inMemoryStackTraceElement"
+      modelFingerprint: "8A24C0455ABF7D23EDB65BF186F156D8"
+      index: 2
+      ignored: false
+      valueUuid: "convertToInMemoryStackTraceElement_stackTraceElements.InMemoryStackTraceElement1"
+      methodExercised:
+        target: "inMemoryStackTraceElement"
+        name: "getClassName"
+        parameters: []
+        signature: "getClassName(): String"
+        returnValueUuid: "weakIntern_string1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "inMemoryStackTraceElement"
+      modelFingerprint: "7EE08F51004DAD9DA62F811284CABD66"
+      index: 3
+      ignored: false
+      valueUuid: "convertToInMemoryStackTraceElement_stackTraceElements.InMemoryStackTraceElement1"
+      methodExercised:
+        target: "inMemoryStackTraceElement"
+        name: "getMethodName"
+        parameters: []
+        signature: "getMethodName(): String"
+        returnValueUuid: "weakIntern_string4"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "inMemoryStackTraceElement"
+      modelFingerprint: "9B5988E720975B0A9725DB9D63B7FB6E"
+      index: 4
+      ignored: false
+      valueUuid: "convertToInMemoryStackTraceElement_stackTraceElements.InMemoryStackTraceElement1"
+      methodExercised:
+        target: "inMemoryStackTraceElement"
+        name: "getLineNumber"
+        parameters: []
+        signature: "getLineNumber(): int"
+        returnValueUuid: "weakIntern_int1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "1FC888B5C0CEA53904AEF523F3555163"
+      index: 5
+      ignored: false
+      valueUuid: "convertToInMemoryStackTraceElement_stackTraceElements.InMemoryStackTraceElement[]1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "89481d6f-346e-364e-aff5-2dc024508d7c"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "weakIntern(inMemoryStackTraceElement.getClassName()),"
+      lineNumber: 132
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: inMemoryStackTraceElement - Method: getClassName"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "declaringClass1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-declaringClass"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "methodName1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-methodName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "fileName1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-fileName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: 0
+                  valueType: "int"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-lineNumber"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-declaringClass"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-methodName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-fileName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "int"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-lineNumber"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.StackTraceElement"
+            uuid: "convertToInMemoryStackTraceElement_stackTraceElement1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "declaringClass1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-declaringClass"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "methodName1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-methodName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "fileName1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-fileName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: 0
+                  valueType: "int"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-lineNumber"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-declaringClass"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-methodName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-fileName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "int"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-lineNumber"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.StackTraceElement"
+            uuid: "convertToInMemoryStackTraceElement_stackTraceElement1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "java.lang.StackTraceElement[]"
+      uuid: "convertToInMemoryStackTraceElement_stackTraceElement[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+        parameters:
+        - name: "ste"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "declaringClass1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-declaringClass"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "methodName1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-methodName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "fileName1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-fileName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: 0
+                  valueType: "int"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-lineNumber"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-declaringClass"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-methodName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-fileName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "int"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-lineNumber"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.StackTraceElement"
+            uuid: "convertToInMemoryStackTraceElement_stackTraceElement1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+        parameters:
+        - name: "ste"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-declaringClass"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-methodName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-fileName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "int"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-lineNumber"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.StackTraceElement"
+            uuid: "convertToInMemoryStackTraceElement_stackTraceElement1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+      uuid: "convertToInMemoryStackTraceElement_stackTraceElements.InMemoryStackTraceElement1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ""
+      suggestedContent: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "weakIntern_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+        parameters:
+        - name: "ste"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "declaringClass1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-declaringClass"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "methodName1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-methodName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "fileName1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-fileName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: 0
+                  valueType: "int"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-lineNumber"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-declaringClass"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-methodName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-fileName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "int"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-lineNumber"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.StackTraceElement"
+            uuid: "convertToInMemoryStackTraceElement_stackTraceElement1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+        parameters:
+        - name: "ste"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-declaringClass"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-methodName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-fileName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "int"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-lineNumber"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.StackTraceElement"
+            uuid: "convertToInMemoryStackTraceElement_stackTraceElement1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+      uuid: "convertToInMemoryStackTraceElement_stackTraceElements.InMemoryStackTraceElement1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      content: !<regular>
+        value: ""
+      suggestedContent: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "weakIntern_string4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+        parameters:
+        - name: "ste"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "declaringClass1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-declaringClass"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "methodName1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-methodName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "fileName1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-fileName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: 0
+                  valueType: "int"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-lineNumber"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-declaringClass"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-methodName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-fileName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "int"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-lineNumber"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.StackTraceElement"
+            uuid: "convertToInMemoryStackTraceElement_stackTraceElement1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+        parameters:
+        - name: "ste"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-declaringClass"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-methodName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-fileName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "int"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-lineNumber"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.StackTraceElement"
+            uuid: "convertToInMemoryStackTraceElement_stackTraceElement1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+      uuid: "convertToInMemoryStackTraceElement_stackTraceElements.InMemoryStackTraceElement1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "weakIntern_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: ""
+                  suggestedContent: !<regular>
+                    value: ""
+                  valueType: "java.lang.String"
+                  uuid: "weakIntern_string1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "NULL"
+                  content: !<regular>
+                    value: ""
+                  suggestedContent: !<regular>
+                    value: ""
+                  valueType: "java.lang.String"
+                  uuid: "weakIntern_string4"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: 0
+                  valueType: "int"
+                  uuid: "weakIntern_int1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  suggestedContent: !<regular>
+                    value: ""
+                  valueType: "java.lang.String"
+                  uuid: "weakIntern_string1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "NULL"
+                  suggestedContent: !<regular>
+                    value: ""
+                  valueType: "java.lang.String"
+                  uuid: "weakIntern_string4"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "int"
+                  uuid: "weakIntern_int1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+            uuid: "weakIntern_stackTraceElements.InMemoryStackTraceElement2"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: ""
+                  suggestedContent: !<regular>
+                    value: ""
+                  valueType: "java.lang.String"
+                  uuid: "weakIntern_string1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "NULL"
+                  content: !<regular>
+                    value: ""
+                  suggestedContent: !<regular>
+                    value: ""
+                  valueType: "java.lang.String"
+                  uuid: "weakIntern_string4"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: 0
+                  valueType: "int"
+                  uuid: "weakIntern_int1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  suggestedContent: !<regular>
+                    value: ""
+                  valueType: "java.lang.String"
+                  uuid: "weakIntern_string1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "NULL"
+                  suggestedContent: !<regular>
+                    value: ""
+                  valueType: "java.lang.String"
+                  uuid: "weakIntern_string4"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "int"
+                  uuid: "weakIntern_int1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+            uuid: "weakIntern_stackTraceElements.InMemoryStackTraceElement2"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement[]"
+      uuid: "convertToInMemoryStackTraceElement_stackTraceElements.InMemoryStackTraceElement[]1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "convertToInMemoryStackTraceElementWhenCachedIsNullAndCachedIsNull"
+    filledByUser: false
+    modelFingerprint: "8325CD059CE4F12CE243A24B81504EC2"
+    problemWasSolvedByProver: false
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "stackTraceElements"
+      modelFingerprint: "3BAD6DD55EE60E1460BB2CAEA98D5161"
+      index: 1
+      ignored: false
+      valueUuid: "convertToInMemoryStackTraceElement_stackTraceElement[]1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "inMemoryStackTraceElement"
+      modelFingerprint: "8A24C0455ABF7D23EDB65BF186F156D8"
+      index: 2
+      ignored: false
+      valueUuid: "convertToInMemoryStackTraceElement_stackTraceElements.InMemoryStackTraceElement1"
+      methodExercised:
+        target: "inMemoryStackTraceElement"
+        name: "getClassName"
+        parameters: []
+        signature: "getClassName(): String"
+        returnValueUuid: "weakIntern_string1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "inMemoryStackTraceElement"
+      modelFingerprint: "7EE08F51004DAD9DA62F811284CABD66"
+      index: 3
+      ignored: false
+      valueUuid: "convertToInMemoryStackTraceElement_stackTraceElements.InMemoryStackTraceElement1"
+      methodExercised:
+        target: "inMemoryStackTraceElement"
+        name: "getMethodName"
+        parameters: []
+        signature: "getMethodName(): String"
+        returnValueUuid: "weakIntern_string4"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      name: "inMemoryStackTraceElement"
+      modelFingerprint: "9B5988E720975B0A9725DB9D63B7FB6E"
+      index: 4
+      ignored: false
+      valueUuid: "convertToInMemoryStackTraceElement_stackTraceElements.InMemoryStackTraceElement1"
+      methodExercised:
+        target: "inMemoryStackTraceElement"
+        name: "getLineNumber"
+        parameters: []
+        signature: "getLineNumber(): int"
+        returnValueUuid: "weakIntern_int1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "66BCC87552AB0C4423E50D0F901A7E5E"
+      index: 5
+      ignored: false
+      valueUuid: "convertToInMemoryStackTraceElement_stackTraceElements.InMemoryStackTraceElement[]1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "4da0e98e-27f4-3b1b-a3b9-da72b1a5b3c0"
+    deleted: false
+    disabled: true
+    ignoredBySystem: false
+    failureReason:
+      reason: "VARIABLE_THAT_COULD_NOT_BE_ISOLATED_MOCKED"
+      source: "weakIntern(inMemoryStackTraceElement.getClassName()),"
+      lineNumber: 132
+      details: "A variable could not be isolated or mocked when calling a method -\
+        \ Variable name: inMemoryStackTraceElement - Method: getClassName"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: true
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "declaringClass1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-declaringClass"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "methodName1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-methodName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "fileName1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-fileName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: 0
+                  valueType: "int"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-lineNumber"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-declaringClass"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-methodName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-fileName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "int"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-lineNumber"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.StackTraceElement"
+            uuid: "convertToInMemoryStackTraceElement_stackTraceElement1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "declaringClass1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-declaringClass"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "methodName1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-methodName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "fileName1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-fileName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: 0
+                  valueType: "int"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-lineNumber"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-declaringClass"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-methodName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-fileName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "int"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-lineNumber"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.StackTraceElement"
+            uuid: "convertToInMemoryStackTraceElement_stackTraceElement1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "java.lang.StackTraceElement[]"
+      uuid: "convertToInMemoryStackTraceElement_stackTraceElement[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+        parameters:
+        - name: "ste"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "declaringClass1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-declaringClass"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "methodName1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-methodName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "fileName1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-fileName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: 0
+                  valueType: "int"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-lineNumber"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-declaringClass"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-methodName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-fileName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "int"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-lineNumber"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.StackTraceElement"
+            uuid: "convertToInMemoryStackTraceElement_stackTraceElement1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+        parameters:
+        - name: "ste"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-declaringClass"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-methodName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-fileName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "int"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-lineNumber"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.StackTraceElement"
+            uuid: "convertToInMemoryStackTraceElement_stackTraceElement1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+      uuid: "convertToInMemoryStackTraceElement_stackTraceElements.InMemoryStackTraceElement1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: ""
+      suggestedContent: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "weakIntern_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+        parameters:
+        - name: "ste"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "declaringClass1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-declaringClass"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "methodName1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-methodName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "fileName1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-fileName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: 0
+                  valueType: "int"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-lineNumber"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-declaringClass"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-methodName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-fileName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "int"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-lineNumber"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.StackTraceElement"
+            uuid: "convertToInMemoryStackTraceElement_stackTraceElement1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+        parameters:
+        - name: "ste"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-declaringClass"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-methodName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-fileName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "int"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-lineNumber"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.StackTraceElement"
+            uuid: "convertToInMemoryStackTraceElement_stackTraceElement1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+      uuid: "convertToInMemoryStackTraceElement_stackTraceElements.InMemoryStackTraceElement1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "NULL"
+      content: !<regular>
+        value: ""
+      suggestedContent: !<regular>
+        value: ""
+      valueType: "java.lang.String"
+      uuid: "weakIntern_string4"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "OBJECT"
+      content: !<new>
+        target: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+        parameters:
+        - name: "ste"
+          value:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "declaringClass1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-declaringClass"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "methodName1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-methodName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "fileName1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-fileName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: 0
+                  valueType: "int"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-lineNumber"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            suggestedContent: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-declaringClass"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-methodName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-fileName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "int"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-lineNumber"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.StackTraceElement"
+            uuid: "convertToInMemoryStackTraceElement_stackTraceElement1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      suggestedContent: !<new>
+        target: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+        parameters:
+        - name: "ste"
+          value:
+            sapientType: "UNKNOWN"
+            suggestedContent: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-declaringClass"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-methodName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-fileName"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "int"
+                  uuid: "convertToInMemoryStackTraceElement_stackTraceElement1-lineNumber"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: false
+            valueType: "java.lang.StackTraceElement"
+            uuid: "convertToInMemoryStackTraceElement_stackTraceElement1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+        privateConstructor: false
+        createdByTargetCode: true
+      valueType: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+      uuid: "convertToInMemoryStackTraceElement_stackTraceElements.InMemoryStackTraceElement1"
+      fixed: true
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "weakIntern_int1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: ""
+                  suggestedContent: !<regular>
+                    value: ""
+                  valueType: "java.lang.String"
+                  uuid: "weakIntern_string1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: ""
+                  suggestedContent: !<regular>
+                    value: ""
+                  valueType: "java.lang.String"
+                  uuid: "weakIntern_string5"
+                  fixed: false
+                  collectionUuid: "<clinit>_concurrentHashMap2"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: 0
+                  valueType: "int"
+                  uuid: "weakIntern_int1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  suggestedContent: !<regular>
+                    value: ""
+                  valueType: "java.lang.String"
+                  uuid: "weakIntern_string1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  suggestedContent: !<regular>
+                    value: ""
+                  valueType: "java.lang.String"
+                  uuid: "weakIntern_string5"
+                  fixed: false
+                  collectionUuid: "<clinit>_concurrentHashMap2"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "int"
+                  uuid: "weakIntern_int1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+            uuid: "weakIntern_stackTraceElements.InMemoryStackTraceElement2"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: ""
+                  suggestedContent: !<regular>
+                    value: ""
+                  valueType: "java.lang.String"
+                  uuid: "weakIntern_string1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: ""
+                  suggestedContent: !<regular>
+                    value: ""
+                  valueType: "java.lang.String"
+                  uuid: "weakIntern_string5"
+                  fixed: false
+                  collectionUuid: "<clinit>_concurrentHashMap2"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: 0
+                  valueType: "int"
+                  uuid: "weakIntern_int1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  suggestedContent: !<regular>
+                    value: ""
+                  valueType: "java.lang.String"
+                  uuid: "weakIntern_string1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  suggestedContent: !<regular>
+                    value: ""
+                  valueType: "java.lang.String"
+                  uuid: "weakIntern_string5"
+                  fixed: false
+                  collectionUuid: "<clinit>_concurrentHashMap2"
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "int"
+                  uuid: "weakIntern_int1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+            uuid: "weakIntern_stackTraceElements.InMemoryStackTraceElement2"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement[]"
+      uuid: "convertToInMemoryStackTraceElement_stackTraceElements.InMemoryStackTraceElement[]1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+- method:
+    name: "convertToStackTraceElement"
+    signature: "convertToStackTraceElement(com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement[])\
+      \ : java.lang.StackTraceElement[]"
+    instructionFingerprint: "DA2CBD179CBCF3227EE60597DBAEB98E"
+  paths:
+  - pathId: "path1"
+    testPathName: "convertToStackTraceElementWhenInMemoryStackTraceElementsLengthEquals0"
+    filledByUser: false
+    modelFingerprint: "D484011B1D41C34A70A38DF80610EEC3"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "inMemoryStackTraceElements"
+      modelFingerprint: "1413002A1C32E588B53D779ADF46E79A"
+      index: 1
+      ignored: false
+      valueUuid: "convertToStackTraceElement_stackTraceElements.InMemoryStackTraceElement[]1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "95A137402A7D8B85B055CEB49667B14F"
+      index: 2
+      ignored: false
+      valueUuid: "<clinit>_stackTraceElement[]1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "473140db-316a-36bf-8c72-d0fe3f0301af"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      suggestedContent: !<array>
+        values: {}
+      valueType: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement[]"
+      uuid: "convertToStackTraceElement_stackTraceElements.InMemoryStackTraceElement[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values: {}
+      suggestedContent: !<array>
+        values: {}
+      valueType: "java.lang.StackTraceElement[]"
+      uuid: "<clinit>_stackTraceElement[]1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path2"
+    testPathName: "convertToStackTraceElementWhenILessThanInMemoryStackTraceElementsLength"
+    filledByUser: false
+    modelFingerprint: "D44CE679DC37637FA5311F4B16CDE4F4"
+    problemWasSolvedByProver: true
+    truncated: false
+    inputParameters:
+    - type: "INPUT"
+      name: "inMemoryStackTraceElements"
+      modelFingerprint: "EE03EF5D8D92E2926545B1C9F8223FBA"
+      index: 1
+      ignored: false
+      valueUuid: "convertToStackTraceElement_stackTraceElements.InMemoryStackTraceElement[]1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "E13C34E37532EC4C0AF453A6DF17FAB7"
+      index: 2
+      ignored: false
+      valueUuid: "convertToStackTraceElement_stackTraceElements.InMemoryStackTraceElement1"
+      methodExercised:
+        target: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+        name: "getClassName"
+        parameters: []
+        signature: "getClassName(): String"
+        returnValueUuid: "convertToStackTraceElement_string1"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "1991B280F65525CA4226056B74E2B028"
+      index: 3
+      ignored: false
+      valueUuid: "convertToStackTraceElement_stackTraceElements.InMemoryStackTraceElement1"
+      methodExercised:
+        target: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+        name: "getMethodName"
+        parameters: []
+        signature: "getMethodName(): String"
+        returnValueUuid: "convertToStackTraceElement_string2"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "LOCAL_VARIABLE"
+      modelFingerprint: "873E74D14618662B292EFA18B4637196"
+      index: 4
+      ignored: false
+      valueUuid: "convertToStackTraceElement_stackTraceElements.InMemoryStackTraceElement1"
+      methodExercised:
+        target: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+        name: "getLineNumber"
+        parameters: []
+        signature: "getLineNumber(): int"
+        returnValueUuid: "convertToStackTraceElement_int5"
+        access: 0
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "RESULT"
+      name: "result"
+      modelFingerprint: "D3A0234AA58826E48CEA2D24054F37D2"
+      index: 5
+      ignored: false
+      valueUuid: "convertToStackTraceElement_stackTraceElement[]1"
+      staticReadMethodForField: false
+      filledByUser: false
+    - type: "STATE_VERIFICATION_PARAMETER"
+      name: "inMemoryStackTraceElements"
+      modelFingerprint: "C06B82A5204FD4C791B7176307A5784D"
+      index: 6
+      ignored: false
+      valueUuid: "convertToStackTraceElement_stackTraceElements.InMemoryStackTraceElement[]2"
+      originalValueUuid: "convertToStackTraceElement_stackTraceElements.InMemoryStackTraceElement[]1"
+      staticReadMethodForField: false
+      filledByUser: false
+    uuid: "346e8fa2-193c-3977-9e4a-8d9a81af722f"
+    deleted: false
+    disabled: false
+    ignoredBySystem: false
+    prover: "DEFAULT"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues:
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+            uuid: "convertToStackTraceElement_stackTraceElements.InMemoryStackTraceElement1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<array>
+        values:
+          0:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+            uuid: "convertToStackTraceElement_stackTraceElements.InMemoryStackTraceElement1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement[]"
+      uuid: "convertToStackTraceElement_stackTraceElements.InMemoryStackTraceElement[]1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+      uuid: "convertToStackTraceElement_stackTraceElements.InMemoryStackTraceElement1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getClassName1"
+      valueType: "java.lang.String"
+      uuid: "convertToStackTraceElement_string1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+      uuid: "convertToStackTraceElement_stackTraceElements.InMemoryStackTraceElement1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: "return_of_getMethodName1"
+      valueType: "java.lang.String"
+      uuid: "convertToStackTraceElement_string2"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "MOCK"
+      valueType: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+      uuid: "convertToStackTraceElement_stackTraceElements.InMemoryStackTraceElement1"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "BASIC"
+      content: !<regular>
+        value: 0
+      valueType: "int"
+      uuid: "convertToStackTraceElement_int5"
+      fixed: false
+      equalsMethodPresent: false
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "return_of_getClassName1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToStackTraceElement_string1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "return_of_getMethodName1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToStackTraceElement_string2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "Unknown Source"
+                  valueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: 0
+                  valueType: "int"
+                  uuid: "convertToStackTraceElement_int5"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToStackTraceElement_string1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToStackTraceElement_string2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "Unknown Source"
+                  valueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "int"
+                  uuid: "convertToStackTraceElement_int5"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "java.lang.StackTraceElement"
+            uuid: "convertToStackTraceElement_stackTraceElement1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<array>
+        values:
+          0:
+            sapientType: "OBJECT"
+            content: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "return_of_getClassName1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToStackTraceElement_string1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "return_of_getMethodName1"
+                  valueType: "java.lang.String"
+                  uuid: "convertToStackTraceElement_string2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "Unknown Source"
+                  valueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: 0
+                  valueType: "int"
+                  uuid: "convertToStackTraceElement_int5"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            suggestedContent: !<new>
+              target: "java.lang.StackTraceElement"
+              parameters:
+              - name: "declaringClass"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToStackTraceElement_string1"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "methodName"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "java.lang.String"
+                  uuid: "convertToStackTraceElement_string2"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "fileName"
+                value:
+                  sapientType: "BASIC"
+                  content: !<regular>
+                    value: "Unknown Source"
+                  valueType: "java.lang.String"
+                  fixed: true
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              - name: "lineNumber"
+                value:
+                  sapientType: "BASIC"
+                  valueType: "int"
+                  uuid: "convertToStackTraceElement_int5"
+                  fixed: false
+                  equalsMethodPresent: false
+                  explicitCastNeeded: false
+              privateConstructor: false
+              createdByTargetCode: true
+            valueType: "java.lang.StackTraceElement"
+            uuid: "convertToStackTraceElement_stackTraceElement1"
+            fixed: true
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "java.lang.StackTraceElement[]"
+      uuid: "convertToStackTraceElement_stackTraceElement[]1"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+    - sapientType: "ARRAY"
+      content: !<array>
+        values:
+          0:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+            uuid: "convertToStackTraceElement_stackTraceElements.InMemoryStackTraceElement1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      suggestedContent: !<array>
+        values:
+          0:
+            sapientType: "MOCK"
+            valueType: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement"
+            uuid: "convertToStackTraceElement_stackTraceElements.InMemoryStackTraceElement1"
+            fixed: false
+            equalsMethodPresent: false
+            explicitCastNeeded: false
+      valueType: "com.google.inject.internal.util.StackTraceElements$InMemoryStackTraceElement[]"
+      uuid: "convertToStackTraceElement_stackTraceElements.InMemoryStackTraceElement[]2"
+      fixed: false
+      equalsMethodPresent: true
+      explicitCastNeeded: false
+  - pathId: "path3"
+    testPathName: "convertToStackTraceElementWhenINotLessThanInMemoryStackTraceElementsLength"
+    filledByUser: false
+    modelFingerprint: "7AF2357319E40240451F5CC72B169A35"
+    problemWasSolvedByProver: false
+    truncated: true
+    inputParameters: []
+    uuid: "1fc328d1-36e7-3bb7-ae4b-9405d58f5b62"
+    deleted: true
+    disabled: false
+    ignoredBySystem: true
+    failureReason:
+      reason: "PROVER_COULD_NOT_SOLVE_THE_PROBLEM"
+    disabledStatusUpdatedByUser: false
+    disabledStatusUpdatedBySystem: false
+    allValues: []
